@@ -1,0 +1,1 @@
+{"ckpt": "outputs\\continual\\nestor_100m_adapt_pg19_m4c\\nestor_100m_adapt_pg19\\20261113_181647__nestor_100m_adapt_pg19_train\\checkpoints\\model_final.pt", "sets": ["pg19"], "seconds": 474.1457951068878}

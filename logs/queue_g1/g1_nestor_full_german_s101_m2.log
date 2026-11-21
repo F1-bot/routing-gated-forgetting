@@ -1,0 +1,105 @@
+# .venv/nestor/Scripts/python.exe run_exp.py nestor_100m --steps 96 --warmup 10 --micro 2 --accum 32
+# env overrides: {"DCLM_NUM_WORKERS": "0", "NESTOR_VRAM_BUDGET_FRAC": "0.90", "NESTOR_VRAM_GUARD": "1", "PYTHONUTF8": "1", "WANDB_MODE": "disabled", "DCLM_DATA_PATH": "data/domain/fw2de_train.bin", "DCLM_INIT_CHECKPOINT": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt", "DCLM_LR_ADAMW": "7.5e-05", "DCLM_LR_MUON": "0.0025", "DCLM_RUN_SUFFIX": "g1_nestor_full_german_s101", "DCLM_SEED": "101", "DCLM_WEIGHT_DECAY": "0.1", "NESTOR_FREEZE_ROUTERS": "1", "NESTOR_OUTPUT_ROOT": "outputs\\g1\\g1_nestor_full_german_s101\\m2", "DCLM_BLOCK_SIZE": "4096", "DCLM_CKPT_FREQ": "100000", "DCLM_LOG_FREQ": "5", "NESTOR_ACTIVATION_CHECKPOINT": "0", "NESTOR_ACTIVATION_CHECKPOINT_SPLIT": "0", "NESTOR_ACTIVATION_CHECKPOINT_LEAN": "0", "NESTOR_TRAIN_LOG_DIR": "outputs\\g1\\g1_nestor_full_german_s101\\m2\\trainlog"}
+[pretrain] nestor_100m_g1_nestor_full_german_s101: d=480 L=13 ctx=4096 rope=10000.0 init=outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt | 96 steps x 262,144 tok/step = 0.03B tokens | data=data\domain\fw2de_train.bin
+[run_exp] flags: {'DCLM_NUM_WORKERS': '0', 'NESTOR_ATTN_PACKED_VARLEN': '0', 'NESTOR_BATCHED_ROUTERS': '1', 'NESTOR_BF16': '1', 'NESTOR_CE_CHUNK_ROWS': '1024', 'NESTOR_COLUMN_SLOT_UPDATES': '1', 'NESTOR_COMPILE': '1', 'NESTOR_DDP': '0', 'NESTOR_DENSE_NO_ROUTER': '1', 'NESTOR_DENSE_TAIL_ATTN': '1', 'NESTOR_DISABLE_FSDP': '1', 'NESTOR_FUSED_HEAD_CE': '1', 'NESTOR_GATHERED_CAUSAL_FLASH': '1', 'NESTOR_GATHERED_VARLEN': '0', 'NESTOR_GROUPED_MM_FUSED_GATE': '1', 'NESTOR_MOE_GROUPED_MM': '1', 'NESTOR_MUON_SHARD': '0', 'NESTOR_STACKED_EXPERT_BANKS': '1', 'NESTOR_TRITON_EXPERT_DISPATCH': '1', 'NESTOR_TRITON_INDEX_BUILD': '1', 'NESTOR_TRITON_PACKED_ATTN': '0', 'PYTORCH_CUDA_ALLOC_CONF': 'expandable_segments:True', 'WANDB_MODE': 'disabled'}
+2026-11-14 06:21:23 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO - Run directory: outputs\g1\g1_nestor_full_german_s101\m2\nestor_100m_g1_nestor_full_german_s101\20261114_062123__nestor_100m_g1_nestor_full_german_s101_train
+2026-11-14 06:21:23 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO - Config saved to outputs\g1\g1_nestor_full_german_s101\m2\nestor_100m_g1_nestor_full_german_s101\20261114_062123__nestor_100m_g1_nestor_full_german_s101_train\config.json
+2026-11-14 06:21:23 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO - Initialising weights from outputs\nestor_100m_b05\20261031_213045__nestor_100m_b05_train_h100\checkpoints\model_final.pt (non-strict); optimizer, schedule and step start fresh
+2026-11-14 06:21:23 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO - WandB disabled via WANDB_MODE env var
+2026-11-14 06:21:30 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO - [frozen routers] frozen routers: 145 router parameters (1.32M of 377.5M elements) frozen; 590/735 parameters trainable
+2026-11-14 06:21:30 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO - [frozen routers] first frozen: backbone.blocks.0.group_router.score_mlp.layers.0.weight ... last: backbone.blocks.6.layers.1.expert_pool.private_routers.7.score_mlp.layers.0.weight
+2026-11-14 06:21:30 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO - [PERF] distributed wrapper disabled (NESTOR_DISABLE_FSDP=1)
+2026-11-14 06:21:30 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO - [PERF] dynamo recompile limit = 64
+2026-11-14 06:21:30 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO - [PERF] torch.compile(mode=default) enabled
+2026-11-14 06:21:30 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO - Resuming model from: outputs\nestor_100m_b05\20261031_213045__nestor_100m_b05_train_h100\checkpoints\model_final.pt
+2026-11-14 06:21:31 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO - Loaded 859/859 weights (non-strict); optimizer/scheduler/step reset to initial state
+2026-11-14 06:21:31 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO - Training pipeline setup complete
+2026-11-14 06:21:31 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO -   Model parameters: 377,505,845
+2026-11-14 06:21:31 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO -   Training batches: 18325
+2026-11-14 06:21:31 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO - [frozen routers] 150 routing modules held in eval mode (router noise off, loss-free bias updates off)
+2026-11-14 06:21:31 - nestor.nestor_100m_g1_nestor_full_german_s101_train - INFO - Starting training for 96 steps
+.venv\nestor\Lib\site-packages\triton\knobs.py:524: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+2026-11-14 06:21:34 - nestor.nestor_100m_g1_nestor_full_german_s101_train - WARNING - [MFU] flop calibration failed (CUDA out of memory. Tried to allocate 392.00 MiB. GPU 0 has a total capacity of 15.99 GiB of which 297.05 MiB is free. Process 2020 has 17179869184.00 GiB memory in use. Process 8412 has 17179869184.00 GiB memory in use. Process 13460 has 17179869184.00 GiB memory in use. Process 12768 has 17179869184.00 GiB memory in use. Process 15004 has 17179869184.00 GiB memory in use. Process 18952 has 17179869184.00 GiB memory in use. Process 19056 has 17179869184.00 GiB memory in use. Process 20032 has 17179869184.00 GiB memory in use. Process 20880 has 17179869184.00 GiB memory in use. Process 21220 has 17179869184.00 GiB memory in use. Process 20512 has 17179869184.00 GiB memory in use. Process 22308 has 17179869184.00 GiB memory in use. Process 7644 has 17179869184.00 GiB memory in use. Process 20436 has 17179869184.00 GiB memory in use. Process 23872 has 17179869184.00 GiB memory in use. Process 27320 has 17179869184.00 GiB memory in use. Process 25936 has 17179869184.00 GiB memory in use. Process 22644 has 17179869184.00 GiB memory in use. Process 5280 has 17179869184.00 GiB memory in use. Process 15308 has 17179869184.00 GiB memory in use. Process 2596 has 17179869184.00 GiB memory in use. Process 16512 has 17179869184.00 GiB memory in use. Process 35264 has 17179869184.00 GiB memory in use. Process 34296 has 17179869184.00 GiB memory in use. Process 37836 has 17179869184.00 GiB memory in use. Process 31572 has 17179869184.00 GiB memory in use. Process 26700 has 17179869184.00 GiB memory in use. Process 34732 has 17179869184.00 GiB memory in use. Process 13160 has 17179869184.00 GiB memory in use. Process 19480 has 17179869184.00 GiB memory in use. Process 10200 has 17179869184.00 GiB memory in use. Process 42188 has 17179869184.00 GiB memory in use. Including non-PyTorch memory, this process has 17179869184.00 GiB memory in use. 13.59 GiB allowed; Of the allocated memory 13.36 GiB is allocated by PyTorch, and 73.61 MiB is reserved by PyTorch but unallocated.); MFU metrics disabled
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0] Graph break from `Tensor.item()`, consider setting:
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     torch._dynamo.config.capture_scalar_outputs = True
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0] or:
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     env TORCHDYNAMO_CAPTURE_SCALAR_OUTPUTS=1
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0] to include these operations in the captured graph.
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0] 
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0] Graph break: from user code at:
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File "repo\nestor\models\sequence.py", line 96, in forward
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     backbone_output = self.encode(batch)
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]                       ^^^^^^^^^^^^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File "repo\nestor\models\sequence.py", line 83, in encode
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     return self.backbone(x, pos, attn_mask)
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File "repo\nestor\backbones\nestor.py", line 10348, in forward
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     block_output = block(
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]                    ^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File "repo\nestor\backbones\nestor.py", line 9444, in forward
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     streams, agg, column_aux = self._column_layers_region(
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File "repo\nestor\backbones\nestor.py", line 9053, in _column_layers_region
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     streams, agg, layer_aux = _maybe_checkpoint(
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]                               ^^^^^^^^^^^^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File "repo\nestor\backbones\nestor.py", line 1379, in _maybe_checkpoint
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     return sublayer(**kwargs)
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]            ^^^^^^^^^^^^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File "repo\nestor\backbones\nestor.py", line 7138, in forward_column
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     return self._forward_column_slot_updates(
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File "repo\nestor\backbones\nestor.py", line 7397, in _forward_column_slot_updates
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     attn_update = self.column_attn_half(
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]                   ^^^^^^^^^^^^^^^^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File "repo\nestor\backbones\nestor.py", line 7474, in column_attn_half
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     return self._column_attn_from_sources(
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File "repo\nestor\backbones\nestor.py", line 7525, in _column_attn_from_sources
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     attn_update = self._attn_update_general(
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File "repo\nestor\backbones\nestor.py", line 5539, in _attn_update_general
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     contribution = group_attn(
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]                    ^^^^^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File ".venv\nestor\Lib\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     return self._call_impl(*args, **kwargs)
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File ".venv\nestor\Lib\site-packages\torch\nn\modules\module.py", line 1886, in _call_impl
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     return inner()
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]            ^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File ".venv\nestor\Lib\site-packages\torch\nn\modules\module.py", line 1837, in inner
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     result = forward_call(*args, **kwargs)
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File "repo\nestor\backbones\nestor.py", line 3139, in forward
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     return self.forward_gathered(x, attn_mask, pos, members)
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]   File "repo\nestor\backbones\nestor.py", line 3583, in forward_gathered
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]     cap = int(counts.max().item())  # capacity; no token is dropped
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0] 
+W1114 06:21:36.579000 29792 .venv\nestor\Lib\site-packages\torch\_dynamo\variables\tensor.py:1841] [0/0] 
+Traceback (most recent call last):
+  File "run_exp.py", line 81, in <module>
+    main()
+  File "run_exp.py", line 77, in main
+    TrainPipeline.from_config(job_config=job, experiment_config=exp).run()
+  File "repo\nestor\pipelines\train.py", line 478, in run
+    self.trainer.train()
+  File "repo\nestor\train\trainer.py", line 286, in train
+    self._train_body()
+  File "repo\nestor\train\trainer.py", line 427, in _train_body
+    loss_output, model_aux = self._train_step(batch)
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "adapt_extras.py", line 350, in train_step
+    out = orig(self, batch, *a, **k)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "repo\nestor\train\trainer.py", line 864, in _train_step
+    scaled_loss.backward()
+  File ".venv\nestor\Lib\site-packages\torch\_tensor.py", line 623, in backward
+    torch.autograd.backward(
+  File ".venv\nestor\Lib\site-packages\torch\autograd\__init__.py", line 395, in backward
+    _engine_run_backward(
+  File ".venv\nestor\Lib\site-packages\torch\autograd\graph.py", line 1072, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 392.00 MiB. GPU 0 has a total capacity of 15.99 GiB of which 448.19 MiB is free. Process 2020 has 17179869184.00 GiB memory in use. Process 8412 has 17179869184.00 GiB memory in use. Process 13460 has 17179869184.00 GiB memory in use. Process 12768 has 17179869184.00 GiB memory in use. Process 15004 has 17179869184.00 GiB memory in use. Process 18952 has 17179869184.00 GiB memory in use. Process 19056 has 17179869184.00 GiB memory in use. Process 20032 has 17179869184.00 GiB memory in use. Process 20880 has 17179869184.00 GiB memory in use. Process 21220 has 17179869184.00 GiB memory in use. Process 20512 has 17179869184.00 GiB memory in use. Process 22308 has 17179869184.00 GiB memory in use. Process 7644 has 17179869184.00 GiB memory in use. Process 20436 has 17179869184.00 GiB memory in use. Process 23872 has 17179869184.00 GiB memory in use. Process 27320 has 17179869184.00 GiB memory in use. Process 25936 has 17179869184.00 GiB memory in use. Process 22644 has 17179869184.00 GiB memory in use. Process 5280 has 17179869184.00 GiB memory in use. Process 15308 has 17179869184.00 GiB memory in use. Process 2596 has 17179869184.00 GiB memory in use. Process 16512 has 17179869184.00 GiB memory in use. Process 35264 has 17179869184.00 GiB memory in use. Process 34296 has 17179869184.00 GiB memory in use. Process 37836 has 17179869184.00 GiB memory in use. Process 31572 has 17179869184.00 GiB memory in use. Process 26700 has 17179869184.00 GiB memory in use. Process 34732 has 17179869184.00 GiB memory in use. Process 13160 has 17179869184.00 GiB memory in use. Process 19480 has 17179869184.00 GiB memory in use. Process 10200 has 17179869184.00 GiB memory in use. Process 42188 has 17179869184.00 GiB memory in use. Including non-PyTorch memory, this process has 17179869184.00 GiB memory in use. 13.59 GiB allowed; Of the allocated memory 13.13 GiB is allocated by PyTorch, and 180.20 MiB is reserved by PyTorch but unallocated.

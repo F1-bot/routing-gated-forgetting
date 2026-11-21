@@ -1,0 +1,41 @@
+{
+ "meta": {
+  "experiment": "nestor_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c3_full_nestor_books_s101\\m4c\\nestor_100m_c3_full_nestor_books_s101\\20261118_154900__nestor_100m_c3_full_nestor_books_s101_train\\checkpoints\\model_final.pt",
+   "size": 3400441546,
+   "head_sha256": "2eea943316ff1d9fc8b104ad26c01c3cfc45bc068f0b95c04bf304f6862a4f2a"
+  },
+  "base": null,
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-18T16:40:53"
+ },
+ "results": {
+  "ckpt|dclm": {
+   "ce": 4.940265396062271,
+   "windows": 500,
+   "seconds": 232.9,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s101\\m4c\\eval_main\\ckpt__dclm.npz"
+  },
+  "ckpt|code": {
+   "ce": 6.705336797924298,
+   "windows": 500,
+   "seconds": 250.3,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s101\\m4c\\eval_main\\ckpt__code.npz"
+  },
+  "ckpt|math": {
+   "ce": 5.192411042906746,
+   "windows": 500,
+   "seconds": 255.0,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s101\\m4c\\eval_main\\ckpt__math.npz"
+  },
+  "ckpt|books": {
+   "ce": 4.62460551644536,
+   "windows": 500,
+   "seconds": 236.3,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s101\\m4c\\eval_main\\ckpt__books.npz"
+  }
+ }
+}

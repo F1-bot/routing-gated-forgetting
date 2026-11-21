@@ -1,0 +1,18 @@
+# .venv/nestor/Scripts/python.exe subset_adapt.py verify --init outputs/moe_100m_b05s43/20261101_001918__moe_100m_b05s43_train_h100/checkpoints/model_final.pt --final outputs\forecast\ksd_moe_b2_math_muon\m2\moe_100m_ksd_moe_b2_math_muon\20261115_022627__moe_100m_ksd_moe_b2_math_muon_train\checkpoints\model_final.pt --manifest outputs\forecast\ksd_moe_b2_math_muon\m2\subset_manifest.json --out outputs\forecast\ksd_moe_b2_math_muon\m2\audit.json
+# env overrides: {}
+{
+ "frozen_tensors_checked": 153,
+ "frozen_rows_checked": 0,
+ "frozen_mismatch": [],
+ "trainable_unchanged": [],
+ "buffers_checked": 16,
+ "buffer_mismatch": [],
+ "optimizer_state": {
+  "checked": true,
+  "state_rows_checked": 0,
+  "violations": []
+ },
+ "negative_control": null,
+ "allow_unchanged": false,
+ "ok": true
+}

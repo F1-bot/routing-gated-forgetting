@@ -1,0 +1,133 @@
+{
+ "_comment": "G0 probe config of the THIRD MoE base: MoE-100M, seed 44, 1.5B tokens, trained on one H100 (Modal). Books cell only (C1-books secondary replication, n_d = 3; not in the Holm family). Same registered stream layout as g0_moe_b1.json (prereg sec. 4.3) restricted to the corpora the books cell needs: DCLM (selection: dclm_val10; evaluation: dclm_val09), code = AlgebraicStack (the stream G0-8 chose on base 1), math, books. Probe target books (forecast inputs, G0-6). Pin the checkpoint before running: pins_check.py pin --pins ckpt_pins.json moe_b3 <path>; pins_check.py pin-config --pins ckpt_pins.json --name moe_b3 --config g0_moe_b3.json. Run with g0_b3.ps1.",
+ "_pin_edits": [
+  "2026-11-13T10:16:53: checkpoint pinned from ckpt_pins.json[moe_b3] sha256 546b573edc2c2d7a327399625f85b95ad27c6740376435dd82b62827163f1b58"
+ ],
+ "arch": "moe",
+ "block": 4096,
+ "checkpoint": "outputs/moe_100m_b15s44/20261113_042558__moe_100m_b15s44_train_h100/checkpoints/model_final.pt",
+ "crossover": {
+  "draws": 3,
+  "high": "math",
+  "lam": 1.5,
+  "low": "code",
+  "match_extra": [
+   "dclm"
+  ],
+  "max_jaccard": 0.5,
+  "min_contrast": 0.262364,
+  "seed": 0,
+  "targets": [
+   "books"
+  ],
+  "tol": 0.05,
+  "tol_scan": [
+   0.05,
+   0.1,
+   0.2
+  ]
+ },
+ "device": null,
+ "eval_tok_per_s": 9600.0,
+ "experiment": "moe_100m",
+ "family": "moe",
+ "half_seed": 0,
+ "k": 6,
+ "measure": "g2",
+ "out": "g0/moe_b3",
+ "probe": {
+  "bf16_grad": true,
+  "eps0": 0.0025,
+  "grad_paths": {
+   "books": "data/domain/pg19_train.bin"
+  },
+  "grad_seed": 12345,
+  "grad_windows": 16,
+  "lr_muon": 0.0025,
+  "momentum": 0.95,
+  "nesterov": true,
+  "pin_routing": "both",
+  "probe_corpora": [
+   "dclm_eval",
+   "code_eval",
+   "math_eval"
+  ],
+  "probe_windows": 8,
+  "random_seeds": [
+   0
+  ],
+  "regime_windows": 8,
+  "richardson": true,
+  "targets": [
+   "books"
+  ]
+ },
+ "streams": {
+  "books": {
+   "path": "data/domain/pg19_test.bin",
+   "select": "even",
+   "span": [
+    0.0,
+    0.5
+   ],
+   "span_align": "doc",
+   "tokens": 1048576
+  },
+  "books_eval": {
+   "path": "data/domain/pg19_test.bin",
+   "select": "even",
+   "span": [
+    0.5,
+    1.0
+   ],
+   "span_align": "doc",
+   "tokens": 2048000
+  },
+  "code": {
+   "path": "data/domain/algstack_test.bin",
+   "select": "even",
+   "span": [
+    0.0,
+    0.5
+   ],
+   "tokens": 1048576
+  },
+  "code_eval": {
+   "path": "data/domain/algstack_test.bin",
+   "select": "even",
+   "span": [
+    0.5,
+    1.0
+   ],
+   "tokens": 2048000
+  },
+  "dclm": {
+   "path": "data/dclm/dclm_val10.bin",
+   "select": "even",
+   "tokens": 1048576
+  },
+  "dclm_eval": {
+   "path": "data/dclm/dclm_val.bin",
+   "select": "even",
+   "tokens": 2048000
+  },
+  "math": {
+   "path": "data/domain/owm_test.bin",
+   "select": "even",
+   "span": [
+    0.0,
+    0.5
+   ],
+   "tokens": 1048576
+  },
+  "math_eval": {
+   "path": "data/domain/owm_test.bin",
+   "select": "even",
+   "span": [
+    0.5,
+    1.0
+   ],
+   "tokens": 2048000
+  }
+ }
+}

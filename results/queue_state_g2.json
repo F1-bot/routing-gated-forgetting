@@ -1,0 +1,99 @@
+{
+ "g2_moe_b1_aa3_R1": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 13.73
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g2\\g2_moe_b1_aa3_R1\\m2",
+  "final": "outputs\\g2\\g2_moe_b1_aa3_R1\\m2\\moe_100m_g2_moe_b1_aa3_R1\\20261114_103653__moe_100m_g2_moe_b1_aa3_R1_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\g2\\g2_moe_b1_aa3_R1\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794645405.7754116,
+  "end": 1794647818.6478076,
+  "hours": 0.6702
+ },
+ "g2_moe_b1_aa3_R2": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 13.37
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g2\\g2_moe_b1_aa3_R2\\m2",
+  "final": "outputs\\g2\\g2_moe_b1_aa3_R2\\m2\\moe_100m_g2_moe_b1_aa3_R2\\20261114_111706__moe_100m_g2_moe_b1_aa3_R2_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\g2\\g2_moe_b1_aa3_R2\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794647818.649808,
+  "end": 1794650207.8183694,
+  "hours": 0.6637
+ },
+ "g2_sgd_lr1": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 20.82
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g2\\g2_sgd_lr1\\m2",
+  "final": "outputs\\g2\\g2_sgd_lr1\\m2\\moe_100m_g2_sgd_lr1\\20261114_115655__moe_100m_g2_sgd_lr1_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\g2\\g2_sgd_lr1\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794650207.82037,
+  "end": 1794651464.893708,
+  "hours": 0.3492
+ },
+ "g2_sgd_lr2": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 20.82
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g2\\g2_sgd_lr2\\m2",
+  "final": "outputs\\g2\\g2_sgd_lr2\\m2\\moe_100m_g2_sgd_lr2\\20261114_121752__moe_100m_g2_sgd_lr2_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\g2\\g2_sgd_lr2\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794651464.8947082,
+  "end": 1794652721.9148562,
+  "hours": 0.3492
+ },
+ "g2_sgd_lr3": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 20.78
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g2\\g2_sgd_lr3\\m2",
+  "final": "outputs\\g2\\g2_sgd_lr3\\m2\\moe_100m_g2_sgd_lr3\\20261114_123849__moe_100m_g2_sgd_lr3_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\g2\\g2_sgd_lr3\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794652721.9158568,
+  "end": 1794653976.2435315,
+  "hours": 0.3484
+ },
+ "g2_snr_moe_b1": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794653976.2455437,
+  "end": 1794654011.8505633,
+  "hours": 0.0099
+ }
+}

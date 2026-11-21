@@ -1,0 +1,47 @@
+{
+ "meta": {
+  "experiment": "moe_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c1_moe_b1_books_d9_A\\m2\\moe_100m_c1_moe_b1_books_d9_A\\20261115_124821__moe_100m_c1_moe_b1_books_d9_A_train\\checkpoints\\model_final.pt",
+   "size": 2555317241,
+   "head_sha256": "b6995ffd35d1dcdfd065be106ed8d8b7188c0efd20b7116af8c6c93d8393eb94"
+  },
+  "base": null,
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-15T13:04:44"
+ },
+ "results": {
+  "ckpt|dclm": {
+   "ce": 4.650762601114163,
+   "windows": 500,
+   "seconds": 72.2,
+   "file": "outputs\\confirm\\c1_moe_b1_books_d9_A\\m2\\eval_main\\ckpt__dclm.npz"
+  },
+  "ckpt|books": {
+   "ce": 4.635385361340049,
+   "windows": 500,
+   "seconds": 71.2,
+   "file": "outputs\\confirm\\c1_moe_b1_books_d9_A\\m2\\eval_main\\ckpt__books.npz"
+  },
+  "ckpt|code": {
+   "ce": 6.219187785695207,
+   "windows": 500,
+   "seconds": 69.5,
+   "file": "outputs\\confirm\\c1_moe_b1_books_d9_A\\m2\\eval_main\\ckpt__code.npz"
+  },
+  "ckpt|pycode": {
+   "ce": 6.214983074347527,
+   "windows": 500,
+   "seconds": 69.1,
+   "file": "outputs\\confirm\\c1_moe_b1_books_d9_A\\m2\\eval_main\\ckpt__pycode.npz"
+  },
+  "ckpt|math": {
+   "ce": 4.846027873645451,
+   "windows": 500,
+   "seconds": 70.0,
+   "file": "outputs\\confirm\\c1_moe_b1_books_d9_A\\m2\\eval_main\\ckpt__math.npz"
+  }
+ }
+}

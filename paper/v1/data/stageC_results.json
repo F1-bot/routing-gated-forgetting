@@ -1,0 +1,32 @@
+{
+ "rows": [
+  {
+   "model": "dense_100m",
+   "S": 8192,
+   "ce_chunked_eval": 4.770758909538194,
+   "tokens": 1638200
+  },
+  {
+   "model": "dense_100m",
+   "S": 16384,
+   "ce_chunked_eval": 4.754973090436733,
+   "tokens": 3276600
+  },
+  {
+   "model": "moe_100m",
+   "S": 8192,
+   "ce_chunked_eval": 4.634778969277685,
+   "tokens": 1638200
+  },
+  {
+   "model": "moe_100m",
+   "S": 16384,
+   "ce_chunked_eval": 4.6259550728943735,
+   "tokens": 3276600
+  }
+ ],
+ "nestor": {
+  "attempts": "run_continual: ext8192 equal_tokens and equal_flops_new at micro 2 and 1 with activation checkpointing (MEM_FRAC 0.85): OOM in compiled backward (13.09 GiB allocated); ext16384 both settings OOM; probe ext8192 micro 1 with checkpointing at MEM_FRAC 0.93: OOM at the first step (14.31 GiB allocated, 0 bytes free)."
+ },
+ "eval_note": "16384 rows: the chain's eval_ckpt.py failed in the full-logit head projection (CUDA driver error 'device not ready / Failed to create GPU mapping'); re-evaluated with stagec_reeval/eval_ckpt_chunked.py (head applied in 1024-row chunks), which reproduces eval_ckpt.py at 8192 within 2.4e-8 nats (dense) and 1.2e-8 (MoE)."
+}

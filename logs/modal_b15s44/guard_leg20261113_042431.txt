@@ -1,0 +1,13 @@
+[guard 04:25:55] start: steps 5722, stop_by 07:29:31 UTC, reserve 260s, leg pretrain_moe_100m_b15s44_h100_leg20261113_042431
+[guard 05:03:58] synced step 2000 -> moe_100m_b15s44/20261113_042558__moe_100m_b15s44_train/checkpoints/model_00002000.pt (3.37 GB in 3s)
+[guard 05:03:58] projection at step 2000: 2.1645 s/step -> done (incl. eval/export/close) 07:24:15 UTC; stop_by 07:29:31 UTC
+[guard 05:40:32] removed older local model_00002000.pt (kept on volume)
+[guard 05:40:32] synced step 3000 -> moe_100m_b15s44/20261113_042558__moe_100m_b15s44_train/checkpoints/model_00003000.pt (3.37 GB in 3s)
+[guard 05:40:32] projection at step 3000: 2.1605 s/step -> done (incl. eval/export/close) 07:24:22 UTC; stop_by 07:29:31 UTC
+[guard 06:16:36] removed older local model_00003000.pt (kept on volume)
+[guard 06:16:36] synced step 4000 -> moe_100m_b15s44/20261113_042558__moe_100m_b15s44_train/checkpoints/model_00004000.pt (3.37 GB in 3s)
+[guard 06:16:36] projection at step 4000: 2.1660 s/step -> done (incl. eval/export/close) 07:24:24 UTC; stop_by 07:29:31 UTC
+[guard 06:52:39] removed older local model_00004000.pt (kept on volume)
+[guard 06:52:39] synced step 5000 -> moe_100m_b15s44/20261113_042558__moe_100m_b15s44_train/checkpoints/model_00005000.pt (3.37 GB in 3s)
+[guard 06:52:39] projection at step 5000: 2.1604 s/step -> done (incl. eval/export/close) 07:24:07 UTC; stop_by 07:29:31 UTC
+[guard 07:18:40] trainer exited

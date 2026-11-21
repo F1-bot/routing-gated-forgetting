@@ -1,0 +1,1306 @@
+{
+ "_comment": "stage-C forecast inputs (prereg v1.3 sec. 5.3): KSD drive runs + theta0 probes; built by forecasts.py units",
+ "env": {
+  "DCLM_NUM_WORKERS": "0",
+  "NESTOR_VRAM_BUDGET_FRAC": "0.90",
+  "NESTOR_VRAM_GUARD": "1",
+  "PYTHONUTF8": "1",
+  "WANDB_MODE": "disabled"
+ },
+ "vars": {
+  "ckpt_moe_b1": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+  "ckpt_moe_b2": "outputs/moe_100m_b05s43/20261101_001918__moe_100m_b05s43_train_h100/checkpoints/model_final.pt",
+  "ckpt_moe_b3": "outputs/moe_100m_b15s44/20261113_042558__moe_100m_b15s44_train_h100/checkpoints/model_final.pt",
+  "ckpt_nestor": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+  "python": ".venv/nestor/Scripts/python.exe",
+  "run_exp": "run_exp.py"
+ },
+ "logs": "logs/forecast",
+ "state": "results/queue_state_forecast.json",
+ "jobs": [
+  {
+   "id": "ksd_moe_b1_books_muon",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "micro": 2,
+   "ckpt": false,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe"
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_moe_b1_books_muon",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/pg19_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_moe_b1_books_muon",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.0346,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on books (muon); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_moe_b1_german_muon",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "micro": 2,
+   "ckpt": false,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe"
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_moe_b1_german_muon",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_moe_b1_german_muon",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.0346,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on german (muon); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_moe_b1_german_sgd",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "micro": 2,
+   "ckpt": false,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe"
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_moe_b1_german_sgd",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_moe_b1_german_sgd",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "NESTOR_MAX_GRAD_NORM": "none",
+    "NESTOR_SGD_LR": "1.4049673125288518",
+    "NESTOR_SGD_MOMENTUM": "0.95",
+    "NESTOR_SGD_NESTEROV": "1",
+    "NESTOR_SGD_WD": "0",
+    "NESTOR_SUBSET_OPTIMIZER": "sgd"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.0346,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on german (sgd); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_moe_b1_math_muon",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "micro": 2,
+   "ckpt": false,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe"
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_moe_b1_math_muon",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/owm_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_moe_b1_math_muon",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.0346,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on math (muon); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_moe_b1_dclm_muon",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "micro": 2,
+   "ckpt": false,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe"
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_moe_b1_dclm_muon",
+   "env": {
+    "DCLM_DATA_PATH": "data/dclm/dclm_cont_heldout.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_moe_b1_dclm_muon",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.0346,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on dclm (muon); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_moe_b1_code_muon",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "micro": 2,
+   "ckpt": false,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe"
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_moe_b1_code_muon",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/algstack_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_moe_b1_code_muon",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.0346,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on code (muon); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_moe_b2_books_muon",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "micro": 2,
+   "ckpt": false,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe"
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_moe_b2_books_muon",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/pg19_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b2}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_moe_b2_books_muon",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.0346,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on books (muon); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_moe_b2_german_muon",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "micro": 2,
+   "ckpt": false,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe"
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_moe_b2_german_muon",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b2}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_moe_b2_german_muon",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.0346,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on german (muon); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_moe_b2_german_sgd",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "micro": 2,
+   "ckpt": false,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe"
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_moe_b2_german_sgd",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b2}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_moe_b2_german_sgd",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "NESTOR_MAX_GRAD_NORM": "none",
+    "NESTOR_SGD_LR": "1.4049673125288518",
+    "NESTOR_SGD_MOMENTUM": "0.95",
+    "NESTOR_SGD_NESTEROV": "1",
+    "NESTOR_SGD_WD": "0",
+    "NESTOR_SUBSET_OPTIMIZER": "sgd"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.0346,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on german (sgd); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_moe_b2_math_muon",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "micro": 2,
+   "ckpt": false,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe"
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_moe_b2_math_muon",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/owm_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b2}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_moe_b2_math_muon",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.0346,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on math (muon); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_moe_b2_code_muon",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "micro": 2,
+   "ckpt": false,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe"
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_moe_b2_code_muon",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/algstack_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b2}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_moe_b2_code_muon",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.0346,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on code (muon); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_moe_b3_books_muon",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "micro": 2,
+   "ckpt": false,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe"
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_moe_b3_books_muon",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/pg19_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b3}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_moe_b3_books_muon",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.0346,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on books (muon); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_nestor_books_muon",
+   "kind": "train",
+   "experiment": "nestor_100m",
+   "micro": 4,
+   "ckpt": true,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": [
+       "priv",
+       "pub"
+      ]
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_nestor_books_muon",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/pg19_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_nestor}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_nestor_books_muon",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.25,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on books (muon); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_nestor_german_muon",
+   "kind": "train",
+   "experiment": "nestor_100m",
+   "micro": 4,
+   "ckpt": true,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": [
+       "priv",
+       "pub"
+      ]
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_nestor_german_muon",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_nestor}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_nestor_german_muon",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.25,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on german (muon); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_nestor_math_muon",
+   "kind": "train",
+   "experiment": "nestor_100m",
+   "micro": 4,
+   "ckpt": true,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": [
+       "priv",
+       "pub"
+      ]
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_nestor_math_muon",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/owm_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_nestor}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_nestor_math_muon",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.25,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on math (muon); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "ksd_nestor_code_muon",
+   "kind": "train",
+   "experiment": "nestor_100m",
+   "micro": 4,
+   "ckpt": true,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "steps": 8,
+   "warmup": 1,
+   "spec": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": [
+       "priv",
+       "pub"
+      ]
+     }
+    ]
+   },
+   "out_root": "outputs/forecast/ksd_nestor_code_muon",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/algstack_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_nestor}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "ksd_nestor_code_muon",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "evals": [],
+   "interim": {
+    "block": 4096,
+    "full_sets": [],
+    "full_steps": [],
+    "routing": false,
+    "sets": [
+     {
+      "head": 64,
+      "name": "code",
+      "path": "data/domain/algstack_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "select": "even",
+      "tokens": 2048000
+     },
+     {
+      "head": 64,
+      "name": "math",
+      "path": "data/domain/owm_test.bin",
+      "select": "even",
+      "span": [
+       0.5,
+       1.0
+      ],
+      "tokens": 2048000
+     }
+    ],
+    "steps": [
+     0,
+     8
+    ]
+   },
+   "est_h": 0.25,
+   "purpose": "KSD drive (prereg v1.3 sec. 5.3): 8-step E-ALL on code (muon); F_c = step-8 minus step-0 CE on the first 64 windows of DCLM, code and math"
+  },
+  {
+   "id": "forecast_probe_moe_b1",
+   "kind": "cmd",
+   "est_h": 0.9165,
+   "argv": [
+    "{python}",
+    "forecast_probe.py",
+    "run",
+    "--units",
+    "results\\forecast\\forecast_units.json",
+    "--base",
+    "moe_b1",
+    "--out",
+    "results\\forecast\\probes"
+   ],
+   "env": {
+    "NESTOR_FREEZE_ROUTERS": "1"
+   }
+  },
+  {
+   "id": "forecast_probe_moe_b2",
+   "kind": "cmd",
+   "est_h": 0.7176,
+   "argv": [
+    "{python}",
+    "forecast_probe.py",
+    "run",
+    "--units",
+    "results\\forecast\\forecast_units.json",
+    "--base",
+    "moe_b2",
+    "--out",
+    "results\\forecast\\probes"
+   ],
+   "env": {
+    "NESTOR_FREEZE_ROUTERS": "1"
+   }
+  },
+  {
+   "id": "forecast_probe_moe_b3",
+   "kind": "cmd",
+   "est_h": 0.0872,
+   "argv": [
+    "{python}",
+    "forecast_probe.py",
+    "run",
+    "--units",
+    "results\\forecast\\forecast_units.json",
+    "--base",
+    "moe_b3",
+    "--out",
+    "results\\forecast\\probes"
+   ],
+   "env": {
+    "NESTOR_FREEZE_ROUTERS": "1"
+   }
+  },
+  {
+   "id": "forecast_probe_nestor",
+   "kind": "cmd",
+   "est_h": 0.1928,
+   "argv": [
+    "{python}",
+    "forecast_probe.py",
+    "run",
+    "--units",
+    "results\\forecast\\forecast_units.json",
+    "--base",
+    "nestor",
+    "--out",
+    "results\\forecast\\probes"
+   ],
+   "env": {
+    "NESTOR_FREEZE_ROUTERS": "1"
+   }
+  }
+ ]
+}

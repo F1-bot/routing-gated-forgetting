@@ -1,0 +1,42 @@
+# .venv/nestor/Scripts/python.exe eval_windows.py run nestor_100m outputs/g1/g1_nestor_full_german_s102/m2c/nestor_100m_g1_nestor_full_german_s102/20261114_081301__nestor_100m_g1_nestor_full_german_s102_train/checkpoints/model_final.pt --set dclm=data/dclm/dclm_val.bin:2048000 --select even --block 4096 --variants revert:shared+pub+embed_head,revert:attn+priv,revert:attn,revert:priv,revert:pub,revert:embed_head --base outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt --out outputs/confirm/c3_reverts/g1_nestor_full_german_s102
+# env overrides: {}
+[pretrain] nestor_100m: d=480 L=13 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+[pretrain] nestor_100m: d=480 L=13 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+.venv\nestor\Lib\site-packages\triton\knobs.py:524: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+[eval_windows] dclm: 100/500 windows, 46s
+[eval_windows] dclm: 200/500 windows, 92s
+[eval_windows] dclm: 300/500 windows, 138s
+[eval_windows] dclm: 400/500 windows, 184s
+[eval_windows] dclm: 500/500 windows, 230s
+RESULT {"variant": "revert:shared+pub+embed_head", "set": "dclm", "ce": 4.815024175347222, "windows": 500, "seconds": 229.9, "file": "outputs/confirm/c3_reverts/g1_nestor_full_german_s102\\revert-shared+pub+embed_head__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 45s
+[eval_windows] dclm: 200/500 windows, 90s
+[eval_windows] dclm: 300/500 windows, 136s
+[eval_windows] dclm: 400/500 windows, 180s
+[eval_windows] dclm: 500/500 windows, 225s
+RESULT {"variant": "revert:attn+priv", "set": "dclm", "ce": 4.864913423382173, "windows": 500, "seconds": 225.5, "file": "outputs/confirm/c3_reverts/g1_nestor_full_german_s102\\revert-attn+priv__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 46s
+[eval_windows] dclm: 200/500 windows, 91s
+[eval_windows] dclm: 300/500 windows, 135s
+[eval_windows] dclm: 400/500 windows, 179s
+[eval_windows] dclm: 500/500 windows, 223s
+RESULT {"variant": "revert:attn", "set": "dclm", "ce": 4.8971467462225275, "windows": 500, "seconds": 223.5, "file": "outputs/confirm/c3_reverts/g1_nestor_full_german_s102\\revert-attn__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 44s
+[eval_windows] dclm: 200/500 windows, 88s
+[eval_windows] dclm: 300/500 windows, 132s
+[eval_windows] dclm: 400/500 windows, 177s
+[eval_windows] dclm: 500/500 windows, 222s
+RESULT {"variant": "revert:priv", "set": "dclm", "ce": 4.909510076598749, "windows": 500, "seconds": 222.2, "file": "outputs/confirm/c3_reverts/g1_nestor_full_german_s102\\revert-priv__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 45s
+[eval_windows] dclm: 200/500 windows, 90s
+[eval_windows] dclm: 300/500 windows, 135s
+[eval_windows] dclm: 400/500 windows, 180s
+[eval_windows] dclm: 500/500 windows, 225s
+RESULT {"variant": "revert:pub", "set": "dclm", "ce": 4.838691186851343, "windows": 500, "seconds": 225.0, "file": "outputs/confirm/c3_reverts/g1_nestor_full_german_s102\\revert-pub__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 45s
+[eval_windows] dclm: 200/500 windows, 89s
+[eval_windows] dclm: 300/500 windows, 133s
+[eval_windows] dclm: 400/500 windows, 177s
+[eval_windows] dclm: 500/500 windows, 222s
+RESULT {"variant": "revert:embed_head", "set": "dclm", "ce": 4.944591030887516, "windows": 500, "seconds": 221.5, "file": "outputs/confirm/c3_reverts/g1_nestor_full_german_s102\\revert-embed_head__dclm.npz"}

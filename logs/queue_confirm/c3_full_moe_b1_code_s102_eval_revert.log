@@ -1,0 +1,24 @@
+# .venv/nestor/Scripts/python.exe eval_windows.py run moe_100m outputs\confirm\c3_full_moe_b1_code_s102\m2\moe_100m_c3_full_moe_b1_code_s102\20261119_052049__moe_100m_c3_full_moe_b1_code_s102_train\checkpoints\model_final.pt --out outputs\confirm\c3_full_moe_b1_code_s102\m2\eval_revert --variants revert:moe,revert:kind:attn+embed_head+kind:norm,revert:embed_head --set dclm=data/dclm/dclm_val.bin:2048000 --block 4096 --base outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt --select even
+# env overrides: {"DCLM_BLOCK_SIZE": "4096"}
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+.venv\nestor\Lib\site-packages\triton\knobs.py:524: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+[eval_windows] dclm: 100/500 windows, 15s
+[eval_windows] dclm: 200/500 windows, 28s
+[eval_windows] dclm: 300/500 windows, 41s
+[eval_windows] dclm: 400/500 windows, 55s
+[eval_windows] dclm: 500/500 windows, 68s
+RESULT {"variant": "revert:moe", "set": "dclm", "ce": 4.649230340926435, "windows": 500, "seconds": 68.3, "file": "outputs\\confirm\\c3_full_moe_b1_code_s102\\m2\\eval_revert\\revert-moe__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 14s
+[eval_windows] dclm: 200/500 windows, 27s
+[eval_windows] dclm: 300/500 windows, 41s
+[eval_windows] dclm: 400/500 windows, 54s
+[eval_windows] dclm: 500/500 windows, 68s
+RESULT {"variant": "revert:kind:attn+embed_head+kind:norm", "set": "dclm", "ce": 4.6688839300022895, "windows": 500, "seconds": 67.7, "file": "outputs\\confirm\\c3_full_moe_b1_code_s102\\m2\\eval_revert\\revert-kind-attn+embed_head+kind-norm__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 14s
+[eval_windows] dclm: 200/500 windows, 27s
+[eval_windows] dclm: 300/500 windows, 41s
+[eval_windows] dclm: 400/500 windows, 55s
+[eval_windows] dclm: 500/500 windows, 68s
+RESULT {"variant": "revert:embed_head", "set": "dclm", "ce": 4.706016031364469, "windows": 500, "seconds": 68.2, "file": "outputs\\confirm\\c3_full_moe_b1_code_s102\\m2\\eval_revert\\revert-embed_head__dclm.npz"}

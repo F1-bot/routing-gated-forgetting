@@ -1,0 +1,13 @@
+[queue] 2026-11-14 10:36:45 queue g2\queue_g2.json: 6 jobs, estimated 2.90 GPU-h
+[queue] 2026-11-14 10:36:45 start g2_moe_b1_aa3_R1 (train, est 0.776 h)
+[queue] 2026-11-14 11:16:58 end g2_moe_b1_aa3_R1: done
+[queue] 2026-11-14 11:16:58 start g2_moe_b1_aa3_R2 (train, est 0.776 h)
+[queue] 2026-11-14 11:56:47 end g2_moe_b1_aa3_R2: done
+[queue] 2026-11-14 11:56:47 start g2_sgd_lr1 (train, est 0.4408 h)
+[queue] 2026-11-14 12:17:44 end g2_sgd_lr1: done
+[queue] 2026-11-14 12:17:44 start g2_sgd_lr2 (train, est 0.4408 h)
+[queue] 2026-11-14 12:38:41 end g2_sgd_lr2: done
+[queue] 2026-11-14 12:38:41 start g2_sgd_lr3 (train, est 0.4408 h)
+[queue] 2026-11-14 12:59:36 end g2_sgd_lr3: done
+[queue] 2026-11-14 12:59:36 start g2_snr_moe_b1 (cmd, est 0.03 h)
+[queue] 2026-11-14 13:00:11 end g2_snr_moe_b1: done

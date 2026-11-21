@@ -1,0 +1,27 @@
+{
+ "meta": {
+  "experiment": "moe_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\moe_100m_c3_full_moe_b1_books_s101\\20261119_031138__moe_100m_c3_full_moe_b1_books_s101_train\\checkpoints\\model_final.pt",
+   "size": 3369826637,
+   "head_sha256": "e2132f2a62632f6189448cf132e61495e6c473ced162f19cf454ef91859401e3"
+  },
+  "base": {
+   "path": "outputs\\moe_100m_b05\\20261101_002357__moe_100m_b05_train\\checkpoints\\model_final.pt",
+   "size": 3370939901,
+   "head_sha256": "ef3eb3815967cf91802f9a1c299b2f26dc82a990d3ceb02e7a6902a1aff9f14b"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-19T03:37:03"
+ },
+ "results": {
+  "wdonly|dclm": {
+   "ce": 4.624683047161172,
+   "windows": 500,
+   "seconds": 72.5,
+   "file": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\eval_wd\\wdonly__dclm.npz"
+  }
+ }
+}

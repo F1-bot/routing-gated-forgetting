@@ -1,0 +1,1764 @@
+{
+ "_comment": "Phase-3 example queue (MoE base A, target German): prep -> G0 (both archs) -> G1 -> negative control -> G2 (A/A noise, SGD calibration) -> prereg freeze -> C1 draws. Run from the repo root next to run_exp.py: .\\run_queue.ps1 -Queue queue_phase3_example.json -DryRun ; extend with base B (DCLM_SEED=43 base), C1-N (g0/nestor contrasts, experiment nestor_100m, micro 4 + ckpt) and the C2 arms (contrast__C2_german draws).",
+ "vars": {
+  "python": ".venv/nestor/Scripts/python.exe",
+  "run_exp": "run_exp.py",
+  "base_moe": "glob:outputs/moe_100m_b05/*/checkpoints/model_final.pt",
+  "base_nestor": "glob:outputs/nestor_100m_b05/*/checkpoints/model_final.pt"
+ },
+ "env": {
+  "WANDB_MODE": "disabled",
+  "DCLM_NUM_WORKERS": "0",
+  "PYTHONUTF8": "1"
+ },
+ "file_vars": {
+  "sgd_lr0": "g2/sgd_grid_moe.json#grid.0",
+  "sgd_lr1": "g2/sgd_grid_moe.json#grid.1",
+  "sgd_lr2": "g2/sgd_grid_moe.json#grid.2"
+ },
+ "state": "results/queue_phase3_state.json",
+ "logs": "logs/queue_phase3",
+ "jobs": [
+  {
+   "id": "prep_code",
+   "kind": "cmd",
+   "argv": [
+    "{python}",
+    "prep_streams.py",
+    "sample",
+    "--in",
+    "data/domain/algstack_test.bin",
+    "--out-dir",
+    "data/streams",
+    "--seed",
+    "0",
+    "--part",
+    "code_eval=2200000",
+    "--part",
+    "code_route=4400000"
+   ],
+   "est_h": 0
+  },
+  {
+   "id": "prep_math",
+   "kind": "cmd",
+   "argv": [
+    "{python}",
+    "prep_streams.py",
+    "sample",
+    "--in",
+    "data/domain/owm_test.bin",
+    "--out-dir",
+    "data/streams",
+    "--seed",
+    "0",
+    "--part",
+    "math_eval=2200000",
+    "--part",
+    "math_route=4400000"
+   ],
+   "est_h": 0
+  },
+  {
+   "id": "prep_german_eval",
+   "kind": "cmd",
+   "argv": [
+    "{python}",
+    "prep_streams.py",
+    "sample",
+    "--in",
+    "data/domain/fw2de_test.bin",
+    "--out-dir",
+    "data/streams",
+    "--seed",
+    "0",
+    "--part",
+    "german_eval=2200000"
+   ],
+   "est_h": 0
+  },
+  {
+   "id": "prep_german_route",
+   "kind": "cmd",
+   "argv": [
+    "{python}",
+    "prep_streams.py",
+    "sample",
+    "--in",
+    "data/domain/fw2de_train.bin",
+    "--out-dir",
+    "data/streams",
+    "--seed",
+    "1",
+    "--part",
+    "german_route=2200000"
+   ],
+   "est_h": 0
+  },
+  {
+   "id": "prep_books_route",
+   "kind": "cmd",
+   "argv": [
+    "{python}",
+    "prep_streams.py",
+    "sample",
+    "--in",
+    "data/domain/pg19_train.bin",
+    "--out-dir",
+    "data/streams",
+    "--seed",
+    "1",
+    "--part",
+    "books_route=2200000"
+   ],
+   "est_h": 0
+  },
+  {
+   "id": "prep_fr_download",
+   "kind": "cmd",
+   "est_h": 0,
+   "argv": [
+    "{python}",
+    "prep_streams.py",
+    "fineweb2",
+    "--lang",
+    "fra_Latn",
+    "--name",
+    "fr",
+    "--raw-dir",
+    "data/raw/fineweb-2",
+    "--out-dir",
+    "data/domain",
+    "--train-shards",
+    "1",
+    "--train-max-tokens",
+    "150000000"
+   ]
+  },
+  {
+   "id": "prep_fr_eval",
+   "kind": "cmd",
+   "argv": [
+    "{python}",
+    "prep_streams.py",
+    "sample",
+    "--in",
+    "data/domain/fr_test.bin",
+    "--out-dir",
+    "data/streams",
+    "--seed",
+    "0",
+    "--part",
+    "fr_eval=2200000"
+   ],
+   "est_h": 0,
+   "requires": [
+    "prep_fr_download"
+   ]
+  },
+  {
+   "id": "prep_fr_route",
+   "kind": "cmd",
+   "argv": [
+    "{python}",
+    "prep_streams.py",
+    "sample",
+    "--in",
+    "data/domain/fr_train.bin",
+    "--out-dir",
+    "data/streams",
+    "--seed",
+    "1",
+    "--part",
+    "fr_route=2200000"
+   ],
+   "est_h": 0,
+   "requires": [
+    "prep_fr_download"
+   ]
+  },
+  {
+   "id": "g0_moe",
+   "kind": "cmd",
+   "est_h": 0.61,
+   "argv": [
+    "{python}",
+    "g0_probe.py",
+    "run",
+    "--config",
+    "g0_config_moe.json"
+   ],
+   "requires": [
+    "prep_code",
+    "prep_math",
+    "prep_german_route",
+    "prep_books_route",
+    "prep_fr_route"
+   ]
+  },
+  {
+   "id": "g0_nestor",
+   "kind": "cmd",
+   "est_h": 0.61,
+   "argv": [
+    "{python}",
+    "g0_probe.py",
+    "run",
+    "--config",
+    "g0_config_nestor.json"
+   ],
+   "requires": [
+    "prep_code",
+    "prep_math",
+    "prep_german_route",
+    "prep_books_route",
+    "prep_fr_route"
+   ]
+  },
+  {
+   "id": "g0_decide",
+   "kind": "cmd",
+   "est_h": 0,
+   "requires": [
+    "g0_moe",
+    "g0_nestor"
+   ],
+   "argv": [
+    "{python}",
+    "g0_probe.py",
+    "decide",
+    "--summary",
+    "g0/moe/g0_summary.json",
+    "--summary",
+    "g0/nestor/g0_summary.json",
+    "--out",
+    "g0/g0_decision.json"
+   ]
+  },
+  {
+   "id": "G0",
+   "kind": "gate",
+   "gate": "g0",
+   "requires": [
+    "g0_decide"
+   ],
+   "params": {
+    "decision": "g0/g0_decision.json"
+   }
+  },
+  {
+   "id": "xp_local",
+   "kind": "eval",
+   "est_h": 0.03,
+   "args": [
+    "nestor_100m",
+    "{base_nestor}",
+    "--set",
+    "dclm=data/dclm/dclm_val.bin:1048576",
+    "--out",
+    "g0/xp/local"
+   ]
+  },
+  {
+   "id": "xp_check",
+   "kind": "cmd",
+   "est_h": 0,
+   "requires": [
+    "xp_local"
+   ],
+   "argv": [
+    "{python}",
+    "g0_probe.py",
+    "xplatform",
+    "--a",
+    "g0/xp/local/ckpt__dclm.npz",
+    "--b",
+    "g0/xp/h100/ckpt__dclm.npz",
+    "--out",
+    "g0/xplatform.json"
+   ]
+  },
+  {
+   "id": "G0_nestor_platform",
+   "kind": "gate",
+   "gate": "json",
+   "requires": [
+    "xp_check"
+   ],
+   "params": {
+    "file": "g0/xplatform.json",
+    "key": "pass",
+    "equals": true
+   }
+  },
+  {
+   "id": "base_eval_moe",
+   "kind": "eval",
+   "est_h": 0.25,
+   "requires": [
+    "prep_code",
+    "prep_math",
+    "prep_german_eval"
+   ],
+   "args": [
+    "moe_100m",
+    "{base_moe}",
+    "--set",
+    "dclm=data/dclm/dclm_val.bin:2097152",
+    "--set",
+    "code=data/streams/code_eval.bin:2097152",
+    "--set",
+    "math=data/streams/math_eval.bin:2097152",
+    "--set",
+    "german=data/streams/german_eval.bin:2097152",
+    "--out",
+    "results/p3/eval_base_moe",
+    "--routing",
+    "--bytes"
+   ]
+  },
+  {
+   "id": "g1_full_moe",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 96,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/g1_full_moe_german",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "g1_full_moe_german",
+    "DCLM_SEED": "101"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.6,
+   "evals": [
+    {
+     "name": "main",
+     "sets": [
+      "dclm=data/dclm/dclm_val.bin:2097152",
+      "code=data/streams/code_eval.bin:2097152",
+      "math=data/streams/math_eval.bin:2097152",
+      "german=data/streams/german_eval.bin:2097152"
+     ],
+     "variants": "ckpt,pinned,randdir:0,wdonly",
+     "base": "{base_moe}",
+     "routing": true,
+     "bytes": true
+    }
+   ],
+   "requires": [
+    "G0",
+    "base_eval_moe"
+   ]
+  },
+  {
+   "id": "g1_sub_moe",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 96,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/g1_sub_moe_german_d0A",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "g1_sub_moe_german_d0A",
+    "DCLM_SEED": "101"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.45,
+   "spec_file": "g0/moe/contrast__C1_german.json#draws.0.spec_A",
+   "evals": [
+    {
+     "name": "main",
+     "sets": [
+      "dclm=data/dclm/dclm_val.bin:2097152",
+      "code=data/streams/code_eval.bin:2097152",
+      "math=data/streams/math_eval.bin:2097152",
+      "german=data/streams/german_eval.bin:2097152"
+     ],
+     "variants": "ckpt,pinned,randdir:0,wdonly",
+     "base": "{base_moe}",
+     "routing": true,
+     "bytes": true
+    }
+   ],
+   "requires": [
+    "G0",
+    "base_eval_moe"
+   ]
+  },
+  {
+   "id": "G1",
+   "kind": "gate",
+   "gate": "signal",
+   "requires": [
+    "g1_full_moe",
+    "g1_sub_moe"
+   ],
+   "params": {
+    "min_full": 0.01,
+    "min_subset": 0.005,
+    "min_z": 10,
+    "full": [
+     {
+      "before": "results/p3/eval_base_moe/ckpt__dclm.npz",
+      "after": "{root_g1_full_moe}/eval_main/ckpt__dclm.npz"
+     }
+    ],
+    "subset": [
+     {
+      "before": "results/p3/eval_base_moe/ckpt__code.npz",
+      "after": "{root_g1_sub_moe}/eval_main/ckpt__code.npz"
+     },
+     {
+      "before": "results/p3/eval_base_moe/ckpt__math.npz",
+      "after": "{root_g1_sub_moe}/eval_main/ckpt__math.npz"
+     }
+    ]
+   }
+  },
+  {
+   "id": "negctrl_moe",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 8,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/negctrl_moe",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "negctrl_moe"
+   },
+   "est_h": 0.06,
+   "spec_file": "g0/moe/contrast__C1_german.json#draws.0.spec_A",
+   "requires": [
+    "G0"
+   ],
+   "negative_control": "unmasked_decay"
+  },
+  {
+   "id": "G_negctrl",
+   "kind": "gate",
+   "gate": "negctrl",
+   "requires": [
+    "negctrl_moe"
+   ],
+   "params": {
+    "job": "negctrl_moe"
+   }
+  },
+  {
+   "id": "G_audit_g1",
+   "kind": "gate",
+   "gate": "audit",
+   "requires": [
+    "g1_sub_moe"
+   ],
+   "params": {
+    "jobs": [
+     "g1_sub_moe"
+    ]
+   }
+  },
+  {
+   "id": "aa0a",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 96,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/aa_moe_d0A_p0a",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "aa_moe_d0A_p0a",
+    "DCLM_SEED": "201"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.45,
+   "spec_file": "g0/moe/contrast__C1_german.json#draws.0.spec_A",
+   "evals": [
+    {
+     "name": "main",
+     "sets": [
+      "dclm=data/dclm/dclm_val.bin:2097152",
+      "code=data/streams/code_eval.bin:2097152",
+      "math=data/streams/math_eval.bin:2097152",
+      "german=data/streams/german_eval.bin:2097152"
+     ],
+     "variants": "ckpt,pinned",
+     "base": "{base_moe}",
+     "routing": true,
+     "bytes": true
+    }
+   ],
+   "requires": [
+    "G1",
+    "G_negctrl"
+   ]
+  },
+  {
+   "id": "aa0b",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 96,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/aa_moe_d0A_p0b",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "aa_moe_d0A_p0b",
+    "DCLM_SEED": "202"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.45,
+   "spec_file": "g0/moe/contrast__C1_german.json#draws.0.spec_A",
+   "evals": [
+    {
+     "name": "main",
+     "sets": [
+      "dclm=data/dclm/dclm_val.bin:2097152",
+      "code=data/streams/code_eval.bin:2097152",
+      "math=data/streams/math_eval.bin:2097152",
+      "german=data/streams/german_eval.bin:2097152"
+     ],
+     "variants": "ckpt,pinned",
+     "base": "{base_moe}",
+     "routing": true,
+     "bytes": true
+    }
+   ],
+   "requires": [
+    "G1",
+    "G_negctrl"
+   ]
+  },
+  {
+   "id": "aa1a",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 96,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/aa_moe_d0A_p1a",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "aa_moe_d0A_p1a",
+    "DCLM_SEED": "203"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.45,
+   "spec_file": "g0/moe/contrast__C1_german.json#draws.0.spec_A",
+   "evals": [
+    {
+     "name": "main",
+     "sets": [
+      "dclm=data/dclm/dclm_val.bin:2097152",
+      "code=data/streams/code_eval.bin:2097152",
+      "math=data/streams/math_eval.bin:2097152",
+      "german=data/streams/german_eval.bin:2097152"
+     ],
+     "variants": "ckpt,pinned",
+     "base": "{base_moe}",
+     "routing": true,
+     "bytes": true
+    }
+   ],
+   "requires": [
+    "G1",
+    "G_negctrl"
+   ]
+  },
+  {
+   "id": "aa1b",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 96,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/aa_moe_d0A_p1b",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "aa_moe_d0A_p1b",
+    "DCLM_SEED": "204"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.45,
+   "spec_file": "g0/moe/contrast__C1_german.json#draws.0.spec_A",
+   "evals": [
+    {
+     "name": "main",
+     "sets": [
+      "dclm=data/dclm/dclm_val.bin:2097152",
+      "code=data/streams/code_eval.bin:2097152",
+      "math=data/streams/math_eval.bin:2097152",
+      "german=data/streams/german_eval.bin:2097152"
+     ],
+     "variants": "ckpt,pinned",
+     "base": "{base_moe}",
+     "routing": true,
+     "bytes": true
+    }
+   ],
+   "requires": [
+    "G1",
+    "G_negctrl"
+   ]
+  },
+  {
+   "id": "aa2a",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 96,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/aa_moe_d0A_p2a",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "aa_moe_d0A_p2a",
+    "DCLM_SEED": "205"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.45,
+   "spec_file": "g0/moe/contrast__C1_german.json#draws.0.spec_A",
+   "evals": [
+    {
+     "name": "main",
+     "sets": [
+      "dclm=data/dclm/dclm_val.bin:2097152",
+      "code=data/streams/code_eval.bin:2097152",
+      "math=data/streams/math_eval.bin:2097152",
+      "german=data/streams/german_eval.bin:2097152"
+     ],
+     "variants": "ckpt,pinned",
+     "base": "{base_moe}",
+     "routing": true,
+     "bytes": true
+    }
+   ],
+   "requires": [
+    "G1",
+    "G_negctrl"
+   ]
+  },
+  {
+   "id": "aa2b",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 96,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/aa_moe_d0A_p2b",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "aa_moe_d0A_p2b",
+    "DCLM_SEED": "206"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.45,
+   "spec_file": "g0/moe/contrast__C1_german.json#draws.0.spec_A",
+   "evals": [
+    {
+     "name": "main",
+     "sets": [
+      "dclm=data/dclm/dclm_val.bin:2097152",
+      "code=data/streams/code_eval.bin:2097152",
+      "math=data/streams/math_eval.bin:2097152",
+      "german=data/streams/german_eval.bin:2097152"
+     ],
+     "variants": "ckpt,pinned",
+     "base": "{base_moe}",
+     "routing": true,
+     "bytes": true
+    }
+   ],
+   "requires": [
+    "G1",
+    "G_negctrl"
+   ]
+  },
+  {
+   "id": "sgd_grid",
+   "kind": "cmd",
+   "est_h": 0,
+   "requires": [
+    "G0"
+   ],
+   "argv": [
+    "{python}",
+    "adapt_extras.py",
+    "sgd-lr",
+    "--probe",
+    "g0/moe/probe__german.json",
+    "--subset",
+    "C2_german_d0_A",
+    "--out",
+    "g2/sgd_grid_moe.json"
+   ]
+  },
+  {
+   "id": "c2_muon_ref",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 48,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/c2_muon_d0A",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "c2_muon_d0A",
+    "NESTOR_MAX_GRAD_NORM": "none"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.25,
+   "spec_file": "g0/moe/contrast__C2_german.json#draws.0.spec_A",
+   "requires": [
+    "G1"
+   ]
+  },
+  {
+   "id": "sgd_0",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 48,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/c2_sgd_d0A_lr0",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "c2_sgd_d0A_lr0",
+    "NESTOR_MAX_GRAD_NORM": "none",
+    "NESTOR_SUBSET_OPTIMIZER": "sgd",
+    "NESTOR_SGD_LR": "{sgd_lr0}",
+    "NESTOR_SGD_WD": "0"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.25,
+   "spec_file": "g0/moe/contrast__C2_german.json#draws.0.spec_A",
+   "requires": [
+    "G1",
+    "sgd_grid"
+   ]
+  },
+  {
+   "id": "sgd_1",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 48,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/c2_sgd_d0A_lr1",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "c2_sgd_d0A_lr1",
+    "NESTOR_MAX_GRAD_NORM": "none",
+    "NESTOR_SUBSET_OPTIMIZER": "sgd",
+    "NESTOR_SGD_LR": "{sgd_lr1}",
+    "NESTOR_SGD_WD": "0"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.25,
+   "spec_file": "g0/moe/contrast__C2_german.json#draws.0.spec_A",
+   "requires": [
+    "G1",
+    "sgd_grid"
+   ]
+  },
+  {
+   "id": "sgd_2",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 48,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/c2_sgd_d0A_lr2",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "c2_sgd_d0A_lr2",
+    "NESTOR_MAX_GRAD_NORM": "none",
+    "NESTOR_SUBSET_OPTIMIZER": "sgd",
+    "NESTOR_SGD_LR": "{sgd_lr2}",
+    "NESTOR_SGD_WD": "0"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.25,
+   "spec_file": "g0/moe/contrast__C2_german.json#draws.0.spec_A",
+   "requires": [
+    "G1",
+    "sgd_grid"
+   ]
+  },
+  {
+   "id": "sgd_select",
+   "kind": "cmd",
+   "est_h": 0,
+   "requires": [
+    "c2_muon_ref",
+    "sgd_0",
+    "sgd_1",
+    "sgd_2"
+   ],
+   "argv": [
+    "{python}",
+    "adapt_extras.py",
+    "sgd-select",
+    "--base",
+    "results/p3/eval_base_moe/ckpt__german.npz",
+    "--muon",
+    "{root_c2_muon_ref}/interim",
+    "--run",
+    "{sgd_lr0}={root_sgd_0}/interim",
+    "--run",
+    "{sgd_lr1}={root_sgd_1}/interim",
+    "--run",
+    "{sgd_lr2}={root_sgd_2}/interim",
+    "--set",
+    "german",
+    "--out",
+    "g2/sgd_select_moe.json"
+   ]
+  },
+  {
+   "id": "G2_sgd",
+   "kind": "gate",
+   "gate": "json",
+   "requires": [
+    "sgd_select"
+   ],
+   "params": {
+    "file": "g2/sgd_select_moe.json",
+    "key": "G2_pass",
+    "equals": true
+   }
+  },
+  {
+   "id": "prereg_freeze",
+   "kind": "cmd",
+   "est_h": 0,
+   "requires": [
+    "G0",
+    "G1",
+    "G_negctrl",
+    "aa0b",
+    "aa1b",
+    "aa2b"
+   ],
+   "argv": [
+    "{python}",
+    "-c",
+    "import hashlib; h = hashlib.sha256(open(r'prereg/preregistration_v1.0.md', 'rb').read()).hexdigest(); open(r'results/prereg_v1.0.sha256', 'w').write(h); print(h)"
+   ]
+  },
+  {
+   "id": "c1_moe_d0_A",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 96,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/c1_moe_german_d0A",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "c1_moe_german_d0A",
+    "DCLM_SEED": "101"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.45,
+   "spec_file": "g0/moe/contrast__C1_german.json#draws.0.spec_A",
+   "evals": [
+    {
+     "name": "main",
+     "sets": [
+      "dclm=data/dclm/dclm_val.bin:2097152",
+      "code=data/streams/code_eval.bin:2097152",
+      "math=data/streams/math_eval.bin:2097152",
+      "german=data/streams/german_eval.bin:2097152"
+     ],
+     "variants": "ckpt,pinned",
+     "base": "{base_moe}",
+     "routing": true,
+     "bytes": true
+    }
+   ],
+   "requires": [
+    "prereg_freeze"
+   ]
+  },
+  {
+   "id": "c1_moe_d0_B",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 96,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/c1_moe_german_d0B",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "c1_moe_german_d0B",
+    "DCLM_SEED": "101"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.45,
+   "spec_file": "g0/moe/contrast__C1_german.json#draws.0.spec_B",
+   "evals": [
+    {
+     "name": "main",
+     "sets": [
+      "dclm=data/dclm/dclm_val.bin:2097152",
+      "code=data/streams/code_eval.bin:2097152",
+      "math=data/streams/math_eval.bin:2097152",
+      "german=data/streams/german_eval.bin:2097152"
+     ],
+     "variants": "ckpt,pinned",
+     "base": "{base_moe}",
+     "routing": true,
+     "bytes": true
+    }
+   ],
+   "requires": [
+    "prereg_freeze"
+   ]
+  },
+  {
+   "id": "c1_moe_d1_A",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 96,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/c1_moe_german_d1A",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "c1_moe_german_d1A",
+    "DCLM_SEED": "101"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.45,
+   "spec_file": "g0/moe/contrast__C1_german.json#draws.1.spec_A",
+   "evals": [
+    {
+     "name": "main",
+     "sets": [
+      "dclm=data/dclm/dclm_val.bin:2097152",
+      "code=data/streams/code_eval.bin:2097152",
+      "math=data/streams/math_eval.bin:2097152",
+      "german=data/streams/german_eval.bin:2097152"
+     ],
+     "variants": "ckpt,pinned",
+     "base": "{base_moe}",
+     "routing": true,
+     "bytes": true
+    }
+   ],
+   "requires": [
+    "prereg_freeze"
+   ]
+  },
+  {
+   "id": "c1_moe_d1_B",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 96,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/c1_moe_german_d1B",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "c1_moe_german_d1B",
+    "DCLM_SEED": "101"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.45,
+   "spec_file": "g0/moe/contrast__C1_german.json#draws.1.spec_B",
+   "evals": [
+    {
+     "name": "main",
+     "sets": [
+      "dclm=data/dclm/dclm_val.bin:2097152",
+      "code=data/streams/code_eval.bin:2097152",
+      "math=data/streams/math_eval.bin:2097152",
+      "german=data/streams/german_eval.bin:2097152"
+     ],
+     "variants": "ckpt,pinned",
+     "base": "{base_moe}",
+     "routing": true,
+     "bytes": true
+    }
+   ],
+   "requires": [
+    "prereg_freeze"
+   ]
+  },
+  {
+   "id": "c1_moe_d2_A",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 96,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/c1_moe_german_d2A",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "c1_moe_german_d2A",
+    "DCLM_SEED": "101"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.45,
+   "spec_file": "g0/moe/contrast__C1_german.json#draws.2.spec_A",
+   "evals": [
+    {
+     "name": "main",
+     "sets": [
+      "dclm=data/dclm/dclm_val.bin:2097152",
+      "code=data/streams/code_eval.bin:2097152",
+      "math=data/streams/math_eval.bin:2097152",
+      "german=data/streams/german_eval.bin:2097152"
+     ],
+     "variants": "ckpt,pinned",
+     "base": "{base_moe}",
+     "routing": true,
+     "bytes": true
+    }
+   ],
+   "requires": [
+    "prereg_freeze"
+   ]
+  },
+  {
+   "id": "c1_moe_d2_B",
+   "kind": "train",
+   "experiment": "moe_100m",
+   "steps": 96,
+   "warmup": 10,
+   "seq": 4096,
+   "tokens_per_step": 262144,
+   "micro": 2,
+   "ckpt": false,
+   "out_root": "outputs/p3/c1_moe_german_d2B",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{base_moe}",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "NESTOR_FREEZE_ROUTERS": "1",
+    "DCLM_RUN_SUFFIX": "c1_moe_german_d2B",
+    "DCLM_SEED": "101"
+   },
+   "interim": {
+    "steps": [
+     8,
+     24,
+     48
+    ],
+    "block": 4096,
+    "routing": false,
+    "sets": [
+     {
+      "name": "dclm",
+      "path": "data/dclm/dclm_val.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "german",
+      "path": "data/streams/german_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "code",
+      "path": "data/streams/code_eval.bin",
+      "tokens": 262144
+     },
+     {
+      "name": "math",
+      "path": "data/streams/math_eval.bin",
+      "tokens": 262144
+     }
+    ]
+   },
+   "est_h": 0.45,
+   "spec_file": "g0/moe/contrast__C1_german.json#draws.2.spec_B",
+   "evals": [
+    {
+     "name": "main",
+     "sets": [
+      "dclm=data/dclm/dclm_val.bin:2097152",
+      "code=data/streams/code_eval.bin:2097152",
+      "math=data/streams/math_eval.bin:2097152",
+      "german=data/streams/german_eval.bin:2097152"
+     ],
+     "variants": "ckpt,pinned",
+     "base": "{base_moe}",
+     "routing": true,
+     "bytes": true
+    }
+   ],
+   "requires": [
+    "prereg_freeze"
+   ]
+  },
+  {
+   "id": "c1_moe_stat",
+   "kind": "cmd",
+   "est_h": 0,
+   "requires": [
+    "c1_moe_d0_A",
+    "c1_moe_d0_B",
+    "c1_moe_d1_A",
+    "c1_moe_d1_B",
+    "c1_moe_d2_A",
+    "c1_moe_d2_B"
+   ],
+   "argv": [
+    "{python}",
+    "crossover.py",
+    "interaction",
+    "--base",
+    "results/p3/eval_base_moe",
+    "--pair",
+    "d0={root_c1_moe_d0_A}/eval_main,{root_c1_moe_d0_B}/eval_main",
+    "--pair",
+    "d1={root_c1_moe_d1_A}/eval_main,{root_c1_moe_d1_B}/eval_main",
+    "--pair",
+    "d2={root_c1_moe_d2_A}/eval_main,{root_c1_moe_d2_B}/eval_main",
+    "--out",
+    "results/p3/c1_moe_baseA.json"
+   ]
+  }
+ ]
+}

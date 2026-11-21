@@ -1,0 +1,214 @@
+{
+  "queried": "2026-11-14T00:08:18",
+  "crossref": {
+    "zhu2023pockengine": {
+      "DOI": "10.1145/3613424.3614307",
+      "title": [
+        "PockEngine: Sparse and Efficient Fine-tuning in a Pocket"
+      ],
+      "container-title": [
+        "56th Annual IEEE/ACM International Symposium on Microarchitecture"
+      ],
+      "publisher": "ACM",
+      "volume": null,
+      "issue": null,
+      "page": "1381-1394",
+      "type": "proceedings-article",
+      "authors": [
+        "Zhu, Ligeng",
+        "Hu, Lanxiang",
+        "Lin, Ji",
+        "Chen, Wei-Ming",
+        "Wang, Wei-Chen",
+        "Gan, Chuang",
+        "Han, Song"
+      ],
+      "year": 2023
+    },
+    "pellegrini2020latent": {
+      "DOI": "10.1109/iros45743.2020.9341460",
+      "title": [
+        "Latent Replay for Real-Time Continual Learning"
+      ],
+      "container-title": [
+        "2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+      ],
+      "publisher": "IEEE",
+      "volume": null,
+      "issue": null,
+      "page": "10203-10209",
+      "type": "proceedings-article",
+      "authors": [
+        "Pellegrini, Lorenzo",
+        "Graffieti, Gabriele",
+        "Lomonaco, Vincenzo",
+        "Maltoni, Davide"
+      ],
+      "year": 2020
+    },
+    "ravaglia2021tinyml": {
+      "DOI": "10.1109/jetcas.2021.3121554",
+      "title": [
+        "A TinyML Platform for On-Device Continual Learning With Quantized Latent Replays"
+      ],
+      "container-title": [
+        "IEEE Journal on Emerging and Selected Topics in Circuits and Systems"
+      ],
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "volume": "11",
+      "issue": "4",
+      "page": "789-802",
+      "type": "journal-article",
+      "authors": [
+        "Ravaglia, Leonardo",
+        "Rusci, Manuele",
+        "Nadalini, Davide",
+        "Capotondi, Alessandro",
+        "Conti, Francesco",
+        "Benini, Luca"
+      ],
+      "year": 2021
+    },
+    "edgemoe": [
+      {
+        "DOI": "10.1109/tmc.2025.3546466",
+        "title": [
+          "EdgeMoE: Empowering Sparse Large Language Models on Mobile Devices"
+        ],
+        "container": [
+          "IEEE Transactions on Mobile Computing"
+        ],
+        "type": "journal-article",
+        "year": 2025,
+        "authors": [
+          "Yi, Rongjie",
+          "Guo, Liwei",
+          "Wei, Shiyun",
+          "Zhou, Ao",
+          "Wang, Shangguang",
+          "Xu, Mengwei"
+        ]
+      },
+      {
+        "DOI": "10.1109/tmc.2025.3546466/mm1",
+        "title": [
+          ": Empowering Sparse Large Language Models on Mobile Devices_supp1-3546466.pdf"
+        ],
+        "container": null,
+        "type": "component",
+        "year": null,
+        "authors": [
+          "Yi, Rongjie"
+        ]
+      },
+      {
+        "DOI": "10.1145/3662006.3662059",
+        "title": [
+          "Large Language Models on Mobile Devices: Measurements, Analysis, and Insights"
+        ],
+        "container": [
+          "Proceedings of the Workshop on Edge and Mobile Foundation Models"
+        ],
+        "type": "proceedings-article",
+        "year": 2024,
+        "authors": [
+          "Li, Xiang",
+          "Lu, Zhenyan",
+          "Cai, Dongqi",
+          "Ma, Xiao",
+          "Xu, Mengwei"
+        ]
+      }
+    ],
+    "edgemoe_fast": {
+      "error": "HTTPError HTTP Error 429: Too Many Requests"
+    }
+  },
+  "arxiv": {
+    "2308.14352": {
+      "id": "2308.14352v2",
+      "title": "EdgeMoE: Empowering Sparse Large Language Models on Mobile Devices",
+      "authors": [
+        "Rongjie Yi",
+        "Liwei Guo",
+        "Shiyun Wei",
+        "Ao Zhou",
+        "Shangguang Wang",
+        "Mengwei Xu"
+      ],
+      "published": "2023-08-28",
+      "journal_ref": null,
+      "doi": null
+    },
+    "2312.17238": {
+      "id": "2312.17238v1",
+      "title": "Fast Inference of Mixture-of-Experts Language Models with Offloading",
+      "authors": [
+        "Artyom Eliseev",
+        "Denis Mazur"
+      ],
+      "published": "2023-12-28",
+      "journal_ref": null,
+      "doi": null
+    },
+    "2206.15472": {
+      "id": "2206.15472v4",
+      "title": "On-Device Training Under 256KB Memory",
+      "authors": [
+        "Ji Lin",
+        "Ligeng Zhu",
+        "Wei-Ming Chen",
+        "Wei-Chen Wang",
+        "Chuang Gan",
+        "Song Han"
+      ],
+      "published": "2022-06-30",
+      "journal_ref": null,
+      "doi": null
+    },
+    "2007.11622": {
+      "id": "2007.11622v5",
+      "title": "TinyTL: Reduce Activations, Not Trainable Parameters for Efficient On-Device Learning",
+      "authors": [
+        "Han Cai",
+        "Chuang Gan",
+        "Ligeng Zhu",
+        "Song Han"
+      ],
+      "published": "2020-07-22",
+      "journal_ref": null,
+      "doi": null
+    }
+  },
+  "abstracts_arxiv": {
+    "1912.01100": {
+      "title": "Latent Replay for Real-Time Continual Learning",
+      "summary": "Training deep neural networks at the edge on light computational devices, embedded systems and robotic platforms is nowadays very challenging. Continual learning techniques, where complex models are incrementally trained on small batches of new data, can make the learning problem tractable even for CPU-only embedded devices enabling remarkable levels of adaptiveness and autonomy. However, a number of practical problems need to be solved: catastrophic forgetting before anything else. In this paper we introduce an original technique named \"Latent Replay\" where, instead of storing a portion of past data in the input space, we store activations volumes at some intermediate layer. This can significantly reduce the computation and storage required by native rehearsal. To keep the representation stable and the stored activations valid we propose to slow-down learning at all the layers below the latent replay one, leaving the layers above free to learn at full pace. In our experiments we show that Latent Replay, combined with existing continual learning techniques, achieves state-of-the-art performance on complex video benchmarks such as CORe50 NICv2 (with nearly 400 small and highly non-i.i.d. batches) and OpenLORIS. Finally, we demonstrate the feasibility of nearly real-time continual learning on the edge through the deployment of the proposed technique on a smartphone device."
+    },
+    "2308.14352": {
+      "title": "EdgeMoE: Empowering Sparse Large Language Models on Mobile Devices",
+      "summary": "Large language models (LLMs) such as GPTs and Mixtral-8x7B have revolutionized machine intelligence due to their exceptional abilities in generic ML tasks. Transiting LLMs from datacenters to edge devices brings benefits like better privacy and availability, but is challenged by their massive parameter size and thus unbearable runtime costs. To this end, we present EdgeMoE, an on-device inference engine for mixture-of-expert (MoE) LLMs -- a popular form of sparse LLM that scales its parameter size with almost constant computing complexity. EdgeMoE achieves both memory- and compute-efficiency by partitioning the model into the storage hierarchy: non-expert weights are held in device memory; while expert weights are held on external storage and fetched to memory only when activated. This design is motivated by a key observation that expert weights are bulky but infrequently used due to sparse activation. To further reduce the expert I/O swapping overhead, EdgeMoE incorporates two novel techniques: (1) expert-wise bitwidth adaptation that reduces the expert sizes with tolerable accuracy loss; (2) expert preloading that predicts the activated experts ahead of time and preloads it with the compute-I/O pipeline. On popular MoE LLMs and edge devices, EdgeMoE showcase significant memory savings and speedup over competitive baselines. The code is available at https://github.com/UbiquitousLearning/mllm."
+    },
+    "2312.17238": {
+      "title": "Fast Inference of Mixture-of-Experts Language Models with Offloading",
+      "summary": "With the widespread adoption of Large Language Models (LLMs), many deep learning practitioners are looking for strategies of running these models more efficiently. One such strategy is to use sparse Mixture-of-Experts (MoE) - a type of model architectures where only a fraction of model layers are active for any given input. This property allows MoE-based language models to generate tokens faster than their dense counterparts, but it also increases model size due to having multiple experts. Unfortunately, this makes state-of-the-art MoE language models difficult to run without high-end GPUs. In this work, we study the problem of running large MoE language models on consumer hardware with limited accelerator memory. We build upon parameter offloading algorithms and propose a novel strategy that accelerates offloading by taking advantage of innate properties of MoE LLMs. Using this strategy, we build can run Mixtral-8x7B with mixed quantization on desktop hardware and free-tier Google Colab instances."
+    },
+    "2206.15472": {
+      "title": "On-Device Training Under 256KB Memory",
+      "summary": "On-device training enables the model to adapt to new data collected from the sensors by fine-tuning a pre-trained model. Users can benefit from customized AI models without having to transfer the data to the cloud, protecting the privacy. However, the training memory consumption is prohibitive for IoT devices that have tiny memory resources. We propose an algorithm-system co-design framework to make on-device training possible with only 256KB of memory. On-device training faces two unique challenges: (1) the quantized graphs of neural networks are hard to optimize due to low bit-precision and the lack of normalization; (2) the limited hardware resource does not allow full back-propagation. To cope with the optimization difficulty, we propose Quantization-Aware Scaling to calibrate the gradient scales and stabilize 8-bit quantized training. To reduce the memory footprint, we propose Sparse Update to skip the gradient computation of less important layers and sub-tensors. The algorithm innovation is implemented by a lightweight training system, Tiny Training Engine, which prunes the backward computation graph to support sparse updates and offload the runtime auto-differentiation to compile time. Our framework is the first solution to enable tiny on-device training of convolutional neural networks under 256KB SRAM and 1MB Flash without auxiliary memory, using less than 1/1000 of the memory of PyTorch and TensorFlow while matching the accuracy on tinyML application VWW. Our study enables IoT devices not only to perform inference but also to continuously adapt to new data for on-device lifelong learning. A video demo can be found here: https://youtu.be/0pUFZYdoMY8."
+    },
+    "2007.11622": {
+      "title": "TinyTL: Reduce Activations, Not Trainable Parameters for Efficient On-Device Learning",
+      "summary": "On-device learning enables edge devices to continually adapt the AI models to new data, which requires a small memory footprint to fit the tight memory constraint of edge devices. Existing work solves this problem by reducing the number of trainable parameters. However, this doesn't directly translate to memory saving since the major bottleneck is the activations, not parameters. In this work, we present Tiny-Transfer-Learning (TinyTL) for memory-efficient on-device learning. TinyTL freezes the weights while only learns the bias modules, thus no need to store the intermediate activations. To maintain the adaptation capacity, we introduce a new memory-efficient bias module, the lite residual module, to refine the feature extractor by learning small residual feature maps adding only 3.8% memory overhead. Extensive experiments show that TinyTL significantly saves the memory (up to 6.5x) with little accuracy loss compared to fine-tuning the full network. Compared to fine-tuning the last layer, TinyTL provides significant accuracy improvements (up to 34.1%) with little memory overhead. Furthermore, combined with feature extractor adaptation, TinyTL provides 7.3-12.9x memory saving without sacrificing accuracy compared to fine-tuning the full Inception-V3."
+    },
+    "2310.17752": {
+      "title": "PockEngine: Sparse and Efficient Fine-tuning in a Pocket",
+      "summary": "On-device learning and efficient fine-tuning enable continuous and privacy-preserving customization (e.g., locally fine-tuning large language models on personalized data). However, existing training frameworks are designed for cloud servers with powerful accelerators (e.g., GPUs, TPUs) and lack the optimizations for learning on the edge, which faces challenges of resource limitations and edge hardware diversity. We introduce PockEngine: a tiny, sparse and efficient engine to enable fine-tuning on various edge devices. PockEngine supports sparse backpropagation: it prunes the backward graph and sparsely updates the model with measured memory saving and latency reduction while maintaining the model quality. Secondly, PockEngine is compilation first: the entire training graph (including forward, backward and optimization steps) is derived at compile-time, which reduces the runtime overhead and brings opportunities for graph transformations. PockEngine also integrates a rich set of training graph optimizations, thus can further accelerate the training cost, including operator reordering and backend switching. PockEngine supports diverse applications, frontends and hardware backends: it flexibly compiles and tunes models defined in PyTorch/TensorFlow/Jax and deploys binaries to mobile CPU/GPU/DSPs. We evaluated PockEngine on both vision models and large language models. PockEngine achieves up to 15 $\\times$ speedup over off-the-shelf TensorFlow (Raspberry Pi), 5.6 $\\times$ memory saving back-propagation (Jetson AGX Orin). Remarkably, PockEngine enables fine-tuning LLaMav2-7B on NVIDIA Jetson AGX Orin at 550 tokens/s, 7.9$\\times$ faster than the PyTorch."
+    },
+    "2110.10486": {
+      "title": "A TinyML Platform for On-Device Continual Learning with Quantized Latent Replays",
+      "summary": "In the last few years, research and development on Deep Learning models and techniques for ultra-low-power devices in a word, TinyML has mainly focused on a train-then-deploy assumption, with static models that cannot be adapted to newly collected data without cloud-based data collection and fine-tuning. Latent Replay-based Continual Learning (CL) techniques[1] enable online, serverless adaptation in principle, but so farthey have still been too computation and memory-hungry for ultra-low-power TinyML devices, which are typically based on microcontrollers. In this work, we introduce a HW/SW platform for end-to-end CL based on a 10-core FP32-enabled parallel ultra-low-power (PULP) processor. We rethink the baseline Latent Replay CL algorithm, leveraging quantization of the frozen stage of the model and Latent Replays (LRs) to reduce their memory cost with minimal impact on accuracy. In particular, 8-bit compression of the LR memory proves to be almost lossless (-0.26% with 3000LR) compared to the full-precision baseline implementation, but requires 4x less memory, while 7-bit can also be used with an additional minimal accuracy degradation (up to 5%). We also introduce optimized primitives for forward and backward propagation on the PULP processor. Our results show that by combining these techniques, continual learning can be achieved in practice using less than 64MB of memory an amount compatible with embedding in TinyML devices. On an advanced 22nm prototype of our platform, called VEGA, the proposed solution performs onaverage 65x faster than a low-power STM32 L4 microcontroller, being 37x more energy efficient enough for a lifetime of 535h when learning a new mini-batch of data once every minute."
+    }
+  },
+  "abstracts_note": "Abstracts retrieved from the arXiv API (export.arxiv.org) on 2026-11-14 to check the one-clause descriptions in the related-work paragraph; PockEngine = arXiv 2310.17752, Latent Replay = arXiv 1912.01100, Ravaglia et al. = arXiv 2110.10486 (titles match the CrossRef records)."
+}

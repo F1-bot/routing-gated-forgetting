@@ -1,0 +1,57 @@
+{
+ "meta": {
+  "experiment": "moe_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c1de_moe_b2_d2_A\\m2\\moe_100m_c1de_moe_b2_d2_A\\20261120_021901__moe_100m_c1de_moe_b2_d2_A_train\\checkpoints\\model_final.pt",
+   "size": 2555317241,
+   "head_sha256": "a46b9bfeeb19a106d1aac3a9f6c5472957ccece11b65c6500756ad03acd1ba4c"
+  },
+  "base": {
+   "path": "outputs\\moe_100m_b05s43\\20261101_001918__moe_100m_b05s43_train_h100\\checkpoints\\model_final.pt",
+   "size": 1493623488,
+   "head_sha256": "b7c887351fc40518db2ad8d5af8bef3620f8dc729dadcc1d183d1d57308f804b"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-20T03:06:33"
+ },
+ "results": {
+  "randdir:9618|code": {
+   "ce": 6.213568851591117,
+   "windows": 500,
+   "seconds": 98.7,
+   "file": "outputs\\confirm\\c1de_moe_b2_d2_A\\m2\\eval_rand\\randdir-9618__code.npz"
+  },
+  "randdir:9618|math": {
+   "ce": 4.837473114602411,
+   "windows": 500,
+   "seconds": 88.8,
+   "file": "outputs\\confirm\\c1de_moe_b2_d2_A\\m2\\eval_rand\\randdir-9618__math.npz"
+  },
+  "randdir:9618|dclm": {
+   "ce": 4.632869574652778,
+   "windows": 500,
+   "seconds": 89.0,
+   "file": "outputs\\confirm\\c1de_moe_b2_d2_A\\m2\\eval_rand\\randdir-9618__dclm.npz"
+  },
+  "randdir-:9618|code": {
+   "ce": 6.213656607715201,
+   "windows": 500,
+   "seconds": 90.4,
+   "file": "outputs\\confirm\\c1de_moe_b2_d2_A\\m2\\eval_rand\\randdir--9618__code.npz"
+  },
+  "randdir-:9618|math": {
+   "ce": 4.8370726777129125,
+   "windows": 500,
+   "seconds": 91.2,
+   "file": "outputs\\confirm\\c1de_moe_b2_d2_A\\m2\\eval_rand\\randdir--9618__math.npz"
+  },
+  "randdir-:9618|dclm": {
+   "ce": 4.6323353341536935,
+   "windows": 500,
+   "seconds": 92.9,
+   "file": "outputs\\confirm\\c1de_moe_b2_d2_A\\m2\\eval_rand\\randdir--9618__dclm.npz"
+  }
+ }
+}

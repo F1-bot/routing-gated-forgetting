@@ -1,0 +1,1 @@
+{"ckpt": "outputs\\dense_100m_b05\\20261031_203621__dense_100m_b05_train\\checkpoints\\model_final.pt", "sets": ["pg19", "owm", "algstack", "fw2de"], "seconds": 275.231586933136}

@@ -1,0 +1,57 @@
+{
+ "meta": {
+  "experiment": "nestor_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c3_full_nestor_books_s102\\m4c\\nestor_100m_c3_full_nestor_books_s102\\20261118_174828__nestor_100m_c3_full_nestor_books_s102_train\\checkpoints\\model_final.pt",
+   "size": 3400441546,
+   "head_sha256": "d228d305ad675a118fdb6b872b1f0168ceca28e0d03def714665cd3f550a5cfb"
+  },
+  "base": {
+   "path": "outputs\\nestor_100m_b05\\20261031_213045__nestor_100m_b05_train_h100\\checkpoints\\model_final.pt",
+   "size": 1510337922,
+   "head_sha256": "417fb7b51ff8feec3f4adef090a375a8614c4028d62555fd4a24d5b8305ea8da"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-18T18:53:41"
+ },
+ "results": {
+  "revert:shared+pub+embed_head|dclm": {
+   "ce": 4.798611821771978,
+   "windows": 500,
+   "seconds": 229.7,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s102\\m4c\\eval_revert\\revert-shared+pub+embed_head__dclm.npz"
+  },
+  "revert:attn+priv|dclm": {
+   "ce": 4.860778831845238,
+   "windows": 500,
+   "seconds": 229.2,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s102\\m4c\\eval_revert\\revert-attn+priv__dclm.npz"
+  },
+  "revert:attn|dclm": {
+   "ce": 4.895507234432235,
+   "windows": 500,
+   "seconds": 224.2,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s102\\m4c\\eval_revert\\revert-attn__dclm.npz"
+  },
+  "revert:priv|dclm": {
+   "ce": 4.889712020184676,
+   "windows": 500,
+   "seconds": 223.2,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s102\\m4c\\eval_revert\\revert-priv__dclm.npz"
+  },
+  "revert:pub|dclm": {
+   "ce": 4.810372637648809,
+   "windows": 500,
+   "seconds": 224.3,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s102\\m4c\\eval_revert\\revert-pub__dclm.npz"
+  },
+  "revert:embed_head|dclm": {
+   "ce": 4.932570950663919,
+   "windows": 500,
+   "seconds": 223.7,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s102\\m4c\\eval_revert\\revert-embed_head__dclm.npz"
+  }
+ }
+}

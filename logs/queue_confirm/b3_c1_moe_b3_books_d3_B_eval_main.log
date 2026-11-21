@@ -1,0 +1,29 @@
+# .venv/nestor/Scripts/python.exe eval_windows.py run moe_100m outputs\confirm\b3_c1_moe_b3_books_d3_B\m2\moe_100m_b3_c1_moe_b3_books_d3_B\20261118_070343__moe_100m_b3_c1_moe_b3_books_d3_B_train\checkpoints\model_final.pt --out outputs\confirm\b3_c1_moe_b3_books_d3_B\m2\eval_main --variants ckpt --set dclm=data/dclm/dclm_val.bin:2048000 --set books=data/domain/pg19_test.bin:2048000 --set code=data/domain/algstack_test.bin:2048000 --set math=data/domain/owm_test.bin:2048000 --span books=0.5,1,doc --span code=0.5,1 --span math=0.5,1 --block 4096 --select even
+# env overrides: {"DCLM_BLOCK_SIZE": "4096"}
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+.venv\nestor\Lib\site-packages\triton\knobs.py:524: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+[eval_windows] dclm: 100/500 windows, 14s
+[eval_windows] dclm: 200/500 windows, 27s
+[eval_windows] dclm: 300/500 windows, 40s
+[eval_windows] dclm: 400/500 windows, 53s
+[eval_windows] dclm: 500/500 windows, 66s
+RESULT {"variant": "ckpt", "set": "dclm", "ce": 3.8313124551663615, "windows": 500, "seconds": 66.0, "file": "outputs\\confirm\\b3_c1_moe_b3_books_d3_B\\m2\\eval_main\\ckpt__dclm.npz"}
+[eval_windows] books: 100/500 windows, 13s
+[eval_windows] books: 200/500 windows, 26s
+[eval_windows] books: 300/500 windows, 39s
+[eval_windows] books: 400/500 windows, 52s
+[eval_windows] books: 500/500 windows, 65s
+RESULT {"variant": "ckpt", "set": "books", "ce": 3.807025651995574, "windows": 500, "seconds": 65.1, "file": "outputs\\confirm\\b3_c1_moe_b3_books_d3_B\\m2\\eval_main\\ckpt__books.npz"}
+[eval_windows] code: 100/500 windows, 13s
+[eval_windows] code: 200/500 windows, 26s
+[eval_windows] code: 300/500 windows, 39s
+[eval_windows] code: 400/500 windows, 52s
+[eval_windows] code: 500/500 windows, 65s
+RESULT {"variant": "ckpt", "set": "code", "ce": 4.731263562175672, "windows": 500, "seconds": 65.1, "file": "outputs\\confirm\\b3_c1_moe_b3_books_d3_B\\m2\\eval_main\\ckpt__code.npz"}
+[eval_windows] math: 100/500 windows, 13s
+[eval_windows] math: 200/500 windows, 26s
+[eval_windows] math: 300/500 windows, 39s
+[eval_windows] math: 400/500 windows, 52s
+[eval_windows] math: 500/500 windows, 65s
+RESULT {"variant": "ckpt", "set": "math", "ce": 3.8120957286420176, "windows": 500, "seconds": 65.1, "file": "outputs\\confirm\\b3_c1_moe_b3_books_d3_B\\m2\\eval_main\\ckpt__math.npz"}

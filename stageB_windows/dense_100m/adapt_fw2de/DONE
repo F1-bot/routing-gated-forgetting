@@ -1,0 +1,1 @@
+{"ckpt": "outputs\\continual\\dense_100m_adapt_fw2de_m4\\dense_100m_adapt_fw2de\\20261113_215551__dense_100m_adapt_fw2de_train\\checkpoints\\model_final.pt", "sets": ["fw2de"], "seconds": 116.99771928787231}

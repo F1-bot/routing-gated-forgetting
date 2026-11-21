@@ -1,0 +1,98 @@
+{
+ "unit": 97,
+ "unit_sha256": "4b2789cad5e859ea2985c7b3504d5a52f768c84c7c18a6b5dfcec66640f09bf8",
+ "base": "moe_b2",
+ "mock": false,
+ "by_corpus": {
+  "code": {
+   "QE": 1.0020063859320893,
+   "QE_se": 0.04349390100277262,
+   "gamma": 0.047608975831003875,
+   "gamma_se": 0.014688667797170412,
+   "quad_u": 0.9580744179515932,
+   "RND": -0.03778001172349832,
+   "RND_se": 0.02647533270096191,
+   "RND_Q_kl": 0.0067490124360330105,
+   "SVC": 9234.161941279917,
+   "windows": 8
+  },
+  "dclm": {
+   "QE": 1.1963532388365063,
+   "QE_se": 0.112160933245745,
+   "gamma": 0.0447738362015393,
+   "gamma_se": 0.012061869792796985,
+   "quad_u": 1.2101704398048696,
+   "RND": -0.009766281152678857,
+   "RND_se": 0.06164248633802589,
+   "RND_Q_kl": 0.0049521498754919666,
+   "SVC": 17662.229904460342,
+   "windows": 8
+  },
+  "math": {
+   "QE": 1.244311594784505,
+   "QE_se": 0.22965533934053742,
+   "gamma": 0.030516510795219887,
+   "gamma_se": 0.009742521031506775,
+   "quad_u": 1.317713605857307,
+   "RND": 0.03691251478699087,
+   "RND_se": 0.028730106697868574,
+   "RND_Q_kl": 0.004978290059905759,
+   "SVC": 16680.241581108225,
+   "windows": 8
+  }
+ },
+ "elements": {
+  "trainable": 66355200,
+  "full_trainable": 372756605
+ },
+ "udir_sq": 4220.172332042377,
+ "hdir_sq": 4220.172331849439,
+ "eps": 0.000625,
+ "eps_check": {
+  "eps": 0.000625,
+  "ok": true,
+  "pin_routing": true,
+  "trail": [
+   {
+    "eps": 0.0025,
+    "kl_eps": 0.011734926438447046,
+    "kl_2eps": 0.036656137640194916,
+    "ratio": 3.1236785192021914,
+    "flip_frac_eps": null
+   },
+   {
+    "eps": 0.00125,
+    "kl_eps": 0.0035690703414871187,
+    "kl_2eps": 0.011734926438447046,
+    "ratio": 3.2879504508609583,
+    "flip_frac_eps": null
+   },
+   {
+    "eps": 0.000625,
+    "kl_eps": 0.0010142666300232204,
+    "kl_2eps": 0.0035690703414871187,
+    "ratio": 3.518867954282799,
+    "flip_frac_eps": null
+   }
+  ]
+ },
+ "group": "data/domain/fw2de_train.bin|sgd|1.40496731",
+ "routing": "pinned (theta0 selections and gates)",
+ "lr_ref": 0.0025,
+ "windows_file": "probe_u097__windows.npz",
+ "svc_tokens": {
+  "dclm": 32768,
+  "code": 32768,
+  "math": 32768
+ },
+ "device": "cuda",
+ "checkpoint": "outputs/moe_100m_b05s43/20261101_001918__moe_100m_b05s43_train_h100/checkpoints/model_final.pt",
+ "code_sha256": {
+  "forecast_probe.py": "3e1cf5b78c382f9239b7e0e75dae3ceda4b81b415f7631cc679aca958d47a38e",
+  "g0_probe.py": "966403f8ce6cfb5e4a04bb9bf7c7a85a2cb37ea8577a627f498230af4a25f3fe",
+  "eval_windows.py": "0f909d1e23c2e1bd3ec3765778ddf927ad2e3ccc036a6c1eadce8e822f2ecb41",
+  "subset_adapt.py": "4b86df24add074b3fc3d04c318a837974403cb90e5d6b90cdbec97c2d9fe4e27",
+  "weight_controls.py": "473ff8c58542f7f398431181cf11afb14b0b8bf0f261591a88120f3fdc6b2835"
+ },
+ "seconds": 59.2
+}

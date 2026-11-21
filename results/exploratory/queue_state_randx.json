@@ -1,0 +1,198 @@
+{
+ "randx_c1_moe_b1_books_d7_A": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794950568.0763276,
+  "end": 1794950906.3652382,
+  "hours": 0.094
+ },
+ "randx_c1_moe_b1_books_d7_B": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794950906.3672264,
+  "end": 1794951250.7107246,
+  "hours": 0.0957
+ },
+ "randx_c1_moe_b1_books_d8_A": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794951250.7117262,
+  "end": 1794951587.8195658,
+  "hours": 0.0936
+ },
+ "randx_c1_moe_b1_books_d8_B": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794951587.8215714,
+  "end": 1794951917.3809123,
+  "hours": 0.0915
+ },
+ "randx_c1_moe_b1_books_d9_A": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794951917.3819118,
+  "end": 1794952244.1235924,
+  "hours": 0.0908
+ },
+ "randx_c1_moe_b1_books_d9_B": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794952244.1255383,
+  "end": 1794952574.6005895,
+  "hours": 0.0918
+ },
+ "randx_c1_moe_b1_books_d10_A": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794952574.6025887,
+  "end": 1794952907.2242362,
+  "hours": 0.0924
+ },
+ "randx_c1_moe_b1_books_d10_B": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794952907.2262375,
+  "end": 1794953249.042688,
+  "hours": 0.0949
+ },
+ "randx_c1_moe_b2_books_d1_A": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794953249.0438788,
+  "end": 1794953570.7743027,
+  "hours": 0.0894
+ },
+ "randx_c1_moe_b2_books_d1_B": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794953570.775301,
+  "end": 1794953889.2270443,
+  "hours": 0.0885
+ },
+ "randx_c1_moe_b2_books_d2_A": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794953889.228001,
+  "end": 1794954209.366225,
+  "hours": 0.0889
+ },
+ "randx_c1_moe_b2_books_d2_B": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794954209.3672247,
+  "end": 1794954527.486146,
+  "hours": 0.0884
+ },
+ "randx_c1_moe_b2_books_d3_A": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794954527.487147,
+  "end": 1794954847.2116234,
+  "hours": 0.0888
+ },
+ "randx_c1_moe_b2_books_d3_B": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794954847.2126222,
+  "end": 1794955170.243714,
+  "hours": 0.0897
+ },
+ "randx_c1_moe_b2_books_d4_A": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794955170.2447221,
+  "end": 1794955489.1964648,
+  "hours": 0.0886
+ },
+ "randx_c1_moe_b2_books_d4_B": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794955489.1974645,
+  "end": 1794955804.1483934,
+  "hours": 0.0875
+ },
+ "randx_c1_moe_b2_books_d5_A": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794955804.1494586,
+  "end": 1794956117.8488276,
+  "hours": 0.0871
+ },
+ "randx_c1_moe_b2_books_d5_B": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794956117.8508265,
+  "end": 1794956430.3792925,
+  "hours": 0.0868
+ },
+ "randx_c1_moe_b2_books_d6_A": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794956430.3802934,
+  "end": 1794956742.9716961,
+  "hours": 0.0868
+ },
+ "randx_c1_moe_b2_books_d6_B": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794956742.9726946,
+  "end": 1794957056.1520562,
+  "hours": 0.087
+ },
+ "randx_c1_moe_b2_books_d7_A": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794957056.1530569,
+  "end": 1794957369.9948697,
+  "hours": 0.0872
+ },
+ "randx_c1_moe_b2_books_d7_B": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794957369.9963846,
+  "end": 1794957692.7848232,
+  "hours": 0.0897
+ },
+ "randx_c1_moe_b2_books_d8_A": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794957692.7868223,
+  "end": 1794958024.7518501,
+  "hours": 0.0922
+ },
+ "randx_c1_moe_b2_books_d8_B": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794958024.7528493,
+  "end": 1794958353.6532247,
+  "hours": 0.0914
+ },
+ "randx_c1_moe_b2_books_d9_A": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794958353.6552243,
+  "end": 1794958677.7831378,
+  "hours": 0.09
+ },
+ "randx_c1_moe_b2_books_d9_B": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794958677.7851348,
+  "end": 1794959000.4127753,
+  "hours": 0.0896
+ },
+ "randx_c1_moe_b2_books_d10_A": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794959000.4147873,
+  "end": 1794959353.3701952,
+  "hours": 0.098
+ },
+ "randx_c1_moe_b2_books_d10_B": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794959353.3721955,
+  "end": 1794960622.209465,
+  "hours": 0.3525
+ }
+}

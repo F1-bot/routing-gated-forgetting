@@ -1,0 +1,43 @@
+{
+ "hours": {
+  "failed_attempt_d2_A": 1.1047,
+  "gpu_check_A1": 0.0104,
+  "killed_attempt_d10_B": 0.2371,
+  "gpu_check_A2": 0.0124,
+  "failed_start_audit": 0.0038,
+  "first_attempts_c3_freeze": 1.0488,
+  "interrupted_attempt_dose": 0.1472,
+  "interrupted_attempt_c1de_i5": 0.5894,
+  "interrupted_attempt_c1de_i6": 0.4059,
+  "interrupted_attempt_audit_i7": 0.2648
+ },
+ "labels": {
+  "failed_attempt_d2_A": "the failed first attempt of a C1 job",
+  "gpu_check_A1": "the GPU check of amendment A-1",
+  "killed_attempt_d10_B": "the attempt of a C1 job ended by a restart of the software that launches the jobs",
+  "gpu_check_A2": "the GPU check of amendment A-2",
+  "failed_start_audit": "the stopped starts of the assumption audit",
+  "first_attempts_c3_freeze": "the first attempts of the two C3 freeze runs",
+  "interrupted_attempt_dose": "the attempt of a dose-response job ended by a restart of the software that launches the jobs",
+  "interrupted_attempt_c1de_i5": "the attempt of a C1-DE job ended by a restart of the software that launches the jobs",
+  "interrupted_attempt_c1de_i6": "the attempt of a C1-DE job ended by a restart of the computer",
+  "interrupted_attempt_audit_i7": "the attempt of an assumption-audit job ended by a restart of the computer"
+ },
+ "records": {
+  "failed_attempt_d2_A": "D-1",
+  "gpu_check_A1": "D-1",
+  "killed_attempt_d10_B": "I-1",
+  "gpu_check_A2": "A-2",
+  "failed_start_audit": "D-2",
+  "first_attempts_c3_freeze": "D-3",
+  "interrupted_attempt_dose": "I-4",
+  "interrupted_attempt_c1de_i5": "I-5",
+  "interrupted_attempt_c1de_i6": "I-6",
+  "interrupted_attempt_audit_i7": "I-7"
+ },
+ "subtotals": {
+  "D-1": 1.1151,
+  "D-1+I-1": 1.3522
+ },
+ "total": 3.8245
+}

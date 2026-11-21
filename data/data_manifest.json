@@ -1,0 +1,1342 @@
+{
+ "created": "2026-11-13T06:00:13",
+ "root": ".",
+ "tokenizer": "cl100k_base (tiktoken)",
+ "interpreter": ".venv\\nestor\\Scripts\\python.exe",
+ "software": {
+  "python": "3.12.16",
+  "tiktoken": "0.14.0",
+  "zstandard": "0.25.0",
+  "pyarrow": "25.0.1",
+  "numpy": "2.5.4",
+  "huggingface_hub": "2.4.0"
+ },
+ "resource_policy": {
+  "cwd": ".",
+  "max_compute_threads": 6,
+  "priority": "BelowNormal",
+  "tiktoken_pool_threads": "1 per worker process for --procs 4 jobs, 2 for single-process jobs (TIKTOKEN_NUM_THREADS via rebuild/threadcap)",
+  "OMP/MKL/RAYON_NUM_THREADS": "1 for --procs 4 jobs, 2 otherwise",
+  "gpu": "not used (CUDA_VISIBLE_DEVICES=-1)",
+  "PYTHONPATH": "shim;rebuild/threadcap;sitecustom",
+  "TIKTOKEN_CACHE_DIR": "data/tiktoken",
+  "HF_HUB_DISABLE_XET": "1"
+ },
+ "commands": {
+  "dclm_val": "python tok_files.py driver --root data\\dclm\\raw --global-shards 9 --out data\\dclm\\dclm_val.bin --procs 1 --target-tokens 20000000",
+  "pg19_test": "python tok_domain.py --out data/domain/pg19_test.bin data/domain/raw/emozilla__pg19/data/test-*.parquet",
+  "dclm_val10": "python tok_files.py driver --root data\\dclm\\raw --global-shards 10 --out data\\dclm\\dclm_val10.bin --procs 1 --target-tokens 20000000",
+  "dclm_train16": "python tok_files.py driver --root data\\dclm\\raw --global-shards 1 --out data\\dclm\\dclm_train16.bin --procs 4",
+  "owm_test": "python tok_domain.py --out data/domain/owm_test.bin data/domain/raw/EleutherAI__proof-pile-2/open-web-math/test/*.jsonl.zst",
+  "fw2de_test": "python tok_domain.py --out data/domain/fw2de_test.bin data/domain/raw/HuggingFaceFW__fineweb-2/data/deu_Latn/test/*.parquet",
+  "algstack_test": "python tok_domain.py --out data/domain/algstack_test.bin data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/*.jsonl.zst",
+  "pg19_train": "python tok_domain.py --out data/domain/pg19_train.bin --max-tokens 150000000 data/domain/raw/emozilla__pg19/data/train-*.parquet",
+  "owm_train": "python tok_domain.py --out data/domain/owm_train.bin --max-tokens 150000000 data/domain/raw/EleutherAI__proof-pile-2/open-web-math/train/*.jsonl.zst",
+  "algstack_train": "python tok_domain.py --out data/domain/algstack_train.bin data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/*.jsonl.zst",
+  "dclm_train": "python tok_files.py driver --root data\\dclm\\raw --global-shards 1 --out data\\dclm\\dclm_train.bin --procs 4 --last-file 11",
+  "fw2de_train": "python tok_domain.py --out data/domain/fw2de_train.bin --max-tokens 150000000 data/domain/raw/HuggingFaceFW__fineweb-2/data/deu_Latn/train/*.parquet",
+  "dclm_longdoc_ge8192_train": "python tok_files.py driver --root data\\dclm\\raw --global-shards 2 --out data\\longctx\\dclm_longdoc_ge8192_train.bin --procs 4 --min-doc-tokens 8192",
+  "dclm_longdoc_ge16384_train": "python tok_files.py driver --root data\\dclm\\raw --global-shards 2 --out data\\longctx\\dclm_longdoc_ge16384_train.bin --procs 4 --min-doc-tokens 16384",
+  "dclm_longdoc_ge8192_val": "python tok_files.py driver --root data\\dclm\\raw --global-shards 10 --out data\\longctx\\dclm_longdoc_ge8192_val.bin --procs 1 --min-doc-tokens 8192",
+  "dclm_longdoc_ge16384_val": "python tok_files.py driver --root data\\dclm\\raw --global-shards 10 --out data\\longctx\\dclm_longdoc_ge16384_val.bin --procs 1 --min-doc-tokens 16384",
+  "dclm_cont_heldout": "python tok_files.py driver --root data\\dclm\\raw --global-shards 3 --out data\\dclm\\dclm_cont_heldout.bin --procs 1 --target-tokens 30000000",
+  "pycode_tok": "python pycode_tok.py --src data/raw/codeparrot/file-000000000054.json.gz --out data/domain/pycode_test.bin --max-tokens 12000000",
+  "streams": "python prep_all_streams.py"
+ },
+ "summary": {
+  "matched": 30,
+  "mismatched": 0,
+  "missing": 0,
+  "no_reference": 1
+ },
+ "files": [
+  {
+   "path": "data/dclm/dclm_train16.bin",
+   "expected": {
+    "tokens": 1738922107,
+    "docs": 1425616,
+    "sha256": "455754d1d0098da83fb3bfc33d96e292520751a1e431d7a037e6f1bf0be9cd16"
+   },
+   "bytes": 6955688428,
+   "tokens": 1738922107,
+   "docs": 1425616,
+   "sha256": "455754d1d0098da83fb3bfc33d96e292520751a1e431d7a037e6f1bf0be9cd16",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/dclm/dclm_train.bin",
+   "expected": {
+    "tokens": 1304222207,
+    "docs": 1065522,
+    "sha256": null
+   },
+   "bytes": 5216888828,
+   "tokens": 1304222207,
+   "docs": 1065522,
+   "sha256": "216c5bc10ec9a84d8ea2a59ae2a3ffdc4aada9243aa5f3115b5be7e509b28480",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/dclm/dclm_val.bin",
+   "expected": {
+    "tokens": 19999909,
+    "docs": 17005,
+    "sha256": "0644eac43505ad8f3ba78c8dd8580862e7b69dcbf24080dd3e8082692186ed04"
+   },
+   "bytes": 79999636,
+   "tokens": 19999909,
+   "docs": 17005,
+   "sha256": "0644eac43505ad8f3ba78c8dd8580862e7b69dcbf24080dd3e8082692186ed04",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/dclm/dclm_val10.bin",
+   "expected": {
+    "tokens": 19996569,
+    "docs": 16702,
+    "sha256": "9bdfce3d6555fb083e7c01d92bdc23ca48454cdce296606179a76de98c0bd14e"
+   },
+   "bytes": 79986276,
+   "tokens": 19996569,
+   "docs": 16702,
+   "sha256": "9bdfce3d6555fb083e7c01d92bdc23ca48454cdce296606179a76de98c0bd14e",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/longctx/dclm_longdoc_ge8192_train.bin",
+   "expected": {
+    "tokens": 228500837,
+    "docs": 15103,
+    "sha256": null
+   },
+   "bytes": 914003348,
+   "tokens": 228500837,
+   "docs": 15103,
+   "sha256": "f7cc533fbcda3576067e62677341556ec2604aea71e03204346d801996574348",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/longctx/dclm_longdoc_ge16384_train.bin",
+   "expected": {
+    "tokens": 99976687,
+    "docs": 3512,
+    "sha256": null
+   },
+   "bytes": 399906748,
+   "tokens": 99976687,
+   "docs": 3512,
+   "sha256": "058e35d0c8523f0cc075bac3e0b2d6ed8ce1d2cd8d70d5d680da235273fa680a",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/longctx/dclm_longdoc_ge8192_val.bin",
+   "expected": {
+    "tokens": 20209183,
+    "docs": 1326,
+    "sha256": null
+   },
+   "bytes": 80836732,
+   "tokens": 20209183,
+   "docs": 1326,
+   "sha256": "6a969a9342e22eacf0465f371fb003eaf6f78b746b76e0cd4cabfac3a2117885",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/longctx/dclm_longdoc_ge16384_val.bin",
+   "expected": {
+    "tokens": 9299515,
+    "docs": 352,
+    "sha256": null
+   },
+   "bytes": 37198060,
+   "tokens": 9299515,
+   "docs": 352,
+   "sha256": "632355631ce2115678d34c39b73ffa12445d5d2f7efa40730b6590460fdb1bb2",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/domain/algstack_test.bin",
+   "expected": {
+    "tokens": 42160647,
+    "docs": 17997,
+    "sha256": null
+   },
+   "bytes": 168642588,
+   "tokens": 42160647,
+   "docs": 17997,
+   "sha256": "952a5831acf24269be46cba6d0231fa77173ec7bc2e101520bc42d019397ad85",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/domain/algstack_train.bin",
+   "expected": {
+    "tokens": 1676450112,
+    "docs": 458783,
+    "sha256": null
+   },
+   "bytes": 6705800448,
+   "tokens": 1676450112,
+   "docs": 458783,
+   "sha256": "24a089e7b56a7571a1e71f773850aece3d89722e6245fbaf5e10b4401866a781",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/domain/fw2de_test.bin",
+   "expected": {
+    "tokens": 60571959,
+    "docs": 65176,
+    "sha256": null
+   },
+   "bytes": 242287836,
+   "tokens": 60571959,
+   "docs": 65176,
+   "sha256": "27e080a102cd6e8a947a3e157ae0d3a357e0489d916f5c117231d03439b11877",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/domain/fw2de_train.bin",
+   "expected": {
+    "tokens": 150124418,
+    "docs": 157184,
+    "sha256": null
+   },
+   "bytes": 600497672,
+   "tokens": 150124418,
+   "docs": 157184,
+   "sha256": "c0ce16fba68ae066bdedd4e0a46f3e2ad29f5e6cc08904cd6f63d9273378450a",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/domain/owm_test.bin",
+   "expected": {
+    "tokens": 63933458,
+    "docs": 31577,
+    "sha256": null
+   },
+   "bytes": 255733832,
+   "tokens": 63933458,
+   "docs": 31577,
+   "sha256": "77cc6d9fd78c434bb380aebd461dffe6a9f2e710cbd6b600249f8c6675011d92",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/domain/owm_train.bin",
+   "expected": {
+    "tokens": 150430566,
+    "docs": 74752,
+    "sha256": null
+   },
+   "bytes": 601722264,
+   "tokens": 150430566,
+   "docs": 74752,
+   "sha256": "3a6bb73e1a3d43f9910e49455e325b76118ac436e31089301b63956c14138d27",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/domain/pg19_test.bin",
+   "expected": {
+    "tokens": 9872926,
+    "docs": 100,
+    "sha256": null
+   },
+   "bytes": 39491704,
+   "tokens": 9872926,
+   "docs": 100,
+   "sha256": "3ad95cf1304d1a2482333635efcb36d01aff6c9d31a4342ccab0ee75bd6b05d0",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/domain/pg19_train.bin",
+   "expected": {
+    "tokens": 118347447,
+    "docs": 1244,
+    "sha256": null
+   },
+   "bytes": 473389788,
+   "tokens": 118347447,
+   "docs": 1244,
+   "sha256": "24ec92cb6dea867c575898eafafe8f2ab83aed96f3f6411d77a3badbcbed036f",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/domain/fr_test.bin",
+   "expected": {
+    "tokens": 39038319,
+    "docs": 44245,
+    "sha256": null
+   },
+   "bytes": 156153276,
+   "tokens": 39038319,
+   "docs": 44245,
+   "sha256": "b989c7ed77d53eb67b2f1590b615d673428eacc1cafa88d1cb06d851f8b571ed",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/domain/fr_train.bin",
+   "expected": {
+    "tokens": 150285222,
+    "docs": 147456,
+    "sha256": null
+   },
+   "bytes": 601140888,
+   "tokens": 150285222,
+   "docs": 147456,
+   "sha256": "0a84d8b65c17372d4e9d4f3b80aa92a6b0951ade069850a520b266f6dad8fb97",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/domain/pycode_test.bin",
+   "expected": {
+    "tokens": 12495229,
+    "docs": 5376,
+    "sha256": null
+   },
+   "bytes": 49980916,
+   "tokens": 12495229,
+   "docs": 5376,
+   "sha256": "ebfa31532258e831950e9c2134e5e179c0346e90c7ee0db5e4c7c53a03604eca",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/streams/code_eval.bin",
+   "expected": {
+    "tokens": 2251640,
+    "docs": 936,
+    "sha256": null
+   },
+   "bytes": 9006560,
+   "tokens": 2251640,
+   "docs": 936,
+   "sha256": "13b87552b98617c779c5f88df09935236617a21abb1314f1250d8aa7da5052b1",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/streams/code_route.bin",
+   "expected": {
+    "tokens": 4400027,
+    "docs": 1897,
+    "sha256": null
+   },
+   "bytes": 17600108,
+   "tokens": 4400027,
+   "docs": 1897,
+   "sha256": "f12e62f89616c146ede0653687594c111626c2c04bf2d97909291c09faa47aab",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/streams/math_eval.bin",
+   "expected": {
+    "tokens": 2201168,
+    "docs": 1076,
+    "sha256": null
+   },
+   "bytes": 8804672,
+   "tokens": 2201168,
+   "docs": 1076,
+   "sha256": "b9eda2467de9f6ee0f3afe899ae5196c25ac6477902734dc244f94decd8f3ea1",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/streams/math_route.bin",
+   "expected": {
+    "tokens": 4411086,
+    "docs": 2024,
+    "sha256": null
+   },
+   "bytes": 17644344,
+   "tokens": 4411086,
+   "docs": 2024,
+   "sha256": "8e25b3faed800220fe2d8caf0675cee1c4038f0d11fa8ea16ebbd76ac4dc528d",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/streams/german_eval.bin",
+   "expected": {
+    "tokens": 2200177,
+    "docs": 2423,
+    "sha256": null
+   },
+   "bytes": 8800708,
+   "tokens": 2200177,
+   "docs": 2423,
+   "sha256": "a8ba3e6a2725d90afb72515ec86a072dd8a925970a2baaffe50f4e09eef140a9",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/streams/german_route.bin",
+   "expected": {
+    "tokens": 2201255,
+    "docs": 2155,
+    "sha256": null
+   },
+   "bytes": 8805020,
+   "tokens": 2201255,
+   "docs": 2155,
+   "sha256": "1316436e7f32e9961852417bc6bd5159192ad5ed2bbca0c5f23af3057453ced6",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/streams/books_route.bin",
+   "expected": {
+    "tokens": 2228733,
+    "docs": 22,
+    "sha256": null
+   },
+   "bytes": 8914932,
+   "tokens": 2228733,
+   "docs": 22,
+   "sha256": "12552567112252d552a570525fa580b6295e594715100443dea16cce7f49d33e",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/streams/pycode_eval.bin",
+   "expected": {
+    "tokens": 2204757,
+    "docs": 985,
+    "sha256": null
+   },
+   "bytes": 8819028,
+   "tokens": 2204757,
+   "docs": 985,
+   "sha256": "08926d4af5b2d387d27aeee161b178df058a2a0e1cd9c3ca50194fda0cfb2a88",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/streams/pycode_route.bin",
+   "expected": {
+    "tokens": 4400367,
+    "docs": 1826,
+    "sha256": null
+   },
+   "bytes": 17601468,
+   "tokens": 4400367,
+   "docs": 1826,
+   "sha256": "20e09b9e54607de12c71f9e1354c5cd619f1320f0f1908a79a95b6f5ae734d19",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/streams/fr_eval.bin",
+   "expected": {
+    "tokens": 2200635,
+    "docs": 2337,
+    "sha256": null
+   },
+   "bytes": 8802540,
+   "tokens": 2200635,
+   "docs": 2337,
+   "sha256": "2b61ee61f9ca51abea7134d75d9ec0621e0c42295e69b0723731bd61ac0ee7fe",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/streams/fr_route.bin",
+   "expected": {
+    "tokens": 2208905,
+    "docs": 2344,
+    "sha256": null
+   },
+   "bytes": 8835620,
+   "tokens": 2208905,
+   "docs": 2344,
+   "sha256": "4ae51358f0b19a237b02dd8eb397b9187f27c0ce2d007a1c1e0336da0535fd74",
+   "match": true,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257
+  },
+  {
+   "path": "data/dclm/dclm_cont_heldout.bin",
+   "expected": null,
+   "bytes": 119995168,
+   "tokens": 29998792,
+   "docs": 24528,
+   "sha256": "7000c98f95bba8b47ec5c06c7ec1a1114811d30eaf939dfe737f5dc757e626d7",
+   "match": null,
+   "problems": [],
+   "empty_docs": 0,
+   "ends_with_eot": true,
+   "max_token_id": 100257,
+   "note": "NEW in no reference counts exist; counts recorded only"
+  }
+ ],
+ "extra_checks": [
+  {
+   "check": "dclm_train.bin == first 5216888828 bytes of dclm_train16.bin",
+   "ok": true
+  },
+  {
+   "check": "per-file token counts of dclm_train16.bin vs original worker logs",
+   "files_original": 16,
+   "files_rebuilt": 16,
+   "ok": true,
+   "differences": {}
+  },
+  {
+   "check": "per-file token counts of dclm_train.bin vs original worker logs",
+   "files_original": 12,
+   "files_rebuilt": 12,
+   "ok": true,
+   "differences": {}
+  },
+  {
+   "check": "per-file token counts of dclm_val.bin vs original worker logs",
+   "files_original": 1,
+   "files_rebuilt": 1,
+   "ok": true,
+   "differences": {}
+  },
+  {
+   "check": "per-file token counts of dclm_val10.bin vs original worker logs",
+   "files_original": 1,
+   "files_rebuilt": 1,
+   "ok": true,
+   "differences": {}
+  },
+  {
+   "check": "per-file token counts of dclm_longdoc_ge8192_train.bin vs original worker logs",
+   "files_original": 12,
+   "files_rebuilt": 12,
+   "ok": true,
+   "differences": {}
+  },
+  {
+   "check": "per-file token counts of dclm_longdoc_ge16384_train.bin vs original worker logs",
+   "files_original": 12,
+   "files_rebuilt": 12,
+   "ok": true,
+   "differences": {}
+  },
+  {
+   "check": "per-file token counts of dclm_longdoc_ge8192_val.bin vs original worker logs",
+   "files_original": 1,
+   "files_rebuilt": 1,
+   "ok": true,
+   "differences": {}
+  },
+  {
+   "check": "per-file token counts of dclm_longdoc_ge16384_val.bin vs original worker logs",
+   "files_original": 1,
+   "files_rebuilt": 1,
+   "ok": true,
+   "differences": {}
+  },
+  {
+   "check": "per-file token counts of dclm_cont_heldout.bin vs original worker logs",
+   "files_original": 0,
+   "files_rebuilt": 1,
+   "ok": null,
+   "differences": {},
+   "note": "no original worker logs: this bin is new in the design (nothing to compare)"
+  },
+  {
+   "check": "train16 part 0 (global-shard_01 file 0) sha256 vs local_token_hashes.json",
+   "bytes": 292746848,
+   "sha256": "d208526e3b0c39e5d351aac26f3e4eab6a8680fa8bc97b86a61ea1a4bda4285d",
+   "ok": true
+  },
+  {
+   "check": "cl100k_base BPE file (tiktoken cache)",
+   "sha256": "223921b76ee99bde995b7ff738513eef100fb51d18c93597a113bcffe865b2a7"
+  },
+  {
+   "check": "raw HF files re-hashed vs the LFS oid published by the HF tree API",
+   "n_files": 75,
+   "n_ok": 75,
+   "bytes": 18343294460,
+   "ok": true
+  }
+ ],
+ "raw_inputs": [
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+   "bytes": 141306362,
+   "sha256": "c006fce0b12ea2366ed94503344c7bc539e17c0aa10159a632272dd6d2929bdb",
+   "lfs_sha256": "c006fce0b12ea2366ed94503344c7bc539e17c0aa10159a632272dd6d2929bdb",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000001_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000001_processed.jsonl.zst",
+   "bytes": 218055028,
+   "sha256": "ae6f05b12af96a05508bbe696e9e2904547239b42d3ca322495cbfbc6f62fa24",
+   "lfs_sha256": "ae6f05b12af96a05508bbe696e9e2904547239b42d3ca322495cbfbc6f62fa24",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000002_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000002_processed.jsonl.zst",
+   "bytes": 234064161,
+   "sha256": "60c3eecb90ebda4cb3203a59af1e728bbe7e3250de478bb8dc43c8a755632585",
+   "lfs_sha256": "60c3eecb90ebda4cb3203a59af1e728bbe7e3250de478bb8dc43c8a755632585",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000003_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000003_processed.jsonl.zst",
+   "bytes": 237981257,
+   "sha256": "9e3a04c1e2dec400a5523032bfc32ca6f83c5aa814d4e943f05a5cd57d93fc42",
+   "lfs_sha256": "9e3a04c1e2dec400a5523032bfc32ca6f83c5aa814d4e943f05a5cd57d93fc42",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000004_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000004_processed.jsonl.zst",
+   "bytes": 213149705,
+   "sha256": "d90e0271b2e00db672dac73cbc99e0b43400d7298f9ee7007e47c98b68fe0b34",
+   "lfs_sha256": "d90e0271b2e00db672dac73cbc99e0b43400d7298f9ee7007e47c98b68fe0b34",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000005_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000005_processed.jsonl.zst",
+   "bytes": 195564488,
+   "sha256": "dbb1709aa2001cca275a596077b75bcfe3702cb14de27919709c121e123f58e9",
+   "lfs_sha256": "dbb1709aa2001cca275a596077b75bcfe3702cb14de27919709c121e123f58e9",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000006_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000006_processed.jsonl.zst",
+   "bytes": 218087763,
+   "sha256": "ca90cdba5cd6085b4d3d2b66a87effce5c85c27b19f2e9c16acdc92150736d52",
+   "lfs_sha256": "ca90cdba5cd6085b4d3d2b66a87effce5c85c27b19f2e9c16acdc92150736d52",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000007_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000007_processed.jsonl.zst",
+   "bytes": 199688347,
+   "sha256": "28131543f17284cadad20c80856484f343e8cd3405b2675821e943a281411764",
+   "lfs_sha256": "28131543f17284cadad20c80856484f343e8cd3405b2675821e943a281411764",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000008_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000008_processed.jsonl.zst",
+   "bytes": 256311356,
+   "sha256": "f5a2c78b2d46bbd80e415e2e20c2e42e3bc00e0dab43d931c5072a35b90e48fb",
+   "lfs_sha256": "f5a2c78b2d46bbd80e415e2e20c2e42e3bc00e0dab43d931c5072a35b90e48fb",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000009_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000009_processed.jsonl.zst",
+   "bytes": 186806829,
+   "sha256": "9abbd3ff864fdb97797babca31dd390924a0a742b16c3b12400ebd4dcfb9b313",
+   "lfs_sha256": "9abbd3ff864fdb97797babca31dd390924a0a742b16c3b12400ebd4dcfb9b313",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000010_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000010_processed.jsonl.zst",
+   "bytes": 199343638,
+   "sha256": "8475b5a45b1d75593bca8edd27c2a231223043d172fed2e8d321cf39877e8171",
+   "lfs_sha256": "8475b5a45b1d75593bca8edd27c2a231223043d172fed2e8d321cf39877e8171",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000011_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000011_processed.jsonl.zst",
+   "bytes": 254737941,
+   "sha256": "512c26cf7e44d928192207ca27978abef78b18c0c70bf3116830832b4cbc0131",
+   "lfs_sha256": "512c26cf7e44d928192207ca27978abef78b18c0c70bf3116830832b4cbc0131",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000012_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000012_processed.jsonl.zst",
+   "bytes": 214546638,
+   "sha256": "1170598f347f268eb459db55492a9af153d380940ac6fa4ce4a5e258849db3cb",
+   "lfs_sha256": "1170598f347f268eb459db55492a9af153d380940ac6fa4ce4a5e258849db3cb",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000013_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000013_processed.jsonl.zst",
+   "bytes": 212891129,
+   "sha256": "13f209ed546e8a84b154b057909200e212c5c521e6b46b19c86cfb9083aaefd7",
+   "lfs_sha256": "13f209ed546e8a84b154b057909200e212c5c521e6b46b19c86cfb9083aaefd7",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000014_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000014_processed.jsonl.zst",
+   "bytes": 222792106,
+   "sha256": "60260683ede248438297494c97c9f2b9836a35cd9f5917b9d13e4591c577df10",
+   "lfs_sha256": "60260683ede248438297494c97c9f2b9836a35cd9f5917b9d13e4591c577df10",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000015_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_01_of_10/local-shard_0_of_10/shard_00000015_processed.jsonl.zst",
+   "bytes": 209521249,
+   "sha256": "d6ee33aa41624ceb33852f0489205a6cbac2e987518ea93cb730153d81662d24",
+   "lfs_sha256": "d6ee33aa41624ceb33852f0489205a6cbac2e987518ea93cb730153d81662d24",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_02_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+   "bytes": 133233035,
+   "sha256": "4c5ce60258943051758148653c448bb57724af7592cc9d3e9c053cc6f9e10323",
+   "lfs_sha256": "4c5ce60258943051758148653c448bb57724af7592cc9d3e9c053cc6f9e10323",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000001_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_02_of_10/local-shard_0_of_10/shard_00000001_processed.jsonl.zst",
+   "bytes": 150026324,
+   "sha256": "0dacd503cf69ef452e7bef2d12f53939d5a378e7cad41b4ef0870004baab679b",
+   "lfs_sha256": "0dacd503cf69ef452e7bef2d12f53939d5a378e7cad41b4ef0870004baab679b",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000002_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_02_of_10/local-shard_0_of_10/shard_00000002_processed.jsonl.zst",
+   "bytes": 177616988,
+   "sha256": "6f450f87c6cb0b7dfc7acbba4ee723baf576ba22f00ccd51f1484d6b12de9ca8",
+   "lfs_sha256": "6f450f87c6cb0b7dfc7acbba4ee723baf576ba22f00ccd51f1484d6b12de9ca8",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000003_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_02_of_10/local-shard_0_of_10/shard_00000003_processed.jsonl.zst",
+   "bytes": 189967203,
+   "sha256": "0258b3ae53a116cfc74279e828f61b50a6711aeaf26e4689132aa85b1c844914",
+   "lfs_sha256": "0258b3ae53a116cfc74279e828f61b50a6711aeaf26e4689132aa85b1c844914",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000004_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_02_of_10/local-shard_0_of_10/shard_00000004_processed.jsonl.zst",
+   "bytes": 196924991,
+   "sha256": "93ffe82bcad7c695c1ac8f111988679bc51e37de41f577fb9d6051213ba69db2",
+   "lfs_sha256": "93ffe82bcad7c695c1ac8f111988679bc51e37de41f577fb9d6051213ba69db2",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000005_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_02_of_10/local-shard_0_of_10/shard_00000005_processed.jsonl.zst",
+   "bytes": 191650190,
+   "sha256": "0171cf472d3a3477ad37c4e6e0b7b214e6671b57f7666bc855686f1c391518dc",
+   "lfs_sha256": "0171cf472d3a3477ad37c4e6e0b7b214e6671b57f7666bc855686f1c391518dc",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000006_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_02_of_10/local-shard_0_of_10/shard_00000006_processed.jsonl.zst",
+   "bytes": 222827970,
+   "sha256": "f6e14a97ea7d0ad9fbcb08141754204d7d09578fb1fbee06d44daa6d4a5abd6a",
+   "lfs_sha256": "f6e14a97ea7d0ad9fbcb08141754204d7d09578fb1fbee06d44daa6d4a5abd6a",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000007_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_02_of_10/local-shard_0_of_10/shard_00000007_processed.jsonl.zst",
+   "bytes": 235489055,
+   "sha256": "31178ca9769ee60238c5c6c25e75cd484552084c084373016b44ddc4103a6aea",
+   "lfs_sha256": "31178ca9769ee60238c5c6c25e75cd484552084c084373016b44ddc4103a6aea",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000008_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_02_of_10/local-shard_0_of_10/shard_00000008_processed.jsonl.zst",
+   "bytes": 219979593,
+   "sha256": "936ce8ee4f9c4321b4a78d4a96e189f79369da307ba790319606c9208c410b7b",
+   "lfs_sha256": "936ce8ee4f9c4321b4a78d4a96e189f79369da307ba790319606c9208c410b7b",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000009_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_02_of_10/local-shard_0_of_10/shard_00000009_processed.jsonl.zst",
+   "bytes": 214310282,
+   "sha256": "084db09533708ca51e0473a387db12b3f91703251a1f63d63f1ba8a86803e5f4",
+   "lfs_sha256": "084db09533708ca51e0473a387db12b3f91703251a1f63d63f1ba8a86803e5f4",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000010_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_02_of_10/local-shard_0_of_10/shard_00000010_processed.jsonl.zst",
+   "bytes": 210196744,
+   "sha256": "70a233fdbc10727017c38e9b2e1b84c6d5c1dca6ee68cdfd5b354a2ce19da749",
+   "lfs_sha256": "70a233fdbc10727017c38e9b2e1b84c6d5c1dca6ee68cdfd5b354a2ce19da749",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000011_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_02_of_10/local-shard_0_of_10/shard_00000011_processed.jsonl.zst",
+   "bytes": 217317921,
+   "sha256": "6c0a4ff911c08d7529e38aefb78c2192d892f6d62f92492a3f4a926070c5ccbd",
+   "lfs_sha256": "6c0a4ff911c08d7529e38aefb78c2192d892f6d62f92492a3f4a926070c5ccbd",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_09_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_09_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+   "bytes": 141513981,
+   "sha256": "6cffee0159d9a5a7d4489b2137bf250a87b9d98047bcc9cd0ac67214437ec633",
+   "lfs_sha256": "6cffee0159d9a5a7d4489b2137bf250a87b9d98047bcc9cd0ac67214437ec633",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_10_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_10_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+   "bytes": 215318914,
+   "sha256": "3a7b37eae2e65cdbaab495456d46dc1df06729dc76555b8418752187e7c89d4a",
+   "lfs_sha256": "3a7b37eae2e65cdbaab495456d46dc1df06729dc76555b8418752187e7c89d4a",
+   "match": true
+  },
+  {
+   "repo": "mlfoundations/dclm-baseline-1.0",
+   "path": "global-shard_03_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+   "local": "data/dclm/raw/global-shard_03_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+   "bytes": 130069392,
+   "sha256": "4d372bf2ccb4a5d10fe1778ad3b7dd8e0bf6f9bb554497d53e1e6f4283b1bcb1",
+   "lfs_sha256": "4d372bf2ccb4a5d10fe1778ad3b7dd8e0bf6f9bb554497d53e1e6f4283b1bcb1",
+   "match": true
+  },
+  {
+   "repo": "emozilla/pg19",
+   "path": "data/test-00000-of-00001-29a571947c0b5ccc.parquet",
+   "local": "data/domain/raw/emozilla__pg19/data/test-00000-of-00001-29a571947c0b5ccc.parquet",
+   "bytes": 24874679,
+   "sha256": "9aae5ddf035760257458cff08d2575d78a15f84eff867af7a87eff0681b01bfc",
+   "lfs_sha256": "9aae5ddf035760257458cff08d2575d78a15f84eff867af7a87eff0681b01bfc",
+   "match": true
+  },
+  {
+   "repo": "emozilla/pg19",
+   "path": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+   "local": "data/domain/raw/emozilla__pg19/data/train-00000-of-00023-5263dc4323e881d2.parquet",
+   "bytes": 298361951,
+   "sha256": "589252c8a3e870278db2b5d3f0da73e4845085e852cb024056c37b76d088ba41",
+   "lfs_sha256": "589252c8a3e870278db2b5d3f0da73e4845085e852cb024056c37b76d088ba41",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "open-web-math/train/shard-0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/open-web-math/train/shard-0000.jsonl.zst",
+   "bytes": 278055674,
+   "sha256": "b47f63cc015ea07a9234bf76290a8187a87a31043fe0c1bcaa5db8b284dc0592",
+   "lfs_sha256": "b47f63cc015ea07a9234bf76290a8187a87a31043fe0c1bcaa5db8b284dc0592",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "open-web-math/test/test.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/open-web-math/test/test.jsonl.zst",
+   "bytes": 88139269,
+   "sha256": "9fc35609a26e3b14892c99bb9fc789576cd53e7e9a39ce50e65e1fc8b3c45e9a",
+   "lfs_sha256": "9fc35609a26e3b14892c99bb9fc789576cd53e7e9a39ce50e65e1fc8b3c45e9a",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/agda0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/agda0000.jsonl.zst",
+   "bytes": 23489609,
+   "sha256": "f91684112df7423acad33fdd0d1d478a4ca6b9c2bb09c473cbf51318fd1885d3",
+   "lfs_sha256": "f91684112df7423acad33fdd0d1d478a4ca6b9c2bb09c473cbf51318fd1885d3",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/c0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/c0000.jsonl.zst",
+   "bytes": 14341007,
+   "sha256": "5a9308b6b2a0ef74e0fecc449a3836e4f03141eb07eaaa81a17daa4aa98a5d11",
+   "lfs_sha256": "5a9308b6b2a0ef74e0fecc449a3836e4f03141eb07eaaa81a17daa4aa98a5d11",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/cpp0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/cpp0000.jsonl.zst",
+   "bytes": 114405443,
+   "sha256": "13e8c73c8131504d7231eb4e4451177f9bcb4bc495db56b073ef4d598b2ab3db",
+   "lfs_sha256": "13e8c73c8131504d7231eb4e4451177f9bcb4bc495db56b073ef4d598b2ab3db",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/fortran0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/fortran0000.jsonl.zst",
+   "bytes": 128540926,
+   "sha256": "03dd9d1253097ec0f7e3af349f1024882d23a670a6d0b0a620c45b1594c3ac1e",
+   "lfs_sha256": "03dd9d1253097ec0f7e3af349f1024882d23a670a6d0b0a620c45b1594c3ac1e",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/gap0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/gap0000.jsonl.zst",
+   "bytes": 1936287,
+   "sha256": "81c6a0755f53d87d5eb80822e2f23b561194b22b471067b84e27ba045c4a0b44",
+   "lfs_sha256": "81c6a0755f53d87d5eb80822e2f23b561194b22b471067b84e27ba045c4a0b44",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/github-coq-train-0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/github-coq-train-0000.jsonl.zst",
+   "bytes": 159963702,
+   "sha256": "bdd6af156f42b7ef4413a9e156021b6121bd852efa096ce2f342d2ef562027ab",
+   "lfs_sha256": "bdd6af156f42b7ef4413a9e156021b6121bd852efa096ce2f342d2ef562027ab",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/github-isabelle-train-0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/github-isabelle-train-0000.jsonl.zst",
+   "bytes": 149951674,
+   "sha256": "fdf127052418af397b28c37019176f34982568932bdf26be17fdb429aa370826",
+   "lfs_sha256": "fdf127052418af397b28c37019176f34982568932bdf26be17fdb429aa370826",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/github-lean-train-0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/github-lean-train-0000.jsonl.zst",
+   "bytes": 102809256,
+   "sha256": "d06545086563cc9d98d4b3bead1831fff3edbbf53de893b335bfa576ef3b8523",
+   "lfs_sha256": "d06545086563cc9d98d4b3bead1831fff3edbbf53de893b335bfa576ef3b8523",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/haskell0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/haskell0000.jsonl.zst",
+   "bytes": 7342825,
+   "sha256": "45270fa8c651a300ad1290e14af2864d92afc3708cbe180a98659e836bad4738",
+   "lfs_sha256": "45270fa8c651a300ad1290e14af2864d92afc3708cbe180a98659e836bad4738",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/idris0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/idris0000.jsonl.zst",
+   "bytes": 8656552,
+   "sha256": "8bb4f12ecf2a7502cb0ac3146ed688dc92d672b2254441fefbffef86f50f9aa4",
+   "lfs_sha256": "8bb4f12ecf2a7502cb0ac3146ed688dc92d672b2254441fefbffef86f50f9aa4",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/julia0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/julia0000.jsonl.zst",
+   "bytes": 69439299,
+   "sha256": "a0707aa88a1c6e702c95eb28e8f0713c35d341a2b5e82f18a9f6add364dd29e8",
+   "lfs_sha256": "a0707aa88a1c6e702c95eb28e8f0713c35d341a2b5e82f18a9f6add364dd29e8",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/jupyter-notebook0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/jupyter-notebook0000.jsonl.zst",
+   "bytes": 133207663,
+   "sha256": "1017dbd56edd1861aa9cc05e9d8d6b81908a56913689f2ad385e81a0bc09c0ff",
+   "lfs_sha256": "1017dbd56edd1861aa9cc05e9d8d6b81908a56913689f2ad385e81a0bc09c0ff",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/maple0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/maple0000.jsonl.zst",
+   "bytes": 1274918,
+   "sha256": "e77dd977c7aa528dfb39ddd9ce56aba2f6db9e3b56590336781d8fd45b6b1c13",
+   "lfs_sha256": "e77dd977c7aa528dfb39ddd9ce56aba2f6db9e3b56590336781d8fd45b6b1c13",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/python0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/python0000.jsonl.zst",
+   "bytes": 115687724,
+   "sha256": "bd510ecf99bdee4076993fc8f38d2462b59322d9f1e9733fd9bb3868b551e9cc",
+   "lfs_sha256": "bd510ecf99bdee4076993fc8f38d2462b59322d9f1e9733fd9bb3868b551e9cc",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/r0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/r0000.jsonl.zst",
+   "bytes": 54474201,
+   "sha256": "f659195744f757c83b969787b2bf6f8e0ec65c034a6d1eb30dfa55c9dd9e686b",
+   "lfs_sha256": "f659195744f757c83b969787b2bf6f8e0ec65c034a6d1eb30dfa55c9dd9e686b",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/train/tex0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/train/tex0000.jsonl.zst",
+   "bytes": 262218789,
+   "sha256": "a8f1a543c65593b326190ecc02e61fce41459bfbb30886580fafd6480cb2e632",
+   "lfs_sha256": "a8f1a543c65593b326190ecc02e61fce41459bfbb30886580fafd6480cb2e632",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/agda-test.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/agda-test.jsonl.zst",
+   "bytes": 122777,
+   "sha256": "860b284b392a7dbfc1c16de7e0cb8a5f42dc73637d118b43cfddf1b6190f1711",
+   "lfs_sha256": "860b284b392a7dbfc1c16de7e0cb8a5f42dc73637d118b43cfddf1b6190f1711",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/c-test.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/c-test.jsonl.zst",
+   "bytes": 76031,
+   "sha256": "cb6b7a091291f0c01e85a24ab2212672acf211a867539551871e9151d9405b41",
+   "lfs_sha256": "cb6b7a091291f0c01e85a24ab2212672acf211a867539551871e9151d9405b41",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/cpp-test.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/cpp-test.jsonl.zst",
+   "bytes": 2888416,
+   "sha256": "969feb0ae6f35601f6d0671b0687fa1514fb2bff5838fe4d1ad5b3e027628cab",
+   "lfs_sha256": "969feb0ae6f35601f6d0671b0687fa1514fb2bff5838fe4d1ad5b3e027628cab",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/fortran-test.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/fortran-test.jsonl.zst",
+   "bytes": 2563133,
+   "sha256": "83c71c769a86c1ab7bffb78ff882f1778bf3ee248c7c2c3f091c3001f2e3eda5",
+   "lfs_sha256": "83c71c769a86c1ab7bffb78ff882f1778bf3ee248c7c2c3f091c3001f2e3eda5",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/gap-test.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/gap-test.jsonl.zst",
+   "bytes": 6750,
+   "sha256": "17b807593b5b079b9401237432f70ac759ce241012f7b00e3f32a14504e1e44a",
+   "lfs_sha256": "17b807593b5b079b9401237432f70ac759ce241012f7b00e3f32a14504e1e44a",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/github-MATLAB-test-0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/github-MATLAB-test-0000.jsonl.zst",
+   "bytes": 875065,
+   "sha256": "8b902af1820b0d558988a795d10fede8d537e8217e63e662d25f4ca4eac04c94",
+   "lfs_sha256": "8b902af1820b0d558988a795d10fede8d537e8217e63e662d25f4ca4eac04c94",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/github-coq-test-0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/github-coq-test-0000.jsonl.zst",
+   "bytes": 1613207,
+   "sha256": "33d903b82a48afbefbf9d911b54bf9aa49b9e94290ea2b0b9b86ce4947f805f3",
+   "lfs_sha256": "33d903b82a48afbefbf9d911b54bf9aa49b9e94290ea2b0b9b86ce4947f805f3",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/github-isabelle-test-0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/github-isabelle-test-0000.jsonl.zst",
+   "bytes": 562278,
+   "sha256": "62a2392b25d052775d543d9f1f17e41b3c9cc22e1d66cbf16bd8960cc129c000",
+   "lfs_sha256": "62a2392b25d052775d543d9f1f17e41b3c9cc22e1d66cbf16bd8960cc129c000",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/github-lean-test-0000.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/github-lean-test-0000.jsonl.zst",
+   "bytes": 559164,
+   "sha256": "315351d8e7cf8747a18fec85b10380b6dbd76357a7503c4b020b109cb00fe4be",
+   "lfs_sha256": "315351d8e7cf8747a18fec85b10380b6dbd76357a7503c4b020b109cb00fe4be",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/haskell-test.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/haskell-test.jsonl.zst",
+   "bytes": 41722,
+   "sha256": "78a613e5adaec95fd8671b39f0ca0a551403b327e6f28f89900ae994c55a03ea",
+   "lfs_sha256": "78a613e5adaec95fd8671b39f0ca0a551403b327e6f28f89900ae994c55a03ea",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/idris-test.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/idris-test.jsonl.zst",
+   "bytes": 36022,
+   "sha256": "97506761e4be0341f4af0c66b1f585c708bdadba66341f48a576c190cf7a7acb",
+   "lfs_sha256": "97506761e4be0341f4af0c66b1f585c708bdadba66341f48a576c190cf7a7acb",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/isa_proofsteps.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/isa_proofsteps.jsonl.zst",
+   "bytes": 487029,
+   "sha256": "f395c445570d7de8be03380025cd006d4d8de29c112e20a910d02f7cd7243ccf",
+   "lfs_sha256": "f395c445570d7de8be03380025cd006d4d8de29c112e20a910d02f7cd7243ccf",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/julia-test.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/julia-test.jsonl.zst",
+   "bytes": 1979607,
+   "sha256": "62c5c59abdabf90d96d07aaf50f515ce5b73f8f63c347d2cc665bfcf116c7f09",
+   "lfs_sha256": "62c5c59abdabf90d96d07aaf50f515ce5b73f8f63c347d2cc665bfcf116c7f09",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/jupyter-notebook-test.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/jupyter-notebook-test.jsonl.zst",
+   "bytes": 635818,
+   "sha256": "9d537e2ab0344305da5c58ecf7772f56cd1bc99292921b0a2647845227fa755d",
+   "lfs_sha256": "9d537e2ab0344305da5c58ecf7772f56cd1bc99292921b0a2647845227fa755d",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/lean_proofsteps.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/lean_proofsteps.jsonl.zst",
+   "bytes": 30290,
+   "sha256": "231beaec25d23dcc6ae904b15f1cbbf288503fc745bf6d30eb30a8ea47ebc90d",
+   "lfs_sha256": "231beaec25d23dcc6ae904b15f1cbbf288503fc745bf6d30eb30a8ea47ebc90d",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/maple-test.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/maple-test.jsonl.zst",
+   "bytes": 4084,
+   "sha256": "ba389c57726e3cb111e7d008d2fa59bdb519d717c30b7f8026ed2214414ee7a3",
+   "lfs_sha256": "ba389c57726e3cb111e7d008d2fa59bdb519d717c30b7f8026ed2214414ee7a3",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/python-test.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/python-test.jsonl.zst",
+   "bytes": 24696497,
+   "sha256": "36782516b278752a02275dfcfe9ba122be6411945f40d91654fd646345aedf8d",
+   "lfs_sha256": "36782516b278752a02275dfcfe9ba122be6411945f40d91654fd646345aedf8d",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/r-test.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/r-test.jsonl.zst",
+   "bytes": 243127,
+   "sha256": "177766ea96fb9bea65c7a5f7c6271a071c786787aae7013a3726ee61ea879ea9",
+   "lfs_sha256": "177766ea96fb9bea65c7a5f7c6271a071c786787aae7013a3726ee61ea879ea9",
+   "match": true
+  },
+  {
+   "repo": "EleutherAI/proof-pile-2",
+   "path": "algebraic-stack/test/tex-test.jsonl.zst",
+   "local": "data/domain/raw/EleutherAI__proof-pile-2/algebraic-stack/test/tex-test.jsonl.zst",
+   "bytes": 2518784,
+   "sha256": "2e2885622586a1db559d65396f331cba923ca7a12a458ec5db4b7998837ddb2d",
+   "lfs_sha256": "2e2885622586a1db559d65396f331cba923ca7a12a458ec5db4b7998837ddb2d",
+   "match": true
+  },
+  {
+   "repo": "HuggingFaceFW/fineweb-2",
+   "path": "data/deu_Latn/test/000_00000.parquet",
+   "local": "data/domain/raw/HuggingFaceFW__fineweb-2/data/deu_Latn/test/000_00000.parquet",
+   "bytes": 104264728,
+   "sha256": "f370564f527a10cf125f267d8f10175d6a6366390480620e90a469bbf80a2a46",
+   "lfs_sha256": "f370564f527a10cf125f267d8f10175d6a6366390480620e90a469bbf80a2a46",
+   "match": true
+  },
+  {
+   "repo": "HuggingFaceFW/fineweb-2",
+   "path": "data/deu_Latn/train/000_00000.parquet",
+   "local": "data/domain/raw/HuggingFaceFW__fineweb-2/data/deu_Latn/train/000_00000.parquet",
+   "bytes": 4845556135,
+   "sha256": "3044853802c8e8eefdd799abb4f4480d62af8aa90989611e0ed7bb205822af42",
+   "lfs_sha256": "3044853802c8e8eefdd799abb4f4480d62af8aa90989611e0ed7bb205822af42",
+   "match": true
+  },
+  {
+   "repo": "HuggingFaceFW/fineweb-2",
+   "path": "data/fra_Latn/test/000_00000.parquet",
+   "local": "data/raw/fineweb-2/data/fra_Latn/test/000_00000.parquet",
+   "bytes": 67031593,
+   "sha256": "11092a613abd05127de63c3d8f859811b656138dbc007c259fc5dd275e626daa",
+   "lfs_sha256": "11092a613abd05127de63c3d8f859811b656138dbc007c259fc5dd275e626daa",
+   "match": true
+  },
+  {
+   "repo": "HuggingFaceFW/fineweb-2",
+   "path": "data/fra_Latn/train/000_00000.parquet",
+   "local": "data/raw/fineweb-2/data/fra_Latn/train/000_00000.parquet",
+   "bytes": 4845859492,
+   "sha256": "2f3d6e51bc3c7ef70438f506ae32d90eb7051ba8513eba4ace437cbe5a502eff",
+   "lfs_sha256": "2f3d6e51bc3c7ef70438f506ae32d90eb7051ba8513eba4ace437cbe5a502eff",
+   "match": true
+  },
+  {
+   "repo": "codeparrot/codeparrot-clean-valid",
+   "path": "file-000000000054.json.gz",
+   "local": "data/raw/codeparrot/file-000000000054.json.gz",
+   "bytes": 142180683,
+   "sha256": "7f8c20a737c9084779bcdb853325ad4774d0db52c74aa2a63fd658d6787eb35b",
+   "lfs_sha256": "7f8c20a737c9084779bcdb853325ad4774d0db52c74aa2a63fd658d6787eb35b",
+   "match": true
+  }
+ ]
+}

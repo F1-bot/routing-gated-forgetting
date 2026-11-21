@@ -1,0 +1,1 @@
+{"ckpt": "outputs\\continual\\dense_100m_adapt_owm_m4\\dense_100m_adapt_owm\\20261113_191607__dense_100m_adapt_owm_train\\checkpoints\\model_final.pt", "sets": ["owm"], "seconds": 112.86049747467041}

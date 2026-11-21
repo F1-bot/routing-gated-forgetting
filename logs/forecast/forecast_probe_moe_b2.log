@@ -1,0 +1,56 @@
+# .venv/nestor/Scripts/python.exe forecast_probe.py run --units results\forecast\forecast_units.json --base moe_b2 --out results\forecast\probes
+# env overrides: {"NESTOR_FREEZE_ROUTERS": "1"}
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+.venv\nestor\Lib\site-packages\triton\knobs.py:524: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+[forecast_probe] moe_b2 unit 64 (SPEC, books, muon): 61.3 s
+[forecast_probe] moe_b2 unit 65 (SPEC, books, muon): 61.4 s
+[forecast_probe] moe_b2 unit 66 (SPEC, books, muon): 63.3 s
+[forecast_probe] moe_b2 unit 67 (SPEC, books, muon): 66.4 s
+[forecast_probe] moe_b2 unit 68 (SPEC, books, muon): 61.8 s
+[forecast_probe] moe_b2 unit 69 (SPEC, books, muon): 61.7 s
+[forecast_probe] moe_b2 unit 70 (SPEC, books, muon): 61.5 s
+[forecast_probe] moe_b2 unit 71 (SPEC, books, muon): 61.7 s
+[forecast_probe] moe_b2 unit 72 (SPEC, books, muon): 61.8 s
+[forecast_probe] moe_b2 unit 73 (SPEC, books, muon): 61.9 s
+[forecast_probe] moe_b2 unit 74 (SPEC, books, muon): 61.7 s
+[forecast_probe] moe_b2 unit 75 (SPEC, books, muon): 61.7 s
+[forecast_probe] moe_b2 unit 76 (SPEC, books, muon): 61.1 s
+[forecast_probe] moe_b2 unit 77 (SPEC, books, muon): 58.4 s
+[forecast_probe] moe_b2 unit 78 (SPEC, books, muon): 59.9 s
+[forecast_probe] moe_b2 unit 79 (SPEC, books, muon): 59.6 s
+[forecast_probe] moe_b2 unit 80 (SPEC, books, muon): 59.8 s
+[forecast_probe] moe_b2 unit 81 (SPEC, books, muon): 61.0 s
+[forecast_probe] moe_b2 unit 82 (SPEC, books, muon): 60.4 s
+[forecast_probe] moe_b2 unit 83 (SPEC, books, muon): 60.7 s
+[forecast_probe] moe_b2 unit 84 (SPEC, german, muon): 58.8 s
+[forecast_probe] moe_b2 unit 85 (SPEC, german, muon): 59.1 s
+[forecast_probe] moe_b2 unit 86 (SPEC, german, muon): 58.8 s
+[forecast_probe] moe_b2 unit 87 (SPEC, german, muon): 57.4 s
+[forecast_probe] moe_b2 unit 88 (SPEC, german, muon): 57.4 s
+[forecast_probe] moe_b2 unit 89 (SPEC, german, muon): 57.6 s
+[forecast_probe] moe_b2 unit 90 (SPEC, german, muon): 59.7 s
+[forecast_probe] moe_b2 unit 91 (SPEC, german, muon): 59.0 s
+[forecast_probe] moe_b2 unit 92 (SPEC, german, sgd): 58.4 s
+[forecast_probe] moe_b2 unit 93 (SPEC, german, sgd): 58.5 s
+[forecast_probe] moe_b2 unit 94 (SPEC, german, sgd): 58.6 s
+[forecast_probe] moe_b2 unit 95 (SPEC, german, sgd): 58.5 s
+[forecast_probe] moe_b2 unit 96 (SPEC, german, sgd): 58.5 s
+[forecast_probe] moe_b2 unit 97 (SPEC, german, sgd): 59.2 s
+[forecast_probe] moe_b2 unit 98 (SPEC, german, sgd): 59.2 s
+[forecast_probe] moe_b2 unit 99 (SPEC, german, sgd): 58.8 s
+[forecast_probe] moe_b2 unit 100 (SPEC, books, muon): 60.3 s
+[forecast_probe] moe_b2 unit 101 (SPEC, books, muon): 59.3 s
+[forecast_probe] moe_b2 unit 102 (SPEC, books, muon): 59.9 s
+[forecast_probe] moe_b2 unit 103 (SPEC, books, muon): 59.8 s
+[forecast_probe] moe_b2 unit 104 (FULL, books, muon): 97.1 s
+[forecast_probe] moe_b2 unit 105 (FULL, code, muon): 80.7 s
+[forecast_probe] moe_b2 unit 106 (FULL, german, muon): 98.6 s
+[forecast_probe] moe_b2 unit 107 (FULL, math, muon): 81.2 s
+[forecast_probe] moe_b2 unit 108 (SPEC, german, muon): 58.7 s
+[forecast_probe] moe_b2 unit 109 (SPEC, german, muon): 58.7 s
+[forecast_probe] moe_b2 unit 110 (SPEC, german, muon): 58.8 s
+[forecast_probe] moe_b2 unit 111 (SPEC, german, muon): 59.9 s
+[forecast_probe] moe_b2 unit 112 (SPEC, german, muon): 59.9 s
+[forecast_probe] moe_b2 unit 113 (SPEC, german, muon): 59.6 s
+[forecast_probe] {'base': 'moe_b2', 'done': 50, 'skipped': 0, 'seconds': 3259.4}

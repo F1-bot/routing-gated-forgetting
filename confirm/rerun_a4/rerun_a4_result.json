@@ -1,0 +1,47 @@
+{
+    "run_queue_exit":  0,
+    "dry_run":  false,
+    "evidence":  "confirm/rerun_a4/evidence/before_rerun_20261120_130455",
+    "rerun":  [
+                  "c3_freeze_moe_b1_german_s103",
+                  "c3_freeze_nestor_german_s103"
+              ],
+    "jobs":  {
+                 "c3_freeze_moe_b1_german_s103":  {
+                                                      "action":  "first attempt failed the frozen audit with exactly the named list: re-run",
+                                                      "status":  "done",
+                                                      "audit_ok":  true,
+                                                      "error":  null,
+                                                      "hours":  0.3655,
+                                                      "root":  "outputs/confirm/c3_freeze_moe_b1_german_s103/m2"
+                                                  },
+                 "c3_freeze_nestor_german_s103":  {
+                                                      "action":  "first attempt failed the frozen audit with exactly the named list: re-run",
+                                                      "status":  "done",
+                                                      "audit_ok":  true,
+                                                      "error":  null,
+                                                      "hours":  1.8201,
+                                                      "root":  "outputs/confirm/c3_freeze_nestor_german_s103/m4c"
+                                                  }
+             },
+    "acceptance":  {
+                       "exit":  0,
+                       "path":  "results/a4_acceptance.json",
+                       "sha256":  "4a36d1cbe69b92d0b92841cf164a8a3c18699cf8109f5aa04ef5e3e93ef87d72",
+                       "accepted":  {
+                                        "c3_freeze_moe_b1_german_s103":  true,
+                                        "c3_freeze_nestor_german_s103":  true
+                                    }
+                   },
+    "utc":  "2026-11-20T13:16:09Z",
+    "moved_roots":  {
+                        "c3_freeze_moe_b1_german_s103":  {
+                                                             "from":  "outputs/confirm/c3_freeze_moe_b1_german_s103/m2",
+                                                             "to":  "outputs/confirm/c3_freeze_moe_b1_german_s103/m2_a4failed1795172695"
+                                                         },
+                        "c3_freeze_nestor_german_s103":  {
+                                                             "from":  "outputs/confirm/c3_freeze_nestor_german_s103/m4c",
+                                                             "to":  "outputs/confirm/c3_freeze_nestor_german_s103/m4c_a4failed1795172695"
+                                                         }
+                    }
+}

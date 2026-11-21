@@ -1,0 +1,4 @@
+2026-11-19T21:07:02.2931581+02:00 resume script started (incident: a reboot of the computer at about 2026-11-19T21:02 ended chain6b, its power logger, both watchers and the repeat of job c1de_moe_b1_d2_B after its training, during its evaluations (last job write 20:57:52); its root, which held model_final.pt, was moved to m2_stale1795115188 with its job logs copied to results\incident_i6\evidence, so run_queue repeats the job from its start under the registered recovery rule)
+2026-11-19T21:07:02.3581287+02:00 power logger started pid 33644 -> logs\power\gpu_power_20261119_210702.csv
+2026-11-20T06:00:09.5922228+02:00 chain6b exit 0
+2026-11-20T06:00:09.6012209+02:00 power logger stopped; done

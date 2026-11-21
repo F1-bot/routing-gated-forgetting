@@ -1,0 +1,32 @@
+# .venv/nestor/Scripts/python.exe eval_windows.py run moe_100m outputs/g1/g1_moe_b1_full_math_s101/m2/moe_100m_g1_moe_b1_full_math_s101/20261114_040536__moe_100m_g1_moe_b1_full_math_s101_train/checkpoints/model_final.pt --set dclm=data/dclm/dclm_val.bin:2048000 --select even --block 4096 --variants revert:moe,revert:kind:attn+embed_head+kind:norm,revert:embed_head,wdonly --base outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt --out outputs/confirm/c3_reverts/g1_moe_b1_full_math_s101 --manifest outputs/g1/g1_moe_b1_full_math_s101/m2/subset_manifest.json --run-env outputs/g1/g1_moe_b1_full_math_s101/m2/run_env.json
+# env overrides: {}
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+.venv\nestor\Lib\site-packages\triton\knobs.py:524: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+[eval_windows] dclm: 100/500 windows, 15s
+[eval_windows] dclm: 200/500 windows, 28s
+[eval_windows] dclm: 300/500 windows, 42s
+[eval_windows] dclm: 400/500 windows, 57s
+[eval_windows] dclm: 500/500 windows, 70s
+RESULT {"variant": "revert:moe", "set": "dclm", "ce": 4.6278502661401095, "windows": 500, "seconds": 70.5, "file": "outputs/confirm/c3_reverts/g1_moe_b1_full_math_s101\\revert-moe__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 14s
+[eval_windows] dclm: 200/500 windows, 29s
+[eval_windows] dclm: 300/500 windows, 43s
+[eval_windows] dclm: 400/500 windows, 57s
+[eval_windows] dclm: 500/500 windows, 71s
+RESULT {"variant": "revert:kind:attn+embed_head+kind:norm", "set": "dclm", "ce": 4.655266891311813, "windows": 500, "seconds": 70.9, "file": "outputs/confirm/c3_reverts/g1_moe_b1_full_math_s101\\revert-kind-attn+embed_head+kind-norm__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 14s
+[eval_windows] dclm: 200/500 windows, 28s
+[eval_windows] dclm: 300/500 windows, 42s
+[eval_windows] dclm: 400/500 windows, 56s
+[eval_windows] dclm: 500/500 windows, 70s
+RESULT {"variant": "revert:embed_head", "set": "dclm", "ce": 4.66961523962149, "windows": 500, "seconds": 69.9, "file": "outputs/confirm/c3_reverts/g1_moe_b1_full_math_s101\\revert-embed_head__dclm.npz"}
+[pretrain] moe_100m_g1_moe_b1_full_math_s101: d=480 L=12 ctx=4096 rope=10000.0 init=outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt | 96 steps x 262,144 tok/step = 0.03B tokens | data=data\dclm\dclm_train.bin
+[wd_only] moe_100m: max_steps 96, warm-up 10, executed 96 (sources: training queue job (g1/queue_g1.json)); fingerprint not checked; train-log LRs equal at all 96 steps; cuda, 21.36 s
+[eval_windows] dclm: 100/500 windows, 14s
+[eval_windows] dclm: 200/500 windows, 29s
+[eval_windows] dclm: 300/500 windows, 43s
+[eval_windows] dclm: 400/500 windows, 57s
+[eval_windows] dclm: 500/500 windows, 70s
+RESULT {"variant": "wdonly", "set": "dclm", "ce": 4.624683047161172, "windows": 500, "seconds": 70.3, "file": "outputs/confirm/c3_reverts/g1_moe_b1_full_math_s101\\wdonly__dclm.npz"}

@@ -1,0 +1,105 @@
+{
+ "what": "Amendment A-4: the named lists of structurally zero-gradient trainable parameters, one per C3 freeze-mode job, each taken verbatim from that job's first-attempt audit (confirm/rerun_a4/amendment_A4_post_freeze.md, section Acceptance). Read by confirm/rerun_a4/a4_acceptance.py and checked by confirm/rerun_a4/watch_and_rerun_a4.ps1.",
+ "jobs": {
+  "c3_freeze_moe_b1_german_s103": {
+   "position": 154,
+   "experiment": "moe_100m",
+   "spec": {
+    "mode": "freeze",
+    "select": [
+     {
+      "kind": "moe"
+     }
+    ]
+   },
+   "out_root": "outputs/confirm/c3_freeze_moe_b1_german_s103",
+   "expected_trainable_unchanged": [
+    "backbone.blocks.0.layers.0.kimi_attn_read.query"
+   ],
+   "reason": "first depth-attention read of the network (block 0, layer 0, attention sublayer; DepthAttentionRead, repo/nestor/backbones/attention_residual.py lines 395-718): its only source is the embedding, so the softmax over the depth axis is identically 1, the zero-initialised pseudo-query (lines 472-480; AdamW, no weight decay) receives an exactly zero gradient at every step and stays bitwise unchanged",
+   "first_attempt": {
+    "status": "failed",
+    "error": "bitwise audit failed",
+    "audit_ok": false,
+    "hours": 0.2731,
+    "start": 1795068503.0554187,
+    "end": 1795069486.3435564,
+    "attempts": [
+     {
+      "micro": 2,
+      "ckpt": false,
+      "rc": 0,
+      "minutes": 16.21
+     }
+    ],
+    "root": "outputs/confirm/c3_freeze_moe_b1_german_s103/m2",
+    "audit_sha256": "056738b77a46ffc6dae1639383acff5e1e2d599fc540cedbf2dfbb7d0ea8c8e5",
+    "subset_manifest_sha256": "889ecafdbbfded3e63b90c35a84973c7d4940d3c848dffe7fe15a34a29b1b45a",
+    "run_env_sha256": "f88d4f430187775e33d6fe9d5e63dd7f7bde90a30ce150f1a45fff6b9896871f",
+    "counts": {
+     "frozen_tensors_checked": 64,
+     "frozen_rows_checked": 0,
+     "buffers_checked": 16,
+     "optimizer_state_checked": true,
+     "state_rows_checked": 0,
+     "trainable_tensors": 125
+    },
+    "evidence": "confirm/rerun_a4/evidence/first_attempt/c3_freeze_moe_b1_german_s103/"
+   }
+  },
+  "c3_freeze_nestor_german_s103": {
+   "position": 155,
+   "experiment": "nestor_100m",
+   "spec": {
+    "mode": "freeze",
+    "select": [
+     {
+      "block": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5
+      ],
+      "kind": "column"
+     }
+    ]
+   },
+   "out_root": "outputs/confirm/c3_freeze_nestor_german_s103",
+   "expected_trainable_unchanged": [
+    "backbone.blocks.0.layers.0.kimi_attn_read.query"
+   ],
+   "reason": "first depth-attention read of the network (block 0, layer 0, attention sublayer; DepthAttentionRead, repo/nestor/backbones/attention_residual.py lines 395-718): its only source is the embedding, so the softmax over the depth axis is identically 1, the zero-initialised pseudo-query (lines 472-480; AdamW, no weight decay) receives an exactly zero gradient at every step and stays bitwise unchanged",
+   "first_attempt": {
+    "status": "failed",
+    "error": "bitwise audit failed",
+    "audit_ok": false,
+    "hours": 0.7757,
+    "start": 1795069486.348556,
+    "end": 1795072278.9305105,
+    "attempts": [
+     {
+      "micro": 4,
+      "ckpt": true,
+      "rc": 0,
+      "minutes": 46.42
+     }
+    ],
+    "root": "outputs/confirm/c3_freeze_nestor_german_s103/m4c",
+    "audit_sha256": "a85bc7d9832b089065a359bd0d9ae8fae29706cbdd51b396f9c0c0dc65aa5a43",
+    "subset_manifest_sha256": "6c08990fb76ed6365600bb13f92d6a029f34d804e51df8f6bfa1c6a0b762c1e1",
+    "run_env_sha256": "075eecb91f359f14af3072f9c4d1dae77fd852ecc0d87ac5b581766de46cd7e1",
+    "counts": {
+     "frozen_tensors_checked": 530,
+     "frozen_rows_checked": 0,
+     "buffers_checked": 124,
+     "optimizer_state_checked": true,
+     "state_rows_checked": 0,
+     "trainable_tensors": 205
+    },
+    "evidence": "confirm/rerun_a4/evidence/first_attempt/c3_freeze_nestor_german_s103/"
+   }
+  }
+ }
+}

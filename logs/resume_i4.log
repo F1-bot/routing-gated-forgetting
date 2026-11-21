@@ -1,0 +1,2 @@
+2026-11-19T12:14:36.2023695+02:00 resume script started (incident: a restart of the launching software at about 2026-11-19T11:40 ended chain6b, its power logger and the running job dose_moe_b1_books_d3_A during training; run_queue moves the unfinished root aside and repeats the job from its start under the registered recovery rule)
+2026-11-19T12:14:36.2683679+02:00 power logger started pid 19544 -> logs\power\gpu_power_20261119_121436.csv

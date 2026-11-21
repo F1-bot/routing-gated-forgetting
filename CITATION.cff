@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+type: software
+title: "Does Routing Gate Forgetting? Pre-registered Tests for Resource-Constrained Mixture-of-Experts Adaptation (code and records)"
+authors:
+  - family-names: Dolhopolov
+    given-names: Serhii
+    orcid: "https://orcid.org/0000-0001-9418-0943"
+    affiliation: "Kyiv National University of Construction and Architecture"
+repository-code: "https://github.com/F1-bot/routing-gated-forgetting"
+license:
+  - MIT
+  - CC-BY-4.0
+date-released: "2026-11-21"
+keywords:
+  - mixture-of-experts
+  - continual pretraining
+  - catastrophic forgetting
+  - routing
+  - pre-registration

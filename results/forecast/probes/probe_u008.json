@@ -1,0 +1,84 @@
+{
+ "unit": 8,
+ "unit_sha256": "1f862a399d553af83f00fe119f98d6c7f727b7f2f85a6cedbb3257c59088f625",
+ "base": "moe_b1",
+ "mock": false,
+ "by_corpus": {
+  "code": {
+   "QE": 0.32021812472966615,
+   "QE_se": 0.07329147464192355,
+   "gamma": 0.0008171980965254733,
+   "gamma_se": 0.005625062953320437,
+   "quad_u": 0.41468142416789533,
+   "RND": 0.06550471565169858,
+   "RND_se": 0.013373876895654212,
+   "RND_Q_kl": 0.048635712131651646,
+   "SVC": 5257.315821654668,
+   "windows": 8
+  },
+  "dclm": {
+   "QE": 2.954836138720874,
+   "QE_se": 0.24142258415206208,
+   "gamma": -0.0007501593095593506,
+   "gamma_se": 0.02632724793474882,
+   "quad_u": 3.5842348473913432,
+   "RND": 0.2088246848774844,
+   "RND_se": 0.01298754670920193,
+   "RND_Q_kl": 0.13510481736126165,
+   "SVC": 11894.17524594167,
+   "windows": 8
+  },
+  "math": {
+   "QE": 1.572504093146565,
+   "QE_se": 0.164559729433125,
+   "gamma": 0.03737501325518089,
+   "gamma_se": 0.01656467683573741,
+   "quad_u": 1.84582261644195,
+   "RND": 0.14987576117952983,
+   "RND_se": 0.011857001696782027,
+   "RND_Q_kl": 0.09487271167586492,
+   "SVC": 9650.1983598374,
+   "windows": 8
+  }
+ },
+ "elements": {
+  "trainable": 66355200,
+  "full_trainable": 372756605
+ },
+ "udir_sq": 97527.35355544298,
+ "hdir_sq": 97527.35355453621,
+ "eps": 0.0025,
+ "eps_check": {
+  "eps": 0.0025,
+  "ok": true,
+  "pin_routing": true,
+  "trail": [
+   {
+    "eps": 0.0025,
+    "kl_eps": 0.0002002724940756294,
+    "kl_2eps": 0.0007999600328041152,
+    "ratio": 3.9943579696072704,
+    "flip_frac_eps": null
+   }
+  ]
+ },
+ "group": "data/domain/pg19_train.bin|muon|0.0025",
+ "routing": "pinned (theta0 selections and gates)",
+ "lr_ref": 0.0025,
+ "windows_file": "probe_u008__windows.npz",
+ "svc_tokens": {
+  "dclm": 32768,
+  "code": 32768,
+  "math": 32768
+ },
+ "device": "cuda",
+ "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+ "code_sha256": {
+  "forecast_probe.py": "3e1cf5b78c382f9239b7e0e75dae3ceda4b81b415f7631cc679aca958d47a38e",
+  "g0_probe.py": "966403f8ce6cfb5e4a04bb9bf7c7a85a2cb37ea8577a627f498230af4a25f3fe",
+  "eval_windows.py": "0f909d1e23c2e1bd3ec3765778ddf927ad2e3ccc036a6c1eadce8e822f2ecb41",
+  "subset_adapt.py": "4b86df24add074b3fc3d04c318a837974403cb90e5d6b90cdbec97c2d9fe4e27",
+  "weight_controls.py": "473ff8c58542f7f398431181cf11afb14b0b8bf0f261591a88120f3fdc6b2835"
+ },
+ "seconds": 58.0
+}

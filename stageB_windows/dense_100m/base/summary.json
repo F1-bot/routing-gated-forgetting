@@ -1,0 +1,47 @@
+{
+ "meta": {
+  "experiment": "dense_100m",
+  "checkpoint": {
+   "path": "outputs\\dense_100m_b05\\20261031_203621__dense_100m_b05_train\\checkpoints\\model_final.pt",
+   "size": 1511350221,
+   "head_sha256": "6eee6a7062bbd26b665f0c358faf30304531126a236b9c59ac252863a983d7b5"
+  },
+  "base": null,
+  "step": 1907,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-13T23:18:48"
+ },
+ "results": {
+  "ckpt|dclm09": {
+   "ce": 4.768872162126068,
+   "windows": 500,
+   "seconds": 52.1,
+   "file": "stageB_windows\\dense_100m\\base\\ckpt__dclm09.npz"
+  },
+  "ckpt|pg19": {
+   "ce": 4.843375641979549,
+   "windows": 500,
+   "seconds": 51.2,
+   "file": "stageB_windows\\dense_100m\\base\\ckpt__pg19.npz"
+  },
+  "ckpt|owm": {
+   "ce": 4.972409275316697,
+   "windows": 500,
+   "seconds": 52.4,
+   "file": "stageB_windows\\dense_100m\\base\\ckpt__owm.npz"
+  },
+  "ckpt|algstack": {
+   "ce": 6.411888833085317,
+   "windows": 500,
+   "seconds": 53.6,
+   "file": "stageB_windows\\dense_100m\\base\\ckpt__algstack.npz"
+  },
+  "ckpt|fw2de": {
+   "ce": 8.585160339400183,
+   "windows": 500,
+   "seconds": 54.0,
+   "file": "stageB_windows\\dense_100m\\base\\ckpt__fw2de.npz"
+  }
+ }
+}

@@ -1,0 +1,29 @@
+{
+    "utc":  "2026-11-20T05:16:56Z",
+    "run_queue_exit":  0,
+    "dry_run":  false,
+    "jobs":  {
+                 "audit_moe_b1":  {
+                                      "status":  "done",
+                                      "rc":  0,
+                                      "hours":  0.3319,
+                                      "outputs":  {
+                                                      "audit_realized_groups.json":  true,
+                                                      "audit_realized_windows.npz":  true,
+                                                      "audit_realized.json":  true
+                                                  },
+                                      "shim_line_in_log":  true
+                                  },
+                 "audit_moe_b2":  {
+                                      "status":  "done",
+                                      "rc":  0,
+                                      "hours":  0.3,
+                                      "outputs":  {
+                                                      "audit_realized_groups.json":  true,
+                                                      "audit_realized_windows.npz":  true,
+                                                      "audit_realized.json":  true
+                                                  },
+                                      "shim_line_in_log":  true
+                                  }
+             }
+}

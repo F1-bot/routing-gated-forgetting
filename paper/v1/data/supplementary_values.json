@@ -1,0 +1,508 @@
+{
+ "format": "supplementary_values/1",
+ "written_by": "scripts/make_supplementary_values.py",
+ "sources": {
+  "analysis": {
+   "path": "results/analysis_core/analysis_confirm.json",
+   "sha256": "859849244c70fa5ac4ddd8a73ab574ec97cdec33c3de1d5da00da7c6811f09a1"
+  },
+  "queue": {
+   "path": "confirm/queue_confirm.json",
+   "sha256": "47c95918229a8a2ed3eca4adc49d7d80fc89f2ad1cc4ebad0c2935622000269b"
+  },
+  "g1_logs": "logs/queue_g1/g1_moe_b1_*_m2.log (PyTorch step records)",
+  "edge_pre_freeze": "paper/v1/data/edge_pre_freeze.json",
+  "arch": "paper/v1/data/fig_arch_facts.json",
+  "e1_rule": "paper/v1/sections/04_design.tex: if more than 25% of a block's runs diverge, its confirmatory test is inconclusive"
+ },
+ "c1_random_share": {
+  "base": "moe_b1",
+  "draws": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "n": 6,
+  "mean_I_log": {
+   "rand": 1.078516183181555,
+   "sym": 1.316994404510461,
+   "raw": 1.5487534716213247
+  },
+  "rand_over_sym": 0.8189223731610686,
+  "rand_over_raw": 0.696376926956943,
+  "rand_over_sym_pct": 81.89223731610686,
+  "sym_minus_rand_of_means": 0.23847822132890584,
+  "I_sym_minus_I_rand": {
+   "mean": 0.23847822132890575,
+   "lo": 0.0914729591643069,
+   "hi": 0.3854834834935046,
+   "n": 6
+  },
+  "field": "C1.statistics.{rand,sym,raw}.draws[*].I_log, base moe_b1, d <= 6"
+ },
+ "c1_magnitude": {
+  "beta_raw": {
+   "hat": 1.6536110877159287,
+   "lo": 1.5852690118056967,
+   "hi": 1.7256179399585734
+  },
+  "exact_assumption_value": 1,
+  "registered_margin": 0.25,
+  "C1b_raw": {
+   "C1b_refuted": false,
+   "ci95": [
+    1.5963834772265697,
+    1.7163589456740456
+   ],
+   "n_boot": 10000,
+   "ratio": 1.6545627156769016,
+   "seed": 20261101,
+   "stratified_by": "base"
+  },
+  "C1b_sym": {
+   "C1b_refuted": false,
+   "ci95": [
+    1.3140249032967284,
+    1.363059011548995
+   ],
+   "n_boot": 10000,
+   "ratio": 1.3379017714800225,
+   "seed": 20261101,
+   "stratified_by": "base"
+  },
+  "C1b_refuted": false
+ },
+ "decay_rule": {
+  "mean_I_WD_nd": 2.795210269562986,
+  "n_WD": 6,
+  "mean_I_log": 1.6839354956078172,
+  "n_I": 20,
+  "ratio": 1.6599271628002912,
+  "registered_ratio": 1.6599271628002912,
+  "max_abs_F_WD_nats": 0.0006299445779914556,
+  "n_F_WD": 24
+ },
+ "code_stream2": {
+  "beta_hat": 1.8201044125056776,
+  "lo": 1.7271385871155385,
+  "hi": 1.9139271458356637,
+  "mean_J": 1.663629416081149
+ },
+ "c2_losses": {
+  "runs": 32,
+  "runs_diverged": 3,
+  "runs_pct": 9.375,
+  "draws_registered": 8,
+  "draws_dropped": 3,
+  "draws_pct": 37.5,
+  "threshold_pct": 25
+ },
+ "memory_pytorch": {
+  "metric": "max over logged steps of train/mem_peak_alloc_gib (reserved in brackets); descriptive, read after the freeze from existing logs, outside the registered EDGE block",
+  "full_moe_b1": {
+   "runs": [
+    "g1_moe_b1_full_german_s101_m2.log",
+    "g1_moe_b1_full_german_s102_m2.log",
+    "g1_moe_b1_full_math_s101_m2.log",
+    "g1_moe_b1_full_math_s102_m2.log"
+   ],
+   "alloc_gib_max": 9.1691,
+   "reserved_gib_max": 9.6895
+  },
+  "all_expert_moe_b1": {
+   "runs": [
+    "g1_moe_b1_eall_german_s101_m2.log",
+    "g1_moe_b1_eall_german_s102_m2.log"
+   ],
+   "alloc_gib_max": 7.6382,
+   "reserved_gib_max": 8.1211
+  },
+  "subset_g1_aa": {
+   "runs": [
+    "g1_moe_b1_aa1_R1_m2.log",
+    "g1_moe_b1_aa1_R2_m2.log",
+    "g1_moe_b1_aa2_R1_m2.log",
+    "g1_moe_b1_aa2_R2_m2.log"
+   ],
+   "alloc_gib_max": 7.6382,
+   "reserved_gib_max": 8.1387
+  },
+  "core_subset_and_c2": {
+   "runs": 72,
+   "alloc_gib_max": 7.6382,
+   "reserved_gib_max": 8.1387
+  },
+  "saving_gib": 1.5309,
+  "saving_pct": 16.6962951652834
+ },
+ "board_memory": {
+  "metric": "board memory from the external logger (includes CUDA context, allocator cache and other processes)",
+  "core_subset": {
+   "n": 40,
+   "median_mib": 10502.0,
+   "min_mib": 9855.0,
+   "max_mib": 15977.0
+  },
+  "prefreeze_full_max_mib": 13423.0,
+  "prefreeze_full_max_gib": 13.1083984375
+ },
+ "update_size": {
+  "updated_elements": 66355200,
+  "elements_total": 373387389,
+  "updated_units": 72,
+  "runs": 72,
+  "bitwise_audit_ok": 72,
+  "subset_specs": 72,
+  "select_kinds": [
+   "moe"
+  ],
+  "moe_layers_per_spec": [
+   12
+  ],
+  "experts_per_layer_selected": [
+   6
+  ],
+  "max_expert_id": 23,
+  "arch_facts": {
+   "facts": {
+    "dense.width": {
+     "value": 480
+    },
+    "dense.context": {
+     "value": 4096
+    },
+    "dense.vocab": {
+     "value": 100263
+    },
+    "dense.blocks": {
+     "value": 4
+    },
+    "dense.layers_per_block": {
+     "value": [
+      3,
+      3,
+      3,
+      3
+     ]
+    },
+    "dense.layers": {
+     "value": 12
+    },
+    "dense.head_dim": {
+     "value": 30
+    },
+    "dense.always_on_shared_experts": {
+     "value": 0
+    },
+    "dense.stored_params": {
+     "value": 141011709
+    },
+    "moe.width": {
+     "value": 480
+    },
+    "moe.context": {
+     "value": 4096
+    },
+    "moe.vocab": {
+     "value": 100263
+    },
+    "moe.blocks": {
+     "value": 4
+    },
+    "moe.layers_per_block": {
+     "value": [
+      3,
+      3,
+      3,
+      3
+     ]
+    },
+    "moe.layers": {
+     "value": 12
+    },
+    "moe.head_dim": {
+     "value": 30
+    },
+    "moe.always_on_shared_experts": {
+     "value": 0
+    },
+    "moe.stored_params": {
+     "value": 373387389
+    },
+    "moe.frozen_router_tensors": {
+     "value": 28
+    },
+    "nestor.width": {
+     "value": 480
+    },
+    "nestor.context": {
+     "value": 4096
+    },
+    "nestor.vocab": {
+     "value": 100263
+    },
+    "nestor.blocks": {
+     "value": 7
+    },
+    "nestor.layers_per_block": {
+     "value": [
+      1,
+      1,
+      2,
+      2,
+      2,
+      3,
+      2
+     ]
+    },
+    "nestor.layers": {
+     "value": 13
+    },
+    "nestor.head_dim": {
+     "value": 30
+    },
+    "nestor.always_on_shared_experts": {
+     "value": 0
+    },
+    "nestor.stored_params": {
+     "value": 377505845
+    },
+    "nestor.frozen_router_tensors": {
+     "value": 145
+    },
+    "dense.heads": {
+     "value": 16
+    },
+    "dense.experts_per_layer": {
+     "value": 1
+    },
+    "dense.experts_per_token": {
+     "value": 1
+    },
+    "dense.mlp_hidden": {
+     "value": 1920
+    },
+    "moe.heads": {
+     "value": 16
+    },
+    "moe.experts_per_layer": {
+     "value": 24
+    },
+    "moe.experts_per_token": {
+     "value": 3
+    },
+    "moe.mlp_hidden": {
+     "value": 640
+    },
+    "moe.active_expert_width": {
+     "value": 1920
+    },
+    "nestor.columns": {
+     "value": 8
+    },
+    "nestor.columns_per_token": {
+     "value": [
+      3,
+      4,
+      5,
+      6,
+      6,
+      7,
+      8
+     ]
+    },
+    "nestor.heads_per_column": {
+     "value": [
+      5,
+      4,
+      3,
+      3,
+      3,
+      2,
+      2
+     ]
+    },
+    "nestor.private_experts_per_column": {
+     "value": 8
+    },
+    "nestor.private_top_k": {
+     "value": [
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    "nestor.shared_experts": {
+     "value": 8
+    },
+    "nestor.shared_top_k": {
+     "value": 2
+    },
+    "nestor.config_provenance": {
+     "value": "G1 run config; base checkpoint loaded 859/859 weights"
+    },
+    "nestor.pool_semantics": {
+     "value": "public pool shared by all tokens (top-k_p), one private pool per column (top-k_q inside each selected column), learned two-logit path gate, both paths always evaluated"
+    },
+    "paper.moe": {
+     "value": "E = 24, K_e = 3"
+    },
+    "paper.nestor_columns": {
+     "value": "C = 8, K_c = 3,4,5,6,6,7,8; 13 layers in 7 blocks; 8 column-private experts per column"
+    },
+    "paper.column_router": {
+     "value": "once per block, a column router sends each token to K_c of C = 8 columns"
+    },
+    "paper.shared_experts": {
+     "value": "shared experts tied across columns; two-way gate"
+    },
+    "paper.stored": {
+     "value": "0.37B (MoE), 0.38B (NESTOR) stored"
+    },
+    "paper.routing_mass": {
+     "value": "w_c(m) = E_c[g_m^2]; W_c(S) = sum over m in S of w_c(m)"
+    },
+    "paper.forgetting": {
+     "value": "F_c = L_c(theta_0 + delta) - L_c(theta_0)"
+    },
+    "protocol.steps_tokens_context": {
+     "value": "96 steps of 262,144 tokens at 4k context"
+    },
+    "protocol.tokens_total": {
+     "value": 25165824
+    },
+    "protocol.frozen": {
+     "value": "routers and balancing biases frozen, routing noise off"
+    },
+    "protocol.subset": {
+     "value": "in subset runs only the experts of S are trainable"
+    },
+    "protocol.eval_windows": {
+     "value": "500 windows of 4,096 tokens (2,048,000 tokens) per stream"
+    },
+    "protocol.c1_subsets": {
+     "value": "k = 6 of N = 24 experts per MoE layer; pools of 12 (f = 1/2)"
+    }
+   }
+  },
+  "share_pct": 17.771141167277076,
+  "moe_layers": 12,
+  "experts_per_layer": 24,
+  "experts_total": 288,
+  "updated_experts_per_layer": 6,
+  "updated_experts": 72,
+  "frozen_share_pct": 82.22885883272292
+ },
+ "time_energy": {
+  "subset_wall_h_median": 0.25666666666666665,
+  "full_wall_h_median": 0.24812258839607237,
+  "time_ratio": 1.0344349070587462,
+  "subset_energy_wh_median": 54.490497236585234,
+  "full_energy_wh_median": 53.99587448538013,
+  "energy_ratio": 1.0091603804164526,
+  "subset_n": 40,
+  "full_n": 7
+ },
+ "edge_tradeoff": {
+  "description": "G1 gate runs before the freeze: MoE base 1, German target, 96 steps of 262,144 tokens with the registered adaptation recipe; F on the 500 even evaluation windows per corpus; two runs per row; descriptive, not a registered test",
+  "sources": {
+   "gate_record": {
+    "path": "g1/gate_record_G1.json",
+    "sha256": "9a2a82ed168924fff7be139c2ae6113d9e274a6abee7f81152d12b99db7a41c1",
+    "field": "F_levels_released[run].F.{german,dclm}.F (german gain = -F)"
+   },
+   "manifests": "outputs/g1/<run>/m2/subset_manifest.json: elements.trainable; full adaptation = elements.total - elements.by_kind.router.frozen (28 router tensors frozen, 161/189 tensors trainable in the log)",
+   "memory": "logs/queue_g1/<run>_m2.log, max over logged steps of train/mem_peak_alloc_gib"
+  },
+  "elements_total": 373387389,
+  "router_elements_frozen": 630784,
+  "rows": {
+   "full": {
+    "runs": [
+     "g1_moe_b1_full_german_s101",
+     "g1_moe_b1_full_german_s102"
+    ],
+    "german_gain": [
+     1.1150661353403541,
+     1.1148770594856532
+    ],
+    "dclm_F": [
+     0.16626921073717948,
+     0.16699634462759463
+    ],
+    "F_per_gain": [
+     0.1491115239424151,
+     0.14978902221258203
+    ],
+    "german_gain_mean": 1.1149715974130037,
+    "dclm_F_mean": 0.16663277768238705,
+    "F_per_gain_mean": 0.14945027307749856,
+    "updated_elements": 372756605,
+    "updated_pct": 99.8310644605086,
+    "alloc_gib_max": 9.1691,
+    "reserved_gib_max": 9.6895
+   },
+   "all_experts": {
+    "runs": [
+     "g1_moe_b1_eall_german_s101",
+     "g1_moe_b1_eall_german_s102"
+    ],
+    "german_gain": [
+     0.839334313949939,
+     0.8387878720238096
+    ],
+    "dclm_F": [
+     0.10575377651862027,
+     0.10607493656517093
+    ],
+    "F_per_gain": [
+     0.12599720368983724,
+     0.12646217250284697
+    ],
+    "german_gain_mean": 0.8390610929868743,
+    "dclm_F_mean": 0.1059143565418956,
+    "F_per_gain_mean": 0.1262296880963421,
+    "updated_elements": 265420800,
+    "updated_pct": 71.0845646691083,
+    "alloc_gib_max": 7.6382,
+    "reserved_gib_max": 8.1211
+   },
+   "subset_q14": {
+    "runs": [
+     "g1_moe_b1_aa1_R1",
+     "g1_moe_b1_aa1_R2"
+    ],
+    "german_gain": [
+     0.3534782270680708,
+     0.37203880780677656
+    ],
+    "dclm_F": [
+     0.028859333505036635,
+     0.028658338102869354
+    ],
+    "F_per_gain": [
+     0.08164387873168513,
+     0.07703050730598367
+    ],
+    "german_gain_mean": 0.3627585174374237,
+    "dclm_F_mean": 0.028758835803952994,
+    "F_per_gain_mean": 0.0793371930188344,
+    "updated_elements": 66355200,
+    "updated_pct": 17.771141167277076,
+    "alloc_gib_max": 7.6382,
+    "reserved_gib_max": 8.1387
+   }
+  },
+  "subset_over_full": {
+   "german_gain": 0.32535224958116316,
+   "dclm_F": 0.17258810783775816
+  }
+ }
+}

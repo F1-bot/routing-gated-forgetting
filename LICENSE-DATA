@@ -1,0 +1,17 @@
+Results, data files, figures and tables
+
+Copyright (c) 2026 Serhii Dolhopolov
+
+The results, data files, figures and tables in this repository (the JSON, JSONL, CSV and text data files, the
+.npz statistics, and the figure and table files) are licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0).
+
+You may share and adapt them for any purpose, provided that you give appropriate credit, provide a link to the
+licence, and indicate if changes were made.
+
+Licence text: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary:      https://creativecommons.org/licenses/by/4.0/
+
+The source code (Python, PowerShell and shell scripts) is licensed under the MIT License (LICENSE). The
+datasets used by the study and the upstream NESTOR code are not part of this repository and keep their own
+licences.

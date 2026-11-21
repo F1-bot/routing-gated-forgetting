@@ -1,0 +1,41 @@
+[queue] 2026-11-15 01:57:57 queue results\forecast\queue_forecast_inputs.json: 20 jobs, estimated 3.33 GPU-h
+[queue] 2026-11-15 01:57:57 start ksd_moe_b1_books_muon (train, est 0.0346 h)
+[queue] 2026-11-15 02:02:19 end ksd_moe_b1_books_muon: done
+[queue] 2026-11-15 02:02:19 start ksd_moe_b1_german_muon (train, est 0.0346 h)
+[queue] 2026-11-15 02:06:13 end ksd_moe_b1_german_muon: done
+[queue] 2026-11-15 02:06:13 start ksd_moe_b1_german_sgd (train, est 0.0346 h)
+[queue] 2026-11-15 02:10:07 end ksd_moe_b1_german_sgd: done
+[queue] 2026-11-15 02:10:07 start ksd_moe_b1_math_muon (train, est 0.0346 h)
+[queue] 2026-11-15 02:12:53 end ksd_moe_b1_math_muon: done
+[queue] 2026-11-15 02:12:53 start ksd_moe_b1_dclm_muon (train, est 0.0346 h)
+[queue] 2026-11-15 02:15:34 end ksd_moe_b1_dclm_muon: done
+[queue] 2026-11-15 02:15:34 start ksd_moe_b1_code_muon (train, est 0.0346 h)
+[queue] 2026-11-15 02:18:17 end ksd_moe_b1_code_muon: done
+[queue] 2026-11-15 02:18:17 start ksd_moe_b2_books_muon (train, est 0.0346 h)
+[queue] 2026-11-15 02:20:59 end ksd_moe_b2_books_muon: done
+[queue] 2026-11-15 02:20:59 start ksd_moe_b2_german_muon (train, est 0.0346 h)
+[queue] 2026-11-15 02:23:39 end ksd_moe_b2_german_muon: done
+[queue] 2026-11-15 02:23:39 start ksd_moe_b2_german_sgd (train, est 0.0346 h)
+[queue] 2026-11-15 02:26:19 end ksd_moe_b2_german_sgd: done
+[queue] 2026-11-15 02:26:19 start ksd_moe_b2_math_muon (train, est 0.0346 h)
+[queue] 2026-11-15 02:28:59 end ksd_moe_b2_math_muon: done
+[queue] 2026-11-15 02:28:59 start ksd_moe_b2_code_muon (train, est 0.0346 h)
+[queue] 2026-11-15 02:31:37 end ksd_moe_b2_code_muon: done
+[queue] 2026-11-15 02:31:37 start ksd_moe_b3_books_muon (train, est 0.0346 h)
+[queue] 2026-11-15 02:34:16 end ksd_moe_b3_books_muon: done
+[queue] 2026-11-15 02:34:16 start ksd_nestor_books_muon (train, est 0.25 h)
+[queue] 2026-11-15 02:46:33 end ksd_nestor_books_muon: done
+[queue] 2026-11-15 02:46:33 start ksd_nestor_german_muon (train, est 0.25 h)
+[queue] 2026-11-15 02:54:08 end ksd_nestor_german_muon: done
+[queue] 2026-11-15 02:54:08 start ksd_nestor_math_muon (train, est 0.25 h)
+[queue] 2026-11-15 03:01:41 end ksd_nestor_math_muon: done
+[queue] 2026-11-15 03:01:41 start ksd_nestor_code_muon (train, est 0.25 h)
+[queue] 2026-11-15 03:09:12 end ksd_nestor_code_muon: done
+[queue] 2026-11-15 03:09:12 start forecast_probe_moe_b1 (cmd, est 0.9165 h)
+[queue] 2026-11-15 04:19:57 end forecast_probe_moe_b1: done
+[queue] 2026-11-15 04:19:57 start forecast_probe_moe_b2 (cmd, est 0.7176 h)
+[queue] 2026-11-15 05:14:42 end forecast_probe_moe_b2: done
+[queue] 2026-11-15 05:14:42 start forecast_probe_moe_b3 (cmd, est 0.0872 h)
+[queue] 2026-11-15 05:21:28 end forecast_probe_moe_b3: done
+[queue] 2026-11-15 05:21:28 start forecast_probe_nestor (cmd, est 0.1928 h)
+[queue] 2026-11-15 05:32:59 end forecast_probe_nestor: done

@@ -1,0 +1,131 @@
+{
+ "description": "Reproduction stage A: fp32 mean token cross-entropy (nats) of the 0.5B-token 100M-class bases on held-out DCLM-baseline shards (first 10,004,085 tokens of global shard 09 file 0 = val09; first 5,004,090 tokens of global shard 10 = val10), block 4096, eval_ckpt.py.",
+ "budget": "0.5B training tokens per model (10% of the paper's 5B), 1907 optimizer steps, seq 4096",
+ "local_rtx4080super": {
+  "dense_100m|val09": {
+   "ce": 4.77527499245074,
+   "tokens": 10004085,
+   "time": "2026-11-01T05:26:58",
+   "ckpt": "outputs\\dense_100m_b05\\20261031_203621__dense_100m_b05_train\\checkpoints\\model_final.pt"
+  },
+  "dense_100m|val10": {
+   "ce": 4.831462179757271,
+   "tokens": 5004090,
+   "time": "2026-11-01T05:29:18",
+   "ckpt": "outputs\\dense_100m_b05\\20261031_203621__dense_100m_b05_train\\checkpoints\\model_final.pt"
+  },
+  "moe_100m|val09": {
+   "ce": 4.628702028932119,
+   "tokens": 10004085,
+   "time": "2026-11-01T05:35:28",
+   "ckpt": "outputs\\moe_100m_b05\\20261101_002357__moe_100m_b05_train\\checkpoints\\model_final.pt"
+  },
+  "moe_100m|val10": {
+   "ce": 4.694029942101111,
+   "tokens": 5004090,
+   "time": "2026-11-01T05:38:43",
+   "ckpt": "outputs\\moe_100m_b05\\20261101_002357__moe_100m_b05_train\\checkpoints\\model_final.pt"
+  },
+  "nestor_100m|val09": {
+   "ce": 4.784087012759975,
+   "tokens": 10004085,
+   "time": "2026-11-01T05:58:18",
+   "ckpt": "outputs\\nestor_100m_b05\\20261031_213045__nestor_100m_b05_train_h100\\checkpoints\\model_final.pt"
+  },
+  "nestor_100m|val10": {
+   "ce": 4.843787853606063,
+   "tokens": 5004090,
+   "time": "2026-11-01T06:07:22",
+   "ckpt": "outputs\\nestor_100m_b05\\20261031_213045__nestor_100m_b05_train_h100\\checkpoints\\model_final.pt"
+  }
+ },
+ "h100_modal": {
+  "nestor_100m|val09": {
+   "experiment": "nestor_100m",
+   "checkpoint": "/root/export/nestor_100m_b05_model_final_slim.pt",
+   "val_bin": "dclm_val.bin",
+   "block": 4096,
+   "first_per_doc": false,
+   "windows": 2443,
+   "tokens": 10004085,
+   "ce": 4.7841129895508,
+   "step": 1907,
+   "seconds": 290.0,
+   "precision": "fp32"
+  },
+  "nestor_100m|val10": {
+   "experiment": "nestor_100m",
+   "checkpoint": "/root/export/nestor_100m_b05_model_final_slim.pt",
+   "val_bin": "dclm_val10.bin",
+   "block": 4096,
+   "first_per_doc": false,
+   "windows": 1222,
+   "tokens": 5004090,
+   "ce": 4.843795768811113,
+   "step": 1907,
+   "seconds": 146.7,
+   "precision": "fp32"
+  },
+  "moe_100m_s43|val09": {
+   "experiment": "moe_100m",
+   "checkpoint": "/root/outputs/moe_100m_b05s43/20261101_001918__moe_100m_b05s43_train/checkpoints/model_final.pt",
+   "val_bin": "dclm_val.bin",
+   "block": 4096,
+   "first_per_doc": false,
+   "windows": 2443,
+   "tokens": 10004085,
+   "ce": 4.635177489565825,
+   "step": 1907,
+   "seconds": 148.6,
+   "precision": "fp32"
+  },
+  "moe_100m_s43|val10": {
+   "experiment": "moe_100m",
+   "checkpoint": "/root/outputs/moe_100m_b05s43/20261101_001918__moe_100m_b05s43_train/checkpoints/model_final.pt",
+   "val_bin": "dclm_val10.bin",
+   "block": 4096,
+   "first_per_doc": false,
+   "windows": 1222,
+   "tokens": 5004090,
+   "ce": 4.695905422996801,
+   "step": 1907,
+   "seconds": 76.4,
+   "precision": "fp32"
+  }
+ },
+ "bases": {
+  "dense_100m": "local, seed 42",
+  "moe_100m (base 1)": "local, seed 42",
+  "moe_100m (base 2)": "H100, seed 43 (init + data order)",
+  "nestor_100m": "H100, seed 42"
+ },
+ "cross_platform_nestor_abs_dCE": {
+  "val09": 2.5976790825055218e-05,
+  "val10": 7.915205049613405e-06
+ },
+ "paper_table3_5B_tokens_heldout": {
+  "dense": 3.5779,
+  "moe": 3.3859,
+  "nestor": 3.3562
+ },
+ "differences": {
+  "moe_b1_minus_dense_val09": -0.14657296351862126,
+  "nestor_minus_dense_val09": 0.008812020309235002,
+  "nestor_minus_moe_b1_val09": 0.15538498382785626,
+  "nestor_minus_moe_b2_val09": 0.14890952319414996,
+  "moe_seed_diff_val09": 0.006475460633706298,
+  "paper_moe_minus_dense": -0.19200000000000017,
+  "paper_nestor_minus_moe": -0.02970000000000006
+ },
+ "local_eval_throughput_tok_per_s_fp32": {
+  "moe_100m": 27038,
+  "nestor_100m": 8514
+ },
+ "deviations": [
+  "10% token budget (0.5B vs 5B)",
+  "single-GPU RandomSampler seeded by DCLM_SEED instead of the authors' DistributedSampler seed 0",
+  "platform split: Dense and MoE base 1 trained locally (RTX 4080 SUPER), NESTOR and MoE base 2 on one H100 (Modal); identical data sha256 and code",
+  "held-out shard ambiguity: repo SLURM scripts use global shard 09; preprocess_dclm.py docstring says the last shard (10); both evaluated",
+  "absolute CE not comparable to the paper (5B tokens); only signs/orderings are compared"
+ ]
+}

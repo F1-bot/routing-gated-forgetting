@@ -1,0 +1,60 @@
+{
+ "_comment": "explicit checkpoint pins; written by pins_check.py make; paths relative to the project root",
+ "created": "2026-11-13T05:00:24",
+ "pins": {
+  "dense_100m": {
+   "hash_seconds": 3.6,
+   "hashed": "2026-11-13T05:00:28",
+   "mtime": "2026-11-01T00:23:46",
+   "path": "outputs/dense_100m_b05/20261031_203621__dense_100m_b05_train/checkpoints/model_final.pt",
+   "sha256": "9c151bcd66d0311251b07d684d41545417d198ccb0747884a9e8ed56a9419d1d",
+   "size": 1511350221
+  },
+  "moe_100m": {
+   "hash_seconds": 8.1,
+   "hashed": "2026-11-13T05:00:36",
+   "mtime": "2026-11-01T05:21:54",
+   "path": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+   "sha256": "44e03b1794cb77bf9b6ef966edfa4a6a55da310efabe37e18883593b86e2a703",
+   "size": 3370939901
+  },
+  "moe_b1": {
+   "hash_seconds": 8.1,
+   "hashed": "2026-11-13T05:00:47",
+   "mtime": "2026-11-01T05:21:54",
+   "path": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+   "sha256": "44e03b1794cb77bf9b6ef966edfa4a6a55da310efabe37e18883593b86e2a703",
+   "size": 3370939901
+  },
+  "moe_b2": {
+   "hash_seconds": 3.6,
+   "hashed": "2026-11-13T05:00:51",
+   "mtime": "2026-11-01T03:44:18",
+   "path": "outputs/moe_100m_b05s43/20261101_001918__moe_100m_b05s43_train_h100/checkpoints/model_final.pt",
+   "sha256": "bd9580f78678e6cce8b5f76530e30c7156d2cd409d8cce45975a1a6d52593863",
+   "size": 1493623488
+  },
+  "moe_b3": {
+   "path": null,
+   "sha256": null,
+   "size": null,
+   "status": "pending"
+  },
+  "nestor": {
+   "hash_seconds": 3.7,
+   "hashed": "2026-11-13T05:00:55",
+   "mtime": "2026-11-01T01:51:45",
+   "path": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+   "sha256": "c9392348b1ce285098221a0a78f26b235548830268281a920b56b41f4976697c",
+   "size": 1510337922
+  },
+  "nestor_100m": {
+   "hash_seconds": 3.6,
+   "hashed": "2026-11-13T05:00:39",
+   "mtime": "2026-11-01T01:51:45",
+   "path": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+   "sha256": "c9392348b1ce285098221a0a78f26b235548830268281a920b56b41f4976697c",
+   "size": 1510337922
+  }
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "_comment": "g1g2_plan.py configuration (2026-11-13). Paths are relative to the project root . (cwd of run_queue). Changes from phase 5: FULL seeds 101/102 for NESTOR too and the H100 duplicate of NESTOR FULL German seed 101; DCLM-CONT on held-out global shard 03 / local 0 / file 0; code training stream; base-2/base-3 probe configs. | v1.3: spec 1.3.0 runs (pair a = 2 books in S1; NESTOR books A/A); DCLM-CONT = data/dclm/dclm_cont_heldout.bin",
+ "aa_pairs": {
+  "s1": [
+   1,
+   2
+  ],
+  "g2": [
+   3
+  ],
+  "targets": {
+   "1": "german",
+   "2": "books",
+   "3": "books"
+  }
+ },
+ "dclm_cont": {
+  "note": "held-out DCLM global shard 03; data rebuild bin, 29,998,792 tokens, sha256 7000c98f95bba8b47ec5c06c7ec1a1114811d30eaf939dfe737f5dc757e626d7 (data/data_manifest.json)",
+  "path": "data/dclm/dclm_cont_heldout.bin",
+  "pretrain_path": "data/dclm/dclm_train.bin"
+ },
+ "experiments": {
+  "moe_b1": "moe_100m",
+  "moe_b2": "moe_100m",
+  "nestor": "nestor_100m"
+ },
+ "g0_probe_configs": {
+  "moe_b1": "g0_moe_b1.json",
+  "moe_b2": "g0_moe_b2.json",
+  "moe_b3": "g0_moe_b3.json",
+  "nestor": "g0_nestor.json"
+ },
+ "h100_duplicate_file": "g1/h100_nestor_full_s101.json",
+ "interim_steps": [
+  0,
+  8,
+  24,
+  48
+ ],
+ "negctrl_steps": 8,
+ "python": ".venv/nestor/Scripts/python.exe",
+ "recipe": {
+  "lr_adamw": 7.5e-05,
+  "lr_muon": 0.0025,
+  "max_grad_norm": 1.0,
+  "micro": 2,
+  "momentum": 0.95,
+  "steps": 96,
+  "warmup_96": 10,
+  "weight_decay": 0.1
+ },
+ "run_exp": "run_exp.py",
+ "seeds": {
+  "aa_data": {
+   "moe": 7200,
+   "nestor": 7250
+  },
+  "aa_generator": {
+   "moe": 4000,
+   "nestor": 4100
+  },
+  "dclm_cont": 101,
+  "eall_moe": [
+   101,
+   102
+  ],
+  "full_moe": [
+   101,
+   102
+  ],
+  "full_nestor": [
+   101,
+   102
+  ],
+  "h100_duplicate_seed": 101
+ },
+ "snr": {
+  "kinds": "moe",
+  "train_batch_windows": 64,
+  "windows": 64
+ },
+ "theta0": {
+  "windows": 64
+ },
+ "throughput": {
+  "audit_min": 1.0,
+  "compile_min": {
+   "moe": 3.0,
+   "nestor": 8.5
+  },
+  "eval_tok_s": {
+   "moe": 27000.0,
+   "nestor": 8500.0
+  },
+  "model_load_min": 0.5,
+  "train_tok_s": {
+   "moe": 34000.0,
+   "nestor": 10200.0
+  }
+ },
+ "train_data": {
+  "books": "data/domain/pg19_train.bin",
+  "code": "data/domain/algstack_train.bin",
+  "french": "data/domain/fr_train.bin",
+  "german": "data/domain/fw2de_train.bin",
+  "math": "data/domain/owm_train.bin"
+ },
+ "nestor_aa": {
+  "pair": 1,
+  "target": "books"
+ }
+}

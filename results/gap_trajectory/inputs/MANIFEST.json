@@ -1,0 +1,68 @@
+{
+ "logs/pretrain_dense_100m_b05.log": {
+  "original_path": "logs/pretrain_dense_100m_b05.log",
+  "bytes": 185958,
+  "sha256": "fadbb64a757dc94231e2f0a08e45b0473db23ed9d7909dcd3c365ab3a0168261",
+  "sha256_original": "fadbb64a757dc94231e2f0a08e45b0473db23ed9d7909dcd3c365ab3a0168261"
+ },
+ "logs/pretrain_moe_100m_b05.log": {
+  "original_path": "logs/pretrain_moe_100m_b05.log",
+  "bytes": 185782,
+  "sha256": "457e992286dcee611d1f44478b5b2c86b634dda965b0f053d3914e1e9c23842b",
+  "sha256_original": "457e992286dcee611d1f44478b5b2c86b634dda965b0f053d3914e1e9c23842b"
+ },
+ "logs/pretrain_nestor_100m_b05_local_stub.log": {
+  "original_path": "logs/pretrain_nestor_100m_b05.log",
+  "bytes": 452,
+  "sha256": "45e9e44d8d1657fadc5ba5024a16eae1a7fc62df5d58b8ac60ece3ba184ea044",
+  "sha256_original": "45e9e44d8d1657fadc5ba5024a16eae1a7fc62df5d58b8ac60ece3ba184ea044"
+ },
+ "logs/pretrain_nestor_100m_b05_h100.log": {
+  "original_path": "<workspace>",
+  "bytes": 90848,
+  "sha256": "c4d1b730970f69cbee8b4b075e3c83fe6500fc04ccd1b4d057a740bfdd45d10f",
+  "sha256_original": "c4d1b730970f69cbee8b4b075e3c83fe6500fc04ccd1b4d057a740bfdd45d10f"
+ },
+ "logs/pretrain_moe_100m_b05s43_h100.log": {
+  "original_path": "<workspace>",
+  "bytes": 91033,
+  "sha256": "045af18e7340c13d1ca9867a4aadb4239c17a3139f28bf899eff2c55a7c178c3",
+  "sha256_original": "045af18e7340c13d1ca9867a4aadb4239c17a3139f28bf899eff2c55a7c178c3"
+ },
+ "configs/dense_100m_b05_config.json": {
+  "original_path": "outputs/dense_100m_b05/20261031_203621__dense_100m_b05_train/config.json",
+  "bytes": 14689,
+  "sha256": "ba83a94e86ff0ef4270126c6e5c5f22937bee2968b47320b271e16f320a8d812",
+  "sha256_original": "ba83a94e86ff0ef4270126c6e5c5f22937bee2968b47320b271e16f320a8d812"
+ },
+ "configs/moe_100m_b05_config.json": {
+  "original_path": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/config.json",
+  "bytes": 14683,
+  "sha256": "f6fecca8b3259edbcb51b6752d37ee98b1d9e87c97dbef90bf3cc0d23871af99",
+  "sha256_original": "f6fecca8b3259edbcb51b6752d37ee98b1d9e87c97dbef90bf3cc0d23871af99"
+ },
+ "reproduction_stageA.json": {
+  "original_path": "reproduction_stageA.json",
+  "bytes": 4711,
+  "sha256": "a8a584579a57494a9528c25b01006f44709f3a7eef2f23d9693ac67ba9c728f2",
+  "sha256_original": "a8a584579a57494a9528c25b01006f44709f3a7eef2f23d9693ac67ba9c728f2"
+ },
+ "launchers/run_pretrain_queue.ps1": {
+  "original_path": "run_pretrain_queue.ps1",
+  "bytes": 1387,
+  "sha256": "11202566608e8a53398ce31f74289364d16191ba7aa14da655e317ea9838da25",
+  "sha256_original": "11202566608e8a53398ce31f74289364d16191ba7aa14da655e317ea9838da25"
+ },
+ "launchers/modal_prod.sh": {
+  "original_path": "modal/prod.sh",
+  "bytes": 2077,
+  "sha256": "d92929cc213ad37f72a93b410a3133f71cbf8db721d35f5415ffb381d6049331",
+  "sha256_original": "d92929cc213ad37f72a93b410a3133f71cbf8db721d35f5415ffb381d6049331"
+ },
+ "launchers/modal_moe2.sh": {
+  "original_path": "modal/moe2.sh",
+  "bytes": 4449,
+  "sha256": "0bd5205ecc2c0943ee6a64318b5754509925ea77e35f053bf24425db359b2195",
+  "sha256_original": "0bd5205ecc2c0943ee6a64318b5754509925ea77e35f053bf24425db359b2195"
+ }
+}

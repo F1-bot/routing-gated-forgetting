@@ -1,0 +1,64 @@
+{
+ "_comment": "g0_gate.py config for the g0/ layout (place in g0). G0-5 per local mean CE from results/continual.jsonl (NESTOR, stage A key A|nestor_100m|val09) and the RESULT line of logs/g0_xplat_local_moe_b2_mean.log (MoE base 2); per-window r for every xplat/local_<base>* with an h100_<same suffix> counterpart.",
+ "bases": {
+  "moe_b1": {
+   "dir": "moe_b1",
+   "arch": "moe",
+   "base": 1,
+   "k": 6
+  },
+  "moe_b2": {
+   "dir": "moe_b2",
+   "arch": "moe",
+   "base": 2,
+   "k": 6
+  },
+  "nestor": {
+   "dir": "nestor",
+   "arch": "nestor",
+   "base": 1,
+   "k": 16
+  }
+ },
+ "decision_base": {
+  "moe": "moe_b1",
+  "nestor": "nestor"
+ },
+ "c1_targets": {
+  "moe": [
+   "german",
+   "books"
+  ],
+  "nestor": [
+   "german"
+  ]
+ },
+ "code_streams": [
+  "code",
+  "pycode"
+ ],
+ "c2": {
+  "base": "moe_b1",
+  "target": "german"
+ },
+ "dclm_tilt": {
+  "base": "moe_b1",
+  "match_target": "german"
+ },
+ "g0_5": {
+  "bases": {
+   "nestor": {
+    "h100_ce": 4.784113,
+    "local_jsonl": "../results/continual.jsonl",
+    "jsonl_key": "A|nestor_100m|val09"
+   },
+   "moe_b2": {
+    "h100_ce": 4.635177,
+    "local_result_log": "../logs/g0_xplat_local_moe_b2_mean.log"
+   }
+  },
+  "per_window_dir": "xplat"
+ },
+ "layout": "auto",
+ "half_seed": 0
+}

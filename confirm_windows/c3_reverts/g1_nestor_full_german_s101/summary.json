@@ -1,0 +1,63 @@
+{
+ "meta": {
+  "experiment": "nestor_100m",
+  "checkpoint": {
+   "path": "outputs\\g1\\g1_nestor_full_german_s101\\m2c\\nestor_100m_g1_nestor_full_german_s101\\20261114_064245__nestor_100m_g1_nestor_full_german_s101_train\\checkpoints\\model_final.pt",
+   "size": 3400441546,
+   "head_sha256": "41ea2286e82acf144b756292b8740c3a5bf28f18b51cf181d12bd793a10e56a3"
+  },
+  "base": {
+   "path": "outputs\\nestor_100m_b05\\20261031_213045__nestor_100m_b05_train_h100\\checkpoints\\model_final.pt",
+   "size": 1510337922,
+   "head_sha256": "417fb7b51ff8feec3f4adef090a375a8614c4028d62555fd4a24d5b8305ea8da"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-19T01:41:12"
+ },
+ "results": {
+  "revert:shared+pub+embed_head|dclm": {
+   "ce": 4.81506957226801,
+   "windows": 500,
+   "seconds": 230.1,
+   "file": "outputs/confirm/c3_reverts/g1_nestor_full_german_s101\\revert-shared+pub+embed_head__dclm.npz"
+  },
+  "revert:attn+priv|dclm": {
+   "ce": 4.865326987465659,
+   "windows": 500,
+   "seconds": 227.8,
+   "file": "outputs/confirm/c3_reverts/g1_nestor_full_german_s101\\revert-attn+priv__dclm.npz"
+  },
+  "revert:attn|dclm": {
+   "ce": 4.896791955223596,
+   "windows": 500,
+   "seconds": 228.0,
+   "file": "outputs/confirm/c3_reverts/g1_nestor_full_german_s101\\revert-attn__dclm.npz"
+  },
+  "revert:priv|dclm": {
+   "ce": 4.907989914816087,
+   "windows": 500,
+   "seconds": 226.8,
+   "file": "outputs/confirm/c3_reverts/g1_nestor_full_german_s101\\revert-priv__dclm.npz"
+  },
+  "revert:pub|dclm": {
+   "ce": 4.837735792029151,
+   "windows": 500,
+   "seconds": 226.2,
+   "file": "outputs/confirm/c3_reverts/g1_nestor_full_german_s101\\revert-pub__dclm.npz"
+  },
+  "revert:embed_head|dclm": {
+   "ce": 4.942322842738858,
+   "windows": 500,
+   "seconds": 226.2,
+   "file": "outputs/confirm/c3_reverts/g1_nestor_full_german_s101\\revert-embed_head__dclm.npz"
+  },
+  "wdonly|dclm": {
+   "ce": 4.780084137000153,
+   "windows": 500,
+   "seconds": 226.7,
+   "file": "outputs/confirm/c3_reverts/g1_nestor_full_german_s101\\wdonly__dclm.npz"
+  }
+ }
+}

@@ -1,0 +1,5 @@
+[guard 03:12:41] start: steps 5722, stop_by 06:46:10 UTC, reserve 260s, leg pretrain_moe_100m_b15s44_h100_leg20261113_031123
+[guard 03:51:15] synced step 1000 -> moe_100m_b15s44/20261113_031245__moe_100m_b15s44_train/checkpoints/model_00001000.pt (3.37 GB in 4s)
+[guard 03:51:15] projection at step 1000: 2.1775 s/step -> done (incl. eval/export/close) 06:48:48 UTC; stop_by 06:46:10 UTC
+[guard 03:51:15] BUDGET_STOP step 1000: projected finish 06:48:48 > stop_by 06:46:10 UTC
+[guard 03:51:45] trainer exited

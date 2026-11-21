@@ -1,0 +1,26 @@
+[
+ {
+  "repo": "HuggingFaceFW/fineweb-2",
+  "path": "data/fra_Latn/test/000_00000.parquet",
+  "size": 67031593,
+  "sha256": "11092a613abd05127de63c3d8f859811b656138dbc007c259fc5dd275e626daa",
+  "git_oid": "b2929de67ce266f3e03aae1939f17cbfeb1baa3c",
+  "dest": "data\\raw\\fineweb-2\\data\\fra_Latn\\test\\000_00000.parquet"
+ },
+ {
+  "repo": "HuggingFaceFW/fineweb-2",
+  "path": "data/fra_Latn/train/000_00000.parquet",
+  "size": 4845859492,
+  "sha256": "2f3d6e51bc3c7ef70438f506ae32d90eb7051ba8513eba4ace437cbe5a502eff",
+  "git_oid": "fa76528402e5a301c3f4517a0d6c77fec90927b2",
+  "dest": "data\\raw\\fineweb-2\\data\\fra_Latn\\train\\000_00000.parquet"
+ },
+ {
+  "repo": "codeparrot/codeparrot-clean-valid",
+  "path": "file-000000000054.json.gz",
+  "size": 142180683,
+  "sha256": "7f8c20a737c9084779bcdb853325ad4774d0db52c74aa2a63fd658d6787eb35b",
+  "git_oid": "5ed5325308cb9a07b2c5807dad51120c9a75b6db",
+  "dest": "data\\raw\\codeparrot\\file-000000000054.json.gz"
+ }
+]

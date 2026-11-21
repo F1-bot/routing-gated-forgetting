@@ -1,0 +1,45 @@
+{
+ "meta": {
+  "experiment": "moe_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c1_moe_b2_books_d10_A\\m2\\moe_100m_c1_moe_b2_books_d10_A\\20261116_070405__moe_100m_c1_moe_b2_books_d10_A_train\\checkpoints\\model_final.pt",
+   "size": 2555317241,
+   "head_sha256": "a46b9bfeeb19a106d1aac3a9f6c5472957ccece11b65c6500756ad03acd1ba4c"
+  },
+  "base": {
+   "path": "outputs\\moe_100m_b05s43\\20261101_001918__moe_100m_b05s43_train_h100\\checkpoints\\model_final.pt",
+   "size": 1493623488,
+   "head_sha256": "b7c887351fc40518db2ad8d5af8bef3620f8dc729dadcc1d183d1d57308f804b"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-16T07:29:39"
+ },
+ "results": {
+  "pinned|code": {
+   "ce": 6.214994660027473,
+   "windows": 500,
+   "seconds": 202.2,
+   "file": "outputs\\confirm\\c1_moe_b2_books_d10_A\\m2\\eval_pin\\pinned__code.npz"
+  },
+  "reflect+pinned|code": {
+   "ce": 6.218806024400946,
+   "windows": 500,
+   "seconds": 202.2,
+   "file": "outputs\\confirm\\c1_moe_b2_books_d10_A\\m2\\eval_pin\\reflect+pinned__code.npz"
+  },
+  "pinned|math": {
+   "ce": 4.84771787479014,
+   "windows": 500,
+   "seconds": 199.7,
+   "file": "outputs\\confirm\\c1_moe_b2_books_d10_A\\m2\\eval_pin\\pinned__math.npz"
+  },
+  "reflect+pinned|math": {
+   "ce": 4.850954587339744,
+   "windows": 500,
+   "seconds": 199.7,
+   "file": "outputs\\confirm\\c1_moe_b2_books_d10_A\\m2\\eval_pin\\reflect+pinned__math.npz"
+  }
+ }
+}

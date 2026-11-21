@@ -1,0 +1,18 @@
+# .venv/nestor/Scripts/python.exe eval_windows.py run moe_100m outputs\confirm\c2_moe_b1_d2_muon_H\m2\moe_100m_c2_moe_b1_d2_muon_H\20261117_111922__moe_100m_c2_moe_b1_d2_muon_H_train\checkpoints\model_final.pt --out outputs\confirm\c2_moe_b1_d2_muon_H\m2\eval_rand --variants randdir:9547,randdir-:9547 --set dclm=data/dclm/dclm_val.bin:2048000 --block 4096 --base outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt --select even
+# env overrides: {"DCLM_BLOCK_SIZE": "4096"}
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+.venv\nestor\Lib\site-packages\triton\knobs.py:524: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+[eval_windows] dclm: 100/500 windows, 15s
+[eval_windows] dclm: 200/500 windows, 28s
+[eval_windows] dclm: 300/500 windows, 41s
+[eval_windows] dclm: 400/500 windows, 55s
+[eval_windows] dclm: 500/500 windows, 68s
+RESULT {"variant": "randdir:9547", "set": "dclm", "ce": 4.623084781841422, "windows": 500, "seconds": 67.7, "file": "outputs\\confirm\\c2_moe_b1_d2_muon_H\\m2\\eval_rand\\randdir-9547__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 13s
+[eval_windows] dclm: 200/500 windows, 26s
+[eval_windows] dclm: 300/500 windows, 40s
+[eval_windows] dclm: 400/500 windows, 53s
+[eval_windows] dclm: 500/500 windows, 66s
+RESULT {"variant": "randdir-:9547", "set": "dclm", "ce": 4.623080719150641, "windows": 500, "seconds": 65.8, "file": "outputs\\confirm\\c2_moe_b1_d2_muon_H\\m2\\eval_rand\\randdir--9547__dclm.npz"}

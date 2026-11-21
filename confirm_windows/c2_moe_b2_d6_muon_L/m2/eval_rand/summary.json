@@ -1,0 +1,33 @@
+{
+ "meta": {
+  "experiment": "moe_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c2_moe_b2_d6_muon_L\\m2\\moe_100m_c2_moe_b2_d6_muon_L\\20261117_140247__moe_100m_c2_moe_b2_d6_muon_L_train\\checkpoints\\model_final.pt",
+   "size": 2555317241,
+   "head_sha256": "47dde2f440815abcc7ae52a73a46d9736d036f778b4ed9c8dd5bfaacb2b68156"
+  },
+  "base": {
+   "path": "outputs\\moe_100m_b05s43\\20261101_001918__moe_100m_b05s43_train_h100\\checkpoints\\model_final.pt",
+   "size": 1493623488,
+   "head_sha256": "b7c887351fc40518db2ad8d5af8bef3620f8dc729dadcc1d183d1d57308f804b"
+  },
+  "step": 8,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-17T14:09:48"
+ },
+ "results": {
+  "randdir:9564|dclm": {
+   "ce": 4.63108875009539,
+   "windows": 500,
+   "seconds": 68.4,
+   "file": "outputs\\confirm\\c2_moe_b2_d6_muon_L\\m2\\eval_rand\\randdir-9564__dclm.npz"
+  },
+  "randdir-:9564|dclm": {
+   "ce": 4.631066989564255,
+   "windows": 500,
+   "seconds": 65.4,
+   "file": "outputs\\confirm\\c2_moe_b2_d6_muon_L\\m2\\eval_rand\\randdir--9564__dclm.npz"
+  }
+ }
+}

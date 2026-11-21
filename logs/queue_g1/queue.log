@@ -1,0 +1,39 @@
+[queue] 2026-11-14 00:43:37 queue g1\queue_g1.json: 18 jobs, estimated 9.50 GPU-h
+[queue] 2026-11-14 00:43:37 start g1_base_moe_b1 (eval, est 0.1348 h)
+[queue] 2026-11-14 00:50:51 end g1_base_moe_b1: done
+[queue] 2026-11-14 00:50:51 start g1_base_nestor (eval, est 0.4099 h)
+[queue] 2026-11-14 01:13:02 end g1_base_nestor: done
+[queue] 2026-11-14 01:13:02 start g1_moe_b1_aa1_R1 (train, est 0.776 h)
+[queue] 2026-11-14 01:57:14 end g1_moe_b1_aa1_R1: done
+[queue] 2026-11-14 01:57:14 start g1_moe_b1_aa1_R2 (train, est 0.776 h)
+[queue] 2026-11-14 02:39:12 end g1_moe_b1_aa1_R2: done
+[queue] 2026-11-14 02:39:12 start g1_moe_b1_aa2_R1 (train, est 0.776 h)
+[queue] 2026-11-14 03:20:50 end g1_moe_b1_aa2_R1: done
+[queue] 2026-11-14 03:20:50 start g1_moe_b1_aa2_R2 (train, est 0.776 h)
+[queue] 2026-11-14 04:02:43 end g1_moe_b1_aa2_R2: done
+[queue] 2026-11-14 04:02:43 start g1_theta0_moe_b1 (cmd, est 0.05 h)
+[queue] 2026-11-14 04:03:22 end g1_theta0_moe_b1: done
+[queue] 2026-11-14 04:03:22 start g1_negctrl (train, est 0.0838 h)
+[queue] 2026-11-14 04:05:28 end g1_negctrl: done
+[queue] 2026-11-14 04:05:28 start g1_moe_b1_full_math_s101 (train, est 0.3271 h)
+[queue] 2026-11-14 04:24:25 end g1_moe_b1_full_math_s101: done
+[queue] 2026-11-14 04:24:25 start g1_moe_b1_full_math_s102 (train, est 0.3271 h)
+[queue] 2026-11-14 04:43:01 end g1_moe_b1_full_math_s102: done
+[queue] 2026-11-14 04:43:01 start g1_moe_b1_full_german_s101 (train, est 0.3482 h)
+[queue] 2026-11-14 05:03:05 end g1_moe_b1_full_german_s101: done
+[queue] 2026-11-14 05:03:05 start g1_moe_b1_full_german_s102 (train, est 0.3482 h)
+[queue] 2026-11-14 05:23:46 end g1_moe_b1_full_german_s102: done
+[queue] 2026-11-14 05:23:46 start g1_moe_b1_eall_german_s101 (train, est 0.3649 h)
+[queue] 2026-11-14 05:42:42 end g1_moe_b1_eall_german_s101: done
+[queue] 2026-11-14 05:42:42 start g1_moe_b1_eall_german_s102 (train, est 0.3649 h)
+[queue] 2026-11-14 06:01:16 end g1_moe_b1_eall_german_s102: done
+[queue] 2026-11-14 06:01:16 start g1_moe_b1_dclmcont_s101 (train, est 0.3482 h)
+[queue] 2026-11-14 06:21:15 end g1_moe_b1_dclmcont_s101: done
+[queue] 2026-11-14 06:21:15 start g1_nestor_full_german_s101 (train, est 0.9692 h)
+[queue] 2026-11-14 06:42:36 g1_nestor_full_german_s101: OOM at micro=2 ckpt=False; falling back
+[queue] 2026-11-14 08:09:27 end g1_nestor_full_german_s101: done
+[queue] 2026-11-14 08:09:27 start g1_nestor_full_german_s102 (train, est 0.9692 h)
+[queue] 2026-11-14 08:12:53 g1_nestor_full_german_s102: OOM at micro=2 ckpt=False; falling back
+[queue] 2026-11-14 09:31:58 end g1_nestor_full_german_s102: done
+[queue] 2026-11-14 09:31:58 start g1_nestor_aa1_R1 (train, est 1.3548 h)
+[queue] 2026-11-14 10:36:41 end g1_nestor_aa1_R1: done

@@ -1,0 +1,6 @@
+﻿2026-11-18T00:03:49.3363554+02:00 resume script started; waiting for the exploratory queues to end
+2026-11-18T03:15:53.8465095+02:00 exploratory queues ended (2026-11-18T03:15:53)
+2026-11-18T03:15:53.8525083+02:00 results\STOP renamed to STOP.used_pause3
+2026-11-18T03:15:53.9765495+02:00 power logger started pid 32248 -> logs\power\gpu_power_20261118_031553.csv
+2026-11-18T12:13:37.6557245+02:00 chain6b exit 2
+2026-11-18T12:13:37.6667328+02:00 power logger stopped; done

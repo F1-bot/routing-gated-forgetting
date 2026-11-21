@@ -1,0 +1,27 @@
+{
+ "meta": {
+  "experiment": "nestor_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c3_full_nestor_books_s101\\m4c\\nestor_100m_c3_full_nestor_books_s101\\20261118_154900__nestor_100m_c3_full_nestor_books_s101_train\\checkpoints\\model_final.pt",
+   "size": 3400441546,
+   "head_sha256": "2eea943316ff1d9fc8b104ad26c01c3cfc45bc068f0b95c04bf304f6862a4f2a"
+  },
+  "base": {
+   "path": "outputs\\nestor_100m_b05\\20261031_213045__nestor_100m_b05_train_h100\\checkpoints\\model_final.pt",
+   "size": 1510337922,
+   "head_sha256": "417fb7b51ff8feec3f4adef090a375a8614c4028d62555fd4a24d5b8305ea8da"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-18T17:20:40"
+ },
+ "results": {
+  "wdonly|dclm": {
+   "ce": 4.780084137000153,
+   "windows": 500,
+   "seconds": 225.9,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s101\\m4c\\eval_wd\\wdonly__dclm.npz"
+  }
+ }
+}

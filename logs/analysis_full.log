@@ -1,0 +1,22 @@
+[run_full_analysis] 2026-11-20T15:17:38 ##### start (PID 32824): root ., python .venv\nestor\Scripts\python.exe, GPU idle limit 4096 MiB, check only False
+[run_full_analysis] 2026-11-20T15:17:39 note: process list not readable (Клиенту не удалось получить доступ к ресурсу CIM.); relying on the chain LOCK, confirm.done, queue.log and the GPU
+[run_full_analysis] 2026-11-20T15:17:39 GPU memory in use 2085 MiB (limit 4096 MiB)
+[run_full_analysis] 2026-11-20T15:17:39 A-3 re-run: confirm\rerun\rerun_result.json sha256 8c2ca515960e09374a8fc84732d72194457b1ae1e0f5e81a5d0f8ad87bbcb3b4, utc 2026-11-20T05:16:56Z, run_queue exit 0, dry run False
+[run_full_analysis] 2026-11-20T15:17:39   rerun_result.json: audit_moe_b1 status done, rc 0, hours 0.3319, outputs 3/3, shim line True
+[run_full_analysis] 2026-11-20T15:17:39   rerun_result.json: audit_moe_b2 status done, rc 0, hours 0.3, outputs 3/3, shim line True
+[run_full_analysis] 2026-11-20T15:17:39   results\queue_state_confirm.json: audit_moe_b1 done
+[run_full_analysis] 2026-11-20T15:17:39   results\queue_state_confirm.json: audit_moe_b2 done
+[run_full_analysis] 2026-11-20T15:17:39 A-2 acceptance (results\a2_acceptance.json sha256 6d8fc6c4ebbbba5ca0d5b4c192f838bad4402f27ef41d546658e932dc94e59ad, utc 2026-11-19T03:50:40Z): c3_revert_g1_nestor_full_german_s101 True; c3_revert_g1_moe_b1_full_math_s101 True; c3_revert_g1_moe_b1_full_german_s101 True
+[run_full_analysis] 2026-11-20T15:17:39 A-4 re-run: confirm\rerun_a4\rerun_a4_result.json sha256 c66a563e528ed062d70c70a21f5d09fc4ec21588c7fa6a5a0aff2d4c28dc5673, utc 2026-11-20T13:16:09Z, run_queue exit 0, dry run False, re-run c3_freeze_moe_b1_german_s103,c3_freeze_nestor_german_s103
+[run_full_analysis] 2026-11-20T15:17:39 A-4 acceptance (results\a4_acceptance.json sha256 4a36d1cbe69b92d0b92841cf164a8a3c18699cf8109f5aa04ef5e3e93ef87d72, utc 2026-11-20T13:16:09Z): c3_freeze_moe_b1_german_s103 True; c3_freeze_nestor_german_s103 True
+[run_full_analysis] 2026-11-20T15:17:39 A-1 [wd_only] checks (results\a1_wd_only_checks.json sha256 3bf7649b5e17f4f3fbb1337959f686ec9bbbf740f424d7da31af1ba3504c87f5, utc 2026-11-19T02:00:37Z): c3_full_nestor_books_s101 True; c3_full_nestor_math_s101 True; c3_full_moe_b1_books_s101 True
+[run_full_analysis] 2026-11-20T15:17:39 command: .venv\nestor\Scripts\python.exe confirm\post_queue\analysis_notorch.py --root . --log logs\analysis_full.log -- run --mode full --root .
+[run_full_analysis] 2026-11-20T15:17:39 environment: PATH prefix <conda>\envs\nestor\Library\bin; TIKTOKEN_CACHE_DIR data\tiktoken; OMP/MKL/OPENBLAS/NUMEXPR/RAYON threads 1; PYTHONPATH .;sitecustom; priority Idle
+[analysis_notorch] 2026-11-20T13:17:39Z pid 14276: analyze_confirm.py run --mode full --root . (torch blocked; cwd .; OMP/MKL/OPENBLAS threads 1/1/1)
+[analyze_confirm] C1: confirmed | C2: confirmed | -> results/analysis/analysis_confirm.json, results/analysis/analysis_confirm.md
+[analysis_notorch] exit 0; torch imported: False; wall 197.6 s
+[run_full_analysis] 2026-11-20T15:20:57 output results\analysis\analysis_confirm.json sha256 d9b3e47598b2ac10745455917ef53251a114a70e5918aed584a53f58f577ae01 (885709 bytes)
+[run_full_analysis] 2026-11-20T15:20:57 output results\analysis\analysis_confirm.json.sha256 sha256 47539aef05e9777e0fb842ecdc809dedbc30b78c1f437f921e53d3db8d8a4cec (88 bytes)
+[run_full_analysis] 2026-11-20T15:20:57 output results\analysis\analysis_confirm.md sha256 58cde788e25025f9818bef0bdc48b6d686c59e5b6459f8032561013cf205adac (8671 bytes)
+[run_full_analysis] 2026-11-20T15:20:57 sidecar analysis_confirm.json.sha256 matches the file
+[run_full_analysis] 2026-11-20T15:20:57 exit 0 (analysis wall 198.1 s)

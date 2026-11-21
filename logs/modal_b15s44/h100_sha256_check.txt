@@ -1,0 +1,3 @@
+/root/data/dclm_train16.bin: OK
+/root/data/dclm_val.bin: OK
+/root/data/dclm_val10.bin: OK

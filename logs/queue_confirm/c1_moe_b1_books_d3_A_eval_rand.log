@@ -1,0 +1,42 @@
+# .venv/nestor/Scripts/python.exe eval_windows.py run moe_100m outputs\confirm\c1_moe_b1_books_d3_A\m2\moe_100m_c1_moe_b1_books_d3_A\20261115_173504__moe_100m_c1_moe_b1_books_d3_A_train\checkpoints\model_final.pt --out outputs\confirm\c1_moe_b1_books_d3_A\m2\eval_rand --variants randdir:9510,randdir-:9510 --set code=data/domain/algstack_test.bin:2048000 --set math=data/domain/owm_test.bin:2048000 --set dclm=data/dclm/dclm_val.bin:2048000 --span code=0.5,1 --span math=0.5,1 --block 4096 --base outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt --select even
+# env overrides: {"DCLM_BLOCK_SIZE": "4096"}
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+.venv\nestor\Lib\site-packages\triton\knobs.py:524: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+[eval_windows] code: 100/500 windows, 14s
+[eval_windows] code: 200/500 windows, 28s
+[eval_windows] code: 300/500 windows, 41s
+[eval_windows] code: 400/500 windows, 54s
+[eval_windows] code: 500/500 windows, 67s
+RESULT {"variant": "randdir:9510", "set": "code", "ce": 6.215605889423077, "windows": 500, "seconds": 66.9, "file": "outputs\\confirm\\c1_moe_b1_books_d3_A\\m2\\eval_rand\\randdir-9510__code.npz"}
+[eval_windows] math: 100/500 windows, 13s
+[eval_windows] math: 200/500 windows, 27s
+[eval_windows] math: 300/500 windows, 40s
+[eval_windows] math: 400/500 windows, 53s
+[eval_windows] math: 500/500 windows, 67s
+RESULT {"variant": "randdir:9510", "set": "math", "ce": 4.83234183932387, "windows": 500, "seconds": 66.9, "file": "outputs\\confirm\\c1_moe_b1_books_d3_A\\m2\\eval_rand\\randdir-9510__math.npz"}
+[eval_windows] dclm: 100/500 windows, 14s
+[eval_windows] dclm: 200/500 windows, 27s
+[eval_windows] dclm: 300/500 windows, 40s
+[eval_windows] dclm: 400/500 windows, 53s
+[eval_windows] dclm: 500/500 windows, 67s
+RESULT {"variant": "randdir:9510", "set": "dclm", "ce": 4.6248588856456045, "windows": 500, "seconds": 66.6, "file": "outputs\\confirm\\c1_moe_b1_books_d3_A\\m2\\eval_rand\\randdir-9510__dclm.npz"}
+[eval_windows] code: 100/500 windows, 14s
+[eval_windows] code: 200/500 windows, 27s
+[eval_windows] code: 300/500 windows, 40s
+[eval_windows] code: 400/500 windows, 54s
+[eval_windows] code: 500/500 windows, 67s
+RESULT {"variant": "randdir-:9510", "set": "code", "ce": 6.215499921779609, "windows": 500, "seconds": 66.6, "file": "outputs\\confirm\\c1_moe_b1_books_d3_A\\m2\\eval_rand\\randdir--9510__code.npz"}
+[eval_windows] math: 100/500 windows, 13s
+[eval_windows] math: 200/500 windows, 26s
+[eval_windows] math: 300/500 windows, 39s
+[eval_windows] math: 400/500 windows, 52s
+[eval_windows] math: 500/500 windows, 65s
+RESULT {"variant": "randdir-:9510", "set": "math", "ce": 4.832127022283272, "windows": 500, "seconds": 65.4, "file": "outputs\\confirm\\c1_moe_b1_books_d3_A\\m2\\eval_rand\\randdir--9510__math.npz"}
+[eval_windows] dclm: 100/500 windows, 13s
+[eval_windows] dclm: 200/500 windows, 26s
+[eval_windows] dclm: 300/500 windows, 39s
+[eval_windows] dclm: 400/500 windows, 52s
+[eval_windows] dclm: 500/500 windows, 65s
+RESULT {"variant": "randdir-:9510", "set": "dclm", "ce": 4.624974047523657, "windows": 500, "seconds": 65.2, "file": "outputs\\confirm\\c1_moe_b1_books_d3_A\\m2\\eval_rand\\randdir--9510__dclm.npz"}

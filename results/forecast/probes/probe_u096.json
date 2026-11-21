@@ -1,0 +1,98 @@
+{
+ "unit": 96,
+ "unit_sha256": "155d519ee2d432323abb265a7ef1558b6ca2e7a76b1dedd04fb76f4fecf5bafc",
+ "base": "moe_b2",
+ "mock": false,
+ "by_corpus": {
+  "code": {
+   "QE": 6499.231229425215,
+   "QE_se": 647.7498342584797,
+   "gamma": 2.5002331764157226,
+   "gamma_se": 1.3775938075680265,
+   "quad_u": 8917.980352917568,
+   "RND": 2.677979945815423,
+   "RND_se": 0.5699090599787825,
+   "RND_Q_kl": 0.9514238633102424,
+   "SVC": 3052768.3425533436,
+   "windows": 8
+  },
+  "dclm": {
+   "QE": 1944.1559504944858,
+   "QE_se": 1208.9366448606113,
+   "gamma": 0.5338776523295508,
+   "gamma_se": 0.3035677730064925,
+   "quad_u": 2257.7721112182303,
+   "RND": 0.7298715047454607,
+   "RND_se": 0.12816689106600088,
+   "RND_Q_kl": 0.3449797006394406,
+   "SVC": 978080.3758530127,
+   "windows": 8
+  },
+  "math": {
+   "QE": 3150.2781273923674,
+   "QE_se": 702.0889332844837,
+   "gamma": 0.4091018833427995,
+   "gamma_se": 0.46709758995408607,
+   "quad_u": 3922.8612364328797,
+   "RND": 1.231202646181373,
+   "RND_se": 0.1093225944370497,
+   "RND_Q_kl": 0.5490489458011614,
+   "SVC": 1632274.6648408717,
+   "windows": 8
+  }
+ },
+ "elements": {
+  "trainable": 66355200,
+  "full_trainable": 372756605
+ },
+ "udir_sq": 126834.40077559037,
+ "hdir_sq": 126834.40077219346,
+ "eps": 0.000625,
+ "eps_check": {
+  "eps": 0.000625,
+  "ok": true,
+  "pin_routing": true,
+  "trail": [
+   {
+    "eps": 0.0025,
+    "kl_eps": 0.011734926438447046,
+    "kl_2eps": 0.036656137640194916,
+    "ratio": 3.1236785192021914,
+    "flip_frac_eps": null
+   },
+   {
+    "eps": 0.00125,
+    "kl_eps": 0.0035690703414871187,
+    "kl_2eps": 0.011734926438447046,
+    "ratio": 3.2879504508609583,
+    "flip_frac_eps": null
+   },
+   {
+    "eps": 0.000625,
+    "kl_eps": 0.0010142666300232204,
+    "kl_2eps": 0.0035690703414871187,
+    "ratio": 3.518867954282799,
+    "flip_frac_eps": null
+   }
+  ]
+ },
+ "group": "data/domain/fw2de_train.bin|sgd|1.40496731",
+ "routing": "pinned (theta0 selections and gates)",
+ "lr_ref": 0.0025,
+ "windows_file": "probe_u096__windows.npz",
+ "svc_tokens": {
+  "dclm": 32768,
+  "code": 32768,
+  "math": 32768
+ },
+ "device": "cuda",
+ "checkpoint": "outputs/moe_100m_b05s43/20261101_001918__moe_100m_b05s43_train_h100/checkpoints/model_final.pt",
+ "code_sha256": {
+  "forecast_probe.py": "3e1cf5b78c382f9239b7e0e75dae3ceda4b81b415f7631cc679aca958d47a38e",
+  "g0_probe.py": "966403f8ce6cfb5e4a04bb9bf7c7a85a2cb37ea8577a627f498230af4a25f3fe",
+  "eval_windows.py": "0f909d1e23c2e1bd3ec3765778ddf927ad2e3ccc036a6c1eadce8e822f2ecb41",
+  "subset_adapt.py": "4b86df24add074b3fc3d04c318a837974403cb90e5d6b90cdbec97c2d9fe4e27",
+  "weight_controls.py": "473ff8c58542f7f398431181cf11afb14b0b8bf0f261591a88120f3fdc6b2835"
+ },
+ "seconds": 58.5
+}

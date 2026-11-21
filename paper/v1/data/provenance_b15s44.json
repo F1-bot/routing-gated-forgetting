@@ -1,0 +1,19 @@
+{
+ "tokens": 1499987968,
+ "warmup": 458,
+ "platform": "Modal 1x H100 80GB HBM3, torch 2.14.1+cu130, image python:3.12, sandbox cpu 1 / mem 6 GiB (leg 1) and 12 GiB (leg 2)",
+ "resume_exactness": {
+  "empirical": "step-1010 single-step train loss 5.2203 (leg 1) vs 5.2204 (resumed leg 2)"
+ },
+ "final_train_loss": {
+  "step_5720_logged": 3.7892
+ },
+ "eval_h100_fp32": {
+  "val09": {
+   "ce": 3.801992602086501
+  },
+  "val10": {
+   "ce": 3.869556693054769
+  }
+ }
+}

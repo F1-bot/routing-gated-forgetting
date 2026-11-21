@@ -1,0 +1,93 @@
+{
+ "meta": {
+  "experiment": "moe_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\moe_100m_c3_full_moe_b1_books_s101\\20261119_031138__moe_100m_c3_full_moe_b1_books_s101_train\\checkpoints\\model_final.pt",
+   "size": 3369826637,
+   "head_sha256": "e2132f2a62632f6189448cf132e61495e6c473ced162f19cf454ef91859401e3"
+  },
+  "base": {
+   "path": "outputs\\moe_100m_b05\\20261101_002357__moe_100m_b05_train\\checkpoints\\model_final.pt",
+   "size": 3370939901,
+   "head_sha256": "ef3eb3815967cf91802f9a1c299b2f26dc82a990d3ceb02e7a6902a1aff9f14b"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-19T03:39:05"
+ },
+ "results": {
+  "revert:moe@b0l0|dclm": {
+   "ce": 4.760926114163614,
+   "windows": 500,
+   "seconds": 75.2,
+   "file": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\eval_revert_layer\\revert-moe@b0l0__dclm.npz"
+  },
+  "revert:moe@b0l1|dclm": {
+   "ce": 4.754633786916209,
+   "windows": 500,
+   "seconds": 72.3,
+   "file": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\eval_revert_layer\\revert-moe@b0l1__dclm.npz"
+  },
+  "revert:moe@b0l2|dclm": {
+   "ce": 4.754174382822039,
+   "windows": 500,
+   "seconds": 70.8,
+   "file": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\eval_revert_layer\\revert-moe@b0l2__dclm.npz"
+  },
+  "revert:moe@b1l0|dclm": {
+   "ce": 4.754455879407051,
+   "windows": 500,
+   "seconds": 71.6,
+   "file": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\eval_revert_layer\\revert-moe@b1l0__dclm.npz"
+  },
+  "revert:moe@b1l1|dclm": {
+   "ce": 4.753228730254121,
+   "windows": 500,
+   "seconds": 70.3,
+   "file": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\eval_revert_layer\\revert-moe@b1l1__dclm.npz"
+  },
+  "revert:moe@b1l2|dclm": {
+   "ce": 4.754037771386599,
+   "windows": 500,
+   "seconds": 70.2,
+   "file": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\eval_revert_layer\\revert-moe@b1l2__dclm.npz"
+  },
+  "revert:moe@b2l0|dclm": {
+   "ce": 4.749140696543041,
+   "windows": 500,
+   "seconds": 70.1,
+   "file": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\eval_revert_layer\\revert-moe@b2l0__dclm.npz"
+  },
+  "revert:moe@b2l1|dclm": {
+   "ce": 4.751108461156899,
+   "windows": 500,
+   "seconds": 70.9,
+   "file": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\eval_revert_layer\\revert-moe@b2l1__dclm.npz"
+  },
+  "revert:moe@b2l2|dclm": {
+   "ce": 4.750639655830281,
+   "windows": 500,
+   "seconds": 70.3,
+   "file": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\eval_revert_layer\\revert-moe@b2l2__dclm.npz"
+  },
+  "revert:moe@b3l0|dclm": {
+   "ce": 4.745915010206807,
+   "windows": 500,
+   "seconds": 71.6,
+   "file": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\eval_revert_layer\\revert-moe@b3l0__dclm.npz"
+  },
+  "revert:moe@b3l1|dclm": {
+   "ce": 4.742649419070513,
+   "windows": 500,
+   "seconds": 70.3,
+   "file": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\eval_revert_layer\\revert-moe@b3l1__dclm.npz"
+  },
+  "revert:moe@b3l2|dclm": {
+   "ce": 4.745134918727106,
+   "windows": 500,
+   "seconds": 72.0,
+   "file": "outputs\\confirm\\c3_full_moe_b1_books_s101\\m2\\eval_revert_layer\\revert-moe@b3l2__dclm.npz"
+  }
+ }
+}

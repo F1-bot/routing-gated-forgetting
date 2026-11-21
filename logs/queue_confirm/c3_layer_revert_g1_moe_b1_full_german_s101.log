@@ -1,0 +1,78 @@
+# .venv/nestor/Scripts/python.exe eval_windows.py run moe_100m outputs/g1/g1_moe_b1_full_german_s101/m2/moe_100m_g1_moe_b1_full_german_s101/20261114_044309__moe_100m_g1_moe_b1_full_german_s101_train/checkpoints/model_final.pt --set dclm=data/dclm/dclm_val.bin:2048000 --select even --block 4096 --variants revert:moe@b0l0,revert:moe@b0l1,revert:moe@b0l2,revert:moe@b1l0,revert:moe@b1l1,revert:moe@b1l2,revert:moe@b2l0,revert:moe@b2l1,revert:moe@b2l2,revert:moe@b3l0,revert:moe@b3l1,revert:moe@b3l2 --base outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt --out outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101
+# env overrides: {}
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+.venv\nestor\Lib\site-packages\triton\knobs.py:524: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+[eval_windows] dclm: 100/500 windows, 26s
+[eval_windows] dclm: 200/500 windows, 51s
+[eval_windows] dclm: 300/500 windows, 75s
+[eval_windows] dclm: 400/500 windows, 100s
+[eval_windows] dclm: 500/500 windows, 124s
+RESULT {"variant": "revert:moe@b0l0", "set": "dclm", "ce": 4.784475739755036, "windows": 500, "seconds": 123.9, "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b0l0__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 24s
+[eval_windows] dclm: 200/500 windows, 48s
+[eval_windows] dclm: 300/500 windows, 70s
+[eval_windows] dclm: 400/500 windows, 93s
+[eval_windows] dclm: 500/500 windows, 118s
+RESULT {"variant": "revert:moe@b0l1", "set": "dclm", "ce": 4.778993708505037, "windows": 500, "seconds": 117.9, "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b0l1__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 26s
+[eval_windows] dclm: 200/500 windows, 51s
+[eval_windows] dclm: 300/500 windows, 76s
+[eval_windows] dclm: 400/500 windows, 101s
+[eval_windows] dclm: 500/500 windows, 126s
+RESULT {"variant": "revert:moe@b0l2", "set": "dclm", "ce": 4.779246238743895, "windows": 500, "seconds": 126.4, "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b0l2__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 25s
+[eval_windows] dclm: 200/500 windows, 50s
+[eval_windows] dclm: 300/500 windows, 71s
+[eval_windows] dclm: 400/500 windows, 94s
+[eval_windows] dclm: 500/500 windows, 119s
+RESULT {"variant": "revert:moe@b1l0", "set": "dclm", "ce": 4.781263029418498, "windows": 500, "seconds": 119.2, "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b1l0__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 25s
+[eval_windows] dclm: 200/500 windows, 50s
+[eval_windows] dclm: 300/500 windows, 74s
+[eval_windows] dclm: 400/500 windows, 99s
+[eval_windows] dclm: 500/500 windows, 123s
+RESULT {"variant": "revert:moe@b1l1", "set": "dclm", "ce": 4.779234147970086, "windows": 500, "seconds": 123.0, "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b1l1__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 25s
+[eval_windows] dclm: 200/500 windows, 49s
+[eval_windows] dclm: 300/500 windows, 73s
+[eval_windows] dclm: 400/500 windows, 97s
+[eval_windows] dclm: 500/500 windows, 121s
+RESULT {"variant": "revert:moe@b1l2", "set": "dclm", "ce": 4.775966707684677, "windows": 500, "seconds": 121.3, "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b1l2__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 25s
+[eval_windows] dclm: 200/500 windows, 49s
+[eval_windows] dclm: 300/500 windows, 73s
+[eval_windows] dclm: 400/500 windows, 97s
+[eval_windows] dclm: 500/500 windows, 121s
+RESULT {"variant": "revert:moe@b2l0", "set": "dclm", "ce": 4.774039978250916, "windows": 500, "seconds": 120.9, "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b2l0__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 21s
+[eval_windows] dclm: 200/500 windows, 45s
+[eval_windows] dclm: 300/500 windows, 71s
+[eval_windows] dclm: 400/500 windows, 97s
+[eval_windows] dclm: 500/500 windows, 121s
+RESULT {"variant": "revert:moe@b2l1", "set": "dclm", "ce": 4.776074207303114, "windows": 500, "seconds": 121.5, "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b2l1__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 25s
+[eval_windows] dclm: 200/500 windows, 50s
+[eval_windows] dclm: 300/500 windows, 74s
+[eval_windows] dclm: 400/500 windows, 100s
+[eval_windows] dclm: 500/500 windows, 125s
+RESULT {"variant": "revert:moe@b2l2", "set": "dclm", "ce": 4.77055887706044, "windows": 500, "seconds": 124.7, "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b2l2__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 25s
+[eval_windows] dclm: 200/500 windows, 50s
+[eval_windows] dclm: 300/500 windows, 73s
+[eval_windows] dclm: 400/500 windows, 95s
+[eval_windows] dclm: 500/500 windows, 118s
+RESULT {"variant": "revert:moe@b3l0", "set": "dclm", "ce": 4.767024014136905, "windows": 500, "seconds": 117.9, "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b3l0__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 25s
+[eval_windows] dclm: 200/500 windows, 49s
+[eval_windows] dclm: 300/500 windows, 74s
+[eval_windows] dclm: 400/500 windows, 98s
+[eval_windows] dclm: 500/500 windows, 123s
+RESULT {"variant": "revert:moe@b3l1", "set": "dclm", "ce": 4.763380326617827, "windows": 500, "seconds": 122.6, "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b3l1__dclm.npz"}
+[eval_windows] dclm: 100/500 windows, 25s
+[eval_windows] dclm: 200/500 windows, 49s
+[eval_windows] dclm: 300/500 windows, 74s
+[eval_windows] dclm: 400/500 windows, 99s
+[eval_windows] dclm: 500/500 windows, 124s
+RESULT {"variant": "revert:moe@b3l2", "set": "dclm", "ce": 4.765469354777167, "windows": 500, "seconds": 123.6, "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b3l2__dclm.npz"}

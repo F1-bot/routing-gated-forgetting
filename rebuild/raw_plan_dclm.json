@@ -1,0 +1,250 @@
+[
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+  "size": 141306362,
+  "sha256": "c006fce0b12ea2366ed94503344c7bc539e17c0aa10159a632272dd6d2929bdb",
+  "git_oid": "971732ab10ca36a08e4d46ace7d4d8bdda06224a",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000000_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000001_processed.jsonl.zst",
+  "size": 218055028,
+  "sha256": "ae6f05b12af96a05508bbe696e9e2904547239b42d3ca322495cbfbc6f62fa24",
+  "git_oid": "0542a05285deab271be05cb41de50776a73ddaac",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000001_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000002_processed.jsonl.zst",
+  "size": 234064161,
+  "sha256": "60c3eecb90ebda4cb3203a59af1e728bbe7e3250de478bb8dc43c8a755632585",
+  "git_oid": "cee4c7e53993f26ccddf741ad7b36506b63f686a",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000002_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000003_processed.jsonl.zst",
+  "size": 237981257,
+  "sha256": "9e3a04c1e2dec400a5523032bfc32ca6f83c5aa814d4e943f05a5cd57d93fc42",
+  "git_oid": "9350e452b002c47632141c68e8f38c8d1ede5de6",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000003_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000004_processed.jsonl.zst",
+  "size": 213149705,
+  "sha256": "d90e0271b2e00db672dac73cbc99e0b43400d7298f9ee7007e47c98b68fe0b34",
+  "git_oid": "becd41a1de2ce86caaa74a7d5a748f43486b7845",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000004_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000005_processed.jsonl.zst",
+  "size": 195564488,
+  "sha256": "dbb1709aa2001cca275a596077b75bcfe3702cb14de27919709c121e123f58e9",
+  "git_oid": "cbf5074e39a8e92915855ae1a6c2bd80b5ac2f01",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000005_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000006_processed.jsonl.zst",
+  "size": 218087763,
+  "sha256": "ca90cdba5cd6085b4d3d2b66a87effce5c85c27b19f2e9c16acdc92150736d52",
+  "git_oid": "7a5c2d3b582d8e710c54a88629d730536d460fbc",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000006_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000007_processed.jsonl.zst",
+  "size": 199688347,
+  "sha256": "28131543f17284cadad20c80856484f343e8cd3405b2675821e943a281411764",
+  "git_oid": "0f1d39fbf94c25d89f10ed5d1c5bd1fbfa77891e",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000007_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000008_processed.jsonl.zst",
+  "size": 256311356,
+  "sha256": "f5a2c78b2d46bbd80e415e2e20c2e42e3bc00e0dab43d931c5072a35b90e48fb",
+  "git_oid": "1c26cfb0ad9eaf00ddf7b747c1de189d8d140679",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000008_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000009_processed.jsonl.zst",
+  "size": 186806829,
+  "sha256": "9abbd3ff864fdb97797babca31dd390924a0a742b16c3b12400ebd4dcfb9b313",
+  "git_oid": "ac9479fed6568845debeb2fceccfde62ffe0499c",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000009_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000010_processed.jsonl.zst",
+  "size": 199343638,
+  "sha256": "8475b5a45b1d75593bca8edd27c2a231223043d172fed2e8d321cf39877e8171",
+  "git_oid": "56d737d5a566ac27c092a6406bf721a0cfab369d",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000010_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000011_processed.jsonl.zst",
+  "size": 254737941,
+  "sha256": "512c26cf7e44d928192207ca27978abef78b18c0c70bf3116830832b4cbc0131",
+  "git_oid": "c5753adb43b513de4a58efd05f76f50c0a8143c6",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000011_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000012_processed.jsonl.zst",
+  "size": 214546638,
+  "sha256": "1170598f347f268eb459db55492a9af153d380940ac6fa4ce4a5e258849db3cb",
+  "git_oid": "8cfbb1c10603003a6d657a2203c1e9f0ddffe5e6",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000012_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000013_processed.jsonl.zst",
+  "size": 212891129,
+  "sha256": "13f209ed546e8a84b154b057909200e212c5c521e6b46b19c86cfb9083aaefd7",
+  "git_oid": "b714c3304ffe2a1b99382186e87cbfc52a5b5e6f",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000013_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000014_processed.jsonl.zst",
+  "size": 222792106,
+  "sha256": "60260683ede248438297494c97c9f2b9836a35cd9f5917b9d13e4591c577df10",
+  "git_oid": "eb403d055655a0e7a9e01e2ac6ea793100166978",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000014_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_01_of_10/local-shard_0_of_10/shard_00000015_processed.jsonl.zst",
+  "size": 209521249,
+  "sha256": "d6ee33aa41624ceb33852f0489205a6cbac2e987518ea93cb730153d81662d24",
+  "git_oid": "30d6d835cf3683efbf594b06bac9d247421516d1",
+  "dest": "data\\dclm\\raw\\global-shard_01_of_10\\local-shard_0_of_10\\shard_00000015_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+  "size": 133233035,
+  "sha256": "4c5ce60258943051758148653c448bb57724af7592cc9d3e9c053cc6f9e10323",
+  "git_oid": "ac90c03a732d6d17e1e055886c2fffe75db633ab",
+  "dest": "data\\dclm\\raw\\global-shard_02_of_10\\local-shard_0_of_10\\shard_00000000_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000001_processed.jsonl.zst",
+  "size": 150026324,
+  "sha256": "0dacd503cf69ef452e7bef2d12f53939d5a378e7cad41b4ef0870004baab679b",
+  "git_oid": "a9f388ebbfe029e39c2fa06f4a068b7ea95da17b",
+  "dest": "data\\dclm\\raw\\global-shard_02_of_10\\local-shard_0_of_10\\shard_00000001_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000002_processed.jsonl.zst",
+  "size": 177616988,
+  "sha256": "6f450f87c6cb0b7dfc7acbba4ee723baf576ba22f00ccd51f1484d6b12de9ca8",
+  "git_oid": "cbb6b12a27f412fe19b74a77fbd3f07de5545588",
+  "dest": "data\\dclm\\raw\\global-shard_02_of_10\\local-shard_0_of_10\\shard_00000002_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000003_processed.jsonl.zst",
+  "size": 189967203,
+  "sha256": "0258b3ae53a116cfc74279e828f61b50a6711aeaf26e4689132aa85b1c844914",
+  "git_oid": "c3885cf4626bf7805ab58e6415d697a6b46dffc9",
+  "dest": "data\\dclm\\raw\\global-shard_02_of_10\\local-shard_0_of_10\\shard_00000003_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000004_processed.jsonl.zst",
+  "size": 196924991,
+  "sha256": "93ffe82bcad7c695c1ac8f111988679bc51e37de41f577fb9d6051213ba69db2",
+  "git_oid": "d5003981e39314e63daaa5160b8542181e9ba4a2",
+  "dest": "data\\dclm\\raw\\global-shard_02_of_10\\local-shard_0_of_10\\shard_00000004_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000005_processed.jsonl.zst",
+  "size": 191650190,
+  "sha256": "0171cf472d3a3477ad37c4e6e0b7b214e6671b57f7666bc855686f1c391518dc",
+  "git_oid": "1ed455d774503bda1cadba87fe345bd751e07bee",
+  "dest": "data\\dclm\\raw\\global-shard_02_of_10\\local-shard_0_of_10\\shard_00000005_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000006_processed.jsonl.zst",
+  "size": 222827970,
+  "sha256": "f6e14a97ea7d0ad9fbcb08141754204d7d09578fb1fbee06d44daa6d4a5abd6a",
+  "git_oid": "a7d7c7665d21b5e26b732f5a42b0b4d56b5d8adc",
+  "dest": "data\\dclm\\raw\\global-shard_02_of_10\\local-shard_0_of_10\\shard_00000006_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000007_processed.jsonl.zst",
+  "size": 235489055,
+  "sha256": "31178ca9769ee60238c5c6c25e75cd484552084c084373016b44ddc4103a6aea",
+  "git_oid": "b1d0d3c7d4849c82cb3a5484224575c9ae5a824f",
+  "dest": "data\\dclm\\raw\\global-shard_02_of_10\\local-shard_0_of_10\\shard_00000007_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000008_processed.jsonl.zst",
+  "size": 219979593,
+  "sha256": "936ce8ee4f9c4321b4a78d4a96e189f79369da307ba790319606c9208c410b7b",
+  "git_oid": "63f62189f7a12d6e1c62dfcd032a0292bfa4d7ed",
+  "dest": "data\\dclm\\raw\\global-shard_02_of_10\\local-shard_0_of_10\\shard_00000008_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000009_processed.jsonl.zst",
+  "size": 214310282,
+  "sha256": "084db09533708ca51e0473a387db12b3f91703251a1f63d63f1ba8a86803e5f4",
+  "git_oid": "137fa59882c28dd760c909d75255547555178ecc",
+  "dest": "data\\dclm\\raw\\global-shard_02_of_10\\local-shard_0_of_10\\shard_00000009_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000010_processed.jsonl.zst",
+  "size": 210196744,
+  "sha256": "70a233fdbc10727017c38e9b2e1b84c6d5c1dca6ee68cdfd5b354a2ce19da749",
+  "git_oid": "aa61a2f2ca435bb79c22dd90d28a41f2ad3625fb",
+  "dest": "data\\dclm\\raw\\global-shard_02_of_10\\local-shard_0_of_10\\shard_00000010_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_02_of_10/local-shard_0_of_10/shard_00000011_processed.jsonl.zst",
+  "size": 217317921,
+  "sha256": "6c0a4ff911c08d7529e38aefb78c2192d892f6d62f92492a3f4a926070c5ccbd",
+  "git_oid": "bda98856675f1a9526ebd87ee559de64460f2718",
+  "dest": "data\\dclm\\raw\\global-shard_02_of_10\\local-shard_0_of_10\\shard_00000011_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_09_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+  "size": 141513981,
+  "sha256": "6cffee0159d9a5a7d4489b2137bf250a87b9d98047bcc9cd0ac67214437ec633",
+  "git_oid": "b34b7623c7dfea6cd62880b2655ecf3654f31dbb",
+  "dest": "data\\dclm\\raw\\global-shard_09_of_10\\local-shard_0_of_10\\shard_00000000_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_10_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+  "size": 215318914,
+  "sha256": "3a7b37eae2e65cdbaab495456d46dc1df06729dc76555b8418752187e7c89d4a",
+  "git_oid": "c92bff5a6e5ca97598f8442daa4b1f29d2017313",
+  "dest": "data\\dclm\\raw\\global-shard_10_of_10\\local-shard_0_of_10\\shard_00000000_processed.jsonl.zst"
+ },
+ {
+  "repo": "mlfoundations/dclm-baseline-1.0",
+  "path": "global-shard_03_of_10/local-shard_0_of_10/shard_00000000_processed.jsonl.zst",
+  "size": 130069392,
+  "sha256": "4d372bf2ccb4a5d10fe1778ad3b7dd8e0bf6f9bb554497d53e1e6f4283b1bcb1",
+  "git_oid": "afe28e1e5732d2f77de2bb1f5fb93067c2b7dc43",
+  "dest": "data\\dclm\\raw\\global-shard_03_of_10\\local-shard_0_of_10\\shard_00000000_processed.jsonl.zst"
+ }
+]

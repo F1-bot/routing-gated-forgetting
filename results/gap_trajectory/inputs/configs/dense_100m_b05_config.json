@@ -1,0 +1,559 @@
+{
+  "experiment": {
+    "name": "dense_100m_b05",
+    "jobs": [
+      {
+        "job_type": "train",
+        "name": "dense_100m_b05_train",
+        "seed": 42,
+        "model": {
+          "model_type": "sequence",
+          "adapter_config": {
+            "adapter_type": "text",
+            "tokenizer": "cl100k_base",
+            "embed_dim": 480,
+            "max_length": 4096,
+            "vocab_size": 100263
+          },
+          "backbone_config": {
+            "backbone_type": "nestor",
+            "input_dim": 480,
+            "num_blocks": 4,
+            "feature_dims": [
+              480,
+              480,
+              480,
+              480
+            ],
+            "pooling_strides": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "pooling_keep_ratios": null,
+            "causal": true,
+            "block_num_layers": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "num_groups": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "num_groups_per_token": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "block_num_heads": [
+              16,
+              16,
+              16,
+              16
+            ],
+            "block_head_dims": 30,
+            "block_rope_bases": 10000.0,
+            "block_mlp_hidden_dims": [
+              [
+                1920
+              ],
+              [
+                1920
+              ],
+              [
+                1920
+              ],
+              [
+                1920
+              ]
+            ],
+            "block_mlp_activations": "swiglu",
+            "router_num_experts_per_group": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "block_layer_num_experts": null,
+            "router_num_shared_experts": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "router_num_dense_shared_experts": 0,
+            "router_num_experts_per_group_per_token": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "router_score_mlp_hidden_dims": [
+              [
+                128
+              ],
+              [
+                128
+              ],
+              [
+                128
+              ],
+              [
+                128
+              ]
+            ],
+            "router_score_mlp_activations": "gelu",
+            "router_noise_mlp_hidden_dims": [
+              [
+                128
+              ],
+              [
+                128
+              ],
+              [
+                128
+              ],
+              [
+                128
+              ]
+            ],
+            "router_noise_mlp_activations": "gelu",
+            "router_loss_free_balancing": true,
+            "router_bias_update_rate": 0.001,
+            "attention_token_dispatch": true,
+            "block_expert_pool_public_experts": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "block_expert_pool_public_top_k": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "block_expert_pool_private_experts": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "block_expert_pool_private_top_k": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "block_expert_pool_private_gate": "renorm",
+            "block_expert_pool_active_budget": null,
+            "block_expert_pool_public_budget": null,
+            "mlp_auto_dense_ratio": null,
+            "attention_auto_head_split": false,
+            "residual_mode": "convex",
+            "block_residual_mode": "attn_res_kimi",
+            "block_attn_res_include_embedding": true,
+            "block_column_include_aggregate": false,
+            "block_column_gain_init": 1.0,
+            "block_column_mass_lambda": null,
+            "block_column_head_only": false,
+            "block_column_head_query_per_source": false,
+            "block_column_deviation_sources": false,
+            "block_column_blocks": null,
+            "block_column_trailing_layers": null,
+            "drop_path_rate": 0.0,
+            "num_global_tokens": 0,
+            "pooling_mode": "mean"
+          },
+          "head_config": {
+            "head_type": "language_modeling",
+            "vocab_size": 100263,
+            "hidden_dims": [],
+            "activation": "gelu"
+          },
+          "reference_mup": {
+            "components": [
+              "architecture",
+              "residual",
+              "embedding",
+              "logits",
+              "initialization",
+              "optimizer",
+              "router"
+            ],
+            "matrix_optimizer": "muon",
+            "group_router_lr": "native",
+            "initializer_range": 0.1,
+            "width_multiplier": 8.0,
+            "embedding_multiplier": 12.0,
+            "residual_multiplier": 0.22,
+            "norm_eps": 1e-05,
+            "num_layers": 12
+          }
+        },
+        "train_dataset": {
+          "dataset_type": "dclm",
+          "split": "train",
+          "data_path": "<workspace>",
+          "token_dtype": "uint32",
+          "block_size": 4096,
+          "tokenizer": "cl100k_base",
+          "token_remap": {
+            "100257": 100261
+          }
+        },
+        "train_dataloader": {
+          "batch_size": 4,
+          "num_workers": 0,
+          "pin_memory": true,
+          "drop_last": true,
+          "shuffle": true,
+          "prefetch_factor": 2,
+          "persistent_workers": false
+        },
+        "optimizer": {
+          "optimizer_type": "muon_adamw",
+          "lr": 0.001,
+          "weight_decay": 0.1,
+          "lr_muon": 0.01,
+          "lr_adamw": 0.0003,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "eps": 1e-08,
+          "muon_momentum": 0.95,
+          "muon_nesterov": true,
+          "muon_ns_steps": 5
+        },
+        "scheduler": {
+          "scheduler_type": "cosine",
+          "T_max": 1907,
+          "eta_min": 1e-05,
+          "warmup_steps": 153
+        },
+        "max_steps": 1907,
+        "grad_accum_steps": 16,
+        "max_grad_norm": 1.0,
+        "use_amp": true,
+        "ema_decay": null,
+        "loss": {
+          "loss_type": "causal_lm",
+          "label_smoothing": 0.0
+        },
+        "eval_suite": null,
+        "eval_frequency": 10000000,
+        "checkpoint_dir": "checkpoints",
+        "checkpoint_frequency": 200,
+        "log_frequency": 10,
+        "distributed": {
+          "enabled": false,
+          "backend": "nccl",
+          "init_method": "env://",
+          "world_size": null,
+          "rank": null,
+          "local_rank": null,
+          "fsdp2_reshard_after_forward": null,
+          "fsdp2_param_dtype": null,
+          "fsdp2_reduce_dtype": null,
+          "fsdp2_output_dtype": null,
+          "fsdp2_cpu_offload": false
+        },
+        "wandb_project": "nestor",
+        "wandb_entity": null,
+        "wandb_run_name": "dense_100m_b05",
+        "wandb_tags": [
+          "pretrain",
+          "dense",
+          "100m"
+        ],
+        "resume_model_checkpoint": null,
+        "resume_strict": true,
+        "eval_submit_scripts": null
+      }
+    ],
+    "output_root": "<workspace>",
+    "save_source_snapshot": true
+  },
+  "job": {
+    "job_type": "train",
+    "name": "dense_100m_b05_train",
+    "seed": 42,
+    "model": {
+      "model_type": "sequence",
+      "adapter_config": {
+        "adapter_type": "text",
+        "tokenizer": "cl100k_base",
+        "embed_dim": 480,
+        "max_length": 4096,
+        "vocab_size": 100263
+      },
+      "backbone_config": {
+        "backbone_type": "nestor",
+        "input_dim": 480,
+        "num_blocks": 4,
+        "feature_dims": [
+          480,
+          480,
+          480,
+          480
+        ],
+        "pooling_strides": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pooling_keep_ratios": null,
+        "causal": true,
+        "block_num_layers": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "num_groups": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "num_groups_per_token": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "block_num_heads": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "block_head_dims": 30,
+        "block_rope_bases": 10000.0,
+        "block_mlp_hidden_dims": [
+          [
+            1920
+          ],
+          [
+            1920
+          ],
+          [
+            1920
+          ],
+          [
+            1920
+          ]
+        ],
+        "block_mlp_activations": "swiglu",
+        "router_num_experts_per_group": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "block_layer_num_experts": null,
+        "router_num_shared_experts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "router_num_dense_shared_experts": 0,
+        "router_num_experts_per_group_per_token": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "router_score_mlp_hidden_dims": [
+          [
+            128
+          ],
+          [
+            128
+          ],
+          [
+            128
+          ],
+          [
+            128
+          ]
+        ],
+        "router_score_mlp_activations": "gelu",
+        "router_noise_mlp_hidden_dims": [
+          [
+            128
+          ],
+          [
+            128
+          ],
+          [
+            128
+          ],
+          [
+            128
+          ]
+        ],
+        "router_noise_mlp_activations": "gelu",
+        "router_loss_free_balancing": true,
+        "router_bias_update_rate": 0.001,
+        "attention_token_dispatch": true,
+        "block_expert_pool_public_experts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "block_expert_pool_public_top_k": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "block_expert_pool_private_experts": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "block_expert_pool_private_top_k": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "block_expert_pool_private_gate": "renorm",
+        "block_expert_pool_active_budget": null,
+        "block_expert_pool_public_budget": null,
+        "mlp_auto_dense_ratio": null,
+        "attention_auto_head_split": false,
+        "residual_mode": "convex",
+        "block_residual_mode": "attn_res_kimi",
+        "block_attn_res_include_embedding": true,
+        "block_column_include_aggregate": false,
+        "block_column_gain_init": 1.0,
+        "block_column_mass_lambda": null,
+        "block_column_head_only": false,
+        "block_column_head_query_per_source": false,
+        "block_column_deviation_sources": false,
+        "block_column_blocks": null,
+        "block_column_trailing_layers": null,
+        "drop_path_rate": 0.0,
+        "num_global_tokens": 0,
+        "pooling_mode": "mean"
+      },
+      "head_config": {
+        "head_type": "language_modeling",
+        "vocab_size": 100263,
+        "hidden_dims": [],
+        "activation": "gelu"
+      },
+      "reference_mup": {
+        "components": [
+          "architecture",
+          "residual",
+          "embedding",
+          "logits",
+          "initialization",
+          "optimizer",
+          "router"
+        ],
+        "matrix_optimizer": "muon",
+        "group_router_lr": "native",
+        "initializer_range": 0.1,
+        "width_multiplier": 8.0,
+        "embedding_multiplier": 12.0,
+        "residual_multiplier": 0.22,
+        "norm_eps": 1e-05,
+        "num_layers": 12
+      }
+    },
+    "train_dataset": {
+      "dataset_type": "dclm",
+      "split": "train",
+      "data_path": "<workspace>",
+      "token_dtype": "uint32",
+      "block_size": 4096,
+      "tokenizer": "cl100k_base",
+      "token_remap": {
+        "100257": 100261
+      }
+    },
+    "train_dataloader": {
+      "batch_size": 4,
+      "num_workers": 0,
+      "pin_memory": true,
+      "drop_last": true,
+      "shuffle": true,
+      "prefetch_factor": 2,
+      "persistent_workers": false
+    },
+    "optimizer": {
+      "optimizer_type": "muon_adamw",
+      "lr": 0.001,
+      "weight_decay": 0.1,
+      "lr_muon": 0.01,
+      "lr_adamw": 0.0003,
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "muon_momentum": 0.95,
+      "muon_nesterov": true,
+      "muon_ns_steps": 5
+    },
+    "scheduler": {
+      "scheduler_type": "cosine",
+      "T_max": 1907,
+      "eta_min": 1e-05,
+      "warmup_steps": 153
+    },
+    "max_steps": 1907,
+    "grad_accum_steps": 16,
+    "max_grad_norm": 1.0,
+    "use_amp": true,
+    "ema_decay": null,
+    "loss": {
+      "loss_type": "causal_lm",
+      "label_smoothing": 0.0
+    },
+    "eval_suite": null,
+    "eval_frequency": 10000000,
+    "checkpoint_dir": "checkpoints",
+    "checkpoint_frequency": 200,
+    "log_frequency": 10,
+    "distributed": {
+      "enabled": false,
+      "backend": "nccl",
+      "init_method": "env://",
+      "world_size": null,
+      "rank": null,
+      "local_rank": null,
+      "fsdp2_reshard_after_forward": null,
+      "fsdp2_param_dtype": null,
+      "fsdp2_reduce_dtype": null,
+      "fsdp2_output_dtype": null,
+      "fsdp2_cpu_offload": false
+    },
+    "wandb_project": "nestor",
+    "wandb_entity": null,
+    "wandb_run_name": "dense_100m_b05",
+    "wandb_tags": [
+      "pretrain",
+      "dense",
+      "100m"
+    ],
+    "resume_model_checkpoint": null,
+    "resume_strict": true,
+    "eval_submit_scripts": null
+  }
+}

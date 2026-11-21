@@ -1,0 +1,412 @@
+[queue] 2026-11-15 09:41:11 queue confirm\queue_confirm.json: 187 jobs, estimated 83.51 GPU-h
+[queue] 2026-11-15 09:41:11 start confirm_base_moe_b1 (eval, est 0.0294 h)
+[queue] 2026-11-15 09:42:36 end confirm_base_moe_b1: done
+[queue] 2026-11-15 09:42:36 start confirm_base_moe_b2 (eval, est 0.1348 h)
+[queue] 2026-11-15 09:49:33 end confirm_base_moe_b2: done
+[queue] 2026-11-15 09:49:33 start c1_moe_b1_books_d2_A (train, est 0.8439 h)
+[queue] 2026-11-15 10:55:50 end c1_moe_b1_books_d2_A: failed (eval wd failed)
+[queue] 2026-11-15 10:55:50 STOP file found (results\STOP); stopping before c1_moe_b1_books_d7_B
+[queue] 2026-11-15 11:34:22 queue confirm\queue_confirm.json: 187 jobs, estimated 0.00 GPU-h
+[queue] 2026-11-15 11:36:29 queue confirm\queue_confirm.json: 187 jobs, estimated 26.22 GPU-h
+[queue] 2026-11-15 11:36:29 start c1_moe_b1_books_d7_B (train, est 0.6587 h)
+[queue] 2026-11-15 12:13:37 end c1_moe_b1_books_d7_B: done
+[queue] 2026-11-15 12:13:37 start c1_moe_b1_books_d9_B (train, est 0.6587 h)
+[queue] 2026-11-15 12:48:13 end c1_moe_b1_books_d9_B: done
+[queue] 2026-11-15 12:48:13 start c1_moe_b1_books_d9_A (train, est 0.6587 h)
+[queue] 2026-11-15 13:22:13 end c1_moe_b1_books_d9_A: done
+[queue] 2026-11-15 13:22:13 start c1_moe_b1_books_d7_A (train, est 0.6587 h)
+[queue] 2026-11-15 13:56:38 end c1_moe_b1_books_d7_A: done
+[queue] 2026-11-15 13:56:38 start c1_moe_b1_books_d8_A (train, est 0.6587 h)
+[queue] 2026-11-15 14:31:07 end c1_moe_b1_books_d8_A: done
+[queue] 2026-11-15 14:31:07 STOP file found (results\STOP); stopping before c1_moe_b1_books_d10_A
+[queue] 2026-11-15 14:37:35 queue confirm\queue_confirm.json: 187 jobs, estimated 83.51 GPU-h
+[queue] 2026-11-15 14:37:35 start c1_moe_b1_books_d2_A (train, est 0.8439 h)
+[queue] 2026-11-15 15:22:22 end c1_moe_b1_books_d2_A: done
+[queue] 2026-11-15 15:22:22 start c1_moe_b1_books_d4_B (train, est 0.8439 h)
+[queue] 2026-11-15 16:07:57 end c1_moe_b1_books_d4_B: done
+[queue] 2026-11-15 16:07:57 start c1_moe_b1_books_d6_A (train, est 0.8439 h)
+[queue] 2026-11-15 16:51:44 end c1_moe_b1_books_d6_A: done
+[queue] 2026-11-15 16:51:44 start c1_moe_b1_books_d1_A (train, est 0.8439 h)
+[queue] 2026-11-15 17:34:57 end c1_moe_b1_books_d1_A: done
+[queue] 2026-11-15 17:34:57 start c1_moe_b1_books_d3_A (train, est 0.8439 h)
+[queue] 2026-11-15 18:17:40 end c1_moe_b1_books_d3_A: done
+[queue] 2026-11-15 18:17:40 start c1_moe_b1_books_d10_A (train, est 0.6587 h)
+[queue] 2026-11-15 18:49:32 end c1_moe_b1_books_d10_A: done
+[queue] 2026-11-15 18:49:32 start c1_moe_b1_books_d6_B (train, est 0.8439 h)
+[queue] 2026-11-15 19:31:29 end c1_moe_b1_books_d6_B: done
+[queue] 2026-11-15 19:31:29 start c1_moe_b1_books_d3_B (train, est 0.8439 h)
+[queue] 2026-11-15 20:14:38 end c1_moe_b1_books_d3_B: done
+[queue] 2026-11-15 20:14:38 start c1_moe_b1_books_d4_A (train, est 0.8439 h)
+[queue] 2026-11-15 20:57:08 end c1_moe_b1_books_d4_A: done
+[queue] 2026-11-15 20:57:08 start c1_moe_b1_books_d5_A (train, est 0.8439 h)
+[queue] 2026-11-15 21:39:17 end c1_moe_b1_books_d5_A: done
+[queue] 2026-11-15 21:39:17 start c1_moe_b1_books_d2_B (train, est 0.8439 h)
+[queue] 2026-11-15 22:22:01 end c1_moe_b1_books_d2_B: done
+[queue] 2026-11-15 22:22:01 start c1_moe_b1_books_d5_B (train, est 0.8439 h)
+[queue] 2026-11-15 23:04:42 end c1_moe_b1_books_d5_B: done
+[queue] 2026-11-15 23:04:42 start c1_moe_b1_books_d8_B (train, est 0.6587 h)
+[queue] 2026-11-15 23:37:57 end c1_moe_b1_books_d8_B: done
+[queue] 2026-11-15 23:37:57 start c1_moe_b1_books_d10_B (train, est 0.6587 h)
+[queue] 2026-11-16 00:10:52 end c1_moe_b1_books_d10_B: done
+[queue] 2026-11-16 00:10:52 start c1_moe_b1_books_d1_B (train, est 0.8439 h)
+[queue] 2026-11-16 00:54:07 end c1_moe_b1_books_d1_B: done
+[queue] 2026-11-16 00:54:07 start c1_moe_b2_books_d7_B (train, est 0.6587 h)
+[queue] 2026-11-16 01:27:57 end c1_moe_b2_books_d7_B: done
+[queue] 2026-11-16 01:27:57 start c1_moe_b2_books_d10_B (train, est 0.6587 h)
+[queue] 2026-11-16 01:50:32 queue confirm\queue_confirm.json: 187 jobs, estimated 83.51 GPU-h
+[queue] 2026-11-16 01:50:32 start c1_moe_b2_books_d10_B (train, est 0.6587 h)
+[queue] 2026-11-16 01:50:32 c1_moe_b2_books_d10_B: moved unfinished root outputs\confirm\c1_moe_b2_books_d10_B\m2 -> outputs\confirm\c1_moe_b2_books_d10_B\m2_stale1794786632
+[queue] 2026-11-16 02:35:01 end c1_moe_b2_books_d10_B: done
+[queue] 2026-11-16 02:35:01 start c1_moe_b2_books_d8_A (train, est 0.6587 h)
+[queue] 2026-11-16 03:35:43 end c1_moe_b2_books_d8_A: done
+[queue] 2026-11-16 03:35:43 start c1_moe_b2_books_d2_A (train, est 0.6587 h)
+[queue] 2026-11-16 04:13:45 end c1_moe_b2_books_d2_A: done
+[queue] 2026-11-16 04:13:45 start c1_moe_b2_books_d9_B (train, est 0.6587 h)
+[queue] 2026-11-16 04:49:38 end c1_moe_b2_books_d9_B: done
+[queue] 2026-11-16 04:49:38 start c1_moe_b2_books_d8_B (train, est 0.6587 h)
+[queue] 2026-11-16 05:21:57 end c1_moe_b2_books_d8_B: done
+[queue] 2026-11-16 05:21:57 start c1_moe_b2_books_d3_A (train, est 0.6587 h)
+[queue] 2026-11-16 05:58:30 end c1_moe_b2_books_d3_A: done
+[queue] 2026-11-16 05:58:30 start c1_moe_b2_books_d6_B (train, est 0.6587 h)
+[queue] 2026-11-16 06:31:18 end c1_moe_b2_books_d6_B: done
+[queue] 2026-11-16 06:31:18 start c1_moe_b2_books_d1_A (train, est 0.6587 h)
+[queue] 2026-11-16 07:03:56 end c1_moe_b2_books_d1_A: done
+[queue] 2026-11-16 07:03:56 start c1_moe_b2_books_d10_A (train, est 0.6587 h)
+[queue] 2026-11-16 07:36:32 end c1_moe_b2_books_d10_A: done
+[queue] 2026-11-16 07:36:32 start c1_moe_b2_books_d5_A (train, est 0.6587 h)
+[queue] 2026-11-16 08:09:03 end c1_moe_b2_books_d5_A: done
+[queue] 2026-11-16 08:09:03 STOP file found (results\STOP); stopping before c1_moe_b2_books_d3_B
+[queue] 2026-11-16 13:58:51 queue confirm\queue_confirm.json: 187 jobs, estimated 83.51 GPU-h
+[queue] 2026-11-16 13:58:51 start c1_moe_b2_books_d3_B (train, est 0.6587 h)
+[queue] 2026-11-16 14:32:05 end c1_moe_b2_books_d3_B: done
+[queue] 2026-11-16 14:32:05 start c1_moe_b2_books_d2_B (train, est 0.6587 h)
+[queue] 2026-11-16 15:04:51 end c1_moe_b2_books_d2_B: done
+[queue] 2026-11-16 15:04:51 start c1_moe_b2_books_d9_A (train, est 0.6587 h)
+[queue] 2026-11-16 15:39:02 end c1_moe_b2_books_d9_A: done
+[queue] 2026-11-16 15:39:02 start c1_moe_b2_books_d4_B (train, est 0.6587 h)
+[queue] 2026-11-16 16:13:14 end c1_moe_b2_books_d4_B: done
+[queue] 2026-11-16 16:13:14 start c1_moe_b2_books_d5_B (train, est 0.6587 h)
+[queue] 2026-11-16 16:44:52 end c1_moe_b2_books_d5_B: done
+[queue] 2026-11-16 16:44:52 start c1_moe_b2_books_d6_A (train, est 0.6587 h)
+[queue] 2026-11-16 17:17:50 end c1_moe_b2_books_d6_A: done
+[queue] 2026-11-16 17:17:50 start c1_moe_b2_books_d4_A (train, est 0.6587 h)
+[queue] 2026-11-16 17:49:57 end c1_moe_b2_books_d4_A: done
+[queue] 2026-11-16 17:49:57 start c1_moe_b2_books_d7_A (train, est 0.6587 h)
+[queue] 2026-11-16 18:22:20 end c1_moe_b2_books_d7_A: done
+[queue] 2026-11-16 18:22:20 start c1_moe_b2_books_d1_B (train, est 0.6587 h)
+[queue] 2026-11-16 18:55:24 end c1_moe_b2_books_d1_B: done
+[queue] 2026-11-16 18:55:24 STOP file found (results\STOP); stopping before c2_moe_b1_d1_sgd_H
+[queue] 2026-11-17 10:19:28 queue confirm\queue_confirm.json: 187 jobs, estimated 83.51 GPU-h
+[queue] 2026-11-17 10:19:28 start c2_moe_b1_d1_sgd_H (train, est 0.2389 h)
+[queue] 2026-11-17 10:29:30 end c2_moe_b1_d1_sgd_H: done
+[queue] 2026-11-17 10:29:30 start c2_moe_b1_d1_sgd_L (train, est 0.2389 h)
+[queue] 2026-11-17 10:38:54 end c2_moe_b1_d1_sgd_L: done
+[queue] 2026-11-17 10:38:54 start c2_moe_b1_d1_muon_H (train, est 0.2473 h)
+[queue] 2026-11-17 10:49:01 end c2_moe_b1_d1_muon_H: done
+[queue] 2026-11-17 10:49:01 start c2_moe_b1_d1_muon_L (train, est 0.2473 h)
+[queue] 2026-11-17 10:59:07 end c2_moe_b1_d1_muon_L: done
+[queue] 2026-11-17 10:59:07 start c2_moe_b1_d2_sgd_H (train, est 0.2389 h)
+[queue] 2026-11-17 11:09:05 end c2_moe_b1_d2_sgd_H: done
+[queue] 2026-11-17 11:09:05 start c2_moe_b1_d2_sgd_L (train, est 0.2389 h)
+[queue] 2026-11-17 11:19:14 end c2_moe_b1_d2_sgd_L: done
+[queue] 2026-11-17 11:19:14 start c2_moe_b1_d2_muon_H (train, est 0.2473 h)
+[queue] 2026-11-17 11:29:22 end c2_moe_b1_d2_muon_H: done
+[queue] 2026-11-17 11:29:22 start c2_moe_b1_d2_muon_L (train, est 0.2473 h)
+[queue] 2026-11-17 11:39:25 end c2_moe_b1_d2_muon_L: done
+[queue] 2026-11-17 11:39:25 start c2_moe_b1_d3_sgd_H (train, est 0.2389 h)
+[queue] 2026-11-17 11:48:42 end c2_moe_b1_d3_sgd_H: done
+[queue] 2026-11-17 11:48:42 start c2_moe_b1_d3_sgd_L (train, est 0.2389 h)
+[queue] 2026-11-17 11:57:44 end c2_moe_b1_d3_sgd_L: done
+[queue] 2026-11-17 11:57:44 start c2_moe_b1_d3_muon_H (train, est 0.2473 h)
+[queue] 2026-11-17 12:07:54 end c2_moe_b1_d3_muon_H: done
+[queue] 2026-11-17 12:07:54 start c2_moe_b1_d3_muon_L (train, est 0.2473 h)
+[queue] 2026-11-17 12:18:09 end c2_moe_b1_d3_muon_L: done
+[queue] 2026-11-17 12:18:09 start c2_moe_b1_d4_sgd_H (train, est 0.2389 h)
+[queue] 2026-11-17 12:27:18 end c2_moe_b1_d4_sgd_H: done
+[queue] 2026-11-17 12:27:18 start c2_moe_b1_d4_sgd_L (train, est 0.2389 h)
+[queue] 2026-11-17 12:36:37 end c2_moe_b1_d4_sgd_L: done
+[queue] 2026-11-17 12:36:37 start c2_moe_b1_d4_muon_H (train, est 0.2473 h)
+[queue] 2026-11-17 12:46:48 end c2_moe_b1_d4_muon_H: done
+[queue] 2026-11-17 12:46:48 start c2_moe_b1_d4_muon_L (train, est 0.2473 h)
+[queue] 2026-11-17 12:56:40 end c2_moe_b1_d4_muon_L: done
+[queue] 2026-11-17 12:56:40 start c2_moe_b2_d5_sgd_H (train, est 0.2389 h)
+[queue] 2026-11-17 13:05:41 end c2_moe_b2_d5_sgd_H: done
+[queue] 2026-11-17 13:05:41 start c2_moe_b2_d5_sgd_L (train, est 0.2389 h)
+[queue] 2026-11-17 13:14:42 end c2_moe_b2_d5_sgd_L: done
+[queue] 2026-11-17 13:14:42 start c2_moe_b2_d5_muon_H (train, est 0.2473 h)
+[queue] 2026-11-17 13:24:29 end c2_moe_b2_d5_muon_H: done
+[queue] 2026-11-17 13:24:29 start c2_moe_b2_d5_muon_L (train, est 0.2473 h)
+[queue] 2026-11-17 13:34:17 end c2_moe_b2_d5_muon_L: done
+[queue] 2026-11-17 13:34:17 start c2_moe_b2_d6_sgd_H (train, est 0.2389 h)
+[queue] 2026-11-17 13:43:22 end c2_moe_b2_d6_sgd_H: done
+[queue] 2026-11-17 13:43:22 start c2_moe_b2_d6_sgd_L (train, est 0.2389 h)
+[queue] 2026-11-17 13:52:46 end c2_moe_b2_d6_sgd_L: done
+[queue] 2026-11-17 13:52:46 start c2_moe_b2_d6_muon_H (train, est 0.2473 h)
+[queue] 2026-11-17 14:02:39 end c2_moe_b2_d6_muon_H: done
+[queue] 2026-11-17 14:02:39 start c2_moe_b2_d6_muon_L (train, est 0.2473 h)
+[queue] 2026-11-17 14:12:28 end c2_moe_b2_d6_muon_L: done
+[queue] 2026-11-17 14:12:28 start c2_moe_b2_d7_sgd_H (train, est 0.2389 h)
+[queue] 2026-11-17 14:21:27 end c2_moe_b2_d7_sgd_H: done
+[queue] 2026-11-17 14:21:27 start c2_moe_b2_d7_sgd_L (train, est 0.2389 h)
+[queue] 2026-11-17 14:31:05 end c2_moe_b2_d7_sgd_L: done
+[queue] 2026-11-17 14:31:05 start c2_moe_b2_d7_muon_H (train, est 0.2473 h)
+[queue] 2026-11-17 14:41:05 end c2_moe_b2_d7_muon_H: done
+[queue] 2026-11-17 14:41:05 start c2_moe_b2_d7_muon_L (train, est 0.2473 h)
+[queue] 2026-11-17 14:51:22 end c2_moe_b2_d7_muon_L: done
+[queue] 2026-11-17 14:51:22 start c2_moe_b2_d8_sgd_H (train, est 0.2389 h)
+[queue] 2026-11-17 15:00:53 end c2_moe_b2_d8_sgd_H: done
+[queue] 2026-11-17 15:00:53 start c2_moe_b2_d8_sgd_L (train, est 0.2389 h)
+[queue] 2026-11-17 15:10:14 end c2_moe_b2_d8_sgd_L: done
+[queue] 2026-11-17 15:10:14 start c2_moe_b2_d8_muon_H (train, est 0.2473 h)
+[queue] 2026-11-17 15:20:22 end c2_moe_b2_d8_muon_H: done
+[queue] 2026-11-17 15:20:22 start c2_moe_b2_d8_muon_L (train, est 0.2473 h)
+[queue] 2026-11-17 15:30:57 end c2_moe_b2_d8_muon_L: done
+[queue] 2026-11-17 15:30:57 start core_done (gate, est 0.0 h)
+[queue] 2026-11-17 15:30:57 end core_done: pass
+[queue] 2026-11-17 15:30:57 start confirm_base_moe_b3 (eval, est 0.0926 h)
+[queue] 2026-11-17 15:36:02 end confirm_base_moe_b3: done
+[queue] 2026-11-17 15:36:02 STOP file found (results\STOP); stopping before b3_c1_moe_b3_books_d1_A
+[queue] 2026-11-18 03:16:38 queue confirm\queue_confirm.json: 187 jobs, estimated 83.51 GPU-h
+[queue] 2026-11-18 03:16:38 start b3_c1_moe_b3_books_d1_A (train, est 0.8228 h)
+[queue] 2026-11-18 04:06:32 end b3_c1_moe_b3_books_d1_A: done
+[queue] 2026-11-18 04:06:32 start b3_c1_moe_b3_books_d1_B (train, est 0.6376 h)
+[queue] 2026-11-18 04:53:48 end b3_c1_moe_b3_books_d1_B: done
+[queue] 2026-11-18 04:53:48 start b3_c1_moe_b3_books_d2_A (train, est 0.8228 h)
+[queue] 2026-11-18 05:52:23 end b3_c1_moe_b3_books_d2_A: done
+[queue] 2026-11-18 05:52:23 start b3_c1_moe_b3_books_d2_B (train, est 0.6376 h)
+[queue] 2026-11-18 06:23:00 end b3_c1_moe_b3_books_d2_B: done
+[queue] 2026-11-18 06:23:00 start b3_c1_moe_b3_books_d3_A (train, est 0.8228 h)
+[queue] 2026-11-18 07:03:34 end b3_c1_moe_b3_books_d3_A: done
+[queue] 2026-11-18 07:03:34 start b3_c1_moe_b3_books_d3_B (train, est 0.6376 h)
+[queue] 2026-11-18 07:34:00 end b3_c1_moe_b3_books_d3_B: done
+[queue] 2026-11-18 07:34:00 start audit_moe_b1 (cmd, est 0.4932 h)
+[queue] 2026-11-18 07:34:10 end audit_moe_b1: failed
+[queue] 2026-11-18 07:34:10 start audit_moe_b2 (cmd, est 0.4932 h)
+[queue] 2026-11-18 07:34:14 end audit_moe_b2: failed
+[queue] 2026-11-18 07:34:14 start selpin_c1_moe_b1_books_d2_A (eval, est 0.1348 h)
+[queue] 2026-11-18 07:41:21 end selpin_c1_moe_b1_books_d2_A: done
+[queue] 2026-11-18 07:41:21 start selpin_c1_moe_b1_books_d7_B (eval, est 0.1348 h)
+[queue] 2026-11-18 07:48:27 end selpin_c1_moe_b1_books_d7_B: done
+[queue] 2026-11-18 07:48:27 start selpin_c1_moe_b1_books_d9_B (eval, est 0.1348 h)
+[queue] 2026-11-18 07:55:34 end selpin_c1_moe_b1_books_d9_B: done
+[queue] 2026-11-18 07:55:34 start selpin_c1_moe_b1_books_d4_B (eval, est 0.1348 h)
+[queue] 2026-11-18 08:02:41 end selpin_c1_moe_b1_books_d4_B: done
+[queue] 2026-11-18 08:02:41 start selpin_c1_moe_b1_books_d6_A (eval, est 0.1348 h)
+[queue] 2026-11-18 08:09:47 end selpin_c1_moe_b1_books_d6_A: done
+[queue] 2026-11-18 08:09:47 start selpin_c1_moe_b1_books_d1_A (eval, est 0.1348 h)
+[queue] 2026-11-18 08:16:53 end selpin_c1_moe_b1_books_d1_A: done
+[queue] 2026-11-18 08:16:53 start selpin_c1_moe_b1_books_d9_A (eval, est 0.1348 h)
+[queue] 2026-11-18 08:23:59 end selpin_c1_moe_b1_books_d9_A: done
+[queue] 2026-11-18 08:23:59 start selpin_c1_moe_b1_books_d7_A (eval, est 0.1348 h)
+[queue] 2026-11-18 08:31:05 end selpin_c1_moe_b1_books_d7_A: done
+[queue] 2026-11-18 08:31:05 start selpin_c1_moe_b1_books_d8_A (eval, est 0.1348 h)
+[queue] 2026-11-18 08:38:11 end selpin_c1_moe_b1_books_d8_A: done
+[queue] 2026-11-18 08:38:11 start selpin_c1_moe_b1_books_d3_A (eval, est 0.1348 h)
+[queue] 2026-11-18 08:45:17 end selpin_c1_moe_b1_books_d3_A: done
+[queue] 2026-11-18 08:45:17 start selpin_c1_moe_b1_books_d10_A (eval, est 0.1348 h)
+[queue] 2026-11-18 08:52:36 end selpin_c1_moe_b1_books_d10_A: done
+[queue] 2026-11-18 08:52:36 start selpin_c1_moe_b1_books_d6_B (eval, est 0.1348 h)
+[queue] 2026-11-18 09:00:14 end selpin_c1_moe_b1_books_d6_B: done
+[queue] 2026-11-18 09:00:14 start selpin_c1_moe_b1_books_d3_B (eval, est 0.1348 h)
+[queue] 2026-11-18 09:07:56 end selpin_c1_moe_b1_books_d3_B: done
+[queue] 2026-11-18 09:07:56 start selpin_c1_moe_b1_books_d4_A (eval, est 0.1348 h)
+[queue] 2026-11-18 09:15:25 end selpin_c1_moe_b1_books_d4_A: done
+[queue] 2026-11-18 09:15:25 start selpin_c1_moe_b1_books_d5_A (eval, est 0.1348 h)
+[queue] 2026-11-18 09:23:08 end selpin_c1_moe_b1_books_d5_A: done
+[queue] 2026-11-18 09:23:08 start selpin_c1_moe_b1_books_d2_B (eval, est 0.1348 h)
+[queue] 2026-11-18 09:30:40 end selpin_c1_moe_b1_books_d2_B: done
+[queue] 2026-11-18 09:30:40 start selpin_c1_moe_b1_books_d5_B (eval, est 0.1348 h)
+[queue] 2026-11-18 09:38:29 end selpin_c1_moe_b1_books_d5_B: done
+[queue] 2026-11-18 09:38:29 start selpin_c1_moe_b1_books_d8_B (eval, est 0.1348 h)
+[queue] 2026-11-18 09:45:59 end selpin_c1_moe_b1_books_d8_B: done
+[queue] 2026-11-18 09:45:59 start selpin_c1_moe_b1_books_d10_B (eval, est 0.1348 h)
+[queue] 2026-11-18 09:53:30 end selpin_c1_moe_b1_books_d10_B: done
+[queue] 2026-11-18 09:53:30 start selpin_c1_moe_b1_books_d1_B (eval, est 0.1348 h)
+[queue] 2026-11-18 10:01:05 end selpin_c1_moe_b1_books_d1_B: done
+[queue] 2026-11-18 10:01:05 start selpin_c1_moe_b2_books_d7_B (eval, est 0.1348 h)
+[queue] 2026-11-18 10:08:40 end selpin_c1_moe_b2_books_d7_B: done
+[queue] 2026-11-18 10:08:40 start selpin_c1_moe_b2_books_d10_B (eval, est 0.1348 h)
+[queue] 2026-11-18 10:16:25 end selpin_c1_moe_b2_books_d10_B: done
+[queue] 2026-11-18 10:16:25 start selpin_c1_moe_b2_books_d8_A (eval, est 0.1348 h)
+[queue] 2026-11-18 10:24:05 end selpin_c1_moe_b2_books_d8_A: done
+[queue] 2026-11-18 10:24:05 start selpin_c1_moe_b2_books_d2_A (eval, est 0.1348 h)
+[queue] 2026-11-18 10:31:56 end selpin_c1_moe_b2_books_d2_A: done
+[queue] 2026-11-18 10:31:56 start selpin_c1_moe_b2_books_d9_B (eval, est 0.1348 h)
+[queue] 2026-11-18 10:39:44 end selpin_c1_moe_b2_books_d9_B: done
+[queue] 2026-11-18 10:39:44 start selpin_c1_moe_b2_books_d8_B (eval, est 0.1348 h)
+[queue] 2026-11-18 10:47:34 end selpin_c1_moe_b2_books_d8_B: done
+[queue] 2026-11-18 10:47:34 start selpin_c1_moe_b2_books_d3_A (eval, est 0.1348 h)
+[queue] 2026-11-18 10:55:30 end selpin_c1_moe_b2_books_d3_A: done
+[queue] 2026-11-18 10:55:30 start selpin_c1_moe_b2_books_d6_B (eval, est 0.1348 h)
+[queue] 2026-11-18 11:03:24 end selpin_c1_moe_b2_books_d6_B: done
+[queue] 2026-11-18 11:03:24 start selpin_c1_moe_b2_books_d1_A (eval, est 0.1348 h)
+[queue] 2026-11-18 11:11:12 end selpin_c1_moe_b2_books_d1_A: done
+[queue] 2026-11-18 11:11:12 start selpin_c1_moe_b2_books_d10_A (eval, est 0.1348 h)
+[queue] 2026-11-18 11:19:01 end selpin_c1_moe_b2_books_d10_A: done
+[queue] 2026-11-18 11:19:01 start selpin_c1_moe_b2_books_d5_A (eval, est 0.1348 h)
+[queue] 2026-11-18 11:27:07 end selpin_c1_moe_b2_books_d5_A: done
+[queue] 2026-11-18 11:27:07 start selpin_c1_moe_b2_books_d3_B (eval, est 0.1348 h)
+[queue] 2026-11-18 11:34:58 end selpin_c1_moe_b2_books_d3_B: done
+[queue] 2026-11-18 11:34:58 start selpin_c1_moe_b2_books_d2_B (eval, est 0.1348 h)
+[queue] 2026-11-18 11:42:35 end selpin_c1_moe_b2_books_d2_B: done
+[queue] 2026-11-18 11:42:35 start selpin_c1_moe_b2_books_d9_A (eval, est 0.1348 h)
+[queue] 2026-11-18 11:50:42 end selpin_c1_moe_b2_books_d9_A: done
+[queue] 2026-11-18 11:50:42 start selpin_c1_moe_b2_books_d4_B (eval, est 0.1348 h)
+[queue] 2026-11-18 11:58:10 end selpin_c1_moe_b2_books_d4_B: done
+[queue] 2026-11-18 11:58:10 start selpin_c1_moe_b2_books_d5_B (eval, est 0.1348 h)
+[queue] 2026-11-18 12:05:46 end selpin_c1_moe_b2_books_d5_B: done
+[queue] 2026-11-18 12:05:46 start selpin_c1_moe_b2_books_d6_A (eval, est 0.1348 h)
+[queue] 2026-11-18 12:13:37 end selpin_c1_moe_b2_books_d6_A: done
+[queue] 2026-11-18 12:13:37 STOP file found (results\STOP); stopping before selpin_c1_moe_b2_books_d4_A
+[queue] 2026-11-18 14:34:45 queue confirm\queue_confirm.json: 187 jobs, estimated 83.51 GPU-h
+[queue] 2026-11-18 14:34:45 start selpin_c1_moe_b2_books_d4_A (eval, est 0.1348 h)
+[queue] 2026-11-18 14:42:45 end selpin_c1_moe_b2_books_d4_A: done
+[queue] 2026-11-18 14:42:45 start selpin_c1_moe_b2_books_d7_A (eval, est 0.1348 h)
+[queue] 2026-11-18 14:50:40 end selpin_c1_moe_b2_books_d7_A: done
+[queue] 2026-11-18 14:50:40 start selpin_c1_moe_b2_books_d1_B (eval, est 0.1348 h)
+[queue] 2026-11-18 15:00:47 end selpin_c1_moe_b2_books_d1_B: done
+[queue] 2026-11-18 15:00:47 start selpin_b3_c1_moe_b3_books_d1_A (eval, est 0.1348 h)
+[queue] 2026-11-18 15:09:02 end selpin_b3_c1_moe_b3_books_d1_A: done
+[queue] 2026-11-18 15:09:02 start selpin_b3_c1_moe_b3_books_d1_B (eval, est 0.1348 h)
+[queue] 2026-11-18 15:17:02 end selpin_b3_c1_moe_b3_books_d1_B: done
+[queue] 2026-11-18 15:17:02 start selpin_b3_c1_moe_b3_books_d2_A (eval, est 0.1348 h)
+[queue] 2026-11-18 15:25:26 end selpin_b3_c1_moe_b3_books_d2_A: done
+[queue] 2026-11-18 15:25:26 start selpin_b3_c1_moe_b3_books_d2_B (eval, est 0.1348 h)
+[queue] 2026-11-18 15:33:31 end selpin_b3_c1_moe_b3_books_d2_B: done
+[queue] 2026-11-18 15:33:31 start selpin_b3_c1_moe_b3_books_d3_A (eval, est 0.1348 h)
+[queue] 2026-11-18 15:41:17 end selpin_b3_c1_moe_b3_books_d3_A: done
+[queue] 2026-11-18 15:41:17 start selpin_b3_c1_moe_b3_books_d3_B (eval, est 0.1348 h)
+[queue] 2026-11-18 15:48:51 end selpin_b3_c1_moe_b3_books_d3_B: done
+[queue] 2026-11-18 15:48:51 start c3_full_nestor_books_s101 (train, est 2.0734 h)
+[queue] 2026-11-18 17:48:20 end c3_full_nestor_books_s101: done
+[queue] 2026-11-18 17:48:20 start c3_full_nestor_books_s102 (train, est 1.5882 h)
+[queue] 2026-11-18 19:16:23 end c3_full_nestor_books_s102: done
+[queue] 2026-11-18 19:16:23 start c3_full_nestor_math_s101 (train, est 2.0065 h)
+[queue] 2026-11-18 21:07:57 end c3_full_nestor_math_s101: done
+[queue] 2026-11-18 21:07:57 start c3_full_nestor_math_s102 (train, est 1.5213 h)
+[queue] 2026-11-18 22:30:19 end c3_full_nestor_math_s102: done
+[queue] 2026-11-18 22:30:19 start c3_full_nestor_code_s101 (train, est 1.9312 h)
+[queue] 2026-11-19 00:17:40 end c3_full_nestor_code_s101: done
+[queue] 2026-11-19 00:17:40 start c3_full_nestor_code_s102 (train, est 1.5213 h)
+[queue] 2026-11-19 01:40:43 end c3_full_nestor_code_s102: done
+[queue] 2026-11-19 01:40:43 start c3_revert_g1_nestor_full_german_s101 (eval, est 0.4768 h)
+[queue] 2026-11-19 02:25:09 end c3_revert_g1_nestor_full_german_s101: done
+[queue] 2026-11-19 02:25:09 start c3_layer_revert_g1_nestor_full_german_s101 (eval, est 0.4099 h)
+[queue] 2026-11-19 02:48:27 end c3_layer_revert_g1_nestor_full_german_s101: done
+[queue] 2026-11-19 02:48:27 start c3_revert_g1_nestor_full_german_s102 (eval, est 0.4099 h)
+[queue] 2026-11-19 03:11:29 end c3_revert_g1_nestor_full_german_s102: done
+[queue] 2026-11-19 03:11:29 start c3_full_moe_b1_books_s101 (train, est 0.7552 h)
+[queue] 2026-11-19 03:53:31 end c3_full_moe_b1_books_s101: done
+[queue] 2026-11-19 03:53:31 start c3_full_moe_b1_books_s102 (train, est 0.4646 h)
+[queue] 2026-11-19 04:18:27 end c3_full_moe_b1_books_s102: done
+[queue] 2026-11-19 04:18:27 start c3_revert_g1_moe_b1_full_math_s101 (eval, est 0.0926 h)
+[queue] 2026-11-19 04:24:02 end c3_revert_g1_moe_b1_full_math_s101: done
+[queue] 2026-11-19 04:24:02 start c3_layer_revert_g1_moe_b1_full_math_s101 (eval, est 0.2612 h)
+[queue] 2026-11-19 04:38:18 end c3_layer_revert_g1_moe_b1_full_math_s101: done
+[queue] 2026-11-19 04:38:18 start c3_revert_g1_moe_b1_full_math_s102 (eval, est 0.0715 h)
+[queue] 2026-11-19 04:42:15 end c3_revert_g1_moe_b1_full_math_s102: done
+[queue] 2026-11-19 04:42:15 start c3_full_moe_b1_code_s101 (train, est 0.7047 h)
+[queue] 2026-11-19 05:20:40 end c3_full_moe_b1_code_s101: done
+[queue] 2026-11-19 05:20:40 start c3_full_moe_b1_code_s102 (train, est 0.4435 h)
+[queue] 2026-11-19 05:44:08 end c3_full_moe_b1_code_s102: done
+[queue] 2026-11-19 05:44:08 start c3_revert_g1_moe_b1_full_german_s101 (eval, est 0.0926 h)
+[queue] 2026-11-19 05:50:40 end c3_revert_g1_moe_b1_full_german_s101: done
+[queue] 2026-11-19 05:50:40 start c3_layer_revert_g1_moe_b1_full_german_s101 (eval, est 0.2612 h)
+[queue] 2026-11-19 06:15:43 end c3_layer_revert_g1_moe_b1_full_german_s101: done
+[queue] 2026-11-19 06:15:43 start c3_revert_g1_moe_b1_full_german_s102 (eval, est 0.0715 h)
+[queue] 2026-11-19 06:22:08 end c3_revert_g1_moe_b1_full_german_s102: done
+[queue] 2026-11-19 06:22:08 start c3_full_moe_b2_books_s101 (train, est 0.4646 h)
+[queue] 2026-11-19 06:57:42 end c3_full_moe_b2_books_s101: done
+[queue] 2026-11-19 06:57:42 start c3_full_moe_b2_math_s101 (train, est 0.4435 h)
+[queue] 2026-11-19 07:21:04 end c3_full_moe_b2_math_s101: done
+[queue] 2026-11-19 07:21:04 start c3_full_moe_b2_code_s101 (train, est 0.4435 h)
+[queue] 2026-11-19 07:44:12 end c3_full_moe_b2_code_s101: done
+[queue] 2026-11-19 07:44:12 start c3_full_moe_b2_german_s101 (train, est 0.4646 h)
+[queue] 2026-11-19 08:08:23 end c3_full_moe_b2_german_s101: done
+[queue] 2026-11-19 08:08:23 start c3_freeze_moe_b1_german_s103 (train, est 0.4097 h)
+[queue] 2026-11-19 08:24:46 end c3_freeze_moe_b1_german_s103: failed (bitwise audit failed)
+[queue] 2026-11-19 08:24:46 start c3_freeze_nestor_german_s103 (train, est 1.195 h)
+[queue] 2026-11-19 09:11:18 end c3_freeze_nestor_german_s103: failed (bitwise audit failed)
+[queue] 2026-11-19 09:11:18 start c5_drive_moe_b1_french_s101 (train, est 0.186 h)
+[queue] 2026-11-19 09:18:03 end c5_drive_moe_b1_french_s101: done
+[queue] 2026-11-19 09:18:03 start c5_forecasts (cmd, est 0.01 h)
+[queue] 2026-11-19 09:18:06 end c5_forecasts: done
+[queue] 2026-11-19 09:18:06 start c5_hash_gate (gate, est 0.0 h)
+[queue] 2026-11-19 09:18:06 end c5_hash_gate: pass
+[queue] 2026-11-19 09:18:06 start c5_full_moe_b1_french_s101 (train, est 0.4146 h)
+[queue] 2026-11-19 09:39:25 end c5_full_moe_b1_french_s101: done
+[queue] 2026-11-19 09:39:25 start c3_dclmcont_nestor_s101 (train, est 1.0429 h)
+[queue] 2026-11-19 10:32:47 end c3_dclmcont_nestor_s101: done
+[queue] 2026-11-19 10:32:47 start c3_dclmcont_moe_b2_s101 (train, est 0.3504 h)
+[queue] 2026-11-19 10:50:37 end c3_dclmcont_moe_b2_s101: done
+[queue] 2026-11-19 10:50:37 start overrun_guard_dose (gate, est 0.0 h)
+[queue] 2026-11-19 10:50:37 end overrun_guard_dose: pass
+[queue] 2026-11-19 10:50:37 start dose_moe_b1_books_d2_A (train, est 0.4386 h)
+[queue] 2026-11-19 11:11:03 end dose_moe_b1_books_d2_A: done
+[queue] 2026-11-19 11:11:03 start dose_moe_b1_books_d2_B (train, est 0.4386 h)
+[queue] 2026-11-19 11:31:37 end dose_moe_b1_books_d2_B: done
+[queue] 2026-11-19 11:31:37 start dose_moe_b1_books_d3_A (train, est 0.4386 h)
+[queue] 2026-11-19 12:15:09 queue confirm\queue_confirm.json: 187 jobs, estimated 83.51 GPU-h
+[queue] 2026-11-19 12:15:09 start dose_moe_b1_books_d3_A (train, est 0.4386 h)
+[queue] 2026-11-19 12:15:09 dose_moe_b1_books_d3_A: moved unfinished root outputs\confirm\dose_moe_b1_books_d3_A\m2 -> outputs\confirm\dose_moe_b1_books_d3_A\m2_stale1795083309
+[queue] 2026-11-19 12:37:32 end dose_moe_b1_books_d3_A: done
+[queue] 2026-11-19 12:37:32 start dose_moe_b1_books_d3_B (train, est 0.4386 h)
+[queue] 2026-11-19 12:58:28 end dose_moe_b1_books_d3_B: done
+[queue] 2026-11-19 12:58:28 start dose_moe_b2_books_d1_A (train, est 0.4386 h)
+[queue] 2026-11-19 13:33:17 end dose_moe_b2_books_d1_A: done
+[queue] 2026-11-19 13:33:17 start dose_moe_b2_books_d1_B (train, est 0.4386 h)
+[queue] 2026-11-19 14:01:49 end dose_moe_b2_books_d1_B: done
+[queue] 2026-11-19 14:01:49 start dose_moe_b2_books_d2_A (train, est 0.4386 h)
+[queue] 2026-11-19 14:28:57 end dose_moe_b2_books_d2_A: done
+[queue] 2026-11-19 14:28:57 start dose_moe_b2_books_d2_B (train, est 0.4386 h)
+[queue] 2026-11-19 14:55:07 end dose_moe_b2_books_d2_B: done
+[queue] 2026-11-19 14:55:07 start overrun_guard_M12b (gate, est 0.0 h)
+[queue] 2026-11-19 14:55:08 end overrun_guard_M12b: pass
+[queue] 2026-11-19 14:55:08 start m12b_moe_b1_books_d1_A_on_german (train, est 0.4915 h)
+[queue] 2026-11-19 15:27:37 end m12b_moe_b1_books_d1_A_on_german: done
+[queue] 2026-11-19 15:27:37 start m12b_moe_b1_books_d2_A_on_german (train, est 0.4915 h)
+[queue] 2026-11-19 16:09:09 end m12b_moe_b1_books_d2_A_on_german: done
+[queue] 2026-11-19 16:09:09 start m12b_moe_b1_books_d3_A_on_german (train, est 0.4915 h)
+[queue] 2026-11-19 16:44:52 end m12b_moe_b1_books_d3_A_on_german: done
+[queue] 2026-11-19 16:44:52 start overrun_guard_C1-DE (gate, est 0.0 h)
+[queue] 2026-11-19 16:44:52 end overrun_guard_C1-DE: pass
+[queue] 2026-11-19 16:44:52 start c1de_moe_b1_d1_A (train, est 0.9071 h)
+[queue] 2026-11-19 17:40:51 end c1de_moe_b1_d1_A: done
+[queue] 2026-11-19 17:40:51 start c1de_moe_b1_d1_B (train, est 0.7219 h)
+[queue] 2026-11-19 18:43:27 end c1de_moe_b1_d1_B: done
+[queue] 2026-11-19 18:43:27 start c1de_moe_b1_d2_A (train, est 0.9071 h)
+[queue] 2026-11-19 19:50:29 end c1de_moe_b1_d2_A: done
+[queue] 2026-11-19 19:50:29 start c1de_moe_b1_d2_B (train, est 0.7219 h)
+[queue] 2026-11-19 20:35:15 queue confirm\queue_confirm.json: 187 jobs, estimated 83.51 GPU-h
+[queue] 2026-11-19 20:35:15 start c1de_moe_b1_d2_B (train, est 0.7219 h)
+[queue] 2026-11-19 21:07:34 queue confirm\queue_confirm.json: 187 jobs, estimated 83.51 GPU-h
+[queue] 2026-11-19 21:07:34 start c1de_moe_b1_d2_B (train, est 0.7219 h)
+[queue] 2026-11-19 22:02:28 end c1de_moe_b1_d2_B: done
+[queue] 2026-11-19 22:02:28 start c1de_moe_b1_d3_A (train, est 0.9071 h)
+[queue] 2026-11-19 23:09:29 end c1de_moe_b1_d3_A: done
+[queue] 2026-11-19 23:09:29 start c1de_moe_b1_d3_B (train, est 0.7219 h)
+[queue] 2026-11-20 00:07:45 end c1de_moe_b1_d3_B: done
+[queue] 2026-11-20 00:07:45 start c1de_moe_b2_d1_A (train, est 0.9071 h)
+[queue] 2026-11-20 01:34:03 end c1de_moe_b2_d1_A: done
+[queue] 2026-11-20 01:34:03 start c1de_moe_b2_d1_B (train, est 0.7219 h)
+[queue] 2026-11-20 02:18:45 end c1de_moe_b2_d1_B: done
+[queue] 2026-11-20 02:18:45 start c1de_moe_b2_d2_A (train, est 0.9071 h)
+[queue] 2026-11-20 03:23:11 end c1de_moe_b2_d2_A: done
+[queue] 2026-11-20 03:23:11 start c1de_moe_b2_d2_B (train, est 0.7219 h)
+[queue] 2026-11-20 04:09:42 end c1de_moe_b2_d2_B: done
+[queue] 2026-11-20 04:09:42 start c1de_moe_b2_d3_A (train, est 0.9071 h)
+[queue] 2026-11-20 05:16:01 end c1de_moe_b2_d3_A: done
+[queue] 2026-11-20 05:16:01 start c1de_moe_b2_d3_B (train, est 0.7219 h)
+[queue] 2026-11-20 06:00:09 end c1de_moe_b2_d3_B: done
+[queue] 2026-11-20 06:05:47 queue confirm\rerun\queue_confirm_audit_rerun.json: 187 jobs, estimated 0.99 GPU-h
+[queue] 2026-11-20 06:05:47 start audit_moe_b1 (cmd, est 0.4932 h)
+[queue] 2026-11-20 06:39:01 queue confirm\rerun\queue_confirm_audit_rerun.json: 187 jobs, estimated 0.99 GPU-h
+[queue] 2026-11-20 06:39:01 start audit_moe_b1 (cmd, est 0.4932 h)
+[queue] 2026-11-20 06:58:56 end audit_moe_b1: done
+[queue] 2026-11-20 06:58:56 start audit_moe_b2 (cmd, est 0.4932 h)
+[queue] 2026-11-20 07:16:56 end audit_moe_b2: done
+[queue] 2026-11-20 13:05:01 queue confirm\rerun_a4\queue_confirm_a4_rerun.json: 187 jobs, estimated 1.60 GPU-h
+[queue] 2026-11-20 13:05:01 start c3_freeze_moe_b1_german_s103 (train, est 0.4097 h)
+[queue] 2026-11-20 13:26:56 end c3_freeze_moe_b1_german_s103: done
+[queue] 2026-11-20 13:26:56 start c3_freeze_nestor_german_s103 (train, est 1.195 h)
+[queue] 2026-11-20 15:16:09 end c3_freeze_nestor_german_s103: done

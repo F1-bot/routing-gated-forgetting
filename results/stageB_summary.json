@@ -1,0 +1,264 @@
+{
+ "rows": [
+  {
+   "model": "dense",
+   "corpus": "pg19",
+   "complete": true,
+   "target_before": 4.817011662130048,
+   "target_after": 4.585787574658357,
+   "dclm_before": 4.7533361197567485,
+   "dclm_after": 4.9483652400662566,
+   "gain": 0.23122408747169043,
+   "forgetting": 0.19502912030950803,
+   "tokens_eval": 2002455
+  },
+  {
+   "model": "dense",
+   "corpus": "owm",
+   "complete": true,
+   "target_before": 4.922124312133419,
+   "target_after": 4.690219763541035,
+   "dclm_before": 4.7533361197567485,
+   "dclm_after": 4.820684650607005,
+   "gain": 0.23190454859238407,
+   "forgetting": 0.06734853085025616,
+   "tokens_eval": 2002455
+  },
+  {
+   "model": "dense",
+   "corpus": "algstack",
+   "complete": true,
+   "target_before": 6.403149207589871,
+   "target_after": 5.471816119638924,
+   "dclm_before": 4.7533361197567485,
+   "dclm_after": 4.88001669893565,
+   "gain": 0.9313330879509465,
+   "forgetting": 0.12668057917890163,
+   "tokens_eval": 2002455
+  },
+  {
+   "model": "dense",
+   "corpus": "fw2de",
+   "complete": true,
+   "target_before": 8.590001854754538,
+   "target_after": 7.3264843293529065,
+   "dclm_before": 4.7533361197567485,
+   "dclm_after": 4.997165533019157,
+   "gain": 1.2635175254016318,
+   "forgetting": 0.24382941326240815,
+   "tokens_eval": 2002455
+  },
+  {
+   "model": "moe",
+   "corpus": "pg19",
+   "complete": true,
+   "target_before": 4.689960031093083,
+   "target_after": 4.4773139555180395,
+   "dclm_before": 4.606683538632111,
+   "dclm_after": 4.751017239619617,
+   "gain": 0.21264607557504345,
+   "forgetting": 0.14433370098750586,
+   "tokens_eval": 2002455
+  },
+  {
+   "model": "moe",
+   "corpus": "owm",
+   "complete": true,
+   "target_before": 4.78144347881335,
+   "target_after": 4.572215881372802,
+   "dclm_before": 4.606683538632111,
+   "dclm_after": 4.649243796403977,
+   "gain": 0.20922759744054797,
+   "forgetting": 0.042560257771866006,
+   "tokens_eval": 2002455
+  },
+  {
+   "model": "moe",
+   "corpus": "algstack",
+   "complete": true,
+   "target_before": 6.190091864872588,
+   "target_after": 5.332218886375568,
+   "dclm_before": 4.606683538632111,
+   "dclm_after": 4.687663085944815,
+   "gain": 0.8578729784970198,
+   "forgetting": 0.08097954731270463,
+   "tokens_eval": 2002455
+  },
+  {
+   "model": "moe",
+   "corpus": "fw2de",
+   "complete": true,
+   "target_before": 8.45933490858721,
+   "target_after": 7.286747958287452,
+   "dclm_before": 4.606683538632111,
+   "dclm_after": 4.765620511369169,
+   "gain": 1.172586950299757,
+   "forgetting": 0.15893697273705865,
+   "tokens_eval": 2002455
+  },
+  {
+   "model": "nestor",
+   "corpus": "pg19",
+   "complete": true,
+   "target_before": 4.836301011309399,
+   "target_after": 4.594501906624462,
+   "dclm_before": 4.759274770492658,
+   "dclm_after": 4.9161138159939926,
+   "gain": 0.24179910468493748,
+   "forgetting": 0.15683904550133487,
+   "tokens_eval": 2002455
+  },
+  {
+   "model": "nestor",
+   "corpus": "owm",
+   "complete": true,
+   "target_before": 4.999649425935133,
+   "target_after": 4.7532291534016995,
+   "dclm_before": 4.759274770492658,
+   "dclm_after": 4.7981141396006715,
+   "gain": 0.24642027253343368,
+   "forgetting": 0.03883936910801378,
+   "tokens_eval": 2002455
+  },
+  {
+   "model": "nestor",
+   "corpus": "algstack",
+   "complete": true,
+   "target_before": 6.6061833415888245,
+   "target_after": 5.678986400638529,
+   "dclm_before": 4.759274770492658,
+   "dclm_after": 4.854892959712266,
+   "gain": 0.9271969409502958,
+   "forgetting": 0.09561818921960796,
+   "tokens_eval": 2002455
+  },
+  {
+   "model": "nestor",
+   "corpus": "fw2de",
+   "complete": true,
+   "target_before": 8.694043047510743,
+   "target_after": 7.453697590114385,
+   "dclm_before": 4.759274770492658,
+   "dclm_after": 4.9327116013921035,
+   "gain": 1.2403454573963577,
+   "forgetting": 0.17343683089944584,
+   "tokens_eval": 2002455
+  }
+ ],
+ "summary": {
+  "ours_avg": {
+   "dense": {
+    "gain": 0.6644948123541632,
+    "forgetting": 0.1582219109002685
+   },
+   "moe": {
+    "gain": 0.6130834004530921,
+    "forgetting": 0.10670261970228379
+   },
+   "nestor": {
+    "gain": 0.6639404438912562,
+    "forgetting": 0.11618335868210061
+   }
+  },
+  "ours_rel": {
+   "dense": {
+    "gain_pct_vs_moe": 8.385712590338624,
+    "forgetting_pct_vs_moe": 48.28306122354935
+   },
+   "moe": {
+    "gain_pct_vs_moe": 0.0,
+    "forgetting_pct_vs_moe": 0.0
+   },
+   "nestor": {
+    "gain_pct_vs_moe": 8.295289580598464,
+    "forgetting_pct_vs_moe": 8.885197951343194
+   },
+   "per_corpus": {
+    "pg19": {
+     "dense": {
+      "gain_pct_vs_moe": 8.736588176578298,
+      "forgetting_pct_vs_moe": 35.123757636056574
+     },
+     "moe": {
+      "gain_pct_vs_moe": 0.0,
+      "forgetting_pct_vs_moe": 0.0
+     },
+     "nestor": {
+      "gain_pct_vs_moe": 13.709648311664168,
+      "forgetting_pct_vs_moe": 8.664188909637627
+     }
+    },
+    "owm": {
+     "dense": {
+      "gain_pct_vs_moe": 10.838413014936886,
+      "forgetting_pct_vs_moe": 58.24277007733767
+     },
+     "moe": {
+      "gain_pct_vs_moe": 0.0,
+      "forgetting_pct_vs_moe": 0.0
+     },
+     "nestor": {
+      "gain_pct_vs_moe": 17.776180364282013,
+      "forgetting_pct_vs_moe": -8.742636578465179
+     }
+    },
+    "algstack": {
+     "dense": {
+      "gain_pct_vs_moe": 8.563052024628126,
+      "forgetting_pct_vs_moe": 56.435277033250486
+     },
+     "moe": {
+      "gain_pct_vs_moe": 0.0,
+      "forgetting_pct_vs_moe": 0.0
+     },
+     "nestor": {
+      "gain_pct_vs_moe": 8.080912231870329,
+      "forgetting_pct_vs_moe": 18.07696189060657
+     }
+    },
+    "fw2de": {
+     "dense": {
+      "gain_pct_vs_moe": 7.754697856617754,
+      "forgetting_pct_vs_moe": 53.41264468764826
+     },
+     "moe": {
+      "gain_pct_vs_moe": 0.0,
+      "forgetting_pct_vs_moe": 0.0
+     },
+     "nestor": {
+      "gain_pct_vs_moe": 5.7785486252664775,
+      "forgetting_pct_vs_moe": 9.123023996672819
+     }
+    }
+   }
+  },
+  "paper_avg": {
+   "nestor": [
+    0.732,
+    0.254
+   ],
+   "moe": [
+    0.734,
+    0.261
+   ],
+   "dense": [
+    0.735,
+    0.316
+   ]
+  },
+  "paper_rel": {
+   "nestor": {
+    "gain_pct_vs_moe": -0.27247956403270157,
+    "forgetting_pct_vs_moe": -2.6819923371647514
+   },
+   "moe": {
+    "gain_pct_vs_moe": 0.0,
+    "forgetting_pct_vs_moe": 0.0
+   },
+   "dense": {
+    "gain_pct_vs_moe": 0.13623978201635634,
+    "forgetting_pct_vs_moe": 21.0727969348659
+   }
+  }
+ }
+}

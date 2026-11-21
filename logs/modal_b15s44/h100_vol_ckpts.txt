@@ -1,0 +1,4 @@
+total 3291936
+drwxr-xr-x 1 root root         17 Nov 13 03:51 .
+drwxr-xr-x 1 root root         11 Nov 13 03:51 ..
+-rw-r--r-- 1 root root 3370941320 Nov 13 03:51 model_00001000.pt

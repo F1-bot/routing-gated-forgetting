@@ -1,0 +1,14 @@
+{
+ "data/dclm/dclm_val.bin": {
+  "sha256": "0644eac43505ad8f3ba78c8dd8580862e7b69dcbf24080dd3e8082692186ed04",
+  "bytes": 79999636
+ },
+ "data/dclm/dclm_train16.bin.parts/global-shard_01_of_10__local-shard_0_of_10__shard_00000000_processed.bin": {
+  "sha256": "d208526e3b0c39e5d351aac26f3e4eab6a8680fa8bc97b86a61ea1a4bda4285d",
+  "bytes": 292746848
+ },
+ "data/dclm/dclm_train16.bin": {
+  "sha256": "455754d1d0098da83fb3bfc33d96e292520751a1e431d7a037e6f1bf0be9cd16",
+  "bytes": 6955688428
+ }
+}

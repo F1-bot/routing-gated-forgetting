@@ -1,0 +1,4 @@
+local: []
+volume: ['moe_100m_b15s44/20261113_031245__moe_100m_b15s44_train/checkpoints/model_00001000.pt']
+restored /vol/outputs/moe_100m_b15s44/20261113_031245__moe_100m_b15s44_train/checkpoints/model_00001000.pt -> /root/outputs/moe_100m_b15s44/20261113_031245__moe_100m_b15s44_train/checkpoints/model_00001000.pt
+resume from /root/outputs/moe_100m_b15s44/20261113_031245__moe_100m_b15s44_train/checkpoints/model_00001000.pt step 1000

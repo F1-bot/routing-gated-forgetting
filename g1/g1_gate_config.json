@@ -1,0 +1,15 @@
+{
+ "appC6_ranges": null,
+ "code_record": "logs/after_B_code_sha256.json",
+ "f_or_stream_changed": false,
+ "g07r_record": "g0r/g07r_record.json",
+ "lookup": "signflip_lookup_v1.csv",
+ "pipeline_tests": {
+  "junit": "logs/tests_gpu_pipeline.xml",
+  "log": "logs/tests_gpu_pipeline.log"
+ },
+ "routing_health": "g0/nestor/routing_health.json",
+ "rules_version": "1.3.0",
+ "spec": "g1g2_spec.json",
+ "stage": "g1"
+}

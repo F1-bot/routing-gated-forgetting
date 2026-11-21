@@ -1,0 +1,58 @@
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{1.45cm}>{\raggedright\arraybackslash}p{10.2cm}>{\raggedright\arraybackslash}p{3.2cm}@{}}
+\caption{Theory statements and their status. Labels as defined in Appendix~\ref{app:prereg}; the statements, proofs and toy checks are in the theory notes.}\label{tab:theory}\\
+\toprule
+ID & Statement & Status\\
+\midrule
+\endfirsthead
+\toprule
+ID & Statement & Status\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+P1 & Zero overlap: if $S$ has exactly zero effective gate on every token of every evaluated old sequence (conditions 1--6), then $F_c=0$ for every $\theta_S$ & \labT; implementation audit only\\
+P2/P12 & $F_c=\langle\nabla L_c,\delta\rangle+\half\delta^\top H_c\delta+O(\|\delta\|^3)$ on the realized displacement; the first-order term is routing-gated and absent under A0. $F-\Fpin$ is router flips plus the gate-value pathway; $F-\Fsel$ isolates router flips (endpoint decomposition) & \labT{} for the pinned loss, or when no hard router sits downstream of updated modules on old paths; decomposition descriptive\\
+P3 (global) & Fixed $S$, deterministic weight $c$ on each target token's loss: leading-order forgetting $\propto c^2$ (SGD, A0, clipping inactive, decay off), $\propto c$ (SGD without A0), $\propto c^0$ (per-matrix Muon with exact polar, NS-5 up to its tolerance, Adam); random token masking is not equivalent & \labT{} with deterministic weights\\
+P3 (entry-wise) & $\kappa_S=\sum_c\mu_P(c)\,w(\mu_Q(c))\,\nu_c$ & \labC{} for LMs; \labD{} in the simulated model only\\
+P4 & Overlap exponent 1 (position-wise, single family, top-1), 2 (uniform dense gates with shared features), otherwise between 1 and 2; above 1 with token mixing even for top-1 & \labC\\
+P5 (within module) & Per-matrix Muon displacement does not depend on a deterministic target-loss scale; SGD displacement is proportional to it at small effective time, with clipping inactive and decay off & \labD\\
+P6 & Least-used subsets forget less than random subsets, which forget less than most-used ones, at matched displacement & \labC\\
+P7 & Second-order forecasts with measured displacement are at least as good as routing-only forecasts & \labC\\
+P8 & Matched-gain ratios are invariant to any change of learning rate, schedule or step count that leaves the realized directions unchanged; equal-time ratios are not; the sign of their difference is model-specific & \labT{} identity under that condition; sign \labS\\
+P9 & Nested-versus-flat band from $-7\%$ to $+6\%$ at 0.05 bits of column--domain information & \labS; indicator-regime statement \labD\\
+P10 & Protectable column-routed old routing mass $\le\sum_bn_b(1-f_b)/\sum_bn_b$; a forgetting-share version needs further conditions & \labT{} (mass) / \labD{} (share)\\
+P11 & Withdrawn as a hypothesis; replaced by revert attribution (C3) & estimation\\
+ACC & Second-order accounting identity (Equation~\ref{eq:accounting}): $I$ equals the contrast of sensitivity- and displacement-weighted routing masses; without A0 it holds for $F^{\mathrm{sym,pin}}$ under B1--B3; the log contrast is undefined when a weighted mass is not positive & \labT{} under B1--B4 (B2: selections and gate values pinned)\\
+C1-a & Sign: $I>0$ for draws with $\Delta_W>0$; the symmetrized sign is reported too & \labD\\
+C1-b & $\E[I\mid\Delta_W]=\beta\Delta_W$ with $\beta=1$ under exact B1--B6; Jensen correction if B5--B6 hold only in expectation; dilution lowers $\beta$; mixing and alignment bias directions not derived & \labD{} ($\beta=1$); band and bias directions \labC\\
+C1-c & Displacement invariance at leading order: interim crossovers equal the final one & \labD{} (diagnostic)\\
+C1-d & DCLM negative control, symmetrized and mismatch-adjusted, has no systematic sign & \labD\\
+C1-e & Second-moment versus mean-gate versus frequency contrast & descriptive\\
+C1-R & Random-direction crossover has $\beta_{\mathrm{rand}}\approx1$ (antithetic pairs) & \labD\\
+C2-a (Muon) & $D_{\mathrm{Muon}}=0$ at step 1, for any routing and loss, with exact polar factors, equal matrix counts and shapes, full-rank first gradients, a fresh optimizer state, the same learning rate per matrix, and decoupled weight decay off at step 1 (or its decay-only displacement removed); NS-5 in bf16 is covered by a unit test only & \labT{} at step 1; \labD{} later\\
+C2-a (SGD) & $D_{\mathrm{SGD}}=\varepsilon_D\,\DQ$ in mean-gate units, with $D_{\mathrm{SGD}}/\DQ\ge0.5$ at the earliest checkpoint & \labD\\
+C2-b & $\Iopt>0$; $R_{\mathrm{SGD}}(\sstar)\approx\hat e_FD_{\mathrm{SGD}}$, so $\Iopt(\sstar)\approx\hat e_FD_{\mathrm{SGD}}-R_{\mathrm{Muon}}(\sstar)$, with $\hat e_F$ estimated from the statistic that enters $\Iopt$; the $J2$ condition uses the measured $D_{\mathrm{SGD}}/\DQ$ in mean-gate units & sign \labD; magnitude \labD{} at small effective time only\\
+C2-T & The optimizer contrast decays with effective time; it is approximately constant while $\bar\kappa\gtrsim0.8$ and falls as $\bar\kappa$ falls & \labE, descriptive\\
+C2-c & Muon equivalence $|b_{\mathrm{Muon}}|<1/3$ & \labC, exploratory\\
+C2-d & Within-module dose with deterministic loss weights (P3 global) & \labT\\
+FS-1 & $\Fsym$ removes all odd orders when $F$ is smooth; with pinned routing $F^{\mathrm{sym,pin}}=\half\delta^\top H^{\mathrm{pin}}\delta+O(\|\delta\|^4)$, with $H^{\mathrm{pin}}$ the Hessian of the pinned loss & \labT\\
+FS-2 & Under live routing $\Fsym$ keeps the router-flip term; its even part is positive only under per-token stationarity, otherwise its sign is not derived & \labD\\
+FS-3 & $\mathrm{Var}(\hat F^{\mathrm{sym}})\le\max\mathrm{Var}(\hat F(\pm\delta))$; for pinned or flip-free evaluation the per-window first-order noise cancels, and the standard-error ratio of raw to symmetrized forgetting grows like $1/\|\delta\|$ & \labT{} (inequality) / \labD{} (scaling)\\
+PR & Proposition R: $\E\,\Frand=\half\sum_m\|\delta_m\|^2\mathrm{tr}\,H_{mm}/(p_mq_m)$, with no first-order and no cross-module terms & \labT{} (in expectation)\\
+PA & Proposition A identity: $\Lambda=\log\langle a\rangle+\log(1+X)$, with $X$ at the granularity of the random control & \labT{} (identity)\\
+M12-a & Alignment $\Lambda_c\ne0$ & \labC{} (sign not derived)\\
+M12-b & $IT^{\mathrm{learned}}-IT^{\mathrm{rand}}\ne0$ at fixed $S$ & \labC\\
+M12-c & Learned-minus-random crossover $I^{\mathrm{sym}}-I^{\mathrm{rand}}$ & \labC{} (sign)\\
+M12-d & Coherence share $X\ne0$ at matrix granularity & \labC\\
+A-R1 & Unit test of the random-control code inside the class of Corollary R1 (A0, exact polar, $D_{\mathrm{out}}\ge D_{\mathrm{in}}$, isotropic output metric; a single trained matrix for the multi-step remark) & \labT\\
+L-1 & Load $\xiLP>1$: no pair of pool subsets matches the target and DCLM masses exactly & \labTp\\
+L-2 & Entanglement factorization $1-R^2_\pi=(1-\rho^2_{\pi D})(1-\rho^2_{\pi T\cdot D})$; two targets of a base differ only in the partial term & \labTp\\
+L-3 & $\xiLP\approx\sqrt{R^2_\pi/(1-R^2_\pi)}\,/\,\hat\imath_k$; exact when the per-stratum drags are proportional & \labD\\
+L-4 & Search success falls steeply above $\xiLP\approx0.6$; operating threshold 0.67 at the registered tolerance (0.70 at $\log1.10$) & \labD{} / \labE\\
+L-5 & Matched pools keep $\E[P\mid\text{matched}]\approx P_0(1-R^2)/(1-(1-v_f)R^2)$; residual-tilt pools carry no drag and keep $P\approx P_0\sqrt{1-R^2}$ (Gaussian log-usage model) & \labD\\
+DR-1 & Label-swap symmetry: $\E[I\mid\text{A/A}]=0$; along a smooth family through A/A, $\E[I\mid P]=\beta_1P+\beta_3P^3+O(P^5)$ & \labTp\\
+DR-2 & Effects of estimation error, B5 slope, saturation, first-order transfer and routing drift on $\beta_1$; curvature only from a non-smooth $\log F$ & \labD\\
+AU-1 & $\beta=1+a_{\mathrm{int}}$, with $a_{\mathrm{int}}$ the usage-weighted regression of the B5 interaction contrast on the tilt; B6 enters through within-subset tilt covariances and a chance term of known size & \labD\\
+AU-2 & The Jensen term is below 0.001 for 72-module subsets, so the G0-7 imbalance $D\approx-0.10$ is not a Jensen effect; most likely it is a B5 slope $a_{\mathrm{int}}\approx-0.1$ & \labD{} / \labE{} (bound); \labC{} (reading)\\
+B3-1 & On the 1.5B-token base the first-order share is smaller, $\beta_{\mathrm{raw}}$ is closer to $\beta_{\mathrm{sym}}$, and $\beta_{\mathrm{sym}}$ is unchanged or slightly lower & \labC\\
+\end{longtable}

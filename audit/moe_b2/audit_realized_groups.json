@@ -1,0 +1,871 @@
+{
+ "base": "moe_b2",
+ "code_stream": "code",
+ "contrast_definition": "RO_code(g)/RO_code(S) - RO_math(g)/RO_math(S) on the estimation tables",
+ "corpora": [
+  "dclm",
+  "code",
+  "math"
+ ],
+ "eps": 0.0025,
+ "eps_source": "G0-7 registered step (g0\\moe_b2\\margin__probe.json: books)",
+ "groups": [
+  {
+   "contrast": 0.07647504316047199,
+   "keys": [
+    "moe:b0:l0:e4",
+    "moe:b0:l0:e6",
+    "moe:b0:l0:e12",
+    "moe:b0:l0:e15",
+    "moe:b0:l0:e16",
+    "moe:b0:l0:e22"
+   ],
+   "layer": 0,
+   "n_units": 6,
+   "name": "A:l0",
+   "params": [
+    "backbone.blocks.0.layers.0.stacked_moe_bank.w_down",
+    "backbone.blocks.0.layers.0.stacked_moe_bank.w_gate",
+    "backbone.blocks.0.layers.0.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.939742816981327,
+   "side": "A",
+   "stratum": "moe:b0:l0"
+  },
+  {
+   "contrast": 0.09726385014162905,
+   "keys": [
+    "moe:b0:l1:e3",
+    "moe:b0:l1:e11",
+    "moe:b0:l1:e12",
+    "moe:b0:l1:e14",
+    "moe:b0:l1:e17",
+    "moe:b0:l1:e19"
+   ],
+   "layer": 1,
+   "n_units": 6,
+   "name": "A:l1",
+   "params": [
+    "backbone.blocks.0.layers.1.stacked_moe_bank.w_down",
+    "backbone.blocks.0.layers.1.stacked_moe_bank.w_gate",
+    "backbone.blocks.0.layers.1.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.9514053808415515,
+   "side": "A",
+   "stratum": "moe:b0:l1"
+  },
+  {
+   "contrast": 0.07666701337990466,
+   "keys": [
+    "moe:b0:l2:e1",
+    "moe:b0:l2:e2",
+    "moe:b0:l2:e5",
+    "moe:b0:l2:e8",
+    "moe:b0:l2:e9",
+    "moe:b0:l2:e18"
+   ],
+   "layer": 2,
+   "n_units": 6,
+   "name": "A:l2",
+   "params": [
+    "backbone.blocks.0.layers.2.stacked_moe_bank.w_down",
+    "backbone.blocks.0.layers.2.stacked_moe_bank.w_gate",
+    "backbone.blocks.0.layers.2.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.9484314146826485,
+   "side": "A",
+   "stratum": "moe:b0:l2"
+  },
+  {
+   "contrast": -0.019740182169629167,
+   "keys": [
+    "moe:b1:l0:e2",
+    "moe:b1:l0:e4",
+    "moe:b1:l0:e15",
+    "moe:b1:l0:e17",
+    "moe:b1:l0:e18",
+    "moe:b1:l0:e22"
+   ],
+   "layer": 3,
+   "n_units": 6,
+   "name": "A:l3",
+   "params": [
+    "backbone.blocks.1.layers.0.stacked_moe_bank.w_down",
+    "backbone.blocks.1.layers.0.stacked_moe_bank.w_gate",
+    "backbone.blocks.1.layers.0.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.358090517445186,
+   "side": "A",
+   "stratum": "moe:b1:l0"
+  },
+  {
+   "contrast": -0.0229418065353863,
+   "keys": [
+    "moe:b1:l1:e2",
+    "moe:b1:l1:e4",
+    "moe:b1:l1:e8",
+    "moe:b1:l1:e12",
+    "moe:b1:l1:e13",
+    "moe:b1:l1:e20"
+   ],
+   "layer": 4,
+   "n_units": 6,
+   "name": "A:l4",
+   "params": [
+    "backbone.blocks.1.layers.1.stacked_moe_bank.w_down",
+    "backbone.blocks.1.layers.1.stacked_moe_bank.w_gate",
+    "backbone.blocks.1.layers.1.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.7691489317080045,
+   "side": "A",
+   "stratum": "moe:b1:l1"
+  },
+  {
+   "contrast": 0.0016558262069326646,
+   "keys": [
+    "moe:b1:l2:e3",
+    "moe:b1:l2:e4",
+    "moe:b1:l2:e9",
+    "moe:b1:l2:e12",
+    "moe:b1:l2:e13",
+    "moe:b1:l2:e23"
+   ],
+   "layer": 5,
+   "n_units": 6,
+   "name": "A:l5",
+   "params": [
+    "backbone.blocks.1.layers.2.stacked_moe_bank.w_down",
+    "backbone.blocks.1.layers.2.stacked_moe_bank.w_gate",
+    "backbone.blocks.1.layers.2.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.8497783906039444,
+   "side": "A",
+   "stratum": "moe:b1:l2"
+  },
+  {
+   "contrast": -0.036370427242108316,
+   "keys": [
+    "moe:b2:l0:e7",
+    "moe:b2:l0:e8",
+    "moe:b2:l0:e9",
+    "moe:b2:l0:e12",
+    "moe:b2:l0:e16",
+    "moe:b2:l0:e17"
+   ],
+   "layer": 6,
+   "n_units": 6,
+   "name": "A:l6",
+   "params": [
+    "backbone.blocks.2.layers.0.stacked_moe_bank.w_down",
+    "backbone.blocks.2.layers.0.stacked_moe_bank.w_gate",
+    "backbone.blocks.2.layers.0.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.249060705702475,
+   "side": "A",
+   "stratum": "moe:b2:l0"
+  },
+  {
+   "contrast": -0.03557119403928513,
+   "keys": [
+    "moe:b2:l1:e0",
+    "moe:b2:l1:e14",
+    "moe:b2:l1:e15",
+    "moe:b2:l1:e21",
+    "moe:b2:l1:e22",
+    "moe:b2:l1:e23"
+   ],
+   "layer": 7,
+   "n_units": 6,
+   "name": "A:l7",
+   "params": [
+    "backbone.blocks.2.layers.1.stacked_moe_bank.w_down",
+    "backbone.blocks.2.layers.1.stacked_moe_bank.w_gate",
+    "backbone.blocks.2.layers.1.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.449999005187961,
+   "side": "A",
+   "stratum": "moe:b2:l1"
+  },
+  {
+   "contrast": -0.048943182916924004,
+   "keys": [
+    "moe:b2:l2:e0",
+    "moe:b2:l2:e2",
+    "moe:b2:l2:e13",
+    "moe:b2:l2:e14",
+    "moe:b2:l2:e17",
+    "moe:b2:l2:e22"
+   ],
+   "layer": 8,
+   "n_units": 6,
+   "name": "A:l8",
+   "params": [
+    "backbone.blocks.2.layers.2.stacked_moe_bank.w_down",
+    "backbone.blocks.2.layers.2.stacked_moe_bank.w_gate",
+    "backbone.blocks.2.layers.2.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.383387221382622,
+   "side": "A",
+   "stratum": "moe:b2:l2"
+  },
+  {
+   "contrast": -0.03462306799943555,
+   "keys": [
+    "moe:b3:l0:e1",
+    "moe:b3:l0:e4",
+    "moe:b3:l0:e10",
+    "moe:b3:l0:e12",
+    "moe:b3:l0:e14",
+    "moe:b3:l0:e17"
+   ],
+   "layer": 9,
+   "n_units": 6,
+   "name": "A:l9",
+   "params": [
+    "backbone.blocks.3.layers.0.stacked_moe_bank.w_down",
+    "backbone.blocks.3.layers.0.stacked_moe_bank.w_gate",
+    "backbone.blocks.3.layers.0.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.5227037652707995,
+   "side": "A",
+   "stratum": "moe:b3:l0"
+  },
+  {
+   "contrast": -0.03885825974750703,
+   "keys": [
+    "moe:b3:l1:e1",
+    "moe:b3:l1:e3",
+    "moe:b3:l1:e7",
+    "moe:b3:l1:e9",
+    "moe:b3:l1:e13",
+    "moe:b3:l1:e23"
+   ],
+   "layer": 10,
+   "n_units": 6,
+   "name": "A:l10",
+   "params": [
+    "backbone.blocks.3.layers.1.stacked_moe_bank.w_down",
+    "backbone.blocks.3.layers.1.stacked_moe_bank.w_gate",
+    "backbone.blocks.3.layers.1.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.4190229241254775,
+   "side": "A",
+   "stratum": "moe:b3:l1"
+  },
+  {
+   "contrast": -0.015013612238663078,
+   "keys": [
+    "moe:b3:l2:e1",
+    "moe:b3:l2:e7",
+    "moe:b3:l2:e12",
+    "moe:b3:l2:e19",
+    "moe:b3:l2:e20",
+    "moe:b3:l2:e21"
+   ],
+   "layer": 11,
+   "n_units": 6,
+   "name": "A:l11",
+   "params": [
+    "backbone.blocks.3.layers.2.stacked_moe_bank.w_down",
+    "backbone.blocks.3.layers.2.stacked_moe_bank.w_gate",
+    "backbone.blocks.3.layers.2.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.819341605960579,
+   "side": "A",
+   "stratum": "moe:b3:l2"
+  },
+  {
+   "contrast": -0.007170419221429469,
+   "keys": [
+    "moe:b0:l0:e1",
+    "moe:b0:l0:e2",
+    "moe:b0:l0:e3",
+    "moe:b0:l0:e8",
+    "moe:b0:l0:e17",
+    "moe:b0:l0:e21"
+   ],
+   "layer": 0,
+   "n_units": 6,
+   "name": "B:l0",
+   "params": [
+    "backbone.blocks.0.layers.0.stacked_moe_bank.w_down",
+    "backbone.blocks.0.layers.0.stacked_moe_bank.w_gate",
+    "backbone.blocks.0.layers.0.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.950988874144046,
+   "side": "B",
+   "stratum": "moe:b0:l0"
+  },
+  {
+   "contrast": -0.008839826472486143,
+   "keys": [
+    "moe:b0:l1:e1",
+    "moe:b0:l1:e8",
+    "moe:b0:l1:e10",
+    "moe:b0:l1:e16",
+    "moe:b0:l1:e20",
+    "moe:b0:l1:e22"
+   ],
+   "layer": 1,
+   "n_units": 6,
+   "name": "B:l1",
+   "params": [
+    "backbone.blocks.0.layers.1.stacked_moe_bank.w_down",
+    "backbone.blocks.0.layers.1.stacked_moe_bank.w_gate",
+    "backbone.blocks.0.layers.1.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.916200100164138,
+   "side": "B",
+   "stratum": "moe:b0:l1"
+  },
+  {
+   "contrast": -0.00706252100227879,
+   "keys": [
+    "moe:b0:l2:e4",
+    "moe:b0:l2:e7",
+    "moe:b0:l2:e17",
+    "moe:b0:l2:e19",
+    "moe:b0:l2:e20",
+    "moe:b0:l2:e23"
+   ],
+   "layer": 2,
+   "n_units": 6,
+   "name": "B:l2",
+   "params": [
+    "backbone.blocks.0.layers.2.stacked_moe_bank.w_down",
+    "backbone.blocks.0.layers.2.stacked_moe_bank.w_gate",
+    "backbone.blocks.0.layers.2.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.853539613340611,
+   "side": "B",
+   "stratum": "moe:b0:l2"
+  },
+  {
+   "contrast": -0.0026754672466031,
+   "keys": [
+    "moe:b1:l0:e6",
+    "moe:b1:l0:e8",
+    "moe:b1:l0:e9",
+    "moe:b1:l0:e12",
+    "moe:b1:l0:e16",
+    "moe:b1:l0:e23"
+   ],
+   "layer": 3,
+   "n_units": 6,
+   "name": "B:l3",
+   "params": [
+    "backbone.blocks.1.layers.0.stacked_moe_bank.w_down",
+    "backbone.blocks.1.layers.0.stacked_moe_bank.w_gate",
+    "backbone.blocks.1.layers.0.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.401561592248058,
+   "side": "B",
+   "stratum": "moe:b1:l0"
+  },
+  {
+   "contrast": -0.023640314593212218,
+   "keys": [
+    "moe:b1:l1:e0",
+    "moe:b1:l1:e1",
+    "moe:b1:l1:e7",
+    "moe:b1:l1:e11",
+    "moe:b1:l1:e16",
+    "moe:b1:l1:e18"
+   ],
+   "layer": 4,
+   "n_units": 6,
+   "name": "B:l4",
+   "params": [
+    "backbone.blocks.1.layers.1.stacked_moe_bank.w_down",
+    "backbone.blocks.1.layers.1.stacked_moe_bank.w_gate",
+    "backbone.blocks.1.layers.1.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.768245013271663,
+   "side": "B",
+   "stratum": "moe:b1:l1"
+  },
+  {
+   "contrast": -0.022301577762841654,
+   "keys": [
+    "moe:b1:l2:e6",
+    "moe:b1:l2:e7",
+    "moe:b1:l2:e10",
+    "moe:b1:l2:e18",
+    "moe:b1:l2:e20",
+    "moe:b1:l2:e21"
+   ],
+   "layer": 5,
+   "n_units": 6,
+   "name": "B:l5",
+   "params": [
+    "backbone.blocks.1.layers.2.stacked_moe_bank.w_down",
+    "backbone.blocks.1.layers.2.stacked_moe_bank.w_gate",
+    "backbone.blocks.1.layers.2.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.6493128128895895,
+   "side": "B",
+   "stratum": "moe:b1:l2"
+  },
+  {
+   "contrast": -0.00680659822418371,
+   "keys": [
+    "moe:b2:l0:e0",
+    "moe:b2:l0:e4",
+    "moe:b2:l0:e13",
+    "moe:b2:l0:e14",
+    "moe:b2:l0:e20",
+    "moe:b2:l0:e23"
+   ],
+   "layer": 6,
+   "n_units": 6,
+   "name": "B:l6",
+   "params": [
+    "backbone.blocks.2.layers.0.stacked_moe_bank.w_down",
+    "backbone.blocks.2.layers.0.stacked_moe_bank.w_gate",
+    "backbone.blocks.2.layers.0.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.414759611751019,
+   "side": "B",
+   "stratum": "moe:b2:l0"
+  },
+  {
+   "contrast": 0.0029301426936566705,
+   "keys": [
+    "moe:b2:l1:e1",
+    "moe:b2:l1:e3",
+    "moe:b2:l1:e6",
+    "moe:b2:l1:e17",
+    "moe:b2:l1:e18",
+    "moe:b2:l1:e20"
+   ],
+   "layer": 7,
+   "n_units": 6,
+   "name": "B:l7",
+   "params": [
+    "backbone.blocks.2.layers.1.stacked_moe_bank.w_down",
+    "backbone.blocks.2.layers.1.stacked_moe_bank.w_gate",
+    "backbone.blocks.2.layers.1.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.565281880660997,
+   "side": "B",
+   "stratum": "moe:b2:l1"
+  },
+  {
+   "contrast": 0.03268024550211478,
+   "keys": [
+    "moe:b2:l2:e3",
+    "moe:b2:l2:e6",
+    "moe:b2:l2:e7",
+    "moe:b2:l2:e19",
+    "moe:b2:l2:e20",
+    "moe:b2:l2:e21"
+   ],
+   "layer": 8,
+   "n_units": 6,
+   "name": "B:l8",
+   "params": [
+    "backbone.blocks.2.layers.2.stacked_moe_bank.w_down",
+    "backbone.blocks.2.layers.2.stacked_moe_bank.w_gate",
+    "backbone.blocks.2.layers.2.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.711350566656378,
+   "side": "B",
+   "stratum": "moe:b2:l2"
+  },
+  {
+   "contrast": 0.005410800474683716,
+   "keys": [
+    "moe:b3:l0:e2",
+    "moe:b3:l0:e5",
+    "moe:b3:l0:e8",
+    "moe:b3:l0:e15",
+    "moe:b3:l0:e20",
+    "moe:b3:l0:e22"
+   ],
+   "layer": 9,
+   "n_units": 6,
+   "name": "B:l9",
+   "params": [
+    "backbone.blocks.3.layers.0.stacked_moe_bank.w_down",
+    "backbone.blocks.3.layers.0.stacked_moe_bank.w_gate",
+    "backbone.blocks.3.layers.0.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.6889435423934,
+   "side": "B",
+   "stratum": "moe:b3:l0"
+  },
+  {
+   "contrast": 0.022114452544533314,
+   "keys": [
+    "moe:b3:l1:e5",
+    "moe:b3:l1:e8",
+    "moe:b3:l1:e10",
+    "moe:b3:l1:e14",
+    "moe:b3:l1:e17",
+    "moe:b3:l1:e20"
+   ],
+   "layer": 10,
+   "n_units": 6,
+   "name": "B:l10",
+   "params": [
+    "backbone.blocks.3.layers.1.stacked_moe_bank.w_down",
+    "backbone.blocks.3.layers.1.stacked_moe_bank.w_gate",
+    "backbone.blocks.3.layers.1.stacked_moe_bank.w_up"
+   ],
+   "rho": 7.897842017304353,
+   "side": "B",
+   "stratum": "moe:b3:l1"
+  },
+  {
+   "contrast": 0.01536108330804653,
+   "keys": [
+    "moe:b3:l2:e2",
+    "moe:b3:l2:e9",
+    "moe:b3:l2:e11",
+    "moe:b3:l2:e13",
+    "moe:b3:l2:e16",
+    "moe:b3:l2:e23"
+   ],
+   "layer": 11,
+   "n_units": 6,
+   "name": "B:l11",
+   "params": [
+    "backbone.blocks.3.layers.2.stacked_moe_bank.w_down",
+    "backbone.blocks.3.layers.2.stacked_moe_bank.w_gate",
+    "backbone.blocks.3.layers.2.stacked_moe_bank.w_up"
+   ],
+   "rho": 8.129677619282777,
+   "side": "B",
+   "stratum": "moe:b3:l2"
+  }
+ ],
+ "runs": [
+  "c1_moe_b2_books_d1_A",
+  "c1_moe_b2_books_d1_B"
+ ],
+ "specs": {
+  "A": {
+   "mode": "train",
+   "select": [
+    {
+     "block": 0,
+     "expert": [
+      4,
+      6,
+      12,
+      15,
+      16,
+      22
+     ],
+     "kind": "moe",
+     "layer": 0
+    },
+    {
+     "block": 0,
+     "expert": [
+      3,
+      11,
+      12,
+      14,
+      17,
+      19
+     ],
+     "kind": "moe",
+     "layer": 1
+    },
+    {
+     "block": 0,
+     "expert": [
+      1,
+      2,
+      5,
+      8,
+      9,
+      18
+     ],
+     "kind": "moe",
+     "layer": 2
+    },
+    {
+     "block": 1,
+     "expert": [
+      2,
+      4,
+      15,
+      17,
+      18,
+      22
+     ],
+     "kind": "moe",
+     "layer": 0
+    },
+    {
+     "block": 1,
+     "expert": [
+      2,
+      4,
+      8,
+      12,
+      13,
+      20
+     ],
+     "kind": "moe",
+     "layer": 1
+    },
+    {
+     "block": 1,
+     "expert": [
+      3,
+      4,
+      9,
+      12,
+      13,
+      23
+     ],
+     "kind": "moe",
+     "layer": 2
+    },
+    {
+     "block": 2,
+     "expert": [
+      7,
+      8,
+      9,
+      12,
+      16,
+      17
+     ],
+     "kind": "moe",
+     "layer": 0
+    },
+    {
+     "block": 2,
+     "expert": [
+      0,
+      14,
+      15,
+      21,
+      22,
+      23
+     ],
+     "kind": "moe",
+     "layer": 1
+    },
+    {
+     "block": 2,
+     "expert": [
+      0,
+      2,
+      13,
+      14,
+      17,
+      22
+     ],
+     "kind": "moe",
+     "layer": 2
+    },
+    {
+     "block": 3,
+     "expert": [
+      1,
+      4,
+      10,
+      12,
+      14,
+      17
+     ],
+     "kind": "moe",
+     "layer": 0
+    },
+    {
+     "block": 3,
+     "expert": [
+      1,
+      3,
+      7,
+      9,
+      13,
+      23
+     ],
+     "kind": "moe",
+     "layer": 1
+    },
+    {
+     "block": 3,
+     "expert": [
+      1,
+      7,
+      12,
+      19,
+      20,
+      21
+     ],
+     "kind": "moe",
+     "layer": 2
+    }
+   ]
+  },
+  "B": {
+   "mode": "train",
+   "select": [
+    {
+     "block": 0,
+     "expert": [
+      1,
+      2,
+      3,
+      8,
+      17,
+      21
+     ],
+     "kind": "moe",
+     "layer": 0
+    },
+    {
+     "block": 0,
+     "expert": [
+      1,
+      8,
+      10,
+      16,
+      20,
+      22
+     ],
+     "kind": "moe",
+     "layer": 1
+    },
+    {
+     "block": 0,
+     "expert": [
+      4,
+      7,
+      17,
+      19,
+      20,
+      23
+     ],
+     "kind": "moe",
+     "layer": 2
+    },
+    {
+     "block": 1,
+     "expert": [
+      6,
+      8,
+      9,
+      12,
+      16,
+      23
+     ],
+     "kind": "moe",
+     "layer": 0
+    },
+    {
+     "block": 1,
+     "expert": [
+      0,
+      1,
+      7,
+      11,
+      16,
+      18
+     ],
+     "kind": "moe",
+     "layer": 1
+    },
+    {
+     "block": 1,
+     "expert": [
+      6,
+      7,
+      10,
+      18,
+      20,
+      21
+     ],
+     "kind": "moe",
+     "layer": 2
+    },
+    {
+     "block": 2,
+     "expert": [
+      0,
+      4,
+      13,
+      14,
+      20,
+      23
+     ],
+     "kind": "moe",
+     "layer": 0
+    },
+    {
+     "block": 2,
+     "expert": [
+      1,
+      3,
+      6,
+      17,
+      18,
+      20
+     ],
+     "kind": "moe",
+     "layer": 1
+    },
+    {
+     "block": 2,
+     "expert": [
+      3,
+      6,
+      7,
+      19,
+      20,
+      21
+     ],
+     "kind": "moe",
+     "layer": 2
+    },
+    {
+     "block": 3,
+     "expert": [
+      2,
+      5,
+      8,
+      15,
+      20,
+      22
+     ],
+     "kind": "moe",
+     "layer": 0
+    },
+    {
+     "block": 3,
+     "expert": [
+      5,
+      8,
+      10,
+      14,
+      17,
+      20
+     ],
+     "kind": "moe",
+     "layer": 1
+    },
+    {
+     "block": 3,
+     "expert": [
+      2,
+      9,
+      11,
+      13,
+      16,
+      23
+     ],
+     "kind": "moe",
+     "layer": 2
+    }
+   ]
+  }
+ },
+ "windows_per_corpus": 24
+}

@@ -1,0 +1,12 @@
+# .venv/nestor/Scripts/python.exe forecast_probe.py run --units results\forecast\forecast_units.json --base moe_b3 --out results\forecast\probes
+# env overrides: {"NESTOR_FREEZE_ROUTERS": "1"}
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+.venv\nestor\Lib\site-packages\triton\knobs.py:524: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+[forecast_probe] moe_b3 unit 114 (SPEC, books, muon): 59.2 s
+[forecast_probe] moe_b3 unit 115 (SPEC, books, muon): 58.9 s
+[forecast_probe] moe_b3 unit 116 (SPEC, books, muon): 59.3 s
+[forecast_probe] moe_b3 unit 117 (SPEC, books, muon): 64.3 s
+[forecast_probe] moe_b3 unit 118 (SPEC, books, muon): 59.3 s
+[forecast_probe] moe_b3 unit 119 (SPEC, books, muon): 58.7 s
+[forecast_probe] {'base': 'moe_b3', 'done': 6, 'skipped': 0, 'seconds': 389.5}

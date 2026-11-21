@@ -1,0 +1,3260 @@
+{
+ "base": "moe_b1",
+ "block": "C1-DE",
+ "code_stream": "code",
+ "entries": [
+  {
+   "A": [
+    [
+     7,
+     16,
+     19,
+     20,
+     22,
+     23
+    ],
+    [
+     4,
+     10,
+     15,
+     16,
+     22,
+     23
+    ],
+    [
+     5,
+     9,
+     11,
+     20,
+     21,
+     23
+    ],
+    [
+     6,
+     8,
+     9,
+     17,
+     22,
+     23
+    ],
+    [
+     1,
+     9,
+     10,
+     11,
+     19,
+     21
+    ],
+    [
+     1,
+     9,
+     12,
+     15,
+     17,
+     18
+    ],
+    [
+     1,
+     3,
+     4,
+     14,
+     15,
+     21
+    ],
+    [
+     1,
+     3,
+     4,
+     9,
+     18,
+     22
+    ],
+    [
+     1,
+     3,
+     10,
+     11,
+     14,
+     22
+    ],
+    [
+     5,
+     9,
+     10,
+     11,
+     22,
+     23
+    ],
+    [
+     0,
+     5,
+     11,
+     14,
+     18,
+     20
+    ],
+    [
+     4,
+     5,
+     6,
+     7,
+     13,
+     14
+    ]
+   ],
+   "B": [
+    [
+     1,
+     4,
+     8,
+     10,
+     14,
+     17
+    ],
+    [
+     1,
+     8,
+     9,
+     17,
+     20,
+     21
+    ],
+    [
+     0,
+     2,
+     3,
+     7,
+     18,
+     22
+    ],
+    [
+     1,
+     2,
+     5,
+     11,
+     16,
+     21
+    ],
+    [
+     3,
+     4,
+     5,
+     6,
+     12,
+     15
+    ],
+    [
+     0,
+     5,
+     11,
+     19,
+     20,
+     23
+    ],
+    [
+     0,
+     8,
+     9,
+     13,
+     19,
+     20
+    ],
+    [
+     5,
+     7,
+     8,
+     10,
+     11,
+     23
+    ],
+    [
+     5,
+     9,
+     13,
+     15,
+     16,
+     20
+    ],
+    [
+     0,
+     12,
+     14,
+     18,
+     19,
+     21
+    ],
+    [
+     1,
+     6,
+     9,
+     12,
+     16,
+     23
+    ],
+    [
+     1,
+     3,
+     10,
+     12,
+     17,
+     18
+    ]
+   ],
+   "L": 12,
+   "N": 24,
+   "base": "moe_b1",
+   "block": "C1-DE",
+   "code": "code",
+   "d": 1,
+   "design": "c1",
+   "excluded_strata": [],
+   "f": 0.5,
+   "family": "moe",
+   "generator": {
+    "attempts": [
+     {
+      "checks": {
+       "disjoint": true,
+       "in_registered_pools": true,
+       "k_per_stratum": true,
+       "ok": true,
+       "reg_match_mask": true
+      },
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "milp_status": 0,
+      "mip_gap": 0.0,
+      "n_binaries": 288,
+      "npool": 12,
+      "numpy": "2.5.4",
+      "objective": 54.139112043223776,
+      "scipy": "1.18.1",
+      "sec": 0.3918,
+      "status": "optimal",
+      "tau": 0.04878916416943204,
+      "time_limit_hit": false,
+      "weights": 0
+     }
+    ],
+    "kind": "milp_exact",
+    "max_resolves": 3,
+    "max_weights": 20,
+    "mip_rel_gap": 0.0,
+    "objective": "maximise w.x, w ~ N(0,1) i.i.d. from numpy default_rng(seed) (redraws continue the stream); x = memberships [A pools of strata 0..L-1, B pools of strata 0..L-1], registered pool order",
+    "seed_rule": "5600 + d",
+    "solver": "scipy.optimize.milp (HiGHS)",
+    "statistics": "selection half only",
+    "tau_0": 0.04878916416943204,
+    "tau_step": 0.0001,
+    "time_limit_hit": false,
+    "time_limit_s": 600.0
+   },
+   "k": 6,
+   "matched_corpora": [
+    "german",
+    "dclm"
+   ],
+   "matched_values": {
+    "dclm": {
+     "diff": 0.04865314344733451,
+     "log_RO_A": -1.455897746673623,
+     "log_RO_B": -1.5045508901209574
+    },
+    "german": {
+     "diff": -0.048481333270791405,
+     "log_RO_A": -1.9988060575211781,
+     "log_RO_B": -1.9503247242503867
+    }
+   },
+   "predicted": {
+    "P": 0.8199497267318037
+   },
+   "q": 0.25,
+   "seed": 5601,
+   "selection": {
+    "P": 0.8838570364578313,
+    "checks": {
+     "disjoint": true,
+     "in_registered_pools": true,
+     "k_per_stratum": true,
+     "ok": true,
+     "reg_match_mask": true
+    },
+    "match_residuals": {
+     "dclm": 0.04865314344733451,
+     "german": -0.048481333270791405
+    },
+    "max_abs_residual": 0.04865314344733451,
+    "tol": 0.04879016416943204
+   },
+   "sources": {
+    "books": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__books_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 9872926,
+       "name": "books_eval",
+       "path": "data\\domain\\pg19_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": "doc",
+       "span_tokens": [
+        4960546,
+        9872926
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__books.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 9872926,
+       "name": "books",
+       "path": "data\\domain\\pg19_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": "doc",
+       "span_tokens": [
+        0,
+        4960546
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "code": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__code_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 42160647,
+       "name": "code_eval",
+       "path": "data\\domain\\algstack_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        21080323,
+        42160647
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__code.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 42160647,
+       "name": "code",
+       "path": "data\\domain\\algstack_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        21080323
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "dclm": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__dclm_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 19999909,
+       "name": "dclm_eval",
+       "path": "data\\dclm\\dclm_val.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__dclm.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 19996569,
+       "name": "dclm",
+       "path": "data\\dclm\\dclm_val10.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "french": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__french_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 39038319,
+       "name": "french_eval",
+       "path": "data\\domain\\fr_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        19519159,
+        39038319
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__french.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 39038319,
+       "name": "french",
+       "path": "data\\domain\\fr_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        19519159
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "german": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__german_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 60571959,
+       "name": "german_eval",
+       "path": "data\\domain\\fw2de_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        30285979,
+        60571959
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__german.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 60571959,
+       "name": "german",
+       "path": "data\\domain\\fw2de_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        30285979
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "math": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__math_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 63933458,
+       "name": "math_eval",
+       "path": "data\\domain\\owm_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        31966729,
+        63933458
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__math.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 63933458,
+       "name": "math",
+       "path": "data\\domain\\owm_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        31966729
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "pycode": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__pycode_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 2204757,
+       "name": "pycode_eval",
+       "path": "data\\streams\\pycode_eval.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__pycode.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 4400367,
+       "name": "pycode",
+       "path": "data\\streams\\pycode_route.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 256
+      },
+      "windows": 256
+     }
+    }
+   },
+   "spec_A": {
+    "mode": "train",
+    "select": [
+     {
+      "block": 0,
+      "expert": [
+       7,
+       16,
+       19,
+       20,
+       22,
+       23
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "expert": [
+       4,
+       10,
+       15,
+       16,
+       22,
+       23
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 0,
+      "expert": [
+       5,
+       9,
+       11,
+       20,
+       21,
+       23
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 1,
+      "expert": [
+       6,
+       8,
+       9,
+       17,
+       22,
+       23
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "expert": [
+       1,
+       9,
+       10,
+       11,
+       19,
+       21
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 1,
+      "expert": [
+       1,
+       9,
+       12,
+       15,
+       17,
+       18
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 2,
+      "expert": [
+       1,
+       3,
+       4,
+       14,
+       15,
+       21
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "expert": [
+       1,
+       3,
+       4,
+       9,
+       18,
+       22
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "expert": [
+       1,
+       3,
+       10,
+       11,
+       14,
+       22
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 3,
+      "expert": [
+       5,
+       9,
+       10,
+       11,
+       22,
+       23
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "expert": [
+       0,
+       5,
+       11,
+       14,
+       18,
+       20
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "expert": [
+       4,
+       5,
+       6,
+       7,
+       13,
+       14
+      ],
+      "kind": "moe",
+      "layer": 2
+     }
+    ]
+   },
+   "spec_B": {
+    "mode": "train",
+    "select": [
+     {
+      "block": 0,
+      "expert": [
+       1,
+       4,
+       8,
+       10,
+       14,
+       17
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "expert": [
+       1,
+       8,
+       9,
+       17,
+       20,
+       21
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 0,
+      "expert": [
+       0,
+       2,
+       3,
+       7,
+       18,
+       22
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 1,
+      "expert": [
+       1,
+       2,
+       5,
+       11,
+       16,
+       21
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "expert": [
+       3,
+       4,
+       5,
+       6,
+       12,
+       15
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 1,
+      "expert": [
+       0,
+       5,
+       11,
+       19,
+       20,
+       23
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 2,
+      "expert": [
+       0,
+       8,
+       9,
+       13,
+       19,
+       20
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "expert": [
+       5,
+       7,
+       8,
+       10,
+       11,
+       23
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "expert": [
+       5,
+       9,
+       13,
+       15,
+       16,
+       20
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 3,
+      "expert": [
+       0,
+       12,
+       14,
+       18,
+       19,
+       21
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "expert": [
+       1,
+       6,
+       9,
+       12,
+       16,
+       23
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "expert": [
+       1,
+       3,
+       10,
+       12,
+       17,
+       18
+      ],
+      "kind": "moe",
+      "layer": 2
+     }
+    ]
+   },
+   "status": "ok",
+   "strata": [
+    "moe:b0:l0",
+    "moe:b0:l1",
+    "moe:b0:l2",
+    "moe:b1:l0",
+    "moe:b1:l1",
+    "moe:b1:l2",
+    "moe:b2:l0",
+    "moe:b2:l1",
+    "moe:b2:l2",
+    "moe:b3:l0",
+    "moe:b3:l1",
+    "moe:b3:l2"
+   ],
+   "subsets": {
+    "A": [
+     "moe:b0:l0:e7",
+     "moe:b0:l0:e16",
+     "moe:b0:l0:e19",
+     "moe:b0:l0:e20",
+     "moe:b0:l0:e22",
+     "moe:b0:l0:e23",
+     "moe:b0:l1:e4",
+     "moe:b0:l1:e10",
+     "moe:b0:l1:e15",
+     "moe:b0:l1:e16",
+     "moe:b0:l1:e22",
+     "moe:b0:l1:e23",
+     "moe:b0:l2:e5",
+     "moe:b0:l2:e9",
+     "moe:b0:l2:e11",
+     "moe:b0:l2:e20",
+     "moe:b0:l2:e21",
+     "moe:b0:l2:e23",
+     "moe:b1:l0:e6",
+     "moe:b1:l0:e8",
+     "moe:b1:l0:e9",
+     "moe:b1:l0:e17",
+     "moe:b1:l0:e22",
+     "moe:b1:l0:e23",
+     "moe:b1:l1:e1",
+     "moe:b1:l1:e9",
+     "moe:b1:l1:e10",
+     "moe:b1:l1:e11",
+     "moe:b1:l1:e19",
+     "moe:b1:l1:e21",
+     "moe:b1:l2:e1",
+     "moe:b1:l2:e9",
+     "moe:b1:l2:e12",
+     "moe:b1:l2:e15",
+     "moe:b1:l2:e17",
+     "moe:b1:l2:e18",
+     "moe:b2:l0:e1",
+     "moe:b2:l0:e3",
+     "moe:b2:l0:e4",
+     "moe:b2:l0:e14",
+     "moe:b2:l0:e15",
+     "moe:b2:l0:e21",
+     "moe:b2:l1:e1",
+     "moe:b2:l1:e3",
+     "moe:b2:l1:e4",
+     "moe:b2:l1:e9",
+     "moe:b2:l1:e18",
+     "moe:b2:l1:e22",
+     "moe:b2:l2:e1",
+     "moe:b2:l2:e3",
+     "moe:b2:l2:e10",
+     "moe:b2:l2:e11",
+     "moe:b2:l2:e14",
+     "moe:b2:l2:e22",
+     "moe:b3:l0:e5",
+     "moe:b3:l0:e9",
+     "moe:b3:l0:e10",
+     "moe:b3:l0:e11",
+     "moe:b3:l0:e22",
+     "moe:b3:l0:e23",
+     "moe:b3:l1:e0",
+     "moe:b3:l1:e5",
+     "moe:b3:l1:e11",
+     "moe:b3:l1:e14",
+     "moe:b3:l1:e18",
+     "moe:b3:l1:e20",
+     "moe:b3:l2:e4",
+     "moe:b3:l2:e5",
+     "moe:b3:l2:e6",
+     "moe:b3:l2:e7",
+     "moe:b3:l2:e13",
+     "moe:b3:l2:e14"
+    ],
+    "B": [
+     "moe:b0:l0:e1",
+     "moe:b0:l0:e4",
+     "moe:b0:l0:e8",
+     "moe:b0:l0:e10",
+     "moe:b0:l0:e14",
+     "moe:b0:l0:e17",
+     "moe:b0:l1:e1",
+     "moe:b0:l1:e8",
+     "moe:b0:l1:e9",
+     "moe:b0:l1:e17",
+     "moe:b0:l1:e20",
+     "moe:b0:l1:e21",
+     "moe:b0:l2:e0",
+     "moe:b0:l2:e2",
+     "moe:b0:l2:e3",
+     "moe:b0:l2:e7",
+     "moe:b0:l2:e18",
+     "moe:b0:l2:e22",
+     "moe:b1:l0:e1",
+     "moe:b1:l0:e2",
+     "moe:b1:l0:e5",
+     "moe:b1:l0:e11",
+     "moe:b1:l0:e16",
+     "moe:b1:l0:e21",
+     "moe:b1:l1:e3",
+     "moe:b1:l1:e4",
+     "moe:b1:l1:e5",
+     "moe:b1:l1:e6",
+     "moe:b1:l1:e12",
+     "moe:b1:l1:e15",
+     "moe:b1:l2:e0",
+     "moe:b1:l2:e5",
+     "moe:b1:l2:e11",
+     "moe:b1:l2:e19",
+     "moe:b1:l2:e20",
+     "moe:b1:l2:e23",
+     "moe:b2:l0:e0",
+     "moe:b2:l0:e8",
+     "moe:b2:l0:e9",
+     "moe:b2:l0:e13",
+     "moe:b2:l0:e19",
+     "moe:b2:l0:e20",
+     "moe:b2:l1:e5",
+     "moe:b2:l1:e7",
+     "moe:b2:l1:e8",
+     "moe:b2:l1:e10",
+     "moe:b2:l1:e11",
+     "moe:b2:l1:e23",
+     "moe:b2:l2:e5",
+     "moe:b2:l2:e9",
+     "moe:b2:l2:e13",
+     "moe:b2:l2:e15",
+     "moe:b2:l2:e16",
+     "moe:b2:l2:e20",
+     "moe:b3:l0:e0",
+     "moe:b3:l0:e12",
+     "moe:b3:l0:e14",
+     "moe:b3:l0:e18",
+     "moe:b3:l0:e19",
+     "moe:b3:l0:e21",
+     "moe:b3:l1:e1",
+     "moe:b3:l1:e6",
+     "moe:b3:l1:e9",
+     "moe:b3:l1:e12",
+     "moe:b3:l1:e16",
+     "moe:b3:l1:e23",
+     "moe:b3:l2:e1",
+     "moe:b3:l2:e3",
+     "moe:b3:l2:e10",
+     "moe:b3:l2:e12",
+     "moe:b3:l2:e17",
+     "moe:b3:l2:e18"
+    ]
+   },
+   "target": "german",
+   "tol": 0.04879016416943204
+  },
+  {
+   "A": [
+    [
+     7,
+     15,
+     19,
+     21,
+     22,
+     23
+    ],
+    [
+     4,
+     6,
+     10,
+     15,
+     16,
+     22
+    ],
+    [
+     5,
+     8,
+     12,
+     20,
+     21,
+     23
+    ],
+    [
+     6,
+     10,
+     17,
+     19,
+     22,
+     23
+    ],
+    [
+     0,
+     1,
+     11,
+     14,
+     21,
+     22
+    ],
+    [
+     1,
+     9,
+     12,
+     15,
+     17,
+     18
+    ],
+    [
+     1,
+     3,
+     4,
+     11,
+     12,
+     15
+    ],
+    [
+     3,
+     9,
+     16,
+     17,
+     20,
+     22
+    ],
+    [
+     0,
+     1,
+     3,
+     11,
+     21,
+     22
+    ],
+    [
+     4,
+     5,
+     8,
+     10,
+     22,
+     23
+    ],
+    [
+     0,
+     13,
+     14,
+     18,
+     20,
+     21
+    ],
+    [
+     5,
+     7,
+     9,
+     13,
+     14,
+     21
+    ]
+   ],
+   "B": [
+    [
+     4,
+     8,
+     10,
+     14,
+     17,
+     18
+    ],
+    [
+     1,
+     2,
+     8,
+     11,
+     14,
+     19
+    ],
+    [
+     1,
+     6,
+     7,
+     16,
+     17,
+     22
+    ],
+    [
+     1,
+     2,
+     5,
+     11,
+     16,
+     21
+    ],
+    [
+     3,
+     4,
+     5,
+     12,
+     15,
+     16
+    ],
+    [
+     3,
+     5,
+     11,
+     19,
+     20,
+     23
+    ],
+    [
+     7,
+     8,
+     9,
+     18,
+     19,
+     20
+    ],
+    [
+     5,
+     7,
+     10,
+     11,
+     21,
+     23
+    ],
+    [
+     5,
+     9,
+     13,
+     15,
+     16,
+     20
+    ],
+    [
+     6,
+     14,
+     16,
+     18,
+     19,
+     21
+    ],
+    [
+     6,
+     7,
+     9,
+     12,
+     16,
+     23
+    ],
+    [
+     1,
+     3,
+     10,
+     12,
+     17,
+     18
+    ]
+   ],
+   "L": 12,
+   "N": 24,
+   "base": "moe_b1",
+   "block": "C1-DE",
+   "code": "code",
+   "d": 2,
+   "design": "c1",
+   "excluded_strata": [],
+   "f": 0.5,
+   "family": "moe",
+   "generator": {
+    "attempts": [
+     {
+      "checks": {
+       "disjoint": true,
+       "in_registered_pools": true,
+       "k_per_stratum": true,
+       "ok": true,
+       "reg_match_mask": true
+      },
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "milp_status": 0,
+      "mip_gap": 0.0,
+      "n_binaries": 288,
+      "npool": 12,
+      "numpy": "2.5.4",
+      "objective": 52.11728409302879,
+      "scipy": "1.18.1",
+      "sec": 0.5972,
+      "status": "optimal",
+      "tau": 0.04878916416943204,
+      "time_limit_hit": false,
+      "weights": 0
+     }
+    ],
+    "kind": "milp_exact",
+    "max_resolves": 3,
+    "max_weights": 20,
+    "mip_rel_gap": 0.0,
+    "objective": "maximise w.x, w ~ N(0,1) i.i.d. from numpy default_rng(seed) (redraws continue the stream); x = memberships [A pools of strata 0..L-1, B pools of strata 0..L-1], registered pool order",
+    "seed_rule": "5600 + d",
+    "solver": "scipy.optimize.milp (HiGHS)",
+    "statistics": "selection half only",
+    "tau_0": 0.04878916416943204,
+    "tau_step": 0.0001,
+    "time_limit_hit": false,
+    "time_limit_s": 600.0
+   },
+   "k": 6,
+   "matched_corpora": [
+    "german",
+    "dclm"
+   ],
+   "matched_values": {
+    "dclm": {
+     "diff": 0.04818096749306244,
+     "log_RO_A": -1.4765197450911764,
+     "log_RO_B": -1.524700712584239
+    },
+    "german": {
+     "diff": -0.0479200707089138,
+     "log_RO_A": -2.036445291500283,
+     "log_RO_B": -1.9885252207913693
+    }
+   },
+   "predicted": {
+    "P": 0.750129324327867
+   },
+   "q": 0.25,
+   "seed": 5602,
+   "selection": {
+    "P": 0.8721795283853069,
+    "checks": {
+     "disjoint": true,
+     "in_registered_pools": true,
+     "k_per_stratum": true,
+     "ok": true,
+     "reg_match_mask": true
+    },
+    "match_residuals": {
+     "dclm": 0.04818096749306244,
+     "german": -0.0479200707089138
+    },
+    "max_abs_residual": 0.04818096749306244,
+    "tol": 0.04879016416943204
+   },
+   "sources": {
+    "books": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__books_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 9872926,
+       "name": "books_eval",
+       "path": "data\\domain\\pg19_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": "doc",
+       "span_tokens": [
+        4960546,
+        9872926
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__books.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 9872926,
+       "name": "books",
+       "path": "data\\domain\\pg19_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": "doc",
+       "span_tokens": [
+        0,
+        4960546
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "code": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__code_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 42160647,
+       "name": "code_eval",
+       "path": "data\\domain\\algstack_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        21080323,
+        42160647
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__code.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 42160647,
+       "name": "code",
+       "path": "data\\domain\\algstack_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        21080323
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "dclm": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__dclm_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 19999909,
+       "name": "dclm_eval",
+       "path": "data\\dclm\\dclm_val.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__dclm.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 19996569,
+       "name": "dclm",
+       "path": "data\\dclm\\dclm_val10.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "french": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__french_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 39038319,
+       "name": "french_eval",
+       "path": "data\\domain\\fr_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        19519159,
+        39038319
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__french.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 39038319,
+       "name": "french",
+       "path": "data\\domain\\fr_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        19519159
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "german": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__german_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 60571959,
+       "name": "german_eval",
+       "path": "data\\domain\\fw2de_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        30285979,
+        60571959
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__german.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 60571959,
+       "name": "german",
+       "path": "data\\domain\\fw2de_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        30285979
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "math": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__math_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 63933458,
+       "name": "math_eval",
+       "path": "data\\domain\\owm_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        31966729,
+        63933458
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__math.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 63933458,
+       "name": "math",
+       "path": "data\\domain\\owm_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        31966729
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "pycode": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__pycode_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 2204757,
+       "name": "pycode_eval",
+       "path": "data\\streams\\pycode_eval.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__pycode.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 4400367,
+       "name": "pycode",
+       "path": "data\\streams\\pycode_route.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 256
+      },
+      "windows": 256
+     }
+    }
+   },
+   "spec_A": {
+    "mode": "train",
+    "select": [
+     {
+      "block": 0,
+      "expert": [
+       7,
+       15,
+       19,
+       21,
+       22,
+       23
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "expert": [
+       4,
+       6,
+       10,
+       15,
+       16,
+       22
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 0,
+      "expert": [
+       5,
+       8,
+       12,
+       20,
+       21,
+       23
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 1,
+      "expert": [
+       6,
+       10,
+       17,
+       19,
+       22,
+       23
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "expert": [
+       0,
+       1,
+       11,
+       14,
+       21,
+       22
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 1,
+      "expert": [
+       1,
+       9,
+       12,
+       15,
+       17,
+       18
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 2,
+      "expert": [
+       1,
+       3,
+       4,
+       11,
+       12,
+       15
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "expert": [
+       3,
+       9,
+       16,
+       17,
+       20,
+       22
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "expert": [
+       0,
+       1,
+       3,
+       11,
+       21,
+       22
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 3,
+      "expert": [
+       4,
+       5,
+       8,
+       10,
+       22,
+       23
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "expert": [
+       0,
+       13,
+       14,
+       18,
+       20,
+       21
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "expert": [
+       5,
+       7,
+       9,
+       13,
+       14,
+       21
+      ],
+      "kind": "moe",
+      "layer": 2
+     }
+    ]
+   },
+   "spec_B": {
+    "mode": "train",
+    "select": [
+     {
+      "block": 0,
+      "expert": [
+       4,
+       8,
+       10,
+       14,
+       17,
+       18
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "expert": [
+       1,
+       2,
+       8,
+       11,
+       14,
+       19
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 0,
+      "expert": [
+       1,
+       6,
+       7,
+       16,
+       17,
+       22
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 1,
+      "expert": [
+       1,
+       2,
+       5,
+       11,
+       16,
+       21
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "expert": [
+       3,
+       4,
+       5,
+       12,
+       15,
+       16
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 1,
+      "expert": [
+       3,
+       5,
+       11,
+       19,
+       20,
+       23
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 2,
+      "expert": [
+       7,
+       8,
+       9,
+       18,
+       19,
+       20
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "expert": [
+       5,
+       7,
+       10,
+       11,
+       21,
+       23
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "expert": [
+       5,
+       9,
+       13,
+       15,
+       16,
+       20
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 3,
+      "expert": [
+       6,
+       14,
+       16,
+       18,
+       19,
+       21
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "expert": [
+       6,
+       7,
+       9,
+       12,
+       16,
+       23
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "expert": [
+       1,
+       3,
+       10,
+       12,
+       17,
+       18
+      ],
+      "kind": "moe",
+      "layer": 2
+     }
+    ]
+   },
+   "status": "ok",
+   "strata": [
+    "moe:b0:l0",
+    "moe:b0:l1",
+    "moe:b0:l2",
+    "moe:b1:l0",
+    "moe:b1:l1",
+    "moe:b1:l2",
+    "moe:b2:l0",
+    "moe:b2:l1",
+    "moe:b2:l2",
+    "moe:b3:l0",
+    "moe:b3:l1",
+    "moe:b3:l2"
+   ],
+   "subsets": {
+    "A": [
+     "moe:b0:l0:e7",
+     "moe:b0:l0:e15",
+     "moe:b0:l0:e19",
+     "moe:b0:l0:e21",
+     "moe:b0:l0:e22",
+     "moe:b0:l0:e23",
+     "moe:b0:l1:e4",
+     "moe:b0:l1:e6",
+     "moe:b0:l1:e10",
+     "moe:b0:l1:e15",
+     "moe:b0:l1:e16",
+     "moe:b0:l1:e22",
+     "moe:b0:l2:e5",
+     "moe:b0:l2:e8",
+     "moe:b0:l2:e12",
+     "moe:b0:l2:e20",
+     "moe:b0:l2:e21",
+     "moe:b0:l2:e23",
+     "moe:b1:l0:e6",
+     "moe:b1:l0:e10",
+     "moe:b1:l0:e17",
+     "moe:b1:l0:e19",
+     "moe:b1:l0:e22",
+     "moe:b1:l0:e23",
+     "moe:b1:l1:e0",
+     "moe:b1:l1:e1",
+     "moe:b1:l1:e11",
+     "moe:b1:l1:e14",
+     "moe:b1:l1:e21",
+     "moe:b1:l1:e22",
+     "moe:b1:l2:e1",
+     "moe:b1:l2:e9",
+     "moe:b1:l2:e12",
+     "moe:b1:l2:e15",
+     "moe:b1:l2:e17",
+     "moe:b1:l2:e18",
+     "moe:b2:l0:e1",
+     "moe:b2:l0:e3",
+     "moe:b2:l0:e4",
+     "moe:b2:l0:e11",
+     "moe:b2:l0:e12",
+     "moe:b2:l0:e15",
+     "moe:b2:l1:e3",
+     "moe:b2:l1:e9",
+     "moe:b2:l1:e16",
+     "moe:b2:l1:e17",
+     "moe:b2:l1:e20",
+     "moe:b2:l1:e22",
+     "moe:b2:l2:e0",
+     "moe:b2:l2:e1",
+     "moe:b2:l2:e3",
+     "moe:b2:l2:e11",
+     "moe:b2:l2:e21",
+     "moe:b2:l2:e22",
+     "moe:b3:l0:e4",
+     "moe:b3:l0:e5",
+     "moe:b3:l0:e8",
+     "moe:b3:l0:e10",
+     "moe:b3:l0:e22",
+     "moe:b3:l0:e23",
+     "moe:b3:l1:e0",
+     "moe:b3:l1:e13",
+     "moe:b3:l1:e14",
+     "moe:b3:l1:e18",
+     "moe:b3:l1:e20",
+     "moe:b3:l1:e21",
+     "moe:b3:l2:e5",
+     "moe:b3:l2:e7",
+     "moe:b3:l2:e9",
+     "moe:b3:l2:e13",
+     "moe:b3:l2:e14",
+     "moe:b3:l2:e21"
+    ],
+    "B": [
+     "moe:b0:l0:e4",
+     "moe:b0:l0:e8",
+     "moe:b0:l0:e10",
+     "moe:b0:l0:e14",
+     "moe:b0:l0:e17",
+     "moe:b0:l0:e18",
+     "moe:b0:l1:e1",
+     "moe:b0:l1:e2",
+     "moe:b0:l1:e8",
+     "moe:b0:l1:e11",
+     "moe:b0:l1:e14",
+     "moe:b0:l1:e19",
+     "moe:b0:l2:e1",
+     "moe:b0:l2:e6",
+     "moe:b0:l2:e7",
+     "moe:b0:l2:e16",
+     "moe:b0:l2:e17",
+     "moe:b0:l2:e22",
+     "moe:b1:l0:e1",
+     "moe:b1:l0:e2",
+     "moe:b1:l0:e5",
+     "moe:b1:l0:e11",
+     "moe:b1:l0:e16",
+     "moe:b1:l0:e21",
+     "moe:b1:l1:e3",
+     "moe:b1:l1:e4",
+     "moe:b1:l1:e5",
+     "moe:b1:l1:e12",
+     "moe:b1:l1:e15",
+     "moe:b1:l1:e16",
+     "moe:b1:l2:e3",
+     "moe:b1:l2:e5",
+     "moe:b1:l2:e11",
+     "moe:b1:l2:e19",
+     "moe:b1:l2:e20",
+     "moe:b1:l2:e23",
+     "moe:b2:l0:e7",
+     "moe:b2:l0:e8",
+     "moe:b2:l0:e9",
+     "moe:b2:l0:e18",
+     "moe:b2:l0:e19",
+     "moe:b2:l0:e20",
+     "moe:b2:l1:e5",
+     "moe:b2:l1:e7",
+     "moe:b2:l1:e10",
+     "moe:b2:l1:e11",
+     "moe:b2:l1:e21",
+     "moe:b2:l1:e23",
+     "moe:b2:l2:e5",
+     "moe:b2:l2:e9",
+     "moe:b2:l2:e13",
+     "moe:b2:l2:e15",
+     "moe:b2:l2:e16",
+     "moe:b2:l2:e20",
+     "moe:b3:l0:e6",
+     "moe:b3:l0:e14",
+     "moe:b3:l0:e16",
+     "moe:b3:l0:e18",
+     "moe:b3:l0:e19",
+     "moe:b3:l0:e21",
+     "moe:b3:l1:e6",
+     "moe:b3:l1:e7",
+     "moe:b3:l1:e9",
+     "moe:b3:l1:e12",
+     "moe:b3:l1:e16",
+     "moe:b3:l1:e23",
+     "moe:b3:l2:e1",
+     "moe:b3:l2:e3",
+     "moe:b3:l2:e10",
+     "moe:b3:l2:e12",
+     "moe:b3:l2:e17",
+     "moe:b3:l2:e18"
+    ]
+   },
+   "target": "german",
+   "tol": 0.04879016416943204
+  },
+  {
+   "A": [
+    [
+     7,
+     13,
+     16,
+     19,
+     21,
+     23
+    ],
+    [
+     0,
+     4,
+     10,
+     15,
+     22,
+     23
+    ],
+    [
+     8,
+     14,
+     19,
+     20,
+     21,
+     23
+    ],
+    [
+     6,
+     8,
+     10,
+     13,
+     19,
+     23
+    ],
+    [
+     1,
+     11,
+     14,
+     19,
+     21,
+     22
+    ],
+    [
+     1,
+     4,
+     9,
+     12,
+     17,
+     18
+    ],
+    [
+     3,
+     4,
+     5,
+     10,
+     14,
+     15
+    ],
+    [
+     3,
+     9,
+     17,
+     19,
+     20,
+     22
+    ],
+    [
+     0,
+     1,
+     3,
+     10,
+     14,
+     22
+    ],
+    [
+     9,
+     10,
+     11,
+     20,
+     22,
+     23
+    ],
+    [
+     0,
+     5,
+     14,
+     15,
+     20,
+     21
+    ],
+    [
+     5,
+     7,
+     8,
+     13,
+     14,
+     21
+    ]
+   ],
+   "B": [
+    [
+     1,
+     4,
+     9,
+     10,
+     11,
+     14
+    ],
+    [
+     1,
+     7,
+     8,
+     9,
+     11,
+     19
+    ],
+    [
+     0,
+     6,
+     7,
+     10,
+     16,
+     18
+    ],
+    [
+     0,
+     1,
+     2,
+     5,
+     16,
+     21
+    ],
+    [
+     3,
+     4,
+     6,
+     12,
+     15,
+     23
+    ],
+    [
+     3,
+     5,
+     11,
+     19,
+     20,
+     23
+    ],
+    [
+     7,
+     8,
+     13,
+     18,
+     19,
+     20
+    ],
+    [
+     5,
+     7,
+     8,
+     10,
+     11,
+     23
+    ],
+    [
+     5,
+     13,
+     15,
+     16,
+     19,
+     20
+    ],
+    [
+     0,
+     6,
+     14,
+     16,
+     18,
+     21
+    ],
+    [
+     3,
+     7,
+     9,
+     12,
+     16,
+     23
+    ],
+    [
+     3,
+     10,
+     12,
+     17,
+     18,
+     23
+    ]
+   ],
+   "L": 12,
+   "N": 24,
+   "base": "moe_b1",
+   "block": "C1-DE",
+   "code": "code",
+   "d": 3,
+   "design": "c1",
+   "excluded_strata": [],
+   "f": 0.5,
+   "family": "moe",
+   "generator": {
+    "attempts": [
+     {
+      "checks": {
+       "disjoint": true,
+       "in_registered_pools": true,
+       "k_per_stratum": true,
+       "ok": true,
+       "reg_match_mask": true
+      },
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "milp_status": 0,
+      "mip_gap": 0.0,
+      "n_binaries": 288,
+      "npool": 12,
+      "numpy": "2.5.4",
+      "objective": 59.487405830837865,
+      "scipy": "1.18.1",
+      "sec": 0.6136,
+      "status": "optimal",
+      "tau": 0.04878916416943204,
+      "time_limit_hit": false,
+      "weights": 0
+     }
+    ],
+    "kind": "milp_exact",
+    "max_resolves": 3,
+    "max_weights": 20,
+    "mip_rel_gap": 0.0,
+    "objective": "maximise w.x, w ~ N(0,1) i.i.d. from numpy default_rng(seed) (redraws continue the stream); x = memberships [A pools of strata 0..L-1, B pools of strata 0..L-1], registered pool order",
+    "seed_rule": "5600 + d",
+    "solver": "scipy.optimize.milp (HiGHS)",
+    "statistics": "selection half only",
+    "tau_0": 0.04878916416943204,
+    "tau_step": 0.0001,
+    "time_limit_hit": false,
+    "time_limit_s": 600.0
+   },
+   "k": 6,
+   "matched_corpora": [
+    "german",
+    "dclm"
+   ],
+   "matched_values": {
+    "dclm": {
+     "diff": 0.04858269989236774,
+     "log_RO_A": -1.4738157548738142,
+     "log_RO_B": -1.522398454766182
+    },
+    "german": {
+     "diff": -0.04772883044283849,
+     "log_RO_A": -2.0339500841169498,
+     "log_RO_B": -1.9862212536741113
+    }
+   },
+   "predicted": {
+    "P": 0.7283443335403603
+   },
+   "q": 0.25,
+   "seed": 5603,
+   "selection": {
+    "P": 0.8202198641460647,
+    "checks": {
+     "disjoint": true,
+     "in_registered_pools": true,
+     "k_per_stratum": true,
+     "ok": true,
+     "reg_match_mask": true
+    },
+    "match_residuals": {
+     "dclm": 0.04858269989236774,
+     "german": -0.04772883044283849
+    },
+    "max_abs_residual": 0.04858269989236774,
+    "tol": 0.04879016416943204
+   },
+   "sources": {
+    "books": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__books_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 9872926,
+       "name": "books_eval",
+       "path": "data\\domain\\pg19_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": "doc",
+       "span_tokens": [
+        4960546,
+        9872926
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__books.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 9872926,
+       "name": "books",
+       "path": "data\\domain\\pg19_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": "doc",
+       "span_tokens": [
+        0,
+        4960546
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "code": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__code_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 42160647,
+       "name": "code_eval",
+       "path": "data\\domain\\algstack_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        21080323,
+        42160647
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__code.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 42160647,
+       "name": "code",
+       "path": "data\\domain\\algstack_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        21080323
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "dclm": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__dclm_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 19999909,
+       "name": "dclm_eval",
+       "path": "data\\dclm\\dclm_val.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__dclm.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 19996569,
+       "name": "dclm",
+       "path": "data\\dclm\\dclm_val10.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "french": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__french_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 39038319,
+       "name": "french_eval",
+       "path": "data\\domain\\fr_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        19519159,
+        39038319
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__french.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 39038319,
+       "name": "french",
+       "path": "data\\domain\\fr_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        19519159
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "german": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__german_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 60571959,
+       "name": "german_eval",
+       "path": "data\\domain\\fw2de_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        30285979,
+        60571959
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__german.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 60571959,
+       "name": "german",
+       "path": "data\\domain\\fw2de_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        30285979
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "math": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__math_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 63933458,
+       "name": "math_eval",
+       "path": "data\\domain\\owm_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        31966729,
+        63933458
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__math.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 63933458,
+       "name": "math",
+       "path": "data\\domain\\owm_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        31966729
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "pycode": {
+     "estimation": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__pycode_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 2204757,
+       "name": "pycode_eval",
+       "path": "data\\streams\\pycode_eval.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+      "file": "g0\\moe_b1\\routing__pycode.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 4400367,
+       "name": "pycode",
+       "path": "data\\streams\\pycode_route.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 256
+      },
+      "windows": 256
+     }
+    }
+   },
+   "spec_A": {
+    "mode": "train",
+    "select": [
+     {
+      "block": 0,
+      "expert": [
+       7,
+       13,
+       16,
+       19,
+       21,
+       23
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "expert": [
+       0,
+       4,
+       10,
+       15,
+       22,
+       23
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 0,
+      "expert": [
+       8,
+       14,
+       19,
+       20,
+       21,
+       23
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 1,
+      "expert": [
+       6,
+       8,
+       10,
+       13,
+       19,
+       23
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "expert": [
+       1,
+       11,
+       14,
+       19,
+       21,
+       22
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 1,
+      "expert": [
+       1,
+       4,
+       9,
+       12,
+       17,
+       18
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 2,
+      "expert": [
+       3,
+       4,
+       5,
+       10,
+       14,
+       15
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "expert": [
+       3,
+       9,
+       17,
+       19,
+       20,
+       22
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "expert": [
+       0,
+       1,
+       3,
+       10,
+       14,
+       22
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 3,
+      "expert": [
+       9,
+       10,
+       11,
+       20,
+       22,
+       23
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "expert": [
+       0,
+       5,
+       14,
+       15,
+       20,
+       21
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "expert": [
+       5,
+       7,
+       8,
+       13,
+       14,
+       21
+      ],
+      "kind": "moe",
+      "layer": 2
+     }
+    ]
+   },
+   "spec_B": {
+    "mode": "train",
+    "select": [
+     {
+      "block": 0,
+      "expert": [
+       1,
+       4,
+       9,
+       10,
+       11,
+       14
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "expert": [
+       1,
+       7,
+       8,
+       9,
+       11,
+       19
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 0,
+      "expert": [
+       0,
+       6,
+       7,
+       10,
+       16,
+       18
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 1,
+      "expert": [
+       0,
+       1,
+       2,
+       5,
+       16,
+       21
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "expert": [
+       3,
+       4,
+       6,
+       12,
+       15,
+       23
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 1,
+      "expert": [
+       3,
+       5,
+       11,
+       19,
+       20,
+       23
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 2,
+      "expert": [
+       7,
+       8,
+       13,
+       18,
+       19,
+       20
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "expert": [
+       5,
+       7,
+       8,
+       10,
+       11,
+       23
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "expert": [
+       5,
+       13,
+       15,
+       16,
+       19,
+       20
+      ],
+      "kind": "moe",
+      "layer": 2
+     },
+     {
+      "block": 3,
+      "expert": [
+       0,
+       6,
+       14,
+       16,
+       18,
+       21
+      ],
+      "kind": "moe",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "expert": [
+       3,
+       7,
+       9,
+       12,
+       16,
+       23
+      ],
+      "kind": "moe",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "expert": [
+       3,
+       10,
+       12,
+       17,
+       18,
+       23
+      ],
+      "kind": "moe",
+      "layer": 2
+     }
+    ]
+   },
+   "status": "ok",
+   "strata": [
+    "moe:b0:l0",
+    "moe:b0:l1",
+    "moe:b0:l2",
+    "moe:b1:l0",
+    "moe:b1:l1",
+    "moe:b1:l2",
+    "moe:b2:l0",
+    "moe:b2:l1",
+    "moe:b2:l2",
+    "moe:b3:l0",
+    "moe:b3:l1",
+    "moe:b3:l2"
+   ],
+   "subsets": {
+    "A": [
+     "moe:b0:l0:e7",
+     "moe:b0:l0:e13",
+     "moe:b0:l0:e16",
+     "moe:b0:l0:e19",
+     "moe:b0:l0:e21",
+     "moe:b0:l0:e23",
+     "moe:b0:l1:e0",
+     "moe:b0:l1:e4",
+     "moe:b0:l1:e10",
+     "moe:b0:l1:e15",
+     "moe:b0:l1:e22",
+     "moe:b0:l1:e23",
+     "moe:b0:l2:e8",
+     "moe:b0:l2:e14",
+     "moe:b0:l2:e19",
+     "moe:b0:l2:e20",
+     "moe:b0:l2:e21",
+     "moe:b0:l2:e23",
+     "moe:b1:l0:e6",
+     "moe:b1:l0:e8",
+     "moe:b1:l0:e10",
+     "moe:b1:l0:e13",
+     "moe:b1:l0:e19",
+     "moe:b1:l0:e23",
+     "moe:b1:l1:e1",
+     "moe:b1:l1:e11",
+     "moe:b1:l1:e14",
+     "moe:b1:l1:e19",
+     "moe:b1:l1:e21",
+     "moe:b1:l1:e22",
+     "moe:b1:l2:e1",
+     "moe:b1:l2:e4",
+     "moe:b1:l2:e9",
+     "moe:b1:l2:e12",
+     "moe:b1:l2:e17",
+     "moe:b1:l2:e18",
+     "moe:b2:l0:e3",
+     "moe:b2:l0:e4",
+     "moe:b2:l0:e5",
+     "moe:b2:l0:e10",
+     "moe:b2:l0:e14",
+     "moe:b2:l0:e15",
+     "moe:b2:l1:e3",
+     "moe:b2:l1:e9",
+     "moe:b2:l1:e17",
+     "moe:b2:l1:e19",
+     "moe:b2:l1:e20",
+     "moe:b2:l1:e22",
+     "moe:b2:l2:e0",
+     "moe:b2:l2:e1",
+     "moe:b2:l2:e3",
+     "moe:b2:l2:e10",
+     "moe:b2:l2:e14",
+     "moe:b2:l2:e22",
+     "moe:b3:l0:e9",
+     "moe:b3:l0:e10",
+     "moe:b3:l0:e11",
+     "moe:b3:l0:e20",
+     "moe:b3:l0:e22",
+     "moe:b3:l0:e23",
+     "moe:b3:l1:e0",
+     "moe:b3:l1:e5",
+     "moe:b3:l1:e14",
+     "moe:b3:l1:e15",
+     "moe:b3:l1:e20",
+     "moe:b3:l1:e21",
+     "moe:b3:l2:e5",
+     "moe:b3:l2:e7",
+     "moe:b3:l2:e8",
+     "moe:b3:l2:e13",
+     "moe:b3:l2:e14",
+     "moe:b3:l2:e21"
+    ],
+    "B": [
+     "moe:b0:l0:e1",
+     "moe:b0:l0:e4",
+     "moe:b0:l0:e9",
+     "moe:b0:l0:e10",
+     "moe:b0:l0:e11",
+     "moe:b0:l0:e14",
+     "moe:b0:l1:e1",
+     "moe:b0:l1:e7",
+     "moe:b0:l1:e8",
+     "moe:b0:l1:e9",
+     "moe:b0:l1:e11",
+     "moe:b0:l1:e19",
+     "moe:b0:l2:e0",
+     "moe:b0:l2:e6",
+     "moe:b0:l2:e7",
+     "moe:b0:l2:e10",
+     "moe:b0:l2:e16",
+     "moe:b0:l2:e18",
+     "moe:b1:l0:e0",
+     "moe:b1:l0:e1",
+     "moe:b1:l0:e2",
+     "moe:b1:l0:e5",
+     "moe:b1:l0:e16",
+     "moe:b1:l0:e21",
+     "moe:b1:l1:e3",
+     "moe:b1:l1:e4",
+     "moe:b1:l1:e6",
+     "moe:b1:l1:e12",
+     "moe:b1:l1:e15",
+     "moe:b1:l1:e23",
+     "moe:b1:l2:e3",
+     "moe:b1:l2:e5",
+     "moe:b1:l2:e11",
+     "moe:b1:l2:e19",
+     "moe:b1:l2:e20",
+     "moe:b1:l2:e23",
+     "moe:b2:l0:e7",
+     "moe:b2:l0:e8",
+     "moe:b2:l0:e13",
+     "moe:b2:l0:e18",
+     "moe:b2:l0:e19",
+     "moe:b2:l0:e20",
+     "moe:b2:l1:e5",
+     "moe:b2:l1:e7",
+     "moe:b2:l1:e8",
+     "moe:b2:l1:e10",
+     "moe:b2:l1:e11",
+     "moe:b2:l1:e23",
+     "moe:b2:l2:e5",
+     "moe:b2:l2:e13",
+     "moe:b2:l2:e15",
+     "moe:b2:l2:e16",
+     "moe:b2:l2:e19",
+     "moe:b2:l2:e20",
+     "moe:b3:l0:e0",
+     "moe:b3:l0:e6",
+     "moe:b3:l0:e14",
+     "moe:b3:l0:e16",
+     "moe:b3:l0:e18",
+     "moe:b3:l0:e21",
+     "moe:b3:l1:e3",
+     "moe:b3:l1:e7",
+     "moe:b3:l1:e9",
+     "moe:b3:l1:e12",
+     "moe:b3:l1:e16",
+     "moe:b3:l1:e23",
+     "moe:b3:l2:e3",
+     "moe:b3:l2:e10",
+     "moe:b3:l2:e12",
+     "moe:b3:l2:e17",
+     "moe:b3:l2:e18",
+     "moe:b3:l2:e23"
+    ]
+   },
+   "target": "german",
+   "tol": 0.04879016416943204
+  }
+ ],
+ "f": 0.5,
+ "generator": "c1de_milp.py (exact MILP, HiGHS)",
+ "prereg": "v1.3 sec. 4.12 (C1-DE, exploratory)",
+ "registered_seeds": true,
+ "seed_base": 5600,
+ "target": "german",
+ "tol": 0.04879016416943204
+}

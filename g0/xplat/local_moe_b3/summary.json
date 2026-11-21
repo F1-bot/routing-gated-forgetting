@@ -1,0 +1,23 @@
+{
+ "meta": {
+  "experiment": "moe_100m",
+  "checkpoint": {
+   "path": "outputs\\moe_100m_b15s44\\20261113_042558__moe_100m_b15s44_train_h100\\checkpoints\\model_final.pt",
+   "size": 1493623488,
+   "head_sha256": "a2ae2b0141928c1a5d64cc28d869ffa7e39c0704ab605caeb676932b0d58ef35"
+  },
+  "base": null,
+  "step": 5722,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-13T16:34:14"
+ },
+ "results": {
+  "ckpt|dclm09": {
+   "ce": 3.8013991033272285,
+   "windows": 500,
+   "seconds": 65.0,
+   "file": "g0\\xplat\\local_moe_b3\\ckpt__dclm09.npz"
+  }
+ }
+}

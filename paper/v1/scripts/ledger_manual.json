@@ -1,0 +1,2948 @@
+{
+ "0.147": {
+  "source": "data/reproduction_stageA.json",
+  "field": "differences.moe_b1_minus_dense_val09",
+  "meaning": "MoE base 1 minus dense, val09 (-0.14657)",
+  "also": "data/gap_trajectory.json gaps.N_minus_Mavg.last_half.mean_ci95_block_bootstrap[0] = 0.14700 (Figure 3 caption, lower end of the interval)"
+ },
+ "0.192": {
+  "source": "Chu, Pai & Ma 2026, arXiv 2610.31818 (full text)",
+  "field": "Table 3, 100M rows: 3.386 - 3.578",
+  "meaning": "paper MoE minus dense at 5B",
+  "also": "data/reproduction_stageA.json differences.paper_moe_minus_dense"
+ },
+ "0.155": {
+  "source": "data/reproduction_stageA.json",
+  "field": "differences.nestor_minus_moe_b1_val09",
+  "meaning": "NESTOR minus MoE base 1, val09 (0.15538)"
+ },
+ "0.149": {
+  "source": "data/reproduction_stageA.json",
+  "field": "differences.nestor_minus_moe_b2_val09",
+  "meaning": "NESTOR minus MoE base 2, val09 (0.14891)"
+ },
+ "0.009": {
+  "source": "data/reproduction_stageA.json",
+  "field": "differences.nestor_minus_dense_val09",
+  "meaning": "NESTOR minus dense, val09 (0.00881)"
+ },
+ "+0.009": {
+  "source": "data/reproduction_stageA.json",
+  "field": "differences.nestor_minus_dense_val09",
+  "meaning": "NESTOR minus dense, val09 (held-out, gap section)"
+ },
+ "0.030": {
+  "source": "Chu, Pai & Ma 2026, arXiv 2610.31818 (full text)",
+  "field": "Table 3, 100M rows: 3.356 - 3.386",
+  "meaning": "paper NESTOR minus MoE at 5B (-0.030)",
+  "also": "data/reproduction_stageA.json differences.paper_nestor_minus_moe = -0.0297"
+ },
+ "-0.030": {
+  "source": "Chu, Pai & Ma 2026, arXiv 2610.31818 (full text)",
+  "field": "Table 3, 100M rows: 3.356 - 3.386",
+  "meaning": "paper NESTOR minus MoE at 5B"
+ },
+ "0.222": {
+  "source": "Chu, Pai & Ma 2026, arXiv 2610.31818 (full text)",
+  "field": "Table 3, 100M rows: 3.356 - 3.578",
+  "meaning": "paper NESTOR minus dense at 5B"
+ },
+ "0.254": {
+  "source": "Chu, Pai & Ma 2026, arXiv 2610.31818 (full text)",
+  "field": "Table 6, Average row",
+  "meaning": "mean forgetting of NESTOR at 500M"
+ },
+ "0.261": {
+  "source": "Chu, Pai & Ma 2026, arXiv 2610.31818 (full text)",
+  "field": "Table 6, Average row",
+  "meaning": "mean forgetting of MoE at 500M"
+ },
+ "0.006": {
+  "source": "data/reproduction_stageA.json",
+  "field": "differences.moe_seed_diff_val09",
+  "meaning": "MoE base 2 minus base 1, val09 (0.00648)",
+  "also": "pre-registration v1.3 sec. 3.3: rejection rate at beta = 0 <= 0.006"
+ },
+ "2.6e-5": {
+  "source": "data/reproduction_stageA.json",
+  "field": "cross_platform_nestor_abs_dCE.val09",
+  "meaning": "NESTOR |dCE| H100 vs local, val09",
+  "also": "data/gate_record_G0.json gates.G0-5.per_base.nestor.abs_dce"
+ },
+ "7.9e-6": {
+  "source": "data/reproduction_stageA.json",
+  "field": "cross_platform_nestor_abs_dCE.val10",
+  "meaning": "NESTOR |dCE| H100 vs local, val10"
+ },
+ "4.1e-7": {
+  "source": "data/gate_record_G0.json",
+  "field": "gates.G0-5.per_base.moe_b2.abs_dce",
+  "meaning": "MoE base 2 |dCE| H100 vs local, val09"
+ },
+ "10,004,085": {
+  "source": "data/reproduction_stageA.json",
+  "field": "local_rtx4080super[\"dense_100m|val09\"].tokens",
+  "meaning": "val09 evaluation tokens"
+ },
+ "5,004,090": {
+  "source": "data/reproduction_stageA.json",
+  "field": "local_rtx4080super[\"dense_100m|val10\"].tokens",
+  "meaning": "val10 evaluation tokens"
+ },
+ "25.2": {
+  "source": "pre-registration v1.3 (stored version 6449294c)",
+  "field": "derived: 96 steps x 262,144 tokens = 25,165,824 tokens",
+  "meaning": "tokens per adaptation run (millions)"
+ },
+ "3.802": {
+  "source": "data/provenance_b15s44.json",
+  "field": "eval_h100_fp32.val09.ce",
+  "meaning": "base 3 held-out val09 cross-entropy (3.80199)"
+ },
+ "+0.163": {
+  "source": "data/gap_trajectory.json",
+  "field": "gaps.N_minus_M42.last_half.mean (and the CI upper bound of N_minus_M43)",
+  "meaning": "NESTOR minus MoE seed 42, last-half mean"
+ },
+ "+0.153": {
+  "source": "data/gap_trajectory.json",
+  "field": "gaps.N_minus_M42.last_half.mean_ci95_block_bootstrap[0]",
+  "meaning": "lower 95% bound"
+ },
+ "+0.174": {
+  "source": "data/gap_trajectory.json",
+  "field": "gaps.N_minus_M42.last_half.mean_ci95_block_bootstrap[1]",
+  "meaning": "upper 95% bound"
+ },
+ "+0.150": {
+  "source": "data/gap_trajectory.json",
+  "field": "gaps.N_minus_M43.last_half.mean",
+  "meaning": "NESTOR minus MoE seed 43, last-half mean"
+ },
+ "+0.138": {
+  "source": "data/gap_trajectory.json",
+  "field": "gaps.N_minus_M43.last_half.mean_ci95_block_bootstrap[0]",
+  "meaning": "lower 95% bound"
+ },
+ "-0.006": {
+  "source": "data/gap_trajectory.json",
+  "field": "gaps.N_minus_Mavg.last_half.slope_nats_per_Btok x 0.25",
+  "meaning": "change of NESTOR minus two-seed MoE mean over the last half (-0.0058)"
+ },
+ "-0.040": {
+  "source": "data/gap_trajectory.json",
+  "field": "gaps.N_minus_Mavg.last_half.slope_ci95_pairs_block_bootstrap[0] x 0.25",
+  "meaning": "lower 95% bound (-0.0403)"
+ },
+ "+0.031": {
+  "source": "data/gap_trajectory.json",
+  "field": "gaps.N_minus_Mavg.last_half.slope_ci95_pairs_block_bootstrap[1] x 0.25",
+  "meaning": "upper 95% bound (+0.0309)"
+ },
+ "0.06": {
+  "source": "gap note (version 7f4a9295)",
+  "field": "Findings: 'Changes beyond +-0.06 nats ... are excluded for both seeds'",
+  "meaning": "excluded change"
+ },
+ "+0.013": {
+  "source": "data/gap_trajectory.json",
+  "field": "seed_noise_reference.last_half_mean",
+  "meaning": "MoE seed 43 minus seed 42, training loss (0.0130)"
+ },
+ "23": {
+  "source": "pre-registration v1.3 (stored version 6449294c)",
+  "field": "sec. 7, variants: 23 of 48 configurations exceed 120 GPU-h",
+  "meaning": "budget variants",
+  "also": "held-out ratios 0.14891 / 0.006475 = 23.0 and 0.15538 / 0.006475 = 24.0 from data/reproduction_stageA.json differences"
+ },
+ "24": {
+  "source": "pre-registration v1.3 (stored version 6449294c)",
+  "field": "several: N = 24 experts; step 24; 24 layer groups (sec. 4.3)",
+  "meaning": "structural design constant",
+  "also": "held-out ratio 0.15538 / 0.006475 = 24.0 (data/reproduction_stageA.json)"
+ },
+ "+0.020": {
+  "source": "data/gap_trajectory.json",
+  "field": "gaps.N_minus_D.last_half.mean",
+  "meaning": "NESTOR minus dense, last-half mean (0.0204)"
+ },
+ "-0.039": {
+  "source": "data/gap_trajectory.json",
+  "field": "gaps.N_minus_D.last_half.slope_nats_per_Btok x 0.25",
+  "meaning": "change of NESTOR minus dense over the last half"
+ },
+ "-0.080": {
+  "source": "data/gap_trajectory.json",
+  "field": "gaps.N_minus_D.last_half.slope_ci95_pairs_block_bootstrap[0] x 0.25",
+  "meaning": "lower 95% bound"
+ },
+ "+0.004": {
+  "source": "data/gap_trajectory.json",
+  "field": "gaps.N_minus_D.last_half.slope_ci95_pairs_block_bootstrap[1] x 0.25",
+  "meaning": "upper 95% bound"
+ },
+ "0.62": {
+  "source": "data/gap_trajectory.json",
+  "field": "schedule.lr_over_peak_at_start_of_last_half_step_960",
+  "meaning": "learning rate relative to peak at the start of the last half (0.6196)"
+ },
+ "0.018": {
+  "source": "data/gap_trajectory.json",
+  "field": "schedule.lr_over_peak_at_logged_step_1900",
+  "meaning": "learning rate relative to peak at the last logged step (0.0176)"
+ },
+ "0.016": {
+  "source": "data/gap_trajectory.json",
+  "field": "schedule.lr_over_peak_after_final_step_1907",
+  "meaning": "learning rate relative to peak after the final step (0.0161)"
+ },
+ "153": {
+  "source": "data/gap_trajectory.json",
+  "field": "schedule.this_reproduction.warmup_steps",
+  "meaning": "warm-up steps of the 0.5B-token runs"
+ },
+ "0.07": {
+  "source": "gap note (version 7f4a9295)",
+  "field": "Findings: 'The gap opened at 0.07-0.09B tokens'",
+  "meaning": "start of the NESTOR deficit (B tokens)"
+ },
+ "0.09": {
+  "source": "gap note (version 7f4a9295)",
+  "field": "Findings: 'The gap opened at 0.07-0.09B tokens'",
+  "meaning": "end of the opening window (B tokens)"
+ },
+ "0.17": {
+  "source": "gap note (version 7f4a9295)",
+  "field": "What this says: '... it is at 0.17-0.22 of peak'",
+  "meaning": "5B-run learning rate relative to peak at 0.07-0.09B tokens"
+ },
+ "0.22": {
+  "source": "gap note (version 7f4a9295)",
+  "field": "What this says: '... it is at 0.17-0.22 of peak'",
+  "meaning": "as above"
+ },
+ "0.185": {
+  "source": "data/gap_trajectory.json",
+  "field": "paper_comparison.change_needed_between_0p5B_and_5B.N_minus_M_needed_change_vs_seed42_MoE_val09",
+  "meaning": "needed NESTOR gain on MoE (-0.18508)"
+ },
+ "4.1": {
+  "source": "data/gap_trajectory.json",
+  "field": "paper_comparison.ratio_needed_change_N_minus_M_to_MoE_minus_dense",
+  "meaning": "ratio of needed gains (4.074)"
+ },
+ "0.045": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b1|c2_dclm_only|german|f=0.500\"].xi_LP_ci95[1]",
+  "meaning": "upper 95% bound at f = 1/2",
+  "also": "gap: MoE gain on dense between 0.5B and 5B (-0.04543; data/gap_trajectory.json paper_comparison)"
+ },
+ "0.989": {
+  "source": "data/gate_record_G0.json",
+  "field": "gates.G0-1.cells[\"moe_b1|books|code\"].tried[0].per_f[\"0.500000\"].predicted.median",
+  "meaning": "books median P, base 1"
+ },
+ "0.991": {
+  "source": "data/gate_record_G0.json",
+  "field": "gates.G0-1.cells[\"moe_b2|books|code\"].tried[0].per_f[\"0.500000\"].predicted.median",
+  "meaning": "books median P, base 2"
+ },
+ "0.262": {
+  "source": "data/gate_record_G0.json",
+  "field": "gates.G0-1.threshold",
+  "meaning": "log 1.3"
+ },
+ "0.405": {
+  "source": "data/gate_record_G0.json",
+  "field": "gates.G0-3.threshold",
+  "meaning": "log 1.5"
+ },
+ "31": {
+  "source": "data/gate_record_G0.json",
+  "field": "gates.G0-1.cells[\"moe_b1|german|code\"].tried[0].per_f[\"0.500000\"].n_pairs",
+  "meaning": "German pairs found, base 1, registered tolerance"
+ },
+ "2.374": {
+  "source": "data/gate_record_G0.json",
+  "field": "gates.G0-3.result.median",
+  "meaning": "C2 median target-usage contrast at f = 1/3"
+ },
+ "-0.103": {
+  "source": "data/gate_record_G0.json",
+  "field": "gates.G0-7.moe_b1.D",
+  "meaning": "sensitivity imbalance, base 1 (-0.1030)"
+ },
+ "0.023": {
+  "source": "data/gate_record_G0.json",
+  "field": "gates.G0-7.moe_b1.SE",
+  "meaning": "its standard error (0.0231)"
+ },
+ "-0.112": {
+  "source": "data/gate_record_G0.json",
+  "field": "gates.G0-7.moe_b2.D",
+  "meaning": "sensitivity imbalance, base 2 (-0.1118)"
+ },
+ "0.011": {
+  "source": "data/gate_record_G0.json",
+  "field": "gates.G0-7.moe_b2.SE",
+  "meaning": "its standard error (0.0110)"
+ },
+ "1.164": {
+  "source": "data/gate_record_G0.json",
+  "field": "gates.G0-1.cells[\"moe_b1|books|pycode\"].tried[0].per_f[\"0.500000\"].predicted.median",
+  "meaning": "Python-code median P, base 1"
+ },
+ "1.108": {
+  "source": "data/gate_record_b3.json",
+  "field": "gates.G0-1.cells[\"moe_b3|books|code\"].tried[0].per_f[\"0.500000\"].predicted.median",
+  "meaning": "books median P, base 3"
+ },
+ "7.3e-8": {
+  "source": "data/gate_record_b3.json",
+  "field": "gates.G0-5.per_base.moe_b3.abs_dce",
+  "meaning": "base 3 |dCE| H100 vs local, val09"
+ },
+ "0.995": {
+  "source": "data/gate_record_b3.json",
+  "field": "gates.G0-6.moe_b3.reliability",
+  "meaning": "base 3 probe reliability"
+ },
+ "+0.012": {
+  "source": "data/gate_record_b3.json",
+  "field": "gates.G0-7.moe_b3.D",
+  "meaning": "sensitivity imbalance, base 3 (0.0120)"
+ },
+ "0.043": {
+  "source": "data/gate_record_b3.json",
+  "field": "gates.G0-7.moe_b3.SE",
+  "meaning": "its standard error (0.0435)"
+ },
+ "0.48": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b1|c1|books|pycode|f=0.500\"].point.xi_LP",
+  "meaning": "books load, base 1, Python code (lowest MoE books load)",
+  "also": "NESTOR books code interval upper bound 0.478 (nestor_books_prediction)"
+ },
+ "0.53": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b1|c1|books|code|f=0.500\"].point.xi_LP",
+  "meaning": "books load, base 1, code"
+ },
+ "0.60": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b2|c1|books|code|f=0.500\"].point.xi_LP",
+  "meaning": "books load, base 2, code"
+ },
+ "0.63": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b2|c1|books|pycode|f=0.500\"].point.xi_LP",
+  "meaning": "books load, base 2, Python code (highest MoE books load)",
+  "also": "lowest MoE i_k_effective, C1 cells at f = 1/2 (0.628)"
+ },
+ "0.96": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b1|c1|german|code|f=0.500\"].point.xi_LP",
+  "meaning": "German load, base 1 (0.957 / 0.958)",
+  "also": "gap note: P(slope < 0) = 0.96 for NESTOR minus dense"
+ },
+ "1.01": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b2|c1|german|code|f=0.500\"].point.xi_LP",
+  "meaning": "German load, base 2, code"
+ },
+ "1.00": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b2|c1|german|pycode|f=0.500\"].point.xi_LP",
+  "meaning": "German load, base 2, Python code",
+  "also": "theory addendum v4: observed / predicted 1.00 for residual-tilt pools"
+ },
+ "0.91": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b1|c1|french|pycode|f=0.500\"].point.xi_LP",
+  "meaning": "lowest MoE French load"
+ },
+ "0.98": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b2|c1|french|code|f=0.500\"].point.xi_LP",
+  "meaning": "highest MoE French load"
+ },
+ "0.057": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"nestor|c1|german|pycode|f=0.500\"].point.rho2_piT_D",
+  "meaning": "smallest German/French partial term"
+ },
+ "0.103": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b2|c1|french|code|f=0.500\"].point.rho2_piT_D",
+  "meaning": "largest German/French partial term"
+ },
+ "0.66": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b1|c1|books|code|f=0.500\"].point.corr_TD_share",
+  "meaning": "books-DCLM share correlation, base 1"
+ },
+ "0.67": {
+  "source": "data/entanglement_results.json",
+  "field": "thresholds.operating; cells[\"moe_b2|c1|books|code|f=0.500\"].point.corr_TD_share",
+  "meaning": "feasibility threshold; books-DCLM correlation, base 2"
+ },
+ "0.70": {
+  "source": "data/entanglement_results.json",
+  "field": "thresholds.operating_tol110",
+  "meaning": "threshold at the relaxed tolerance"
+ },
+ "-0.12": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b2|c1|french|code|f=0.500\"].point.corr_TD_share",
+  "meaning": "lowest MoE German/French share correlation"
+ },
+ "-0.05": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b1|c1|german|code|f=0.500\"].point.corr_TD_share",
+  "meaning": "highest MoE German/French share correlation"
+ },
+ "40": {
+  "source": "data/entanglement_results.json",
+  "field": "agreement.n (n_agree = 40)",
+  "meaning": "recorded generator outcomes"
+ },
+ "0.008": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b1|c2_dclm_only|german|f=0.500\"].point.xi_LP",
+  "meaning": "C2 German load, base 1, f = 1/2"
+ },
+ "0.004": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b1|c2_dclm_only|german|f=0.333\"].point.xi_LP",
+  "meaning": "C2 German load, base 1, f = 1/3"
+ },
+ "0.091": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b1|c2_dclm_only|german|f=0.333\"].xi_LP_ci95[1]",
+  "meaning": "upper 95% bound at f = 1/3"
+ },
+ "1.04": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b1|c2_full|german|f=0.500\"].point.xi_LP",
+  "meaning": "C2 all-matched load, base 1"
+ },
+ "1.03": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b1|dclm_tilt|german|f=0.500\"].point.xi_LP",
+  "meaning": "DCLM-tilt load, base 1"
+ },
+ "0.74": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"nestor|c1|german|pycode|f=0.500\"].point.xi_LP",
+  "meaning": "NESTOR German load, Python code"
+ },
+ "0.77": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"nestor|c1|german|code|f=0.500\"].point.xi_LP",
+  "meaning": "NESTOR German load, code"
+ },
+ "0.33": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"nestor|c1|*|f=0.500\"].i_k_effective (min 0.331)",
+  "meaning": "NESTOR compensation intensity, lowest"
+ },
+ "0.39": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"nestor|c1|*|f=0.500\"].i_k_effective (max 0.394); nestor_books_prediction[\"pycode|f=0.500\"].xi_LP_ci95[0]",
+  "meaning": "NESTOR compensation intensity, highest; interval bound"
+ },
+ "0.73": {
+  "source": "data/entanglement_results.json",
+  "field": "cells[\"moe_b*|c1|*|f=0.500\"].i_k_effective (max 0.728)",
+  "meaning": "MoE compensation intensity, highest"
+ },
+ "0.52": {
+  "source": "data/entanglement_results.json",
+  "field": "toy_calibration[\"N=64|f=0.5|tol=0.04879\"].xi50",
+  "meaning": "pass midpoint for 64-expert layers (0.521)"
+ },
+ "0.45": {
+  "source": "data/entanglement_results.json",
+  "field": "nestor_books_prediction.cells[\"code|f=0.500\"].xi_LP; [\"pycode|f=0.500\"].xi_LP_ci95[1]",
+  "meaning": "NESTOR books load, code (0.448); interval bound (0.454)"
+ },
+ "0.42": {
+  "source": "data/entanglement_results.json",
+  "field": "nestor_books_prediction.cells[\"code|f=0.500\"].xi_LP_ci95[0]",
+  "meaning": "interval bound (0.421)"
+ },
+ "0.40": {
+  "source": "data/entanglement_results.json",
+  "field": "nestor_books_prediction.cells[\"pycode|f=0.500\"].xi_LP",
+  "meaning": "NESTOR books load, Python code (0.398)"
+ },
+ "0.76": {
+  "source": "data/entanglement_results.json",
+  "field": "nestor_books_prediction.cells[\"code|f=0.500\"].p_pass_toy_calibrated_N64",
+  "meaning": "calibrated pass probability (0.759)",
+  "also": "theory note v5 erratum (stored version 5bd9922d), item 7: toy-calibrated pass probability [E]"
+ },
+ "0.85": {
+  "source": "data/entanglement_results.json",
+  "field": "nestor_books_prediction.cells[\"pycode|f=0.500\"].p_pass_toy_calibrated_N64",
+  "meaning": "calibrated pass probability (0.851)",
+  "also": "theory note v5 erratum (stored version 5bd9922d), item 7: toy-calibrated pass probability [E]"
+ },
+ "0.583": {
+  "source": "data/entanglement_results.json",
+  "field": "toy_calibration[\"N=64|f=0.5|tol=0.09531\"].xi50",
+  "meaning": "pass midpoint, N = 64, relaxed tolerance"
+ },
+ "0.793": {
+  "source": "data/entanglement_results.json",
+  "field": "toy_calibration[\"N=24|f=0.5|tol=0.09531\"].xi50",
+  "meaning": "pass midpoint, N = 24, relaxed tolerance"
+ },
+ "13.0": {
+  "source": "data/provenance_b15s44.json",
+  "field": "platform ('torch 2.14.1+cu130')",
+  "meaning": "CUDA version of the H100 image of base 3; the local venv is torch 2.14.1+cu130 (project memory)"
+ },
+ "0.963": {
+  "source": "pre-registration v1.3 (stored version 6449294c)",
+  "field": "sec. 3.3, reference row: power at beta = 0.75, n_d = 3, alpha = 0.025",
+  "meaning": "simulated C1 power"
+ },
+ "101.03": {
+  "source": "pre-registration v1.3 (stored version 6449294c)",
+  "field": "sec. 7: total with contingency",
+  "meaning": "planned local GPU-h"
+ },
+ "120": {
+  "source": "pre-registration v1.3 (stored version 6449294c)",
+  "field": "sec. 7: envelope",
+  "meaning": "GPU-h envelope"
+ },
+ "2,000,000": {
+  "source": "run_continual.py docstring",
+  "field": "EVAL_TOKENS_4K = 2_000_000",
+  "meaning": "stage-B evaluation tokens"
+ },
+ "135": {
+  "source": "data/g0_rerun_compare.json",
+  "field": "n_decisions",
+  "meaning": "G0 decisions compared between the registered record (sha256 9259ddd6...) and the re-run (bdf3d79c...); decisions_equal = true, differences = []"
+ },
+ "0126": {
+  "source": "funding statement as supplied on 2026-11-13 (reproduced verbatim)",
+  "field": "State Registration Number 0126U001450",
+  "meaning": "prefix of a funded-project registration identifier, not a quantity"
+ },
+ "0125": {
+  "source": "funding statement as supplied on 2026-11-13 (reproduced verbatim)",
+  "field": "State Registration Number 0125U001683",
+  "meaning": "prefix of a funded-project registration identifier, not a quantity"
+ },
+ "5.5@sections/08_declarations.tex": {
+  "source": "sections/08_declarations.tex, aideclaration (text as supplied; both notes deleted in v1.6.1 after the author resolved item M15)",
+  "field": "model version in a product name",
+  "meaning": "version number of an AI model named in the declaration, not a quantity"
+ },
+ "5.2@sections/08_declarations.tex": {
+  "source": "sections/08_declarations.tex, aideclaration (text as supplied; both notes deleted in v1.6.1 after the author resolved item M15)",
+  "field": "model version in a product name",
+  "meaning": "version number of an AI model named in the declaration, not a quantity"
+ },
+ "52": {
+  "source": "pre-registration v1.3 version 4 (stored version 0b5c604f), sec. 4.11 (EDGE), planning values from budget_v13.py [DERIVED]",
+  "field": "MoE: one probe unit 52 s",
+  "meaning": "planned wall time of one MoE probe unit (s)"
+ },
+ "892": {
+  "source": "pre-registration v1.3 version 4 (stored version 0b5c604f), sec. 4.11 (EDGE), planning values from budget_v13.py [DERIVED]",
+  "field": "MoE: one adaptation run 892 s (training + 2 evaluations)",
+  "meaning": "planned wall time of one MoE adaptation run with its two evaluations (s)"
+ },
+ "0.059@sections/F_compute.tex": {
+  "source": "pre-registration v1.3 version 4 (stored version 0b5c604f), sec. 4.11 (EDGE), planning values from budget_v13.py [DERIVED]",
+  "field": "MoE ratio 0.059",
+  "meaning": "planned probe-unit / adaptation-run ratio, MoE"
+ },
+ "0.071@sections/F_compute.tex": {
+  "source": "pre-registration v1.3 version 4 (stored version 0b5c604f), sec. 4.11 (EDGE), planning values from budget_v13.py [DERIVED]",
+  "field": "MoE ratio 0.071 against training only",
+  "meaning": "planned probe-unit / training ratio, MoE"
+ },
+ "166@sections/F_compute.tex": {
+  "source": "pre-registration v1.3 version 4 (stored version 0b5c604f), sec. 4.11 (EDGE), planning values from budget_v13.py [DERIVED]",
+  "field": "NESTOR: one probe unit 166 s",
+  "meaning": "planned wall time of one NESTOR probe unit (s)"
+ },
+ "3,459": {
+  "source": "pre-registration v1.3 version 4 (stored version 0b5c604f), sec. 4.11 (EDGE), planning values from budget_v13.py [DERIVED]",
+  "field": "NESTOR: one adaptation run 3,459 s",
+  "meaning": "planned wall time of one NESTOR adaptation run (s)"
+ },
+ "0.048@sections/F_compute.tex": {
+  "source": "pre-registration v1.3 version 4 (stored version 0b5c604f), sec. 4.11 (EDGE), planning values from budget_v13.py [DERIVED]",
+  "field": "NESTOR ratio 0.048",
+  "meaning": "planned probe-unit / adaptation-run ratio, NESTOR"
+ },
+ "0.056@sections/F_compute.tex": {
+  "source": "pre-registration v1.3 version 4 (stored version 0b5c604f), sec. 4.11 (EDGE), planning values from budget_v13.py [DERIVED]",
+  "field": "NESTOR ratio 0.056 against training and compile",
+  "meaning": "planned probe-unit / (training + compile) ratio, NESTOR"
+ },
+ "16@sections/06b_edge.tex": {
+  "source": "data/hardware_local.json; pre-registration v1.3 version 4, sec. 4.11 (\"RTX 4080 SUPER, 16 GB\")",
+  "field": "derived: memory_total_MiB = 16376 (nvidia-smi, 2026-11-14), marketed as 16 GB",
+  "meaning": "memory of the local GPU (GB)"
+ },
+ "5@sections/06b_edge.tex": {
+  "source": "pre-registration v1.3 version 4, sec. 4.11 (Coverage)",
+  "field": "consecutive power samples at most 5 s apart",
+  "meaning": "inclusion rule of the EDGE block (s)"
+ },
+ "1.14@sections/D_entanglement.tex": {
+  "source": "theory verification (stored version c2ca7a89), sec. 1.3 (c) and 1.5 item 6",
+  "field": "MoE b1, books, Python code, f = 1/3, log 1.10: registered search passes at xi_LP = 1.140",
+  "meaning": "load of a cell not run by the gate on which the registered search passes",
+  "also": "theory note v5 erratum (stored version 5bd9922d), item 2"
+ },
+ "20@sections/D_entanglement.tex": {
+  "source": "theory verification (stored version c2ca7a89), sec. 1.3 (b)",
+  "field": "MoE b1 German: the registered search found 20-31 matched pairs at log 1.05 (own runs and the record)",
+  "meaning": "lower end of the matched German pairs found in base 1",
+  "also": "theory note v5 erratum (stored version 5bd9922d), item 5"
+ },
+ "0.87@sections/03_account.tex": {
+  "source": "theory verification (stored version c2ca7a89), Table L3 and sec. 1.5 item 5",
+  "field": "G0-2 50% points on the independent family: 0.874 (N = 64, log 1.05) to 1.053 (N = 64, 4x swap budget)",
+  "meaning": "lower end of the operating-threshold range on an independent table family",
+  "also": "theory note v5 erratum (stored version 5bd9922d), item 7"
+ },
+ "1.05@sections/03_account.tex": {
+  "source": "theory verification (stored version c2ca7a89), Table L3 and sec. 1.5 item 5",
+  "field": "G0-2 50% point 1.053 (N = 64, log 1.05, 4x swap budget)",
+  "meaning": "upper end of the operating-threshold range on an independent table family",
+  "also": "theory note v5 erratum (stored version 5bd9922d), item 7"
+ },
+ "25@sections/03_account.tex": {
+  "source": "theory verification (stored version c2ca7a89), sec. 0 (DR-1b row) and 2.7 item 3",
+  "field": "A-B overlap 25.1% at f = 1 (registered low-dose family)",
+  "meaning": "share of experts shared by two independent uniform subsets (%)",
+  "also": "theory note v5 erratum (stored version 5bd9922d), items 9 and 10"
+ },
+ "0.095": {
+  "source": "theory verification (stored version c2ca7a89), sec. 2.7 item 5",
+  "field": "|b3| up to 0.095 in stress worlds on a real MoE table (registered design)",
+  "meaning": "largest fitted cubic coefficient in the registered-design toy",
+  "also": "theory note v5 erratum (stored version 5bd9922d), item 11 (curvature clause deleted)"
+ },
+ "0.917": {
+  "source": "theory verification (stored version c2ca7a89), Table L3",
+  "field": "N = 24: G0-2 50% point at log 1.05 = 0.917",
+  "meaning": "pass midpoint of the registered search, independent family, N = 24",
+  "also": "theory note v5 erratum (stored version 5bd9922d), item 7 (range 0.87-0.98)"
+ },
+ "0.874": {
+  "source": "theory verification (stored version c2ca7a89), Table L3",
+  "field": "N = 64: G0-2 50% point at log 1.05 = 0.874",
+  "meaning": "pass midpoint of the registered search, independent family, N = 64",
+  "also": "theory note v5 erratum (stored version 5bd9922d), item 7 (range 0.87-0.98)"
+ },
+ "0.982@sections/D_entanglement.tex": {
+  "source": "theory verification (stored version c2ca7a89), Table L3",
+  "field": "N = 24: G0-2 50% point at log 1.05 with 4x swap budget = 0.982",
+  "meaning": "pass midpoint with a fourfold swap budget, N = 24",
+  "also": "theory note v5 erratum (stored version 5bd9922d), item 7 (range 0.98-1.05)"
+ },
+ "1.053@sections/D_entanglement.tex": {
+  "source": "theory addendum v4 (TN4; pool intensity i_f at f = 1/3) and theory verification (stored version c2ca7a89), Table L3",
+  "field": "i_f = 1.053; N = 64: G0-2 50% point at log 1.05 with 4x swap budget = 1.053",
+  "meaning": "two uses in Appendix D: pool intensity i_f at f = 1/3, and the pass midpoint with a fourfold swap budget for N = 64",
+  "also": "theory note v5 erratum (stored version 5bd9922d), item 7 (range 0.98-1.05)"
+ },
+ "64@sections/D_entanglement.tex": {
+  "source": "design constant (N = 64 experts per NESTOR layer) and theory verification (stored version c2ca7a89), sec. 1.3 (c) / Table L3 (accuracy 0.637)",
+  "field": "N = 64; the 0.67 rule classifies 64% (N = 24) of G0-2 outcomes correctly",
+  "meaning": "two uses in Appendix D: expert count N = 64, and rule accuracy 64% for N = 24",
+  "also": "theory note v5 erratum (stored version 5bd9922d), item 7"
+ },
+ "69": {
+  "source": "theory verification (stored version c2ca7a89), sec. 1.3 (c) / Table L3 (accuracy 0.688)",
+  "field": "the 0.67 rule classifies 69% (N = 64) of G0-2 outcomes correctly",
+  "meaning": "rule accuracy for N = 64 (%)",
+  "also": "theory note v5 erratum (stored version 5bd9922d), item 7"
+ },
+ "400@sections/03_account.tex": {
+  "source": "theory addendum v4 (stored version ce9fa26d), sec. 0 item 1 (superseded by theory note v5 erratum (stored version 5bd9922d), item 2, which keeps this toy check)",
+  "field": "Synthetic check (400 tables, 1200 runs of the frozen generator)",
+  "meaning": "number of synthetic routing tables"
+ },
+ "1,200@sections/03_account.tex": {
+  "source": "theory addendum v4 (stored version ce9fa26d), sec. 0 item 1 (superseded by theory note v5 erratum (stored version 5bd9922d), item 2, which keeps this toy check)",
+  "field": "Synthetic check (400 tables, 1200 runs of the frozen generator)",
+  "meaning": "runs of the frozen generator"
+ },
+ "425@sections/03_account.tex": {
+  "source": "theory note v5 erratum (stored version 5bd9922d), item 2 (restates theory addendum v4 (stored version ce9fa26d), sec. 0 item 1)",
+  "field": "the registered search passed G0-2 with xi_LP > 1 in 1 of my 425 toy cells",
+  "meaning": "toy cells with xi_LP > 1"
+ },
+ "0.012@sections/03_account.tex": {
+  "source": "theory addendum v4 (stored version ce9fa26d), sec. 2.2 (superseded by theory note v5 erratum (stored version 5bd9922d), item 11); theory verification (stored version c2ca7a89), sec. 2.6",
+  "field": "In all four worlds |intercept| <= 0.012 and |beta_3| <= 0.009 (Gumbel-weighted proposals)",
+  "meaning": "largest fitted intercept in the two-sided dose toy"
+ },
+ "0.009@sections/03_account.tex": {
+  "source": "theory addendum v4 (stored version ce9fa26d), sec. 2.2 (superseded by theory note v5 erratum (stored version 5bd9922d), item 11); theory verification (stored version c2ca7a89), sec. 2.6",
+  "field": "In all four worlds |intercept| <= 0.012 and |beta_3| <= 0.009 (Gumbel-weighted proposals)",
+  "meaning": "largest fitted cubic coefficient in the two-sided dose toy"
+ },
+ "0.64@sections/D_entanglement.tex": {
+  "source": "theory addendum v4 (stored version ce9fa26d), sec. 1.4 (Gaussian cost of matching, [D]); the section is superseded by theory note v5 erratum (stored version 5bd9922d), item 5, which corrects the German statement and keeps the residual-tilt remark [D]; this value is not changed",
+  "field": "0.64 P_0 at a German-like R^2 = 0.62",
+  "meaning": "Gaussian-model value of the cost of matching (Appendix D)"
+ },
+ "1.224@sections/D_entanglement.tex": {
+  "source": "theory addendum v4 (stored version ce9fa26d), sec. 1.4 (Gaussian cost of matching, [D]); the section is superseded by theory note v5 erratum (stored version 5bd9922d), item 5, which corrects the German statement and keeps the residual-tilt remark [D]; this value is not changed",
+  "field": "bar-i_q = 1.224 (top 6 of 24)",
+  "meaning": "Gaussian-model value of the cost of matching (Appendix D)"
+ },
+ "1.37@sections/D_entanglement.tex": {
+  "source": "theory addendum v4 (stored version ce9fa26d), sec. 1.4 (Gaussian cost of matching, [D]); the section is superseded by theory note v5 erratum (stored version 5bd9922d), item 5, which corrects the German statement and keeps the residual-tilt remark [D]; this value is not changed",
+  "field": "1.37 P_0 and 0.98 P_0 at the two values",
+  "meaning": "Gaussian-model value of the cost of matching (Appendix D)"
+ },
+ "12@sections/04_design.tex": {
+  "source": "NESTOR paper (MoE-100M with 12 layers); pre-registration v1.3 version 6 (stored version 70821132), sec. 1 item 2 (D = 12 at n_d = 3) and sec. 4.12 (12 C1-DE runs)",
+  "field": "counts",
+  "meaning": "12 layers of the 100M MoE model; D = 12 C1 draws at n_d = 3; 12 C1-DE runs (3 draws x 2 subsets x 2 MoE bases)"
+ },
+ "1.3@sections/A_prereg.tex": {
+  "source": "pre-registration v1.3 version 6 (stored version 70821132), header and sec. 6",
+  "field": "version number",
+  "meaning": "version of the pre-registration (1.3) or of the gate specification (1.3.0, revision 3), not a quantity"
+ },
+ "1.3@sections/04_design.tex": {
+  "source": "pre-registration v1.3 version 6 (stored version 70821132), header and sec. 6",
+  "field": "version number",
+  "meaning": "version of the pre-registration (1.3) or of the gate specification (1.3.0, revision 3), not a quantity"
+ },
+ "1.3@sections/08_declarations.tex": {
+  "source": "pre-registration v1.3 version 6 (stored version 70821132), header and sec. 6",
+  "field": "version number",
+  "meaning": "version of the pre-registration (1.3) or of the gate specification (1.3.0, revision 3), not a quantity"
+ },
+ "0.157@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "per_model.dense_100m.mean_forgetting[0]",
+  "meaning": "stage B mean forgetting, dense"
+ },
+ "0.159@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "per_model.dense_100m.mean_forgetting[2]",
+  "meaning": "upper 95% bound, dense"
+ },
+ "0.107@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "per_model.moe_100m.mean_forgetting[0]",
+  "meaning": "stage B mean forgetting, MoE base 1"
+ },
+ "0.106@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "per_model.moe_100m.mean_forgetting[1]",
+  "meaning": "lower bound, MoE"
+ },
+ "0.109@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "per_model.moe_100m.mean_forgetting[2]",
+  "meaning": "upper bound, MoE"
+ },
+ "0.115@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "per_model.nestor_100m.mean_forgetting[0]",
+  "meaning": "stage B mean forgetting, NESTOR"
+ },
+ "0.113@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "per_model.nestor_100m.mean_forgetting[1]",
+  "meaning": "lower bound, NESTOR"
+ },
+ "0.117@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "per_model.nestor_100m.mean_forgetting[2]",
+  "meaning": "upper bound, NESTOR"
+ },
+ "0.050@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "differences_vs_moe.dense_100m.mean_forgetting[0]",
+  "meaning": "dense minus MoE mean forgetting"
+ },
+ "46@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "differences_vs_moe.dense_100m.mean_forgetting_pct",
+  "meaning": "dense minus MoE, % of MoE"
+ },
+ "0.0079@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "differences_vs_moe.nestor_100m.mean_forgetting[0]",
+  "meaning": "NESTOR minus MoE mean forgetting"
+ },
+ "0.0069@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "differences_vs_moe.nestor_100m.mean_forgetting[1]",
+  "meaning": "lower bound"
+ },
+ "0.0089@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "differences_vs_moe.nestor_100m.mean_forgetting[2]",
+  "meaning": "upper bound"
+ },
+ "7.4@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "differences_vs_moe.nestor_100m.mean_forgetting_pct",
+  "meaning": "NESTOR minus MoE, % of MoE"
+ },
+ "0.0050@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "differences_vs_moe.nestor_100m.forgetting.owm[0]",
+  "meaning": "NESTOR minus MoE on OpenWebMath (negative)"
+ },
+ "0.0038@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "differences_vs_moe.nestor_100m.forgetting.owm[2]",
+  "meaning": "bound of the OpenWebMath difference (negative)"
+ },
+ "0.0062@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "differences_vs_moe.nestor_100m.forgetting.owm[1]",
+  "meaning": "bound of the OpenWebMath difference (negative)"
+ },
+ "0.556@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "per_model.nestor_100m.mean_gain[0]",
+  "meaning": "mean gain, NESTOR"
+ },
+ "0.506@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "per_model.moe_100m.mean_gain[0]",
+  "meaning": "mean gain, MoE"
+ },
+ "0.732@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "paper_table6_5B.mean_gain.nestor",
+  "meaning": "paper Table 6 mean gain, NESTOR"
+ },
+ "0.734@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "paper_table6_5B.mean_gain.moe",
+  "meaning": "paper Table 6 mean gain, MoE"
+ },
+ "21@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "derived: 100*(paper_table6_5B.mean_forgetting.dense - moe)/moe = 21.07",
+  "meaning": "paper's dense minus MoE forgetting, % of MoE"
+ },
+ "2.7@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "derived: 100*(paper_table6_5B.mean_forgetting.nestor - moe)/moe = -2.68",
+  "meaning": "paper's NESTOR minus MoE forgetting, % of MoE"
+ },
+ "0.155@sections/05_reproduction.tex": {
+  "source": "data/reproduction_stageA.json; data/stageB_window_ci.json",
+  "field": "differences.nestor_minus_moe_b1_val09 (stage A gap); per_model.dense_100m.mean_forgetting[1] (stage B lower bound)",
+  "meaning": "two meanings: stage-A held-out gap NESTOR minus MoE base 1, and lower 95% bound of the dense stage-B mean forgetting"
+ },
+ "6@sections/05_reproduction.tex": {
+  "source": "NESTOR paper, arXiv 2610.31818 (full text), Table 6 caption",
+  "field": "table number",
+  "meaning": "Table 6 of the paper, not a quantity"
+ },
+ "500@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json; NESTOR paper, arXiv 2610.31818 (full text), Table 6 caption",
+  "field": "source (text: 500 even windows of 4096 tokens); paper Table 6 caption (500M scale)",
+  "meaning": "500 evaluation windows (stage B) and the paper's 500M scale"
+ },
+ "32@sections/05_reproduction.tex": {
+  "source": "NESTOR paper, arXiv 2610.31818 (full text), Table 6 caption",
+  "field": "caption: held-out losses at 32k",
+  "meaning": "the paper's 32k context in Table 6"
+ },
+ "4,000@sections/05_reproduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "method (text: 4000 window-bootstrap resamples)",
+  "meaning": "number of bootstrap resamples"
+ },
+ "0.136@sections/05_reproduction.tex": {
+  "source": "data/stageC_results.json",
+  "field": "derived: rows[2].ce_chunked_eval - rows[0].ce_chunked_eval = -0.13598",
+  "meaning": "MoE minus dense at S = 8192"
+ },
+ "0.129@sections/05_reproduction.tex": {
+  "source": "data/stageC_results.json",
+  "field": "derived: rows[3].ce_chunked_eval - rows[1].ce_chunked_eval = -0.12902",
+  "meaning": "MoE minus dense at S = 16384"
+ },
+ "8192@sections/05_reproduction.tex": {
+  "source": "data/stageC_results.json",
+  "field": "rows[0].S",
+  "meaning": "evaluation length 8192"
+ },
+ "8192@sections/E_reproduction.tex": {
+  "source": "data/stageC_results.json",
+  "field": "rows[0].S",
+  "meaning": "extension length 8192"
+ },
+ "16384@sections/05_reproduction.tex": {
+  "source": "data/stageC_results.json",
+  "field": "rows[1].S",
+  "meaning": "evaluation length 16384"
+ },
+ "16384@sections/E_reproduction.tex": {
+  "source": "data/stageC_results.json",
+  "field": "rows[1].S",
+  "meaning": "extension length 16384"
+ },
+ "1,024@sections/05_reproduction.tex": {
+  "source": "data/stageC_results.json",
+  "field": "eval_note (text: head applied in 1024-row chunks)",
+  "meaning": "chunked-head evaluator check"
+ },
+ "2.4e-8@sections/05_reproduction.tex": {
+  "source": "data/stageC_results.json",
+  "field": "eval_note (text: within 2.4e-8 nats, dense)",
+  "meaning": "chunked-head evaluator check"
+ },
+ "1.2e-8@sections/05_reproduction.tex": {
+  "source": "data/stageC_results.json",
+  "field": "eval_note (text: 1.2e-8, MoE)",
+  "meaning": "chunked-head evaluator check"
+ },
+ "13.09@sections/E_reproduction.tex": {
+  "source": "data/stageC_results.json",
+  "field": "nestor.attempts (text: 13.09 GiB allocated)",
+  "meaning": "NESTOR stage-C out-of-memory record"
+ },
+ "14.31@sections/E_reproduction.tex": {
+  "source": "data/stageC_results.json",
+  "field": "nestor.attempts (text: 14.31 GiB allocated, 0 bytes free)",
+  "meaning": "NESTOR stage-C out-of-memory record"
+ },
+ "14.31@sections/F_compute.tex": {
+  "source": "data/stageC_results.json",
+  "field": "nestor.attempts (text: 14.31 GiB allocated, 0 bytes free)",
+  "meaning": "NESTOR stage-C out-of-memory record"
+ },
+ "0.85@sections/E_reproduction.tex": {
+  "source": "data/stageC_results.json",
+  "field": "nestor.attempts (text: MEM_FRAC 0.85)",
+  "meaning": "NESTOR stage-C out-of-memory record"
+ },
+ "0.93@sections/E_reproduction.tex": {
+  "source": "data/stageC_results.json",
+  "field": "nestor.attempts (text: MEM_FRAC 0.93)",
+  "meaning": "NESTOR stage-C out-of-memory record"
+ },
+ "0.93@sections/F_compute.tex": {
+  "source": "data/stageC_results.json",
+  "field": "nestor.attempts (text: MEM_FRAC 0.93)",
+  "meaning": "NESTOR stage-C out-of-memory record"
+ },
+ "-0.0055@sections/B_gates.tex": {
+  "source": "data/gate_record_G1.json",
+  "field": "gates.G1-3.record.F.CODE",
+  "meaning": "NESTOR private-expert signal, code"
+ },
+ "0.0004@sections/B_gates.tex": {
+  "source": "data/gate_record_G1.json",
+  "field": "gates.G1-3.record.SE.CODE",
+  "meaning": "SE, code"
+ },
+ "0.0013@sections/B_gates.tex": {
+  "source": "data/gate_record_G1.json",
+  "field": "gates.G1-3.record.F.math",
+  "meaning": "NESTOR private-expert signal, mathematics"
+ },
+ "0.0005@sections/B_gates.tex": {
+  "source": "data/gate_record_G1.json",
+  "field": "gates.G1-3.record.SE.math",
+  "meaning": "SE, mathematics"
+ },
+ "0.434@sections/04_design.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-1.values.sigma_I",
+  "meaning": "sigma_I from three A/A pairs"
+ },
+ "0.750@sections/04_design.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-1.values.UCL80",
+  "meaning": "upper 80% confidence limit of sigma_I"
+ },
+ "0.790@sections/04_design.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-1.values.p20",
+  "meaning": "lookup power at D = 20"
+ },
+ "1.21@sections/04_design.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-2.values.gain_ratio[0]",
+  "meaning": "SGD/Muon target gain at step 24, lr c/3"
+ },
+ "0.024@sections/04_design.tex": {
+  "source": "pre-registration v1.3 version 8 (stored version 71ed1223), sec. 3.3 reading 1",
+  "field": "text",
+  "meaning": "boundary rejection rate, lower end"
+ },
+ "0.055@sections/04_design.tex": {
+  "source": "pre-registration v1.3 version 8 (stored version 71ed1223), sec. 3.3 reading 1",
+  "field": "text",
+  "meaning": "boundary rejection rate, upper end"
+ },
+ "7000@sections/04_design.tex": {
+  "source": "pre-registration v1.3 version 8 (stored version 71ed1223), sec. 3.1 Seeds",
+  "field": "text",
+  "meaning": "C1 data seed offset, base 1"
+ },
+ "7020@sections/04_design.tex": {
+  "source": "pre-registration v1.3 version 8 (stored version 71ed1223), sec. 3.1 Seeds",
+  "field": "text",
+  "meaning": "C1 data seed offset, base 2"
+ },
+ "7040@sections/04_design.tex": {
+  "source": "pre-registration v1.3 version 8 (stored version 71ed1223), sec. 3.1 Seeds",
+  "field": "text",
+  "meaning": "third-base data seed offset"
+ },
+ "15@sections/08_declarations.tex": {
+  "source": "pre-registration v1.3 version 8 (stored version 71ed1223), sec. 10 row P-15",
+  "field": "text",
+  "meaning": "decision label P-15, not a quantity"
+ },
+ "25@sections/04_design.tex": {
+  "source": "pre-registration v1.3 version 8 (stored version 71ed1223), sec. 3.4 Exclusions",
+  "field": "text",
+  "meaning": "share of divergent runs above which a block is inconclusive"
+ },
+ "80@sections/04_design.tex": {
+  "source": "pre-registration v1.3 version 8 (stored version 71ed1223), sec. 3.1 Number of draws (UCL80)",
+  "field": "text",
+  "meaning": "80% upper confidence limit"
+ },
+ "9@sections/04_design.tex": {
+  "source": "pre-registration v1.3 version 8 (stored version 71ed1223), sec. 6 (gate G0-9L)",
+  "field": "text",
+  "meaning": "gate label G0-9L, not a quantity"
+ },
+ "0.005@sections/04_design.tex": {
+  "source": "gate specification 1.3.0, G1-3 rule (tables/gates_full.tex)",
+  "field": "text",
+  "meaning": "G1-3 threshold of 0.005 nats"
+ },
+ "0.005@sections/B_gates.tex": {
+  "source": "gate specification 1.3.0, G1-3 rule (tables/gates_full.tex)",
+  "field": "text",
+  "meaning": "G1-3 threshold of 0.005 nats"
+ },
+ "10@sections/04_design.tex": {
+  "source": "data/gate_record_G2.json; tables/gates_full.tex; Section 4.1",
+  "field": "freeze.c1_draws_per_base (10); G1-3 rule (10 SE); 10% of the paper's budget",
+  "meaning": "draws 1 to 10, the G1-3 rule of 10 standard errors and the 10% budget"
+ },
+ "10@sections/B_gates.tex": {
+  "source": "gate specification 1.3.0, G1-3 rule (tables/gates_full.tex)",
+  "field": "text",
+  "meaning": "G1-3 rule of 10 standard errors"
+ },
+ "0.434@sections/C_power_budget.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-1.values.sigma_I",
+  "meaning": "sigma_I from three A/A pairs"
+ },
+ "-0.282@sections/C_power_budget.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-1.record.pairs[\"1\"].I_AA",
+  "meaning": "I_AA of A/A pair 1"
+ },
+ "-0.393@sections/C_power_budget.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-1.record.pairs[\"2\"].I_AA",
+  "meaning": "I_AA of A/A pair 2"
+ },
+ "+0.576@sections/C_power_budget.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-1.record.pairs[\"3\"].I_AA",
+  "meaning": "I_AA of A/A pair 3"
+ },
+ "4@sections/C_power_budget.tex": {
+  "source": "data/gate_record_G1.json",
+  "field": "decision.q (0.25 = 1/4)",
+  "meaning": "denominator of q = 1/4"
+ },
+ "1.21@sections/01_introduction.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-2.values.gain_ratio[0]",
+  "meaning": "SGD/Muon target gain at step 24, lr c/3"
+ },
+ "2@sections/01_introduction.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gate label G2-2 (text)",
+  "meaning": "gate label, not a quantity"
+ },
+ "3@sections/01_introduction.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-2.values.grid (c/3)",
+  "meaning": "the grid value c/3"
+ },
+ "1.21@sections/06b_edge.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-2.values.gain_ratio[0]",
+  "meaning": "SGD/Muon target gain at step 24, lr c/3"
+ },
+ "2@sections/06b_edge.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gate label G2-2 (text)",
+  "meaning": "gate label, not a quantity"
+ },
+ "3@sections/06b_edge.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-2.values.grid (c/3)",
+  "meaning": "the grid value c/3"
+ },
+ "16,384@sections/06b_edge.tex": {
+  "source": "data/stageC_results.json",
+  "field": "rows[1].S",
+  "meaning": "extension length 16384"
+ },
+ "16,384@sections/F_compute.tex": {
+  "source": "data/stageC_results.json",
+  "field": "rows[1].S",
+  "meaning": "extension length 16384"
+ },
+ "7.4@sections/01_introduction.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "differences_vs_moe.nestor_100m.mean_forgetting_pct",
+  "meaning": "NESTOR minus MoE, % of MoE"
+ },
+ "7.4@sections/00_abstract.tex": {
+  "source": "data/stageB_window_ci.json",
+  "field": "differences_vs_moe.nestor_100m.mean_forgetting_pct",
+  "meaning": "NESTOR minus MoE, % of MoE"
+ },
+ "8@sections/00_abstract.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "freeze.C2_draws",
+  "meaning": "C2 draws"
+ },
+ "20@sections/00_abstract.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "derived: 2 x freeze.c1_draws_per_base = 20",
+  "meaning": "C1 draws D = 20"
+ },
+ "16@sections/01_introduction.tex": {
+  "source": "data/hardware_local.json",
+  "field": "note (text: 16376 MiB, marketed as 16 GB)",
+  "meaning": "16 GB memory of the local RTX 4080 SUPER"
+ },
+ "16@sections/07b_conclusion.tex": {
+  "source": "data/hardware_local.json",
+  "field": "note (text: 16376 MiB, marketed as 16 GB)",
+  "meaning": "16 GB memory of the local RTX 4080 SUPER"
+ },
+ "16@sections/00_abstract.tex": {
+  "source": "data/hardware_local.json",
+  "field": "note (text: 16376 MiB, marketed as 16 GB)",
+  "meaning": "16 GB memory of the local RTX 4080 SUPER"
+ },
+ "16@sections/07_discussion.tex": {
+  "source": "data/hardware_local.json",
+  "field": "note (text: 16376 MiB, marketed as 16 GB)",
+  "meaning": "16 GB memory of the local RTX 4080 SUPER"
+ },
+ "10@sections/07b_conclusion.tex": {
+  "source": "Section 4.1 / 5.1 (0.5B of the paper's 5B pretraining tokens)",
+  "field": "text",
+  "meaning": "10% of the paper's token budget"
+ },
+ "15@sections/A_prereg.tex": {
+  "source": "FREEZE.json (freeze record, 15 November 2026); pre-registration v1.3 sec. 7 (contingency); freeze/amendments.jsonl (15 records after A-2)",
+  "field": "text",
+  "meaning": "day of the freeze date (15 November 2026); the 15% contingency of the budget envelope; the 15 records of the amendment record after amendment A-2"
+ },
+ "72@sections/06_results.tex": {
+  "source": "theory-note erratum v5 (stored version 5bd9922d), item 7 verification report (stored copy e0e84209)",
+  "field": "text: disagreed with 4 of 72 off-record runs",
+  "meaning": "off-record runs of the frozen search"
+ },
+ "0.248@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "adaptation_96_steps.moe_full_runs_no_ckpt.wall_h[1]",
+  "meaning": "median wall time, MoE 96-step full and all-expert adaptation (G1, h)"
+ },
+ "54.0@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "adaptation_96_steps.moe_full_runs_no_ckpt.energy_wh[1]",
+  "meaning": "median board energy, MoE 96-step adaptation (Wh)"
+ },
+ "2.15@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "adaptation_96_steps.moe_full_runs_no_ckpt.wh_per_mtok_median",
+  "meaning": "median Wh per million training tokens, MoE"
+ },
+ "216@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "adaptation_96_steps.moe_full_runs_no_ckpt.mean_w_median",
+  "meaning": "median mean board power, MoE (W)"
+ },
+ "88@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "adaptation_96_steps.moe_full_runs_no_ckpt.util_median",
+  "meaning": "median GPU utilisation, MoE (%)"
+ },
+ "1.25@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "adaptation_96_steps.nestor_full_runs_ckpt.wall_h[1]",
+  "meaning": "median wall time, NESTOR 96-step full adaptation with checkpointing (h)"
+ },
+ "143.9@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "adaptation_96_steps.nestor_full_runs_ckpt.energy_wh[1]",
+  "meaning": "median board energy, NESTOR 96-step adaptation (Wh)"
+ },
+ "5.72@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "adaptation_96_steps.nestor_full_runs_ckpt.wh_per_mtok_median",
+  "meaning": "median Wh per million training tokens, NESTOR"
+ },
+ "115@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "adaptation_96_steps.nestor_full_runs_ckpt.mean_w_median",
+  "meaning": "median mean board power, NESTOR (W)"
+ },
+ "44@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "adaptation_96_steps.nestor_full_runs_ckpt.util_median",
+  "meaning": "median GPU utilisation, NESTOR (%)"
+ },
+ "2.7@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "derived: adaptation_96_steps.nestor_full_runs_ckpt.wh_per_mtok_median / adaptation_96_steps.moe_full_runs_no_ckpt.wh_per_mtok_median = 2.666",
+  "meaning": "NESTOR / MoE energy per training token"
+ },
+ "20.0@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "derived: sum of oom_attempts_G1[*].energy_wh = 20.01",
+  "meaning": "energy of the two G1 NESTOR attempts that ran out of memory (Wh)"
+ },
+ "34.3@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "derived: sum of stageC[*].energy_wh over kind train, outcome OOM = 34.34",
+  "meaning": "energy of the 8 context-extension attempts that ran out of memory (Wh)"
+ },
+ "9.88@sections/06b_edge.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "gates_total.G1.wall_h",
+  "meaning": "wall time of all G1 gate jobs (h)"
+ },
+ "1,625.5@sections/06b_edge.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "gates_total.G1.energy_wh",
+  "meaning": "board energy of all G1 gate jobs (Wh)"
+ },
+ "2.39@sections/06b_edge.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "gates_total.G2.wall_h",
+  "meaning": "wall time of all G2 gate jobs (h)"
+ },
+ "507.3@sections/06b_edge.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "gates_total.G2.energy_wh",
+  "meaning": "board energy of all G2 gate jobs (Wh)"
+ },
+ "32@sections/04_design.tex": {
+  "source": "pre-registration v1.3 version 8 (stored version 71ed1223), sec. 3.2 [DERIVED]",
+  "field": "derived: 8 draws x 2 optimizers x 2 subsets (H, L)",
+  "meaning": "number of C2 runs"
+ },
+ "16@sections/A_prereg.tex": {
+  "source": "pre-registration v1.3 version 8 (stored version 71ed1223), sec. 10 row P-16; confirm/queue_confirm.json (16 Muon C2 jobs); results/exploratory job list of the step-2 re-runs",
+  "field": "P-16",
+  "meaning": "decision P-16 (core-first schedule, staged analysis); the 16 Muon runs of C2 and their 16 exploratory re-runs (R-1)"
+ },
+ "0.545@sections/C_power_budget.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-1.values.p12",
+  "meaning": "G2-1 lookup power at beta = 0.75, D = 12, UCL80 noise"
+ },
+ "0.790@sections/C_power_budget.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-1.values.p20",
+  "meaning": "G2-1 lookup power at beta = 0.75, D = 20, UCL80 noise"
+ },
+ "0.750@sections/C_power_budget.tex": {
+  "source": "data/gate_record_G2.json",
+  "field": "gates.G2-1.values.UCL80",
+  "meaning": "upper 80% confidence limit of sigma_I"
+ },
+ "0.998@sections/C_power_budget.tex": {
+  "source": "sign-flip lookup signflip_lookup_v1.csv (stored version dcd535cd; sha256 0c2e36cc... = data/gate_record_G2.json gates.G2-1.record.lookup_sha256) [DERIVED]",
+  "field": "derived: power_sf_025 at D = 20, dist normal, linear interpolation in delta at (0.75 - 0.25) x Pbar / sigma_I = 0.4945 / 0.4343 = 1.139 (the G2-1 rule; it reproduces p12 and p20 of the record) = 0.9979",
+  "meaning": "G2-1 lookup power at the point estimate of sigma_I, D = 20"
+ },
+ "12@sections/C_power_budget.tex": {
+  "source": "pre-registration v1.3 version 8 (stored version 71ed1223), sec. 3.1 Number of draws (UCL80) [DERIVED]",
+  "field": "derived: D = 4 x n_d at n_d = 3",
+  "meaning": "number of C1 draws at n_d = 3"
+ },
+ "20@sections/C_power_budget.tex": {
+  "source": "pre-registration v1.3 version 8 (stored version 71ed1223), sec. 3.1 Number of draws (UCL80)",
+  "field": "D = 20 at n_d = 5",
+  "meaning": "number of C1 draws at n_d = 5"
+ },
+ "14.9@sections/F_compute.tex": {
+  "source": "data/fig_edge_values.json",
+  "field": "runs.moe.minutes",
+  "meaning": "duration of the traced MoE run of Figure fig:edge(b), minutes (g1_moe_b1_full_german_s101, segment m2)"
+ },
+ "218@sections/F_compute.tex": {
+  "source": "data/fig_edge_values.json",
+  "field": "runs.moe.mean_w",
+  "meaning": "mean board power of the traced MoE run, W"
+ },
+ "111@sections/F_compute.tex": {
+  "source": "data/fig_edge_values.json",
+  "field": "runs.nestor.mean_w",
+  "meaning": "mean board power of the traced NESTOR run, W (g1_nestor_full_german_s101, segment m2c)"
+ },
+ "43@sections/F_compute.tex": {
+  "source": "data/fig_edge_values.json",
+  "field": "runs.nestor.mean_util",
+  "meaning": "mean GPU utilisation of the traced NESTOR run, percent"
+ },
+ "2.2@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "oom_attempts_G1[1].energy_wh",
+  "meaning": "second G1 out-of-memory NESTOR attempt without checkpointing, Wh"
+ },
+ "17.8@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "oom_attempts_G1[0].energy_wh",
+  "meaning": "first G1 out-of-memory NESTOR attempt without checkpointing (17.781 Wh); the same rounded value is the sum of the four NESTOR stage-C attempts at 8k, stageC[5..8].energy_wh = 17.842 Wh"
+ },
+ "7.7@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "derived: stageC[14].energy_wh + stageC[15].energy_wh",
+  "meaning": "sum of the two NESTOR stage-C attempts at 16k (4.492 + 3.248 = 7.741 Wh); with 5.491 + 3.265 (MoE) and 17.842 (NESTOR 8k) it gives the 34.3 Wh of stage C"
+ },
+ "5.5@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "stageC[2].energy_wh",
+  "meaning": "MoE stage-C out-of-memory attempt at 8k, Wh"
+ },
+ "3.3@sections/F_compute.tex": {
+  "source": "data/edge_pre_freeze.json",
+  "field": "stageC[11].energy_wh",
+  "meaning": "MoE stage-C out-of-memory attempt at 16k, Wh"
+ },
+ "+7.4@sections/05_reproduction.tex": {
+  "source": "data/fig_repro_values.json",
+  "field": "pct_of_moe.nestor_100m.mean[0]",
+  "meaning": "NESTOR forgetting relative to MoE, four-corpus mean, percent"
+ },
+ "6.4@sections/05_reproduction.tex": {
+  "source": "data/fig_repro_values.json",
+  "field": "pct_of_moe.nestor_100m.mean[1]",
+  "meaning": "lower 95% window-bootstrap bound of the NESTOR relative forgetting"
+ },
+ "8.3@sections/05_reproduction.tex": {
+  "source": "data/fig_repro_values.json",
+  "field": "pct_of_moe.nestor_100m.mean[2]",
+  "meaning": "upper 95% window-bootstrap bound of the NESTOR relative forgetting"
+ },
+ "-14.8@sections/05_reproduction.tex": {
+  "source": "data/fig_repro_values.json",
+  "field": "pct_of_moe.nestor_100m.owm[1]",
+  "meaning": "lower 95% bound of NESTOR relative forgetting on mathematics"
+ },
+ "-8.7@sections/05_reproduction.tex": {
+  "source": "data/fig_repro_values.json",
+  "field": "pct_of_moe.nestor_100m.owm[2]",
+  "meaning": "upper 95% bound of NESTOR relative forgetting on mathematics"
+ },
+ "+21.1@sections/05_reproduction.tex": {
+  "source": "data/fig_repro_values.json",
+  "field": "paper_table6_pct_of_moe.dense",
+  "meaning": "dense forgetting relative to MoE in Table 6 of Chu et al. (2026), percent"
+ },
+ "-2.7@sections/05_reproduction.tex": {
+  "source": "data/fig_repro_values.json",
+  "field": "paper_table6_pct_of_moe.nestor",
+  "meaning": "NESTOR forgetting relative to MoE in Table 6 of Chu et al. (2026), percent"
+ },
+ "1,920@sections/04_design.tex": {
+  "source": "data/fig_arch_facts.json",
+  "field": "facts[\"dense.mlp_hidden\"].value",
+  "meaning": "SwiGLU MLP width of the dense model"
+ },
+ "640@sections/04_design.tex": {
+  "source": "data/fig_arch_facts.json",
+  "field": "facts[\"moe.mlp_hidden\"].value",
+  "meaning": "SwiGLU width of one MoE expert"
+ },
+ "0.14@sections/04_design.tex": {
+  "source": "data/fig_arch_facts.json",
+  "field": "derived: facts[\"dense.stored_params\"].value / 1e9",
+  "meaning": "dense parameters, 141,011,709 = 0.14B"
+ },
+ "0.09@sections/05_reproduction.tex": {
+  "source": "scripts/fig_gap.py (axis limit) and gap note (version 7f4a9295)",
+  "field": "derived: figure y-range",
+  "meaning": "the training loss of the first 0.09B tokens lies above the plotted range of Figure fig:gap(a); the gap note puts the opening of the gap at 0.07-0.09B tokens"
+ },
+ "1.759@sections/D_entanglement.tex": {
+  "source": "data/nestor_books_feasibility.json",
+  "field": "cells.code.tried[0].per_f[\"0.333333\"].median",
+  "meaning": "NESTOR-books record: median predicted contrast of the 1,000 matched pairs at f = 1/3, code stream"
+ },
+ "1.884@sections/D_entanglement.tex": {
+  "source": "data/nestor_books_feasibility.json",
+  "field": "cells.pycode.tried[0].per_f[\"0.333333\"].median",
+  "meaning": "same, Python-code stream, f = 1/3"
+ },
+ "1.068@sections/D_entanglement.tex": {
+  "source": "data/nestor_books_feasibility.json",
+  "field": "cells.code.tried[0].per_f[\"0.500000\"].median",
+  "meaning": "same, code stream, f = 1/2"
+ },
+ "1.160@sections/D_entanglement.tex": {
+  "source": "data/nestor_books_feasibility.json",
+  "field": "cells.pycode.tried[0].per_f[\"0.500000\"].median",
+  "meaning": "same, Python-code stream, f = 1/2"
+ },
+ "1.1151": {
+  "source": "data/hours_outside_state.json",
+  "field": "subtotals[\"D-1\"]",
+  "meaning": "GPU-hours outside the queue state from deviation D-1 (failed attempt and GPU check of A-1)"
+ },
+ "1.1047": {
+  "source": "data/hours_outside_state.json",
+  "field": "hours.failed_attempt_d2_A",
+  "meaning": "GPU-hours of the failed first attempt of c1_moe_b1_books_d2_A (deviation D-1)"
+ },
+ "0.0104": {
+  "source": "data/hours_outside_state.json",
+  "field": "hours.gpu_check_A1",
+  "meaning": "GPU-hours of the GPU check of amendment A-1 (deviation D-1, addendum 1, item 2)"
+ },
+ "0.2371": {
+  "source": "data/hours_outside_state.json",
+  "field": "hours.killed_attempt_d10_B",
+  "meaning": "GPU-hours of the attempt of c1_moe_b2_books_d10_B ended by the tool-host restart (incident I-1)"
+ },
+ "1.3522": {
+  "source": "data/hours_outside_state.json",
+  "field": "subtotals[\"D-1+I-1\"]",
+  "meaning": "GPU-hours outside the queue state after deviation D-1 and incident I-1, before the GPU check of amendment A-2"
+ },
+ "1.3646": {
+  "source": "data/hours_outside_state.json",
+  "field": "hours (sum of the items with records D-1, I-1 and A-2: failed_attempt_d2_A, gpu_check_A1, killed_attempt_d10_B, gpu_check_A2)",
+  "meaning": "GPU-hours of the core outside the queue state, deviation D-1 and amendment A-1, incident I-1 and amendment A-2: 1.1047 + 0.0104 + 0.2371 + 0.0124 (COMPUTE.used, Appendix C)"
+ },
+ "0.0124": {
+  "source": "data/hours_outside_state.json",
+  "field": "hours.gpu_check_A2",
+  "meaning": "GPU check of amendment A-2: wall time 44.5 s of README_A2 step 4(ii) / 3600 (deviation record, A-2 install record, rule 1)"
+ },
+ "0.0007": {
+  "source": "data/gate_record_G1.json",
+  "field": "derived: F_levels_released.g1_moe_b1_full_german_s102.F.dclm.F - F_levels_released.g1_moe_b1_full_german_s101.F.dclm.F = 0.16700 - 0.16627 = 0.00073",
+  "meaning": "DCLM forgetting difference between the two data seeds (101, 102) of the G1 full-adaptation cell MoE base 1, German (Section 5.1, MF-8)"
+ },
+ "0.0019": {
+  "source": "data/gate_record_G1.json",
+  "field": "derived: F_levels_released.g1_moe_b1_full_math_s101.F.dclm.F - F_levels_released.g1_moe_b1_full_math_s102.F.dclm.F = 0.04369 - 0.04177 = 0.00192",
+  "meaning": "DCLM forgetting difference between the two data seeds (101, 102) of the G1 full-adaptation cell MoE base 1, mathematics (Section 5.1, MF-8)"
+ },
+ "0000": {
+  "source": "author metadata (user decision, 2026-11-16)",
+  "field": "ORCID 0000-0001-9418-0943",
+  "meaning": "part of the corresponding author's ORCID, printed on the title page"
+ },
+ "0001": {
+  "source": "author metadata (user decision, 2026-11-16)",
+  "field": "ORCID 0000-0001-9418-0943",
+  "meaning": "part of the corresponding author's ORCID, printed on the title page"
+ },
+ "9418": {
+  "source": "author metadata (user decision, 2026-11-16)",
+  "field": "ORCID 0000-0001-9418-0943",
+  "meaning": "part of the corresponding author's ORCID, printed on the title page"
+ },
+ "0943": {
+  "source": "author metadata (user decision, 2026-11-16)",
+  "field": "ORCID 0000-0001-9418-0943",
+  "meaning": "part of the corresponding author's ORCID, printed on the title page"
+ },
+ "03037": {
+  "source": "author metadata (user decision, 2026-11-16)",
+  "field": "postal code of the affiliation",
+  "meaning": "Kyiv National University of Construction and Architecture, 31 Air Force Avenue, Kyiv, 03037, Ukraine"
+ },
+ "0.167@sections/05_reproduction.tex": {
+  "source": "data/gap_trajectory.json",
+  "field": "gaps.N_minus_Mavg.last_half.mean_ci95_block_bootstrap[1]",
+  "meaning": "upper end of the 95% block-bootstrap interval of the last-half mean NESTOR-MoE training-loss gap (0.16680), Figure 3 caption"
+ },
+ "0.51@sections/F_compute.tex": {
+  "source": "figures/fig_edge_values.json (written by scripts/fig_edge_extract.py from the power log)",
+  "field": "runs.nestor.mean_w / runs.moe.mean_w = 110.853 / 217.508 = 0.5097",
+  "meaning": "mean board power of the NESTOR run relative to the MoE run of Figure 7(b), caption of fig:edge"
+ },
+ "5.3@sections/F_compute.tex": {
+  "source": "figures/fig_edge_values.json (written by scripts/fig_edge_extract.py from the power log)",
+  "field": "runs.nestor.minutes / runs.moe.minutes = 79.112 / 14.887 = 5.3140",
+  "meaning": "duration of the NESTOR run relative to the MoE run of Figure 7(b), caption of fig:edge"
+ },
+ "8,508@sections/06b_edge.tex": {
+  "source": "results/analysis_core/analysis_confirm.json (sha256 859849244c70)",
+  "field": "blocks.EDGE.by_type['MoE|C2 Muon'].tokens_per_s_end_to_end.median",
+  "meaning": "median end-to-end throughput of the 8-step C2 Muon runs, tokens per second (8507.75); Table 7 caption (item S3, v1.6.1)"
+ },
+ "0.023@sections/A_prereg.tex": {
+  "source": "results/analysis_core/analysis_confirm.json (sha256 859849244c70)",
+  "field": "C2.manipulation_check.per_draw[*].D_muon_step8, minimum over the five retained draws",
+  "meaning": "smallest D_Muon at step 8 (0.0226); Appendix A, unreported quantity (item M13, v1.6.1)"
+ },
+ "0.091@sections/A_prereg.tex": {
+  "source": "results/analysis_core/analysis_confirm.json (sha256 859849244c70)",
+  "field": "C2.manipulation_check.per_draw[*].D_muon_step8, maximum over the five retained draws",
+  "meaning": "largest D_Muon at step 8 (0.0907); Appendix A, unreported quantity (item M13, v1.6.1)"
+ },
+ "8.991@tables/core_e1.tex": {
+  "source": "results/analysis_core/analysis_confirm.json (sha256 859849244c70)",
+  "field": "E1.c2_moe_b1_d3_sgd_H.ema_max_after_warmup",
+  "meaning": "maximum EMA(0.1) of the training loss after warm-up (8.9910), run c2_moe_b1_d3_sgd_H; Table 20 (item S1, v1.6.1)"
+ },
+ "8.385@tables/core_e1.tex": {
+  "source": "results/analysis_core/analysis_confirm.json (sha256 859849244c70)",
+  "field": "E1.c2_moe_b1_d3_sgd_H.step1_loss",
+  "meaning": "step-1 training loss (8.3852), run c2_moe_b1_d3_sgd_H; Table 20 (item S1, v1.6.1)"
+ },
+ "9.143@tables/core_e1.tex": {
+  "source": "results/analysis_core/analysis_confirm.json (sha256 859849244c70)",
+  "field": "E1.c2_moe_b2_d6_sgd_H.ema_max_after_warmup",
+  "meaning": "maximum EMA(0.1) of the training loss after warm-up (9.1426), run c2_moe_b2_d6_sgd_H; Table 20 (item S1, v1.6.1)"
+ },
+ "8.441@tables/core_e1.tex": {
+  "source": "results/analysis_core/analysis_confirm.json (sha256 859849244c70)",
+  "field": "E1.c2_moe_b2_d6_sgd_H.step1_loss",
+  "meaning": "step-1 training loss (8.4410), run c2_moe_b2_d6_sgd_H; Table 20 (item S1, v1.6.1)"
+ },
+ "9.035@tables/core_e1.tex": {
+  "source": "results/analysis_core/analysis_confirm.json (sha256 859849244c70)",
+  "field": "E1.c2_moe_b2_d7_sgd_H.ema_max_after_warmup",
+  "meaning": "maximum EMA(0.1) of the training loss after warm-up (9.0347), run c2_moe_b2_d7_sgd_H; Table 20 (item S1, v1.6.1)"
+ },
+ "8.489@tables/core_e1.tex": {
+  "source": "results/analysis_core/analysis_confirm.json (sha256 859849244c70)",
+  "field": "E1.c2_moe_b2_d7_sgd_H.step1_loss",
+  "meaning": "step-1 training loss (8.4886), run c2_moe_b2_d7_sgd_H; Table 20 (item S1, v1.6.1)"
+ },
+ "12@tables/core_e1.tex": {
+  "source": "results/analysis_core/analysis_confirm.json (sha256 859849244c70)",
+  "field": "E1.c2_moe_b1_d3_sgd_H.reasons[0] (step of the EMA maximum)",
+  "meaning": "step at which clause (ii) of E1 fired, run c2_moe_b1_d3_sgd_H; Table 20 (S1, v1.6.1)"
+ },
+ "15@tables/core_e1.tex": {
+  "source": "results/analysis_core/analysis_confirm.json (sha256 859849244c70)",
+  "field": "E1.c2_moe_b2_d6_sgd_H.reasons[0]; E1.c2_moe_b2_d7_sgd_H.reasons[0] (step of the EMA maximum)",
+  "meaning": "step at which clause (ii) of E1 fired, runs c2_moe_b2_d6_sgd_H and c2_moe_b2_d7_sgd_H; Table 20 (S1, v1.6.1)"
+ },
+ "10@tables/core_e1.tex": {
+  "source": "confirm/queue_confirm.json (frozen queue, FREEZE.json)",
+  "field": "jobs[*].warmup of the 32 C2 jobs (jobs[50], jobs[62], jobs[66] for the three runs)",
+  "meaning": "warm-up length in steps; clause (ii) of E1 applies after it; Table 20 caption (S1, v1.6.1)"
+ },
+ "24@tables/core_e1.tex": {
+  "source": "results/analysis_core/analysis_confirm.json (sha256 859849244c70)",
+  "field": "E1.c2_moe_b1_d3_sgd_H.stop_step; E1.c2_moe_b2_d6_sgd_H.stop_step; E1.c2_moe_b2_d7_sgd_H.stop_step",
+  "meaning": "stop step of the three SGD runs; Table 20 caption (S1, v1.6.1)"
+ },
+ "1.53@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "memory_pytorch.saving_gib",
+  "meaning": "peak allocated memory saved by the expert-subset runs against full adaptation of MoE base 1 (GiB)"
+ },
+ "10,502@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "board_memory.core_subset.median_mib",
+  "meaning": "median board-memory peak of the 40 expert-subset runs of C1 (MiB)"
+ },
+ "9,855@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "board_memory.core_subset.min_mib",
+  "meaning": "lowest board-memory peak of the same runs (MiB)"
+ },
+ "15,977@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "board_memory.core_subset.max_mib",
+  "meaning": "highest board-memory peak of the same runs (MiB)"
+ },
+ "13,423@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "board_memory.prefreeze_full_max_mib",
+  "meaning": "highest board-memory peak of the full adaptations measured before the freeze (MiB)"
+ },
+ "13.1@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "board_memory.prefreeze_full_max_gib",
+  "meaning": "the same peak in GiB, as in Table 17"
+ },
+ "16.7@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "memory_pytorch.saving_pct",
+  "meaning": "memory saving as a percentage of the full adaptation"
+ },
+ "17.77@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "update_size.share_pct",
+  "meaning": "share of the parameter elements changed by one expert-subset run (%)"
+ },
+ "288@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "update_size.experts_total",
+  "meaning": "experts of the MoE model, 12 MoE layers of 24"
+ },
+ "373,387,389@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "update_size.elements_total",
+  "meaning": "parameter elements of MoE base 1 (stored parameters)"
+ },
+ "66,355,200@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "update_size.updated_elements",
+  "meaning": "parameter elements changed by each expert-subset run"
+ },
+ "7.64@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "memory_pytorch.core_subset_and_c2.alloc_gib_max",
+  "meaning": "peak allocated memory of every expert-subset run of C1 and C2, the same as that of the all-expert adaptations (all_expert_moe_b1.alloc_gib_max) (GiB)"
+ },
+ "8.14@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "memory_pytorch.core_subset_and_c2.reserved_gib_max",
+  "meaning": "peak reserved memory of the same 72 runs (GiB)"
+ },
+ "9.17@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "memory_pytorch.full_moe_b1.alloc_gib_max",
+  "meaning": "peak allocated memory of the four full adaptations of MoE base 1 in gate G1 (GiB)"
+ },
+ "9.69@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "memory_pytorch.full_moe_b1.reserved_gib_max",
+  "meaning": "peak reserved memory of the same four runs (GiB)"
+ },
+ "72@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "update_size.runs",
+  "meaning": "expert-subset runs of C1 and C2 (40 + 32); also the 72 experts each run updates, 6 per layer in 12 layers (update_size.updated_experts)"
+ },
+ "1.5309@sections/F_compute.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "memory_pytorch.saving_gib",
+  "meaning": "peak allocated memory saved against full adaptation (GiB)"
+ },
+ "7.6382@sections/F_compute.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "memory_pytorch.core_subset_and_c2.alloc_gib_max",
+  "meaning": "peak allocated memory of the all-expert, G1 subset A/A and core runs, identical in all three (GiB)"
+ },
+ "8.1211@sections/F_compute.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "memory_pytorch.all_expert_moe_b1.reserved_gib_max",
+  "meaning": "peak reserved memory of the two all-expert adaptations (GiB)"
+ },
+ "8.1387@sections/F_compute.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "memory_pytorch.core_subset_and_c2.reserved_gib_max",
+  "meaning": "peak reserved memory of the G1 subset A/A runs and of the 72 core runs (GiB)"
+ },
+ "9.1691@sections/F_compute.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "memory_pytorch.full_moe_b1.alloc_gib_max",
+  "meaning": "peak allocated memory of the four full adaptations of MoE base 1 in gate G1 (GiB)"
+ },
+ "9.6895@sections/F_compute.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "memory_pytorch.full_moe_b1.reserved_gib_max",
+  "meaning": "peak reserved memory of the same runs (GiB)"
+ },
+ "16.7@sections/F_compute.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "memory_pytorch.saving_pct",
+  "meaning": "memory saving as a percentage of the full adaptation"
+ },
+ "72@sections/F_compute.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "memory_pytorch.core_subset_and_c2.runs",
+  "meaning": "core runs of C1 and C2 with expert-subset updates"
+ },
+ "16@sections/F_compute.tex": {
+  "source": "data/hardware_local.json; data/stageC_results.json; pre-registration v1.3 version 11 (frozen; stored version 4a7ee271), sec. 7 row Forecast inputs",
+  "field": "derived: memory_total_MiB = 16376, marketed as 16 GB; rows[1].S = 16384 (16k); 16 drive runs of the forecast inputs",
+  "meaning": "16 GB memory of the local GPU (Figure 7 caption), the 16k context of stage C and the 16 drive runs of the probe forecast inputs"
+ },
+ "0.0006@sections/07_discussion.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "decay_rule.max_abs_F_WD_nats",
+  "meaning": "largest absolute DCLM loss change caused by weight decay alone (nats)"
+ },
+ "20@sections/07_discussion.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "decay_rule.n_I",
+  "meaning": "draws behind the log-ratio mean in the registered decay rule"
+ },
+ "1@sections/08_declarations.tex": {
+  "source": "pre-registration v1.3 version 8 (stored version 71ed1223), sec. 10 row P-1",
+  "field": "text",
+  "meaning": "decision label P-1, not a quantity"
+ },
+ "40@sections/A_prereg.tex": {
+  "source": "logs/chain6b.log (freeze verified 2026-11-15T09:40:48 local time, UTC+2); logs/queue_confirm/queue.log (first job 2026-11-15 09:41:11 local time)",
+  "field": "text",
+  "meaning": "digits of the clock times 07:40:48 and 07:41:11 UTC, not quantities"
+ },
+ "41@sections/A_prereg.tex": {
+  "source": "logs/chain6b.log (freeze verified 2026-11-15T09:40:48 local time, UTC+2); logs/queue_confirm/queue.log (first job 2026-11-15 09:41:11 local time)",
+  "field": "text",
+  "meaning": "digits of the clock times 07:40:48 and 07:41:11 UTC, not quantities"
+ },
+ "48@sections/A_prereg.tex": {
+  "source": "logs/chain6b.log (freeze verified 2026-11-15T09:40:48 local time, UTC+2); logs/queue_confirm/queue.log (first job 2026-11-15 09:41:11 local time)",
+  "field": "text",
+  "meaning": "digits of the clock times 07:40:48 and 07:41:11 UTC, not quantities"
+ },
+ "500@sections/A_prereg.tex": {
+  "source": "data/fig_arch_facts.json",
+  "field": "facts[\"protocol.eval_windows\"].value (text: 500 windows of 4,096 tokens per stream)",
+  "meaning": "500 DCLM evaluation windows of the equivalence run at theta_0"
+ },
+ "2026@main.tex": {
+  "source": "acnsart.cls, option [jec]; \\setjournalyear in main.tex",
+  "field": "text",
+  "meaning": "journal year in the running head, not a quantity"
+ },
+ "18@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "update_size.share_pct",
+  "meaning": "share of the parameter elements changed by one expert-subset run, rounded to a whole percent (S3, v1.6.4)"
+ },
+ "0.004@sections/07_discussion.tex": {
+  "source": "results/analysis_core/analysis_confirm.json (sha256 859849244c70)",
+  "field": "min of C1.statistics.raw.draws[base moe_b1, d 1-6].F[*].F (24 values; 0.004416)",
+  "meaning": "smallest forgetting of the adapted runs in the six draws that carry the weight-decay-only control (nats; S1, v1.6.4)"
+ },
+ "0.059@sections/07_discussion.tex": {
+  "source": "results/analysis_core/analysis_confirm.json (sha256 859849244c70)",
+  "field": "max of C1.statistics.raw.draws[base moe_b1, d 1-6].F[*].F (24 values; 0.058947)",
+  "meaning": "largest forgetting of the adapted runs in the same draws (nats; S1, v1.6.4)"
+ },
+ "1.1151@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.full.german_gain[0]",
+  "meaning": "German gain (fall of the German loss, nats) of full adaptation, run g1_moe_b1_full_german_s101, Table tab:tradeoff"
+ },
+ "1.1149@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.full.german_gain[1]",
+  "meaning": "German gain (fall of the German loss, nats) of full adaptation, run g1_moe_b1_full_german_s102, Table tab:tradeoff"
+ },
+ "0.1663@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.full.dclm_F[0]",
+  "meaning": "DCLM forgetting (nats) of full adaptation, run g1_moe_b1_full_german_s101, Table tab:tradeoff"
+ },
+ "0.1670@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.full.dclm_F[1]",
+  "meaning": "DCLM forgetting (nats) of full adaptation, run g1_moe_b1_full_german_s102, Table tab:tradeoff"
+ },
+ "0.149@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.full.F_per_gain[0]",
+  "meaning": "DCLM forgetting per unit German gain of full adaptation, run g1_moe_b1_full_german_s101, Table tab:tradeoff"
+ },
+ "0.150@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.full.F_per_gain[1]",
+  "meaning": "DCLM forgetting per unit German gain of full adaptation, run g1_moe_b1_full_german_s102, Table tab:tradeoff"
+ },
+ "0.8393@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.all_experts.german_gain[0]",
+  "meaning": "German gain (fall of the German loss, nats) of all-expert adaptation, run g1_moe_b1_eall_german_s101, Table tab:tradeoff"
+ },
+ "0.8388@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.all_experts.german_gain[1]",
+  "meaning": "German gain (fall of the German loss, nats) of all-expert adaptation, run g1_moe_b1_eall_german_s102, Table tab:tradeoff"
+ },
+ "0.1058@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.all_experts.dclm_F[0]",
+  "meaning": "DCLM forgetting (nats) of all-expert adaptation, run g1_moe_b1_eall_german_s101, Table tab:tradeoff"
+ },
+ "0.1061@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.all_experts.dclm_F[1]",
+  "meaning": "DCLM forgetting (nats) of all-expert adaptation, run g1_moe_b1_eall_german_s102, Table tab:tradeoff"
+ },
+ "0.126@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.all_experts.F_per_gain[0]",
+  "meaning": "DCLM forgetting per unit German gain of all-expert adaptation, run g1_moe_b1_eall_german_s101 (both runs round to this value), Table tab:tradeoff"
+ },
+ "0.3535@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.subset_q14.german_gain[0]",
+  "meaning": "German gain (fall of the German loss, nats) of expert-subset adaptation (q = 1/4), run g1_moe_b1_aa1_R1, Table tab:tradeoff"
+ },
+ "0.3720@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.subset_q14.german_gain[1]",
+  "meaning": "German gain (fall of the German loss, nats) of expert-subset adaptation (q = 1/4), run g1_moe_b1_aa1_R2, Table tab:tradeoff"
+ },
+ "0.0289@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.subset_q14.dclm_F[0]",
+  "meaning": "DCLM forgetting (nats) of expert-subset adaptation (q = 1/4), run g1_moe_b1_aa1_R1, Table tab:tradeoff"
+ },
+ "0.0287@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.subset_q14.dclm_F[1]",
+  "meaning": "DCLM forgetting (nats) of expert-subset adaptation (q = 1/4), run g1_moe_b1_aa1_R2, Table tab:tradeoff"
+ },
+ "0.082@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.subset_q14.F_per_gain[0]",
+  "meaning": "DCLM forgetting per unit German gain of expert-subset adaptation (q = 1/4), run g1_moe_b1_aa1_R1, Table tab:tradeoff"
+ },
+ "0.077@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.subset_q14.F_per_gain[1]",
+  "meaning": "DCLM forgetting per unit German gain of expert-subset adaptation (q = 1/4), run g1_moe_b1_aa1_R2, Table tab:tradeoff"
+ },
+ "372,756,605@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.full.updated_elements",
+  "meaning": "parameter elements changed by full adaptation: all elements except the 630,784 of the frozen routers, Table tab:tradeoff"
+ },
+ "99.8@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.full.updated_pct",
+  "meaning": "share of the elements changed by full adaptation (%), Table tab:tradeoff"
+ },
+ "265,420,800@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.all_experts.updated_elements",
+  "meaning": "parameter elements changed by all-expert adaptation (288 experts), Table tab:tradeoff"
+ },
+ "71.1@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.all_experts.updated_pct",
+  "meaning": "share of the elements changed by all-expert adaptation (%), Table tab:tradeoff"
+ },
+ "17.8@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "edge_tradeoff.rows.subset_q14.updated_pct",
+  "meaning": "share of the elements changed by expert-subset adaptation (%), Table tab:tradeoff"
+ },
+ "4@sections/06b_edge.tex": {
+  "source": "data/supplementary_values.json",
+  "field": "derived: update_size.updated_experts_per_layer / update_size.experts_per_layer = 6/24",
+  "meaning": "denominator of q = 1/4, the subset fraction of the G1 A/A runs (6 of 24 experts per layer)"
+ },
+ "96@sections/06b_edge.tex": {
+  "source": "data/fig_arch_facts.json",
+  "field": "facts[\"protocol.steps_tokens_context\"].value (text: 96 steps of 262,144 tokens at 4k context)",
+  "meaning": "steps of every adaptation run, the gate runs of Table tab:tradeoff included"
+ },
+ "500@sections/06b_edge.tex": {
+  "source": "data/fig_arch_facts.json",
+  "field": "facts[\"protocol.eval_windows\"].value (text: 500 windows of 4,096 tokens per stream)",
+  "meaning": "evaluation windows per corpus of the gate runs of Table tab:tradeoff"
+ },
+ "0.5@tables/core_variants.tex": {
+  "source": "registered analysis code (_c1_secondary in analyze_confirm.py: C1b_refuted = hi < 0.5 or lo > 2.0); pre-registration v1.2 (stored copy e9dcf52b), sec. 9 item 2",
+  "field": "text: refuted if the 95% CI of the pooled ratio lies entirely outside [0.5, 2]",
+  "meaning": "lower limit of the registered C1-b band (caption of Table tab:corevariants)"
+ },
+ "1.2@tables/core_variants.tex": {
+  "source": "pre-registration v1.2 (stored copy e9dcf52b) and v1.3 (frozen, stored copy a9be43eb)",
+  "field": "text",
+  "meaning": "version number of the pre-registration, not a quantity"
+ },
+ "1.3@tables/core_variants.tex": {
+  "source": "pre-registration v1.3 (frozen, stored version 4a7ee271)",
+  "field": "text",
+  "meaning": "version number of the pre-registration, not a quantity"
+ },
+ "9@tables/core_variants.tex": {
+  "source": "pre-registration v1.2 (stored copy e9dcf52b), sec. 9 Secondary analyses",
+  "field": "text",
+  "meaning": "section number of the pre-registration, not a quantity"
+ },
+ "0.254@sections/06_results.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.I_sym_minus_I_rand.lo",
+  "meaning": "lower 95% t bound of the mean excess I_sym - I_rand over the 20 draws (exploratory)"
+ },
+ "0.303@sections/06_results.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.I_sym_minus_I_rand.mean",
+  "meaning": "mean excess I_sym - I_rand over the 20 draws (exploratory)"
+ },
+ "0.353@sections/06_results.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.I_sym_minus_I_rand.hi",
+  "meaning": "upper 95% t bound of the mean excess I_sym - I_rand over the 20 draws (exploratory)"
+ },
+ "0.777@sections/06_results.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.share_rand_over_sym",
+  "meaning": "random over symmetrized mean crossover over the 20 draws (exploratory)"
+ },
+ "0.993@sections/06_results.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.beta_rand.overall.lo",
+  "meaning": "lower bound of beta_rand over the 20 draws (test inversion; exploratory)"
+ },
+ "1.037@sections/06_results.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.beta_rand.overall.beta_hat",
+  "meaning": "beta_rand over the 20 draws (exploratory)"
+ },
+ "1.089@sections/06_results.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.beta_rand.overall.hi",
+  "meaning": "upper bound of beta_rand over the 20 draws (test inversion; exploratory)"
+ },
+ "1.058@sections/06_results.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.mean_I.rand",
+  "meaning": "mean random-direction crossover over the 20 draws (exploratory)"
+ },
+ "1.362@sections/06_results.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.mean_I.sym",
+  "meaning": "mean symmetrized learned crossover over the 20 draws (registered values)"
+ },
+ "1.684@sections/06_results.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.mean_I.raw",
+  "meaning": "mean raw learned crossover over the 20 draws (registered values)"
+ },
+ "20@sections/06_results.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.n_draws",
+  "meaning": "draws of the exploratory random-direction control (all 20 C1 draws)"
+ },
+ "20@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.n_draws",
+  "meaning": "draws of the exploratory random-direction control (all 20 C1 draws)"
+ },
+ "6@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.n_registered_control_draws",
+  "meaning": "registered control draws d = 1 to 6 of base 1"
+ },
+ "14@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.n_new_draws",
+  "meaning": "draws added by the extension"
+ },
+ "10@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.beta_rand.per_base.moe_b1.D",
+  "meaning": "draws per base (d = 7 to 10 of base 1, d = 1 to 10 of base 2; ten draws of each base)"
+ },
+ "2,048,000@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.tokens_per_corpus.code",
+  "meaning": "tokens per corpus (code and mathematics), registered evaluation setting"
+ },
+ "4,096@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.window_tokens",
+  "meaning": "tokens per evaluation window"
+ },
+ "28@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.n_evaluations",
+  "meaning": "evaluations of the extension (14 draws x subsets A and B)"
+ },
+ "2.7928@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.gpu_hours",
+  "meaning": "GPU-hours of the 28 evaluations"
+ },
+ "0.819@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.per_base.moe_b1.share_rand_over_sym",
+  "meaning": "random over symmetrized mean crossover, base 1"
+ },
+ "0.243@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.per_base.moe_b1.I_sym_minus_I_rand.mean",
+  "meaning": "mean excess I_sym - I_rand, base 1"
+ },
+ "0.162@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.per_base.moe_b1.I_sym_minus_I_rand.lo",
+  "meaning": "lower 95% t bound, base 1"
+ },
+ "0.324@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.per_base.moe_b1.I_sym_minus_I_rand.hi",
+  "meaning": "upper 95% t bound, base 1 (0.3235); also the lower bound of base 2 (0.3239), same rounding"
+ },
+ "0.737@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.per_base.moe_b2.share_rand_over_sym",
+  "meaning": "random over symmetrized mean crossover, base 2"
+ },
+ "0.364@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.per_base.moe_b2.I_sym_minus_I_rand.mean",
+  "meaning": "mean excess I_sym - I_rand, base 2"
+ },
+ "0.403@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.per_base.moe_b2.I_sym_minus_I_rand.hi",
+  "meaning": "upper 95% t bound, base 2"
+ },
+ "1.092@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.beta_rand.per_base.moe_b1.beta_hat",
+  "meaning": "beta_rand, base 1"
+ },
+ "1.024@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.beta_rand.per_base.moe_b1.lo",
+  "meaning": "lower bound of beta_rand, base 1"
+ },
+ "1.165@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.beta_rand.per_base.moe_b1.hi",
+  "meaning": "upper bound of beta_rand, base 1"
+ },
+ "0.986@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.beta_rand.per_base.moe_b2.beta_hat",
+  "meaning": "beta_rand, base 2"
+ },
+ "0.933@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.beta_rand.per_base.moe_b2.lo",
+  "meaning": "lower bound of beta_rand, base 2"
+ },
+ "1.050@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "randdir_20.beta_rand.per_base.moe_b2.hi",
+  "meaning": "upper bound of beta_rand, base 2 (1.0496)"
+ },
+ "9700@sections/H_exploratory.tex": {
+  "source": "results/exploratory/queue_randx.json (job list, SHA-256 7dc8ccc71c58...)",
+  "field": "seed_rule (text: 9700 + 100(base-1) + 2d + (0 for A, 1 for B); checked for all 28 jobs)",
+  "meaning": "constant of the seed rule 9700 + 100(b-1) + 2d + s"
+ },
+ "100@sections/H_exploratory.tex": {
+  "source": "results/exploratory/queue_randx.json (job list, SHA-256 7dc8ccc71c58...)",
+  "field": "seed_rule (text: 9700 + 100(base-1) + 2d + (0 for A, 1 for B); checked for all 28 jobs)",
+  "meaning": "base coefficient of the seed rule"
+ },
+ "+2@sections/H_exploratory.tex": {
+  "source": "results/exploratory/queue_randx.json (job list, SHA-256 7dc8ccc71c58...)",
+  "field": "seed_rule (text: 9700 + 100(base-1) + 2d + (0 for A, 1 for B); checked for all 28 jobs)",
+  "meaning": "draw coefficient of the seed rule (+2d)"
+ },
+ "0@sections/H_exploratory.tex": {
+  "source": "results/exploratory/queue_randx.json (job list, SHA-256 7dc8ccc71c58...)",
+  "field": "text (seed rule, step indices and learning rate; see meaning)",
+  "meaning": "seed offset s = 0 for subset A; learning rate 0 of the first optimizer step under the warm-up; D_Muon = 0 of the exact-polar statement"
+ },
+ "1@sections/H_exploratory.tex": {
+  "source": "results/exploratory/queue_randx.json (job list, SHA-256 7dc8ccc71c58...)",
+  "field": "text (seed rule, step indices and learning rate; see meaning)",
+  "meaning": "base index b = 1, draw index d = 1, seed offset s = 1 for subset B, step 1 and draws 1 to 4 of base 1"
+ },
+ "7@sections/H_exploratory.tex": {
+  "source": "results/exploratory/queue_randx.json (job list, SHA-256 7dc8ccc71c58...)",
+  "field": "seed_rule (text: 9700 + 100(base-1) + 2d + (0 for A, 1 for B); checked for all 28 jobs)",
+  "meaning": "first added draw of base 1 (d = 7)"
+ },
+ "2@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "text (seed rule, step indices and learning rate; see meaning)",
+  "meaning": "base index b = 2; step 2, the first non-zero update; two runs per draw"
+ },
+ "256@sections/H_exploratory.tex": {
+  "source": "text",
+  "field": "text (SHA-256)",
+  "meaning": "name of the hash function, not a quantity"
+ },
+ "500@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "derived: tokens_per_corpus.code / window_tokens = 2048000 / 4096",
+  "meaning": "evaluation windows per corpus"
+ },
+ "95@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "per_base.moe_b1.I_sym_minus_I_rand.level (0.95)",
+  "meaning": "confidence level of the t intervals (95%)"
+ },
+ "-0.034@sections/A_prereg.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.min",
+  "meaning": "smallest D_Muon after step 2 over the eight draws (exploratory re-run; -0.0342)"
+ },
+ "0.055@sections/A_prereg.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.max",
+  "meaning": "largest D_Muon after step 2 over the eight draws (0.0548)"
+ },
+ "0.0548@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.per_draw[0].D_muon_step2",
+  "meaning": "D_Muon after step 2, base 1 draw 1 (exploratory)"
+ },
+ "0.0373@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.per_draw[1].D_muon_step2",
+  "meaning": "D_Muon after step 2, base 1 draw 2 (exploratory)"
+ },
+ "0.0199@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.per_draw[2].D_muon_step2",
+  "meaning": "D_Muon after step 2, base 1 draw 3 (exploratory)"
+ },
+ "0.0387@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.per_draw[3].D_muon_step2",
+  "meaning": "D_Muon after step 2, base 1 draw 4 (exploratory)"
+ },
+ "-0.0342@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.per_draw[4].D_muon_step2",
+  "meaning": "D_Muon after step 2, base 2 draw 5 (exploratory)"
+ },
+ "0.0045@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.per_draw[5].D_muon_step2",
+  "meaning": "D_Muon after step 2, base 2 draw 6 (exploratory)"
+ },
+ "-0.0217@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.per_draw[6].D_muon_step2",
+  "meaning": "D_Muon after step 2, base 2 draw 7 (exploratory)"
+ },
+ "0.0264@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.per_draw[7].D_muon_step2",
+  "meaning": "D_Muon after step 2, base 2 draw 8 (exploratory)"
+ },
+ "-0.034@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.min",
+  "meaning": "smallest D_Muon after step 2 over the eight draws"
+ },
+ "0.055@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.max",
+  "meaning": "largest D_Muon after step 2 over the eight draws"
+ },
+ "0.016@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.mean",
+  "meaning": "mean D_Muon after step 2 over the eight draws"
+ },
+ "5.6@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.max_norm_ratio_pct",
+  "meaning": "largest difference of the two subsets' displacement norms after step 2, % (100(exp(max|D|)-1))"
+ },
+ "0.023@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.step8_registered_runs.min",
+  "meaning": "smallest D_Muon at step 8 of the registered runs (eight draws; same over the five)"
+ },
+ "0.091@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.step8_registered_runs.max",
+  "meaning": "largest D_Muon at step 8 of the registered runs"
+ },
+ "1.77@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.D_sgd_step8_registered.min",
+  "meaning": "smallest D_SGD at step 8, five draws of the test (registered decay profile)"
+ },
+ "2.88@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.D_sgd_step8_registered.max",
+  "meaning": "largest D_SGD at step 8, five draws of the test"
+ },
+ "16@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.n_runs",
+  "meaning": "Muon runs re-run to step 2 (two per draw)"
+ },
+ "0.7453@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.gpu_hours",
+  "meaning": "GPU-hours of the 16 step-2 re-runs"
+ },
+ "0.0451@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "dmuon_step2.step1_attempt.gpu_hours",
+  "meaning": "GPU-hours of the completed step-1 attempt (not used)"
+ },
+ "4@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "per_draw (text: registered C2 draws 1 to 4 of base 1)",
+  "meaning": "last draw index of base 1 in C2"
+ },
+ "5@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "per_draw (text: registered C2 draws 5 to 8 of base 2)",
+  "meaning": "first draw index of base 2 in C2"
+ },
+ "8@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "per_draw (text: draws 5 to 8 of base 2; step 8 of the registered runs)",
+  "meaning": "last draw index of base 2 in C2, and step 8, the registered stop of the C2 runs"
+ },
+ "96@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "text (registered 96-step schedule)",
+  "meaning": "steps of the registered schedule, kept in the re-run"
+ },
+ "3.5832@sections/H_exploratory.tex": {
+  "source": "data/exploratory_values.json",
+  "field": "gpu_hours_total",
+  "meaning": "GPU-hours of the two exploratory blocks and the step-1 attempt (2.7928 + 0.7453 + 0.0451)"
+ },
+ "0.0025@sections/A_prereg.tex": {
+  "source": "g1/theta0_checks.json (gate G1 unit test, SHA-256 0812a904e96d...)",
+  "field": "sgd.lr_muon (text: d_muon_unit_test n = 216, median relative error 8.9e-6, max 1.7e-5, tolerance 1e-3, pass; one opt.step() from a fresh state)",
+  "meaning": "Muon learning rate at which the registered step-1 unit test of gate G1 applies its single step"
+ },
+ "1@sections/A_prereg.tex": {
+  "source": "text; data/edge_overlap_I2.json (runs) and confirm/queue_confirm.json (frozen queue; job ids c1_moe_b<b>_books_d<d>_<A|B>)",
+  "field": "text (labels, indices and formula constants; draw 1: c1_moe_b1_books_d1_B)",
+  "meaning": "labels and indices, not quantities: P-1, D-1, A-1, I-1, R-1, L-1, AU-1, DR-1a, B3-1 and gate labels such as G0-1; base 1; draw 1 of base 1, subset B (incident I-2); step 1 (C2-a); constants of formulas (1 - eta_t lambda, beta = 1, 1 - R^2, top-1, exponent 1)"
+ },
+ "2@sections/A_prereg.tex": {
+  "source": "text; data/edge_overlap_I2.json (runs) and confirm/queue_confirm.json (frozen queue; job ids c1_moe_b<b>_books_d<d>_<A|B>)",
+  "field": "text (labels, indices and formula constants; draw 2: c1_moe_b1_books_d2_A, c1_moe_b2_books_d2_A)",
+  "meaning": "labels and indices, not quantities: A-2, I-2, L-2, AU-2 and gate labels such as G1-2 and G2-1; base 2; draw 2 of base 1, subset A (deviation D-1) and draw 2 of base 2, subset A (incident I-2); step 2, the first non-zero update; 2n_d draws; exponents of formulas (c^2, R^2)"
+ },
+ "7@sections/A_prereg.tex": {
+  "source": "data/edge_overlap_I2.json (runs) and confirm/queue_confirm.json (frozen queue; job ids c1_moe_b<b>_books_d<d>_<A|B>); gate specification 1.3.0 (G0-7)",
+  "field": "text (draw 7: c1_moe_b2_books_d7_B; gate label G0-7)",
+  "meaning": "draw 7 of base 2, subset B (incident I-2); gate label G0-7, not a quantity"
+ },
+ "8@sections/A_prereg.tex": {
+  "source": "data/edge_overlap_I2.json (runs) and confirm/queue_confirm.json (frozen queue; job ids c1_moe_b<b>_books_d<d>_<A|B>); pre-registration v1.3 sec. 3.4 (C2 stop step); FREEZE-hashed pretraining configuration (8% warm-up)",
+  "field": "text (draw 8: c1_moe_b2_books_d8_A)",
+  "meaning": "draw 8 of base 2, subset A (incident I-2); step 8, the registered stop of the Muon C2 runs; 8% warm-up of the pretraining schedule (deviation D-1)"
+ },
+ "10@sections/A_prereg.tex": {
+  "source": "data/edge_overlap_I2.json (runs) and confirm/queue_confirm.json (frozen queue; job ids c1_moe_b<b>_books_d<d>_<A|B>); confirm/queue_confirm.json (10-step warm-up); equivalence-run record (tolerance 1e-6)",
+  "field": "text (draw 10: c1_moe_b2_books_d10_B and its repetition)",
+  "meaning": "draw 10 of base 2, subset B (incidents I-1 and I-2); the 10-step warm-up of the adaptation schedule; base of the tolerance 10^-6 nats per token"
+ },
+ "-0.006@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.beta_minus_beta_C1.diff",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.beta_minus_beta_C1.diff"
+ },
+ "-0.079@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.primary.coef.b3.b",
+  "meaning": "scripts/fill_full.py, FULL.dose.result: results/analysis/analysis_confirm.json blocks.dose.fits.raw.primary.coef.b3.b"
+ },
+ "-0.155@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.M12b.mean_Delta.mean",
+  "meaning": "scripts/fill_full.py, FULL.M12b.result: results/analysis/analysis_confirm.json blocks.M12b.mean_Delta.mean"
+ },
+ "-0.158@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.beta_minus_beta_C1.lo",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.beta_minus_beta_C1.lo"
+ },
+ "-0.326@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.bootstrap.b3_ci95[0]",
+  "meaning": "scripts/fill_full.py, FULL.dose.details: results/analysis/analysis_confirm.json blocks.dose.fits.raw.bootstrap.b3_ci95[0]"
+ },
+ "-0.377@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.primary.coef.b3.lo",
+  "meaning": "scripts/fill_full.py, FULL.dose.result: results/analysis/analysis_confirm.json blocks.dose.fits.raw.primary.coef.b3.lo"
+ },
+ "-0.466@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.M12b.mean_Delta.lo",
+  "meaning": "scripts/fill_full.py, FULL.M12b.result: results/analysis/analysis_confirm.json blocks.M12b.mean_Delta.lo"
+ },
+ "-0.633@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.B3.beta_minus_beta_C1.lo",
+  "meaning": "scripts/fill_full.py, FULL.B3.result: results/analysis/analysis_confirm.json blocks.B3.beta_minus_beta_C1.lo"
+ },
+ "0@fills/full_fills.tex": {
+  "source": "scripts/fill_full.py template text (registered constant or notation)",
+  "field": "text (constant)",
+  "meaning": "comparison value 0 of the registered rules; subscript 0 of beta_{0,3} (notation)"
+ },
+ "0.0002@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C3_per_layer.per_base.nestor.additivity_gap.range[0]",
+  "meaning": "scripts/fill_full.py, FULL.C3.layer: results/analysis/analysis_confirm.json blocks.C3_per_layer.per_base.nestor.additivity_gap.range[0]"
+ },
+ "0.0038@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.hours_outside.failed_start_audit",
+  "meaning": "scripts/fill_full.py, FULL.dev.D2: derived: data/hours_outside_state.json hours.failed_start_audit"
+ },
+ "0.0066@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C3_per_layer.per_base.nestor.additivity_gap.mean",
+  "meaning": "scripts/fill_full.py, FULL.C3.layer: results/analysis/analysis_confirm.json blocks.C3_per_layer.per_base.nestor.additivity_gap.mean"
+ },
+ "0.010@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C3.per_base.nestor.WD_share.F_WD_over_F.mean",
+  "meaning": "scripts/fill_full.py, FULL.C3.wd: results/analysis/analysis_confirm.json blocks.C3.per_base.nestor.WD_share.F_WD_over_F.mean"
+ },
+ "0.0156@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.signflip.p",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.signflip.p"
+ },
+ "0.0177@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C3_per_layer.per_base.nestor.additivity_gap.range[1]",
+  "meaning": "scripts/fill_full.py, FULL.C3.layer: results/analysis/analysis_confirm.json blocks.C3_per_layer.per_base.nestor.additivity_gap.range[1]"
+ },
+ "0.019@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C3.per_base.moe_b1.WD_share.F_WD_over_F.mean",
+  "meaning": "scripts/fill_full.py, FULL.C3.wd: results/analysis/analysis_confirm.json blocks.C3.per_base.moe_b1.WD_share.F_WD_over_F.mean"
+ },
+ "0.0245@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C3_per_layer.per_base.moe_b1.additivity_gap.range[0]",
+  "meaning": "scripts/fill_full.py, FULL.C3.layer: results/analysis/analysis_confirm.json blocks.C3_per_layer.per_base.moe_b1.additivity_gap.range[0]"
+ },
+ "0.029@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.msub.wall_h_min",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: min of wall_s / 3600 of the run type MoE subset in blocks.EDGE.by_type"
+ },
+ "0.040@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.EDGE.pre_update_check.per_base.moe_b1.ratio_energy_vs_median_run",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: results/analysis/analysis_confirm.json blocks.EDGE.pre_update_check.per_base.moe_b1.ratio_energy_vs_median_run"
+ },
+ "0.042@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.EDGE.pre_update_check.per_base.nestor.ratio_energy_vs_median_run",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: results/analysis/analysis_confirm.json blocks.EDGE.pre_update_check.per_base.nestor.ratio_energy_vs_median_run"
+ },
+ "0.0465@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C3_per_layer.per_base.moe_b1.additivity_gap.mean",
+  "meaning": "scripts/fill_full.py, FULL.C3.layer: results/analysis/analysis_confirm.json blocks.C3_per_layer.per_base.moe_b1.additivity_gap.mean"
+ },
+ "0.05@fills/full_fills.tex": {
+  "source": "scripts/fill_full.py template text (registered constant or notation)",
+  "field": "text (constant)",
+  "meaning": "registered test level (prereg v1.3 secs. 4.1, 4.2)"
+ },
+ "0.059@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.EDGE.pre_update_check.per_base.nestor.ratio_wall_vs_median_run",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: results/analysis/analysis_confirm.json blocks.EDGE.pre_update_check.per_base.nestor.ratio_wall_vs_median_run"
+ },
+ "0.0679@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C3_per_layer.per_base.moe_b1.additivity_gap.range[1]",
+  "meaning": "scripts/fill_full.py, FULL.C3.layer: results/analysis/analysis_confirm.json blocks.C3_per_layer.per_base.moe_b1.additivity_gap.range[1]"
+ },
+ "0.071@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.EDGE.pre_update_check.per_base.moe_b1.ratio_wall_vs_median_run",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: results/analysis/analysis_confirm.json blocks.EDGE.pre_update_check.per_base.moe_b1.ratio_wall_vs_median_run"
+ },
+ "0.074@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.B3.beta_minus_beta_C1.diff",
+  "meaning": "scripts/fill_full.py, FULL.B3.result: results/analysis/analysis_confirm.json blocks.B3.beta_minus_beta_C1.diff"
+ },
+ "0.092@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.pipeline_asymmetry_check.mean_I",
+  "meaning": "scripts/fill_full.py, FULL.dose.details: results/analysis/analysis_confirm.json blocks.dose.pipeline_asymmetry_check.mean_I"
+ },
+ "0.120@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.nsub.wall_h_min",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: min of wall_s / 3600 of the run type NESTOR subset in blocks.EDGE.by_type"
+ },
+ "0.121@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.nsub.wall_h_median",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: median of wall_s / 3600 of the run type NESTOR subset in blocks.EDGE.by_type"
+ },
+ "0.125@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.B3.signflip.p",
+  "meaning": "scripts/fill_full.py, FULL.B3.result: results/analysis/analysis_confirm.json blocks.B3.signflip.p"
+ },
+ "0.146@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.beta_minus_beta_C1.hi",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.beta_minus_beta_C1.hi"
+ },
+ "0.1472@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.hours_outside.interrupted_attempt_dose",
+  "meaning": "scripts/fill_full.py, FULL.dev.I4: derived: data/hours_outside_state.json hours.interrupted_attempt_dose"
+ },
+ "0.149@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.bootstrap.b3_ci95[1]",
+  "meaning": "scripts/fill_full.py, FULL.dose.details: results/analysis/analysis_confirm.json blocks.dose.fits.raw.bootstrap.b3_ci95[1]"
+ },
+ "0.156@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.M12b.mean_Delta.hi",
+  "meaning": "scripts/fill_full.py, FULL.M12b.result: results/analysis/analysis_confirm.json blocks.M12b.mean_Delta.hi"
+ },
+ "0.21@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.pipeline_asymmetry_check.mean_I_in_sigma_units",
+  "meaning": "scripts/fill_full.py, FULL.dose.details: results/analysis/analysis_confirm.json blocks.dose.pipeline_asymmetry_check.mean_I_in_sigma_units"
+ },
+ "0.218@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.primary.coef.b3.hi",
+  "meaning": "scripts/fill_full.py, FULL.dose.result: results/analysis/analysis_confirm.json blocks.dose.fits.raw.primary.coef.b3.hi"
+ },
+ "0.234@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.mfull.wall_h_min",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: min of wall_s / 3600 of the run type MoE FULL in blocks.EDGE.by_type"
+ },
+ "0.25@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.B3.beta0_3",
+  "meaning": "scripts/fill_full.py, FULL.B3.result: results/analysis/analysis_confirm.json blocks.B3.beta0_3"
+ },
+ "0.256@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.msub.wall_h_median",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: median of wall_s / 3600 of the run type MoE subset in blocks.EDGE.by_type"
+ },
+ "0.259@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.mfull.wall_h_median",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: median of wall_s / 3600 of the run type MoE FULL in blocks.EDGE.by_type"
+ },
+ "0.261@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.mfreeze.wall_h",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: wall_s / 3600 of the run type MoE FULL minus a frozen group (C3 freeze run) in blocks.EDGE.by_type"
+ },
+ "0.2648@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.hours_outside.interrupted_attempt_audit_i7",
+  "meaning": "scripts/fill_full.py, FULL.dev.I7: derived: data/hours_outside_state.json hours.interrupted_attempt_audit_i7"
+ },
+ "0.351@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.mfull.wall_h_max",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: max of wall_s / 3600 of the run type MoE FULL in blocks.EDGE.by_type"
+ },
+ "0.352@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.F_rel.C1.mean_J.lo",
+  "meaning": "scripts/fill_full.py, FULL.Frel.result: results/analysis/analysis_confirm.json blocks.F_rel.C1.mean_J.lo"
+ },
+ "0.396@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.F_rel.C1.mean_J.mean",
+  "meaning": "scripts/fill_full.py, FULL.Frel.result: results/analysis/analysis_confirm.json blocks.F_rel.C1.mean_J.mean"
+ },
+ "0.4059@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.hours_outside.interrupted_attempt_c1de_i6",
+  "meaning": "scripts/fill_full.py, FULL.dev.I5I6: derived: data/hours_outside_state.json hours.interrupted_attempt_c1de_i6"
+ },
+ "0.439@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.F_rel.C1.mean_J.hi",
+  "meaning": "scripts/fill_full.py, FULL.Frel.result: results/analysis/analysis_confirm.json blocks.F_rel.C1.mean_J.hi"
+ },
+ "0.585@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.msub.wall_h_max",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: max of wall_s / 3600 of the run type MoE subset in blocks.EDGE.by_type"
+ },
+ "0.587@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.primary.coef.b3.p_two_sided",
+  "meaning": "scripts/fill_full.py, FULL.dose.result: results/analysis/analysis_confirm.json blocks.dose.fits.raw.primary.coef.b3.p_two_sided"
+ },
+ "0.5894@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.hours_outside.interrupted_attempt_c1de_i5",
+  "meaning": "scripts/fill_full.py, FULL.dev.I5I6: derived: data/hours_outside_state.json hours.interrupted_attempt_c1de_i5"
+ },
+ "0.6319@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.A3.run_hours",
+  "meaning": "scripts/fill_full.py, FULL.dev.D2: derived: sum of jobs.*.hours of the A-3 re-run record (CONFIG a3_result_json)"
+ },
+ "0.647@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.nsub.wall_h_max",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: max of wall_s / 3600 of the run type NESTOR subset in blocks.EDGE.by_type"
+ },
+ "0.68@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.C1_DE.module_overlap_min",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: derived: min over blocks.C1_DE.manifests[*].pairwise_module_overlap[*].{A,B}"
+ },
+ "0.703@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.nfull.wall_h_min",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: min of wall_s / 3600 of the run type NESTOR FULL in blocks.EDGE.by_type"
+ },
+ "0.780@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.B3.beta_minus_beta_C1.hi",
+  "meaning": "scripts/fill_full.py, FULL.B3.result: results/analysis/analysis_confirm.json blocks.B3.beta_minus_beta_C1.hi"
+ },
+ "0.822@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.nfull.wall_h_median",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: median of wall_s / 3600 of the run type NESTOR FULL in blocks.EDGE.by_type"
+ },
+ "0.833@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.record.f_low",
+  "meaning": "scripts/fill_full.py, FULL.dose.details: results/analysis/analysis_confirm.json blocks.dose.record.f_low"
+ },
+ "0.890@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.B3.mean_J.lo",
+  "meaning": "scripts/fill_full.py, FULL.B3.result: results/analysis/analysis_confirm.json blocks.B3.mean_J.lo"
+ },
+ "0.90@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.C1_DE.module_overlap_max",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: derived: max over blocks.C1_DE.manifests[*].pairwise_module_overlap[*].{A,B}"
+ },
+ "0.912@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.mean_J.lo",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.mean_J.lo"
+ },
+ "0.941@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.mean_J_per_base.moe_b2.mean",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.mean_J_per_base.moe_b2.mean"
+ },
+ "1@fills/full_fills.tex": {
+  "source": "scripts/fill_full.py template text (registered constant or notation)",
+  "field": "text (constant)",
+  "meaning": "base 1 (notation); label digit of deviation D-1 and incident I-1; draw 1 of the C1 books runs whose displacements the assumption audit probes (prereg v1.3 sec. 4.3)"
+ },
+ "1.048@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.bootstrap.kappa_ci95[0]",
+  "meaning": "scripts/fill_full.py, FULL.dose.details: results/analysis/analysis_confirm.json blocks.dose.fits.raw.bootstrap.kappa_ci95[0]"
+ },
+ "1.0488@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.hours_outside.first_attempts_c3_freeze",
+  "meaning": "scripts/fill_full.py, FULL.dev.D3: derived: data/hours_outside_state.json hours.first_attempts_c3_freeze"
+ },
+ "1.051@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.mean_J.mean",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.mean_J.mean"
+ },
+ "1.073@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.estimators.sym.overall.beta_hat",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.estimators.sym.overall.beta_hat"
+ },
+ "1.162@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.mean_J_per_base.moe_b1.mean",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.mean_J_per_base.moe_b1.mean"
+ },
+ "1.191@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.mean_J.hi",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.mean_J.hi"
+ },
+ "1.230@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.B3.estimators.sym.overall.beta_hat",
+  "meaning": "scripts/fill_full.py, FULL.B3.result: results/analysis/analysis_confirm.json blocks.B3.estimators.sym.overall.beta_hat"
+ },
+ "1.315@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.nfull.wall_h_max",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: max of wall_s / 3600 of the run type NESTOR FULL in blocks.EDGE.by_type"
+ },
+ "1.389@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.bootstrap.kappa",
+  "meaning": "scripts/fill_full.py, FULL.dose.details: results/analysis/analysis_confirm.json blocks.dose.fits.raw.bootstrap.kappa"
+ },
+ "1.415@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.primary.coef.b1.lo",
+  "meaning": "scripts/fill_full.py, FULL.dose.result: results/analysis/analysis_confirm.json blocks.dose.fits.raw.primary.coef.b1.lo"
+ },
+ "1.475@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.estimators.raw.overall.lo",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.estimators.raw.overall.lo"
+ },
+ "1.493@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.bootstrap.b1_ci95[0]",
+  "meaning": "scripts/fill_full.py, FULL.dose.details: results/analysis/analysis_confirm.json blocks.dose.fits.raw.bootstrap.b1_ci95[0]"
+ },
+ "1.554@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.B3.mean_J.mean",
+  "meaning": "scripts/fill_full.py, FULL.B3.result: results/analysis/analysis_confirm.json blocks.B3.mean_J.mean"
+ },
+ "1.648@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.estimators.raw.overall.beta_hat",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.estimators.raw.overall.beta_hat"
+ },
+ "1.717@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.B3.estimators.pin.overall.beta_hat",
+  "meaning": "scripts/fill_full.py, FULL.B3.result: results/analysis/analysis_confirm.json blocks.B3.estimators.pin.overall.beta_hat"
+ },
+ "1.727@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.B3.estimators.raw.overall.beta_hat",
+  "meaning": "scripts/fill_full.py, FULL.B3.result: results/analysis/analysis_confirm.json blocks.B3.estimators.raw.overall.beta_hat"
+ },
+ "1.737@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.primary.coef.b1.b",
+  "meaning": "scripts/fill_full.py, FULL.dose.result: results/analysis/analysis_confirm.json blocks.dose.fits.raw.primary.coef.b1.b"
+ },
+ "1.738@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.sensitivity_base_specific_b1.coef.b1_moe_b1.b",
+  "meaning": "scripts/fill_full.py, FULL.dose.details: results/analysis/analysis_confirm.json blocks.dose.fits.raw.sensitivity_base_specific_b1.coef.b1_moe_b1.b"
+ },
+ "1.790@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.estimators.raw.overall.hi",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.estimators.raw.overall.hi"
+ },
+ "1.796@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.sensitivity_without_AA.coef.b1.b",
+  "meaning": "scripts/fill_full.py, FULL.dose.details: results/analysis/analysis_confirm.json blocks.dose.fits.raw.sensitivity_without_AA.coef.b1.b"
+ },
+ "1.847@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.sensitivity_base_specific_b1.coef.b1_moe_b2.b",
+  "meaning": "scripts/fill_full.py, FULL.dose.details: results/analysis/analysis_confirm.json blocks.dose.fits.raw.sensitivity_base_specific_b1.coef.b1_moe_b2.b"
+ },
+ "10@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C4.per_base.moe_b1.n",
+  "meaning": "scripts/fill_full.py, FIG.c4windows.caption: results/analysis/analysis_confirm.json blocks.C4.per_base.moe_b1.n"
+ },
+ "10.1@fills/full_fills.tex": {
+  "source": "scripts/fill_full.py template text (registered constant or notation)",
+  "field": "text (constant)",
+  "meaning": "section 10.1 of pre-registration v1.2 (C3 groups, comparison rule), cited"
+ },
+ "10000@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C4.overall.bootstrap.B",
+  "meaning": "scripts/fill_full.py, FIG.c4windows.caption: results/analysis/analysis_confirm.json blocks.C4.overall.bootstrap.B"
+ },
+ "101@fills/full_fills.tex": {
+  "source": "scripts/fill_full.py template text (registered constant or notation)",
+  "field": "text (constant)",
+  "meaning": "seed 101 of the full-adaptation runs of gate G1 (runs named by base, target and seed)"
+ },
+ "103@fills/full_fills.tex": {
+  "source": "scripts/fill_full.py template text (registered constant or notation)",
+  "field": "text (constant)",
+  "meaning": "seed 103 of the two C3 freeze runs (runs named by base, target and seed)"
+ },
+ "105.3@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.compute.measured_total",
+  "meaning": "scripts/fill_full.py, FULL.compute: derived: parameters.planned budget total.spent_gpu_h + sum of hours over the queue state + data/hours_outside_state.json total (record value; printed at one decimal)"
+ },
+ "108.9@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.compute.measured_total_with_exploratory",
+  "meaning": "scripts/fill_full.py, FULL.compute: derived: compute.measured_total + data/exploratory_values.json gpu_hours_total (record value; printed at one decimal)"
+ },
+ "114.7@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.nfull.energy_Wh_min",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: min of energy_Wh of the run type NESTOR FULL in blocks.EDGE.by_type"
+ },
+ "12@fills/full_fills.tex": {
+  "source": "scripts/fill_full.py template text (registered constant or notation)",
+  "field": "text (constant)",
+  "meaning": "the 12 single-layer reverts of MoE base 1 (prereg v1.3 sec. 4.8); the 12 layers of the assumption audit, one group per subset and layer (prereg v1.3 sec. 4.3)"
+ },
+ "120@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.compute.envelope",
+  "meaning": "scripts/fill_full.py, FULL.compute: derived: max over the three guards of detail.envelope_gpu_h"
+ },
+ "120.0@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.guards.envelope",
+  "meaning": "scripts/fill_full.py, FULL.compute: derived: detail.envelope_gpu_h of the guards"
+ },
+ "126.6@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.nfull.energy_Wh_median",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: median of energy_Wh of the run type NESTOR FULL in blocks.EDGE.by_type"
+ },
+ "138@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.EDGE.pre_update_check.per_base.nestor.wall_s_per_unit",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: results/analysis/analysis_confirm.json blocks.EDGE.pre_update_check.per_base.nestor.wall_s_per_unit"
+ },
+ "14@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.msub.short_n",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: number of MoE subset runs in blocks.EDGE.runs with the smaller step count"
+ },
+ "14.2@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.nsub.energy_Wh_min",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: min of energy_Wh of the run type NESTOR subset in blocks.EDGE.by_type"
+ },
+ "14.4@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.nsub.energy_Wh_median",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: median of energy_Wh of the run type NESTOR subset in blocks.EDGE.by_type"
+ },
+ "146.0@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.nfull.energy_Wh_max",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: max of energy_Wh of the run type NESTOR FULL in blocks.EDGE.by_type"
+ },
+ "15@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.mfull.n",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: n of the run type MoE FULL in blocks.EDGE.by_type"
+ },
+ "156@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.runs_n",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: number of entries of blocks.EDGE.runs (the covered runs)"
+ },
+ "2@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.B3.mean_J.df",
+  "meaning": "scripts/fill_full.py, FULL.B3.result: results/analysis/analysis_confirm.json blocks.B3.mean_J.df"
+ },
+ "2.003@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.bootstrap.b1_ci95[1]",
+  "meaning": "scripts/fill_full.py, FULL.dose.details: results/analysis/analysis_confirm.json blocks.dose.fits.raw.bootstrap.b1_ci95[1]"
+ },
+ "2.048@fills/full_fills.tex": {
+  "source": "scripts/fill_full.py template text (registered constant or notation)",
+  "field": "text (constant)",
+  "meaning": "2.048M DCLM tokens per single-layer revert evaluation (prereg v1.3 sec. 4.8)"
+ },
+ "2.058@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.estimators.pin.overall.beta_hat",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.estimators.pin.overall.beta_hat"
+ },
+ "2.060@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.primary.coef.b1.hi",
+  "meaning": "scripts/fill_full.py, FULL.dose.result: results/analysis/analysis_confirm.json blocks.dose.fits.raw.primary.coef.b1.hi"
+ },
+ "2.17@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.EDGE.pre_update_check.per_base.moe_b1.energy_Wh_per_unit",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: results/analysis/analysis_confirm.json blocks.EDGE.pre_update_check.per_base.moe_b1.energy_Wh_per_unit"
+ },
+ "2.1856@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.A4.repeat_hours",
+  "meaning": "scripts/fill_full.py, FULL.dev.D3: derived: sum of the queue-state hours of the two C3 freeze runs repeated under A-4"
+ },
+ "2.217@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.B3.mean_J.hi",
+  "meaning": "scripts/fill_full.py, FULL.B3.result: results/analysis/analysis_confirm.json blocks.B3.mean_J.hi"
+ },
+ "20@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.F_rel.C1.n",
+  "meaning": "scripts/fill_full.py, FULL.Frel.result: results/analysis/analysis_confirm.json blocks.F_rel.C1.n"
+ },
+ "24@fills/full_fills.tex": {
+  "source": "scripts/fill_full.py template text (registered constant or notation)",
+  "field": "text (constant)",
+  "meaning": "SGD stop step of the C2 runs (prereg v1.3 v11 sec. 3.4); the 24 module groups per base and the 24 windows per corpus of the assumption audit (prereg v1.3 sec. 4.3)"
+ },
+ "26@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.n",
+  "meaning": "scripts/fill_full.py, FULL.dose.result: results/analysis/analysis_confirm.json blocks.dose.fits.raw.n"
+ },
+ "3@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.B3.mean_J.n",
+  "meaning": "scripts/fill_full.py, FULL.B3.result: results/analysis/analysis_confirm.json blocks.B3.mean_J.n"
+ },
+ "3.42@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.EDGE.pre_update_check.per_base.nestor.energy_Wh_per_unit",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: results/analysis/analysis_confirm.json blocks.EDGE.pre_update_check.per_base.nestor.energy_Wh_per_unit"
+ },
+ "3.9@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.msub.energy_Wh_min",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: min of energy_Wh of the run type MoE subset in blocks.EDGE.by_type"
+ },
+ "4@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.FIG.c3.n_runs_moe_b1",
+  "meaning": "scripts/fill_full.py, FIG.c3layers.caption: derived: len(blocks.C3_per_layer.per_base.moe_b1.domains)"
+ },
+ "5@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.mean_J.df",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.mean_J.df"
+ },
+ "500@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C4.per_draw[0].W",
+  "meaning": "scripts/fill_full.py, FIG.c4windows.caption: results/analysis/analysis_confirm.json blocks.C4.per_draw[0].W"
+ },
+ "51.9@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.mfull.energy_Wh_min",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: min of energy_Wh of the run type MoE FULL in blocks.EDGE.by_type"
+ },
+ "52.9@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.mfreeze.energy_Wh",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: energy_Wh of the run type MoE FULL minus a frozen group (C3 freeze run) in blocks.EDGE.by_type"
+ },
+ "54.2@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.msub.energy_Wh_median",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: median of energy_Wh of the run type MoE subset in blocks.EDGE.by_type"
+ },
+ "56.3@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.mfull.energy_Wh_median",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: median of energy_Wh of the run type MoE FULL in blocks.EDGE.by_type"
+ },
+ "6@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.C1_DE.mean_J.n",
+  "meaning": "scripts/fill_full.py, FULL.C1DE.result: results/analysis/analysis_confirm.json blocks.C1_DE.mean_J.n"
+ },
+ "60.1@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.mfull.energy_Wh_max",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: max of energy_Wh of the run type MoE FULL in blocks.EDGE.by_type"
+ },
+ "66@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.EDGE.pre_update_check.per_base.moe_b1.wall_s_per_unit",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: results/analysis/analysis_confirm.json blocks.EDGE.pre_update_check.per_base.moe_b1.wall_s_per_unit"
+ },
+ "7@fills/full_fills.tex": {
+  "source": "scripts/fill_full.py template text (registered constant or notation)",
+  "field": "text (constant)",
+  "meaning": "label digit of incident I-7 (FULL.hos names incidents I-5, I-6 and I-7)"
+ },
+ "76.421@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.dose.fits.raw.bootstrap.kappa_ci95[1]",
+  "meaning": "scripts/fill_full.py, FULL.dose.details: results/analysis/analysis_confirm.json blocks.dose.fits.raw.bootstrap.kappa_ci95[1]"
+ },
+ "8@fills/full_fills.tex": {
+  "source": "scripts/fill_full.py template text (registered constant or notation)",
+  "field": "text (constant)",
+  "meaning": "Muon stop step of the C2 runs (prereg v1.3 v11 sec. 3.4); in FULL.EDGE.all, the step count of the short subset runs of the cost block (blocks.EDGE.runs, steps)"
+ },
+ "8.7@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.excluded_gap_s",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: gap in seconds between consecutive power samples stated in blocks.EDGE.excluded[0].reason"
+ },
+ "81.3@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.nsub.energy_Wh_max",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: max of energy_Wh of the run type NESTOR subset in blocks.EDGE.by_type"
+ },
+ "9.5e-7@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "blocks.F_rel.C1.signflip.p",
+  "meaning": "scripts/fill_full.py, FULL.Frel.result: results/analysis/analysis_confirm.json blocks.F_rel.C1.signflip.p"
+ },
+ "92.3@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.msub.energy_Wh_max",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: max of energy_Wh of the run type MoE subset in blocks.EDGE.by_type"
+ },
+ "94@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.EDGE.all.msub.n",
+  "meaning": "scripts/fill_full.py, FULL.EDGE.all: derived: n of the run type MoE subset in blocks.EDGE.by_type"
+ },
+ "95@fills/full_fills.tex": {
+  "source": "scripts/fill_full.py template text (registered constant or notation)",
+  "field": "text (constant)",
+  "meaning": "95% intervals (registered level)"
+ },
+ "96@fills/full_fills.tex": {
+  "source": "scripts/fill_full.py template text (registered constant or notation)",
+  "field": "text (constant)",
+  "meaning": "96 steps of the registered adaptation schedule"
+ },
+ "97.51@fills/full_fills.tex": {
+  "source": "data/full_results.json",
+  "field": "derived.guards.projected_max",
+  "meaning": "scripts/fill_full.py, FULL.compute: derived: max over the three guards of detail.projected_gpu_h"
+ }
+}

@@ -1,0 +1,330 @@
+[
+ {
+  "repo": "emozilla/pg19",
+  "path": "data/test-00000-of-00001-29a571947c0b5ccc.parquet",
+  "size": 24874679,
+  "sha256": "9aae5ddf035760257458cff08d2575d78a15f84eff867af7a87eff0681b01bfc",
+  "git_oid": "1bb676b603c0deafe6678032ae92f8b7370cb28d",
+  "dest": "data\\domain\\raw\\emozilla__pg19\\data\\test-00000-of-00001-29a571947c0b5ccc.parquet"
+ },
+ {
+  "repo": "emozilla/pg19",
+  "path": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+  "size": 298361951,
+  "sha256": "589252c8a3e870278db2b5d3f0da73e4845085e852cb024056c37b76d088ba41",
+  "git_oid": "e60ef2e49bbb6a64b0f45957c48465b707b2f135",
+  "dest": "data\\domain\\raw\\emozilla__pg19\\data\\train-00000-of-00023-5263dc4323e881d2.parquet"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "open-web-math/train/shard-0000.jsonl.zst",
+  "size": 278055674,
+  "sha256": "b47f63cc015ea07a9234bf76290a8187a87a31043fe0c1bcaa5db8b284dc0592",
+  "git_oid": "22728aec1e21727cd2f32c74df27f2d1b94c4b08",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\open-web-math\\train\\shard-0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "open-web-math/test/test.jsonl.zst",
+  "size": 88139269,
+  "sha256": "9fc35609a26e3b14892c99bb9fc789576cd53e7e9a39ce50e65e1fc8b3c45e9a",
+  "git_oid": "02cbaf8100c99f0f1948515f7496b9c87f5f93e4",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\open-web-math\\test\\test.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/agda0000.jsonl.zst",
+  "size": 23489609,
+  "sha256": "f91684112df7423acad33fdd0d1d478a4ca6b9c2bb09c473cbf51318fd1885d3",
+  "git_oid": "0803ebb02aa7122b5a6ed440ca8f296b37982696",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\agda0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/c0000.jsonl.zst",
+  "size": 14341007,
+  "sha256": "5a9308b6b2a0ef74e0fecc449a3836e4f03141eb07eaaa81a17daa4aa98a5d11",
+  "git_oid": "3a94ac2fdf43cbd62aac239a6c19dee724f324e2",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\c0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/cpp0000.jsonl.zst",
+  "size": 114405443,
+  "sha256": "13e8c73c8131504d7231eb4e4451177f9bcb4bc495db56b073ef4d598b2ab3db",
+  "git_oid": "b5954bb11f4b98abfa9506e501914cb546d1137f",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\cpp0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/fortran0000.jsonl.zst",
+  "size": 128540926,
+  "sha256": "03dd9d1253097ec0f7e3af349f1024882d23a670a6d0b0a620c45b1594c3ac1e",
+  "git_oid": "4d7e1cf3b25575fe4bc1e15ef5a75b06bc06997a",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\fortran0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/gap0000.jsonl.zst",
+  "size": 1936287,
+  "sha256": "81c6a0755f53d87d5eb80822e2f23b561194b22b471067b84e27ba045c4a0b44",
+  "git_oid": "2f030a4b149b5215b8cf4c173c3fdb1c8839fc86",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\gap0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/github-coq-train-0000.jsonl.zst",
+  "size": 159963702,
+  "sha256": "bdd6af156f42b7ef4413a9e156021b6121bd852efa096ce2f342d2ef562027ab",
+  "git_oid": "1264cd638fb9fe3b9e5ceb2f6b2f372c2b4d344d",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\github-coq-train-0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/github-isabelle-train-0000.jsonl.zst",
+  "size": 149951674,
+  "sha256": "fdf127052418af397b28c37019176f34982568932bdf26be17fdb429aa370826",
+  "git_oid": "35b72f6360a5d1789ffb9cf357af8a820213e2ca",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\github-isabelle-train-0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/github-lean-train-0000.jsonl.zst",
+  "size": 102809256,
+  "sha256": "d06545086563cc9d98d4b3bead1831fff3edbbf53de893b335bfa576ef3b8523",
+  "git_oid": "a1ac66efa66331dd9f8ce549217f4b8794dabd6a",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\github-lean-train-0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/haskell0000.jsonl.zst",
+  "size": 7342825,
+  "sha256": "45270fa8c651a300ad1290e14af2864d92afc3708cbe180a98659e836bad4738",
+  "git_oid": "22ada2cfc699ec1f2b0199b22810a2ec17acdf9f",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\haskell0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/idris0000.jsonl.zst",
+  "size": 8656552,
+  "sha256": "8bb4f12ecf2a7502cb0ac3146ed688dc92d672b2254441fefbffef86f50f9aa4",
+  "git_oid": "b70df5336104610c8a70daa40cca3b120ce9810a",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\idris0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/julia0000.jsonl.zst",
+  "size": 69439299,
+  "sha256": "a0707aa88a1c6e702c95eb28e8f0713c35d341a2b5e82f18a9f6add364dd29e8",
+  "git_oid": "94ad4ccf241cb06541d6659a94f7c1fd62685383",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\julia0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/jupyter-notebook0000.jsonl.zst",
+  "size": 133207663,
+  "sha256": "1017dbd56edd1861aa9cc05e9d8d6b81908a56913689f2ad385e81a0bc09c0ff",
+  "git_oid": "1a1d97e51cc7c6ad152aad87152efa4edf5f0739",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\jupyter-notebook0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/maple0000.jsonl.zst",
+  "size": 1274918,
+  "sha256": "e77dd977c7aa528dfb39ddd9ce56aba2f6db9e3b56590336781d8fd45b6b1c13",
+  "git_oid": "6e3d248b86274761787b49608f9ee969ac791f47",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\maple0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/python0000.jsonl.zst",
+  "size": 115687724,
+  "sha256": "bd510ecf99bdee4076993fc8f38d2462b59322d9f1e9733fd9bb3868b551e9cc",
+  "git_oid": "053cb39ad09298e3f79843213d2c9b1271a04dc9",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\python0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/r0000.jsonl.zst",
+  "size": 54474201,
+  "sha256": "f659195744f757c83b969787b2bf6f8e0ec65c034a6d1eb30dfa55c9dd9e686b",
+  "git_oid": "17bc5c5d9229893ecdc9ceef930f29df2c70e3dc",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\r0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/train/tex0000.jsonl.zst",
+  "size": 262218789,
+  "sha256": "a8f1a543c65593b326190ecc02e61fce41459bfbb30886580fafd6480cb2e632",
+  "git_oid": "4883dcf52d0b6287747384ae1f5beaff06679552",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\train\\tex0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/agda-test.jsonl.zst",
+  "size": 122777,
+  "sha256": "860b284b392a7dbfc1c16de7e0cb8a5f42dc73637d118b43cfddf1b6190f1711",
+  "git_oid": "e3358396aba34a967c2c6325665dc81a60b76b85",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\agda-test.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/c-test.jsonl.zst",
+  "size": 76031,
+  "sha256": "cb6b7a091291f0c01e85a24ab2212672acf211a867539551871e9151d9405b41",
+  "git_oid": "535a295386b0dfaf0275360ca22bbac8eee952b6",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\c-test.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/cpp-test.jsonl.zst",
+  "size": 2888416,
+  "sha256": "969feb0ae6f35601f6d0671b0687fa1514fb2bff5838fe4d1ad5b3e027628cab",
+  "git_oid": "12a9736742467a29380454a1b7c3e430f79f9c6d",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\cpp-test.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/fortran-test.jsonl.zst",
+  "size": 2563133,
+  "sha256": "83c71c769a86c1ab7bffb78ff882f1778bf3ee248c7c2c3f091c3001f2e3eda5",
+  "git_oid": "e98003c42f692ae074fc34807440e2b7b991a663",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\fortran-test.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/gap-test.jsonl.zst",
+  "size": 6750,
+  "sha256": "17b807593b5b079b9401237432f70ac759ce241012f7b00e3f32a14504e1e44a",
+  "git_oid": "fb3f772f5b7efaeabaf55fbf55abb07238b5d279",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\gap-test.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/github-MATLAB-test-0000.jsonl.zst",
+  "size": 875065,
+  "sha256": "8b902af1820b0d558988a795d10fede8d537e8217e63e662d25f4ca4eac04c94",
+  "git_oid": "72814882258948d41a18f61ac252884015727f0c",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\github-MATLAB-test-0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/github-coq-test-0000.jsonl.zst",
+  "size": 1613207,
+  "sha256": "33d903b82a48afbefbf9d911b54bf9aa49b9e94290ea2b0b9b86ce4947f805f3",
+  "git_oid": "1f8487725988b6feb341c500183017bac9b54c22",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\github-coq-test-0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/github-isabelle-test-0000.jsonl.zst",
+  "size": 562278,
+  "sha256": "62a2392b25d052775d543d9f1f17e41b3c9cc22e1d66cbf16bd8960cc129c000",
+  "git_oid": "132527597bb2888a694140787f9d180935ed4598",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\github-isabelle-test-0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/github-lean-test-0000.jsonl.zst",
+  "size": 559164,
+  "sha256": "315351d8e7cf8747a18fec85b10380b6dbd76357a7503c4b020b109cb00fe4be",
+  "git_oid": "9baf848e5a094dffc3a1e87215e0d20b82254a57",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\github-lean-test-0000.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/haskell-test.jsonl.zst",
+  "size": 41722,
+  "sha256": "78a613e5adaec95fd8671b39f0ca0a551403b327e6f28f89900ae994c55a03ea",
+  "git_oid": "9104373bad17ea7fdf9bf76dac9430fefff0028f",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\haskell-test.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/idris-test.jsonl.zst",
+  "size": 36022,
+  "sha256": "97506761e4be0341f4af0c66b1f585c708bdadba66341f48a576c190cf7a7acb",
+  "git_oid": "3fe908a910774e92769afafecd4ccb860c2b5ec2",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\idris-test.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/isa_proofsteps.jsonl.zst",
+  "size": 487029,
+  "sha256": "f395c445570d7de8be03380025cd006d4d8de29c112e20a910d02f7cd7243ccf",
+  "git_oid": "e4f3ae510056482e45fcb64e8b6d8ee5e8c79e90",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\isa_proofsteps.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/julia-test.jsonl.zst",
+  "size": 1979607,
+  "sha256": "62c5c59abdabf90d96d07aaf50f515ce5b73f8f63c347d2cc665bfcf116c7f09",
+  "git_oid": "4c975c083140979595609b28ba5ccb2a32f7ae2c",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\julia-test.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/jupyter-notebook-test.jsonl.zst",
+  "size": 635818,
+  "sha256": "9d537e2ab0344305da5c58ecf7772f56cd1bc99292921b0a2647845227fa755d",
+  "git_oid": "7275be7f1aa0b93193b4bffbd2eca014db239ffa",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\jupyter-notebook-test.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/lean_proofsteps.jsonl.zst",
+  "size": 30290,
+  "sha256": "231beaec25d23dcc6ae904b15f1cbbf288503fc745bf6d30eb30a8ea47ebc90d",
+  "git_oid": "f3f6fb5976e614ea7ced6bd56ebaf78875710f59",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\lean_proofsteps.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/maple-test.jsonl.zst",
+  "size": 4084,
+  "sha256": "ba389c57726e3cb111e7d008d2fa59bdb519d717c30b7f8026ed2214414ee7a3",
+  "git_oid": "120f13bb1df1eff736f720624394b9bed5d267ca",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\maple-test.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/python-test.jsonl.zst",
+  "size": 24696497,
+  "sha256": "36782516b278752a02275dfcfe9ba122be6411945f40d91654fd646345aedf8d",
+  "git_oid": "1861b805fe5049607fc5f582459c26537142b4ff",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\python-test.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/r-test.jsonl.zst",
+  "size": 243127,
+  "sha256": "177766ea96fb9bea65c7a5f7c6271a071c786787aae7013a3726ee61ea879ea9",
+  "git_oid": "fafb065eabd57b6910a16eb1f1cbf29cd70811ea",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\r-test.jsonl.zst"
+ },
+ {
+  "repo": "EleutherAI/proof-pile-2",
+  "path": "algebraic-stack/test/tex-test.jsonl.zst",
+  "size": 2518784,
+  "sha256": "2e2885622586a1db559d65396f331cba923ca7a12a458ec5db4b7998837ddb2d",
+  "git_oid": "62f3120728e83f919b3ebd9cea604f0615ab3a13",
+  "dest": "data\\domain\\raw\\EleutherAI__proof-pile-2\\algebraic-stack\\test\\tex-test.jsonl.zst"
+ },
+ {
+  "repo": "HuggingFaceFW/fineweb-2",
+  "path": "data/deu_Latn/test/000_00000.parquet",
+  "size": 104264728,
+  "sha256": "f370564f527a10cf125f267d8f10175d6a6366390480620e90a469bbf80a2a46",
+  "git_oid": "ee947bc709daa3a7f45dba761dee92440a988d1a",
+  "dest": "data\\domain\\raw\\HuggingFaceFW__fineweb-2\\data\\deu_Latn\\test\\000_00000.parquet"
+ },
+ {
+  "repo": "HuggingFaceFW/fineweb-2",
+  "path": "data/deu_Latn/train/000_00000.parquet",
+  "size": 4845556135,
+  "sha256": "3044853802c8e8eefdd799abb4f4480d62af8aa90989611e0ed7bb205822af42",
+  "git_oid": "14ef3531d0badbe31a88c1603635e8faa7b3b064",
+  "dest": "data\\domain\\raw\\HuggingFaceFW__fineweb-2\\data\\deu_Latn\\train\\000_00000.parquet"
+ }
+]

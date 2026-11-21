@@ -1,0 +1,17 @@
+# .venv/nestor/Scripts/python.exe grad_snr.py run moe_100m outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt --data data/domain/fw2de_train.bin --windows 64 --select random --data-seed 7201 --seed 0 --train-batch-windows 64 --kinds moe --out g2/grad_snr_moe_b1.json
+# env overrides: {}
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+.venv\nestor\Lib\site-packages\triton\knobs.py:524: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+{
+ "summary": {
+  "moe": {
+   "units": 288,
+   "median_snr_train": 2.798075489578145,
+   "q25": 1.7919369104514111,
+   "q75": 5.741643474761577,
+   "share_snr_train_below_1": 0.1597222222222222
+  }
+ },
+ "seconds": 30.0
+}

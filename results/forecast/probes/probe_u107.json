@@ -1,0 +1,72 @@
+{
+ "unit": 107,
+ "unit_sha256": "c98b30006277acbba48c0d8c7f562ff6886e97e3b25f7e43af28d8fad905501a",
+ "base": "moe_b2",
+ "mock": false,
+ "by_corpus": {
+  "code": {
+   "QE": 151.00108497836774,
+   "QE_se": 8.418252192751835,
+   "gamma": 1.6358388754443176,
+   "gamma_se": 0.27408342319433904,
+   "quad_u": 202.22745807634723,
+   "RND": 2.8510012947435825,
+   "RND_se": 0.2693305658024475,
+   "RND_Q_kl": 1.3725762011805225,
+   "SVC": 45363.67216679314,
+   "windows": 8
+  },
+  "dclm": {
+   "QE": 126.39216453738428,
+   "QE_se": 8.28661222294001,
+   "gamma": 0.3421797217866507,
+   "gamma_se": 0.1580220558353348,
+   "quad_u": 153.987932537456,
+   "RND": 1.9066415633783862,
+   "RND_se": 0.04989348957651388,
+   "RND_Q_kl": 1.270693353655283,
+   "SVC": 47625.44283639603,
+   "windows": 8
+  }
+ },
+ "elements": {
+  "trainable": 372756605,
+  "full_trainable": 372756605
+ },
+ "udir_sq": 395864.7906121427,
+ "hdir_sq": 395864.7906128639,
+ "eps": 0.0025,
+ "eps_check": {
+  "eps": 0.0025,
+  "ok": true,
+  "pin_routing": true,
+  "trail": [
+   {
+    "eps": 0.0025,
+    "kl_eps": 0.0001957364144653115,
+    "kl_2eps": 0.0007805771392767555,
+    "ratio": 3.987899448393593,
+    "flip_frac_eps": null
+   }
+  ]
+ },
+ "group": "data/domain/owm_train.bin|muon|0.0025",
+ "routing": "pinned (theta0 selections and gates)",
+ "lr_ref": 0.0025,
+ "windows_file": "probe_u107__windows.npz",
+ "svc_tokens": {
+  "dclm": 32768,
+  "code": 32768,
+  "math": 32768
+ },
+ "device": "cuda",
+ "checkpoint": "outputs/moe_100m_b05s43/20261101_001918__moe_100m_b05s43_train_h100/checkpoints/model_final.pt",
+ "code_sha256": {
+  "forecast_probe.py": "3e1cf5b78c382f9239b7e0e75dae3ceda4b81b415f7631cc679aca958d47a38e",
+  "g0_probe.py": "966403f8ce6cfb5e4a04bb9bf7c7a85a2cb37ea8577a627f498230af4a25f3fe",
+  "eval_windows.py": "0f909d1e23c2e1bd3ec3765778ddf927ad2e3ccc036a6c1eadce8e822f2ecb41",
+  "subset_adapt.py": "4b86df24add074b3fc3d04c318a837974403cb90e5d6b90cdbec97c2d9fe4e27",
+  "weight_controls.py": "473ff8c58542f7f398431181cf11afb14b0b8bf0f261591a88120f3fdc6b2835"
+ },
+ "seconds": 81.2
+}

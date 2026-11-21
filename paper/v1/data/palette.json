@@ -1,0 +1,6 @@
+{
+ "dense": "#7F7F7F",
+ "moe": "#0072B2",
+ "nestor": "#E69F00",
+ "note": "Okabe-Ito colour-blind-safe palette; fixed per architecture in every figure of this project (MoE seeds share the blue; seed 43 is dashed). Figures: apply_figure_style(), vector PDF + 300-dpi PNG."
+}

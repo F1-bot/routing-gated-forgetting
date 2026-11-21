@@ -1,0 +1,47 @@
+{
+ "meta": {
+  "experiment": "nestor_100m",
+  "checkpoint": {
+   "path": "outputs\\nestor_100m_b05\\20261031_213045__nestor_100m_b05_train_h100\\checkpoints\\model_final.pt",
+   "size": 1510337922,
+   "head_sha256": "417fb7b51ff8feec3f4adef090a375a8614c4028d62555fd4a24d5b8305ea8da"
+  },
+  "base": null,
+  "step": 1907,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-13T23:47:33"
+ },
+ "results": {
+  "ckpt|dclm09": {
+   "ce": 4.779354870173229,
+   "windows": 500,
+   "seconds": 221.3,
+   "file": "stageB_windows\\nestor_100m\\base\\ckpt__dclm09.npz"
+  },
+  "ckpt|pg19": {
+   "ce": 4.8707981661134,
+   "windows": 500,
+   "seconds": 214.5,
+   "file": "stageB_windows\\nestor_100m\\base\\ckpt__pg19.npz"
+  },
+  "ckpt|owm": {
+   "ce": 5.0507526809561964,
+   "windows": 500,
+   "seconds": 218.8,
+   "file": "stageB_windows\\nestor_100m\\base\\ckpt__owm.npz"
+  },
+  "ckpt|algstack": {
+   "ce": 6.5759773900145,
+   "windows": 500,
+   "seconds": 227.3,
+   "file": "stageB_windows\\nestor_100m\\base\\ckpt__algstack.npz"
+  },
+  "ckpt|fw2de": {
+   "ce": 8.708873043536325,
+   "windows": 500,
+   "seconds": 235.8,
+   "file": "stageB_windows\\nestor_100m\\base\\ckpt__fw2de.npz"
+  }
+ }
+}

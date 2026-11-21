@@ -1,0 +1,29 @@
+{
+ "meta": {
+  "experiment": "moe_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c2_moe_b1_d4_sgd_H\\m2\\moe_100m_c2_moe_b1_d4_sgd_H\\20261117_121817__moe_100m_c2_moe_b1_d4_sgd_H_train\\checkpoints\\model_final.pt",
+   "size": 2555317049,
+   "head_sha256": "1534db3c339a1b2a4dcdb6b1f678b586dd3ba6b686a546cbf26e824cbdef3b4b"
+  },
+  "base": null,
+  "step": 24,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-17T12:25:05"
+ },
+ "results": {
+  "ckpt|dclm": {
+   "ce": 5.62775349702381,
+   "windows": 500,
+   "seconds": 66.0,
+   "file": "outputs\\confirm\\c2_moe_b1_d4_sgd_H\\m2\\eval_main\\ckpt__dclm.npz"
+  },
+  "ckpt|german": {
+   "ce": 8.53847406517094,
+   "windows": 500,
+   "seconds": 66.2,
+   "file": "outputs\\confirm\\c2_moe_b1_d4_sgd_H\\m2\\eval_main\\ckpt__german.npz"
+  }
+ }
+}

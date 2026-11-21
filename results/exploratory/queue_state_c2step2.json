@@ -1,0 +1,290 @@
+{
+ "s2x_c2_moe_b1_d1_muon_H": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 6.36
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d1_muon_H\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d1_muon_H\\m2\\moe_100m_s2x_c2_moe_b1_d1_muon_H\\20261118_021823__moe_100m_s2x_c2_moe_b1_d1_muon_H_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d1_muon_H\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794961060.0646117,
+  "end": 1794961581.409768,
+  "hours": 0.1448
+ },
+ "s2x_c2_moe_b1_d1_muon_L": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 5.88
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d1_muon_L\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d1_muon_L\\m2\\moe_100m_s2x_c2_moe_b1_d1_muon_L\\20261118_022825__moe_100m_s2x_c2_moe_b1_d1_muon_L_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d1_muon_L\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794961581.422766,
+  "end": 1794961943.6765592,
+  "hours": 0.1006
+ },
+ "s2x_c2_moe_b1_d2_muon_H": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 1.98
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d2_muon_H\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d2_muon_H\\m2\\moe_100m_s2x_c2_moe_b1_d2_muon_H\\20261118_023232__moe_100m_s2x_c2_moe_b1_d2_muon_H_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d2_muon_H\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794961943.678559,
+  "end": 1794962071.090545,
+  "hours": 0.0354
+ },
+ "s2x_c2_moe_b1_d2_muon_L": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 1.94
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d2_muon_L\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d2_muon_L\\m2\\moe_100m_s2x_c2_moe_b1_d2_muon_L\\20261118_023439__moe_100m_s2x_c2_moe_b1_d2_muon_L_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d2_muon_L\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794962071.0915468,
+  "end": 1794962199.0259445,
+  "hours": 0.0355
+ },
+ "s2x_c2_moe_b1_d3_muon_H": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 1.97
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d3_muon_H\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d3_muon_H\\m2\\moe_100m_s2x_c2_moe_b1_d3_muon_H\\20261118_023648__moe_100m_s2x_c2_moe_b1_d3_muon_H_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d3_muon_H\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794962199.02795,
+  "end": 1794962325.2215264,
+  "hours": 0.0351
+ },
+ "s2x_c2_moe_b1_d3_muon_L": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 1.95
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d3_muon_L\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d3_muon_L\\m2\\moe_100m_s2x_c2_moe_b1_d3_muon_L\\20261118_023853__moe_100m_s2x_c2_moe_b1_d3_muon_L_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d3_muon_L\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794962325.2235239,
+  "end": 1794962453.7333486,
+  "hours": 0.0357
+ },
+ "s2x_c2_moe_b1_d4_muon_H": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 2.0
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d4_muon_H\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d4_muon_H\\m2\\moe_100m_s2x_c2_moe_b1_d4_muon_H\\20261118_024102__moe_100m_s2x_c2_moe_b1_d4_muon_H_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d4_muon_H\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794962453.7343504,
+  "end": 1794962582.9842465,
+  "hours": 0.0359
+ },
+ "s2x_c2_moe_b1_d4_muon_L": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 2.05
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d4_muon_L\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d4_muon_L\\m2\\moe_100m_s2x_c2_moe_b1_d4_muon_L\\20261118_024314__moe_100m_s2x_c2_moe_b1_d4_muon_L_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b1_d4_muon_L\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794962582.9852464,
+  "end": 1794962715.1904173,
+  "hours": 0.0367
+ },
+ "s2x_c2_moe_b2_d5_muon_H": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 1.98
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d5_muon_H\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d5_muon_H\\m2\\moe_100m_s2x_c2_moe_b2_d5_muon_H\\20261118_024523__moe_100m_s2x_c2_moe_b2_d5_muon_H_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d5_muon_H\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794962715.1914184,
+  "end": 1794962841.2184935,
+  "hours": 0.035
+ },
+ "s2x_c2_moe_b2_d5_muon_L": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 2.11
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d5_muon_L\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d5_muon_L\\m2\\moe_100m_s2x_c2_moe_b2_d5_muon_L\\20261118_024731__moe_100m_s2x_c2_moe_b2_d5_muon_L_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d5_muon_L\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794962841.2194932,
+  "end": 1794962975.7635992,
+  "hours": 0.0374
+ },
+ "s2x_c2_moe_b2_d6_muon_H": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 2.18
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d6_muon_H\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d6_muon_H\\m2\\moe_100m_s2x_c2_moe_b2_d6_muon_H\\20261118_024945__moe_100m_s2x_c2_moe_b2_d6_muon_H_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d6_muon_H\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794962975.7655995,
+  "end": 1794963113.6671512,
+  "hours": 0.0383
+ },
+ "s2x_c2_moe_b2_d6_muon_L": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 1.93
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d6_muon_L\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d6_muon_L\\m2\\moe_100m_s2x_c2_moe_b2_d6_muon_L\\20261118_025201__moe_100m_s2x_c2_moe_b2_d6_muon_L_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d6_muon_L\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794963113.6681514,
+  "end": 1794963237.32309,
+  "hours": 0.0343
+ },
+ "s2x_c2_moe_b2_d7_muon_H": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 1.97
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d7_muon_H\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d7_muon_H\\m2\\moe_100m_s2x_c2_moe_b2_d7_muon_H\\20261118_025406__moe_100m_s2x_c2_moe_b2_d7_muon_H_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d7_muon_H\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794963237.3240905,
+  "end": 1794963364.2138462,
+  "hours": 0.0352
+ },
+ "s2x_c2_moe_b2_d7_muon_L": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 1.96
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d7_muon_L\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d7_muon_L\\m2\\moe_100m_s2x_c2_moe_b2_d7_muon_L\\20261118_025612__moe_100m_s2x_c2_moe_b2_d7_muon_L_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d7_muon_L\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794963364.214845,
+  "end": 1794963489.6016586,
+  "hours": 0.0348
+ },
+ "s2x_c2_moe_b2_d8_muon_H": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 1.98
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d8_muon_H\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d8_muon_H\\m2\\moe_100m_s2x_c2_moe_b2_d8_muon_H\\20261118_025818__moe_100m_s2x_c2_moe_b2_d8_muon_H_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d8_muon_H\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794963489.6036572,
+  "end": 1794963615.313849,
+  "hours": 0.0349
+ },
+ "s2x_c2_moe_b2_d8_muon_L": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 1.98
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d8_muon_L\\m2",
+  "final": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d8_muon_L\\m2\\moe_100m_s2x_c2_moe_b2_d8_muon_L\\20261118_030023__moe_100m_s2x_c2_moe_b2_d8_muon_L_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step2\\c2_moe_b2_d8_muon_L\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794963615.3158538,
+  "end": 1794963743.9379082,
+  "hours": 0.0357
+ }
+}

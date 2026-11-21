@@ -1,0 +1,130 @@
+{
+ "_comment": "G0 probe config of the THIRD MoE base: MoE-100M, seed 44, 1.5B tokens, trained on one H100 (Modal). Books cell only (C1-books secondary replication, n_d = 3; not in the Holm family). Same registered stream layout as g0_moe_b1.json (prereg sec. 4.3) restricted to the corpora the books cell needs: DCLM (selection: dclm_val10; evaluation: dclm_val09), code = AlgebraicStack (the stream G0-8 chose on base 1), math, books. Probe target books (forecast inputs, G0-6). Pin the checkpoint before running: pins_check.py pin --pins ckpt_pins.json moe_b3 <path>; pins_check.py pin-config --pins ckpt_pins.json --name moe_b3 --config g0_moe_b3.json. Run with g0_b3.ps1.",
+ "experiment": "moe_100m",
+ "arch": "moe",
+ "checkpoint": "PIN_ME:outputs/moe_100m_b15s44/<run>/checkpoints/model_final.pt",
+ "family": "moe",
+ "k": 6,
+ "out": "g0/moe_b3",
+ "block": 4096,
+ "device": null,
+ "measure": "g2",
+ "half_seed": 0,
+ "eval_tok_per_s": 9600.0,
+ "streams": {
+  "dclm": {
+   "path": "data/dclm/dclm_val10.bin",
+   "tokens": 1048576,
+   "select": "even"
+  },
+  "dclm_eval": {
+   "path": "data/dclm/dclm_val.bin",
+   "tokens": 2048000,
+   "select": "even"
+  },
+  "code": {
+   "path": "data/domain/algstack_test.bin",
+   "tokens": 1048576,
+   "select": "even",
+   "span": [
+    0.0,
+    0.5
+   ]
+  },
+  "code_eval": {
+   "path": "data/domain/algstack_test.bin",
+   "tokens": 2048000,
+   "select": "even",
+   "span": [
+    0.5,
+    1.0
+   ]
+  },
+  "math": {
+   "path": "data/domain/owm_test.bin",
+   "tokens": 1048576,
+   "select": "even",
+   "span": [
+    0.0,
+    0.5
+   ]
+  },
+  "math_eval": {
+   "path": "data/domain/owm_test.bin",
+   "tokens": 2048000,
+   "select": "even",
+   "span": [
+    0.5,
+    1.0
+   ]
+  },
+  "books": {
+   "path": "data/domain/pg19_test.bin",
+   "tokens": 1048576,
+   "select": "even",
+   "span": [
+    0.0,
+    0.5
+   ],
+   "span_align": "doc"
+  },
+  "books_eval": {
+   "path": "data/domain/pg19_test.bin",
+   "tokens": 2048000,
+   "select": "even",
+   "span": [
+    0.5,
+    1.0
+   ],
+   "span_align": "doc"
+  }
+ },
+ "crossover": {
+  "low": "code",
+  "high": "math",
+  "targets": [
+   "books"
+  ],
+  "match_extra": [
+   "dclm"
+  ],
+  "tol": 0.05,
+  "draws": 3,
+  "seed": 0,
+  "lam": 1.5,
+  "min_contrast": 0.262364,
+  "max_jaccard": 0.5,
+  "tol_scan": [
+   0.05,
+   0.1,
+   0.2
+  ]
+ },
+ "probe": {
+  "targets": [
+   "books"
+  ],
+  "grad_windows": 16,
+  "grad_seed": 12345,
+  "bf16_grad": true,
+  "probe_corpora": [
+   "dclm_eval",
+   "code_eval",
+   "math_eval"
+  ],
+  "probe_windows": 8,
+  "regime_windows": 8,
+  "random_seeds": [
+   0
+  ],
+  "eps0": 0.0025,
+  "lr_muon": 0.0025,
+  "momentum": 0.95,
+  "nesterov": true,
+  "pin_routing": "both",
+  "richardson": true,
+  "grad_paths": {
+   "books": "data/domain/pg19_train.bin"
+  }
+ }
+}

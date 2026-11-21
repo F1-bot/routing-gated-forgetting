@@ -1,0 +1,18 @@
+# .venv/nestor/Scripts/python.exe subset_adapt.py verify --init outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt --final outputs\confirm\dose_moe_b1_books_d3_B\m2\moe_100m_dose_moe_b1_books_d3_B\20261119_123740__moe_100m_dose_moe_b1_books_d3_B_train\checkpoints\model_final.pt --manifest outputs\confirm\dose_moe_b1_books_d3_B\m2\subset_manifest.json --out outputs\confirm\dose_moe_b1_books_d3_B\m2\audit.json
+# env overrides: {}
+{
+ "frozen_tensors_checked": 153,
+ "frozen_rows_checked": 648,
+ "frozen_mismatch": [],
+ "trainable_unchanged": [],
+ "buffers_checked": 16,
+ "buffer_mismatch": [],
+ "optimizer_state": {
+  "checked": true,
+  "state_rows_checked": 648,
+  "violations": []
+ },
+ "negative_control": null,
+ "allow_unchanged": false,
+ "ok": true
+}

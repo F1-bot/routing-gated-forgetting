@@ -1,0 +1,2 @@
+[pretrain] moe_100m_b15s44: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=/root/data/dclm_train16.bin
+RESULT {"experiment": "moe_100m", "checkpoint": "/root/outputs/moe_100m_b15s44/20261113_042558__moe_100m_b15s44_train/checkpoints/model_final.pt", "val_bin": "dclm_val10.bin", "block": 4096, "first_per_doc": false, "windows": 1222, "tokens": 5004090, "ce": 3.869556693054769, "step": 5722, "seconds": 162.6, "precision": "fp32"}

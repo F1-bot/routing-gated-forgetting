@@ -1,0 +1,32 @@
+[resume-i7] 2026-11-20T06:37:20 start (CheckOnly=True) as PID 24404
+[resume-i7] 2026-11-20T06:37:20 preconditions: watcher and 7 pinned files as reviewed; chain released with exit 0, confirm.done present; A-3 lock PID 11536 not running; open job audit_moe_b1; both audit jobs 'failed', no audit outputs; GPU 826 MiB, no compute process; evidence kept
+[resume-i7] 2026-11-20T06:37:20 freeze-verify (A-3 installed) | .venv\nestor\Scripts\python.exe chain6b_util.py freeze-verify --root . --freeze FREEZE.json
+    [codecheck] 170 files match the install record
+    [freeze-verify] amended after the freeze: code record (logs/chain6b_code_sha256.json): 14 file(s), each with an amendment record
+    [freeze-verify] amended after the freeze: weight_controls.py 473ff8c58542 -> 49e9f45b8f25 (A-1.11 2026-11-15T12:35:53Z approved by operator (delegated by the project owner); phase6/amendment_A1_post_freeze.md, A-2.4 2026-11-16T11:55:38Z approved by operator (delegated by the project owner; install approved by the project owner 2026-11-16); phase6/amendment_A2_post_freeze.md)
+    [freeze-verify] amended after the freeze: chain6b.ps1 9bd89cc3f18a -> eee8ecffe1f8 (A-1.1 2026-11-15T12:35:53Z approved by operator (delegated by the project owner); phase6/amendment_A1_post_freeze.md)
+    [freeze-verify] amended after the freeze: chain6b_util.py c424b76debe5 -> e6f965838baf (A-1.2 2026-11-15T12:35:53Z approved by operator (delegated by the project owner); phase6/amendment_A1_post_freeze.md)
+    [freeze-verify] FREEZE.json verifies (sha256 4f88f9dd29b0f1ed91643491715429846ac125b416b282c07d2a5b1caf2b6c1c; 30 parameters re-derived; 105 hash-list files re-hashed; 4 amended item(s), 16 record(s) in freeze/amendments.jsonl); queue confirm/queue_confirm.json
+[resume-i7] 2026-11-20T06:37:50 freeze-verify (A-3 installed) | exit 0
+[resume-i7] 2026-11-20T06:37:50 check only: every precondition holds; nothing run
+[resume-i7] 2026-11-20T06:37:50 exit 0
+[resume-i7] 2026-11-20T06:38:31 start (CheckOnly=False) as PID 15956
+[resume-i7] 2026-11-20T06:38:31 preconditions: watcher and 7 pinned files as reviewed; chain released with exit 0, confirm.done present; A-3 lock PID 11536 not running; open job audit_moe_b1; both audit jobs 'failed', no audit outputs; GPU 813 MiB, no compute process; evidence kept
+[resume-i7] 2026-11-20T06:38:32 freeze-verify (A-3 installed) | .venv\nestor\Scripts\python.exe chain6b_util.py freeze-verify --root . --freeze FREEZE.json
+    [codecheck] 170 files match the install record
+    [freeze-verify] amended after the freeze: code record (logs/chain6b_code_sha256.json): 14 file(s), each with an amendment record
+    [freeze-verify] amended after the freeze: weight_controls.py 473ff8c58542 -> 49e9f45b8f25 (A-1.11 2026-11-15T12:35:53Z approved by operator (delegated by the project owner); phase6/amendment_A1_post_freeze.md, A-2.4 2026-11-16T11:55:38Z approved by operator (delegated by the project owner; install approved by the project owner 2026-11-16); phase6/amendment_A2_post_freeze.md)
+    [freeze-verify] amended after the freeze: chain6b.ps1 9bd89cc3f18a -> eee8ecffe1f8 (A-1.1 2026-11-15T12:35:53Z approved by operator (delegated by the project owner); phase6/amendment_A1_post_freeze.md)
+    [freeze-verify] amended after the freeze: chain6b_util.py c424b76debe5 -> e6f965838baf (A-1.2 2026-11-15T12:35:53Z approved by operator (delegated by the project owner); phase6/amendment_A1_post_freeze.md)
+    [freeze-verify] FREEZE.json verifies (sha256 4f88f9dd29b0f1ed91643491715429846ac125b416b282c07d2a5b1caf2b6c1c; 30 parameters re-derived; 105 hash-list files re-hashed; 4 amended item(s), 16 record(s) in freeze/amendments.jsonl); queue confirm/queue_confirm.json
+[resume-i7] 2026-11-20T06:38:55 freeze-verify (A-3 installed) | exit 0
+[resume-i7] 2026-11-20T06:39:01 power logger started: PID 11888 -> logs\power\gpu_power_20261120_063856.csv; note appended to logs\power\README_power_log.txt
+[resume-i7] 2026-11-20T06:39:01 run_queue (A-3 re-run, repeated after incident I-7) | .venv\nestor\Scripts\python.exe run_queue.py confirm\rerun\queue_confirm_audit_rerun.json --only audit_moe_b1,audit_moe_b2 --retry-failed
+    [queue] 2026-11-20 06:39:01 queue confirm\rerun\queue_confirm_audit_rerun.json: 187 jobs, estimated 0.99 GPU-h
+    [queue] 2026-11-20 06:39:01 start audit_moe_b1 (cmd, est 0.4932 h)
+    [queue] 2026-11-20 06:58:56 end audit_moe_b1: done
+    [queue] 2026-11-20 06:58:56 start audit_moe_b2 (cmd, est 0.4932 h)
+    [queue] 2026-11-20 07:16:56 end audit_moe_b2: done
+[resume-i7] 2026-11-20T07:16:56 run_queue (A-3 re-run, repeated after incident I-7) | exit 0
+[resume-i7] 2026-11-20T07:16:56 re-run finished: run_queue exit 0; audit_moe_b1 done (outputs 3/3, shim line True); audit_moe_b2 done (outputs 3/3, shim line True)
+[resume-i7] 2026-11-20T07:16:56 exit 0

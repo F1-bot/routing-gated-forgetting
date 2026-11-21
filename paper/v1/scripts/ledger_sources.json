@@ -1,0 +1,346 @@
+{
+ "docs": [
+  {
+   "code": "PR13",
+   "path": "<workspace>",
+   "location": "stored version 6449294c",
+   "desc": "pre-registration v1.3 (version 3)"
+  },
+  {
+   "code": "ENT",
+   "path": "<workspace>",
+   "location": "stored version 15b283b4",
+   "desc": "routing-entanglement note"
+  },
+  {
+   "code": "GAPN",
+   "path": "<workspace>",
+   "location": "stored version 7f4a9295",
+   "desc": "gap-trajectory note"
+  },
+  {
+   "code": "TN4",
+   "path": "<workspace>",
+   "location": "stored version ce9fa26d",
+   "desc": "theory addendum v4"
+  },
+  {
+   "code": "PR12",
+   "path": "<workspace>",
+   "location": "version e9dcf52b",
+   "desc": "pre-registration v1.2"
+  },
+  {
+   "code": "TN3",
+   "path": "<workspace>",
+   "location": "stored version 02b04e6d",
+   "desc": "theory note v3"
+  },
+  {
+   "code": "M7",
+   "path": "<workspace>",
+   "location": "stored version 13fa8fb0",
+   "desc": "the design"
+  },
+  {
+   "code": "G0I",
+   "path": "<workspace>",
+   "location": "stored version 520caba2",
+   "desc": "G0 interim report"
+  },
+  {
+   "code": "NP",
+   "path": "paper\\fulltext.txt",
+   "location": "arXiv 2610.31818 (local full text paper\\fulltext.txt)",
+   "desc": "NESTOR paper"
+  },
+  {
+   "code": "PR11",
+   "path": "<workspace>",
+   "location": "version 37c2433e",
+   "desc": "pre-registration v1.1"
+  },
+  {
+   "code": "M6",
+   "path": "<workspace>",
+   "location": "version 055acf19",
+   "desc": "the design"
+  },
+  {
+   "code": "TV3",
+   "path": "<workspace>",
+   "location": "version b078fb89",
+   "desc": "theory verification v3"
+  },
+  {
+   "code": "TV2",
+   "path": "<workspace>",
+   "location": "version 8fc1e697",
+   "desc": "theory verification v2"
+  },
+  {
+   "code": "CL12",
+   "path": "<workspace>",
+   "location": "version 937487ed",
+   "desc": "change log v1.2"
+  },
+  {
+   "code": "N0",
+   "path": "<workspace>",
+   "location": "stored version e9d93b9d",
+   "desc": "writing notes v0 (number ledger of draft v0, with sources PL/RT/LIC)"
+  },
+  {
+   "code": "LIC",
+   "path": "<workspace>",
+   "location": "version 19592d7b",
+   "desc": "dataset licences table"
+  },
+  {
+   "code": "RC",
+   "path": "run_continual.py",
+   "location": "run_continual.py",
+   "desc": "continual-learning driver (stages B and C)"
+  },
+  {
+   "code": "PR13v4",
+   "path": "<workspace>",
+   "location": "stored version 0b5c604f",
+   "desc": "pre-registration v1.3 (version 4; adds the descriptive EDGE block, sec. 4.11)"
+  },
+  {
+   "code": "TV4",
+   "path": "<workspace>",
+   "location": "stored version c2ca7a89",
+   "desc": "theory verification (load xi_LP, certificate tau*_LP, exact MILP; label-swap symmetry)"
+  },
+  {
+   "code": "TN5E",
+   "path": "<workspace>",
+   "location": "stored version 5bd9922d",
+   "desc": "theory note v5 erratum (accepts the 12 verdicts of verification; supersedes addendum v4 sec. 0 items 1 and 5, 1.2, 1.4, 2.1-2.2)"
+  },
+  {
+   "code": "PR13v6",
+   "path": "<workspace>",
+   "location": "stored version 70821132",
+   "desc": "pre-registration v1.3, version 6 (C1-DE block sec. 4.12; budget and cut order sec. 7; freeze checklist and hash list sec. 8)"
+  },
+  {
+   "code": "PR13v8",
+   "path": "<workspace>",
+   "location": "stored version 71ed1223",
+   "desc": "pre-registration v1.3, version 8, the text to be frozen (P-16: core-first schedule, C2 to step 8, staged analysis)"
+  },
+  {
+   "code": "CL13v8",
+   "path": "<workspace>",
+   "location": "stored version 558f1723",
+   "desc": "change log of pre-registration v1.3 (version 8 table)"
+  },
+  {
+   "code": "RT3",
+   "path": "<workspace>",
+   "location": "stored version c886160d",
+   "desc": "pre-freeze review"
+  },
+  {
+   "code": "PR13v10",
+   "path": "<workspace>",
+   "location": "stored version e55fe890",
+   "desc": "pre-registration v1.3 (version 10, the final text)"
+  },
+  {
+   "code": "CL13v10",
+   "path": "<workspace>",
+   "location": "stored version 2394fd59",
+   "desc": "change log of v1.3 through version 10"
+  },
+  {
+   "code": "R7",
+   "path": "incoming\\c1de_round7_20261115_051235\\README_c1de_stage.md",
+   "location": "incoming/c1de_round7_20261115_051235/README_c1de_stage.md",
+   "desc": "README (core analysis, C2 stop steps, E1 for stopped runs)"
+  },
+  {
+   "code": "PR13v11",
+   "path": "prereg_v13\\preregistration_v1.3_final.md",
+   "location": "prereg_v13\\preregistration_v1.3_final.md (stored version 4a7ee271)",
+   "desc": "pre-registration v1.3, version 11 (frozen)"
+  },
+  {
+   "code": "CL13v11",
+   "path": "<workspace>",
+   "location": "stored version 41b2bec3",
+   "desc": "change log of v1.3 through version 11"
+  },
+  {
+   "code": "FZ",
+   "path": "freeze\\freeze_record.json",
+   "location": "freeze/freeze_record.json (= FREEZE.json, stored version 14977c44)",
+   "desc": "freeze record"
+  },
+  {
+   "code": "FZLOG",
+   "path": "<workspace>",
+   "location": "stored version ac989038",
+   "desc": "freeze-check log of 2026-11-15"
+  },
+  {
+   "code": "R8",
+   "path": "<workspace>",
+   "location": "stored version d2cb1098",
+   "desc": "README"
+  },
+  {
+   "code": "DEV1",
+   "path": "<workspace>",
+   "location": "stored version 483f25aa (= prereg_v13\\deviations_post_freeze.md)",
+   "desc": "post-freeze deviation D-1 with addendum 1"
+  },
+  {
+   "code": "RTA1",
+   "path": "<workspace>",
+   "location": "stored version c0dfd109",
+   "desc": "review of amendment A-1"
+  },
+  {
+   "code": "DEV2",
+   "path": "<workspace>",
+   "location": "stored version c9d81bcb",
+   "desc": "post-freeze deviation record: D-1, addendum 1, I-1, I-2, A-2 (pre-install)"
+  },
+  {
+   "code": "AM2",
+   "path": "<workspace>",
+   "location": "stored version b736e821",
+   "desc": "amendment A-2 decision document"
+  },
+  {
+   "code": "RTA2",
+   "path": "<workspace>",
+   "location": "stored version b58594b0",
+   "desc": "review of amendment A-2, final verdict"
+  },
+  {
+   "code": "RTA2a",
+   "path": "<workspace>",
+   "location": "stored version f11ac7f3",
+   "desc": "review of amendment A-2, part 1 (disclosure wording)"
+  },
+  {
+   "code": "CPUW",
+   "path": "<workspace>",
+   "location": "stored version 5b3d3ac5",
+   "desc": "record of CPU windows and overlapping queue jobs (incident I-2)"
+  }
+ ],
+ "data": [
+  [
+   "SA",
+   "reproduction_stageA.json"
+  ],
+  [
+   "G0",
+   "gate_record_G0.json"
+  ],
+  [
+   "B3",
+   "gate_record_b3.json"
+  ],
+  [
+   "ENTJ",
+   "entanglement_results.json"
+  ],
+  [
+   "GAP",
+   "gap_trajectory.json"
+  ],
+  [
+   "PROV3",
+   "provenance_b15s44.json"
+  ],
+  [
+   "REFV",
+   "ref_verification.json"
+  ],
+  [
+   "G0R",
+   "g0_rerun_compare.json"
+  ],
+  [
+   "HW",
+   "hardware_local.json"
+  ],
+  [
+   "SB",
+   "stageB_window_ci.json"
+  ],
+  [
+   "SC",
+   "stageC_results.json"
+  ],
+  [
+   "G1R",
+   "gate_record_G1.json"
+  ],
+  [
+   "G2R",
+   "gate_record_G2.json"
+  ],
+  [
+   "EP",
+   "edge_pre_freeze.json"
+  ],
+  [
+   "FA",
+   "fig_arch_facts.json"
+  ],
+  [
+   "FE",
+   "fig_edge_values.json"
+  ],
+  [
+   "FR",
+   "fig_repro_values.json"
+  ],
+  [
+   "NB",
+   "nestor_books_feasibility.json"
+  ],
+  [
+   "HOS",
+   "hours_outside_state.json"
+  ],
+  [
+   "OVL",
+   "edge_overlap_I2.json"
+  ],
+  [
+   "RV",
+   "supplementary_values.json"
+  ]
+ ],
+ "generated_tables": {
+  "tables/stageA.tex": "tables/stageA.tex, generated by scripts/make_tables.py from data/reproduction_stageA.json and data/provenance_b15s44.json",
+  "tables/g0_gates.tex": "tables/g0_gates.tex, generated by scripts/make_tables.py from data/gate_record_G0.json and data/gate_record_b3.json",
+  "tables/entanglement_full.tex": "tables/entanglement_full.tex, generated by scripts/make_tables.py from data/entanglement_results.json",
+  "tables/gap_summary.tex": "tables/gap_summary.tex, generated by scripts/make_tables.py from data/gap_trajectory.json",
+  "tables/stageB.tex": "tables/stageB.tex, generated by scripts/make_tables.py from data/stageB_window_ci.json",
+  "tables/stageC.tex": "tables/stageC.tex, generated by scripts/make_tables.py from data/stageC_results.json",
+  "tables/edgepre.tex": "tables/edgepre.tex, generated by scripts/make_tables.py from data/edge_pre_freeze.json",
+  "tables/core_draws.tex": "tables/core_draws.tex, generated by scripts/fill_core.py from results/analysis_core/analysis_confirm.json (written after the analysis lock)",
+  "tables/core_variants.tex": "tables/core_variants.tex, generated by scripts/fill_core.py from results/analysis_core/analysis_confirm.json (written after the analysis lock)",
+  "tables/core_e1.tex": "tables/core_e1.tex, generated by scripts/fill_core.py from results/analysis_core/analysis_confirm.json (written after the analysis lock)",
+  "tables/block_status.tex": "tables/block_status.tex, generated by scripts/fill_full.py from results/analysis/analysis_confirm.json and results/queue_state_confirm.json (written after the registered queue)",
+  "tables/full_draws.tex": "tables/full_draws.tex, generated by scripts/fill_full.py from results/analysis/analysis_confirm.json and results/queue_state_confirm.json (written after the registered queue)",
+  "tables/full_dose.tex": "tables/full_dose.tex, generated by scripts/fill_full.py from results/analysis/analysis_confirm.json and results/queue_state_confirm.json (written after the registered queue)",
+  "tables/full_m12b.tex": "tables/full_m12b.tex, generated by scripts/fill_full.py from results/analysis/analysis_confirm.json and results/queue_state_confirm.json (written after the registered queue)",
+  "tables/full_selpin.tex": "tables/full_selpin.tex, generated by scripts/fill_full.py from results/analysis/analysis_confirm.json and results/queue_state_confirm.json (written after the registered queue)",
+  "tables/full_c3.tex": "tables/full_c3.tex, generated by scripts/fill_full.py from results/analysis/analysis_confirm.json and results/queue_state_confirm.json (written after the registered queue)",
+  "tables/full_c3layer.tex": "tables/full_c3layer.tex, generated by scripts/fill_full.py from results/analysis/analysis_confirm.json and results/queue_state_confirm.json (written after the registered queue)",
+  "tables/full_forecasts.tex": "tables/full_forecasts.tex, generated by scripts/fill_full.py from results/analysis/analysis_confirm.json and results/queue_state_confirm.json (written after the registered queue)",
+  "tables/full_budget.tex": "tables/full_budget.tex, generated by scripts/fill_full.py from results/analysis/analysis_confirm.json and results/queue_state_confirm.json (written after the registered queue)",
+  "tables/full_audit.tex": "tables/full_audit.tex, generated by scripts/fill_full.py from results/analysis/analysis_confirm.json and results/queue_state_confirm.json (written after the registered queue)"
+ }
+}

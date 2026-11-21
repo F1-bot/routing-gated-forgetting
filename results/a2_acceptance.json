@@ -1,0 +1,188 @@
+{
+ "accepted": {
+  "c3_revert_g1_nestor_full_german_s101": true,
+  "c3_revert_g1_moe_b1_full_math_s101": true,
+  "c3_revert_g1_moe_b1_full_german_s101": true
+ },
+ "checks": {
+  "c3_revert_g1_nestor_full_german_s101": {
+   "position": 137,
+   "experiment": "nestor_100m",
+   "run_folder": "outputs/g1/g1_nestor_full_german_s101/m2c",
+   "job_status": "done",
+   "eval_log": {
+    "path": "logs/queue_confirm/c3_revert_g1_nestor_full_german_s101.log",
+    "exists": true,
+    "sha256": "7b1387fbf6b1f68422a4638a320263b5738e9da5211f14200ccc82aebfc012c4",
+    "bytes": 4907
+   },
+   "wd_only_lines": 1,
+   "wd_only_line": "[wd_only] nestor_100m: max_steps 96, warm-up 10, executed 96 (sources: training queue job (g1/queue_g1.json)); fingerprint not checked; train-log LRs equal at all 96 steps; cpu, 1036.7 s",
+   "steps_found": {
+    "max_steps": 96,
+    "warmup": 10,
+    "executed": 96
+   },
+   "source": "training queue job (g1/queue_g1.json)",
+   "fingerprint": "not checked",
+   "train_log_lrs": "equal at all 96 steps",
+   "device": "cpu",
+   "seconds": 1036.7,
+   "training_queue": {
+    "path": "g1/queue_g1.json",
+    "exists": true,
+    "sha256": "1d2cae60f3f78ac5c6253c0f9307a3283076f6cdee3a0e157b95c3e2fb974b12",
+    "state_path": "results/queue_state_g1.json",
+    "state_sha256": "d25d8bb7ed5a4972b0d15a08e79e8d921473ac485f98eb06993328d467cd7ba1",
+    "job": "g1_nestor_full_german_s101",
+    "steps": 96,
+    "warmup": 10,
+    "state_status": "done",
+    "state_root": "outputs\\g1\\g1_nestor_full_german_s101\\m2c",
+    "dclm_run_suffix": "g1_nestor_full_german_s101",
+    "dclm_seed": "101"
+   },
+   "train_log": {
+    "path": "outputs/g1/g1_nestor_full_german_s101/m2c/trainlog/train_steps.jsonl",
+    "exists": true,
+    "sha256": "fef745fc7ef6f12c79a0abe1babfd605c680d7d593eef83ed0f025bc694d5631",
+    "records": 96,
+    "first_step": 1,
+    "last_step": 96,
+    "records_with_lrs": 96,
+    "max_lr": 0.0070710678
+   },
+   "lr_max_abs_diff": {
+    "value": null,
+    "bound": 7.071067807071068e-12,
+    "basis": "not logged: weight_controls.wd_only_state (lines 512-521) compares the decay-only learning rates with the training log in memory and raises unless |a - b| <= 1e-9 max(|a|, |b|) at every step; with a <= max_lr of the training log, |a - b| <= 1e-9 max_lr / (1 - 1e-9) when the line reads 'equal at all 96 steps'"
+   },
+   "a2_recorded_inputs_unchanged": {
+    "g1/queue_g1.json": true,
+    "results/queue_state_g1.json": true,
+    "outputs/g1/g1_nestor_full_german_s101/m2c/trainlog/train_steps.jsonl": true
+   },
+   "reasons": []
+  },
+  "c3_revert_g1_moe_b1_full_math_s101": {
+   "position": 142,
+   "experiment": "moe_100m",
+   "run_folder": "outputs/g1/g1_moe_b1_full_math_s101/m2",
+   "job_status": "done",
+   "eval_log": {
+    "path": "logs/queue_confirm/c3_revert_g1_moe_b1_full_math_s101.log",
+    "exists": true,
+    "sha256": "b1dbed91de3ab69eda8bdaebbe79a9e3f130173e59169fa40db8d1d9b3c6711c",
+    "bytes": 3555
+   },
+   "wd_only_lines": 1,
+   "wd_only_line": "[wd_only] moe_100m: max_steps 96, warm-up 10, executed 96 (sources: training queue job (g1/queue_g1.json)); fingerprint not checked; train-log LRs equal at all 96 steps; cuda, 21.36 s",
+   "steps_found": {
+    "max_steps": 96,
+    "warmup": 10,
+    "executed": 96
+   },
+   "source": "training queue job (g1/queue_g1.json)",
+   "fingerprint": "not checked",
+   "train_log_lrs": "equal at all 96 steps",
+   "device": "cuda",
+   "seconds": 21.36,
+   "training_queue": {
+    "path": "g1/queue_g1.json",
+    "exists": true,
+    "sha256": "1d2cae60f3f78ac5c6253c0f9307a3283076f6cdee3a0e157b95c3e2fb974b12",
+    "state_path": "results/queue_state_g1.json",
+    "state_sha256": "d25d8bb7ed5a4972b0d15a08e79e8d921473ac485f98eb06993328d467cd7ba1",
+    "job": "g1_moe_b1_full_math_s101",
+    "steps": 96,
+    "warmup": 10,
+    "state_status": "done",
+    "state_root": "outputs\\g1\\g1_moe_b1_full_math_s101\\m2",
+    "dclm_run_suffix": "g1_moe_b1_full_math_s101",
+    "dclm_seed": "101"
+   },
+   "train_log": {
+    "path": "outputs/g1/g1_moe_b1_full_math_s101/m2/trainlog/train_steps.jsonl",
+    "exists": true,
+    "sha256": "a4622097ee1ce08f73dd861eb01b8a6e52e2c1ef9ac9dac3d3a2b084a142421f",
+    "records": 96,
+    "first_step": 1,
+    "last_step": 96,
+    "records_with_lrs": 96,
+    "max_lr": 0.00288675135
+   },
+   "lr_max_abs_diff": {
+    "value": null,
+    "bound": 2.8867513528867513e-12,
+    "basis": "not logged: weight_controls.wd_only_state (lines 512-521) compares the decay-only learning rates with the training log in memory and raises unless |a - b| <= 1e-9 max(|a|, |b|) at every step; with a <= max_lr of the training log, |a - b| <= 1e-9 max_lr / (1 - 1e-9) when the line reads 'equal at all 96 steps'"
+   },
+   "a2_recorded_inputs_unchanged": {
+    "g1/queue_g1.json": true,
+    "results/queue_state_g1.json": true,
+    "outputs/g1/g1_moe_b1_full_math_s101/m2/trainlog/train_steps.jsonl": true
+   },
+   "reasons": []
+  },
+  "c3_revert_g1_moe_b1_full_german_s101": {
+   "position": 147,
+   "experiment": "moe_100m",
+   "run_folder": "outputs/g1/g1_moe_b1_full_german_s101/m2",
+   "job_status": "done",
+   "eval_log": {
+    "path": "logs/queue_confirm/c3_revert_g1_moe_b1_full_german_s101.log",
+    "exists": true,
+    "sha256": "4ca21083822934608099f1e5b6fc49bebcdacc579508040258fcb81e530987b8",
+    "bytes": 3580
+   },
+   "wd_only_lines": 1,
+   "wd_only_line": "[wd_only] moe_100m: max_steps 96, warm-up 10, executed 96 (sources: training queue job (g1/queue_g1.json)); fingerprint not checked; train-log LRs equal at all 96 steps; cuda, 22.61 s",
+   "steps_found": {
+    "max_steps": 96,
+    "warmup": 10,
+    "executed": 96
+   },
+   "source": "training queue job (g1/queue_g1.json)",
+   "fingerprint": "not checked",
+   "train_log_lrs": "equal at all 96 steps",
+   "device": "cuda",
+   "seconds": 22.61,
+   "training_queue": {
+    "path": "g1/queue_g1.json",
+    "exists": true,
+    "sha256": "1d2cae60f3f78ac5c6253c0f9307a3283076f6cdee3a0e157b95c3e2fb974b12",
+    "state_path": "results/queue_state_g1.json",
+    "state_sha256": "d25d8bb7ed5a4972b0d15a08e79e8d921473ac485f98eb06993328d467cd7ba1",
+    "job": "g1_moe_b1_full_german_s101",
+    "steps": 96,
+    "warmup": 10,
+    "state_status": "done",
+    "state_root": "outputs\\g1\\g1_moe_b1_full_german_s101\\m2",
+    "dclm_run_suffix": "g1_moe_b1_full_german_s101",
+    "dclm_seed": "101"
+   },
+   "train_log": {
+    "path": "outputs/g1/g1_moe_b1_full_german_s101/m2/trainlog/train_steps.jsonl",
+    "exists": true,
+    "sha256": "ac989556d02a8cfe29cefa5bf393842059922748e92adf98ab1fbfa604ae8cf7",
+    "records": 96,
+    "first_step": 1,
+    "last_step": 96,
+    "records_with_lrs": 96,
+    "max_lr": 0.00288675135
+   },
+   "lr_max_abs_diff": {
+    "value": null,
+    "bound": 2.8867513528867513e-12,
+    "basis": "not logged: weight_controls.wd_only_state (lines 512-521) compares the decay-only learning rates with the training log in memory and raises unless |a - b| <= 1e-9 max(|a|, |b|) at every step; with a <= max_lr of the training log, |a - b| <= 1e-9 max_lr / (1 - 1e-9) when the line reads 'equal at all 96 steps'"
+   },
+   "a2_recorded_inputs_unchanged": {
+    "g1/queue_g1.json": true,
+    "results/queue_state_g1.json": true,
+    "outputs/g1/g1_moe_b1_full_german_s101/m2/trainlog/train_steps.jsonl": true
+   },
+   "reasons": []
+  }
+ },
+ "rule": "prereg_v13/deviations_post_freeze.md, entry A-2, Rules item 5: \"Acceptance (MF-A2-2; README step 9): each [wd_only] line of 137, 142 and 147 must report 96/10/96 from the training queue job and \"train-log LRs equal at all 96 steps\". If a line reads \"train-log LRs not checked\", or is missing, that value is not reported and the case is recorded as a deviation.\" Applied as: a value is accepted only if its job ended 'done' in results/queue_state_confirm.json and the job log logs/queue_confirm/<job>.log holds exactly one [wd_only] line reading max_steps 96, warm-up 10, executed 96, sources exactly \"training queue job (g1/queue_g1.json)\" and train-log LRs \"equal at all 96 steps\"; that queue job (recorded in results/queue_state_g1.json with this run folder as its root and status done) lists steps 96 and warm-up 10; and the run's training log holds steps 1 to 96, each with its learning rates. Only logs and queue files are read, no evaluation value.",
+ "utc": "2026-11-19T03:50:40Z"
+}

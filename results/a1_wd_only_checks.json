@@ -1,0 +1,158 @@
+{
+ "pass": {
+  "c3_full_nestor_books_s101": true,
+  "c3_full_nestor_math_s101": true,
+  "c3_full_moe_b1_books_s101": true
+ },
+ "checks": {
+  "c3_full_nestor_books_s101": {
+   "position": 131,
+   "frozen_queue": {
+    "path": "confirm/queue_confirm.json",
+    "sha256": "47c95918229a8a2ed3eca4adc49d7d80fc89f2ad1cc4ebad0c2935622000269b",
+    "experiment": "nestor_100m",
+    "steps": 96,
+    "warmup": 10,
+    "stop_after": null,
+    "executed": 96
+   },
+   "job_status": "done",
+   "job_root": "outputs/confirm/c3_full_nestor_books_s101/m4c",
+   "eval_log": {
+    "path": "logs/queue_confirm/c3_full_nestor_books_s101_eval_wd.log",
+    "exists": true,
+    "sha256": "6502017c076e689bd52065e43f3d537c1e06b4c5a6a83d98ea45b2e7de64c7d2",
+    "bytes": 2341
+   },
+   "wd_only_lines": 1,
+   "wd_only_line": "[wd_only] nestor_100m: max_steps 96, warm-up 10, executed 96 (sources: frozen queue job (queue_confirm.json)); fingerprint not checked; train-log LRs equal at all 96 steps; cuda, 19.78 s",
+   "steps_found": {
+    "max_steps": 96,
+    "warmup": 10,
+    "executed": 96
+   },
+   "source": "frozen queue job (queue_confirm.json)",
+   "fingerprint": "not checked",
+   "train_log_lrs": "equal at all 96 steps",
+   "device": "cuda",
+   "seconds": 19.78,
+   "train_log": {
+    "path": "outputs/confirm/c3_full_nestor_books_s101/m4c/trainlog/train_steps.jsonl",
+    "exists": true,
+    "sha256": "b62e8c39b208fd37d75cb991b5dfd9bba05543c4170077e4f9305076fe3577cb",
+    "records": 96,
+    "first_step": 1,
+    "last_step": 96,
+    "records_with_lrs": 96,
+    "max_lr": 0.0070710678
+   },
+   "lr_max_abs_diff": {
+    "value": null,
+    "bound": 7.071067807071068e-12,
+    "basis": "not logged: weight_controls.wd_only_state (lines 512-521) compares the decay-only learning rates with the training log in memory and raises unless |a - b| <= 1e-9 max(|a|, |b|) at every step"
+   },
+   "reasons": [],
+   "notes": []
+  },
+  "c3_full_nestor_math_s101": {
+   "position": 133,
+   "frozen_queue": {
+    "path": "confirm/queue_confirm.json",
+    "sha256": "47c95918229a8a2ed3eca4adc49d7d80fc89f2ad1cc4ebad0c2935622000269b",
+    "experiment": "nestor_100m",
+    "steps": 96,
+    "warmup": 10,
+    "stop_after": null,
+    "executed": 96
+   },
+   "job_status": "done",
+   "job_root": "outputs/confirm/c3_full_nestor_math_s101/m4c",
+   "eval_log": {
+    "path": "logs/queue_confirm/c3_full_nestor_math_s101_eval_wd.log",
+    "exists": true,
+    "sha256": "fc55122cc253ee6a87fe39c4d6691b601876361090dcc642b13ceb16fb258763",
+    "bytes": 2333
+   },
+   "wd_only_lines": 1,
+   "wd_only_line": "[wd_only] nestor_100m: max_steps 96, warm-up 10, executed 96 (sources: frozen queue job (queue_confirm.json)); fingerprint not checked; train-log LRs equal at all 96 steps; cuda, 19.68 s",
+   "steps_found": {
+    "max_steps": 96,
+    "warmup": 10,
+    "executed": 96
+   },
+   "source": "frozen queue job (queue_confirm.json)",
+   "fingerprint": "not checked",
+   "train_log_lrs": "equal at all 96 steps",
+   "device": "cuda",
+   "seconds": 19.68,
+   "train_log": {
+    "path": "outputs/confirm/c3_full_nestor_math_s101/m4c/trainlog/train_steps.jsonl",
+    "exists": true,
+    "sha256": "605072e6e0490e63f9257168ec781bb5ef312bbe319e41b032877c447efa4d04",
+    "records": 96,
+    "first_step": 1,
+    "last_step": 96,
+    "records_with_lrs": 96,
+    "max_lr": 0.0070710678
+   },
+   "lr_max_abs_diff": {
+    "value": null,
+    "bound": 7.071067807071068e-12,
+    "basis": "not logged: weight_controls.wd_only_state (lines 512-521) compares the decay-only learning rates with the training log in memory and raises unless |a - b| <= 1e-9 max(|a|, |b|) at every step"
+   },
+   "reasons": [],
+   "notes": []
+  },
+  "c3_full_moe_b1_books_s101": {
+   "position": 140,
+   "frozen_queue": {
+    "path": "confirm/queue_confirm.json",
+    "sha256": "47c95918229a8a2ed3eca4adc49d7d80fc89f2ad1cc4ebad0c2935622000269b",
+    "experiment": "moe_100m",
+    "steps": 96,
+    "warmup": 10,
+    "stop_after": null,
+    "executed": 96
+   },
+   "job_status": "done",
+   "job_root": "outputs/confirm/c3_full_moe_b1_books_s101/m2",
+   "eval_log": {
+    "path": "logs/queue_confirm/c3_full_moe_b1_books_s101_eval_wd.log",
+    "exists": true,
+    "sha256": "9cae5d880b753f526a29c0912b46a47ed3a0a8c8279c3c3466d16b0cfcc763c6",
+    "bytes": 2288
+   },
+   "wd_only_lines": 1,
+   "wd_only_line": "[wd_only] moe_100m: max_steps 96, warm-up 10, executed 96 (sources: frozen queue job (queue_confirm.json)); fingerprint not checked; train-log LRs equal at all 96 steps; cuda, 21.1 s",
+   "steps_found": {
+    "max_steps": 96,
+    "warmup": 10,
+    "executed": 96
+   },
+   "source": "frozen queue job (queue_confirm.json)",
+   "fingerprint": "not checked",
+   "train_log_lrs": "equal at all 96 steps",
+   "device": "cuda",
+   "seconds": 21.1,
+   "train_log": {
+    "path": "outputs/confirm/c3_full_moe_b1_books_s101/m2/trainlog/train_steps.jsonl",
+    "exists": true,
+    "sha256": "77cf4c9c7de1929af3688e3fc5dd604c8257a4be9b050886de10525278a9b08c",
+    "records": 96,
+    "first_step": 1,
+    "last_step": 96,
+    "records_with_lrs": 96,
+    "max_lr": 0.00288675135
+   },
+   "lr_max_abs_diff": {
+    "value": null,
+    "bound": 2.8867513528867513e-12,
+    "basis": "not logged: weight_controls.wd_only_state (lines 512-521) compares the decay-only learning rates with the training log in memory and raises unless |a - b| <= 1e-9 max(|a|, |b|) at every step"
+   },
+   "reasons": [],
+   "notes": []
+  }
+ },
+ "rule": "prereg_v13/deviations_post_freeze.md, entry D-1, addendum 1, item 6: \"Three C3 FULL jobs run WD-only without a subset manifest: c3_full_moe_b1_books_s101, c3_full_nestor_books_s101 and c3_full_nestor_math_s101 (two on NESTOR). On this path the fingerprint check is skipped and every parameter decays. It has not yet been checked on real files; the train-log comparison still applies.\" Entry A-2, Rules item 4: \"Device: if a [wd_only] line of positions 131, 133, 137, 140, 142 or 147 reports cpu, the extra queue hours are recorded here as a note.\" Applied as: a job passes only if it ended 'done' in results/queue_state_confirm.json and logs/queue_confirm/<job>_eval_wd.log holds exactly one [wd_only] line for the job's experiment whose max_steps, warm-up and executed equal the frozen queue job's steps, warm-up and executed steps (steps, or the interim stop_after when the job sets one), whose sources include \"frozen queue job (queue_confirm.json)\" and whose train-log LRs read \"equal at all <executed> steps\"; the training log of the job root recorded in the queue state must hold steps 1 to <executed>, each with its learning rates. The fingerprint and the device are recorded; a fingerprint other than 'not checked' and the device cpu are notes, not failures. Only logs and queue files are read, no evaluation value.",
+ "utc": "2026-11-19T02:00:37Z"
+}

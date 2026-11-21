@@ -1,0 +1,318 @@
+{
+ "ksd_moe_b1_books_muon": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 4.23
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_moe_b1_books_muon\\m2",
+  "final": "outputs\\forecast\\ksd_moe_b1_books_muon\\m2\\moe_100m_ksd_moe_b1_books_muon\\20261115_015806__moe_100m_ksd_moe_b1_books_muon_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_moe_b1_books_muon\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794700677.7452035,
+  "end": 1794700939.2965307,
+  "hours": 0.0727
+ },
+ "ksd_moe_b1_german_muon": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 3.77
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_moe_b1_german_muon\\m2",
+  "final": "outputs\\forecast\\ksd_moe_b1_german_muon\\m2\\moe_100m_ksd_moe_b1_german_muon\\20261115_020228__moe_100m_ksd_moe_b1_german_muon_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_moe_b1_german_muon\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794700939.2975323,
+  "end": 1794701173.6812372,
+  "hours": 0.0651
+ },
+ "ksd_moe_b1_german_sgd": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 3.76
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_moe_b1_german_sgd\\m2",
+  "final": "outputs\\forecast\\ksd_moe_b1_german_sgd\\m2\\moe_100m_ksd_moe_b1_german_sgd\\20261115_020621__moe_100m_ksd_moe_b1_german_sgd_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_moe_b1_german_sgd\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794701173.6822352,
+  "end": 1794701407.08119,
+  "hours": 0.0648
+ },
+ "ksd_moe_b1_math_muon": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 2.65
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_moe_b1_math_muon\\m2",
+  "final": "outputs\\forecast\\ksd_moe_b1_math_muon\\m2\\moe_100m_ksd_moe_b1_math_muon\\20261115_021015__moe_100m_ksd_moe_b1_math_muon_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_moe_b1_math_muon\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794701407.0821898,
+  "end": 1794701573.2333636,
+  "hours": 0.0462
+ },
+ "ksd_moe_b1_dclm_muon": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 2.58
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_moe_b1_dclm_muon\\m2",
+  "final": "outputs\\forecast\\ksd_moe_b1_dclm_muon\\m2\\moe_100m_ksd_moe_b1_dclm_muon\\20261115_021300__moe_100m_ksd_moe_b1_dclm_muon_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_moe_b1_dclm_muon\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794701573.23536,
+  "end": 1794701734.9732275,
+  "hours": 0.0449
+ },
+ "ksd_moe_b1_code_muon": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 2.59
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_moe_b1_code_muon\\m2",
+  "final": "outputs\\forecast\\ksd_moe_b1_code_muon\\m2\\moe_100m_ksd_moe_b1_code_muon\\20261115_021543__moe_100m_ksd_moe_b1_code_muon_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_moe_b1_code_muon\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794701734.9751685,
+  "end": 1794701897.8236916,
+  "hours": 0.0452
+ },
+ "ksd_moe_b2_books_muon": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 2.57
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_moe_b2_books_muon\\m2",
+  "final": "outputs\\forecast\\ksd_moe_b2_books_muon\\m2\\moe_100m_ksd_moe_b2_books_muon\\20261115_021825__moe_100m_ksd_moe_b2_books_muon_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_moe_b2_books_muon\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794701897.824694,
+  "end": 1794702059.2833266,
+  "hours": 0.0448
+ },
+ "ksd_moe_b2_german_muon": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 2.56
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_moe_b2_german_muon\\m2",
+  "final": "outputs\\forecast\\ksd_moe_b2_german_muon\\m2\\moe_100m_ksd_moe_b2_german_muon\\20261115_022106__moe_100m_ksd_moe_b2_german_muon_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_moe_b2_german_muon\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794702059.2843323,
+  "end": 1794702219.301096,
+  "hours": 0.0444
+ },
+ "ksd_moe_b2_german_sgd": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 2.57
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_moe_b2_german_sgd\\m2",
+  "final": "outputs\\forecast\\ksd_moe_b2_german_sgd\\m2\\moe_100m_ksd_moe_b2_german_sgd\\20261115_022347__moe_100m_ksd_moe_b2_german_sgd_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_moe_b2_german_sgd\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794702219.3028796,
+  "end": 1794702379.6698234,
+  "hours": 0.0445
+ },
+ "ksd_moe_b2_math_muon": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 2.57
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_moe_b2_math_muon\\m2",
+  "final": "outputs\\forecast\\ksd_moe_b2_math_muon\\m2\\moe_100m_ksd_moe_b2_math_muon\\20261115_022627__moe_100m_ksd_moe_b2_math_muon_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_moe_b2_math_muon\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794702379.6718235,
+  "end": 1794702539.8718817,
+  "hours": 0.0445
+ },
+ "ksd_moe_b2_code_muon": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 2.53
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_moe_b2_code_muon\\m2",
+  "final": "outputs\\forecast\\ksd_moe_b2_code_muon\\m2\\moe_100m_ksd_moe_b2_code_muon\\20261115_022907__moe_100m_ksd_moe_b2_code_muon_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_moe_b2_code_muon\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794702539.8728821,
+  "end": 1794702697.9412649,
+  "hours": 0.0439
+ },
+ "ksd_moe_b3_books_muon": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 2.54
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_moe_b3_books_muon\\m2",
+  "final": "outputs\\forecast\\ksd_moe_b3_books_muon\\m2\\moe_100m_ksd_moe_b3_books_muon\\20261115_023145__moe_100m_ksd_moe_b3_books_muon_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_moe_b3_books_muon\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794702697.943264,
+  "end": 1794702856.4315329,
+  "hours": 0.044
+ },
+ "ksd_nestor_books_muon": {
+  "attempts": [
+   {
+    "micro": 4,
+    "ckpt": true,
+    "rc": 0,
+    "minutes": 12.17
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_nestor_books_muon\\m4c",
+  "final": "outputs\\forecast\\ksd_nestor_books_muon\\m4c\\nestor_100m_ksd_nestor_books_muon\\20261115_023423__nestor_100m_ksd_nestor_books_muon_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_nestor_books_muon\\m4c\\audit.json",
+  "audit_ok": true,
+  "start": 1794702856.4325323,
+  "end": 1794703593.172399,
+  "hours": 0.2046
+ },
+ "ksd_nestor_german_muon": {
+  "attempts": [
+   {
+    "micro": 4,
+    "ckpt": true,
+    "rc": 0,
+    "minutes": 7.4
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_nestor_german_muon\\m4c",
+  "final": "outputs\\forecast\\ksd_nestor_german_muon\\m4c\\nestor_100m_ksd_nestor_german_muon\\20261115_024640__nestor_100m_ksd_nestor_german_muon_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_nestor_german_muon\\m4c\\audit.json",
+  "audit_ok": true,
+  "start": 1794703593.173399,
+  "end": 1794704048.016765,
+  "hours": 0.1263
+ },
+ "ksd_nestor_math_muon": {
+  "attempts": [
+   {
+    "micro": 4,
+    "ckpt": true,
+    "rc": 0,
+    "minutes": 7.46
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_nestor_math_muon\\m4c",
+  "final": "outputs\\forecast\\ksd_nestor_math_muon\\m4c\\nestor_100m_ksd_nestor_math_muon\\20261115_025415__nestor_100m_ksd_nestor_math_muon_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_nestor_math_muon\\m4c\\audit.json",
+  "audit_ok": true,
+  "start": 1794704048.018765,
+  "end": 1794704501.9966702,
+  "hours": 0.1261
+ },
+ "ksd_nestor_code_muon": {
+  "attempts": [
+   {
+    "micro": 4,
+    "ckpt": true,
+    "rc": 0,
+    "minutes": 7.4
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\forecast\\ksd_nestor_code_muon\\m4c",
+  "final": "outputs\\forecast\\ksd_nestor_code_muon\\m4c\\nestor_100m_ksd_nestor_code_muon\\20261115_030149__nestor_100m_ksd_nestor_code_muon_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\forecast\\ksd_nestor_code_muon\\m4c\\audit.json",
+  "audit_ok": true,
+  "start": 1794704501.9986665,
+  "end": 1794704952.4219415,
+  "hours": 0.1251
+ },
+ "forecast_probe_moe_b1": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794704952.4239442,
+  "end": 1794709197.8075817,
+  "hours": 1.1793
+ },
+ "forecast_probe_moe_b2": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794709197.8095815,
+  "end": 1794712482.3892498,
+  "hours": 0.9124
+ },
+ "forecast_probe_moe_b3": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794712482.3912494,
+  "end": 1794712888.1496289,
+  "hours": 0.1127
+ },
+ "forecast_probe_nestor": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794712888.1516285,
+  "end": 1794713579.0244136,
+  "hours": 0.1919
+ }
+}

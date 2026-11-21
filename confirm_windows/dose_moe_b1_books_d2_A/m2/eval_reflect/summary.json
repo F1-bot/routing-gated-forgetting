@@ -1,0 +1,33 @@
+{
+ "meta": {
+  "experiment": "moe_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\dose_moe_b1_books_d2_A\\m2\\moe_100m_dose_moe_b1_books_d2_A\\20261119_105046__moe_100m_dose_moe_b1_books_d2_A_train\\checkpoints\\model_final.pt",
+   "size": 2555317241,
+   "head_sha256": "b6995ffd35d1dcdfd065be106ed8d8b7188c0efd20b7116af8c6c93d8393eb94"
+  },
+  "base": {
+   "path": "outputs\\moe_100m_b05\\20261101_002357__moe_100m_b05_train\\checkpoints\\model_final.pt",
+   "size": 3370939901,
+   "head_sha256": "ef3eb3815967cf91802f9a1c299b2f26dc82a990d3ceb02e7a6902a1aff9f14b"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-19T11:08:46"
+ },
+ "results": {
+  "reflect|code": {
+   "ce": 6.226104796245421,
+   "windows": 500,
+   "seconds": 67.3,
+   "file": "outputs\\confirm\\dose_moe_b1_books_d2_A\\m2\\eval_reflect\\reflect__code.npz"
+  },
+  "reflect|math": {
+   "ce": 4.850076521958944,
+   "windows": 500,
+   "seconds": 65.9,
+   "file": "outputs\\confirm\\dose_moe_b1_books_d2_A\\m2\\eval_reflect\\reflect__math.npz"
+  }
+ }
+}

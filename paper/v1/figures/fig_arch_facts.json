@@ -1,0 +1,226 @@
+{
+ "facts": {
+  "dense.width": {
+   "value": 480
+  },
+  "dense.context": {
+   "value": 4096
+  },
+  "dense.vocab": {
+   "value": 100263
+  },
+  "dense.blocks": {
+   "value": 4
+  },
+  "dense.layers_per_block": {
+   "value": [
+    3,
+    3,
+    3,
+    3
+   ]
+  },
+  "dense.layers": {
+   "value": 12
+  },
+  "dense.head_dim": {
+   "value": 30
+  },
+  "dense.always_on_shared_experts": {
+   "value": 0
+  },
+  "dense.stored_params": {
+   "value": 141011709
+  },
+  "moe.width": {
+   "value": 480
+  },
+  "moe.context": {
+   "value": 4096
+  },
+  "moe.vocab": {
+   "value": 100263
+  },
+  "moe.blocks": {
+   "value": 4
+  },
+  "moe.layers_per_block": {
+   "value": [
+    3,
+    3,
+    3,
+    3
+   ]
+  },
+  "moe.layers": {
+   "value": 12
+  },
+  "moe.head_dim": {
+   "value": 30
+  },
+  "moe.always_on_shared_experts": {
+   "value": 0
+  },
+  "moe.stored_params": {
+   "value": 373387389
+  },
+  "moe.frozen_router_tensors": {
+   "value": 28
+  },
+  "nestor.width": {
+   "value": 480
+  },
+  "nestor.context": {
+   "value": 4096
+  },
+  "nestor.vocab": {
+   "value": 100263
+  },
+  "nestor.blocks": {
+   "value": 7
+  },
+  "nestor.layers_per_block": {
+   "value": [
+    1,
+    1,
+    2,
+    2,
+    2,
+    3,
+    2
+   ]
+  },
+  "nestor.layers": {
+   "value": 13
+  },
+  "nestor.head_dim": {
+   "value": 30
+  },
+  "nestor.always_on_shared_experts": {
+   "value": 0
+  },
+  "nestor.stored_params": {
+   "value": 377505845
+  },
+  "nestor.frozen_router_tensors": {
+   "value": 145
+  },
+  "dense.heads": {
+   "value": 16
+  },
+  "dense.experts_per_layer": {
+   "value": 1
+  },
+  "dense.experts_per_token": {
+   "value": 1
+  },
+  "dense.mlp_hidden": {
+   "value": 1920
+  },
+  "moe.heads": {
+   "value": 16
+  },
+  "moe.experts_per_layer": {
+   "value": 24
+  },
+  "moe.experts_per_token": {
+   "value": 3
+  },
+  "moe.mlp_hidden": {
+   "value": 640
+  },
+  "moe.active_expert_width": {
+   "value": 1920
+  },
+  "nestor.columns": {
+   "value": 8
+  },
+  "nestor.columns_per_token": {
+   "value": [
+    3,
+    4,
+    5,
+    6,
+    6,
+    7,
+    8
+   ]
+  },
+  "nestor.heads_per_column": {
+   "value": [
+    5,
+    4,
+    3,
+    3,
+    3,
+    2,
+    2
+   ]
+  },
+  "nestor.private_experts_per_column": {
+   "value": 8
+  },
+  "nestor.private_top_k": {
+   "value": [
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "nestor.shared_experts": {
+   "value": 8
+  },
+  "nestor.shared_top_k": {
+   "value": 2
+  },
+  "nestor.config_provenance": {
+   "value": "G1 run config; base checkpoint loaded 859/859 weights"
+  },
+  "nestor.pool_semantics": {
+   "value": "public pool shared by all tokens (top-k_p), one private pool per column (top-k_q inside each selected column), learned two-logit path gate, both paths always evaluated"
+  },
+  "paper.moe": {
+   "value": "E = 24, K_e = 3"
+  },
+  "paper.nestor_columns": {
+   "value": "C = 8, K_c = 3,4,5,6,6,7,8; 13 layers in 7 blocks; 8 column-private experts per column"
+  },
+  "paper.column_router": {
+   "value": "once per block, a column router sends each token to K_c of C = 8 columns"
+  },
+  "paper.shared_experts": {
+   "value": "shared experts tied across columns; two-way gate"
+  },
+  "paper.stored": {
+   "value": "0.37B (MoE), 0.38B (NESTOR) stored"
+  },
+  "paper.routing_mass": {
+   "value": "w_c(m) = E_c[g_m^2]; W_c(S) = sum over m in S of w_c(m)"
+  },
+  "paper.forgetting": {
+   "value": "F_c = L_c(theta_0 + delta) - L_c(theta_0)"
+  },
+  "protocol.steps_tokens_context": {
+   "value": "96 steps of 262,144 tokens at 4k context"
+  },
+  "protocol.tokens_total": {
+   "value": 25165824
+  },
+  "protocol.frozen": {
+   "value": "routers and balancing biases frozen, routing noise off"
+  },
+  "protocol.subset": {
+   "value": "in subset runs only the experts of S are trainable"
+  },
+  "protocol.eval_windows": {
+   "value": "500 windows of 4,096 tokens (2,048,000 tokens) per stream"
+  },
+  "protocol.c1_subsets": {
+   "value": "k = 6 of N = 24 experts per MoE layer; pools of 12 (f = 1/2)"
+  }
+ }
+}

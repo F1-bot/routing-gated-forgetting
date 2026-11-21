@@ -1,0 +1,21 @@
+{
+ "s1x_c2_moe_b1_d1_muon_H": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 2.13
+   }
+  ],
+  "status": "failed",
+  "root": "outputs\\exploratory\\c2_step1\\c2_moe_b1_d1_muon_H\\m2",
+  "final": "outputs\\exploratory\\c2_step1\\c2_moe_b1_d1_muon_H\\m2\\moe_100m_s1x_c2_moe_b1_d1_muon_H\\20261118_021031__moe_100m_s1x_c2_moe_b1_d1_muon_H_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\exploratory\\c2_step1\\c2_moe_b1_d1_muon_H\\m2\\audit.json",
+  "audit_ok": false,
+  "error": "bitwise audit failed",
+  "start": 1794960622.7435718,
+  "end": 1794960785.0872838,
+  "hours": 0.0451
+ }
+}

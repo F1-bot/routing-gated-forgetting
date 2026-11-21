@@ -1,0 +1,20 @@
+--- confirm/queue_confirm.json
++++ confirm/rerun/queue_confirm_audit_rerun.json
+@@ -21534,7 +21534,7 @@
+   {
+    "argv": [
+     "{python}",
+-    "assumption_audit.py",
++    "confirm/rerun/audit_shim.py",
+     "run",
+     "--g0-record",
+     "g0/gate_record.json",
+@@ -21566,7 +21566,7 @@
+   {
+    "argv": [
+     "{python}",
+-    "assumption_audit.py",
++    "confirm/rerun/audit_shim.py",
+     "run",
+     "--g0-record",
+     "g0/gate_record.json",

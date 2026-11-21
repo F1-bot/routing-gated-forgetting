@@ -1,0 +1,18 @@
+# .venv/nestor/Scripts/python.exe confirm/rerun/audit_shim.py run --g0-record g0/gate_record.json --base moe_b2 --out audit/moe_b2 --windows 24 --directions realized --runs c1_moe_b2_books_d1_A,c1_moe_b2_books_d1_B --state results/queue_state_confirm.json --queue confirm/queue_confirm.json --checkpoint outputs/moe_100m_b05s43/20261101_001918__moe_100m_b05s43_train_h100/checkpoints/model_final.pt
+# env overrides: {}
+[audit-shim] A-3: dose_draws.base_inputs restored (absent from the frozen module); source phase6/pre_v13/dose_draws.py lines 113-127 (text sha256 3624444e5e68c63839dc7c2f12657268b2fa89c96b77e57d4893d203c92c1df6); sha256 verified: assumption_audit.py 39adede34e69, dose_draws.py bbb3c5c03dfb, phase6/pre_v13/dose_draws.py e7377f11d098; running assumption_audit.py run --g0-record g0/gate_record.json --base moe_b2 --out audit/moe_b2 --windows 24 --directions realized --runs c1_moe_b2_books_d1_A,c1_moe_b2_books_d1_B --state results/queue_state_confirm.json --queue confirm/queue_confirm.json --checkpoint outputs/moe_100m_b05s43/20261101_001918__moe_100m_b05s43_train_h100/checkpoints/model_final.pt
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+.venv\nestor\Lib\site-packages\triton\knobs.py:524: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+[g0] probe 8/72 windows, 121s
+[g0] probe 16/72 windows, 233s
+[g0] probe 24/72 windows, 344s
+[g0] probe 32/72 windows, 456s
+[g0] probe 40/72 windows, 569s
+[g0] probe 48/72 windows, 683s
+[g0] probe 56/72 windows, 798s
+[g0] probe 64/72 windows, 910s
+[g0] probe 72/72 windows, 1023s
+[audit] moe_b2 realised: 24 groups x 3 corpora x 24 windows, eps 0.0025 -> audit/moe_b2

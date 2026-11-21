@@ -1,0 +1,3 @@
+# .venv/nestor/Scripts/python.exe forecasts.py c5-french --plan confirm/plan_confirm.json --drive c5_drive_moe_b1_french_s101 --states results/queue_state_confirm.json --out confirm/c5_french_forecasts.json
+# env overrides: {}
+[forecasts] C5 French: 3 forecasts, sha256 6dc4ff2bc6d3e566e8c65afbf00d045665e1704aec82e5d34417b9ea20dcd2e8 -> confirm/c5_french_forecasts.json

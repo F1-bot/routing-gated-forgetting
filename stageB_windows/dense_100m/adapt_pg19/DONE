@@ -1,0 +1,1 @@
+{"ckpt": "outputs\\continual\\dense_100m_adapt_pg19_m4\\dense_100m_adapt_pg19\\20261113_174054__dense_100m_adapt_pg19_train\\checkpoints\\model_final.pt", "sets": ["pg19"], "seconds": 114.39196395874023}

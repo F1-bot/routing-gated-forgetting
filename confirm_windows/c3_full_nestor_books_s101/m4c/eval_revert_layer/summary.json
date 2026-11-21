@@ -1,0 +1,57 @@
+{
+ "meta": {
+  "experiment": "nestor_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c3_full_nestor_books_s101\\m4c\\nestor_100m_c3_full_nestor_books_s101\\20261118_154900__nestor_100m_c3_full_nestor_books_s101_train\\checkpoints\\model_final.pt",
+   "size": 3400441546,
+   "head_sha256": "2eea943316ff1d9fc8b104ad26c01c3cfc45bc068f0b95c04bf304f6862a4f2a"
+  },
+  "base": {
+   "path": "outputs\\nestor_100m_b05\\20261031_213045__nestor_100m_b05_train_h100\\checkpoints\\model_final.pt",
+   "size": 1510337922,
+   "head_sha256": "417fb7b51ff8feec3f4adef090a375a8614c4028d62555fd4a24d5b8305ea8da"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-18T17:25:14"
+ },
+ "results": {
+  "revert:attn@b0+priv@b0|dclm": {
+   "ce": 4.938163644688645,
+   "windows": 500,
+   "seconds": 228.2,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s101\\m4c\\eval_revert_layer\\revert-attn@b0+priv@b0__dclm.npz"
+  },
+  "revert:attn@b1+priv@b1|dclm": {
+   "ce": 4.938011028598138,
+   "windows": 500,
+   "seconds": 225.2,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s101\\m4c\\eval_revert_layer\\revert-attn@b1+priv@b1__dclm.npz"
+  },
+  "revert:attn@b2+priv@b2|dclm": {
+   "ce": 4.920767534722223,
+   "windows": 500,
+   "seconds": 246.3,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s101\\m4c\\eval_revert_layer\\revert-attn@b2+priv@b2__dclm.npz"
+  },
+  "revert:attn@b3+priv@b3|dclm": {
+   "ce": 4.9142890491452995,
+   "windows": 500,
+   "seconds": 236.3,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s101\\m4c\\eval_revert_layer\\revert-attn@b3+priv@b3__dclm.npz"
+  },
+  "revert:attn@b4+priv@b4|dclm": {
+   "ce": 4.9221120869581805,
+   "windows": 500,
+   "seconds": 220.7,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s101\\m4c\\eval_revert_layer\\revert-attn@b4+priv@b4__dclm.npz"
+  },
+  "revert:attn@b5+priv@b5|dclm": {
+   "ce": 4.913473637820513,
+   "windows": 500,
+   "seconds": 221.3,
+   "file": "outputs\\confirm\\c3_full_nestor_books_s101\\m4c\\eval_revert_layer\\revert-attn@b5+priv@b5__dclm.npz"
+  }
+ }
+}

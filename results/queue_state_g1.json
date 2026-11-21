@@ -1,0 +1,291 @@
+{
+ "g1_base_moe_b1": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794609817.8416173,
+  "end": 1794610251.9623334,
+  "hours": 0.1206
+ },
+ "g1_base_nestor": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794610251.9633348,
+  "end": 1794611582.723742,
+  "hours": 0.3697
+ },
+ "g1_moe_b1_aa1_R1": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 16.41
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_moe_b1_aa1_R1\\m2",
+  "final": "outputs\\g1\\g1_moe_b1_aa1_R1\\m2\\moe_100m_g1_moe_b1_aa1_R1\\20261114_011311__moe_100m_g1_moe_b1_aa1_R1_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\g1\\g1_moe_b1_aa1_R1\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794611582.7247367,
+  "end": 1794614234.0784712,
+  "hours": 0.7365
+ },
+ "g1_moe_b1_aa1_R2": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 14.07
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_moe_b1_aa1_R2\\m2",
+  "final": "outputs\\g1\\g1_moe_b1_aa1_R2\\m2\\moe_100m_g1_moe_b1_aa1_R2\\20261114_015723__moe_100m_g1_moe_b1_aa1_R2_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\g1\\g1_moe_b1_aa1_R2\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794614234.080473,
+  "end": 1794616752.1864796,
+  "hours": 0.6995
+ },
+ "g1_moe_b1_aa2_R1": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 14.06
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_moe_b1_aa2_R1\\m2",
+  "final": "outputs\\g1\\g1_moe_b1_aa2_R1\\m2\\moe_100m_g1_moe_b1_aa2_R1\\20261114_023920__moe_100m_g1_moe_b1_aa2_R1_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\g1\\g1_moe_b1_aa2_R1\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794616752.1884828,
+  "end": 1794619250.8611093,
+  "hours": 0.6941
+ },
+ "g1_moe_b1_aa2_R2": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 14.09
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_moe_b1_aa2_R2\\m2",
+  "final": "outputs\\g1\\g1_moe_b1_aa2_R2\\m2\\moe_100m_g1_moe_b1_aa2_R2\\20261114_032058__moe_100m_g1_moe_b1_aa2_R2_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\g1\\g1_moe_b1_aa2_R2\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794619250.863104,
+  "end": 1794621763.1841066,
+  "hours": 0.6979
+ },
+ "g1_theta0_moe_b1": {
+  "status": "done",
+  "rc": 0,
+  "start": 1794621763.1851063,
+  "end": 1794621802.1560347,
+  "hours": 0.0108
+ },
+ "g1_negctrl": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 1.97
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_negctrl\\m2",
+  "final": "outputs\\g1\\g1_negctrl\\m2\\moe_100m_g1_negctrl\\20261114_040330__moe_100m_g1_negctrl_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\g1\\g1_negctrl\\m2\\audit.json",
+  "audit_ok": false,
+  "start": 1794621802.1570308,
+  "end": 1794621928.6953669,
+  "hours": 0.0351
+ },
+ "g1_moe_b1_full_math_s101": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 15.16
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_moe_b1_full_math_s101\\m2",
+  "final": "outputs\\g1\\g1_moe_b1_full_math_s101\\m2\\moe_100m_g1_moe_b1_full_math_s101\\20261114_040536__moe_100m_g1_moe_b1_full_math_s101_train\\checkpoints\\model_final.pt",
+  "start": 1794621928.696367,
+  "end": 1794623065.7922459,
+  "hours": 0.3159
+ },
+ "g1_moe_b1_full_math_s102": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 14.84
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_moe_b1_full_math_s102\\m2",
+  "final": "outputs\\g1\\g1_moe_b1_full_math_s102\\m2\\moe_100m_g1_moe_b1_full_math_s102\\20261114_042433__moe_100m_g1_moe_b1_full_math_s102_train\\checkpoints\\model_final.pt",
+  "start": 1794623065.7932463,
+  "end": 1794624181.1319275,
+  "hours": 0.3098
+ },
+ "g1_moe_b1_full_german_s101": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 14.92
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_moe_b1_full_german_s101\\m2",
+  "final": "outputs\\g1\\g1_moe_b1_full_german_s101\\m2\\moe_100m_g1_moe_b1_full_german_s101\\20261114_044309__moe_100m_g1_moe_b1_full_german_s101_train\\checkpoints\\model_final.pt",
+  "start": 1794624181.1339772,
+  "end": 1794625385.682574,
+  "hours": 0.3346
+ },
+ "g1_moe_b1_full_german_s102": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 15.64
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_moe_b1_full_german_s102\\m2",
+  "final": "outputs\\g1\\g1_moe_b1_full_german_s102\\m2\\moe_100m_g1_moe_b1_full_german_s102\\20261114_050314__moe_100m_g1_moe_b1_full_german_s102_train\\checkpoints\\model_final.pt",
+  "start": 1794625385.6845775,
+  "end": 1794626626.1878424,
+  "hours": 0.3446
+ },
+ "g1_moe_b1_eall_german_s101": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 13.83
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_moe_b1_eall_german_s101\\m2",
+  "final": "outputs\\g1\\g1_moe_b1_eall_german_s101\\m2\\moe_100m_g1_moe_b1_eall_german_s101\\20261114_052354__moe_100m_g1_moe_b1_eall_german_s101_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\g1\\g1_moe_b1_eall_german_s101\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794626626.1898415,
+  "end": 1794627762.173703,
+  "hours": 0.3156
+ },
+ "g1_moe_b1_eall_german_s102": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 13.43
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_moe_b1_eall_german_s102\\m2",
+  "final": "outputs\\g1\\g1_moe_b1_eall_german_s102\\m2\\moe_100m_g1_moe_b1_eall_german_s102\\20261114_054250__moe_100m_g1_moe_b1_eall_german_s102_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\g1\\g1_moe_b1_eall_german_s102\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794627762.1757038,
+  "end": 1794628876.4845405,
+  "hours": 0.3095
+ },
+ "g1_moe_b1_dclmcont_s101": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 14.98
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_moe_b1_dclmcont_s101\\m2",
+  "final": "outputs\\g1\\g1_moe_b1_dclmcont_s101\\m2\\moe_100m_g1_moe_b1_dclmcont_s101\\20261114_060124__moe_100m_g1_moe_b1_dclmcont_s101_train\\checkpoints\\model_final.pt",
+  "start": 1794628876.48554,
+  "end": 1794630075.0855348,
+  "hours": 0.3329
+ },
+ "g1_nestor_full_german_s101": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 1,
+    "minutes": 21.35
+   },
+   {
+    "micro": 2,
+    "ckpt": true,
+    "rc": 0,
+    "minutes": 79.1
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_nestor_full_german_s101\\m2c",
+  "final": "outputs\\g1\\g1_nestor_full_german_s101\\m2c\\nestor_100m_g1_nestor_full_german_s101\\20261114_064245__nestor_100m_g1_nestor_full_german_s101_train\\checkpoints\\model_final.pt",
+  "start": 1794630075.0875356,
+  "end": 1794636567.622072,
+  "hours": 1.8035
+ },
+ "g1_nestor_full_german_s102": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 1,
+    "minutes": 3.43
+   },
+   {
+    "micro": 2,
+    "ckpt": true,
+    "rc": 0,
+    "minutes": 71.44
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_nestor_full_german_s102\\m2c",
+  "final": "outputs\\g1\\g1_nestor_full_german_s102\\m2c\\nestor_100m_g1_nestor_full_german_s102\\20261114_081301__nestor_100m_g1_nestor_full_german_s102_train\\checkpoints\\model_final.pt",
+  "start": 1794636567.6240804,
+  "end": 1794641518.530948,
+  "hours": 1.3753
+ },
+ "g1_nestor_aa1_R1": {
+  "attempts": [
+   {
+    "micro": 2,
+    "ckpt": false,
+    "rc": 0,
+    "minutes": 39.09
+   }
+  ],
+  "status": "done",
+  "root": "outputs\\g1\\g1_nestor_aa1_R1\\m2",
+  "final": "outputs\\g1\\g1_nestor_aa1_R1\\m2\\nestor_100m_g1_nestor_aa1_R1\\20261114_093209__nestor_100m_g1_nestor_aa1_R1_train\\checkpoints\\model_final.pt",
+  "audit": "outputs\\g1\\g1_nestor_aa1_R1\\m2\\audit.json",
+  "audit_ok": true,
+  "start": 1794641518.531948,
+  "end": 1794645401.7761629,
+  "hours": 1.0787
+ }
+}

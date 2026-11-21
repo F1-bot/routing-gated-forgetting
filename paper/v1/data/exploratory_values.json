@@ -1,0 +1,225 @@
+{
+ "format": "exploratory_values/1",
+ "note": "post-freeze exploratory analyses; no value enters a registered test, label or decision",
+ "randdir_20": {
+  "label": "post-freeze exploratory; seeds fixed before running (queue_randx.json)",
+  "statistic": "log crossover I (the registered statistic), for random, symmetrized and raw updates",
+  "n_draws": 20,
+  "n_registered_control_draws": 6,
+  "n_new_draws": 14,
+  "n_evaluations": 28,
+  "seed_rule": "9700 + 100(base-1) + 2d + (0 for subset A, 1 for subset B)",
+  "seeds_min": 9714,
+  "seeds_max": 9821,
+  "tokens_per_corpus": {
+   "code": 2048000,
+   "math": 2048000
+  },
+  "span": {
+   "code": [
+    0.5,
+    1.0
+   ],
+   "math": [
+    0.5,
+    1.0
+   ]
+  },
+  "window_tokens": 4096,
+  "select": "even",
+  "gpu_hours": 2.7928,
+  "all_done_rc0": true,
+  "first_start_utc": "2026-11-17T21:22:48Z",
+  "last_end_utc": "2026-11-18T00:10:22Z",
+  "job_list_mtime_utc": "2026-11-17T21:06:32Z",
+  "registered_six_reproduced": true,
+  "mean_I": {
+   "rand": 1.0583805512885933,
+   "sym": 1.3616529982727692,
+   "raw": 1.6839354956078172
+  },
+  "share_rand_over_sym": 0.7772762610085894,
+  "share_rand_over_raw": 0.628516088679852,
+  "I_sym_minus_I_rand": {
+   "n": 20,
+   "mean": 0.30327244698417566,
+   "lo": 0.25354903257268885,
+   "hi": 0.35299586139566247,
+   "level": 0.95
+  },
+  "I_raw_minus_I_rand": {
+   "n": 20,
+   "mean": 0.6255549443192238,
+   "lo": 0.5404227081164422,
+   "hi": 0.7106871805220053,
+   "level": 0.95
+  },
+  "per_draw_excess_sym": {
+   "n_positive": 20,
+   "min": 0.05305345824338481,
+   "min_draw": "moe_b1 d3"
+  },
+  "beta_rand": {
+   "overall": {
+    "beta_hat": 1.0373714756680612,
+    "lo": 0.9926056855556538,
+    "hi": 1.0886708434158363,
+    "D": 20,
+    "method": "inversion of the two-sided exact sign-flip test of I_d - beta P_d"
+   },
+   "per_base": {
+    "moe_b1": {
+     "beta_hat": 1.0922023017997826,
+     "lo": 1.0242919467321616,
+     "hi": 1.1653574436507985,
+     "D": 10
+    },
+    "moe_b2": {
+     "beta_hat": 0.9858920441404558,
+     "lo": 0.9331168674754878,
+     "hi": 1.049603792462349,
+     "D": 10
+    }
+   }
+  },
+  "per_base": {
+   "moe_b1": {
+    "n": 10,
+    "mean_I_rand": 1.0964305055221744,
+    "mean_I_sym": 1.3394151368095872,
+    "share_rand_over_sym": 0.8185890060446914,
+    "I_sym_minus_I_rand": {
+     "n": 10,
+     "mean": 0.24298463128741338,
+     "lo": 0.1624474677047793,
+     "hi": 0.32352179487004745,
+     "level": 0.95
+    }
+   },
+   "moe_b2": {
+    "n": 10,
+    "mean_I_rand": 1.0203305970550125,
+    "mean_I_sym": 1.3838908597359505,
+    "share_rand_over_sym": 0.7372912320915928,
+    "I_sym_minus_I_rand": {
+     "n": 10,
+     "mean": 0.3635602626809379,
+     "lo": 0.3238752405557368,
+     "hi": 0.40324528480613897,
+     "level": 0.95
+    }
+   }
+  },
+  "sources": {
+   "results/exploratory/rand_extension.json": "6ca2e5aa640cb2277c71d9b01d0d18e7f8e53c0cd3e0988ef1c311837ebc373e",
+   "results/exploratory/rand_extension.py": "c0120f9c63449ea56bcd3d9ac78b223566152f90a91a6ce47e1130c6dd5c67cf",
+   "results/exploratory/queue_randx.json": "7dc8ccc71c58218744d8acc7ffa8a004a90f8f25cd2417b2ee0e8b0c8c55e0a5",
+   "results/exploratory/queue_state_randx.json": "efd3c67a79b82db42f9bb4d052e55160e6d06ddf28cdbe059c912ad7b96d7451",
+   "results/analysis_core/analysis_confirm.json": "859849244c70fa5ac4ddd8a73ab574ec97cdec33c3de1d5da00da7c6811f09a1"
+  }
+ },
+ "dmuon_step2": {
+  "label": "post-freeze exploratory; job list fixed and hashed before running (queue_c2step2.json)",
+  "statistic": "D_Muon(s) = log(||delta_H(s)|| / ||delta_L(s)||) of the displacement, as in the registered analysis",
+  "n_draws": 8,
+  "n_runs": 16,
+  "min": -0.03420924116110241,
+  "max": 0.05476278922058746,
+  "mean": 0.01570681035133933,
+  "max_abs": 0.05476278922058746,
+  "five_retained_draws": {
+   "n": 5,
+   "min": -0.03420924116110241,
+   "max": 0.05476278922058746
+  },
+  "step1_all_zero": true,
+  "max_norm_ratio_pct": 5.629002157567342,
+  "step8_registered_runs": {
+   "n": 8,
+   "min": 0.022569397996180622,
+   "max": 0.090711372391732
+  },
+  "D_sgd_step8_registered": {
+   "n": 5,
+   "min": 1.7701136830332256,
+   "max": 2.8795498989409376
+  },
+  "step8_reproduces_registered": true,
+  "per_draw": [
+   {
+    "base": "moe_b1",
+    "d": 1,
+    "D_muon_step2": 0.05476278922058746,
+    "retained_in_C2": true
+   },
+   {
+    "base": "moe_b1",
+    "d": 2,
+    "D_muon_step2": 0.03731772957554975,
+    "retained_in_C2": true
+   },
+   {
+    "base": "moe_b1",
+    "d": 3,
+    "D_muon_step2": 0.019925250304551712,
+    "retained_in_C2": false
+   },
+   {
+    "base": "moe_b1",
+    "d": 4,
+    "D_muon_step2": 0.03869189280740644,
+    "retained_in_C2": true
+   },
+   {
+    "base": "moe_b2",
+    "d": 5,
+    "D_muon_step2": -0.03420924116110241,
+    "retained_in_C2": true
+   },
+   {
+    "base": "moe_b2",
+    "d": 6,
+    "D_muon_step2": 0.004507983171247846,
+    "retained_in_C2": false
+   },
+   {
+    "base": "moe_b2",
+    "d": 7,
+    "D_muon_step2": -0.02170483753661331,
+    "retained_in_C2": false
+   },
+   {
+    "base": "moe_b2",
+    "d": 8,
+    "D_muon_step2": 0.026362916429087176,
+    "retained_in_C2": true
+   }
+  ],
+  "gpu_hours": 0.7453,
+  "all_done_rc0": true,
+  "first_start_utc": "2026-11-18T00:17:40Z",
+  "last_end_utc": "2026-11-18T01:02:23Z",
+  "job_list_mtime_utc": "2026-11-18T00:17:09Z",
+  "step1_attempt": {
+   "runs": 1,
+   "gpu_hours": 0.0451,
+   "status": [
+    "failed"
+   ],
+   "error": [
+    "bitwise audit failed"
+   ],
+   "trainable_unchanged_entries": 36,
+   "job_list_sha256": "321e3fa04ce607f98e239baeaba6710e9d95edb6db82142e5bfaaaae04e19f59"
+  },
+  "sources": {
+   "results/exploratory/dmuon_step2.json": "a7506db93c00fa2d016382a42a529b8ab51886a65a1d8da16b61b760aef450fa",
+   "results/exploratory/dmuon_step2.py": "a5ba451ac8a7aab82780f8c12ecc5df84c0880c14c1b4e30f30fdc2ad374d946",
+   "results/exploratory/queue_c2step2.json": "fbbbba91ecdb481e46a3486a6cd925e6837177facaf33f2ae331c3bf90f375e6",
+   "results/exploratory/queue_state_c2step2.json": "ccf467c880e47ee74e8127343ddd08194d9b3b5136451fb5c56027529745ad10",
+   "results/exploratory/queue_c2step1.json": "321e3fa04ce607f98e239baeaba6710e9d95edb6db82142e5bfaaaae04e19f59",
+   "results/exploratory/queue_state_c2step1.json": "412d57fdb661c2c4c67ddb69c2eb59cd6192647f9f3f9d9f00eb7ca4582cfb38"
+  }
+ },
+ "gpu_hours_total": 3.5832
+}

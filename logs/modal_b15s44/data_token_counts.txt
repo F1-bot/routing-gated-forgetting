@@ -1,0 +1,3 @@
+dclm_train16.bin num_tokens 1738922107 num_docs 1425616 dtype uint32
+dclm_val.bin num_tokens 19999909 num_docs 17005 dtype uint32
+dclm_val10.bin num_tokens 19996569 num_docs 16702 dtype uint32

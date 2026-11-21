@@ -1,0 +1,39 @@
+\begin{table}[t]
+\centering
+\caption{GPU-hours of the frozen plan, as Section~7 of the frozen pre-registration states them from the frozen plan (SHA-256 \sha{cd05a1b6ead35d13ba2521f377e5e3231389baeb20bda7fbac5e4c6c1e147fec}). Spent hours are measured; planned hours price the configuration fixed by G1 and G2 with the unit costs measured there, and the contingency is 15\% of the planned hours. Rows marked core form the P-16 core; the second code stream (0.8428 GPU-hours) is evaluated inside the C1 jobs and is not added again. The last row gives the total of the GPU-hours spent after the freeze outside the queue state; Appendix~\ref{app:prereg} states each item.}
+\label{tab:budget}
+\small
+\begin{tabularx}{\linewidth}{@{}Xlr@{}}
+\toprule
+Block & Tier & GPU-h\\
+\midrule
+G0, its repetition, the G0 of the third base, G1 and G2 & spent & 19.1\\
+Forecast inputs (20 jobs) & spent & 3.5834\\
+Evaluation-equivalence run before the freeze & spent & 0.2437\\
+\addlinespace
+C1, base~1 (core) & main & 15.3964\\
+C1, base~2 (core) & main & 13.174\\
+C2, eight draws (core) & confirmatory & 7.7792\\
+Evaluations at $\theta_0$, bases 1 and 2 (core) & main & 0.1642\\
+Evaluation at $\theta_0$, third base & main & 0.0926\\
+C1 selection-pinned evaluations & main & 6.2008\\
+C3 & main & 17.6457\\
+C3, DCLM continuation runs & main & 1.3933\\
+C3, per-layer reverts & main & 0.9323\\
+Assumption audit & main & 0.9864\\
+Third base, C1 on books & secondary & 4.3812\\
+Dose-response & secondary / exploratory & 3.5088\\
+M12-b & secondary / exploratory & 1.4745\\
+C1-DE & exploratory & 9.9484\\
+C5 & estimation & 0.6106\\
+SEC, \nestor{}-books & not run & 0\\
+\midrule
+Planned (core 36.5138 over 74 jobs; other blocks 47.1742) & & 83.688\\
+Spent at the freeze & & 22.93\\
+Contingency, 15\% of the planned hours & & 12.553\\
+Total with contingency at the freeze (envelope 120; headroom 0.829) & & 119.171\\
+\addlinespace
+Spent after the freeze outside the queue state, items in Appendix~\ref{app:prereg} & spent & \filledor{HOS.total}{--}\\
+\bottomrule
+\end{tabularx}
+\end{table}

@@ -1,0 +1,35 @@
+{
+ "meta": {
+  "experiment": "nestor_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c3_full_nestor_math_s102\\m4c\\nestor_100m_c3_full_nestor_math_s102\\20261118_210806__nestor_100m_c3_full_nestor_math_s102_train\\checkpoints\\model_final.pt",
+   "size": 3400441546,
+   "head_sha256": "a36e1e682a614ad3dfc381f1cad7f38d2294a8a22cd4ef6d5699228cfc28e62a"
+  },
+  "base": null,
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-18T21:56:31"
+ },
+ "results": {
+  "ckpt|dclm": {
+   "ce": 4.815577243589743,
+   "windows": 500,
+   "seconds": 223.1,
+   "file": "outputs\\confirm\\c3_full_nestor_math_s102\\m4c\\eval_main\\ckpt__dclm.npz"
+  },
+  "ckpt|code": {
+   "ce": 6.349543164777931,
+   "windows": 500,
+   "seconds": 219.8,
+   "file": "outputs\\confirm\\c3_full_nestor_math_s102\\m4c\\eval_main\\ckpt__code.npz"
+  },
+  "ckpt|math": {
+   "ce": 4.796427345180861,
+   "windows": 500,
+   "seconds": 220.6,
+   "file": "outputs\\confirm\\c3_full_nestor_math_s102\\m4c\\eval_main\\ckpt__math.npz"
+  }
+ }
+}

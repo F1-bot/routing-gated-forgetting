@@ -1,0 +1,1951 @@
+{
+ "family": "moe",
+ "measure": "g2",
+ "k_per_stratum": 6,
+ "strata": 12,
+ "contrast": {
+  "type": "crossover",
+  "low": "code",
+  "high": "math"
+ },
+ "match": [
+  "books",
+  "dclm"
+ ],
+ "tol": 0.05,
+ "min_contrast": 0.262364,
+ "max_jaccard": 0.5,
+ "lam": 1.5,
+ "seed": 0,
+ "attempts": 3,
+ "feasible_attempts": 3,
+ "draws": [
+  {
+   "A": [
+    "moe:b0:l0:e1",
+    "moe:b0:l0:e6",
+    "moe:b0:l0:e11",
+    "moe:b0:l0:e13",
+    "moe:b0:l0:e19",
+    "moe:b0:l0:e20",
+    "moe:b0:l1:e1",
+    "moe:b0:l1:e9",
+    "moe:b0:l1:e15",
+    "moe:b0:l1:e16",
+    "moe:b0:l1:e17",
+    "moe:b0:l1:e22",
+    "moe:b0:l2:e4",
+    "moe:b0:l2:e7",
+    "moe:b0:l2:e10",
+    "moe:b0:l2:e11",
+    "moe:b0:l2:e18",
+    "moe:b0:l2:e21",
+    "moe:b1:l0:e2",
+    "moe:b1:l0:e9",
+    "moe:b1:l0:e10",
+    "moe:b1:l0:e14",
+    "moe:b1:l0:e18",
+    "moe:b1:l0:e19",
+    "moe:b1:l1:e2",
+    "moe:b1:l1:e4",
+    "moe:b1:l1:e9",
+    "moe:b1:l1:e13",
+    "moe:b1:l1:e15",
+    "moe:b1:l1:e21",
+    "moe:b1:l2:e0",
+    "moe:b1:l2:e2",
+    "moe:b1:l2:e6",
+    "moe:b1:l2:e10",
+    "moe:b1:l2:e13",
+    "moe:b1:l2:e19",
+    "moe:b2:l0:e11",
+    "moe:b2:l0:e14",
+    "moe:b2:l0:e15",
+    "moe:b2:l0:e16",
+    "moe:b2:l0:e22",
+    "moe:b2:l0:e23",
+    "moe:b2:l1:e3",
+    "moe:b2:l1:e4",
+    "moe:b2:l1:e6",
+    "moe:b2:l1:e7",
+    "moe:b2:l1:e14",
+    "moe:b2:l1:e16",
+    "moe:b2:l2:e4",
+    "moe:b2:l2:e6",
+    "moe:b2:l2:e12",
+    "moe:b2:l2:e14",
+    "moe:b2:l2:e15",
+    "moe:b2:l2:e21",
+    "moe:b3:l0:e0",
+    "moe:b3:l0:e3",
+    "moe:b3:l0:e9",
+    "moe:b3:l0:e14",
+    "moe:b3:l0:e17",
+    "moe:b3:l0:e19",
+    "moe:b3:l1:e0",
+    "moe:b3:l1:e9",
+    "moe:b3:l1:e14",
+    "moe:b3:l1:e20",
+    "moe:b3:l1:e22",
+    "moe:b3:l1:e23",
+    "moe:b3:l2:e0",
+    "moe:b3:l2:e7",
+    "moe:b3:l2:e8",
+    "moe:b3:l2:e12",
+    "moe:b3:l2:e16",
+    "moe:b3:l2:e23"
+   ],
+   "B": [
+    "moe:b0:l0:e4",
+    "moe:b0:l0:e7",
+    "moe:b0:l0:e9",
+    "moe:b0:l0:e16",
+    "moe:b0:l0:e17",
+    "moe:b0:l0:e18",
+    "moe:b0:l1:e4",
+    "moe:b0:l1:e11",
+    "moe:b0:l1:e13",
+    "moe:b0:l1:e14",
+    "moe:b0:l1:e21",
+    "moe:b0:l1:e23",
+    "moe:b0:l2:e5",
+    "moe:b0:l2:e6",
+    "moe:b0:l2:e13",
+    "moe:b0:l2:e14",
+    "moe:b0:l2:e15",
+    "moe:b0:l2:e16",
+    "moe:b1:l0:e4",
+    "moe:b1:l0:e5",
+    "moe:b1:l0:e6",
+    "moe:b1:l0:e8",
+    "moe:b1:l0:e11",
+    "moe:b1:l0:e16",
+    "moe:b1:l1:e7",
+    "moe:b1:l1:e8",
+    "moe:b1:l1:e10",
+    "moe:b1:l1:e14",
+    "moe:b1:l1:e17",
+    "moe:b1:l1:e23",
+    "moe:b1:l2:e3",
+    "moe:b1:l2:e7",
+    "moe:b1:l2:e12",
+    "moe:b1:l2:e17",
+    "moe:b1:l2:e20",
+    "moe:b1:l2:e21",
+    "moe:b2:l0:e0",
+    "moe:b2:l0:e2",
+    "moe:b2:l0:e9",
+    "moe:b2:l0:e13",
+    "moe:b2:l0:e18",
+    "moe:b2:l0:e21",
+    "moe:b2:l1:e1",
+    "moe:b2:l1:e8",
+    "moe:b2:l1:e10",
+    "moe:b2:l1:e11",
+    "moe:b2:l1:e19",
+    "moe:b2:l1:e23",
+    "moe:b2:l2:e2",
+    "moe:b2:l2:e5",
+    "moe:b2:l2:e7",
+    "moe:b2:l2:e10",
+    "moe:b2:l2:e16",
+    "moe:b2:l2:e19",
+    "moe:b3:l0:e7",
+    "moe:b3:l0:e8",
+    "moe:b3:l0:e10",
+    "moe:b3:l0:e13",
+    "moe:b3:l0:e18",
+    "moe:b3:l0:e20",
+    "moe:b3:l1:e1",
+    "moe:b3:l1:e6",
+    "moe:b3:l1:e8",
+    "moe:b3:l1:e10",
+    "moe:b3:l1:e11",
+    "moe:b3:l1:e15",
+    "moe:b3:l2:e2",
+    "moe:b3:l2:e5",
+    "moe:b3:l2:e13",
+    "moe:b3:l2:e14",
+    "moe:b3:l2:e21",
+    "moe:b3:l2:e22"
+   ],
+   "spec_A": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 0,
+      "expert": [
+       1,
+       6,
+       11,
+       13,
+       19,
+       20
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 1,
+      "expert": [
+       1,
+       9,
+       15,
+       16,
+       17,
+       22
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 2,
+      "expert": [
+       4,
+       7,
+       10,
+       11,
+       18,
+       21
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 0,
+      "expert": [
+       2,
+       9,
+       10,
+       14,
+       18,
+       19
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 1,
+      "expert": [
+       2,
+       4,
+       9,
+       13,
+       15,
+       21
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 2,
+      "expert": [
+       0,
+       2,
+       6,
+       10,
+       13,
+       19
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 0,
+      "expert": [
+       11,
+       14,
+       15,
+       16,
+       22,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 1,
+      "expert": [
+       3,
+       4,
+       6,
+       7,
+       14,
+       16
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 2,
+      "expert": [
+       4,
+       6,
+       12,
+       14,
+       15,
+       21
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 0,
+      "expert": [
+       0,
+       3,
+       9,
+       14,
+       17,
+       19
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 1,
+      "expert": [
+       0,
+       9,
+       14,
+       20,
+       22,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 2,
+      "expert": [
+       0,
+       7,
+       8,
+       12,
+       16,
+       23
+      ]
+     }
+    ]
+   },
+   "spec_B": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 0,
+      "expert": [
+       4,
+       7,
+       9,
+       16,
+       17,
+       18
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 1,
+      "expert": [
+       4,
+       11,
+       13,
+       14,
+       21,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 2,
+      "expert": [
+       5,
+       6,
+       13,
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 0,
+      "expert": [
+       4,
+       5,
+       6,
+       8,
+       11,
+       16
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 1,
+      "expert": [
+       7,
+       8,
+       10,
+       14,
+       17,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 2,
+      "expert": [
+       3,
+       7,
+       12,
+       17,
+       20,
+       21
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 0,
+      "expert": [
+       0,
+       2,
+       9,
+       13,
+       18,
+       21
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 1,
+      "expert": [
+       1,
+       8,
+       10,
+       11,
+       19,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 2,
+      "expert": [
+       2,
+       5,
+       7,
+       10,
+       16,
+       19
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 0,
+      "expert": [
+       7,
+       8,
+       10,
+       13,
+       18,
+       20
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 1,
+      "expert": [
+       1,
+       6,
+       8,
+       10,
+       11,
+       15
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 2,
+      "expert": [
+       2,
+       5,
+       13,
+       14,
+       21,
+       22
+      ]
+     }
+    ]
+   },
+   "selection_half": {
+    "contrast": 0.9366174123718406,
+    "match_err": {
+     "books": -0.004901565054390655,
+     "dclm": 0.03574192825554956
+    },
+    "ro_share": {
+     "books": [
+      0.25580618265822846,
+      0.2570631112459535
+     ],
+     "books_eval": [
+      0.2600019844548701,
+      0.2656911323834218
+     ],
+     "code": [
+      0.1359925066842354,
+      0.5512341540134604
+     ],
+     "code_eval": [
+      0.13644339848407977,
+      0.5526585111586197
+     ],
+     "dclm": [
+      0.2590493705704689,
+      0.24995395858496078
+     ],
+     "dclm_eval": [
+      0.24858337736977756,
+      0.25581747514971287
+     ],
+     "math": [
+      0.218502140912005,
+      0.34714351933473797
+     ],
+     "math_eval": [
+      0.2168983869302764,
+      0.35039581711886625
+     ]
+    }
+   },
+   "estimation_half": {
+    "contrast": 0.9621628162913229,
+    "match_err": {
+     "books": 0.003937445606935652,
+     "dclm": 0.08011825068428835
+    },
+    "ro_share": {
+     "books": [
+      0.2564722756930231,
+      0.25546441555713817
+     ],
+     "books_eval": [
+      0.26063169894610566,
+      0.2652615472243935
+     ],
+     "code": [
+      0.13680883820979545,
+      0.5499180051760184
+     ],
+     "code_eval": [
+      0.13738007984427703,
+      0.549182238002058
+     ],
+     "dclm": [
+      0.2619114381080774,
+      0.24174614148628118
+     ],
+     "dclm_eval": [
+      0.24596588444779982,
+      0.2602796503190083
+     ],
+     "math": [
+      0.22271123081843575,
+      0.3420297640544313
+     ],
+     "math_eval": [
+      0.22076520624570276,
+      0.3470751431592502
+     ]
+    }
+   },
+   "jaccard_to_other_draws": {
+    "A": [
+     0.241,
+     0.21
+    ],
+    "B": [
+     0.252,
+     0.231
+    ]
+   }
+  },
+  {
+   "A": [
+    "moe:b0:l0:e1",
+    "moe:b0:l0:e6",
+    "moe:b0:l0:e11",
+    "moe:b0:l0:e16",
+    "moe:b0:l0:e20",
+    "moe:b0:l0:e23",
+    "moe:b0:l1:e0",
+    "moe:b0:l1:e12",
+    "moe:b0:l1:e16",
+    "moe:b0:l1:e17",
+    "moe:b0:l1:e22",
+    "moe:b0:l1:e23",
+    "moe:b0:l2:e2",
+    "moe:b0:l2:e3",
+    "moe:b0:l2:e8",
+    "moe:b0:l2:e11",
+    "moe:b0:l2:e12",
+    "moe:b0:l2:e15",
+    "moe:b1:l0:e6",
+    "moe:b1:l0:e9",
+    "moe:b1:l0:e10",
+    "moe:b1:l0:e15",
+    "moe:b1:l0:e17",
+    "moe:b1:l0:e18",
+    "moe:b1:l1:e2",
+    "moe:b1:l1:e4",
+    "moe:b1:l1:e10",
+    "moe:b1:l1:e15",
+    "moe:b1:l1:e18",
+    "moe:b1:l1:e23",
+    "moe:b1:l2:e1",
+    "moe:b1:l2:e2",
+    "moe:b1:l2:e7",
+    "moe:b1:l2:e10",
+    "moe:b1:l2:e14",
+    "moe:b1:l2:e23",
+    "moe:b2:l0:e5",
+    "moe:b2:l0:e8",
+    "moe:b2:l0:e10",
+    "moe:b2:l0:e12",
+    "moe:b2:l0:e14",
+    "moe:b2:l0:e22",
+    "moe:b2:l1:e7",
+    "moe:b2:l1:e10",
+    "moe:b2:l1:e14",
+    "moe:b2:l1:e17",
+    "moe:b2:l1:e18",
+    "moe:b2:l1:e19",
+    "moe:b2:l2:e0",
+    "moe:b2:l2:e3",
+    "moe:b2:l2:e6",
+    "moe:b2:l2:e13",
+    "moe:b2:l2:e15",
+    "moe:b2:l2:e21",
+    "moe:b3:l0:e1",
+    "moe:b3:l0:e3",
+    "moe:b3:l0:e10",
+    "moe:b3:l0:e17",
+    "moe:b3:l0:e21",
+    "moe:b3:l0:e22",
+    "moe:b3:l1:e0",
+    "moe:b3:l1:e1",
+    "moe:b3:l1:e5",
+    "moe:b3:l1:e15",
+    "moe:b3:l1:e17",
+    "moe:b3:l1:e21",
+    "moe:b3:l2:e4",
+    "moe:b3:l2:e8",
+    "moe:b3:l2:e11",
+    "moe:b3:l2:e14",
+    "moe:b3:l2:e16",
+    "moe:b3:l2:e21"
+   ],
+   "B": [
+    "moe:b0:l0:e0",
+    "moe:b0:l0:e2",
+    "moe:b0:l0:e7",
+    "moe:b0:l0:e10",
+    "moe:b0:l0:e15",
+    "moe:b0:l0:e18",
+    "moe:b0:l1:e5",
+    "moe:b0:l1:e10",
+    "moe:b0:l1:e13",
+    "moe:b0:l1:e14",
+    "moe:b0:l1:e20",
+    "moe:b0:l1:e21",
+    "moe:b0:l2:e1",
+    "moe:b0:l2:e10",
+    "moe:b0:l2:e14",
+    "moe:b0:l2:e16",
+    "moe:b0:l2:e17",
+    "moe:b0:l2:e19",
+    "moe:b1:l0:e5",
+    "moe:b1:l0:e8",
+    "moe:b1:l0:e11",
+    "moe:b1:l0:e12",
+    "moe:b1:l0:e14",
+    "moe:b1:l0:e16",
+    "moe:b1:l1:e3",
+    "moe:b1:l1:e7",
+    "moe:b1:l1:e9",
+    "moe:b1:l1:e14",
+    "moe:b1:l1:e17",
+    "moe:b1:l1:e21",
+    "moe:b1:l2:e3",
+    "moe:b1:l2:e5",
+    "moe:b1:l2:e8",
+    "moe:b1:l2:e11",
+    "moe:b1:l2:e16",
+    "moe:b1:l2:e17",
+    "moe:b2:l0:e0",
+    "moe:b2:l0:e1",
+    "moe:b2:l0:e2",
+    "moe:b2:l0:e6",
+    "moe:b2:l0:e9",
+    "moe:b2:l0:e21",
+    "moe:b2:l1:e1",
+    "moe:b2:l1:e2",
+    "moe:b2:l1:e6",
+    "moe:b2:l1:e11",
+    "moe:b2:l1:e22",
+    "moe:b2:l1:e23",
+    "moe:b2:l2:e8",
+    "moe:b2:l2:e9",
+    "moe:b2:l2:e10",
+    "moe:b2:l2:e17",
+    "moe:b2:l2:e22",
+    "moe:b2:l2:e23",
+    "moe:b3:l0:e9",
+    "moe:b3:l0:e13",
+    "moe:b3:l0:e14",
+    "moe:b3:l0:e18",
+    "moe:b3:l0:e19",
+    "moe:b3:l0:e20",
+    "moe:b3:l1:e4",
+    "moe:b3:l1:e6",
+    "moe:b3:l1:e12",
+    "moe:b3:l1:e13",
+    "moe:b3:l1:e18",
+    "moe:b3:l1:e20",
+    "moe:b3:l2:e7",
+    "moe:b3:l2:e9",
+    "moe:b3:l2:e10",
+    "moe:b3:l2:e12",
+    "moe:b3:l2:e13",
+    "moe:b3:l2:e18"
+   ],
+   "spec_A": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 0,
+      "expert": [
+       1,
+       6,
+       11,
+       16,
+       20,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 1,
+      "expert": [
+       0,
+       12,
+       16,
+       17,
+       22,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 2,
+      "expert": [
+       2,
+       3,
+       8,
+       11,
+       12,
+       15
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 0,
+      "expert": [
+       6,
+       9,
+       10,
+       15,
+       17,
+       18
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 1,
+      "expert": [
+       2,
+       4,
+       10,
+       15,
+       18,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 2,
+      "expert": [
+       1,
+       2,
+       7,
+       10,
+       14,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 0,
+      "expert": [
+       5,
+       8,
+       10,
+       12,
+       14,
+       22
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 1,
+      "expert": [
+       7,
+       10,
+       14,
+       17,
+       18,
+       19
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 2,
+      "expert": [
+       0,
+       3,
+       6,
+       13,
+       15,
+       21
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 0,
+      "expert": [
+       1,
+       3,
+       10,
+       17,
+       21,
+       22
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 1,
+      "expert": [
+       0,
+       1,
+       5,
+       15,
+       17,
+       21
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 2,
+      "expert": [
+       4,
+       8,
+       11,
+       14,
+       16,
+       21
+      ]
+     }
+    ]
+   },
+   "spec_B": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 0,
+      "expert": [
+       0,
+       2,
+       7,
+       10,
+       15,
+       18
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 1,
+      "expert": [
+       5,
+       10,
+       13,
+       14,
+       20,
+       21
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 2,
+      "expert": [
+       1,
+       10,
+       14,
+       16,
+       17,
+       19
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 0,
+      "expert": [
+       5,
+       8,
+       11,
+       12,
+       14,
+       16
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 1,
+      "expert": [
+       3,
+       7,
+       9,
+       14,
+       17,
+       21
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 2,
+      "expert": [
+       3,
+       5,
+       8,
+       11,
+       16,
+       17
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 0,
+      "expert": [
+       0,
+       1,
+       2,
+       6,
+       9,
+       21
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 1,
+      "expert": [
+       1,
+       2,
+       6,
+       11,
+       22,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 2,
+      "expert": [
+       8,
+       9,
+       10,
+       17,
+       22,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 0,
+      "expert": [
+       9,
+       13,
+       14,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 1,
+      "expert": [
+       4,
+       6,
+       12,
+       13,
+       18,
+       20
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 2,
+      "expert": [
+       7,
+       9,
+       10,
+       12,
+       13,
+       18
+      ]
+     }
+    ]
+   },
+   "selection_half": {
+    "contrast": 0.924329971565709,
+    "match_err": {
+     "books": 0.0061953264742396486,
+     "dclm": 0.04392364549996636
+    },
+    "ro_share": {
+     "books": [
+      0.2620032719421364,
+      0.2603850938815739
+     ],
+     "books_eval": [
+      0.25868924365554635,
+      0.2681550766691055
+     ],
+     "code": [
+      0.13824329895145385,
+      0.5221193656578446
+     ],
+     "code_eval": [
+      0.13705517691072144,
+      0.5137446087965386
+     ],
+     "dclm": [
+      0.2619753079200169,
+      0.25071745034902726
+     ],
+     "dclm_eval": [
+      0.2576014504682647,
+      0.2641903134115879
+     ],
+     "math": [
+      0.22442080186151164,
+      0.33632365678888554
+     ],
+     "math_eval": [
+      0.2220748249479051,
+      0.3392741229808142
+     ]
+    }
+   },
+   "estimation_half": {
+    "contrast": 0.9482676004720116,
+    "match_err": {
+     "books": 0.013516637745229154,
+     "dclm": 0.07134154812823135
+    },
+    "ro_share": {
+     "books": [
+      0.26270251656293003,
+      0.2591755518616187
+     ],
+     "books_eval": [
+      0.2587906528074965,
+      0.26769022774804235
+     ],
+     "code": [
+      0.13804309295027886,
+      0.5212591937041631
+     ],
+     "code_eval": [
+      0.13808313757206667,
+      0.5124460578852434
+     ],
+     "dclm": [
+      0.2626620766280945,
+      0.24457616608727464
+     ],
+     "dclm_eval": [
+      0.2550579988797948,
+      0.2692954096080333
+     ],
+     "math": [
+      0.22686203333666374,
+      0.3318741916106882
+     ],
+     "math_eval": [
+      0.22330700583273563,
+      0.33612627251370336
+     ]
+    }
+   },
+   "jaccard_to_other_draws": {
+    "A": [
+     0.241,
+     0.2
+    ],
+    "B": [
+     0.252,
+     0.286
+    ]
+   }
+  },
+  {
+   "A": [
+    "moe:b0:l0:e0",
+    "moe:b0:l0:e4",
+    "moe:b0:l0:e6",
+    "moe:b0:l0:e12",
+    "moe:b0:l0:e19",
+    "moe:b0:l0:e23",
+    "moe:b0:l1:e1",
+    "moe:b0:l1:e7",
+    "moe:b0:l1:e13",
+    "moe:b0:l1:e16",
+    "moe:b0:l1:e19",
+    "moe:b0:l1:e22",
+    "moe:b0:l2:e4",
+    "moe:b0:l2:e11",
+    "moe:b0:l2:e12",
+    "moe:b0:l2:e15",
+    "moe:b0:l2:e16",
+    "moe:b0:l2:e23",
+    "moe:b1:l0:e3",
+    "moe:b1:l0:e9",
+    "moe:b1:l0:e13",
+    "moe:b1:l0:e17",
+    "moe:b1:l0:e18",
+    "moe:b1:l0:e23",
+    "moe:b1:l1:e1",
+    "moe:b1:l1:e2",
+    "moe:b1:l1:e4",
+    "moe:b1:l1:e6",
+    "moe:b1:l1:e16",
+    "moe:b1:l1:e18",
+    "moe:b1:l2:e2",
+    "moe:b1:l2:e7",
+    "moe:b1:l2:e8",
+    "moe:b1:l2:e13",
+    "moe:b1:l2:e14",
+    "moe:b1:l2:e18",
+    "moe:b2:l0:e3",
+    "moe:b2:l0:e6",
+    "moe:b2:l0:e11",
+    "moe:b2:l0:e13",
+    "moe:b2:l0:e19",
+    "moe:b2:l0:e22",
+    "moe:b2:l1:e1",
+    "moe:b2:l1:e3",
+    "moe:b2:l1:e8",
+    "moe:b2:l1:e11",
+    "moe:b2:l1:e12",
+    "moe:b2:l1:e19",
+    "moe:b2:l2:e3",
+    "moe:b2:l2:e6",
+    "moe:b2:l2:e12",
+    "moe:b2:l2:e14",
+    "moe:b2:l2:e15",
+    "moe:b2:l2:e22",
+    "moe:b3:l0:e1",
+    "moe:b3:l0:e5",
+    "moe:b3:l0:e7",
+    "moe:b3:l0:e15",
+    "moe:b3:l0:e19",
+    "moe:b3:l0:e23",
+    "moe:b3:l1:e4",
+    "moe:b3:l1:e5",
+    "moe:b3:l1:e11",
+    "moe:b3:l1:e14",
+    "moe:b3:l1:e16",
+    "moe:b3:l1:e20",
+    "moe:b3:l2:e0",
+    "moe:b3:l2:e3",
+    "moe:b3:l2:e4",
+    "moe:b3:l2:e5",
+    "moe:b3:l2:e19",
+    "moe:b3:l2:e23"
+   ],
+   "B": [
+    "moe:b0:l0:e2",
+    "moe:b0:l0:e5",
+    "moe:b0:l0:e7",
+    "moe:b0:l0:e8",
+    "moe:b0:l0:e10",
+    "moe:b0:l0:e13",
+    "moe:b0:l1:e2",
+    "moe:b0:l1:e9",
+    "moe:b0:l1:e10",
+    "moe:b0:l1:e14",
+    "moe:b0:l1:e17",
+    "moe:b0:l1:e20",
+    "moe:b0:l2:e1",
+    "moe:b0:l2:e3",
+    "moe:b0:l2:e6",
+    "moe:b0:l2:e13",
+    "moe:b0:l2:e14",
+    "moe:b0:l2:e17",
+    "moe:b1:l0:e4",
+    "moe:b1:l0:e5",
+    "moe:b1:l0:e6",
+    "moe:b1:l0:e8",
+    "moe:b1:l0:e11",
+    "moe:b1:l0:e19",
+    "moe:b1:l1:e0",
+    "moe:b1:l1:e5",
+    "moe:b1:l1:e9",
+    "moe:b1:l1:e13",
+    "moe:b1:l1:e14",
+    "moe:b1:l1:e17",
+    "moe:b1:l2:e0",
+    "moe:b1:l2:e1",
+    "moe:b1:l2:e5",
+    "moe:b1:l2:e15",
+    "moe:b1:l2:e16",
+    "moe:b1:l2:e17",
+    "moe:b2:l0:e4",
+    "moe:b2:l0:e9",
+    "moe:b2:l0:e12",
+    "moe:b2:l0:e14",
+    "moe:b2:l0:e15",
+    "moe:b2:l0:e20",
+    "moe:b2:l1:e2",
+    "moe:b2:l1:e6",
+    "moe:b2:l1:e10",
+    "moe:b2:l1:e13",
+    "moe:b2:l1:e18",
+    "moe:b2:l1:e23",
+    "moe:b2:l2:e0",
+    "moe:b2:l2:e1",
+    "moe:b2:l2:e5",
+    "moe:b2:l2:e7",
+    "moe:b2:l2:e17",
+    "moe:b2:l2:e19",
+    "moe:b3:l0:e8",
+    "moe:b3:l0:e9",
+    "moe:b3:l0:e14",
+    "moe:b3:l0:e17",
+    "moe:b3:l0:e18",
+    "moe:b3:l0:e20",
+    "moe:b3:l1:e0",
+    "moe:b3:l1:e1",
+    "moe:b3:l1:e7",
+    "moe:b3:l1:e8",
+    "moe:b3:l1:e13",
+    "moe:b3:l1:e15",
+    "moe:b3:l2:e2",
+    "moe:b3:l2:e7",
+    "moe:b3:l2:e9",
+    "moe:b3:l2:e11",
+    "moe:b3:l2:e12",
+    "moe:b3:l2:e13"
+   ],
+   "spec_A": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 0,
+      "expert": [
+       0,
+       4,
+       6,
+       12,
+       19,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 1,
+      "expert": [
+       1,
+       7,
+       13,
+       16,
+       19,
+       22
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 2,
+      "expert": [
+       4,
+       11,
+       12,
+       15,
+       16,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 0,
+      "expert": [
+       3,
+       9,
+       13,
+       17,
+       18,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 1,
+      "expert": [
+       1,
+       2,
+       4,
+       6,
+       16,
+       18
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 2,
+      "expert": [
+       2,
+       7,
+       8,
+       13,
+       14,
+       18
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 0,
+      "expert": [
+       3,
+       6,
+       11,
+       13,
+       19,
+       22
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 1,
+      "expert": [
+       1,
+       3,
+       8,
+       11,
+       12,
+       19
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 2,
+      "expert": [
+       3,
+       6,
+       12,
+       14,
+       15,
+       22
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 0,
+      "expert": [
+       1,
+       5,
+       7,
+       15,
+       19,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 1,
+      "expert": [
+       4,
+       5,
+       11,
+       14,
+       16,
+       20
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 2,
+      "expert": [
+       0,
+       3,
+       4,
+       5,
+       19,
+       23
+      ]
+     }
+    ]
+   },
+   "spec_B": {
+    "mode": "train",
+    "select": [
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 0,
+      "expert": [
+       2,
+       5,
+       7,
+       8,
+       10,
+       13
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 1,
+      "expert": [
+       2,
+       9,
+       10,
+       14,
+       17,
+       20
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 0,
+      "layer": 2,
+      "expert": [
+       1,
+       3,
+       6,
+       13,
+       14,
+       17
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 0,
+      "expert": [
+       4,
+       5,
+       6,
+       8,
+       11,
+       19
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 1,
+      "expert": [
+       0,
+       5,
+       9,
+       13,
+       14,
+       17
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 1,
+      "layer": 2,
+      "expert": [
+       0,
+       1,
+       5,
+       15,
+       16,
+       17
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 0,
+      "expert": [
+       4,
+       9,
+       12,
+       14,
+       15,
+       20
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 1,
+      "expert": [
+       2,
+       6,
+       10,
+       13,
+       18,
+       23
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 2,
+      "layer": 2,
+      "expert": [
+       0,
+       1,
+       5,
+       7,
+       17,
+       19
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 0,
+      "expert": [
+       8,
+       9,
+       14,
+       17,
+       18,
+       20
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 1,
+      "expert": [
+       0,
+       1,
+       7,
+       8,
+       13,
+       15
+      ]
+     },
+     {
+      "kind": "moe",
+      "block": 3,
+      "layer": 2,
+      "expert": [
+       2,
+       7,
+       9,
+       11,
+       12,
+       13
+      ]
+     }
+    ]
+   },
+   "selection_half": {
+    "contrast": 0.9124073968495026,
+    "match_err": {
+     "books": -0.0438103261513525,
+     "dclm": 0.04490174805497338
+    },
+    "ro_share": {
+     "books": [
+      0.26374906398423814,
+      0.27556084633848527
+     ],
+     "books_eval": [
+      0.2572193886220105,
+      0.2887572540114836
+     ],
+     "code": [
+      0.11653279109717687,
+      0.5193642224035694
+     ],
+     "code_eval": [
+      0.12951333238413884,
+      0.4948044560211719
+     ],
+     "dclm": [
+      0.2764905013940907,
+      0.264350194728419
+     ],
+     "dclm_eval": [
+      0.2674465193127417,
+      0.27344938556439374
+     ],
+     "math": [
+      0.201050261376451,
+      0.35981148762358034
+     ],
+     "math_eval": [
+      0.19811953285182543,
+      0.36181976285726547
+     ]
+    }
+   },
+   "estimation_half": {
+    "contrast": 0.9709692263353142,
+    "match_err": {
+     "books": -0.04322801497533152,
+     "dclm": 0.09284586457899796
+    },
+    "ro_share": {
+     "books": [
+      0.2627007481182771,
+      0.2743058046674086
+     ],
+     "books_eval": [
+      0.2573750731168476,
+      0.28700811943140675
+     ],
+     "code": [
+      0.11519255116448028,
+      0.5205066599004702
+     ],
+     "code_eval": [
+      0.13008456842859475,
+      0.49613141252617987
+     ],
+     "dclm": [
+      0.28217433673864345,
+      0.2571550552347748
+     ],
+     "dclm_eval": [
+      0.26221686154923535,
+      0.27803148308605524
+     ],
+     "math": [
+      0.20553067508199774,
+      0.35171587063896564
+     ],
+     "math_eval": [
+      0.20231274018739356,
+      0.35664969171008926
+     ]
+    }
+   },
+   "jaccard_to_other_draws": {
+    "A": [
+     0.21,
+     0.2
+    ],
+    "B": [
+     0.231,
+     0.286
+    ]
+   }
+  }
+ ],
+ "n_draws_found": 3,
+ "best_feasible": {
+  "selection_contrast": 1.5411802153000762,
+  "A": [
+   "moe:b0:l0:e0",
+   "moe:b0:l0:e5",
+   "moe:b0:l0:e9",
+   "moe:b0:l0:e11",
+   "moe:b0:l0:e14",
+   "moe:b0:l0:e22",
+   "moe:b0:l1:e0",
+   "moe:b0:l1:e1",
+   "moe:b0:l1:e4",
+   "moe:b0:l1:e6",
+   "moe:b0:l1:e13",
+   "moe:b0:l1:e18",
+   "moe:b0:l2:e3",
+   "moe:b0:l2:e5",
+   "moe:b0:l2:e10",
+   "moe:b0:l2:e11",
+   "moe:b0:l2:e12",
+   "moe:b0:l2:e23",
+   "moe:b1:l0:e4",
+   "moe:b1:l0:e9",
+   "moe:b1:l0:e13",
+   "moe:b1:l0:e15",
+   "moe:b1:l0:e17",
+   "moe:b1:l0:e21",
+   "moe:b1:l1:e2",
+   "moe:b1:l1:e4",
+   "moe:b1:l1:e6",
+   "moe:b1:l1:e15",
+   "moe:b1:l1:e16",
+   "moe:b1:l1:e18",
+   "moe:b1:l2:e2",
+   "moe:b1:l2:e8",
+   "moe:b1:l2:e9",
+   "moe:b1:l2:e12",
+   "moe:b1:l2:e13",
+   "moe:b1:l2:e18",
+   "moe:b2:l0:e3",
+   "moe:b2:l0:e6",
+   "moe:b2:l0:e7",
+   "moe:b2:l0:e15",
+   "moe:b2:l0:e17",
+   "moe:b2:l0:e18",
+   "moe:b2:l1:e1",
+   "moe:b2:l1:e8",
+   "moe:b2:l1:e14",
+   "moe:b2:l1:e16",
+   "moe:b2:l1:e18",
+   "moe:b2:l1:e19",
+   "moe:b2:l2:e0",
+   "moe:b2:l2:e11",
+   "moe:b2:l2:e12",
+   "moe:b2:l2:e13",
+   "moe:b2:l2:e15",
+   "moe:b2:l2:e23",
+   "moe:b3:l0:e3",
+   "moe:b3:l0:e4",
+   "moe:b3:l0:e12",
+   "moe:b3:l0:e15",
+   "moe:b3:l0:e21",
+   "moe:b3:l0:e22",
+   "moe:b3:l1:e0",
+   "moe:b3:l1:e4",
+   "moe:b3:l1:e8",
+   "moe:b3:l1:e17",
+   "moe:b3:l1:e19",
+   "moe:b3:l1:e22",
+   "moe:b3:l2:e0",
+   "moe:b3:l2:e5",
+   "moe:b3:l2:e6",
+   "moe:b3:l2:e14",
+   "moe:b3:l2:e17",
+   "moe:b3:l2:e18"
+  ],
+  "B": [
+   "moe:b0:l0:e2",
+   "moe:b0:l0:e3",
+   "moe:b0:l0:e6",
+   "moe:b0:l0:e7",
+   "moe:b0:l0:e10",
+   "moe:b0:l0:e18",
+   "moe:b0:l1:e3",
+   "moe:b0:l1:e9",
+   "moe:b0:l1:e14",
+   "moe:b0:l1:e15",
+   "moe:b0:l1:e20",
+   "moe:b0:l1:e22",
+   "moe:b0:l2:e1",
+   "moe:b0:l2:e6",
+   "moe:b0:l2:e8",
+   "moe:b0:l2:e9",
+   "moe:b0:l2:e15",
+   "moe:b0:l2:e16",
+   "moe:b1:l0:e5",
+   "moe:b1:l0:e6",
+   "moe:b1:l0:e11",
+   "moe:b1:l0:e16",
+   "moe:b1:l0:e18",
+   "moe:b1:l0:e19",
+   "moe:b1:l1:e1",
+   "moe:b1:l1:e3",
+   "moe:b1:l1:e5",
+   "moe:b1:l1:e12",
+   "moe:b1:l1:e17",
+   "moe:b1:l1:e22",
+   "moe:b1:l2:e0",
+   "moe:b1:l2:e6",
+   "moe:b1:l2:e7",
+   "moe:b1:l2:e11",
+   "moe:b1:l2:e16",
+   "moe:b1:l2:e17",
+   "moe:b2:l0:e0",
+   "moe:b2:l0:e8",
+   "moe:b2:l0:e9",
+   "moe:b2:l0:e13",
+   "moe:b2:l0:e21",
+   "moe:b2:l0:e23",
+   "moe:b2:l1:e2",
+   "moe:b2:l1:e5",
+   "moe:b2:l1:e6",
+   "moe:b2:l1:e7",
+   "moe:b2:l1:e10",
+   "moe:b2:l1:e23",
+   "moe:b2:l2:e1",
+   "moe:b2:l2:e5",
+   "moe:b2:l2:e7",
+   "moe:b2:l2:e9",
+   "moe:b2:l2:e10",
+   "moe:b2:l2:e21",
+   "moe:b3:l0:e0",
+   "moe:b3:l0:e11",
+   "moe:b3:l0:e13",
+   "moe:b3:l0:e14",
+   "moe:b3:l0:e16",
+   "moe:b3:l0:e18",
+   "moe:b3:l1:e6",
+   "moe:b3:l1:e11",
+   "moe:b3:l1:e12",
+   "moe:b3:l1:e13",
+   "moe:b3:l1:e14",
+   "moe:b3:l1:e21",
+   "moe:b3:l2:e2",
+   "moe:b3:l2:e7",
+   "moe:b3:l2:e12",
+   "moe:b3:l2:e13",
+   "moe:b3:l2:e19",
+   "moe:b3:l2:e21"
+  ],
+  "selection_half": {
+   "contrast": 1.5411802153000762,
+   "match_err": {
+    "books": -0.03973237116289374,
+    "dclm": 0.04671065552797071
+   },
+   "ro_share": {
+    "books": [
+     0.25028414486396616,
+     0.26042872701912206
+    ],
+    "books_eval": [
+     0.24865120275662864,
+     0.2676069202122745
+    ],
+    "code": [
+     0.06669201767871712,
+     0.5924195206962447
+    ],
+    "code_eval": [
+     0.07431980879123065,
+     0.5897415214668336
+    ],
+    "dclm": [
+     0.2609388778538708,
+     0.24903054008845152
+    ],
+    "dclm_eval": [
+     0.2529434613148282,
+     0.2616487616271504
+    ],
+    "math": [
+     0.17851957976014823,
+     0.3395590395640956
+    ],
+    "math_eval": [
+     0.17522651542516282,
+     0.341468832031692
+    ]
+   }
+  },
+  "estimation_half": {
+   "contrast": 1.5750877288194955,
+   "match_err": {
+    "books": -0.04432986723349863,
+    "dclm": 0.10079986454214995
+   },
+   "ro_share": {
+    "books": [
+     0.2499566014597539,
+     0.2612864136257025
+    ],
+    "books_eval": [
+     0.24733788272621104,
+     0.267203099030929
+    ],
+    "code": [
+     0.06728295843686186,
+     0.591634789827546
+    ],
+    "code_eval": [
+     0.07515479947920188,
+     0.5858667143510493
+    ],
+    "dclm": [
+     0.2655905341245315,
+     0.24012410955690242
+    ],
+    "dclm_eval": [
+     0.24847008763660036,
+     0.2640564614090909
+    ],
+    "math": [
+     0.1832134493169714,
+     0.3334679246475735
+    ],
+    "math_eval": [
+     0.17850621431548433,
+     0.33631672149213676
+    ]
+   }
+  }
+ },
+ "best_estimation_contrast": 1.5750877288194955
+}

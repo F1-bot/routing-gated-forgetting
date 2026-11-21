@@ -1,0 +1,347 @@
+{
+ "owen2007pigeonhole": {
+  "source": "crossref",
+  "doi": "10.1214/07-aoas122",
+  "title": "The pigeonhole bootstrap",
+  "journal": "The Annals of Applied Statistics",
+  "volume": "1",
+  "issue": "2",
+  "pages": "386-411",
+  "article_number": null,
+  "year": 2007,
+  "authors": [
+   "Owen, Art B."
+  ],
+  "type": "journal-article"
+ },
+ "campbell2008predicting": {
+  "source": "crossref",
+  "doi": "10.1093/rfs/hhm055",
+  "title": "Predicting Excess Stock Returns Out of Sample: Can Anything Beat the Historical Average?",
+  "journal": "Review of Financial Studies",
+  "volume": "21",
+  "issue": "4",
+  "pages": "1509-1531",
+  "article_number": null,
+  "year": 2007,
+  "authors": [
+   "Campbell, John Y.",
+   "Thompson, Samuel B."
+  ],
+  "type": "journal-article"
+ },
+ "lakens2017equivalence": {
+  "source": "crossref",
+  "doi": "10.1177/1948550617697177",
+  "title": "Equivalence Tests",
+  "journal": "Social Psychological and Personality Science",
+  "volume": "8",
+  "issue": "4",
+  "pages": "355-362",
+  "article_number": null,
+  "year": 2017,
+  "authors": [
+   "Lakens, Dani\u00ebl"
+  ],
+  "type": "journal-article"
+ },
+ "nosek2018preregistration": {
+  "source": "crossref",
+  "doi": "10.1073/pnas.1708274114",
+  "title": "The preregistration revolution",
+  "journal": "Proceedings of the National Academy of Sciences",
+  "volume": "115",
+  "issue": "11",
+  "pages": "2600-2606",
+  "article_number": null,
+  "year": 2018,
+  "authors": [
+   "Nosek, Brian A.",
+   "Ebersole, Charles R.",
+   "DeHaven, Alexander C.",
+   "Mellor, David T."
+  ],
+  "type": "journal-article"
+ },
+ "simonsohn2020specification": {
+  "source": "crossref",
+  "doi": "10.1038/s41562-020-0912-z",
+  "title": "Specification curve analysis",
+  "journal": "Nature Human Behaviour",
+  "volume": "4",
+  "issue": "11",
+  "pages": "1208-1214",
+  "article_number": null,
+  "year": 2020,
+  "authors": [
+   "Simonsohn, Uri",
+   "Simmons, Joseph P.",
+   "Nelson, Leif D."
+  ],
+  "type": "journal-article"
+ },
+ "phipson2010permutation": {
+  "source": "crossref",
+  "doi": "10.2202/1544-6115.1585",
+  "title": "Permutation P-values Should Never Be Zero: Calculating Exact P-values When Permutations Are Randomly Drawn",
+  "journal": "Statistical Applications in Genetics and Molecular Biology",
+  "volume": "9",
+  "issue": "1",
+  "pages": null,
+  "article_number": null,
+  "year": 2010,
+  "authors": [
+   "Phipson, Belinda",
+   "Smyth, Gordon K"
+  ],
+  "type": "journal-article"
+ },
+ "browne1995pilot": {
+  "source": "crossref",
+  "doi": "10.1002/sim.4780141709",
+  "title": "On the use of a pilot sample for sample size determination",
+  "journal": "Statistics in Medicine",
+  "volume": "14",
+  "issue": "17",
+  "pages": "1933-1940",
+  "article_number": null,
+  "year": 1995,
+  "authors": [
+   "Browne, Richard H."
+  ],
+  "type": "journal-article"
+ },
+ "wittes1990internal": {
+  "source": "crossref",
+  "doi": "10.1002/sim.4780090113",
+  "title": "The role of internal pilot studies in increasing the efficiency of clinical trials",
+  "journal": "Statistics in Medicine",
+  "volume": "9",
+  "issue": "1-2",
+  "pages": "65-72",
+  "article_number": null,
+  "year": 1990,
+  "authors": [
+   "Wittes, Janet",
+   "Brittain, Erica"
+  ],
+  "type": "journal-article"
+ },
+ "kaplan2020scaling": {
+  "source": "arxiv",
+  "arxiv": "2001.08361",
+  "id_with_version": "2001.08361v1",
+  "title": "Scaling Laws for Neural Language Models",
+  "authors": [
+   "Jared Kaplan",
+   "Sam McCandlish",
+   "Tom Henighan",
+   "Tom B. Brown",
+   "Benjamin Chess",
+   "Rewon Child",
+   "Scott Gray",
+   "Alec Radford",
+   "Jeffrey Wu",
+   "Dario Amodei"
+  ],
+  "published": "2020-01-23"
+ },
+ "mccandlish2018empirical": {
+  "source": "arxiv",
+  "arxiv": "1812.06162",
+  "id_with_version": "1812.06162v1",
+  "title": "An Empirical Model of Large-Batch Training",
+  "authors": [
+   "Sam McCandlish",
+   "Jared Kaplan",
+   "Dario Amodei",
+   "OpenAI Dota Team"
+  ],
+  "published": "2018-12-14"
+ },
+ "kimiteam2026attention": {
+  "source": "arxiv",
+  "arxiv": "2603.15031",
+  "id_with_version": "2603.15031v1",
+  "title": "Attention Residuals",
+  "authors": [
+   " Kimi Team",
+   "Guangyu Chen",
+   "Yu Zhang",
+   "Jianlin Su",
+   "Weixin Xu",
+   "Siyuan Pan",
+   "Yaoyu Wang",
+   "Yucheng Wang",
+   "Guanduo Chen",
+   "Bohong Yin",
+   "Yutian Chen",
+   "Junjie Yan",
+   "Ming Wei",
+   "Y. Zhang",
+   "Fanqing Meng",
+   "Chao Hong",
+   "Xiaotong Xie",
+   "Shaowei Liu",
+   "Enzhe Lu",
+   "Yunpeng Tai",
+   "Yanru Chen",
+   "Xin Men",
+   "Haiqing Guo",
+   "Y. Charles",
+   "Haoyu Lu",
+   "Lin Sui",
+   "Jinguo Zhu",
+   "Zaida Zhou",
+   "Weiran He",
+   "Weixiao Huang",
+   "Xinran Xu",
+   "Yuzhi Wang",
+   "Guokun Lai",
+   "Yulun Du",
+   "Yuxin Wu",
+   "Zhilin Yang",
+   "Xinyu Zhou"
+  ],
+  "published": "2026-03-16"
+ },
+ "_details": {
+  "campbell2008predicting": {
+   "subtitle": [],
+   "published-print": [
+    [
+     2008,
+     7
+    ]
+   ],
+   "published-online": [
+    [
+     2007,
+     11,
+     20
+    ]
+   ],
+   "issued": [
+    [
+     2007,
+     11,
+     20
+    ]
+   ],
+   "page": "1509-1531",
+   "article-number": null,
+   "authors": [
+    "Campbell, John Y.",
+    "Thompson, Samuel B."
+   ]
+  },
+  "lakens2017equivalence": {
+   "subtitle": [
+    "A Practical Primer for\n                    <i>t</i>\n                    Tests, Correlations, and Meta-Analyses"
+   ],
+   "published-print": [
+    [
+     2017,
+     5
+    ]
+   ],
+   "published-online": [
+    [
+     2017,
+     5,
+     5
+    ]
+   ],
+   "issued": [
+    [
+     2017,
+     5
+    ]
+   ],
+   "page": "355-362",
+   "article-number": null,
+   "authors": [
+    "Lakens, Dani\u00ebl"
+   ]
+  },
+  "phipson2010permutation": {
+   "subtitle": [],
+   "published-print": null,
+   "published-online": [
+    [
+     2010,
+     10,
+     31
+    ]
+   ],
+   "issued": [
+    [
+     2010,
+     10,
+     31
+    ]
+   ],
+   "page": null,
+   "article-number": null,
+   "authors": [
+    "Phipson, Belinda",
+    "Smyth, Gordon K"
+   ]
+  },
+  "nosek2018preregistration": {
+   "subtitle": [],
+   "published-print": [
+    [
+     2018,
+     3,
+     13
+    ]
+   ],
+   "published-online": [
+    [
+     2018,
+     3,
+     12
+    ]
+   ],
+   "issued": [
+    [
+     2018,
+     3,
+     12
+    ]
+   ],
+   "page": "2600-2606",
+   "article-number": null,
+   "authors": [
+    "Nosek, Brian A.",
+    "Ebersole, Charles R.",
+    "DeHaven, Alexander C.",
+    "Mellor, David T."
+   ]
+  },
+  "owen2007pigeonhole": {
+   "subtitle": [],
+   "published-print": [
+    [
+     2007,
+     12,
+     1
+    ]
+   ],
+   "published-online": null,
+   "issued": [
+    [
+     2007,
+     12,
+     1
+    ]
+   ],
+   "page": "386-411",
+   "article-number": null,
+   "authors": [
+    "Owen, Art B."
+   ]
+  }
+ }
+}

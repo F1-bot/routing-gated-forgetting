@@ -1,0 +1,93 @@
+{
+ "meta": {
+  "experiment": "moe_100m",
+  "checkpoint": {
+   "path": "outputs\\g1\\g1_moe_b1_full_german_s101\\m2\\moe_100m_g1_moe_b1_full_german_s101\\20261114_044309__moe_100m_g1_moe_b1_full_german_s101_train\\checkpoints\\model_final.pt",
+   "size": 3369826637,
+   "head_sha256": "67bc8388c97285a4d83019abbc67999a0735246f091d9f3b72a149675c4cd4be"
+  },
+  "base": {
+   "path": "outputs\\moe_100m_b05\\20261101_002357__moe_100m_b05_train\\checkpoints\\model_final.pt",
+   "size": 3370939901,
+   "head_sha256": "ef3eb3815967cf91802f9a1c299b2f26dc82a990d3ceb02e7a6902a1aff9f14b"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-19T05:51:10"
+ },
+ "results": {
+  "revert:moe@b0l0|dclm": {
+   "ce": 4.784475739755036,
+   "windows": 500,
+   "seconds": 123.9,
+   "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b0l0__dclm.npz"
+  },
+  "revert:moe@b0l1|dclm": {
+   "ce": 4.778993708505037,
+   "windows": 500,
+   "seconds": 117.9,
+   "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b0l1__dclm.npz"
+  },
+  "revert:moe@b0l2|dclm": {
+   "ce": 4.779246238743895,
+   "windows": 500,
+   "seconds": 126.4,
+   "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b0l2__dclm.npz"
+  },
+  "revert:moe@b1l0|dclm": {
+   "ce": 4.781263029418498,
+   "windows": 500,
+   "seconds": 119.2,
+   "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b1l0__dclm.npz"
+  },
+  "revert:moe@b1l1|dclm": {
+   "ce": 4.779234147970086,
+   "windows": 500,
+   "seconds": 123.0,
+   "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b1l1__dclm.npz"
+  },
+  "revert:moe@b1l2|dclm": {
+   "ce": 4.775966707684677,
+   "windows": 500,
+   "seconds": 121.3,
+   "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b1l2__dclm.npz"
+  },
+  "revert:moe@b2l0|dclm": {
+   "ce": 4.774039978250916,
+   "windows": 500,
+   "seconds": 120.9,
+   "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b2l0__dclm.npz"
+  },
+  "revert:moe@b2l1|dclm": {
+   "ce": 4.776074207303114,
+   "windows": 500,
+   "seconds": 121.5,
+   "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b2l1__dclm.npz"
+  },
+  "revert:moe@b2l2|dclm": {
+   "ce": 4.77055887706044,
+   "windows": 500,
+   "seconds": 124.7,
+   "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b2l2__dclm.npz"
+  },
+  "revert:moe@b3l0|dclm": {
+   "ce": 4.767024014136905,
+   "windows": 500,
+   "seconds": 117.9,
+   "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b3l0__dclm.npz"
+  },
+  "revert:moe@b3l1|dclm": {
+   "ce": 4.763380326617827,
+   "windows": 500,
+   "seconds": 122.6,
+   "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b3l1__dclm.npz"
+  },
+  "revert:moe@b3l2|dclm": {
+   "ce": 4.765469354777167,
+   "windows": 500,
+   "seconds": 123.6,
+   "file": "outputs/confirm/c3_layer_reverts/g1_moe_b1_full_german_s101\\revert-moe@b3l2__dclm.npz"
+  }
+ }
+}

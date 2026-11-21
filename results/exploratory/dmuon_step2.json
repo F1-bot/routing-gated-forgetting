@@ -1,0 +1,107 @@
+{
+ "label": "post-freeze exploratory; job list fixed and hashed before running (queue_c2step2.json)",
+ "per_draw": [
+  {
+   "base": "moe_b1",
+   "d": 1,
+   "step1_norm_H": 0.0,
+   "step2_norm_H": 0.07492621796537362,
+   "step8_norm_H": 1.8487691060750464,
+   "step1_norm_L": 0.0,
+   "step2_norm_L": 0.07093337666260047,
+   "step8_norm_L": 1.7337101074201873,
+   "D_muon_step2": 0.05476278922058746,
+   "D_muon_step8_registered_runs": 0.06425638661703396
+  },
+  {
+   "base": "moe_b1",
+   "d": 2,
+   "step1_norm_H": 0.0,
+   "step2_norm_H": 0.07512209065546371,
+   "step8_norm_H": 1.8512661421086223,
+   "step1_norm_L": 0.0,
+   "step2_norm_L": 0.0723703681424896,
+   "step8_norm_L": 1.6907266953186575,
+   "D_muon_step2": 0.03731772957554975,
+   "D_muon_step8_registered_runs": 0.090711372391732
+  },
+  {
+   "base": "moe_b1",
+   "d": 3,
+   "step1_norm_H": 0.0,
+   "step2_norm_H": 0.07504816836543217,
+   "step8_norm_H": 1.8523195039338016,
+   "step1_norm_L": 0.0,
+   "step2_norm_L": 0.07356761401711623,
+   "step8_norm_L": 1.7289076937650272,
+   "D_muon_step2": 0.019925250304551712,
+   "D_muon_step8_registered_runs": 0.06894882145594845
+  },
+  {
+   "base": "moe_b1",
+   "d": 4,
+   "step1_norm_H": 0.0,
+   "step2_norm_H": 0.07514444483415249,
+   "step8_norm_H": 1.849250496304547,
+   "step1_norm_L": 0.0,
+   "step2_norm_L": 0.07229249351386599,
+   "step8_norm_L": 1.718534761804409,
+   "D_muon_step2": 0.03869189280740644,
+   "D_muon_step8_registered_runs": 0.07330837477207576
+  },
+  {
+   "base": "moe_b2",
+   "d": 5,
+   "step1_norm_H": 0.0,
+   "step2_norm_H": 0.0740591034484561,
+   "step8_norm_H": 1.817295410708061,
+   "step1_norm_L": 0.0,
+   "step2_norm_L": 0.07663644223648816,
+   "step8_norm_L": 1.7767395297239206,
+   "D_muon_step2": -0.03420924116110241,
+   "D_muon_step8_registered_runs": 0.022569397996180622
+  },
+  {
+   "base": "moe_b2",
+   "d": 6,
+   "step1_norm_H": 0.0,
+   "step2_norm_H": 0.07365203161793359,
+   "step8_norm_H": 1.822257582379958,
+   "step1_norm_L": 0.0,
+   "step2_norm_L": 0.07332075675064649,
+   "step8_norm_L": 1.7506199450037478,
+   "D_muon_step2": 0.004507983171247846,
+   "D_muon_step8_registered_runs": 0.04010618278022698
+  },
+  {
+   "base": "moe_b2",
+   "d": 7,
+   "step1_norm_H": 0.0,
+   "step2_norm_H": 0.07361147894717802,
+   "step8_norm_H": 1.8187657343573622,
+   "step1_norm_L": 0.0,
+   "step2_norm_L": 0.07522666945313185,
+   "step8_norm_L": 1.7685782120560325,
+   "D_muon_step2": -0.02170483753661331,
+   "D_muon_step8_registered_runs": 0.027982149326636754
+  },
+  {
+   "base": "moe_b2",
+   "d": 8,
+   "step1_norm_H": 0.0,
+   "step2_norm_H": 0.07340273834985764,
+   "step8_norm_H": 1.8157219906679907,
+   "step1_norm_L": 0.0,
+   "step2_norm_L": 0.07149291298627425,
+   "step8_norm_L": 1.7617982860434949,
+   "D_muon_step2": 0.026362916429087176,
+   "D_muon_step8_registered_runs": 0.03014813877148122
+  }
+ ],
+ "n": 8,
+ "D_muon_step2_min": -0.03420924116110241,
+ "D_muon_step2_max": 0.05476278922058746,
+ "D_muon_step2_mean": 0.01570681035133933,
+ "D_muon_step2_max_abs": 0.05476278922058746,
+ "step1_all_zero": true
+}

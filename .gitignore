@@ -1,0 +1,22 @@
+# Upstream code and shim created by tools/setup_upstream.py
+/repo/
+/shim/
+/modal/token_documents.py
+
+# Tokenized and raw data (see data/README.md)
+/data/**/*.bin
+/data/**/raw/
+/data/data_manifest.rebuilt.json
+
+# Checkpoints, run outputs, environments and caches
+/outputs/
+/checkpoints/
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+/logs/env_check.log

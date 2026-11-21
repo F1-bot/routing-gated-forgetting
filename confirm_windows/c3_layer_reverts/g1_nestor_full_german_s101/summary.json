@@ -1,0 +1,57 @@
+{
+ "meta": {
+  "experiment": "nestor_100m",
+  "checkpoint": {
+   "path": "outputs\\g1\\g1_nestor_full_german_s101\\m2c\\nestor_100m_g1_nestor_full_german_s101\\20261114_064245__nestor_100m_g1_nestor_full_german_s101_train\\checkpoints\\model_final.pt",
+   "size": 3400441546,
+   "head_sha256": "41ea2286e82acf144b756292b8740c3a5bf28f18b51cf181d12bd793a10e56a3"
+  },
+  "base": {
+   "path": "outputs\\nestor_100m_b05\\20261031_213045__nestor_100m_b05_train_h100\\checkpoints\\model_final.pt",
+   "size": 1510337922,
+   "head_sha256": "417fb7b51ff8feec3f4adef090a375a8614c4028d62555fd4a24d5b8305ea8da"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-19T02:25:37"
+ },
+ "results": {
+  "revert:attn@b0+priv@b0|dclm": {
+   "ce": 4.946568274954212,
+   "windows": 500,
+   "seconds": 228.5,
+   "file": "outputs/confirm/c3_layer_reverts/g1_nestor_full_german_s101\\revert-attn@b0+priv@b0__dclm.npz"
+  },
+  "revert:attn@b1+priv@b1|dclm": {
+   "ce": 4.945202074748169,
+   "windows": 500,
+   "seconds": 226.9,
+   "file": "outputs/confirm/c3_layer_reverts/g1_nestor_full_german_s101\\revert-attn@b1+priv@b1__dclm.npz"
+  },
+  "revert:attn@b2+priv@b2|dclm": {
+   "ce": 4.931068365575396,
+   "windows": 500,
+   "seconds": 226.8,
+   "file": "outputs/confirm/c3_layer_reverts/g1_nestor_full_german_s101\\revert-attn@b2+priv@b2__dclm.npz"
+  },
+  "revert:attn@b3+priv@b3|dclm": {
+   "ce": 4.927284058302808,
+   "windows": 500,
+   "seconds": 227.1,
+   "file": "outputs/confirm/c3_layer_reverts/g1_nestor_full_german_s101\\revert-attn@b3+priv@b3__dclm.npz"
+  },
+  "revert:attn@b4+priv@b4|dclm": {
+   "ce": 4.932311831788003,
+   "windows": 500,
+   "seconds": 227.4,
+   "file": "outputs/confirm/c3_layer_reverts/g1_nestor_full_german_s101\\revert-attn@b4+priv@b4__dclm.npz"
+  },
+  "revert:attn@b5+priv@b5|dclm": {
+   "ce": 4.915884077857906,
+   "windows": 500,
+   "seconds": 226.8,
+   "file": "outputs/confirm/c3_layer_reverts/g1_nestor_full_german_s101\\revert-attn@b5+priv@b5__dclm.npz"
+  }
+ }
+}

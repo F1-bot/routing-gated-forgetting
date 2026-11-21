@@ -1,0 +1,1412 @@
+{
+ "aa_pairs": [
+  {
+   "N": 24,
+   "base": "moe_b1",
+   "data_seed": 7201,
+   "draw_file": "g1/specs/aa_moe_german_a1.json",
+   "generator_seed": 4001,
+   "k": 6,
+   "pair": 1,
+   "q": 0.25,
+   "runs": {
+    "R1": "g1_moe_b1_aa1_R1",
+    "R2": "g1_moe_b1_aa1_R2"
+   },
+   "stage": "g1",
+   "steps": 96,
+   "target": "german"
+  },
+  {
+   "N": 24,
+   "base": "moe_b1",
+   "data_seed": 7202,
+   "draw_file": "g1/specs/aa_moe_books_a2.json",
+   "generator_seed": 4002,
+   "k": 6,
+   "pair": 2,
+   "q": 0.25,
+   "runs": {
+    "R1": "g1_moe_b1_aa2_R1",
+    "R2": "g1_moe_b1_aa2_R2"
+   },
+   "stage": "g1",
+   "steps": 96,
+   "target": "books"
+  }
+ ],
+ "base_eval_files": {
+  "moe_b1": {
+   "books": "g1/base/moe_b1/ckpt__books.npz",
+   "code": "g1/base/moe_b1/ckpt__code.npz",
+   "dclm": "g1/base/moe_b1/ckpt__dclm.npz",
+   "german": "g1/base/moe_b1/ckpt__german.npz",
+   "math": "g1/base/moe_b1/ckpt__math.npz",
+   "pycode": "g1/base/moe_b1/ckpt__pycode.npz"
+  },
+  "nestor": {
+   "books": "g1/base/nestor/ckpt__books.npz",
+   "code": "g1/base/nestor/ckpt__code.npz",
+   "dclm": "g1/base/nestor/ckpt__dclm.npz",
+   "german": "g1/base/nestor/ckpt__german.npz",
+   "math": "g1/base/nestor/ckpt__math.npz",
+   "pycode": "g1/base/nestor/ckpt__pycode.npz"
+  }
+ },
+ "config": {
+  "_comment": "g1g2_plan.py configuration (2026-11-13). Paths are relative to the project root . (cwd of run_queue). Changes from phase 5: FULL seeds 101/102 for NESTOR too and the H100 duplicate of NESTOR FULL German seed 101; DCLM-CONT on held-out global shard 03 / local 0 / file 0; code training stream; base-2/base-3 probe configs. | v1.3: spec 1.3.0 runs (pair a = 2 books in S1; NESTOR books A/A); DCLM-CONT = data/dclm/dclm_cont_heldout.bin",
+  "aa_pairs": {
+   "g2": [
+    3
+   ],
+   "s1": [
+    1,
+    2
+   ],
+   "targets": {
+    "1": "german",
+    "2": "books",
+    "3": "books"
+   }
+  },
+  "dclm_cont": {
+   "note": "held-out DCLM global shard 03; data rebuild bin, 29,998,792 tokens, sha256 7000c98f95bba8b47ec5c06c7ec1a1114811d30eaf939dfe737f5dc757e626d7 (data/data_manifest.json)",
+   "path": "data/dclm/dclm_cont_heldout.bin",
+   "pretrain_path": "data/dclm/dclm_train.bin"
+  },
+  "experiments": {
+   "moe_b1": "moe_100m",
+   "moe_b2": "moe_100m",
+   "nestor": "nestor_100m"
+  },
+  "g0_probe_configs": {
+   "moe_b1": "g0_moe_b1.json",
+   "moe_b2": "g0_moe_b2.json",
+   "moe_b3": "g0_moe_b3.json",
+   "nestor": "g0_nestor.json"
+  },
+  "gate_config": {
+   "appC6_ranges": null,
+   "code_record": "logs/after_B_code_sha256.json",
+   "f_or_stream_changed": false,
+   "g07r_record": "g0r/g07r_record.json",
+   "lookup": "signflip_lookup_v1.csv",
+   "pipeline_tests": {
+    "junit": "logs/tests_gpu_pipeline.xml",
+    "log": "logs/tests_gpu_pipeline.log"
+   },
+   "routing_health": "g0/nestor/routing_health.json",
+   "spec": "g1g2_spec.json"
+  },
+  "h100_duplicate_file": "g1/h100_nestor_full_s101.json",
+  "interim_head_windows": 64,
+  "interim_steps": [
+   0,
+   8,
+   24,
+   48
+  ],
+  "negctrl_steps": 8,
+  "nestor_aa": {
+   "pair": 1,
+   "target": "books"
+  },
+  "python": ".venv/nestor/Scripts/python.exe",
+  "recipe": {
+   "lr_adamw": 7.5e-05,
+   "lr_muon": 0.0025,
+   "max_grad_norm": 1.0,
+   "micro": 2,
+   "momentum": 0.95,
+   "steps": 96,
+   "warmup_96": 10,
+   "weight_decay": 0.1
+  },
+  "run_exp": "run_exp.py",
+  "seeds": {
+   "aa_data": {
+    "moe": 7200,
+    "nestor": 7250
+   },
+   "aa_generator": {
+    "moe": 4000,
+    "nestor": 4100
+   },
+   "dclm_cont": 101,
+   "eall_moe": [
+    101,
+    102
+   ],
+   "full_moe": [
+    101,
+    102
+   ],
+   "full_nestor": [
+    101,
+    102
+   ],
+   "h100_duplicate_seed": 101
+  },
+  "sgd_full_steps": [
+   0,
+   8,
+   24,
+   48
+  ],
+  "snr": {
+   "kinds": "moe",
+   "train_batch_windows": 64,
+   "windows": 64
+  },
+  "theta0": {
+   "windows": 64
+  },
+  "throughput": {
+   "audit_min": 1.0,
+   "compile_min": {
+    "moe": 3.0,
+    "nestor": 8.5
+   },
+   "eval_tok_s": {
+    "moe": 27000.0,
+    "nestor": 8500.0
+   },
+   "model_load_min": 0.5,
+   "train_tok_s": {
+    "moe": 34000.0,
+    "nestor": 10200.0
+   }
+  },
+  "train_data": {
+   "books": "data/domain/pg19_train.bin",
+   "code": "data/domain/algstack_train.bin",
+   "french": "data/domain/fr_train.bin",
+   "german": "data/domain/fw2de_train.bin",
+   "math": "data/domain/owm_train.bin"
+  }
+ },
+ "created": "2026-11-14T00:43:37",
+ "estimate_total_gpu_h": 9.504,
+ "estimates": [
+  {
+   "base": "moe_b1",
+   "id": "g1_base_moe_b1",
+   "kind": "eval",
+   "sets": [
+    "dclm",
+    "code",
+    "pycode",
+    "math",
+    "german",
+    "books"
+   ],
+   "total_h": 0.1348
+  },
+  {
+   "base": "nestor",
+   "id": "g1_base_nestor",
+   "kind": "eval",
+   "sets": [
+    "dclm",
+    "code",
+    "pycode",
+    "math",
+    "german",
+    "books"
+   ],
+   "total_h": 0.4099
+  },
+  {
+   "audit_h": 0.0167,
+   "base": "moe_b1",
+   "compile_h": 0.05,
+   "eval_h": 0.4929,
+   "id": "g1_moe_b1_aa1_R1",
+   "interim_eval_h": 0.0108,
+   "kind": "train",
+   "role": "aa",
+   "total_h": 0.776,
+   "train_h": 0.2056
+  },
+  {
+   "audit_h": 0.0167,
+   "base": "moe_b1",
+   "compile_h": 0.05,
+   "eval_h": 0.4929,
+   "id": "g1_moe_b1_aa1_R2",
+   "interim_eval_h": 0.0108,
+   "kind": "train",
+   "role": "aa",
+   "total_h": 0.776,
+   "train_h": 0.2056
+  },
+  {
+   "audit_h": 0.0167,
+   "base": "moe_b1",
+   "compile_h": 0.05,
+   "eval_h": 0.4929,
+   "id": "g1_moe_b1_aa2_R1",
+   "interim_eval_h": 0.0108,
+   "kind": "train",
+   "role": "aa",
+   "total_h": 0.776,
+   "train_h": 0.2056
+  },
+  {
+   "audit_h": 0.0167,
+   "base": "moe_b1",
+   "compile_h": 0.05,
+   "eval_h": 0.4929,
+   "id": "g1_moe_b1_aa2_R2",
+   "interim_eval_h": 0.0108,
+   "kind": "train",
+   "role": "aa",
+   "total_h": 0.776,
+   "train_h": 0.2056
+  },
+  {
+   "id": "g1_theta0_moe_b1",
+   "kind": "cmd",
+   "out": "g1/theta0_checks.json",
+   "total_h": 0.05
+  },
+  {
+   "audit_h": 0.0167,
+   "base": "moe_b1",
+   "compile_h": 0.05,
+   "eval_h": 0.0,
+   "id": "g1_negctrl",
+   "interim_eval_h": 0.0,
+   "kind": "train",
+   "role": "negctrl",
+   "total_h": 0.0838,
+   "train_h": 0.0171
+  },
+  {
+   "audit_h": 0.0,
+   "base": "moe_b1",
+   "compile_h": 0.05,
+   "eval_h": 0.0715,
+   "id": "g1_moe_b1_full_math_s101",
+   "interim_eval_h": 0.0,
+   "kind": "train",
+   "role": "full",
+   "total_h": 0.3271,
+   "train_h": 0.2056
+  },
+  {
+   "audit_h": 0.0,
+   "base": "moe_b1",
+   "compile_h": 0.05,
+   "eval_h": 0.0715,
+   "id": "g1_moe_b1_full_math_s102",
+   "interim_eval_h": 0.0,
+   "kind": "train",
+   "role": "full",
+   "total_h": 0.3271,
+   "train_h": 0.2056
+  },
+  {
+   "audit_h": 0.0,
+   "base": "moe_b1",
+   "compile_h": 0.05,
+   "eval_h": 0.0926,
+   "id": "g1_moe_b1_full_german_s101",
+   "interim_eval_h": 0.0,
+   "kind": "train",
+   "role": "full",
+   "total_h": 0.3482,
+   "train_h": 0.2056
+  },
+  {
+   "audit_h": 0.0,
+   "base": "moe_b1",
+   "compile_h": 0.05,
+   "eval_h": 0.0926,
+   "id": "g1_moe_b1_full_german_s102",
+   "interim_eval_h": 0.0,
+   "kind": "train",
+   "role": "full",
+   "total_h": 0.3482,
+   "train_h": 0.2056
+  },
+  {
+   "audit_h": 0.0167,
+   "base": "moe_b1",
+   "compile_h": 0.05,
+   "eval_h": 0.0926,
+   "id": "g1_moe_b1_eall_german_s101",
+   "interim_eval_h": 0.0,
+   "kind": "train",
+   "role": "eall",
+   "total_h": 0.3649,
+   "train_h": 0.2056
+  },
+  {
+   "audit_h": 0.0167,
+   "base": "moe_b1",
+   "compile_h": 0.05,
+   "eval_h": 0.0926,
+   "id": "g1_moe_b1_eall_german_s102",
+   "interim_eval_h": 0.0,
+   "kind": "train",
+   "role": "eall",
+   "total_h": 0.3649,
+   "train_h": 0.2056
+  },
+  {
+   "audit_h": 0.0,
+   "base": "moe_b1",
+   "compile_h": 0.05,
+   "eval_h": 0.0926,
+   "id": "g1_moe_b1_dclmcont_s101",
+   "interim_eval_h": 0.0,
+   "kind": "train",
+   "role": "dclm_cont",
+   "total_h": 0.3482,
+   "train_h": 0.2056
+  },
+  {
+   "audit_h": 0.0,
+   "base": "nestor",
+   "compile_h": 0.1417,
+   "eval_h": 0.1422,
+   "id": "g1_nestor_full_german_s101",
+   "interim_eval_h": 0.0,
+   "kind": "train",
+   "role": "full",
+   "total_h": 0.9692,
+   "train_h": 0.6853
+  },
+  {
+   "audit_h": 0.0,
+   "base": "nestor",
+   "compile_h": 0.1417,
+   "eval_h": 0.1422,
+   "id": "g1_nestor_full_german_s102",
+   "interim_eval_h": 0.0,
+   "kind": "train",
+   "role": "full",
+   "total_h": 0.9692,
+   "train_h": 0.6853
+  },
+  {
+   "audit_h": 0.0167,
+   "base": "nestor",
+   "compile_h": 0.1417,
+   "eval_h": 0.4768,
+   "id": "g1_nestor_aa1_R1",
+   "interim_eval_h": 0.0343,
+   "kind": "train",
+   "role": "aa_nestor",
+   "total_h": 1.3548,
+   "train_h": 0.6853
+  }
+ ],
+ "g0": {
+  "P_bar_c1_moe_b1": 0.9890344727164835,
+  "P_bar_moe_b1_german": null,
+  "P_bar_source": "moe_b1|books|code",
+  "bases": {
+   "moe_b1": {
+    "arch": "moe",
+    "base": 1,
+    "dir": "g0\\moe_b1",
+    "family": "moe",
+    "k": 6
+   },
+   "moe_b2": {
+    "arch": "moe",
+    "base": 2,
+    "dir": "g0\\moe_b2",
+    "family": "moe",
+    "k": 6
+   },
+   "nestor": {
+    "arch": "nestor",
+    "base": 1,
+    "dir": "g0\\nestor",
+    "family": "priv",
+    "k": 16
+   }
+  },
+  "beta0": {
+   "moe_b1": 0.25,
+   "moe_b2": 0.25
+  },
+  "books_cell_feasible": true,
+  "c1_feasible_targets": [
+   "books"
+  ],
+  "c1_registered_targets": [
+   "german",
+   "books"
+  ],
+  "c1_target": "books",
+  "c2_matched": [
+   "dclm"
+  ],
+  "c2_matching_feasible": true,
+  "checkpoints": {
+   "moe_b1": "outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt",
+   "moe_b2": "outputs/moe_100m_b05s43/20261101_001918__moe_100m_b05s43_train_h100/checkpoints/model_final.pt",
+   "nestor": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt"
+  },
+  "code_secondary": "pycode",
+  "code_stream": "code",
+  "f": 0.5,
+  "f_label": "1/2",
+  "g0_3_pass": true,
+  "k": {
+   "moe_b1": 6,
+   "moe_b2": 6,
+   "nestor": 16
+  },
+  "margin_limited": {
+   "moe_b1": false,
+   "moe_b2": false
+  },
+  "moe_b2_g0_5": true,
+  "moe_targets": {
+   "books": true,
+   "german": false
+  },
+  "nestor_g0_1": false,
+  "nestor_g0_5": true,
+  "nestor_targets": {
+   "german": false
+  },
+  "pivot": false
+ },
+ "g0_record": {
+  "content_sha256": null,
+  "path": "g0\\gate_record.json",
+  "sha256": "bdf3d79c773bcf7ed417b12768ca940e56b2b1b110d4121c0e777e2bc4202ff7"
+ },
+ "gate_config": {
+  "appC6_ranges": null,
+  "code_record": "logs/after_B_code_sha256.json",
+  "f_or_stream_changed": false,
+  "g07r_record": "g0r/g07r_record.json",
+  "lookup": "signflip_lookup_v1.csv",
+  "pipeline_tests": {
+   "junit": "logs/tests_gpu_pipeline.xml",
+   "log": "logs/tests_gpu_pipeline.log"
+  },
+  "routing_health": "g0/nestor/routing_health.json",
+  "rules_version": "1.3.0",
+  "spec": "g1g2_spec.json",
+  "stage": "g1"
+ },
+ "gate_config_file": "g1/g1_gate_config.json",
+ "h100_duplicate_file": "g1/h100_nestor_full_s101.json",
+ "kind": "g1",
+ "nestor": {
+  "g0_1": false,
+  "g0_5": true,
+  "probe_config": true,
+  "run": true
+ },
+ "nestor_aa": {
+  "data_seed": 7251,
+  "draw_file": "g1/specs/aa_priv_books_a1.json",
+  "generator_seed": 4101,
+  "pair": 1,
+  "run": "g1_nestor_aa1_R1",
+  "target": "books"
+ },
+ "prereg": "v1.3 (spec g1g2 1.3.0)",
+ "queue": "g1/queue_g1.json",
+ "queue_sha256": "1d2cae60f3f78ac5c6253c0f9307a3283076f6cdee3a0e157b95c3e2fb974b12",
+ "r1": {
+  "data_seed": 7201,
+  "draw_file": "g1/specs/aa_moe_german_a1.json",
+  "run": "g1_moe_b1_aa1_R1",
+  "subset": "A"
+ },
+ "repeat": false,
+ "runs": [
+  {
+   "arch": "moe",
+   "base": "moe_b1",
+   "data": "data/domain/fw2de_train.bin",
+   "data_seed": 7201,
+   "draw_file": "g1/specs/aa_moe_german_a1.json",
+   "draw_subset": "A",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_moe_b1_aa1_R1",
+    "DCLM_SEED": "7201",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [
+    "dclm",
+    "german",
+    "code",
+    "pycode",
+    "math"
+   ],
+   "full_sets": [],
+   "full_steps": [],
+   "generator_seed": 4001,
+   "id": "g1_moe_b1_aa1_R1",
+   "interim_head_windows": 64,
+   "interim_sets": [
+    "german"
+   ],
+   "interim_steps": [
+    0,
+    8,
+    24,
+    48
+   ],
+   "k": 6,
+   "negative_control": null,
+   "pair": 1,
+   "pin_sets": [
+    "dclm",
+    "code",
+    "math"
+   ],
+   "reflect_sets": [
+    "dclm",
+    "code",
+    "math"
+   ],
+   "role": "aa",
+   "seed": 7201,
+   "steps": 96,
+   "subset": "R1",
+   "subset_spec": true,
+   "target": "german",
+   "warmup": 10
+  },
+  {
+   "arch": "moe",
+   "base": "moe_b1",
+   "data": "data/domain/fw2de_train.bin",
+   "data_seed": 7201,
+   "draw_file": "g1/specs/aa_moe_german_a1.json",
+   "draw_subset": "B",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_moe_b1_aa1_R2",
+    "DCLM_SEED": "7201",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [
+    "dclm",
+    "german",
+    "code",
+    "pycode",
+    "math"
+   ],
+   "full_sets": [],
+   "full_steps": [],
+   "generator_seed": 4001,
+   "id": "g1_moe_b1_aa1_R2",
+   "interim_head_windows": 64,
+   "interim_sets": [
+    "german"
+   ],
+   "interim_steps": [
+    0,
+    8,
+    24,
+    48
+   ],
+   "k": 6,
+   "negative_control": null,
+   "pair": 1,
+   "pin_sets": [
+    "dclm",
+    "code",
+    "math"
+   ],
+   "reflect_sets": [
+    "dclm",
+    "code",
+    "math"
+   ],
+   "role": "aa",
+   "seed": 7201,
+   "steps": 96,
+   "subset": "R2",
+   "subset_spec": true,
+   "target": "german",
+   "warmup": 10
+  },
+  {
+   "arch": "moe",
+   "base": "moe_b1",
+   "data": "data/domain/pg19_train.bin",
+   "data_seed": 7202,
+   "draw_file": "g1/specs/aa_moe_books_a2.json",
+   "draw_subset": "A",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/pg19_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_moe_b1_aa2_R1",
+    "DCLM_SEED": "7202",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [
+    "dclm",
+    "books",
+    "code",
+    "pycode",
+    "math"
+   ],
+   "full_sets": [],
+   "full_steps": [],
+   "generator_seed": 4002,
+   "id": "g1_moe_b1_aa2_R1",
+   "interim_head_windows": 64,
+   "interim_sets": [
+    "books"
+   ],
+   "interim_steps": [
+    0,
+    8,
+    24,
+    48
+   ],
+   "k": 6,
+   "negative_control": null,
+   "pair": 2,
+   "pin_sets": [
+    "dclm",
+    "code",
+    "math"
+   ],
+   "reflect_sets": [
+    "dclm",
+    "code",
+    "math"
+   ],
+   "role": "aa",
+   "seed": 7202,
+   "steps": 96,
+   "subset": "R1",
+   "subset_spec": true,
+   "target": "books",
+   "warmup": 10
+  },
+  {
+   "arch": "moe",
+   "base": "moe_b1",
+   "data": "data/domain/pg19_train.bin",
+   "data_seed": 7202,
+   "draw_file": "g1/specs/aa_moe_books_a2.json",
+   "draw_subset": "B",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/pg19_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_moe_b1_aa2_R2",
+    "DCLM_SEED": "7202",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [
+    "dclm",
+    "books",
+    "code",
+    "pycode",
+    "math"
+   ],
+   "full_sets": [],
+   "full_steps": [],
+   "generator_seed": 4002,
+   "id": "g1_moe_b1_aa2_R2",
+   "interim_head_windows": 64,
+   "interim_sets": [
+    "books"
+   ],
+   "interim_steps": [
+    0,
+    8,
+    24,
+    48
+   ],
+   "k": 6,
+   "negative_control": null,
+   "pair": 2,
+   "pin_sets": [
+    "dclm",
+    "code",
+    "math"
+   ],
+   "reflect_sets": [
+    "dclm",
+    "code",
+    "math"
+   ],
+   "role": "aa",
+   "seed": 7202,
+   "steps": 96,
+   "subset": "R2",
+   "subset_spec": true,
+   "target": "books",
+   "warmup": 10
+  },
+  {
+   "arch": "moe",
+   "base": "moe_b1",
+   "data": "data/domain/fw2de_train.bin",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_negctrl",
+    "DCLM_SEED": "7201",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [],
+   "full_sets": [],
+   "full_steps": [],
+   "id": "g1_negctrl",
+   "interim_head_windows": null,
+   "interim_sets": [],
+   "interim_steps": [],
+   "negative_control": "unmasked_decay",
+   "pin_sets": [],
+   "reflect_sets": [],
+   "role": "negctrl",
+   "seed": 7201,
+   "steps": 8,
+   "subset_spec": true,
+   "warmup": 1
+  },
+  {
+   "adapt_seed": 101,
+   "arch": "moe",
+   "base": "moe_b1",
+   "data": "data/domain/owm_train.bin",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/owm_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_moe_b1_full_math_s101",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [
+    "dclm",
+    "code",
+    "math"
+   ],
+   "full_sets": [],
+   "full_steps": [],
+   "id": "g1_moe_b1_full_math_s101",
+   "interim_head_windows": null,
+   "interim_sets": [],
+   "interim_steps": [],
+   "negative_control": null,
+   "pin_sets": [],
+   "reflect_sets": [],
+   "role": "full",
+   "seed": 101,
+   "steps": 96,
+   "subset_spec": false,
+   "target": "math",
+   "warmup": 10
+  },
+  {
+   "adapt_seed": 102,
+   "arch": "moe",
+   "base": "moe_b1",
+   "data": "data/domain/owm_train.bin",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/owm_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_moe_b1_full_math_s102",
+    "DCLM_SEED": "102",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [
+    "dclm",
+    "code",
+    "math"
+   ],
+   "full_sets": [],
+   "full_steps": [],
+   "id": "g1_moe_b1_full_math_s102",
+   "interim_head_windows": null,
+   "interim_sets": [],
+   "interim_steps": [],
+   "negative_control": null,
+   "pin_sets": [],
+   "reflect_sets": [],
+   "role": "full",
+   "seed": 102,
+   "steps": 96,
+   "subset_spec": false,
+   "target": "math",
+   "warmup": 10
+  },
+  {
+   "adapt_seed": 101,
+   "arch": "moe",
+   "base": "moe_b1",
+   "data": "data/domain/fw2de_train.bin",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_moe_b1_full_german_s101",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [
+    "dclm",
+    "code",
+    "math",
+    "german"
+   ],
+   "full_sets": [],
+   "full_steps": [],
+   "id": "g1_moe_b1_full_german_s101",
+   "interim_head_windows": null,
+   "interim_sets": [],
+   "interim_steps": [],
+   "negative_control": null,
+   "pin_sets": [],
+   "reflect_sets": [],
+   "role": "full",
+   "seed": 101,
+   "steps": 96,
+   "subset_spec": false,
+   "target": "german",
+   "warmup": 10
+  },
+  {
+   "adapt_seed": 102,
+   "arch": "moe",
+   "base": "moe_b1",
+   "data": "data/domain/fw2de_train.bin",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_moe_b1_full_german_s102",
+    "DCLM_SEED": "102",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [
+    "dclm",
+    "code",
+    "math",
+    "german"
+   ],
+   "full_sets": [],
+   "full_steps": [],
+   "id": "g1_moe_b1_full_german_s102",
+   "interim_head_windows": null,
+   "interim_sets": [],
+   "interim_steps": [],
+   "negative_control": null,
+   "pin_sets": [],
+   "reflect_sets": [],
+   "role": "full",
+   "seed": 102,
+   "steps": 96,
+   "subset_spec": false,
+   "target": "german",
+   "warmup": 10
+  },
+  {
+   "adapt_seed": 101,
+   "arch": "moe",
+   "base": "moe_b1",
+   "data": "data/domain/fw2de_train.bin",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_moe_b1_eall_german_s101",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [
+    "dclm",
+    "code",
+    "math",
+    "german"
+   ],
+   "full_sets": [],
+   "full_steps": [],
+   "id": "g1_moe_b1_eall_german_s101",
+   "interim_head_windows": null,
+   "interim_sets": [],
+   "interim_steps": [],
+   "negative_control": null,
+   "pin_sets": [],
+   "reflect_sets": [],
+   "role": "eall",
+   "seed": 101,
+   "steps": 96,
+   "subset_spec": true,
+   "target": "german",
+   "warmup": 10
+  },
+  {
+   "adapt_seed": 102,
+   "arch": "moe",
+   "base": "moe_b1",
+   "data": "data/domain/fw2de_train.bin",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_moe_b1_eall_german_s102",
+    "DCLM_SEED": "102",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [
+    "dclm",
+    "code",
+    "math",
+    "german"
+   ],
+   "full_sets": [],
+   "full_steps": [],
+   "id": "g1_moe_b1_eall_german_s102",
+   "interim_head_windows": null,
+   "interim_sets": [],
+   "interim_steps": [],
+   "negative_control": null,
+   "pin_sets": [],
+   "reflect_sets": [],
+   "role": "eall",
+   "seed": 102,
+   "steps": 96,
+   "subset_spec": true,
+   "target": "german",
+   "warmup": 10
+  },
+  {
+   "adapt_seed": 101,
+   "arch": "moe",
+   "base": "moe_b1",
+   "data": "data/dclm/dclm_cont_heldout.bin",
+   "env": {
+    "DCLM_DATA_PATH": "data/dclm/dclm_cont_heldout.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_moe_b1}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_moe_b1_dclmcont_s101",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [
+    "dclm",
+    "code",
+    "math",
+    "german"
+   ],
+   "full_sets": [],
+   "full_steps": [],
+   "held_out_tokens": true,
+   "id": "g1_moe_b1_dclmcont_s101",
+   "interim_head_windows": null,
+   "interim_sets": [],
+   "interim_steps": [],
+   "negative_control": null,
+   "pin_sets": [],
+   "reflect_sets": [],
+   "role": "dclm_cont",
+   "seed": 101,
+   "steps": 96,
+   "subset_spec": false,
+   "target": "dclm",
+   "warmup": 10
+  },
+  {
+   "adapt_seed": 101,
+   "arch": "nestor",
+   "base": "nestor",
+   "data": "data/domain/fw2de_train.bin",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_nestor}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_nestor_full_german_s101",
+    "DCLM_SEED": "101",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [
+    "dclm",
+    "german"
+   ],
+   "full_sets": [],
+   "full_steps": [],
+   "h100_duplicate": true,
+   "id": "g1_nestor_full_german_s101",
+   "interim_head_windows": null,
+   "interim_sets": [],
+   "interim_steps": [],
+   "negative_control": null,
+   "pin_sets": [],
+   "reflect_sets": [],
+   "role": "full",
+   "seed": 101,
+   "steps": 96,
+   "subset_spec": false,
+   "target": "german",
+   "warmup": 10
+  },
+  {
+   "adapt_seed": 102,
+   "arch": "nestor",
+   "base": "nestor",
+   "data": "data/domain/fw2de_train.bin",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_nestor}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_nestor_full_german_s102",
+    "DCLM_SEED": "102",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [
+    "dclm",
+    "german"
+   ],
+   "full_sets": [],
+   "full_steps": [],
+   "h100_duplicate": false,
+   "id": "g1_nestor_full_german_s102",
+   "interim_head_windows": null,
+   "interim_sets": [],
+   "interim_steps": [],
+   "negative_control": null,
+   "pin_sets": [],
+   "reflect_sets": [],
+   "role": "full",
+   "seed": 102,
+   "steps": 96,
+   "subset_spec": false,
+   "target": "german",
+   "warmup": 10
+  },
+  {
+   "arch": "nestor",
+   "base": "nestor",
+   "data": "data/domain/pg19_train.bin",
+   "data_seed": 7251,
+   "draw_file": "g1/specs/aa_priv_books_a1.json",
+   "draw_subset": "A",
+   "env": {
+    "DCLM_DATA_PATH": "data/domain/pg19_train.bin",
+    "DCLM_INIT_CHECKPOINT": "{ckpt_nestor}",
+    "DCLM_LR_ADAMW": "7.5e-05",
+    "DCLM_LR_MUON": "0.0025",
+    "DCLM_RUN_SUFFIX": "g1_nestor_aa1_R1",
+    "DCLM_SEED": "7251",
+    "DCLM_WEIGHT_DECAY": "0.1",
+    "NESTOR_FREEZE_ROUTERS": "1"
+   },
+   "eval_dir": "eval_main",
+   "eval_sets": [
+    "dclm",
+    "books",
+    "code",
+    "pycode",
+    "math"
+   ],
+   "full_sets": [],
+   "full_steps": [],
+   "generator_seed": 4101,
+   "id": "g1_nestor_aa1_R1",
+   "interim_head_windows": 64,
+   "interim_sets": [
+    "books"
+   ],
+   "interim_steps": [
+    0,
+    8,
+    24,
+    48
+   ],
+   "k": 16,
+   "negative_control": null,
+   "pair": 1,
+   "pin_sets": [],
+   "reflect_sets": [
+    "code",
+    "math"
+   ],
+   "role": "aa_nestor",
+   "seed": 7251,
+   "steps": 96,
+   "subset": "R1",
+   "subset_spec": true,
+   "target": "books",
+   "warmup": 10
+  }
+ ],
+ "sets": {
+  "moe_b1": {
+   "books": {
+    "path": "data/domain/pg19_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "span_align": "doc",
+    "tokens": 2048000
+   },
+   "code": {
+    "path": "data/domain/algstack_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "tokens": 2048000
+   },
+   "dclm": {
+    "path": "data/dclm/dclm_val.bin",
+    "select": "even",
+    "tokens": 2048000
+   },
+   "french": {
+    "path": "data/domain/fr_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "tokens": 2048000
+   },
+   "german": {
+    "path": "data/domain/fw2de_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "tokens": 2048000
+   },
+   "math": {
+    "path": "data/domain/owm_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "tokens": 2048000
+   },
+   "pycode": {
+    "path": "data/streams/pycode_eval.bin",
+    "select": "even",
+    "tokens": 2048000
+   }
+  },
+  "moe_b2": {
+   "books": {
+    "path": "data/domain/pg19_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "span_align": "doc",
+    "tokens": 2048000
+   },
+   "code": {
+    "path": "data/domain/algstack_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "tokens": 2048000
+   },
+   "dclm": {
+    "path": "data/dclm/dclm_val.bin",
+    "select": "even",
+    "tokens": 2048000
+   },
+   "french": {
+    "path": "data/domain/fr_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "tokens": 2048000
+   },
+   "german": {
+    "path": "data/domain/fw2de_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "tokens": 2048000
+   },
+   "math": {
+    "path": "data/domain/owm_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "tokens": 2048000
+   },
+   "pycode": {
+    "path": "data/streams/pycode_eval.bin",
+    "select": "even",
+    "tokens": 2048000
+   }
+  },
+  "moe_b3": {
+   "books": {
+    "path": "data/domain/pg19_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "span_align": "doc",
+    "tokens": 2048000
+   },
+   "code": {
+    "path": "data/domain/algstack_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "tokens": 2048000
+   },
+   "dclm": {
+    "path": "data/dclm/dclm_val.bin",
+    "select": "even",
+    "tokens": 2048000
+   },
+   "math": {
+    "path": "data/domain/owm_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "tokens": 2048000
+   }
+  },
+  "nestor": {
+   "books": {
+    "path": "data/domain/pg19_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "span_align": "doc",
+    "tokens": 2048000
+   },
+   "code": {
+    "path": "data/domain/algstack_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "tokens": 2048000
+   },
+   "dclm": {
+    "path": "data/dclm/dclm_val.bin",
+    "select": "even",
+    "tokens": 2048000
+   },
+   "french": {
+    "path": "data/domain/fr_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "tokens": 2048000
+   },
+   "german": {
+    "path": "data/domain/fw2de_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "tokens": 2048000
+   },
+   "math": {
+    "path": "data/domain/owm_test.bin",
+    "select": "even",
+    "span": [
+     0.5,
+     1.0
+    ],
+    "tokens": 2048000
+   },
+   "pycode": {
+    "path": "data/streams/pycode_eval.bin",
+    "select": "even",
+    "tokens": 2048000
+   }
+  }
+ },
+ "sha256": "861f1c520f6406f369b5c6026926f03a94984dc4a9e7bf4cef1cfbaaaa1744f8",
+ "spec_runs": "g1g2_spec.json 1.3.0 runs.G1",
+ "state": "results/queue_state_g1.json",
+ "steps": 96,
+ "theta0_checks": "g1/theta0_checks.json",
+ "warnings": []
+}

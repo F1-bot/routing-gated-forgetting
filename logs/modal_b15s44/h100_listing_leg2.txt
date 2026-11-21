@@ -1,0 +1,42 @@
+/root/outputs/moe_100m_b15s44/20261113_042558__moe_100m_b15s44_train/checkpoints:
+total 6583869
+drwxr-xr-x 1 root root         80 Nov 13 07:18 .
+drwxr-xr-x 1 root root         80 Nov 13 05:03 ..
+-rw-r--r-- 1 root root 3370941320 Nov 13 06:52 model_00005000.pt
+-rw-r--r-- 1 root root 3370939901 Nov 13 07:18 model_final.pt
+
+/vol/export/b15s44/chunks:
+total 1458618
+drwxr-xr-x 1 root root      105 Nov 13 07:21 .
+drwxr-xr-x 1 root root       25 Nov 13 07:21 ..
+-rw-r--r-- 1 root root 99614720 Nov 13 07:21 part_00
+-rw-r--r-- 1 root root 99614720 Nov 13 07:21 part_01
+-rw-r--r-- 1 root root 99614720 Nov 13 07:21 part_02
+-rw-r--r-- 1 root root 99614720 Nov 13 07:21 part_03
+-rw-r--r-- 1 root root 99614720 Nov 13 07:21 part_04
+-rw-r--r-- 1 root root 99614720 Nov 13 07:21 part_05
+-rw-r--r-- 1 root root 99614720 Nov 13 07:21 part_06
+-rw-r--r-- 1 root root 99614720 Nov 13 07:21 part_07
+-rw-r--r-- 1 root root 99614720 Nov 13 07:21 part_08
+-rw-r--r-- 1 root root 99614720 Nov 13 07:21 part_09
+-rw-r--r-- 1 root root 99614720 Nov 13 07:21 part_10
+-rw-r--r-- 1 root root 99614720 Nov 13 07:21 part_11
+-rw-r--r-- 1 root root 99614720 Nov 13 07:21 part_12
+-rw-r--r-- 1 root root 99614720 Nov 13 07:21 part_13
+-rw-r--r-- 1 root root 99017408 Nov 13 07:21 part_14
+
+/vol/outputs/moe_100m_b15s44/20261113_031245__moe_100m_b15s44_train/checkpoints:
+total 3291936
+drwxr-xr-x 1 root root         17 Nov 13 03:51 .
+drwxr-xr-x 1 root root         11 Nov 13 03:51 ..
+-rw-r--r-- 1 root root 3370941320 Nov 13 03:51 model_00001000.pt
+
+/vol/outputs/moe_100m_b15s44/20261113_042558__moe_100m_b15s44_train/checkpoints:
+total 16459675
+drwxr-xr-x 1 root root         82 Nov 13 07:18 .
+drwxr-xr-x 1 root root         11 Nov 13 05:03 ..
+-rw-r--r-- 1 root root 3370941320 Nov 13 05:03 model_00002000.pt
+-rw-r--r-- 1 root root 3370941320 Nov 13 05:40 model_00003000.pt
+-rw-r--r-- 1 root root 3370941320 Nov 13 06:16 model_00004000.pt
+-rw-r--r-- 1 root root 3370941320 Nov 13 06:52 model_00005000.pt
+-rw-r--r-- 1 root root 3370939901 Nov 13 07:18 model_final.pt

@@ -1,0 +1,49 @@
+{
+ "query": "data\\domain\\pycode_test.bin",
+ "query_tokens": 12495229,
+ "query_docs": 5376,
+ "n": 13,
+ "query_ngrams": 12425341,
+ "refs": {
+  "algstack": {
+   "path": "data\\domain\\algstack_test.bin",
+   "ref_tokens": 42160647,
+   "ref_docs": 17997,
+   "doc_exact_rate": 0.0009300595238095238,
+   "doc_exact_count": 5,
+   "ngram_token_rate": 0.014825991495927556,
+   "doc_any_ngram_rate": 0.5576636904761905,
+   "doc_half_ngram_rate": 0.005580357142857143,
+   "doc_ids": [
+    375,
+    539,
+    790,
+    3531,
+    5131
+   ]
+  },
+  "dclm09": {
+   "path": "data\\dclm\\dclm_val.bin",
+   "ref_tokens": 19999909,
+   "ref_docs": 17005,
+   "doc_exact_rate": 0.0,
+   "doc_exact_count": 0,
+   "ngram_token_rate": 0.0002947202817210409,
+   "doc_any_ngram_rate": 0.1095610119047619,
+   "doc_half_ngram_rate": 0.0,
+   "doc_ids": []
+  },
+  "dclm10": {
+   "path": "data\\dclm\\dclm_val10.bin",
+   "ref_tokens": 19996569,
+   "ref_docs": 16702,
+   "doc_exact_rate": 0.0,
+   "doc_exact_count": 0,
+   "ngram_token_rate": 0.00024425888995722534,
+   "doc_any_ngram_rate": 0.09486607142857142,
+   "doc_half_ngram_rate": 0.0,
+   "doc_ids": []
+  }
+ },
+ "seconds": 172.3
+}

@@ -1,0 +1,45 @@
+{
+ "meta": {
+  "experiment": "moe_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c1_moe_b2_books_d3_A\\m2\\moe_100m_c1_moe_b2_books_d3_A\\20261116_052205__moe_100m_c1_moe_b2_books_d3_A_train\\checkpoints\\model_final.pt",
+   "size": 2555317241,
+   "head_sha256": "a46b9bfeeb19a106d1aac3a9f6c5472957ccece11b65c6500756ad03acd1ba4c"
+  },
+  "base": {
+   "path": "outputs\\moe_100m_b05s43\\20261101_001918__moe_100m_b05s43_train_h100\\checkpoints\\model_final.pt",
+   "size": 1493623488,
+   "head_sha256": "b7c887351fc40518db2ad8d5af8bef3620f8dc729dadcc1d183d1d57308f804b"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-18T10:48:00"
+ },
+ "results": {
+  "selpin|code": {
+   "ce": 6.216726705586081,
+   "windows": 500,
+   "seconds": 217.9,
+   "file": "outputs\\confirm\\c1_moe_b2_books_d3_A\\m2/eval_selpin\\selpin__code.npz"
+  },
+  "reflect+selpin|code": {
+   "ce": 6.219079078907204,
+   "windows": 500,
+   "seconds": 217.9,
+   "file": "outputs\\confirm\\c1_moe_b2_books_d3_A\\m2/eval_selpin\\reflect+selpin__code.npz"
+  },
+  "selpin|math": {
+   "ce": 4.850122039548992,
+   "windows": 500,
+   "seconds": 219.0,
+   "file": "outputs\\confirm\\c1_moe_b2_books_d3_A\\m2/eval_selpin\\selpin__math.npz"
+  },
+  "reflect+selpin|math": {
+   "ce": 4.852082273065476,
+   "windows": 500,
+   "seconds": 219.0,
+   "file": "outputs\\confirm\\c1_moe_b2_books_d3_A\\m2/eval_selpin\\reflect+selpin__math.npz"
+  }
+ }
+}

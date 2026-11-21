@@ -1,0 +1,1 @@
+{"ckpt": "outputs\\continual\\nestor_100m_adapt_owm_m4c\\nestor_100m_adapt_owm\\20261113_194604__nestor_100m_adapt_owm_train\\checkpoints\\model_final.pt", "sets": ["owm"], "seconds": 460.761155128479}

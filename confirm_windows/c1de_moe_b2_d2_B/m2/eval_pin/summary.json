@@ -1,0 +1,69 @@
+{
+ "meta": {
+  "experiment": "moe_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c1de_moe_b2_d2_B\\m2\\moe_100m_c1de_moe_b2_d2_B\\20261120_032328__moe_100m_c1de_moe_b2_d2_B_train\\checkpoints\\model_final.pt",
+   "size": 2555317241,
+   "head_sha256": "a46b9bfeeb19a106d1aac3a9f6c5472957ccece11b65c6500756ad03acd1ba4c"
+  },
+  "base": {
+   "path": "outputs\\moe_100m_b05s43\\20261101_001918__moe_100m_b05s43_train_h100\\checkpoints\\model_final.pt",
+   "size": 1493623488,
+   "head_sha256": "b7c887351fc40518db2ad8d5af8bef3620f8dc729dadcc1d183d1d57308f804b"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-20T03:55:24"
+ },
+ "results": {
+  "pinned|code": {
+   "ce": 6.235268510092339,
+   "windows": 500,
+   "seconds": 420.5,
+   "file": "outputs\\confirm\\c1de_moe_b2_d2_B\\m2\\eval_pin\\pinned__code.npz"
+  },
+  "selpin|code": {
+   "ce": 6.241794237923535,
+   "windows": 500,
+   "seconds": 420.5,
+   "file": "outputs\\confirm\\c1de_moe_b2_d2_B\\m2\\eval_pin\\selpin__code.npz"
+  },
+  "reflect+pinned|code": {
+   "ce": 6.259937041170635,
+   "windows": 500,
+   "seconds": 420.5,
+   "file": "outputs\\confirm\\c1de_moe_b2_d2_B\\m2\\eval_pin\\reflect+pinned__code.npz"
+  },
+  "reflect+selpin|code": {
+   "ce": 6.261943602144384,
+   "windows": 500,
+   "seconds": 420.5,
+   "file": "outputs\\confirm\\c1de_moe_b2_d2_B\\m2\\eval_pin\\reflect+selpin__code.npz"
+  },
+  "pinned|math": {
+   "ce": 4.858641538843101,
+   "windows": 500,
+   "seconds": 416.7,
+   "file": "outputs\\confirm\\c1de_moe_b2_d2_B\\m2\\eval_pin\\pinned__math.npz"
+  },
+  "selpin|math": {
+   "ce": 4.863662812881563,
+   "windows": 500,
+   "seconds": 416.7,
+   "file": "outputs\\confirm\\c1de_moe_b2_d2_B\\m2\\eval_pin\\selpin__math.npz"
+  },
+  "reflect+pinned|math": {
+   "ce": 4.8691215039300975,
+   "windows": 500,
+   "seconds": 416.7,
+   "file": "outputs\\confirm\\c1de_moe_b2_d2_B\\m2\\eval_pin\\reflect+pinned__math.npz"
+  },
+  "reflect+selpin|math": {
+   "ce": 4.870612181871947,
+   "windows": 500,
+   "seconds": 416.7,
+   "file": "outputs\\confirm\\c1de_moe_b2_d2_B\\m2\\eval_pin\\reflect+selpin__math.npz"
+  }
+ }
+}

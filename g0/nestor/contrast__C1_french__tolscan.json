@@ -1,0 +1,14 @@
+{
+ "0.05": {
+  "draws_found": 3,
+  "best_estimation_contrast": 0.725599461678547
+ },
+ "0.1": {
+  "draws_found": 3,
+  "best_estimation_contrast": 0.7731011653328257
+ },
+ "0.2": {
+  "draws_found": 3,
+  "best_estimation_contrast": 1.02950500195103
+ }
+}

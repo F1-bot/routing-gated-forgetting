@@ -1,0 +1,29 @@
+{
+ "meta": {
+  "experiment": "dense_100m",
+  "checkpoint": {
+   "path": "outputs\\continual\\dense_100m_adapt_fw2de_m4\\dense_100m_adapt_fw2de\\20261113_215551__dense_100m_adapt_fw2de_train\\checkpoints\\model_final.pt",
+   "size": 1511350157,
+   "head_sha256": "ac2e6585c14d139a0b559da16286bc56a1201867e97fc93cb7b2e4841cffbba1"
+  },
+  "base": null,
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-13T23:29:06"
+ },
+ "results": {
+  "ckpt|dclm09": {
+   "ce": 5.009974524954212,
+   "windows": 500,
+   "seconds": 53.2,
+   "file": "stageB_windows\\dense_100m\\adapt_fw2de\\ckpt__dclm09.npz"
+  },
+  "ckpt|fw2de": {
+   "ce": 7.380162478060134,
+   "windows": 500,
+   "seconds": 51.5,
+   "file": "stageB_windows\\dense_100m\\adapt_fw2de\\ckpt__fw2de.npz"
+  }
+ }
+}

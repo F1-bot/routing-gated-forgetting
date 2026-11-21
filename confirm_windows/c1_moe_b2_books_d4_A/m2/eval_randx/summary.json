@@ -1,0 +1,45 @@
+{
+ "meta": {
+  "experiment": "moe_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c1_moe_b2_books_d4_A\\m2\\moe_100m_c1_moe_b2_books_d4_A\\20261116_171759__moe_100m_c1_moe_b2_books_d4_A_train\\checkpoints\\model_final.pt",
+   "size": 2555317241,
+   "head_sha256": "a46b9bfeeb19a106d1aac3a9f6c5472957ccece11b65c6500756ad03acd1ba4c"
+  },
+  "base": {
+   "path": "outputs\\moe_100m_b05s43\\20261101_001918__moe_100m_b05s43_train_h100\\checkpoints\\model_final.pt",
+   "size": 1493623488,
+   "head_sha256": "b7c887351fc40518db2ad8d5af8bef3620f8dc729dadcc1d183d1d57308f804b"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-18T00:39:52"
+ },
+ "results": {
+  "randdir:9808|code": {
+   "ce": 6.213302447725885,
+   "windows": 500,
+   "seconds": 67.7,
+   "file": "outputs\\confirm\\c1_moe_b2_books_d4_A\\m2\\eval_randx\\randdir-9808__code.npz"
+  },
+  "randdir:9808|math": {
+   "ce": 4.83726477888431,
+   "windows": 500,
+   "seconds": 66.9,
+   "file": "outputs\\confirm\\c1_moe_b2_books_d4_A\\m2\\eval_randx\\randdir-9808__math.npz"
+  },
+  "randdir-:9808|code": {
+   "ce": 6.213260972794567,
+   "windows": 500,
+   "seconds": 67.0,
+   "file": "outputs\\confirm\\c1_moe_b2_books_d4_A\\m2\\eval_randx\\randdir--9808__code.npz"
+  },
+  "randdir-:9808|math": {
+   "ce": 4.837327792086386,
+   "windows": 500,
+   "seconds": 67.9,
+   "file": "outputs\\confirm\\c1_moe_b2_books_d4_A\\m2\\eval_randx\\randdir--9808__math.npz"
+  }
+ }
+}

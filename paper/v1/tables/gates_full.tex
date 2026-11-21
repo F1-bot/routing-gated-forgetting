@@ -1,0 +1,35 @@
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{1.15cm}>{\raggedright\arraybackslash}p{5.4cm}>{\raggedright\arraybackslash}p{2.7cm}>{\raggedright\arraybackslash}p{5.2cm}@{}}
+\caption{All gates of the gate specification, in the order G0, G1, G2. Each action is applied mechanically and entered in the gate record before the freeze. $P$: predicted C1 contrast; SE: standard error of a forgetting value.}\label{tab:gatesfull}\\
+\toprule
+Gate & Measurement & Threshold & Action if not met\\
+\midrule
+\endfirsthead
+\toprule
+Gate & Measurement & Threshold & Action if not met\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+G0-1 & Median $P$ over 1,000 accepted generator draws per architecture and C1 target, for $f\in\{1/2,1/3\}$ & $\ge\log1.3=0.262$ & MoE fails: C1 not confirmatory. \nestor{} fails: C1 on \nestor{} dropped. A target that fails for the MoE is replaced by the other target\\
+G0-2 & Rejection-sampling acceptance; convergence of the swap search within 800 iterations & acceptance $\ge10^{-3}$, or $\ge50\%$ of swap chains converge at $\log1.05$ & C2: matching on DCLM only. Still infeasible: tolerance $\log1.10$; then treated as a G0-1 or G0-3 failure\\
+G0-3 & Median $\DQ$ over 1,000 draws (MoE base~1, German) & $\ge\log1.5=0.405$ & C2 exploratory\\
+G0-4 & Cross-fitted overlap ratio $\kappa_H/\kappa_L$ at $q=1/8$ & $\ge1.25$ & DCLM-tilt block not run (also if its generator is infeasible)\\
+G0-5 & Local fp32 mean cross-entropy of each H100-trained base on the first 10,004,085 val09 tokens, against its H100 value & $|\Delta\mathrm{CE}|\le10^{-3}$ nats; per-window $r\ge0.999$ where available & \nestor{}: no \nestor{} adaptation. MoE base~2: documented cause and re-evaluation, else local retraining. Base~3: block labelled exploratory\\
+G0-6 & Split-half reliability of the curvature probe $Q_E$ & $\ge0.9$ & probe set doubled once; reported either way\\
+G0-7 & Per MoE base, probe crossovers of pinned, norm-matched random directions for the registered C1 draws; $D_b=\mathrm{mean}_d(I_{\mathrm{probe},d}-P_d)/\bar P_b$ & $\beta_{0,b}=\min(0.5,$ $\max(0.25,$ $|D_b|+2\,\mathrm{SE}(D_b)))$ & cap binds: base labelled margin-limited before the freeze\\
+G0-7R & Re-draw of the registered books draws if G1-2 changes $q$ & -- & G0-7 recomputed\\
+G0-8 & G0-1 median $P$ of MoE base~1 on each code stream, from selection halves, before any C1 pair is drawn & larger median; registered tie rule & that stream is the C1 code corpus for all bases; the other is secondary\\
+G0-9 / G0-9L & Routing-health and balancing-bias diagnostics of all bases & ranges of \citep[App.~C.6]{chu2026nested} & more than half of \nestor{}'s routers outside the ranges: \nestor{}-books and C3 on \nestor{} exploratory\\
+G1-0 & GPU pipeline audit before any G1 run, including the unit test that selection-pinned equals pinned evaluation when the router is unchanged & must pass & STOP until fixed\\
+G1-1 & Mean DCLM forgetting of the 4 MoE full-adaptation runs & $\ge0.010$ nats & runs lengthened to 192 steps and G1 repeated, with every S1 and \nestor{} A/A run; still below: STOP\\
+G1-2 & MoE books A/A pair $a=2$ ($q=1/4$): forgetting on code and mathematics & each $\ge0.005$ nats and $\ge10$ SE & with $r$ the smallest ratio to these thresholds: $r\ge0.5$, 192 steps; $0.25\le r<0.5$, $q=1/2$ and 192 steps; $r<0.25$, C1 not confirmatory\\
+G1-3 & \nestor{} books A/A subset ($a=1$): forgetting on code and mathematics & $\ge0.005$ nats and $\ge10$ SE & \nestor{}-books not run\\
+G1-4 & GPU negative control of the bitwise audit & the audit must fail & STOP until fixed\\
+G1-5 & Duplicated \nestor{} full-adaptation run on both platforms, against $|F(101)-F(102)|$ of the two local \nestor{} German runs with seeds 101 and 102, on DCLM & reported & none\\
+G1-6 & Forgetting relative to continued pretraining on DCLM & reported & none\\
+G2-1 & $\hat\sigma_I$, the RMS of the A/A crossovers of pairs $a=1$--3; UCL$_{80}=1.7276\,\hat\sigma_I$; $\bar P=0.989$ & simulated power $\ge0.80$ at $D=12$ and level $0.05/m$ & $n_d=5$; flagged underpowered at $\beta=0.75$ if power $<0.80$ at $D=20$\\
+G2-2 & 3 SGD runs on the German A/A subset of pair $a=1$ at learning rates $c/3$, $c$, $3c$, where $c$ matches the mean first-step update norms of SGD and Muon; gain on the 64-window interim head at step 24 & a stable rate with gain $\ge25\%$ of the Muon reference and clip fraction 0 & selected rate = smallest such value; none: C2 exploratory\\
+G2-3 & DCLM forgetting of the selected SGD run on 2,048,000 tokens at steps 8, 24 and 48 & $\ge0.005$ nats and $\ge10$ SE & $\sstar$ = earliest passing step; $\sstar>8$: C2 exploratory with 4 draws; none: C2 exploratory\\
+G2-4 & Books A/A pairs $a=2$ and 3 in the G1-2 configuration: forgetting on code and mathematics & $\ge0.005$ nats and $\ge10$ SE & C1 exploratory\\
+G2-5 & Per-expert gradient SNR of the C2 subsets (half-batch estimator) & reported & none\\
+\end{longtable}

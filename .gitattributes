@@ -1,0 +1,5 @@
+# Store and check out every file byte for byte: the hash-locked records must keep their exact bytes.
+* -text
+*.npz binary
+*.png binary
+*.pdf binary

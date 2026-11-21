@@ -1,0 +1,44 @@
+{
+ "_comment": "g0_gate.py config of the THIRD MoE base, placed in g0/ next to g0_gate_config.json (that registered config is not changed). Books cell only; code stream fixed to 'code' (AlgebraicStack, chosen by G0-8 on base 1); moe_b3 is its own decision base, so G0-7 uses its books cell. G0-5: ADD \"h100_ce\": <mean CE of the Modal H100 evaluation over the first 10,004,085 val09 tokens> to g0_5.bases.moe_b3 before the gate runs (g0_gate.g0_5_v4 needs a number; g0_b3.ps1 refuses without it). Always run the gate with --out gate_record_b3.json (the default output would overwrite gate_record.json).",
+ "bases": {
+  "moe_b3": {
+   "dir": "moe_b3",
+   "arch": "moe",
+   "base": 3,
+   "k": 6
+  }
+ },
+ "decision_base": {
+  "moe": "moe_b3",
+  "nestor": null
+ },
+ "c1_targets": {
+  "moe": [
+   "books"
+  ],
+  "nestor": []
+ },
+ "code_streams": [
+  "code"
+ ],
+ "c2": {
+  "base": "not_applicable_for_base_3",
+  "target": "german"
+ },
+ "dclm_tilt": {
+  "base": "not_applicable_for_base_3",
+  "match_target": "german"
+ },
+ "g0_5": {
+  "bases": {
+   "moe_b3": {
+    "local_result_log": "../logs/g0_xplat_local_moe_b3_mean.log",
+    "h100_ce": 3.801992602086501,
+    "h100_source": "2026-11-13: Modal H100 eval_ckpt mean CE, first 10,004,085 val09 tokens, checkpoint sha256 546b573e..."
+   }
+  },
+  "per_window_dir": "xplat"
+ },
+ "layout": "auto",
+ "half_seed": 0
+}

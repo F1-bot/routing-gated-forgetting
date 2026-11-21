@@ -1,0 +1,18 @@
+--- confirm/queue_confirm.json
++++ confirm/rerun_a4/queue_confirm_a4_rerun.json
+@@ -24380,6 +24380,7 @@
+    "warmup": 10
+   },
+   {
++   "allow_unchanged": true,
+    "ckpt": false,
+    "env": {
+     "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",
+@@ -24459,6 +24460,7 @@
+    "warmup": 10
+   },
+   {
++   "allow_unchanged": true,
+    "ckpt": true,
+    "env": {
+     "DCLM_DATA_PATH": "data/domain/fw2de_train.bin",

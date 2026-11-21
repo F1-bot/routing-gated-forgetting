@@ -1,0 +1,592 @@
+{
+ "format": "final texts of core slots; scripts/fill_core.py applies them after the fill, through Filler.put, when analysis_sha256 equals the SHA-256 of the analysis file",
+ "paper_version": "1.6.6",
+ "analysis_sha256": "859849244c70fa5ac4ddd8a73ab574ec97cdec33c3de1d5da00da7c6811f09a1",
+ "source": "final pass on paper v1.6.0 (the final review of paper v1.6.0, stored version e64db961), applied as written: M1, M4, M5(b)-(f), M6, M9, M10, M11, M14, S4, S8, S10; the fixed text around the slots and the author-slot variants carry the other items | v1.6.3: external review of v1.6.2, author-approved package (17.11): items B, D, E, F, G, L; new numbers from data/supplementary_values.json (scripts/make_supplementary_values.py).",
+ "texts": {
+  "C1.result": {
+   "item": "v1.6.3 E, F (registered label kept); v1.6.5 item 1",
+   "text": "Across 20 draws in two bases, the forgetting of code and mathematics after books adaptation tracked their routing mass through the adapted experts (mean $J=1.429$; one-sided sign-flip $p=9.5\\times10^{-7}$, the smallest value that 20 draws can give; Holm-adjusted $p=1.9\\times10^{-6}$; $\\hat\\beta=1.654$ [1.585, 1.726]). The registered test is directional and asks for an elasticity clearly above the margin of 0.25. The interval also lies above the value of 1 that the account derives under its exact assumptions B1 to B6, while the registered band statement C1-b, which allows for Jensen and dilution effects, was not refuted: under the registered rule it is refuted only if the 95\\% bootstrap interval of the pooled ratio lies entirely below 0.5 or entirely above 2, and the ratio was 1.655 [1.596, 1.716] raw and 1.338 [1.314, 1.363] symmetrized (Table~\\ref{tab:corevariants}). On the six draws of base~1 that carry the controls, norm-matched random directions in the same experts gave a mean crossover of 1.079, against 1.317 for the symmetrized learned updates and 1.549 for the raw ones, so about four fifths of the symmetrized crossover arises whatever the update learns; the excess of the learned updates, 0.238 [0.091, 0.385], is secondary and unadjusted, and base~2 has no registered control. Under the registered rule the result carries the qualifier `substantially decay-driven', because on the same six draws the mean crossover of the weight-decay-only control, 2.795, was 1.660 times the mean learned crossover of 1.684 over the 20 draws; weight decay alone changed the loss by at most 0.0006 nats in any cell, and Section~\\ref{sec:limitations} explains why the rule fired. Both bases carry the registered out-of-domain annotation, because the ratio of interim to final crossover is undefined at step 8 in all 20 draws and at step 24 in five draws, where forgetting on the evaluation heads was not positive; at step 48 the median ratio was 1.074 in base~1 and 1.146 in base~2, inside the registered range of 0.67 to 1.5, and the median first-order shares (0.07 to 0.15) stayed below the registered limit of 0.2.",
+   "fields": [
+    "C1.estimators.raw.overall",
+    "C1.estimators.raw.overall.beta_hat",
+    "C1.estimators.raw.overall.hi",
+    "C1.estimators.raw.overall.lo",
+    "C1.ood.*.interim_ratio.8.undefined",
+    "C1.ood.moe_b1.interim_ratio.48.median",
+    "C1.ood.moe_b2.interim_ratio.48.median",
+    "C1.secondary.I_sym_minus_I_rand.hi",
+    "C1.secondary.I_sym_minus_I_rand.mean",
+    "C1.secondary.wd_share.F_WD_over_F.code.median",
+    "C1.secondary.wd_share.F_WD_over_F.math.median",
+    "C1.secondary.wd_share.mean_I_WD_over_mean_I",
+    "C1.test",
+    "C1.test.mean",
+    "C1.test.p",
+    "C2.draws_registered",
+    "E1.c2_moe_b2_d7_sgd_H.final_step",
+    "count C1.statistics.wd.draws[*].F[*]: F > 3 SE",
+    "decisions.C1",
+    "holm.adjusted.C1",
+    "max C1.ood.*.first_order.*.median_resolved_share",
+    "max C1.statistics.raw.draws[base 1, d 1-6].F[*].F",
+    "max C2.manipulation_check.per_draw[*].D_muon_step8",
+    "max |C1.statistics.wd.draws[*].F[*].F|",
+    "mean of C1.statistics.raw.draws[*].I_log",
+    "mean of C1.statistics.wd.draws[*].I_nd",
+    "min C1.ood.*.first_order.*.median_resolved_share",
+    "min C1.statistics.raw.draws[base 1, d 1-6].F[*].F"
+   ],
+   "numbers": {
+    "1.429": "C1.test.mean",
+    "9.5e-7": "C1.test.p (= 2^-20 = C1.test.min_p)",
+    "1.9e-6": "holm.adjusted.C1",
+    "20": "C1.ood.*.interim_ratio.8.undefined (count)",
+    "1.654": "C1.estimators.raw.overall.beta_hat",
+    "1.585": "C1.estimators.raw.overall.lo",
+    "1.726": "C1.estimators.raw.overall.hi",
+    "0.238": "C1.secondary.I_sym_minus_I_rand.mean (n = 6, base moe_b1)",
+    "0.091": "C1.secondary.I_sym_minus_I_rand.lo (n = 6, base moe_b1; 0.0915)",
+    "0.385": "C1.secondary.I_sym_minus_I_rand.hi (n = 6, base moe_b1)",
+    "2.795": "data/supplementary_values.json:decay_rule.mean_I_WD_nd",
+    "1.660": "C1.secondary.wd_share.mean_I_WD_over_mean_I",
+    "1.684": "data/supplementary_values.json:decay_rule.mean_I_log",
+    "0.0006": "data/supplementary_values.json:decay_rule.max_abs_F_WD_nats (0.00063)",
+    "6": "count C1.statistics.wd.draws[*].F[*]: F > 3 SE (cells: B|code)",
+    "24": "E1.c2_moe_b2_d7_sgd_H.final_step",
+    "0.004": "min C1.statistics.raw.draws[base 1, d 1-6].F[*].F",
+    "0.059": "max C1.statistics.raw.draws[base 1, d 1-6].F[*].F",
+    "0.006": "C1.secondary.wd_share.F_WD_over_F.code.median",
+    "-0.005": "C1.secondary.wd_share.F_WD_over_F.math.median",
+    "1.074": "C1.ood.moe_b1.interim_ratio.48.median",
+    "1.146": "C1.ood.moe_b2.interim_ratio.48.median",
+    "0.07": "min C1.ood.*.first_order.*.median_resolved_share",
+    "0.15": "max C1.ood.*.first_order.*.median_resolved_share",
+    "8": "C2.draws_registered",
+    "0.25": "C1.statistic margin (registered beta0 = 0.25; C1.beta0)",
+    "1": "data/supplementary_values.json:c1_magnitude.exact_assumption_value",
+    "1.655": "C1.secondary.C1b_pooled_ratio_raw.ratio",
+    "1.596": "C1.secondary.C1b_pooled_ratio_raw.ci95[0]",
+    "1.716": "C1.secondary.C1b_pooled_ratio_raw.ci95[1]",
+    "1.338": "C1.secondary.C1b_pooled_ratio_sym.ratio",
+    "1.314": "C1.secondary.C1b_pooled_ratio_sym.ci95[0]",
+    "1.363": "C1.secondary.C1b_pooled_ratio_sym.ci95[1]",
+    "1.079": "data/supplementary_values.json:c1_random_share.mean_I_log.rand",
+    "1.317": "data/supplementary_values.json:c1_random_share.mean_I_log.sym",
+    "1.549": "data/supplementary_values.json:c1_random_share.mean_I_log.raw",
+    "four fifths": "data/supplementary_values.json:c1_random_share.rand_over_sym (0.819)",
+    "five (step 24)": "C1.ood per-draw undefined ratios at step 24 (1 in base 1, 4 in base 2)",
+    "0.5": "C1-b band of the frozen analysis code (_c1_secondary in analyze_confirm.py: C1b_refuted = hi < 0.5 or lo > 2.0) and of the pre-registration (version 1.2, Section 9, item 2: refuted if the 95% CI of the pooled ratio lies entirely outside [0.5, 2])",
+    "2": "C1-b band of the frozen analysis code (_c1_secondary in analyze_confirm.py: C1b_refuted = hi < 0.5 or lo > 2.0) and of the pre-registration (version 1.2, Section 9, item 2: refuted if the 95% CI of the pooled ratio lies entirely outside [0.5, 2])",
+    "95": "C1.secondary.C1b_pooled_ratio_raw / _sym: 95% bootstrap interval (n_boot 10000, stratified by base)"
+   }
+  },
+  "CONCL.C1": {
+   "item": "v1.6.3 E, L; v1.6.5 item 1; v1.6.6 S1/S2; v1.6.10 operator item 3 (Section 4.3 wording rule: registered qualifier and out-of-domain annotation)",
+   "text": "C1 was confirmed, qualified as substantially decay-driven and annotated as out of domain in both bases: across 20 draws in two bases, the forgetting of code and mathematics after books adaptation tracked their routing mass through the adapted experts, with an elasticity above the value of 1 that the account derives under exact assumptions. Norm-matched random updates of the same experts reproduced most of this crossover, in the registered control on six draws and in an exploratory extension to all 20 draws (78\\% of the symmetrized crossover), so routing mass mainly gates how strongly an old corpus is exposed to any change of the adapted experts; the part specific to learned updates is smaller and was positive in every draw.",
+   "fields": [
+    "C1.estimators.raw.overall",
+    "C1.estimators.raw.overall.beta_hat",
+    "C1.estimators.raw.overall.hi",
+    "C1.estimators.raw.overall.lo",
+    "C1.ood.*.interim_ratio.8.undefined",
+    "C1.secondary.wd_share.mean_I_WD_over_mean_I",
+    "C1.test",
+    "C1.test.mean",
+    "C2.draws_registered",
+    "E1.c2_moe_b2_d7_sgd_H.final_step",
+    "count C1.statistics.wd.draws[*].F[*]: F > 3 SE",
+    "decisions.C1",
+    "holm.adjusted.C1",
+    "max |C1.statistics.wd.draws[*].F[*].F|"
+   ],
+   "numbers": {
+    "20": "C1.D",
+    "1": "data/supplementary_values.json:c1_magnitude.exact_assumption_value",
+    "every draw": "data/exploratory_values.json:randdir_20.per_draw_excess_sym.n_positive (20 of 20)",
+    "78%": "data/exploratory_values.json:randdir_20.share_rand_over_sym (0.777 = 78%)",
+    "six": "data/supplementary_values.json:c1_random_share.n"
+   }
+  },
+  "C2.result": {
+   "item": "v1.6.3 G (+L: DL-039 intent; registered label kept); v1.6.5 item 2",
+   "text": "C2 was confirmed at step 8, the earliest step that resolved forgetting, at the second Holm step, on five of its eight registered draws. Three draws were dropped under rule E1 because their SGD run on the high-usage subset diverged (base~1, draw 3; base~2, draws 6 and 7); no Muon run and no SGD run on a low-usage subset diverged. On the remaining draws DCLM forgetting depended more on the target's routing mass under SGD at the registered learning rate than under per-matrix Muon (mean $J2=4.286$; base~1 4.784, base~2 3.538). All five $J2$ values were positive, so the one-sided sign-flip $p$ is $1/32=0.03125$, the smallest value that five draws can give. It exceeds the first Holm level of 0.025 and is significant at the second level of 0.05, which applies because C1 was rejected first. The point estimate of the elasticity difference is $\\Delta e=2.071$ (2.412 under SGD, 0.341 under Muon); five draws admit no finite 95\\% interval, since the smallest two-sided $p$ is 0.0625. The contrast comes almost entirely from the SGD runs on the high-usage subsets, which forgot 0.039 to 0.438 nats of DCLM at step 8, against 0.0005 to 0.0011 nats for SGD on the low-usage subsets and less than 0.001 nats in every Muon run. At that step these five SGD runs had not learned the target: their German loss on the 64-window head stood 0.112 to 0.843 nats above its value at step 0, while the eight SGD runs on low-usage subsets had gained 0.015 to 0.020 nats. The contrast therefore compares an SGD arm in an unstable early phase with a stable Muon arm, not two arms at equal target gain, and does not isolate a forgetting mechanism. The manipulation check gave a mean ratio $D_{\\mathrm{SGD}}/\\DQ$ of 1.12 at step 8; $D_{\\mathrm{Muon}}$ at step 1, which the pre-registration names as the check of the exact-polar statement, was not recorded and is undefined in this trainer, whose linear warm-up gives the first optimizer step a learning rate of 0 (Appendix~\\ref{app:prereg}); after the first non-zero update, at step 2, an exploratory re-run of the 16 Muon runs gave $-0.034$ to 0.055 over the eight draws (the same range holds for the five draws of the test), close to the exact-polar value of 0 (Appendix~\\ref{app:exploratory}), and at step 8 it was 0.023 to 0.091.",
+   "fields": [
+    "C2.Delta_e",
+    "C2.Delta_e.beta_hat",
+    "C2.Delta_e.min_two_sided_p",
+    "C2.draws_registered",
+    "C2.e_Muon.beta_hat",
+    "C2.e_SGD.beta_hat",
+    "C2.manipulation_check.mean_D_SGD_over_DQ_mean",
+    "C2.mean_J2_per_base.moe_b1",
+    "C2.mean_J2_per_base.moe_b2",
+    "C2.per_draw[*].J2",
+    "C2.test",
+    "C2.test.mean",
+    "count C1.statistics.wd.draws[*].F[*]: F > 3 SE",
+    "decisions.C2",
+    "holm.FWER",
+    "holm.adjusted.C2",
+    "holm.first_step_alpha",
+    "max C2.manipulation_check.per_draw[*].D_muon_step8",
+    "max C2.per_draw[*].F_DCLM.sgd-H",
+    "max C2.per_draw[*].F_DCLM.sgd-L",
+    "max C2.sgd_step24_gain.per_run[side L].G_step8",
+    "max of -C2.sgd_step24_gain.per_run[side H].G_step8",
+    "min C2.manipulation_check.per_draw[*].D_muon_step8",
+    "min C2.per_draw[*].F_DCLM.sgd-H",
+    "min C2.per_draw[*].F_DCLM.sgd-L",
+    "min C2.sgd_step24_gain.per_run[side L].G_step8",
+    "min of -C2.sgd_step24_gain.per_run[side H].G_step8"
+   ],
+   "numbers": {
+    "0.091": "max C2.manipulation_check.per_draw[*].D_muon_step8",
+    "6": "count C1.statistics.wd.draws[*].F[*]: F > 3 SE (cells: B|code)",
+    "4.286": "C2.test.mean",
+    "4.784": "C2.mean_J2_per_base.moe_b1",
+    "3.538": "C2.mean_J2_per_base.moe_b2",
+    "0.03125": "holm.adjusted.C2",
+    "0.025": "holm.first_step_alpha",
+    "0.05": "holm.FWER",
+    "2.071": "C2.Delta_e.beta_hat",
+    "2.412": "C2.e_SGD.beta_hat",
+    "0.341": "C2.e_Muon.beta_hat",
+    "0.0625": "C2.Delta_e.min_two_sided_p",
+    "0.039": "min C2.per_draw[*].F_DCLM.sgd-H",
+    "0.438": "max C2.per_draw[*].F_DCLM.sgd-H",
+    "0.0005": "min C2.per_draw[*].F_DCLM.sgd-L",
+    "0.0011": "max C2.per_draw[*].F_DCLM.sgd-L",
+    "0.112": "min of -C2.sgd_step24_gain.per_run[side H].G_step8 (n = 5)",
+    "0.843": "max of -C2.sgd_step24_gain.per_run[side H].G_step8",
+    "0.015": "min C2.sgd_step24_gain.per_run[side L].G_step8 (n = 8)",
+    "0.020": "max C2.sgd_step24_gain.per_run[side L].G_step8",
+    "1.12": "C2.manipulation_check.mean_D_SGD_over_DQ_mean",
+    "0.023": "min C2.manipulation_check.per_draw[*].D_muon_step8",
+    "8": "C2.draws_registered",
+    "0 (learning rate)": "trainer warm-up: rate of the first optimizer step (results/exploratory/dmuon_step2.json step1_all_zero = true)",
+    "2": "first non-zero update (step 2)",
+    "16": "data/exploratory_values.json:dmuon_step2.n_runs",
+    "-0.034": "data/exploratory_values.json:dmuon_step2.min (-0.0342)",
+    "0.055": "data/exploratory_values.json:dmuon_step2.max (0.0548)",
+    "eight": "data/exploratory_values.json:dmuon_step2.n_draws",
+    "five": "data/exploratory_values.json:dmuon_step2.five_retained_draws.n (same range)",
+    "0 (exact-polar value)": "statement C2-a"
+   }
+  },
+  "C2.sgd24": {
+   "item": "M4",
+   "text": "Over the 13 SGD runs that did not diverge it averaged 0.069 nats (range $-$0.117 to 0.218; base~1 0.064, base~2 0.075), against $-$0.190 nats at step 8. It was 0.092 nats on the eight low-usage subsets (0.086 to 0.099) and 0.031 nats on the five high-usage subsets, two of which were still above their step-0 loss ($-$0.065 and $-$0.117).",
+   "fields": [
+    "C2.draws_registered",
+    "C2.sgd_step24_gain.step24",
+    "C2.sgd_step24_gain.step24.per_base.moe_b1.mean",
+    "C2.sgd_step24_gain.step24.per_base.moe_b2.mean",
+    "C2.sgd_step24_gain.step24.pooled.max",
+    "C2.sgd_step24_gain.step24.pooled.mean",
+    "C2.sgd_step24_gain.step24.pooled.min",
+    "C2.sgd_step24_gain.step24.pooled.n",
+    "C2.sgd_step24_gain.step8",
+    "C2.sgd_step24_gain.step8.pooled.mean",
+    "max side L G_step24",
+    "mean C2.sgd_step24_gain.per_run[side H].G_step24",
+    "mean C2.sgd_step24_gain.per_run[side L].G_step24",
+    "min side L G_step24"
+   ],
+   "numbers": {
+    "13": "C2.sgd_step24_gain.step24.pooled.n",
+    "0.069": "C2.sgd_step24_gain.step24.pooled.mean",
+    "-0.117": "C2.sgd_step24_gain.step24.pooled.min",
+    "0.218": "C2.sgd_step24_gain.step24.pooled.max",
+    "0.064": "C2.sgd_step24_gain.step24.per_base.moe_b1.mean",
+    "0.075": "C2.sgd_step24_gain.step24.per_base.moe_b2.mean",
+    "-0.190": "C2.sgd_step24_gain.step8.pooled.mean",
+    "0.092": "mean C2.sgd_step24_gain.per_run[side L].G_step24 (n = 8)",
+    "0.086": "min side L G_step24",
+    "0.099": "max side L G_step24",
+    "0.031": "mean C2.sgd_step24_gain.per_run[side H].G_step24 (n = 5)",
+    "8": "C2.draws_registered"
+   }
+  },
+  "CONCL.C2": {
+   "item": "v1.6.3 G, L",
+   "text": "C2, the weaker result, passed its registered test on the five of eight registered draws left after three SGD divergences: DCLM forgetting depended more on the target's routing mass under SGD than under per-matrix Muon. The contrast compares SGD in an unstable early phase, whose runs on high-usage subsets had not yet learned the target, with stable Muon, and does not isolate a forgetting mechanism.",
+   "fields": [
+    "C2.Delta_e",
+    "C2.Delta_e.beta_hat",
+    "C2.draws_registered",
+    "C2.per_draw[*].J2",
+    "C2.test",
+    "C2.test.mean",
+    "decisions.C2",
+    "holm.adjusted.C2"
+   ],
+   "numbers": {
+    "five": "C2.D",
+    "eight": "C2.draws_registered",
+    "three": "C2.E1.diverged"
+   }
+  },
+  "INTRO.C1": {
+   "item": "v1.6.3 E; v1.6.5 item 1; v1.6.6 S1/S2; v1.6.10 operator item 3 (Section 4.3 wording rule: registered qualifier and out-of-domain annotation)",
+   "text": "C1 was confirmed (mean $J=1.429$, Holm-adjusted $p=1.9\\times10^{-6}$), qualified as substantially decay-driven and annotated as out of domain in both bases: the forgetting of code and mathematics tracked their routing mass through the adapted experts with an elasticity of 1.654 [1.585, 1.726], above the value of 1 that the account derives under exact assumptions. Norm-matched random updates of the same experts produced about four fifths of the symmetrized crossover in the registered control on six draws of one base, and 78\\% in an exploratory extension to all 20 draws, so routing mass gates how much of any change to the adapted experts reaches an old corpus, and the part specific to learned updates is the smaller one.",
+   "fields": [
+    "C1.estimators.raw.overall",
+    "C1.test",
+    "C1.test.mean",
+    "count C1.statistics.wd.draws[*].F[*]: F > 3 SE",
+    "decisions.C1",
+    "holm.adjusted.C1"
+   ],
+   "numbers": {
+    "1.429": "C1.test.mean",
+    "1.9e-6": "holm.adjusted.C1",
+    "1.654": "C1.estimators.raw.overall.beta_hat",
+    "1.585": "C1.estimators.raw.overall.lo",
+    "1.726": "C1.estimators.raw.overall.hi",
+    "1": "data/supplementary_values.json:c1_magnitude.exact_assumption_value",
+    "20": "data/exploratory_values.json:randdir_20.n_draws",
+    "78%": "data/exploratory_values.json:randdir_20.share_rand_over_sym (0.777 = 78%)",
+    "four fifths": "data/supplementary_values.json:c1_random_share.rand_over_sym (0.819)",
+    "six": "data/supplementary_values.json:c1_random_share.n"
+   }
+  },
+  "INTRO.C2": {
+   "item": "v1.6.3 G",
+   "text": "C2, the weaker result, passed its registered test at step 8 on the five of eight registered draws that remained after three SGD runs on high-usage subsets diverged (mean $J2=4.286$, $p=1/32$, significant at the second Holm step); it compares SGD in an unstable early phase, before those runs had learned the target, with stable Muon and does not isolate a forgetting mechanism.",
+   "fields": [
+    "C2.Delta_e",
+    "C2.draws_registered",
+    "C2.per_draw[*].J2",
+    "C2.test",
+    "C2.test.mean",
+    "decisions.C2",
+    "holm.adjusted.C2"
+   ],
+   "numbers": {
+    "8": "C2.s_star",
+    "five": "C2.D",
+    "eight": "C2.draws_registered",
+    "three": "C2.E1.diverged",
+    "4.286": "C2.test.mean",
+    "1/32": "C2.test.p"
+   }
+  },
+  "ABS.C1": {
+   "item": "v1.6.3 B; v1.6.5 item 1; v1.6.6 S1/S2",
+   "text": "Forgetting tracked routing mass with elasticity 1.65 [1.59, 1.73], above the exact-assumption value 1; across all 20 draws, norm-matched random updates of the same experts produced 78\\% of the symmetrized crossover (exploratory).",
+   "fields": [
+    "C1.estimators.raw.overall",
+    "C1.estimators.raw.overall.beta_hat",
+    "C1.estimators.raw.overall.hi",
+    "C1.estimators.raw.overall.lo",
+    "C1.test",
+    "decisions.C1",
+    "holm.adjusted.C1"
+   ],
+   "numbers": {
+    "1.65": "C1.estimators.raw.overall.beta_hat",
+    "1.59": "C1.estimators.raw.overall.lo",
+    "1.73": "C1.estimators.raw.overall.hi",
+    "1": "data/supplementary_values.json:c1_magnitude.exact_assumption_value",
+    "20": "data/exploratory_values.json:randdir_20.n_draws",
+    "78%": "data/exploratory_values.json:randdir_20.share_rand_over_sym (0.777 = 78%)"
+   }
+  },
+  "ABS.C2": {
+   "item": "v1.6.3 B, G",
+   "text": "The optimizer contrast passed its registered test on five draws left after three SGD divergences, but reflects instability: high-usage SGD runs had not yet learned the target.",
+   "fields": [
+    "C2.Delta_e",
+    "C2.per_draw[*].J2",
+    "C2.test",
+    "decisions.C2",
+    "holm.adjusted.C2"
+   ],
+   "numbers": {
+    "five": "C2.D",
+    "three": "C2.E1.diverged"
+   }
+  },
+  "C1.betas": {
+   "item": "M5(b)",
+   "text": "1.654 [1.585, 1.726]; 1.776 [1.697, 1.859]; 1.337 [1.311, 1.365]; 1.083 [0.940, 1.211] (base~1, draws 1--6)",
+   "fields": [
+    "C1.estimators.pin.overall",
+    "C1.estimators.rand.overall",
+    "C1.estimators.raw.overall",
+    "C1.estimators.raw.overall.beta_hat",
+    "C1.estimators.raw.overall.hi",
+    "C1.estimators.raw.overall.lo",
+    "C1.estimators.sym.overall",
+    "count C1.statistics.wd.draws[*].F[*]: F > 3 SE"
+   ],
+   "numbers": {
+    "1.654": "C1.estimators.raw.overall.beta_hat",
+    "1.585": "C1.estimators.raw.overall.lo",
+    "1.726": "C1.estimators.raw.overall.hi",
+    "6": "count C1.statistics.wd.draws[*].F[*]: F > 3 SE (cells: B|code)"
+   }
+  },
+  "C1.label": {
+   "item": "M5(c)",
+   "text": "confirmed; qualified as substantially decay-driven; out of domain in both bases (interim ratio undefined at steps 8 and 24)",
+   "fields": [
+    "C2.draws_registered",
+    "E1.c2_moe_b2_d7_sgd_H.final_step",
+    "decisions.C1.label",
+    "decisions.C1.out_of_domain_cells"
+   ],
+   "numbers": {
+    "24": "E1.c2_moe_b2_d7_sgd_H.final_step",
+    "8": "C2.draws_registered"
+   }
+  },
+  "C2.status": {
+   "item": "M5(d)",
+   "text": "confirmatory; $s^*=8$; $D=5$ of 8 registered draws (3 dropped under E1)",
+   "fields": [
+    "C2.D",
+    "C2.confirmatory",
+    "C2.draws_registered",
+    "C2.s_star"
+   ],
+   "numbers": {
+    "8": "C2.draws_registered",
+    "5": "C2.D"
+   }
+  },
+  "C2.manip": {
+   "item": "M5(e); v1.6.5 operator answer 3",
+   "text": "1.12; $D_{\\mathrm{Muon}}$ at step 1 not recorded (undefined in this trainer; Appendix~\\ref{app:exploratory})",
+   "fields": [
+    "C2.manipulation_check.D_Muon_step1",
+    "C2.manipulation_check.mean_D_SGD_over_DQ_mean"
+   ],
+   "numbers": {
+    "1.12": "C2.manipulation_check.mean_D_SGD_over_DQ_mean"
+   }
+  },
+  "C2.T": {
+   "item": "M5(f)",
+   "text": "4.286; $p=1/32=0.03125$ (smallest attainable at $D=5$); $p_{\\mathrm{Holm}}=0.03125$",
+   "fields": [
+    "C2.D",
+    "C2.test.mean",
+    "C2.test.p",
+    "holm.adjusted.C2"
+   ],
+   "numbers": {
+    "4.286": "C2.test.mean",
+    "0.03125": "holm.adjusted.C2",
+    "5": "C2.D"
+   }
+  },
+  "C2.de": {
+   "item": "M5(f)",
+   "text": "4.784 / 3.538; 2.071 (no finite 95\\% interval at $D=5$)",
+   "fields": [
+    "C2.D",
+    "C2.Delta_e",
+    "C2.Delta_e.beta_hat",
+    "C2.mean_J2_per_base",
+    "C2.mean_J2_per_base.moe_b1",
+    "C2.mean_J2_per_base.moe_b2"
+   ],
+   "numbers": {
+    "4.784": "C2.mean_J2_per_base.moe_b1",
+    "3.538": "C2.mean_J2_per_base.moe_b2",
+    "2.071": "C2.Delta_e.beta_hat",
+    "5": "C2.D"
+   }
+  },
+  "C2.label": {
+   "item": "M5(f)",
+   "text": "confirmed at the second Holm step",
+   "fields": [
+    "decisions.C2.label"
+   ],
+   "numbers": {}
+  },
+  "E1.outcome": {
+   "item": "v1.6.3 G (+L: DL-022)",
+   "text": "Of the runs screened under the divergence rule E1, none of the 40 in C1 and 3 of the 32 in C2 diverged, and every run was logged up to its stop step (Appendix~\\ref{app:coredraws}). The three diverged runs are SGD runs of C2 on the high-usage subset (Section~\\ref{sec:res-c2}). The registered threshold of 25\\% for an inconclusive test counts runs, and 3 of 32 runs (9.4\\%) stayed below it; counted by draws, three of the eight registered draws (37.5\\%) were lost, and the same threshold applied to draws would have made C2 inconclusive.",
+   "fields": [
+    "C1.E1.diverged",
+    "C1.E1.runs",
+    "C2.E1.diverged",
+    "C2.E1.runs",
+    "E1 (diverged runs)",
+    "count C1.statistics.wd.draws[*].F[*]: F > 3 SE",
+    "warnings (flagged incomplete)"
+   ],
+   "numbers": {
+    "40": "C1.E1.runs",
+    "3": "C2.E1.diverged",
+    "32": "C2.E1.runs",
+    "25": "data/supplementary_values.json:c2_losses.threshold_pct (rule E1, sections/04_design.tex)",
+    "9.4": "data/supplementary_values.json:c2_losses.runs_pct (9.375)",
+    "three": "data/supplementary_values.json:c2_losses.draws_dropped",
+    "eight": "data/supplementary_values.json:c2_losses.draws_registered",
+    "37.5": "data/supplementary_values.json:c2_losses.draws_pct"
+   }
+  },
+  "COMPUTE.used": {
+   "item": "M14, S4; v1.6.11 S1 (final check of v1.6.10: the remaining blocks ran after the core)",
+   "text": "The 74 jobs of the core took 30.33 GPU-hours in the queue state against the 36.51 planned (13.19 for C1 on base~1, 11.82 for C1 on base~2, 5.19 for C2 and 0.14 for the evaluations at $\\theta_0$), and 1.3646 GPU-hours outside the queue state for deviation D-1 and amendment A-1, incident I-1 and amendment A-2 (included in the last row of Table~\\ref{tab:budget}) bring the core and its recovery to 31.70 GPU-hours. The 72 core adaptation runs with a usable power log drew 2,751.0\\,Wh of board energy. The remaining blocks ran after the core.",
+   "fields": [
+    "C2.D",
+    "C2.sgd_step24_gain.step24.pooled.n",
+    "blocks.EDGE.excluded",
+    "blocks.EDGE.runs[bases 1-2].energy_Wh",
+    "blocks.budget.per_block[core blocks].actual_gpu_h",
+    "blocks.budget.per_block[core blocks].jobs_with_hours",
+    "blocks.budget.per_block[core blocks].planned_gpu_h",
+    "data/hours_outside_state.json:hours"
+   ],
+   "numbers": {
+    "13": "C2.sgd_step24_gain.step24.pooled.n",
+    "5": "C2.D"
+   }
+  },
+  "CONCL.edge": {
+   "item": "v1.6.3 D, M (+L: DL-036 intent)",
+   "text": "An expert-subset update changed 18\\% of the parameters and needed 17\\% less peak memory than a full adaptation, a saving that comes from freezing attention and embeddings, not from the number of experts updated, but it took about as much time and energy (Section~\\ref{sec:edge}).",
+   "fields": [
+    "blocks.EDGE.runs[subset, bases 1-2]",
+    "data/edge_overlap_I2.json:runs",
+    "data/edge_pre_freeze.json:adaptation_96_steps.moe_full_runs_no_ckpt"
+   ],
+   "numbers": {
+    "18": "data/supplementary_values.json:update_size.share_pct (17.77)",
+    "17": "data/supplementary_values.json:memory_pytorch.saving_pct (16.70)"
+   }
+  },
+  "C1.code2": {
+   "item": "S10",
+   "text": "Mean $J$ was 1.664 (one-sided sign-flip $p=9.5\\times10^{-7}$, unadjusted and the smallest value that 20 draws can give) and $\\hat\\beta=1.820$ [1.727, 1.914].",
+   "fields": [
+    "C1.ood.*.interim_ratio.8.undefined",
+    "C1.secondary.second_code_stream.J_test",
+    "C1.secondary.second_code_stream.beta.overall",
+    "C1.test.p"
+   ],
+   "numbers": {
+    "9.5e-7": "C1.test.p (= 2^-20 = C1.test.min_p)",
+    "20": "C1.ood.*.interim_ratio.8.undefined (count)"
+   }
+  },
+  "FIG.crossover": {
+   "item": "S8; v1.6.3 L: DL-080",
+   "text": "C1 crossover against the predicted contrast for MoE bases 1 and~2 (a, b) and the C2 interaction against the target contrast at step 8 (c). Crosses: probe crossovers at the pretrained weights (pinned, norm-matched random directions); filled and open circles: adapted draws, raw and symmetrized; in (c), diamonds and squares: C2 draws of bases 1 and~2 (five of the eight registered draws; three were dropped under rule E1). Solid line: the prediction $I=P$ ($\\beta=1$); dotted lines: the margins $I=0.25\\,P$ and $I2=0.25\\,\\Delta_{Q,d}$.",
+   "fields": [
+    "C1.per_draw",
+    "C1.statistics.sym.draws",
+    "C2.draws_registered",
+    "C2.per_draw"
+   ],
+   "numbers": {
+    "8": "C2.draws_registered"
+   }
+  },
+  "ABS.cost": {
+   "item": "v1.6.3 B, D",
+   "text": "Subset updates changed 18\\% of the parameters and, with attention and embeddings frozen, used 17\\% less peak memory than full adaptation, but no less time or energy.",
+   "fields": [],
+   "numbers": {
+    "18": "data/supplementary_values.json:update_size.share_pct (17.77)",
+    "17": "data/supplementary_values.json:memory_pytorch.saving_pct (16.70)",
+    "no less time or energy": "data/supplementary_values.json:time_energy.time_ratio (1.03), time_energy.energy_ratio (1.01)"
+   }
+  },
+  "EDGE.cost": {
+   "item": "v1.6.3 D (+L: DL-090, DL-091)",
+   "text": "The median expert-subset run of MoE bases 1--2 took 0.257\\,h and 54.5\\,Wh over 40 runs (0.256\\,h and 54.4\\,Wh over the 35 runs not slowed by concurrent CPU work), 1.03 times the wall time and 1.01 times the energy of the median MoE full adaptation measured in the gate runs (Table~\\ref{tab:edgepre}, descriptive).",
+   "numbers": {
+    "0.257": "data/supplementary_values.json:time_energy.subset_wall_h_median",
+    "54.5": "data/supplementary_values.json:time_energy.subset_energy_wh_median",
+    "40": "data/supplementary_values.json:time_energy.subset_n",
+    "0.256 / 54.4 / 35": "blocks.EDGE (subset runs without data/edge_overlap_I2.json), as printed by fill_core in v1.6.2",
+    "1.03": "data/supplementary_values.json:time_energy.time_ratio",
+    "1.01": "data/supplementary_values.json:time_energy.energy_ratio"
+   }
+  },
+  "EDGE.C1": {
+   "item": "v1.6.10 operator item 3: the C1-A text of EDGE.C1 (v1.6.6 S2) with the registered qualifier and out-of-domain annotation (Section 4.3 wording rule)",
+   "text": "C1 was confirmed ($\\bhat=1.654$ [1.585, 1.726]), qualified as substantially decay-driven and annotated as out of domain in both bases: between matched subsets built to differ in their code and mathematics routing, the subset that a corpus used less cost less loss on that corpus. Most of this difference does not depend on what the update learns, since norm-matched random directions in the same experts produced about four fifths of the symmetrized crossover in the registered six-draw control and 78\\% in an exploratory 20-draw extension; routing mass gates how much of any change to the adapted experts reaches an old corpus. Whether the routing masses at $\\theta_0$ rank arbitrary update sets, and whether they do so for targets other than books, was not tested.",
+   "numbers": {
+    "1.654": "C1.estimators.raw.overall.beta_hat",
+    "1.585": "C1.estimators.raw.overall.lo",
+    "1.726": "C1.estimators.raw.overall.hi",
+    "four fifths": "data/supplementary_values.json:c1_random_share.rand_over_sym (0.819)",
+    "six": "data/supplementary_values.json:c1_random_share.n",
+    "78%": "data/exploratory_values.json:randdir_20.share_rand_over_sym (0.777 = 78%)",
+    "20": "data/exploratory_values.json:randdir_20.n_draws"
+   }
+  }
+ },
+ "author_slot_numbers": {
+  "DISC.interpretation C1-E (M2)": {
+   "0.0006": "max |C1.statistics.wd.draws[*].F[*].F| (24 values)",
+   "0.006": "C1.secondary.wd_share.F_WD_over_F.code.median",
+   "-0.005": "C1.secondary.wd_share.F_WD_over_F.math.median",
+   "1.660": "C1.secondary.wd_share.mean_I_WD_over_mean_I"
+  },
+  "DISC.interpretation C2-A (M7b)": {
+   "0.341": "C2.e_Muon.beta_hat",
+   "0.256": "C2.C2_eq.t90.lo",
+   "0.419": "C2.C2_eq.t90.hi"
+  },
+  "EDGE.C2 C2-A (M3)": {
+   "0.039": "min C2.per_draw[*].F_DCLM.sgd-H",
+   "0.438": "max C2.per_draw[*].F_DCLM.sgd-H",
+   "46": "min over draws of F_DCLM.sgd-H / F_DCLM.sgd-L",
+   "828": "max over draws of F_DCLM.sgd-H / F_DCLM.sgd-L",
+   "0.0005": "min C2.per_draw[*].F_DCLM.sgd-L",
+   "0.0011": "max C2.per_draw[*].F_DCLM.sgd-L",
+   "1.6": "min over draws of F_DCLM.muon-H / F_DCLM.muon-L",
+   "2.7": "max over draws of F_DCLM.muon-H / F_DCLM.muon-L"
+  },
+  "DISC.interpretation C1-E (v1.6.3 F)": {
+   "0.0006": "data/supplementary_values.json:decay_rule.max_abs_F_WD_nats (0.00063)"
+  },
+  "EDGE.C2 C2-A (v1.6.3 G)": {
+   "five": "C2.D",
+   "three": "C2.E1.diverged",
+   "0.039 / 0.438 / 46 / 828 / 0.0005 / 0.0011 / 0.001": "as in the v1.6.1 text of this variant (C2.per_draw[*].F_DCLM)"
+  },
+  "CONCL.code CODE.conf (v1.6.3 E)": {
+   "1.820": "C1.secondary.second_code_stream.beta.overall.beta_hat",
+   "1.727": "C1.secondary.second_code_stream.beta.overall.lo",
+   "1.914": "C1.secondary.second_code_stream.beta.overall.hi"
+  },
+  "DISC.interpretation C1-A (v1.6.5 item 1)": {
+   "20": "data/exploratory_values.json:randdir_20.n_draws",
+   "1": "statement C1-R: beta_rand = 1 for perturbations without alignment",
+   "1.04": "data/exploratory_values.json:randdir_20.beta_rand.overall.beta_hat (1.0374)",
+   "0.99": "data/exploratory_values.json:randdir_20.beta_rand.overall.lo (0.9926)",
+   "1.09": "data/exploratory_values.json:randdir_20.beta_rand.overall.hi (1.0887)",
+   "0.30": "data/exploratory_values.json:randdir_20.I_sym_minus_I_rand.mean (0.3033)",
+   "six": "C1.secondary.I_sym_minus_I_rand.n (6, base moe_b1)",
+   "each draw": "data/exploratory_values.json:randdir_20.per_draw_excess_sym.n_positive (20)",
+   "78%": "data/exploratory_values.json:randdir_20.share_rand_over_sym (0.777 = 78%)"
+  },
+  "EDGE.C1 C1-A (v1.6.6 S2)": {
+   "four fifths": "data/supplementary_values.json:c1_random_share.rand_over_sym (0.819)",
+   "six": "data/supplementary_values.json:c1_random_share.n",
+   "78%": "data/exploratory_values.json:randdir_20.share_rand_over_sym (0.777 = 78%)",
+   "20": "data/exploratory_values.json:randdir_20.n_draws"
+  }
+ },
+ "author_slot_bounds": {
+  "EDGE.C2 C2-A (M3), C2.result (M4): 'below 0.001 nats' / 'less than 0.001 nats'": "all C2.per_draw[*].F_DCLM.muon-H and muon-L < 0.001",
+  "ABS.C1 (M10): 'under 0.001 nats'": "max |C1.statistics.wd.draws[*].F[*].F| = 0.00063 < 0.001"
+ },
+ "not_verbatim": {
+  "C1.result (M1)": {
+   "review": "and not only above the margin of 0.25.",
+   "applied": ", which is more than the margin of 0.25 requires.",
+   "reason": "writing rule of check_paper [1]: 'not only' is banned"
+  }
+ }
+}

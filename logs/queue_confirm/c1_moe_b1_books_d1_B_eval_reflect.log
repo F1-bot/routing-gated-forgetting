@@ -1,0 +1,24 @@
+# .venv/nestor/Scripts/python.exe eval_windows.py run moe_100m outputs\confirm\c1_moe_b1_books_d1_B\m2\moe_100m_c1_moe_b1_books_d1_B\20261116_001100__moe_100m_c1_moe_b1_books_d1_B_train\checkpoints\model_final.pt --out outputs\confirm\c1_moe_b1_books_d1_B\m2\eval_reflect --variants reflect --set code=data/domain/algstack_test.bin:2048000 --set math=data/domain/owm_test.bin:2048000 --set dclm=data/dclm/dclm_val.bin:2048000 --span code=0.5,1 --span math=0.5,1 --block 4096 --base outputs/moe_100m_b05/20261101_002357__moe_100m_b05_train/checkpoints/model_final.pt --select even
+# env overrides: {"DCLM_BLOCK_SIZE": "4096"}
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+.venv\nestor\Lib\site-packages\triton\knobs.py:524: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+[eval_windows] code: 100/500 windows, 14s
+[eval_windows] code: 200/500 windows, 27s
+[eval_windows] code: 300/500 windows, 40s
+[eval_windows] code: 400/500 windows, 53s
+[eval_windows] code: 500/500 windows, 66s
+RESULT {"variant": "reflect", "set": "code", "ce": 6.264546453849969, "windows": 500, "seconds": 66.1, "file": "outputs\\confirm\\c1_moe_b1_books_d1_B\\m2\\eval_reflect\\reflect__code.npz"}
+[eval_windows] math: 100/500 windows, 13s
+[eval_windows] math: 200/500 windows, 26s
+[eval_windows] math: 300/500 windows, 39s
+[eval_windows] math: 400/500 windows, 52s
+[eval_windows] math: 500/500 windows, 65s
+RESULT {"variant": "reflect", "set": "math", "ce": 4.86879396987561, "windows": 500, "seconds": 65.0, "file": "outputs\\confirm\\c1_moe_b1_books_d1_B\\m2\\eval_reflect\\reflect__math.npz"}
+[eval_windows] dclm: 100/500 windows, 13s
+[eval_windows] dclm: 200/500 windows, 26s
+[eval_windows] dclm: 300/500 windows, 40s
+[eval_windows] dclm: 400/500 windows, 53s
+[eval_windows] dclm: 500/500 windows, 66s
+RESULT {"variant": "reflect", "set": "dclm", "ce": 4.651118133775946, "windows": 500, "seconds": 66.1, "file": "outputs\\confirm\\c1_moe_b1_books_d1_B\\m2\\eval_reflect\\reflect__dclm.npz"}

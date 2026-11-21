@@ -1,0 +1,116 @@
+{
+ "accepted": {
+  "c3_freeze_moe_b1_german_s103": true,
+  "c3_freeze_nestor_german_s103": true
+ },
+ "checks": {
+  "c3_freeze_moe_b1_german_s103": {
+   "position": 154,
+   "expected_trainable_unchanged": [
+    "backbone.blocks.0.layers.0.kimi_attn_read.query"
+   ],
+   "state": {
+    "status": "done",
+    "audit_ok": true,
+    "error": null,
+    "hours": 0.3655,
+    "start": 1795172701.15695,
+    "root": "outputs/confirm/c3_freeze_moe_b1_german_s103/m2",
+    "audit": "outputs/confirm/c3_freeze_moe_b1_german_s103/m2/audit.json"
+   },
+   "amendment_record": {
+    "id": "A-4.1",
+    "utc": "2026-11-20T11:04:08Z",
+    "path": "phase6/amendment_A4_post_freeze.md",
+    "new_sha256": "3d7aae95950a3657442016fde45b99f48c161a4e9f20f9b396924df6836cf036"
+   },
+   "rerun_sha256": {
+    "audit.json": "334561eb5fd9498adb5372658b008c067408cfc53ce7e70717b1f13b1810da78",
+    "subset_manifest.json": "889ecafdbbfded3e63b90c35a84973c7d4940d3c848dffe7fe15a34a29b1b45a",
+    "run_env.json": "f88d4f430187775e33d6fe9d5e63dd7f7bde90a30ce150f1a45fff6b9896871f"
+   },
+   "first_attempt_sha256": {
+    "audit.json": "056738b77a46ffc6dae1639383acff5e1e2d599fc540cedbf2dfbb7d0ea8c8e5",
+    "subset_manifest.json": "889ecafdbbfded3e63b90c35a84973c7d4940d3c848dffe7fe15a34a29b1b45a",
+    "run_env.json": "f88d4f430187775e33d6fe9d5e63dd7f7bde90a30ce150f1a45fff6b9896871f"
+   },
+   "audit": {
+    "frozen_tensors_checked": 64,
+    "frozen_rows_checked": 0,
+    "frozen_mismatch": [],
+    "trainable_unchanged": [
+     "backbone.blocks.0.layers.0.kimi_attn_read.query"
+    ],
+    "buffers_checked": 16,
+    "buffer_mismatch": [],
+    "negative_control": null,
+    "allow_unchanged": true,
+    "ok": true,
+    "optimizer_state": {
+     "checked": true,
+     "state_rows_checked": 0,
+     "violations": []
+    },
+    "trainable_tensors": 125
+   },
+   "subset_manifest.json_equal_to_first_attempt": true,
+   "run_env.json_equal_to_first_attempt": true,
+   "reasons": []
+  },
+  "c3_freeze_nestor_german_s103": {
+   "position": 155,
+   "expected_trainable_unchanged": [
+    "backbone.blocks.0.layers.0.kimi_attn_read.query"
+   ],
+   "state": {
+    "status": "done",
+    "audit_ok": true,
+    "error": null,
+    "hours": 1.8201,
+    "start": 1795174016.9159606,
+    "root": "outputs/confirm/c3_freeze_nestor_german_s103/m4c",
+    "audit": "outputs/confirm/c3_freeze_nestor_german_s103/m4c/audit.json"
+   },
+   "amendment_record": {
+    "id": "A-4.1",
+    "utc": "2026-11-20T11:04:08Z",
+    "path": "phase6/amendment_A4_post_freeze.md",
+    "new_sha256": "3d7aae95950a3657442016fde45b99f48c161a4e9f20f9b396924df6836cf036"
+   },
+   "rerun_sha256": {
+    "audit.json": "760b5f12f93025d0f3ba27042e9eb584dab5da33991689eec6f197ea756e7c5b",
+    "subset_manifest.json": "6c08990fb76ed6365600bb13f92d6a029f34d804e51df8f6bfa1c6a0b762c1e1",
+    "run_env.json": "075eecb91f359f14af3072f9c4d1dae77fd852ecc0d87ac5b581766de46cd7e1"
+   },
+   "first_attempt_sha256": {
+    "audit.json": "a85bc7d9832b089065a359bd0d9ae8fae29706cbdd51b396f9c0c0dc65aa5a43",
+    "subset_manifest.json": "6c08990fb76ed6365600bb13f92d6a029f34d804e51df8f6bfa1c6a0b762c1e1",
+    "run_env.json": "075eecb91f359f14af3072f9c4d1dae77fd852ecc0d87ac5b581766de46cd7e1"
+   },
+   "audit": {
+    "frozen_tensors_checked": 530,
+    "frozen_rows_checked": 0,
+    "frozen_mismatch": [],
+    "trainable_unchanged": [
+     "backbone.blocks.0.layers.0.kimi_attn_read.query"
+    ],
+    "buffers_checked": 124,
+    "buffer_mismatch": [],
+    "negative_control": null,
+    "allow_unchanged": true,
+    "ok": true,
+    "optimizer_state": {
+     "checked": true,
+     "state_rows_checked": 0,
+     "violations": []
+    },
+    "trainable_tensors": 205
+   },
+   "subset_manifest.json_equal_to_first_attempt": true,
+   "run_env.json_equal_to_first_attempt": true,
+   "reasons": []
+  }
+ },
+ "rule": "confirm/rerun_a4/amendment_A4_post_freeze.md, section Acceptance: \"A re-run of position 154 or 155 is accepted only if its bitwise audit has frozen_mismatch [], buffer_mismatch [], no optimizer-state violation and trainable_unchanged exactly equal to the job's named list (confirm/rerun_a4/expected_unchanged.json). Otherwise its values are withheld and the case is recorded as a deviation.\" Applied as: the job ended 'done' with audit_ok true in results/queue_state_confirm.json, its run started after the A-4 record in freeze/amendments.jsonl and its final checkpoint exists; <root>/audit.json (the state's audit) has frozen_mismatch [], buffer_mismatch [], optimizer_state.violations [], allow_unchanged true, ok true and trainable_unchanged equal (as a list) to the named list; it has the first attempt's counts (frozen tensors, frozen rows, buffers, optimizer state checked and rows) and the same set of trainable tensors; subset_manifest.json and run_env.json equal (as JSON) the first attempt's (same spec, recipe, data and seed). Only state, amendment, audit, manifest and environment files are read, no evaluation, interim, train-log or CE file.",
+ "utc": "2026-11-20T13:16:09Z"
+}

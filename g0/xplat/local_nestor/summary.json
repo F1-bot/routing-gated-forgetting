@@ -1,0 +1,23 @@
+{
+ "meta": {
+  "experiment": "nestor_100m",
+  "checkpoint": {
+   "path": "outputs\\nestor_100m_b05\\20261031_213045__nestor_100m_b05_train_h100\\checkpoints\\model_final.pt",
+   "size": 1510337922,
+   "head_sha256": "417fb7b51ff8feec3f4adef090a375a8614c4028d62555fd4a24d5b8305ea8da"
+  },
+  "base": null,
+  "step": 1907,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-13T08:38:01"
+ },
+ "results": {
+  "ckpt|dclm09": {
+   "ce": 4.779354870173229,
+   "windows": 500,
+   "seconds": 202.5,
+   "file": "g0\\xplat\\local_nestor\\ckpt__dclm09.npz"
+  }
+ }
+}

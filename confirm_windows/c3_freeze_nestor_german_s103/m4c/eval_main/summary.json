@@ -1,0 +1,41 @@
+{
+ "meta": {
+  "experiment": "nestor_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c3_freeze_nestor_german_s103\\m4c\\nestor_100m_c3_freeze_nestor_german_s103\\20261120_132707__nestor_100m_c3_freeze_nestor_german_s103_train\\checkpoints\\model_final.pt",
+   "size": 2664147207,
+   "head_sha256": "24d3175ab8fc8d90747212dafc83a074224435a1aff57018a6e2b00b092dde83"
+  },
+  "base": null,
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-20T14:42:37"
+ },
+ "results": {
+  "ckpt|dclm": {
+   "ce": 4.910369647626679,
+   "windows": 500,
+   "seconds": 514.0,
+   "file": "outputs\\confirm\\c3_freeze_nestor_german_s103\\m4c\\eval_main\\ckpt__dclm.npz"
+  },
+  "ckpt|code": {
+   "ce": 6.700110355616606,
+   "windows": 500,
+   "seconds": 541.1,
+   "file": "outputs\\confirm\\c3_freeze_nestor_german_s103\\m4c\\eval_main\\ckpt__code.npz"
+  },
+  "ckpt|math": {
+   "ce": 5.173340712282509,
+   "windows": 500,
+   "seconds": 526.8,
+   "file": "outputs\\confirm\\c3_freeze_nestor_german_s103\\m4c\\eval_main\\ckpt__math.npz"
+  },
+  "ckpt|german": {
+   "ce": 7.613516041857448,
+   "windows": 500,
+   "seconds": 427.3,
+   "file": "outputs\\confirm\\c3_freeze_nestor_german_s103\\m4c\\eval_main\\ckpt__german.npz"
+  }
+ }
+}

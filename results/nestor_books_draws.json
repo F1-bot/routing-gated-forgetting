@@ -1,0 +1,8168 @@
+{
+ "cell": "nestor|books|code",
+ "code_stream": "code",
+ "entries": [
+  {
+   "A": [
+    [
+     22,
+     60,
+     14,
+     0,
+     23,
+     40,
+     59,
+     11,
+     46,
+     7,
+     43,
+     20,
+     4,
+     31,
+     10,
+     44
+    ],
+    [
+     37,
+     27,
+     6,
+     12,
+     35,
+     8,
+     36,
+     13,
+     53,
+     14,
+     38,
+     3,
+     19,
+     2,
+     39,
+     9
+    ],
+    [
+     54,
+     29,
+     25,
+     13,
+     27,
+     15,
+     10,
+     53,
+     18,
+     1,
+     26,
+     38,
+     52,
+     61,
+     31,
+     9
+    ],
+    [
+     18,
+     22,
+     55,
+     12,
+     53,
+     16,
+     56,
+     19,
+     46,
+     44,
+     23,
+     13,
+     58,
+     3,
+     28,
+     57
+    ],
+    [
+     35,
+     11,
+     10,
+     41,
+     61,
+     46,
+     59,
+     48,
+     18,
+     7,
+     28,
+     24,
+     40,
+     45,
+     50,
+     60
+    ],
+    [
+     52,
+     49,
+     4,
+     44,
+     51,
+     9,
+     46,
+     15,
+     28,
+     43,
+     41,
+     21,
+     8,
+     62,
+     7,
+     30
+    ],
+    [
+     51,
+     43,
+     47,
+     58,
+     28,
+     22,
+     4,
+     24,
+     40,
+     52,
+     14,
+     16,
+     3,
+     13,
+     9,
+     20
+    ],
+    [
+     12,
+     14,
+     63,
+     24,
+     23,
+     32,
+     10,
+     44,
+     39,
+     1,
+     8,
+     21,
+     2,
+     33,
+     48,
+     9
+    ],
+    [
+     26,
+     20,
+     42,
+     27,
+     63,
+     53,
+     38,
+     17,
+     33,
+     51,
+     54,
+     49,
+     22,
+     12,
+     57,
+     43
+    ],
+    [
+     56,
+     54,
+     21,
+     11,
+     41,
+     24,
+     55,
+     1,
+     44,
+     10,
+     58,
+     40,
+     0,
+     48,
+     9,
+     37
+    ],
+    [
+     21,
+     58,
+     33,
+     48,
+     27,
+     51,
+     3,
+     35,
+     11,
+     10,
+     36,
+     26,
+     15,
+     62,
+     9,
+     59
+    ]
+   ],
+   "B": [
+    [
+     49,
+     32,
+     16,
+     25,
+     34,
+     39,
+     26,
+     36,
+     17,
+     35,
+     18,
+     9,
+     29,
+     27,
+     37,
+     55
+    ],
+    [
+     4,
+     41,
+     21,
+     24,
+     1,
+     5,
+     58,
+     49,
+     50,
+     30,
+     57,
+     61,
+     7,
+     47,
+     42,
+     48
+    ],
+    [
+     51,
+     58,
+     12,
+     63,
+     11,
+     30,
+     7,
+     59,
+     8,
+     4,
+     42,
+     2,
+     39,
+     60,
+     57,
+     56
+    ],
+    [
+     39,
+     7,
+     62,
+     38,
+     9,
+     14,
+     2,
+     1,
+     0,
+     63,
+     5,
+     11,
+     33,
+     61,
+     8,
+     26
+    ],
+    [
+     58,
+     12,
+     20,
+     16,
+     21,
+     37,
+     1,
+     34,
+     15,
+     51,
+     14,
+     22,
+     6,
+     3,
+     33,
+     9
+    ],
+    [
+     34,
+     13,
+     14,
+     23,
+     27,
+     29,
+     63,
+     50,
+     48,
+     16,
+     2,
+     19,
+     25,
+     60,
+     61,
+     17
+    ],
+    [
+     2,
+     25,
+     39,
+     63,
+     26,
+     35,
+     46,
+     23,
+     17,
+     37,
+     45,
+     5,
+     60,
+     1,
+     59,
+     29
+    ],
+    [
+     40,
+     6,
+     35,
+     46,
+     55,
+     19,
+     30,
+     47,
+     38,
+     7,
+     41,
+     36,
+     16,
+     3,
+     49,
+     60
+    ],
+    [
+     52,
+     21,
+     40,
+     56,
+     58,
+     36,
+     6,
+     50,
+     30,
+     35,
+     10,
+     1,
+     41,
+     0,
+     28,
+     8
+    ],
+    [
+     17,
+     20,
+     60,
+     31,
+     6,
+     47,
+     39,
+     61,
+     59,
+     12,
+     27,
+     4,
+     43,
+     23,
+     33,
+     45
+    ],
+    [
+     14,
+     31,
+     39,
+     0,
+     34,
+     30,
+     45,
+     61,
+     50,
+     38,
+     55,
+     57,
+     41,
+     29,
+     22,
+     63
+    ]
+   ],
+   "L": 11,
+   "N": 64,
+   "code": "code",
+   "d": 1,
+   "data_seed": 7001,
+   "design": "c1",
+   "excluded_strata": [
+    "priv:b6:l0",
+    "priv:b6:l1"
+   ],
+   "f": 0.3333333333333333,
+   "family": "priv",
+   "generator": {
+    "acceptance": 0.0,
+    "batches": 200,
+    "from_swap": 9,
+    "proposals": 102400,
+    "swap_chains": 10,
+    "swap_converged": 9,
+    "swap_convergence": 0.9,
+    "swap_rounds": 1
+   },
+   "k": 16,
+   "matched_corpora": [
+    "books",
+    "dclm"
+   ],
+   "matched_values": {
+    "books": {
+     "diff": -0.0027307861847609693,
+     "log_RO_A": -1.7439729555287153,
+     "log_RO_B": -1.7412421693439544
+    },
+    "dclm": {
+     "diff": -0.0010673189708507724,
+     "log_RO_A": -1.6571963779797372,
+     "log_RO_B": -1.6561290590088864
+    }
+   },
+   "predicted": {
+    "P": 1.7359029290662547
+   },
+   "q": 0.25,
+   "seed": 5001,
+   "sources": {
+    "books": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__books_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 9872926,
+       "name": "books_eval",
+       "path": "data\\domain\\pg19_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": "doc",
+       "span_tokens": [
+        4960546,
+        9872926
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__books.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 9872926,
+       "name": "books",
+       "path": "data\\domain\\pg19_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": "doc",
+       "span_tokens": [
+        0,
+        4960546
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "code": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__code_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 42160647,
+       "name": "code_eval",
+       "path": "data\\domain\\algstack_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        21080323,
+        42160647
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__code.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 42160647,
+       "name": "code",
+       "path": "data\\domain\\algstack_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        21080323
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "dclm": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__dclm_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 19999909,
+       "name": "dclm_eval",
+       "path": "data\\dclm\\dclm_val.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__dclm.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 19996569,
+       "name": "dclm",
+       "path": "data\\dclm\\dclm_val10.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "french": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__french_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 39038319,
+       "name": "french_eval",
+       "path": "data\\domain\\fr_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        19519159,
+        39038319
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__french.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 39038319,
+       "name": "french",
+       "path": "data\\domain\\fr_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        19519159
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "german": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__german_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 60571959,
+       "name": "german_eval",
+       "path": "data\\domain\\fw2de_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        30285979,
+        60571959
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__german.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 60571959,
+       "name": "german",
+       "path": "data\\domain\\fw2de_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        30285979
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "math": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__math_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 63933458,
+       "name": "math_eval",
+       "path": "data\\domain\\owm_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        31966729,
+        63933458
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__math.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 63933458,
+       "name": "math",
+       "path": "data\\domain\\owm_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        31966729
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "pycode": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__pycode_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 2204757,
+       "name": "pycode_eval",
+       "path": "data\\streams\\pycode_eval.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__pycode.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 4400367,
+       "name": "pycode",
+       "path": "data\\streams\\pycode_route.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 256
+      },
+      "windows": 256
+     }
+    }
+   },
+   "spec_A": {
+    "mode": "train",
+    "select": [
+     {
+      "block": 0,
+      "column": 0,
+      "expert": [
+       0,
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 1,
+      "expert": [
+       2,
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 2,
+      "expert": [
+       4,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 3,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 5,
+      "expert": [
+       0,
+       3,
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 7,
+      "expert": [
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 0,
+      "expert": [
+       2,
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 1,
+      "expert": [
+       0,
+       1,
+       4,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 2,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 3,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 4,
+      "expert": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 6,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 0,
+      "expert": [
+       1
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 1,
+      "expert": [
+       1,
+       2,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 2,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 3,
+      "expert": [
+       1,
+       2,
+       3,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 4,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 6,
+      "expert": [
+       4,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 7,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 0,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 1,
+      "expert": [
+       4,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 2,
+      "expert": [
+       0,
+       2,
+       3,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 3,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 5,
+      "expert": [
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 6,
+      "expert": [
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 7,
+      "expert": [
+       0,
+       1,
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 0,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 1,
+      "expert": [
+       2,
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 2,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 3,
+      "expert": [
+       0,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 4,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 5,
+      "expert": [
+       0,
+       1,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 6,
+      "expert": [
+       0,
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 7,
+      "expert": [
+       3,
+       4,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 0,
+      "expert": [
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 1,
+      "expert": [
+       0,
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 2,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 3,
+      "expert": [
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 5,
+      "expert": [
+       1,
+       3,
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 6,
+      "expert": [
+       1,
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 7,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 0,
+      "expert": [
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 1,
+      "expert": [
+       1,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 2,
+      "expert": [
+       0,
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 3,
+      "expert": [
+       0,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 5,
+      "expert": [
+       0,
+       3,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 6,
+      "expert": [
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 7,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 0,
+      "expert": [
+       1,
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 1,
+      "expert": [
+       0,
+       1,
+       2,
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 2,
+      "expert": [
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 3,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 4,
+      "expert": [
+       0,
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 5,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 6,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 7,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       1,
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       2,
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       1,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       2,
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       1,
+       3,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       0,
+       1
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       1,
+       2,
+       3
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       0,
+       1,
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       0,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       0,
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       1,
+       2,
+       3,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       2,
+       3
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       1,
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       0,
+       3
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       2,
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 2
+     }
+    ]
+   },
+   "spec_B": {
+    "mode": "train",
+    "select": [
+     {
+      "block": 0,
+      "column": 1,
+      "expert": [
+       1
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 2,
+      "expert": [
+       0,
+       1,
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 3,
+      "expert": [
+       1,
+       2,
+       3,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 4,
+      "expert": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 6,
+      "expert": [
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 0,
+      "expert": [
+       1,
+       4,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 2,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 3,
+      "expert": [
+       0,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 5,
+      "expert": [
+       1,
+       2,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 6,
+      "expert": [
+       0,
+       1,
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 7,
+      "expert": [
+       1,
+       2,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 0,
+      "expert": [
+       2,
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 1,
+      "expert": [
+       0,
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 3,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 4,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 5,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 6,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 7,
+      "expert": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 0,
+      "expert": [
+       0,
+       1,
+       2,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 1,
+      "expert": [
+       0,
+       1,
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 3,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 4,
+      "expert": [
+       1,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 7,
+      "expert": [
+       5,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 0,
+      "expert": [
+       1,
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 1,
+      "expert": [
+       1,
+       4,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 2,
+      "expert": [
+       0,
+       4,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 4,
+      "expert": [
+       1,
+       2,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 6,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 7,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 0,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 1,
+      "expert": [
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 2,
+      "expert": [
+       0,
+       1,
+       3,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 3,
+      "expert": [
+       1,
+       3,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 4,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 6,
+      "expert": [
+       0,
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 7,
+      "expert": [
+       4,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 0,
+      "expert": [
+       1,
+       2,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 2,
+      "expert": [
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 3,
+      "expert": [
+       1,
+       2,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 4,
+      "expert": [
+       3,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 5,
+      "expert": [
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 7,
+      "expert": [
+       3,
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 0,
+      "expert": [
+       3,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 2,
+      "expert": [
+       0,
+       3
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 3,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 4,
+      "expert": [
+       3,
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 5,
+      "expert": [
+       0,
+       1,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 6,
+      "expert": [
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 7,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       0,
+       1,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       0,
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       0,
+       1
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       2,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       0,
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       1,
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       3,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       3,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       3,
+       4,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       5,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       2,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       1,
+       5
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       2,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       1,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     }
+    ]
+   },
+   "status": "ok",
+   "strata": [
+    "priv:b0:l0",
+    "priv:b1:l0",
+    "priv:b2:l0",
+    "priv:b2:l1",
+    "priv:b3:l0",
+    "priv:b3:l1",
+    "priv:b4:l0",
+    "priv:b4:l1",
+    "priv:b5:l0",
+    "priv:b5:l1",
+    "priv:b5:l2"
+   ],
+   "subsets": {
+    "A": [
+     "priv:b0:l0:c2:e6",
+     "priv:b0:l0:c7:e4",
+     "priv:b0:l0:c1:e6",
+     "priv:b0:l0:c0:e0",
+     "priv:b0:l0:c2:e7",
+     "priv:b0:l0:c5:e0",
+     "priv:b0:l0:c7:e3",
+     "priv:b0:l0:c1:e3",
+     "priv:b0:l0:c5:e6",
+     "priv:b0:l0:c0:e7",
+     "priv:b0:l0:c5:e3",
+     "priv:b0:l0:c2:e4",
+     "priv:b0:l0:c0:e4",
+     "priv:b0:l0:c3:e7",
+     "priv:b0:l0:c1:e2",
+     "priv:b0:l0:c5:e4",
+     "priv:b1:l0:c4:e5",
+     "priv:b1:l0:c3:e3",
+     "priv:b1:l0:c0:e6",
+     "priv:b1:l0:c1:e4",
+     "priv:b1:l0:c4:e3",
+     "priv:b1:l0:c1:e0",
+     "priv:b1:l0:c4:e4",
+     "priv:b1:l0:c1:e5",
+     "priv:b1:l0:c6:e5",
+     "priv:b1:l0:c1:e6",
+     "priv:b1:l0:c4:e6",
+     "priv:b1:l0:c0:e3",
+     "priv:b1:l0:c2:e3",
+     "priv:b1:l0:c0:e2",
+     "priv:b1:l0:c4:e7",
+     "priv:b1:l0:c1:e1",
+     "priv:b2:l0:c6:e6",
+     "priv:b2:l0:c3:e5",
+     "priv:b2:l0:c3:e1",
+     "priv:b2:l0:c1:e5",
+     "priv:b2:l0:c3:e3",
+     "priv:b2:l0:c1:e7",
+     "priv:b2:l0:c1:e2",
+     "priv:b2:l0:c6:e5",
+     "priv:b2:l0:c2:e2",
+     "priv:b2:l0:c0:e1",
+     "priv:b2:l0:c3:e2",
+     "priv:b2:l0:c4:e6",
+     "priv:b2:l0:c6:e4",
+     "priv:b2:l0:c7:e5",
+     "priv:b2:l0:c3:e7",
+     "priv:b2:l0:c1:e1",
+     "priv:b2:l1:c2:e2",
+     "priv:b2:l1:c2:e6",
+     "priv:b2:l1:c6:e7",
+     "priv:b2:l1:c1:e4",
+     "priv:b2:l1:c6:e5",
+     "priv:b2:l1:c2:e0",
+     "priv:b2:l1:c7:e0",
+     "priv:b2:l1:c2:e3",
+     "priv:b2:l1:c5:e6",
+     "priv:b2:l1:c5:e4",
+     "priv:b2:l1:c2:e7",
+     "priv:b2:l1:c1:e5",
+     "priv:b2:l1:c7:e2",
+     "priv:b2:l1:c0:e3",
+     "priv:b2:l1:c3:e4",
+     "priv:b2:l1:c7:e1",
+     "priv:b3:l0:c4:e3",
+     "priv:b3:l0:c1:e3",
+     "priv:b3:l0:c1:e2",
+     "priv:b3:l0:c5:e1",
+     "priv:b3:l0:c7:e5",
+     "priv:b3:l0:c5:e6",
+     "priv:b3:l0:c7:e3",
+     "priv:b3:l0:c6:e0",
+     "priv:b3:l0:c2:e2",
+     "priv:b3:l0:c0:e7",
+     "priv:b3:l0:c3:e4",
+     "priv:b3:l0:c3:e0",
+     "priv:b3:l0:c5:e0",
+     "priv:b3:l0:c5:e5",
+     "priv:b3:l0:c6:e2",
+     "priv:b3:l0:c7:e4",
+     "priv:b3:l1:c6:e4",
+     "priv:b3:l1:c6:e1",
+     "priv:b3:l1:c0:e4",
+     "priv:b3:l1:c5:e4",
+     "priv:b3:l1:c6:e3",
+     "priv:b3:l1:c1:e1",
+     "priv:b3:l1:c5:e6",
+     "priv:b3:l1:c1:e7",
+     "priv:b3:l1:c3:e4",
+     "priv:b3:l1:c5:e3",
+     "priv:b3:l1:c5:e1",
+     "priv:b3:l1:c2:e5",
+     "priv:b3:l1:c1:e0",
+     "priv:b3:l1:c7:e6",
+     "priv:b3:l1:c0:e7",
+     "priv:b3:l1:c3:e6",
+     "priv:b4:l0:c6:e3",
+     "priv:b4:l0:c5:e3",
+     "priv:b4:l0:c5:e7",
+     "priv:b4:l0:c7:e2",
+     "priv:b4:l0:c3:e4",
+     "priv:b4:l0:c2:e6",
+     "priv:b4:l0:c0:e4",
+     "priv:b4:l0:c3:e0",
+     "priv:b4:l0:c5:e0",
+     "priv:b4:l0:c6:e4",
+     "priv:b4:l0:c1:e6",
+     "priv:b4:l0:c2:e0",
+     "priv:b4:l0:c0:e3",
+     "priv:b4:l0:c1:e5",
+     "priv:b4:l0:c1:e1",
+     "priv:b4:l0:c2:e4",
+     "priv:b4:l1:c1:e4",
+     "priv:b4:l1:c1:e6",
+     "priv:b4:l1:c7:e7",
+     "priv:b4:l1:c3:e0",
+     "priv:b4:l1:c2:e7",
+     "priv:b4:l1:c4:e0",
+     "priv:b4:l1:c1:e2",
+     "priv:b4:l1:c5:e4",
+     "priv:b4:l1:c4:e7",
+     "priv:b4:l1:c0:e1",
+     "priv:b4:l1:c1:e0",
+     "priv:b4:l1:c2:e5",
+     "priv:b4:l1:c0:e2",
+     "priv:b4:l1:c4:e1",
+     "priv:b4:l1:c6:e0",
+     "priv:b4:l1:c1:e1",
+     "priv:b5:l0:c3:e2",
+     "priv:b5:l0:c2:e4",
+     "priv:b5:l0:c5:e2",
+     "priv:b5:l0:c3:e3",
+     "priv:b5:l0:c7:e7",
+     "priv:b5:l0:c6:e5",
+     "priv:b5:l0:c4:e6",
+     "priv:b5:l0:c2:e1",
+     "priv:b5:l0:c4:e1",
+     "priv:b5:l0:c6:e3",
+     "priv:b5:l0:c6:e6",
+     "priv:b5:l0:c6:e1",
+     "priv:b5:l0:c2:e6",
+     "priv:b5:l0:c1:e4",
+     "priv:b5:l0:c7:e1",
+     "priv:b5:l0:c5:e3",
+     "priv:b5:l1:c7:e0",
+     "priv:b5:l1:c6:e6",
+     "priv:b5:l1:c2:e5",
+     "priv:b5:l1:c1:e3",
+     "priv:b5:l1:c5:e1",
+     "priv:b5:l1:c3:e0",
+     "priv:b5:l1:c6:e7",
+     "priv:b5:l1:c0:e1",
+     "priv:b5:l1:c5:e4",
+     "priv:b5:l1:c1:e2",
+     "priv:b5:l1:c7:e2",
+     "priv:b5:l1:c5:e0",
+     "priv:b5:l1:c0:e0",
+     "priv:b5:l1:c6:e0",
+     "priv:b5:l1:c1:e1",
+     "priv:b5:l1:c4:e5",
+     "priv:b5:l2:c2:e5",
+     "priv:b5:l2:c7:e2",
+     "priv:b5:l2:c4:e1",
+     "priv:b5:l2:c6:e0",
+     "priv:b5:l2:c3:e3",
+     "priv:b5:l2:c6:e3",
+     "priv:b5:l2:c0:e3",
+     "priv:b5:l2:c4:e3",
+     "priv:b5:l2:c1:e3",
+     "priv:b5:l2:c1:e2",
+     "priv:b5:l2:c4:e4",
+     "priv:b5:l2:c3:e2",
+     "priv:b5:l2:c1:e7",
+     "priv:b5:l2:c7:e6",
+     "priv:b5:l2:c1:e1",
+     "priv:b5:l2:c7:e3"
+    ],
+    "B": [
+     "priv:b0:l0:c6:e1",
+     "priv:b0:l0:c4:e0",
+     "priv:b0:l0:c2:e0",
+     "priv:b0:l0:c3:e1",
+     "priv:b0:l0:c4:e2",
+     "priv:b0:l0:c4:e7",
+     "priv:b0:l0:c3:e2",
+     "priv:b0:l0:c4:e4",
+     "priv:b0:l0:c2:e1",
+     "priv:b0:l0:c4:e3",
+     "priv:b0:l0:c2:e2",
+     "priv:b0:l0:c1:e1",
+     "priv:b0:l0:c3:e5",
+     "priv:b0:l0:c3:e3",
+     "priv:b0:l0:c4:e5",
+     "priv:b0:l0:c6:e7",
+     "priv:b1:l0:c0:e4",
+     "priv:b1:l0:c5:e1",
+     "priv:b1:l0:c2:e5",
+     "priv:b1:l0:c3:e0",
+     "priv:b1:l0:c0:e1",
+     "priv:b1:l0:c0:e5",
+     "priv:b1:l0:c7:e2",
+     "priv:b1:l0:c6:e1",
+     "priv:b1:l0:c6:e2",
+     "priv:b1:l0:c3:e6",
+     "priv:b1:l0:c7:e1",
+     "priv:b1:l0:c7:e5",
+     "priv:b1:l0:c0:e7",
+     "priv:b1:l0:c5:e7",
+     "priv:b1:l0:c5:e2",
+     "priv:b1:l0:c6:e0",
+     "priv:b2:l0:c6:e3",
+     "priv:b2:l0:c7:e2",
+     "priv:b2:l0:c1:e4",
+     "priv:b2:l0:c7:e7",
+     "priv:b2:l0:c1:e3",
+     "priv:b2:l0:c3:e6",
+     "priv:b2:l0:c0:e7",
+     "priv:b2:l0:c7:e3",
+     "priv:b2:l0:c1:e0",
+     "priv:b2:l0:c0:e4",
+     "priv:b2:l0:c5:e2",
+     "priv:b2:l0:c0:e2",
+     "priv:b2:l0:c4:e7",
+     "priv:b2:l0:c7:e4",
+     "priv:b2:l0:c7:e1",
+     "priv:b2:l0:c7:e0",
+     "priv:b2:l1:c4:e7",
+     "priv:b2:l1:c0:e7",
+     "priv:b2:l1:c7:e6",
+     "priv:b2:l1:c4:e6",
+     "priv:b2:l1:c1:e1",
+     "priv:b2:l1:c1:e6",
+     "priv:b2:l1:c0:e2",
+     "priv:b2:l1:c0:e1",
+     "priv:b2:l1:c0:e0",
+     "priv:b2:l1:c7:e7",
+     "priv:b2:l1:c0:e5",
+     "priv:b2:l1:c1:e3",
+     "priv:b2:l1:c4:e1",
+     "priv:b2:l1:c7:e5",
+     "priv:b2:l1:c1:e0",
+     "priv:b2:l1:c3:e2",
+     "priv:b3:l0:c7:e2",
+     "priv:b3:l0:c1:e4",
+     "priv:b3:l0:c2:e4",
+     "priv:b3:l0:c2:e0",
+     "priv:b3:l0:c2:e5",
+     "priv:b3:l0:c4:e5",
+     "priv:b3:l0:c0:e1",
+     "priv:b3:l0:c4:e2",
+     "priv:b3:l0:c1:e7",
+     "priv:b3:l0:c6:e3",
+     "priv:b3:l0:c1:e6",
+     "priv:b3:l0:c2:e6",
+     "priv:b3:l0:c0:e6",
+     "priv:b3:l0:c0:e3",
+     "priv:b3:l0:c4:e1",
+     "priv:b3:l0:c1:e1",
+     "priv:b3:l1:c4:e2",
+     "priv:b3:l1:c1:e5",
+     "priv:b3:l1:c1:e6",
+     "priv:b3:l1:c2:e7",
+     "priv:b3:l1:c3:e3",
+     "priv:b3:l1:c3:e5",
+     "priv:b3:l1:c7:e7",
+     "priv:b3:l1:c6:e2",
+     "priv:b3:l1:c6:e0",
+     "priv:b3:l1:c2:e0",
+     "priv:b3:l1:c0:e2",
+     "priv:b3:l1:c2:e3",
+     "priv:b3:l1:c3:e1",
+     "priv:b3:l1:c7:e4",
+     "priv:b3:l1:c7:e5",
+     "priv:b3:l1:c2:e1",
+     "priv:b4:l0:c0:e2",
+     "priv:b4:l0:c3:e1",
+     "priv:b4:l0:c4:e7",
+     "priv:b4:l0:c7:e7",
+     "priv:b4:l0:c3:e2",
+     "priv:b4:l0:c4:e3",
+     "priv:b4:l0:c5:e6",
+     "priv:b4:l0:c2:e7",
+     "priv:b4:l0:c2:e1",
+     "priv:b4:l0:c4:e5",
+     "priv:b4:l0:c5:e5",
+     "priv:b4:l0:c0:e5",
+     "priv:b4:l0:c7:e4",
+     "priv:b4:l0:c0:e1",
+     "priv:b4:l0:c7:e3",
+     "priv:b4:l0:c3:e5",
+     "priv:b4:l1:c5:e0",
+     "priv:b4:l1:c0:e6",
+     "priv:b4:l1:c4:e3",
+     "priv:b4:l1:c5:e6",
+     "priv:b4:l1:c6:e7",
+     "priv:b4:l1:c2:e3",
+     "priv:b4:l1:c3:e6",
+     "priv:b4:l1:c5:e7",
+     "priv:b4:l1:c4:e6",
+     "priv:b4:l1:c0:e7",
+     "priv:b4:l1:c5:e1",
+     "priv:b4:l1:c4:e4",
+     "priv:b4:l1:c2:e0",
+     "priv:b4:l1:c0:e3",
+     "priv:b4:l1:c6:e1",
+     "priv:b4:l1:c7:e4",
+     "priv:b5:l0:c6:e4",
+     "priv:b5:l0:c2:e5",
+     "priv:b5:l0:c5:e0",
+     "priv:b5:l0:c7:e0",
+     "priv:b5:l0:c7:e2",
+     "priv:b5:l0:c4:e4",
+     "priv:b5:l0:c0:e6",
+     "priv:b5:l0:c6:e2",
+     "priv:b5:l0:c3:e6",
+     "priv:b5:l0:c4:e3",
+     "priv:b5:l0:c1:e2",
+     "priv:b5:l0:c0:e1",
+     "priv:b5:l0:c5:e1",
+     "priv:b5:l0:c0:e0",
+     "priv:b5:l0:c3:e4",
+     "priv:b5:l0:c1:e0",
+     "priv:b5:l1:c2:e1",
+     "priv:b5:l1:c2:e4",
+     "priv:b5:l1:c7:e4",
+     "priv:b5:l1:c3:e7",
+     "priv:b5:l1:c0:e6",
+     "priv:b5:l1:c5:e7",
+     "priv:b5:l1:c4:e7",
+     "priv:b5:l1:c7:e5",
+     "priv:b5:l1:c7:e3",
+     "priv:b5:l1:c1:e4",
+     "priv:b5:l1:c3:e3",
+     "priv:b5:l1:c0:e4",
+     "priv:b5:l1:c5:e3",
+     "priv:b5:l1:c2:e7",
+     "priv:b5:l1:c4:e1",
+     "priv:b5:l1:c5:e5",
+     "priv:b5:l2:c1:e6",
+     "priv:b5:l2:c3:e7",
+     "priv:b5:l2:c4:e7",
+     "priv:b5:l2:c0:e0",
+     "priv:b5:l2:c4:e2",
+     "priv:b5:l2:c3:e6",
+     "priv:b5:l2:c5:e5",
+     "priv:b5:l2:c7:e5",
+     "priv:b5:l2:c6:e2",
+     "priv:b5:l2:c4:e6",
+     "priv:b5:l2:c6:e7",
+     "priv:b5:l2:c7:e1",
+     "priv:b5:l2:c5:e1",
+     "priv:b5:l2:c3:e5",
+     "priv:b5:l2:c2:e6",
+     "priv:b5:l2:c7:e7"
+    ]
+   },
+   "target": "books",
+   "tol": 0.04879016416943204
+  },
+  {
+   "A": [
+    [
+     53,
+     10,
+     60,
+     7,
+     11,
+     44,
+     40,
+     23,
+     46,
+     20,
+     50,
+     0,
+     22,
+     57,
+     4,
+     43
+    ],
+    [
+     44,
+     38,
+     35,
+     39,
+     12,
+     2,
+     14,
+     37,
+     33,
+     3,
+     31,
+     6,
+     23,
+     8,
+     53,
+     13
+    ],
+    [
+     61,
+     18,
+     50,
+     55,
+     31,
+     53,
+     10,
+     29,
+     27,
+     15,
+     38,
+     1,
+     52,
+     9,
+     13,
+     35
+    ],
+    [
+     3,
+     35,
+     60,
+     18,
+     12,
+     16,
+     58,
+     19,
+     45,
+     44,
+     23,
+     46,
+     22,
+     53,
+     28,
+     49
+    ],
+    [
+     39,
+     13,
+     35,
+     7,
+     48,
+     41,
+     46,
+     45,
+     59,
+     60,
+     24,
+     18,
+     40,
+     10,
+     50,
+     11
+    ],
+    [
+     15,
+     62,
+     7,
+     21,
+     43,
+     41,
+     55,
+     42,
+     30,
+     4,
+     9,
+     51,
+     8,
+     59,
+     46,
+     44
+    ],
+    [
+     9,
+     28,
+     51,
+     18,
+     3,
+     43,
+     58,
+     13,
+     16,
+     52,
+     27,
+     20,
+     24,
+     50,
+     14,
+     22
+    ],
+    [
+     39,
+     2,
+     63,
+     48,
+     33,
+     14,
+     31,
+     13,
+     44,
+     9,
+     23,
+     56,
+     8,
+     1,
+     21,
+     10
+    ],
+    [
+     20,
+     14,
+     38,
+     27,
+     32,
+     49,
+     22,
+     26,
+     51,
+     63,
+     42,
+     53,
+     33,
+     7,
+     12,
+     57
+    ],
+    [
+     54,
+     5,
+     22,
+     9,
+     24,
+     56,
+     1,
+     21,
+     11,
+     58,
+     37,
+     48,
+     29,
+     41,
+     40,
+     44
+    ],
+    [
+     11,
+     21,
+     10,
+     9,
+     48,
+     18,
+     59,
+     27,
+     35,
+     33,
+     15,
+     51,
+     58,
+     3,
+     36,
+     62
+    ]
+   ],
+   "B": [
+    [
+     32,
+     35,
+     34,
+     61,
+     39,
+     19,
+     9,
+     16,
+     49,
+     26,
+     27,
+     29,
+     36,
+     37,
+     55,
+     30
+    ],
+    [
+     41,
+     47,
+     30,
+     5,
+     48,
+     24,
+     49,
+     0,
+     1,
+     21,
+     42,
+     61,
+     55,
+     57,
+     58,
+     32
+    ],
+    [
+     16,
+     56,
+     63,
+     62,
+     8,
+     11,
+     30,
+     12,
+     36,
+     7,
+     58,
+     4,
+     57,
+     22,
+     60,
+     39
+    ],
+    [
+     11,
+     0,
+     32,
+     33,
+     34,
+     61,
+     47,
+     9,
+     8,
+     1,
+     62,
+     38,
+     2,
+     48,
+     63,
+     14
+    ],
+    [
+     20,
+     58,
+     9,
+     1,
+     31,
+     16,
+     47,
+     37,
+     22,
+     34,
+     17,
+     6,
+     33,
+     26,
+     14,
+     21
+    ],
+    [
+     32,
+     48,
+     61,
+     25,
+     0,
+     13,
+     27,
+     23,
+     17,
+     19,
+     38,
+     14,
+     50,
+     2,
+     60,
+     29
+    ],
+    [
+     59,
+     29,
+     17,
+     45,
+     2,
+     23,
+     5,
+     25,
+     37,
+     60,
+     1,
+     35,
+     63,
+     54,
+     39,
+     46
+    ],
+    [
+     3,
+     35,
+     49,
+     46,
+     30,
+     47,
+     38,
+     0,
+     28,
+     55,
+     40,
+     16,
+     7,
+     60,
+     41,
+     4
+    ],
+    [
+     1,
+     23,
+     35,
+     41,
+     21,
+     56,
+     5,
+     52,
+     40,
+     6,
+     59,
+     30,
+     0,
+     36,
+     50,
+     58
+    ],
+    [
+     27,
+     6,
+     45,
+     50,
+     12,
+     60,
+     31,
+     23,
+     61,
+     13,
+     59,
+     43,
+     33,
+     39,
+     47,
+     17
+    ],
+    [
+     61,
+     39,
+     40,
+     29,
+     34,
+     63,
+     44,
+     22,
+     54,
+     55,
+     23,
+     31,
+     41,
+     14,
+     0,
+     45
+    ]
+   ],
+   "L": 11,
+   "N": 64,
+   "code": "code",
+   "d": 2,
+   "data_seed": 7002,
+   "design": "c1",
+   "excluded_strata": [
+    "priv:b6:l0",
+    "priv:b6:l1"
+   ],
+   "f": 0.3333333333333333,
+   "family": "priv",
+   "generator": {
+    "acceptance": 0.0,
+    "batches": 200,
+    "from_swap": 10,
+    "proposals": 102400,
+    "swap_chains": 10,
+    "swap_converged": 10,
+    "swap_convergence": 1.0,
+    "swap_rounds": 1
+   },
+   "k": 16,
+   "matched_corpora": [
+    "books",
+    "dclm"
+   ],
+   "matched_values": {
+    "books": {
+     "diff": 0.029493816445581578,
+     "log_RO_A": -1.6894725648798925,
+     "log_RO_B": -1.718966381325474
+    },
+    "dclm": {
+     "diff": 0.038233966637670314,
+     "log_RO_A": -1.6290032452598946,
+     "log_RO_B": -1.667237211897565
+    }
+   },
+   "predicted": {
+    "P": 1.6787868538120854
+   },
+   "q": 0.25,
+   "seed": 5002,
+   "sources": {
+    "books": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__books_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 9872926,
+       "name": "books_eval",
+       "path": "data\\domain\\pg19_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": "doc",
+       "span_tokens": [
+        4960546,
+        9872926
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__books.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 9872926,
+       "name": "books",
+       "path": "data\\domain\\pg19_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": "doc",
+       "span_tokens": [
+        0,
+        4960546
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "code": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__code_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 42160647,
+       "name": "code_eval",
+       "path": "data\\domain\\algstack_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        21080323,
+        42160647
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__code.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 42160647,
+       "name": "code",
+       "path": "data\\domain\\algstack_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        21080323
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "dclm": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__dclm_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 19999909,
+       "name": "dclm_eval",
+       "path": "data\\dclm\\dclm_val.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__dclm.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 19996569,
+       "name": "dclm",
+       "path": "data\\dclm\\dclm_val10.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "french": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__french_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 39038319,
+       "name": "french_eval",
+       "path": "data\\domain\\fr_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        19519159,
+        39038319
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__french.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 39038319,
+       "name": "french",
+       "path": "data\\domain\\fr_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        19519159
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "german": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__german_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 60571959,
+       "name": "german_eval",
+       "path": "data\\domain\\fw2de_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        30285979,
+        60571959
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__german.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 60571959,
+       "name": "german",
+       "path": "data\\domain\\fw2de_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        30285979
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "math": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__math_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 63933458,
+       "name": "math_eval",
+       "path": "data\\domain\\owm_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        31966729,
+        63933458
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__math.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 63933458,
+       "name": "math",
+       "path": "data\\domain\\owm_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        31966729
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "pycode": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__pycode_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 2204757,
+       "name": "pycode_eval",
+       "path": "data\\streams\\pycode_eval.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__pycode.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 4400367,
+       "name": "pycode",
+       "path": "data\\streams\\pycode_route.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 256
+      },
+      "windows": 256
+     }
+    }
+   },
+   "spec_A": {
+    "mode": "train",
+    "select": [
+     {
+      "block": 0,
+      "column": 0,
+      "expert": [
+       0,
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 1,
+      "expert": [
+       2,
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 2,
+      "expert": [
+       4,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 5,
+      "expert": [
+       0,
+       3,
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 6,
+      "expert": [
+       2,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 7,
+      "expert": [
+       1,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 0,
+      "expert": [
+       2,
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 1,
+      "expert": [
+       0,
+       4,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 2,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 3,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 4,
+      "expert": [
+       1,
+       3,
+       5,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 5,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 6,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 0,
+      "expert": [
+       1
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 1,
+      "expert": [
+       1,
+       2,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 2,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 3,
+      "expert": [
+       3,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 4,
+      "expert": [
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 6,
+      "expert": [
+       2,
+       4,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 7,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 0,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 1,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 2,
+      "expert": [
+       0,
+       2,
+       3,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 3,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 4,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 5,
+      "expert": [
+       4,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 6,
+      "expert": [
+       1,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 7,
+      "expert": [
+       2,
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 0,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 1,
+      "expert": [
+       2,
+       3,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 2,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 3,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 4,
+      "expert": [
+       3,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 5,
+      "expert": [
+       0,
+       1,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 6,
+      "expert": [
+       0,
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 7,
+      "expert": [
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 0,
+      "expert": [
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 1,
+      "expert": [
+       0,
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 2,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 3,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 5,
+      "expert": [
+       1,
+       2,
+       3,
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 6,
+      "expert": [
+       3,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 7,
+      "expert": [
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 0,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 1,
+      "expert": [
+       1,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 2,
+      "expert": [
+       0,
+       2,
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 3,
+      "expert": [
+       0,
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 5,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 6,
+      "expert": [
+       2,
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 7,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 0,
+      "expert": [
+       1,
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 1,
+      "expert": [
+       0,
+       1,
+       2,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 2,
+      "expert": [
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 3,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 4,
+      "expert": [
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 5,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 6,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 7,
+      "expert": [
+       0,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       2,
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       0,
+       1,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       1,
+       3,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       1,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       1,
+       3
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       0,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       0,
+       1,
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       0,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       0,
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       1,
+       2,
+       3,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       2,
+       5
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       1,
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       0,
+       3
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       2,
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 2
+     }
+    ]
+   },
+   "spec_B": {
+    "mode": "train",
+    "select": [
+     {
+      "block": 0,
+      "column": 1,
+      "expert": [
+       1
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 2,
+      "expert": [
+       0,
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 3,
+      "expert": [
+       2,
+       3,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 4,
+      "expert": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 6,
+      "expert": [
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 7,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 0,
+      "expert": [
+       0,
+       1,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 2,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 3,
+      "expert": [
+       0,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 4,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 5,
+      "expert": [
+       1,
+       2,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 6,
+      "expert": [
+       0,
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 7,
+      "expert": [
+       1,
+       2,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 0,
+      "expert": [
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 1,
+      "expert": [
+       0,
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 2,
+      "expert": [
+       0,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 3,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 4,
+      "expert": [
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 7,
+      "expert": [
+       0,
+       1,
+       2,
+       4,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 0,
+      "expert": [
+       0,
+       1,
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 1,
+      "expert": [
+       0,
+       1,
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 4,
+      "expert": [
+       0,
+       1,
+       2,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 5,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 6,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 7,
+      "expert": [
+       5,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 0,
+      "expert": [
+       1,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 1,
+      "expert": [
+       1,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 2,
+      "expert": [
+       0,
+       1,
+       4,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 3,
+      "expert": [
+       2,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 4,
+      "expert": [
+       1,
+       2,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 5,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 7,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 0,
+      "expert": [
+       0,
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 1,
+      "expert": [
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 2,
+      "expert": [
+       1,
+       3,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 3,
+      "expert": [
+       1,
+       3,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 4,
+      "expert": [
+       0,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 6,
+      "expert": [
+       0,
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 7,
+      "expert": [
+       4,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 0,
+      "expert": [
+       1,
+       2,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 2,
+      "expert": [
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 3,
+      "expert": [
+       1,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 4,
+      "expert": [
+       3,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 5,
+      "expert": [
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 6,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 7,
+      "expert": [
+       3,
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 0,
+      "expert": [
+       0,
+       3,
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 2,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 3,
+      "expert": [
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 4,
+      "expert": [
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 5,
+      "expert": [
+       0,
+       1,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 6,
+      "expert": [
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 7,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       0,
+       1,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       0,
+       1
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       2,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       0,
+       2,
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       4,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       3,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       3,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       3,
+       4,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       2,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       0,
+       1,
+       4,
+       5
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     }
+    ]
+   },
+   "status": "ok",
+   "strata": [
+    "priv:b0:l0",
+    "priv:b1:l0",
+    "priv:b2:l0",
+    "priv:b2:l1",
+    "priv:b3:l0",
+    "priv:b3:l1",
+    "priv:b4:l0",
+    "priv:b4:l1",
+    "priv:b5:l0",
+    "priv:b5:l1",
+    "priv:b5:l2"
+   ],
+   "subsets": {
+    "A": [
+     "priv:b0:l0:c6:e5",
+     "priv:b0:l0:c1:e2",
+     "priv:b0:l0:c7:e4",
+     "priv:b0:l0:c0:e7",
+     "priv:b0:l0:c1:e3",
+     "priv:b0:l0:c5:e4",
+     "priv:b0:l0:c5:e0",
+     "priv:b0:l0:c2:e7",
+     "priv:b0:l0:c5:e6",
+     "priv:b0:l0:c2:e4",
+     "priv:b0:l0:c6:e2",
+     "priv:b0:l0:c0:e0",
+     "priv:b0:l0:c2:e6",
+     "priv:b0:l0:c7:e1",
+     "priv:b0:l0:c0:e4",
+     "priv:b0:l0:c5:e3",
+     "priv:b1:l0:c5:e4",
+     "priv:b1:l0:c4:e6",
+     "priv:b1:l0:c4:e3",
+     "priv:b1:l0:c4:e7",
+     "priv:b1:l0:c1:e4",
+     "priv:b1:l0:c0:e2",
+     "priv:b1:l0:c1:e6",
+     "priv:b1:l0:c4:e5",
+     "priv:b1:l0:c4:e1",
+     "priv:b1:l0:c0:e3",
+     "priv:b1:l0:c3:e7",
+     "priv:b1:l0:c0:e6",
+     "priv:b1:l0:c2:e7",
+     "priv:b1:l0:c1:e0",
+     "priv:b1:l0:c6:e5",
+     "priv:b1:l0:c1:e5",
+     "priv:b2:l0:c7:e5",
+     "priv:b2:l0:c2:e2",
+     "priv:b2:l0:c6:e2",
+     "priv:b2:l0:c6:e7",
+     "priv:b2:l0:c3:e7",
+     "priv:b2:l0:c6:e5",
+     "priv:b2:l0:c1:e2",
+     "priv:b2:l0:c3:e5",
+     "priv:b2:l0:c3:e3",
+     "priv:b2:l0:c1:e7",
+     "priv:b2:l0:c4:e6",
+     "priv:b2:l0:c0:e1",
+     "priv:b2:l0:c6:e4",
+     "priv:b2:l0:c1:e1",
+     "priv:b2:l0:c1:e5",
+     "priv:b2:l0:c4:e3",
+     "priv:b2:l1:c0:e3",
+     "priv:b2:l1:c4:e3",
+     "priv:b2:l1:c7:e4",
+     "priv:b2:l1:c2:e2",
+     "priv:b2:l1:c1:e4",
+     "priv:b2:l1:c2:e0",
+     "priv:b2:l1:c7:e2",
+     "priv:b2:l1:c2:e3",
+     "priv:b2:l1:c5:e5",
+     "priv:b2:l1:c5:e4",
+     "priv:b2:l1:c2:e7",
+     "priv:b2:l1:c5:e6",
+     "priv:b2:l1:c2:e6",
+     "priv:b2:l1:c6:e5",
+     "priv:b2:l1:c3:e4",
+     "priv:b2:l1:c6:e1",
+     "priv:b3:l0:c4:e7",
+     "priv:b3:l0:c1:e5",
+     "priv:b3:l0:c4:e3",
+     "priv:b3:l0:c0:e7",
+     "priv:b3:l0:c6:e0",
+     "priv:b3:l0:c5:e1",
+     "priv:b3:l0:c5:e6",
+     "priv:b3:l0:c5:e5",
+     "priv:b3:l0:c7:e3",
+     "priv:b3:l0:c7:e4",
+     "priv:b3:l0:c3:e0",
+     "priv:b3:l0:c2:e2",
+     "priv:b3:l0:c5:e0",
+     "priv:b3:l0:c1:e2",
+     "priv:b3:l0:c6:e2",
+     "priv:b3:l0:c1:e3",
+     "priv:b3:l1:c1:e7",
+     "priv:b3:l1:c7:e6",
+     "priv:b3:l1:c0:e7",
+     "priv:b3:l1:c2:e5",
+     "priv:b3:l1:c5:e3",
+     "priv:b3:l1:c5:e1",
+     "priv:b3:l1:c6:e7",
+     "priv:b3:l1:c5:e2",
+     "priv:b3:l1:c3:e6",
+     "priv:b3:l1:c0:e4",
+     "priv:b3:l1:c1:e1",
+     "priv:b3:l1:c6:e3",
+     "priv:b3:l1:c1:e0",
+     "priv:b3:l1:c7:e3",
+     "priv:b3:l1:c5:e6",
+     "priv:b3:l1:c5:e4",
+     "priv:b4:l0:c1:e1",
+     "priv:b4:l0:c3:e4",
+     "priv:b4:l0:c6:e3",
+     "priv:b4:l0:c2:e2",
+     "priv:b4:l0:c0:e3",
+     "priv:b4:l0:c5:e3",
+     "priv:b4:l0:c7:e2",
+     "priv:b4:l0:c1:e5",
+     "priv:b4:l0:c2:e0",
+     "priv:b4:l0:c6:e4",
+     "priv:b4:l0:c3:e3",
+     "priv:b4:l0:c2:e4",
+     "priv:b4:l0:c3:e0",
+     "priv:b4:l0:c6:e2",
+     "priv:b4:l0:c1:e6",
+     "priv:b4:l0:c2:e6",
+     "priv:b4:l1:c4:e7",
+     "priv:b4:l1:c0:e2",
+     "priv:b4:l1:c7:e7",
+     "priv:b4:l1:c6:e0",
+     "priv:b4:l1:c4:e1",
+     "priv:b4:l1:c1:e6",
+     "priv:b4:l1:c3:e7",
+     "priv:b4:l1:c1:e5",
+     "priv:b4:l1:c5:e4",
+     "priv:b4:l1:c1:e1",
+     "priv:b4:l1:c2:e7",
+     "priv:b4:l1:c7:e0",
+     "priv:b4:l1:c1:e0",
+     "priv:b4:l1:c0:e1",
+     "priv:b4:l1:c2:e5",
+     "priv:b4:l1:c1:e2",
+     "priv:b5:l0:c2:e4",
+     "priv:b5:l0:c1:e6",
+     "priv:b5:l0:c4:e6",
+     "priv:b5:l0:c3:e3",
+     "priv:b5:l0:c4:e0",
+     "priv:b5:l0:c6:e1",
+     "priv:b5:l0:c2:e6",
+     "priv:b5:l0:c3:e2",
+     "priv:b5:l0:c6:e3",
+     "priv:b5:l0:c7:e7",
+     "priv:b5:l0:c5:e2",
+     "priv:b5:l0:c6:e5",
+     "priv:b5:l0:c4:e1",
+     "priv:b5:l0:c0:e7",
+     "priv:b5:l0:c1:e4",
+     "priv:b5:l0:c7:e1",
+     "priv:b5:l1:c6:e6",
+     "priv:b5:l1:c0:e5",
+     "priv:b5:l1:c2:e6",
+     "priv:b5:l1:c1:e1",
+     "priv:b5:l1:c3:e0",
+     "priv:b5:l1:c7:e0",
+     "priv:b5:l1:c0:e1",
+     "priv:b5:l1:c2:e5",
+     "priv:b5:l1:c1:e3",
+     "priv:b5:l1:c7:e2",
+     "priv:b5:l1:c4:e5",
+     "priv:b5:l1:c6:e0",
+     "priv:b5:l1:c3:e5",
+     "priv:b5:l1:c5:e1",
+     "priv:b5:l1:c5:e0",
+     "priv:b5:l1:c5:e4",
+     "priv:b5:l2:c1:e3",
+     "priv:b5:l2:c2:e5",
+     "priv:b5:l2:c1:e2",
+     "priv:b5:l2:c1:e1",
+     "priv:b5:l2:c6:e0",
+     "priv:b5:l2:c2:e2",
+     "priv:b5:l2:c7:e3",
+     "priv:b5:l2:c3:e3",
+     "priv:b5:l2:c4:e3",
+     "priv:b5:l2:c4:e1",
+     "priv:b5:l2:c1:e7",
+     "priv:b5:l2:c6:e3",
+     "priv:b5:l2:c7:e2",
+     "priv:b5:l2:c0:e3",
+     "priv:b5:l2:c4:e4",
+     "priv:b5:l2:c7:e6"
+    ],
+    "B": [
+     "priv:b0:l0:c4:e0",
+     "priv:b0:l0:c4:e3",
+     "priv:b0:l0:c4:e2",
+     "priv:b0:l0:c7:e5",
+     "priv:b0:l0:c4:e7",
+     "priv:b0:l0:c2:e3",
+     "priv:b0:l0:c1:e1",
+     "priv:b0:l0:c2:e0",
+     "priv:b0:l0:c6:e1",
+     "priv:b0:l0:c3:e2",
+     "priv:b0:l0:c3:e3",
+     "priv:b0:l0:c3:e5",
+     "priv:b0:l0:c4:e4",
+     "priv:b0:l0:c4:e5",
+     "priv:b0:l0:c6:e7",
+     "priv:b0:l0:c3:e6",
+     "priv:b1:l0:c5:e1",
+     "priv:b1:l0:c5:e7",
+     "priv:b1:l0:c3:e6",
+     "priv:b1:l0:c0:e5",
+     "priv:b1:l0:c6:e0",
+     "priv:b1:l0:c3:e0",
+     "priv:b1:l0:c6:e1",
+     "priv:b1:l0:c0:e0",
+     "priv:b1:l0:c0:e1",
+     "priv:b1:l0:c2:e5",
+     "priv:b1:l0:c5:e2",
+     "priv:b1:l0:c7:e5",
+     "priv:b1:l0:c6:e7",
+     "priv:b1:l0:c7:e1",
+     "priv:b1:l0:c7:e2",
+     "priv:b1:l0:c4:e0",
+     "priv:b2:l0:c2:e0",
+     "priv:b2:l0:c7:e0",
+     "priv:b2:l0:c7:e7",
+     "priv:b2:l0:c7:e6",
+     "priv:b2:l0:c1:e0",
+     "priv:b2:l0:c1:e3",
+     "priv:b2:l0:c3:e6",
+     "priv:b2:l0:c1:e4",
+     "priv:b2:l0:c4:e4",
+     "priv:b2:l0:c0:e7",
+     "priv:b2:l0:c7:e2",
+     "priv:b2:l0:c0:e4",
+     "priv:b2:l0:c7:e1",
+     "priv:b2:l0:c2:e6",
+     "priv:b2:l0:c7:e4",
+     "priv:b2:l0:c4:e7",
+     "priv:b2:l1:c1:e3",
+     "priv:b2:l1:c0:e0",
+     "priv:b2:l1:c4:e0",
+     "priv:b2:l1:c4:e1",
+     "priv:b2:l1:c4:e2",
+     "priv:b2:l1:c7:e5",
+     "priv:b2:l1:c5:e7",
+     "priv:b2:l1:c1:e1",
+     "priv:b2:l1:c1:e0",
+     "priv:b2:l1:c0:e1",
+     "priv:b2:l1:c7:e6",
+     "priv:b2:l1:c4:e6",
+     "priv:b2:l1:c0:e2",
+     "priv:b2:l1:c6:e0",
+     "priv:b2:l1:c7:e7",
+     "priv:b2:l1:c1:e6",
+     "priv:b3:l0:c2:e4",
+     "priv:b3:l0:c7:e2",
+     "priv:b3:l0:c1:e1",
+     "priv:b3:l0:c0:e1",
+     "priv:b3:l0:c3:e7",
+     "priv:b3:l0:c2:e0",
+     "priv:b3:l0:c5:e7",
+     "priv:b3:l0:c4:e5",
+     "priv:b3:l0:c2:e6",
+     "priv:b3:l0:c4:e2",
+     "priv:b3:l0:c2:e1",
+     "priv:b3:l0:c0:e6",
+     "priv:b3:l0:c4:e1",
+     "priv:b3:l0:c3:e2",
+     "priv:b3:l0:c1:e6",
+     "priv:b3:l0:c2:e5",
+     "priv:b3:l1:c4:e0",
+     "priv:b3:l1:c6:e0",
+     "priv:b3:l1:c7:e5",
+     "priv:b3:l1:c3:e1",
+     "priv:b3:l1:c0:e0",
+     "priv:b3:l1:c1:e5",
+     "priv:b3:l1:c3:e3",
+     "priv:b3:l1:c2:e7",
+     "priv:b3:l1:c2:e1",
+     "priv:b3:l1:c2:e3",
+     "priv:b3:l1:c4:e6",
+     "priv:b3:l1:c1:e6",
+     "priv:b3:l1:c6:e2",
+     "priv:b3:l1:c0:e2",
+     "priv:b3:l1:c7:e4",
+     "priv:b3:l1:c3:e5",
+     "priv:b4:l0:c7:e3",
+     "priv:b4:l0:c3:e5",
+     "priv:b4:l0:c2:e1",
+     "priv:b4:l0:c5:e5",
+     "priv:b4:l0:c0:e2",
+     "priv:b4:l0:c2:e7",
+     "priv:b4:l0:c0:e5",
+     "priv:b4:l0:c3:e1",
+     "priv:b4:l0:c4:e5",
+     "priv:b4:l0:c7:e4",
+     "priv:b4:l0:c0:e1",
+     "priv:b4:l0:c4:e3",
+     "priv:b4:l0:c7:e7",
+     "priv:b4:l0:c6:e6",
+     "priv:b4:l0:c4:e7",
+     "priv:b4:l0:c5:e6",
+     "priv:b4:l1:c0:e3",
+     "priv:b4:l1:c4:e3",
+     "priv:b4:l1:c6:e1",
+     "priv:b4:l1:c5:e6",
+     "priv:b4:l1:c3:e6",
+     "priv:b4:l1:c5:e7",
+     "priv:b4:l1:c4:e6",
+     "priv:b4:l1:c0:e0",
+     "priv:b4:l1:c3:e4",
+     "priv:b4:l1:c6:e7",
+     "priv:b4:l1:c5:e0",
+     "priv:b4:l1:c2:e0",
+     "priv:b4:l1:c0:e7",
+     "priv:b4:l1:c7:e4",
+     "priv:b4:l1:c5:e1",
+     "priv:b4:l1:c0:e4",
+     "priv:b5:l0:c0:e1",
+     "priv:b5:l0:c2:e7",
+     "priv:b5:l0:c4:e3",
+     "priv:b5:l0:c5:e1",
+     "priv:b5:l0:c2:e5",
+     "priv:b5:l0:c7:e0",
+     "priv:b5:l0:c0:e5",
+     "priv:b5:l0:c6:e4",
+     "priv:b5:l0:c5:e0",
+     "priv:b5:l0:c0:e6",
+     "priv:b5:l0:c7:e3",
+     "priv:b5:l0:c3:e6",
+     "priv:b5:l0:c0:e0",
+     "priv:b5:l0:c4:e4",
+     "priv:b5:l0:c6:e2",
+     "priv:b5:l0:c7:e2",
+     "priv:b5:l1:c3:e3",
+     "priv:b5:l1:c0:e6",
+     "priv:b5:l1:c5:e5",
+     "priv:b5:l1:c6:e2",
+     "priv:b5:l1:c1:e4",
+     "priv:b5:l1:c7:e4",
+     "priv:b5:l1:c3:e7",
+     "priv:b5:l1:c2:e7",
+     "priv:b5:l1:c7:e5",
+     "priv:b5:l1:c1:e5",
+     "priv:b5:l1:c7:e3",
+     "priv:b5:l1:c5:e3",
+     "priv:b5:l1:c4:e1",
+     "priv:b5:l1:c4:e7",
+     "priv:b5:l1:c5:e7",
+     "priv:b5:l1:c2:e1",
+     "priv:b5:l2:c7:e5",
+     "priv:b5:l2:c4:e7",
+     "priv:b5:l2:c5:e0",
+     "priv:b5:l2:c3:e5",
+     "priv:b5:l2:c4:e2",
+     "priv:b5:l2:c7:e7",
+     "priv:b5:l2:c5:e4",
+     "priv:b5:l2:c2:e6",
+     "priv:b5:l2:c6:e6",
+     "priv:b5:l2:c6:e7",
+     "priv:b5:l2:c2:e7",
+     "priv:b5:l2:c3:e7",
+     "priv:b5:l2:c5:e1",
+     "priv:b5:l2:c1:e6",
+     "priv:b5:l2:c0:e0",
+     "priv:b5:l2:c5:e5"
+    ]
+   },
+   "target": "books",
+   "tol": 0.04879016416943204
+  },
+  {
+   "A": [
+    [
+     59,
+     40,
+     0,
+     20,
+     44,
+     11,
+     46,
+     22,
+     4,
+     23,
+     7,
+     50,
+     10,
+     43,
+     60,
+     3
+    ],
+    [
+     38,
+     37,
+     2,
+     13,
+     33,
+     14,
+     9,
+     35,
+     36,
+     3,
+     6,
+     12,
+     39,
+     53,
+     44,
+     27
+    ],
+    [
+     9,
+     53,
+     31,
+     52,
+     23,
+     38,
+     13,
+     10,
+     50,
+     1,
+     18,
+     26,
+     61,
+     55,
+     15,
+     27
+    ],
+    [
+     57,
+     49,
+     22,
+     18,
+     53,
+     35,
+     28,
+     58,
+     59,
+     23,
+     55,
+     12,
+     3,
+     16,
+     46,
+     44
+    ],
+    [
+     7,
+     61,
+     11,
+     13,
+     24,
+     40,
+     48,
+     45,
+     10,
+     50,
+     43,
+     41,
+     18,
+     35,
+     60,
+     46
+    ],
+    [
+     30,
+     52,
+     7,
+     43,
+     55,
+     9,
+     62,
+     15,
+     49,
+     22,
+     44,
+     21,
+     8,
+     46,
+     51,
+     41
+    ],
+    [
+     18,
+     3,
+     52,
+     22,
+     47,
+     20,
+     61,
+     13,
+     4,
+     51,
+     43,
+     28,
+     40,
+     9,
+     14,
+     58
+    ],
+    [
+     12,
+     10,
+     48,
+     21,
+     13,
+     39,
+     9,
+     2,
+     1,
+     44,
+     14,
+     63,
+     32,
+     33,
+     8,
+     31
+    ],
+    [
+     14,
+     57,
+     26,
+     53,
+     33,
+     32,
+     17,
+     42,
+     49,
+     43,
+     20,
+     22,
+     27,
+     38,
+     63,
+     45
+    ],
+    [
+     9,
+     54,
+     37,
+     24,
+     55,
+     29,
+     36,
+     40,
+     48,
+     44,
+     5,
+     22,
+     0,
+     58,
+     21,
+     41
+    ],
+    [
+     51,
+     18,
+     62,
+     3,
+     12,
+     36,
+     21,
+     33,
+     9,
+     58,
+     35,
+     11,
+     10,
+     59,
+     27,
+     15
+    ]
+   ],
+   "B": [
+    [
+     34,
+     29,
+     1,
+     36,
+     17,
+     26,
+     27,
+     49,
+     35,
+     37,
+     16,
+     39,
+     9,
+     32,
+     25,
+     18
+    ],
+    [
+     1,
+     24,
+     47,
+     42,
+     61,
+     4,
+     5,
+     41,
+     57,
+     7,
+     21,
+     55,
+     51,
+     58,
+     30,
+     50
+    ],
+    [
+     39,
+     16,
+     12,
+     36,
+     11,
+     58,
+     42,
+     63,
+     56,
+     57,
+     60,
+     8,
+     7,
+     62,
+     59,
+     30
+    ],
+    [
+     26,
+     7,
+     61,
+     8,
+     11,
+     47,
+     2,
+     34,
+     14,
+     62,
+     33,
+     63,
+     1,
+     32,
+     0,
+     38
+    ],
+    [
+     15,
+     1,
+     34,
+     16,
+     14,
+     58,
+     21,
+     31,
+     26,
+     33,
+     20,
+     37,
+     9,
+     6,
+     17,
+     12
+    ],
+    [
+     2,
+     13,
+     60,
+     27,
+     14,
+     23,
+     50,
+     32,
+     0,
+     16,
+     19,
+     61,
+     63,
+     25,
+     38,
+     29
+    ],
+    [
+     45,
+     59,
+     21,
+     37,
+     23,
+     35,
+     44,
+     5,
+     60,
+     17,
+     1,
+     25,
+     2,
+     29,
+     46,
+     63
+    ],
+    [
+     47,
+     28,
+     49,
+     7,
+     46,
+     30,
+     5,
+     60,
+     40,
+     3,
+     35,
+     4,
+     38,
+     19,
+     6,
+     16
+    ],
+    [
+     36,
+     30,
+     52,
+     1,
+     5,
+     58,
+     0,
+     40,
+     35,
+     8,
+     28,
+     47,
+     56,
+     6,
+     41,
+     21
+    ],
+    [
+     17,
+     47,
+     6,
+     33,
+     39,
+     35,
+     4,
+     12,
+     42,
+     43,
+     27,
+     61,
+     50,
+     59,
+     45,
+     19
+    ],
+    [
+     50,
+     61,
+     40,
+     39,
+     41,
+     55,
+     14,
+     46,
+     29,
+     54,
+     34,
+     0,
+     63,
+     31,
+     23,
+     22
+    ]
+   ],
+   "L": 11,
+   "N": 64,
+   "code": "code",
+   "d": 3,
+   "data_seed": 7003,
+   "design": "c1",
+   "excluded_strata": [
+    "priv:b6:l0",
+    "priv:b6:l1"
+   ],
+   "f": 0.3333333333333333,
+   "family": "priv",
+   "generator": {
+    "acceptance": 0.0,
+    "batches": 200,
+    "from_swap": 9,
+    "proposals": 102400,
+    "swap_chains": 10,
+    "swap_converged": 9,
+    "swap_convergence": 0.9,
+    "swap_rounds": 1
+   },
+   "k": 16,
+   "matched_corpora": [
+    "books",
+    "dclm"
+   ],
+   "matched_values": {
+    "books": {
+     "diff": 0.04652897908603704,
+     "log_RO_A": -1.6673760717682207,
+     "log_RO_B": -1.7139050508542577
+    },
+    "dclm": {
+     "diff": 0.042735835785386644,
+     "log_RO_A": -1.5954027483217563,
+     "log_RO_B": -1.638138584107143
+    }
+   },
+   "predicted": {
+    "P": 1.8447136473598138
+   },
+   "q": 0.25,
+   "seed": 5003,
+   "sources": {
+    "books": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__books_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 9872926,
+       "name": "books_eval",
+       "path": "data\\domain\\pg19_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": "doc",
+       "span_tokens": [
+        4960546,
+        9872926
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__books.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 9872926,
+       "name": "books",
+       "path": "data\\domain\\pg19_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": "doc",
+       "span_tokens": [
+        0,
+        4960546
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "code": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__code_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 42160647,
+       "name": "code_eval",
+       "path": "data\\domain\\algstack_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        21080323,
+        42160647
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__code.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 42160647,
+       "name": "code",
+       "path": "data\\domain\\algstack_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        21080323
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "dclm": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__dclm_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 19999909,
+       "name": "dclm_eval",
+       "path": "data\\dclm\\dclm_val.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__dclm.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 19996569,
+       "name": "dclm",
+       "path": "data\\dclm\\dclm_val10.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "french": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__french_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 39038319,
+       "name": "french_eval",
+       "path": "data\\domain\\fr_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        19519159,
+        39038319
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__french.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 39038319,
+       "name": "french",
+       "path": "data\\domain\\fr_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        19519159
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "german": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__german_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 60571959,
+       "name": "german_eval",
+       "path": "data\\domain\\fw2de_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        30285979,
+        60571959
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__german.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 60571959,
+       "name": "german",
+       "path": "data\\domain\\fw2de_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        30285979
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "math": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__math_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 63933458,
+       "name": "math_eval",
+       "path": "data\\domain\\owm_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.5,
+        1.0
+       ],
+       "span_align": null,
+       "span_tokens": [
+        31966729,
+        63933458
+       ],
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__math.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 63933458,
+       "name": "math",
+       "path": "data\\domain\\owm_test.bin",
+       "seed": 0,
+       "select": "even",
+       "span": [
+        0.0,
+        0.5
+       ],
+       "span_align": null,
+       "span_tokens": [
+        0,
+        31966729
+       ],
+       "windows": 256
+      },
+      "windows": 256
+     }
+    },
+    "pycode": {
+     "estimation": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__pycode_eval.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 2204757,
+       "name": "pycode_eval",
+       "path": "data\\streams\\pycode_eval.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 500
+      },
+      "windows": 500
+     },
+     "layout": "registered",
+     "selection": {
+      "checkpoint": "outputs/nestor_100m_b05/20261031_213045__nestor_100m_b05_train_h100/checkpoints/model_final.pt",
+      "file": "g0\\nestor\\routing__pycode.npz",
+      "set": {
+       "block": 4096,
+       "file_tokens": 4400367,
+       "name": "pycode",
+       "path": "data\\streams\\pycode_route.bin",
+       "seed": 0,
+       "select": "even",
+       "windows": 256
+      },
+      "windows": 256
+     }
+    }
+   },
+   "spec_A": {
+    "mode": "train",
+    "select": [
+     {
+      "block": 0,
+      "column": 0,
+      "expert": [
+       0,
+       3,
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 1,
+      "expert": [
+       2,
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 2,
+      "expert": [
+       4,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 5,
+      "expert": [
+       0,
+       3,
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 6,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 7,
+      "expert": [
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 0,
+      "expert": [
+       2,
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 1,
+      "expert": [
+       1,
+       4,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 3,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 4,
+      "expert": [
+       1,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 5,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 6,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 0,
+      "expert": [
+       1
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 1,
+      "expert": [
+       1,
+       2,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 2,
+      "expert": [
+       2,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 3,
+      "expert": [
+       2,
+       3,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 4,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 6,
+      "expert": [
+       2,
+       4,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 7,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 0,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 1,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 2,
+      "expert": [
+       0,
+       2,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 3,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 4,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 5,
+      "expert": [
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 6,
+      "expert": [
+       1,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 7,
+      "expert": [
+       1,
+       2,
+       3
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 0,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 1,
+      "expert": [
+       2,
+       3,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 2,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 3,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 4,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 5,
+      "expert": [
+       0,
+       1,
+       3,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 6,
+      "expert": [
+       0,
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 7,
+      "expert": [
+       4,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 0,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 1,
+      "expert": [
+       0,
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 2,
+      "expert": [
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 3,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 5,
+      "expert": [
+       1,
+       3,
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 6,
+      "expert": [
+       1,
+       3,
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 7,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 0,
+      "expert": [
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 1,
+      "expert": [
+       1,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 2,
+      "expert": [
+       2,
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 3,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 5,
+      "expert": [
+       0,
+       3,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 6,
+      "expert": [
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 7,
+      "expert": [
+       2,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 0,
+      "expert": [
+       1,
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 1,
+      "expert": [
+       0,
+       1,
+       2,
+       4,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 2,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 3,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 4,
+      "expert": [
+       0,
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 5,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 6,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 7,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       1,
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       2,
+       3
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       0,
+       1,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       2,
+       3,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       1,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       0,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       1
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       0,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       4,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       0,
+       1,
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       0,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       1,
+       2,
+       3,
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       2,
+       5
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       1,
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       2,
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 2
+     }
+    ]
+   },
+   "spec_B": {
+    "mode": "train",
+    "select": [
+     {
+      "block": 0,
+      "column": 0,
+      "expert": [
+       1
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 1,
+      "expert": [
+       1
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 2,
+      "expert": [
+       0,
+       1,
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 3,
+      "expert": [
+       1,
+       2,
+       3,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 4,
+      "expert": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 0,
+      "column": 6,
+      "expert": [
+       1
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 0,
+      "expert": [
+       1,
+       4,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 2,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 3,
+      "expert": [
+       0,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 5,
+      "expert": [
+       1,
+       2,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 6,
+      "expert": [
+       2,
+       3,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 1,
+      "column": 7,
+      "expert": [
+       1,
+       2,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 0,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 1,
+      "expert": [
+       0,
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 2,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 3,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 4,
+      "expert": [
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 5,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 7,
+      "expert": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 2,
+      "column": 0,
+      "expert": [
+       0,
+       1,
+       2,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 1,
+      "expert": [
+       0,
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 3,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 4,
+      "expert": [
+       0,
+       1,
+       2,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 5,
+      "expert": [
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 2,
+      "column": 7,
+      "expert": [
+       5,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 0,
+      "expert": [
+       1,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 1,
+      "expert": [
+       1,
+       4,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 2,
+      "expert": [
+       0,
+       1,
+       4,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 3,
+      "expert": [
+       2,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 4,
+      "expert": [
+       1,
+       2,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 7,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 3,
+      "column": 0,
+      "expert": [
+       0,
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 1,
+      "expert": [
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 2,
+      "expert": [
+       0,
+       3,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 3,
+      "expert": [
+       1,
+       3,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 4,
+      "expert": [
+       0,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 6,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 3,
+      "column": 7,
+      "expert": [
+       4,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 0,
+      "expert": [
+       1,
+       2,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 2,
+      "expert": [
+       1,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 3,
+      "expert": [
+       1,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 4,
+      "expert": [
+       3,
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 5,
+      "expert": [
+       4,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 7,
+      "expert": [
+       3,
+       4,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 4,
+      "column": 0,
+      "expert": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 2,
+      "expert": [
+       0,
+       3
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 3,
+      "expert": [
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 4,
+      "expert": [
+       3,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 5,
+      "expert": [
+       0,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 6,
+      "expert": [
+       1
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 4,
+      "column": 7,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       0,
+       1,
+       5,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       5
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       3,
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       0,
+       1,
+       7
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       0,
+       2
+      ],
+      "kind": "priv",
+      "layer": 0
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       4,
+       6
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       4
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       1,
+       3
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       3
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       1,
+       3,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       2,
+       3,
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       2
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       3,
+       5
+      ],
+      "kind": "priv",
+      "layer": 1
+     },
+     {
+      "block": 5,
+      "column": 0,
+      "expert": [
+       0
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 1,
+      "expert": [
+       6
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 2,
+      "expert": [
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 3,
+      "expert": [
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 4,
+      "expert": [
+       2,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 5,
+      "expert": [
+       0,
+       1,
+       6
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 6,
+      "expert": [
+       2,
+       6,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     },
+     {
+      "block": 5,
+      "column": 7,
+      "expert": [
+       5,
+       7
+      ],
+      "kind": "priv",
+      "layer": 2
+     }
+    ]
+   },
+   "status": "ok",
+   "strata": [
+    "priv:b0:l0",
+    "priv:b1:l0",
+    "priv:b2:l0",
+    "priv:b2:l1",
+    "priv:b3:l0",
+    "priv:b3:l1",
+    "priv:b4:l0",
+    "priv:b4:l1",
+    "priv:b5:l0",
+    "priv:b5:l1",
+    "priv:b5:l2"
+   ],
+   "subsets": {
+    "A": [
+     "priv:b0:l0:c7:e3",
+     "priv:b0:l0:c5:e0",
+     "priv:b0:l0:c0:e0",
+     "priv:b0:l0:c2:e4",
+     "priv:b0:l0:c5:e4",
+     "priv:b0:l0:c1:e3",
+     "priv:b0:l0:c5:e6",
+     "priv:b0:l0:c2:e6",
+     "priv:b0:l0:c0:e4",
+     "priv:b0:l0:c2:e7",
+     "priv:b0:l0:c0:e7",
+     "priv:b0:l0:c6:e2",
+     "priv:b0:l0:c1:e2",
+     "priv:b0:l0:c5:e3",
+     "priv:b0:l0:c7:e4",
+     "priv:b0:l0:c0:e3",
+     "priv:b1:l0:c4:e6",
+     "priv:b1:l0:c4:e5",
+     "priv:b1:l0:c0:e2",
+     "priv:b1:l0:c1:e5",
+     "priv:b1:l0:c4:e1",
+     "priv:b1:l0:c1:e6",
+     "priv:b1:l0:c1:e1",
+     "priv:b1:l0:c4:e3",
+     "priv:b1:l0:c4:e4",
+     "priv:b1:l0:c0:e3",
+     "priv:b1:l0:c0:e6",
+     "priv:b1:l0:c1:e4",
+     "priv:b1:l0:c4:e7",
+     "priv:b1:l0:c6:e5",
+     "priv:b1:l0:c5:e4",
+     "priv:b1:l0:c3:e3",
+     "priv:b2:l0:c1:e1",
+     "priv:b2:l0:c6:e5",
+     "priv:b2:l0:c3:e7",
+     "priv:b2:l0:c6:e4",
+     "priv:b2:l0:c2:e7",
+     "priv:b2:l0:c4:e6",
+     "priv:b2:l0:c1:e5",
+     "priv:b2:l0:c1:e2",
+     "priv:b2:l0:c6:e2",
+     "priv:b2:l0:c0:e1",
+     "priv:b2:l0:c2:e2",
+     "priv:b2:l0:c3:e2",
+     "priv:b2:l0:c7:e5",
+     "priv:b2:l0:c6:e7",
+     "priv:b2:l0:c1:e7",
+     "priv:b2:l0:c3:e3",
+     "priv:b2:l1:c7:e1",
+     "priv:b2:l1:c6:e1",
+     "priv:b2:l1:c2:e6",
+     "priv:b2:l1:c2:e2",
+     "priv:b2:l1:c6:e5",
+     "priv:b2:l1:c4:e3",
+     "priv:b2:l1:c3:e4",
+     "priv:b2:l1:c7:e2",
+     "priv:b2:l1:c7:e3",
+     "priv:b2:l1:c2:e7",
+     "priv:b2:l1:c6:e7",
+     "priv:b2:l1:c1:e4",
+     "priv:b2:l1:c0:e3",
+     "priv:b2:l1:c2:e0",
+     "priv:b2:l1:c5:e6",
+     "priv:b2:l1:c5:e4",
+     "priv:b3:l0:c0:e7",
+     "priv:b3:l0:c7:e5",
+     "priv:b3:l0:c1:e3",
+     "priv:b3:l0:c1:e5",
+     "priv:b3:l0:c3:e0",
+     "priv:b3:l0:c5:e0",
+     "priv:b3:l0:c6:e0",
+     "priv:b3:l0:c5:e5",
+     "priv:b3:l0:c1:e2",
+     "priv:b3:l0:c6:e2",
+     "priv:b3:l0:c5:e3",
+     "priv:b3:l0:c5:e1",
+     "priv:b3:l0:c2:e2",
+     "priv:b3:l0:c4:e3",
+     "priv:b3:l0:c7:e4",
+     "priv:b3:l0:c5:e6",
+     "priv:b3:l1:c3:e6",
+     "priv:b3:l1:c6:e4",
+     "priv:b3:l1:c0:e7",
+     "priv:b3:l1:c5:e3",
+     "priv:b3:l1:c6:e7",
+     "priv:b3:l1:c1:e1",
+     "priv:b3:l1:c7:e6",
+     "priv:b3:l1:c1:e7",
+     "priv:b3:l1:c6:e1",
+     "priv:b3:l1:c2:e6",
+     "priv:b3:l1:c5:e4",
+     "priv:b3:l1:c2:e5",
+     "priv:b3:l1:c1:e0",
+     "priv:b3:l1:c5:e6",
+     "priv:b3:l1:c6:e3",
+     "priv:b3:l1:c5:e1",
+     "priv:b4:l0:c2:e2",
+     "priv:b4:l0:c0:e3",
+     "priv:b4:l0:c6:e4",
+     "priv:b4:l0:c2:e6",
+     "priv:b4:l0:c5:e7",
+     "priv:b4:l0:c2:e4",
+     "priv:b4:l0:c7:e5",
+     "priv:b4:l0:c1:e5",
+     "priv:b4:l0:c0:e4",
+     "priv:b4:l0:c6:e3",
+     "priv:b4:l0:c5:e3",
+     "priv:b4:l0:c3:e4",
+     "priv:b4:l0:c5:e0",
+     "priv:b4:l0:c1:e1",
+     "priv:b4:l0:c1:e6",
+     "priv:b4:l0:c7:e2",
+     "priv:b4:l1:c1:e4",
+     "priv:b4:l1:c1:e2",
+     "priv:b4:l1:c6:e0",
+     "priv:b4:l1:c2:e5",
+     "priv:b4:l1:c1:e5",
+     "priv:b4:l1:c4:e7",
+     "priv:b4:l1:c1:e1",
+     "priv:b4:l1:c0:e2",
+     "priv:b4:l1:c0:e1",
+     "priv:b4:l1:c5:e4",
+     "priv:b4:l1:c1:e6",
+     "priv:b4:l1:c7:e7",
+     "priv:b4:l1:c4:e0",
+     "priv:b4:l1:c4:e1",
+     "priv:b4:l1:c1:e0",
+     "priv:b4:l1:c3:e7",
+     "priv:b5:l0:c1:e6",
+     "priv:b5:l0:c7:e1",
+     "priv:b5:l0:c3:e2",
+     "priv:b5:l0:c6:e5",
+     "priv:b5:l0:c4:e1",
+     "priv:b5:l0:c4:e0",
+     "priv:b5:l0:c2:e1",
+     "priv:b5:l0:c5:e2",
+     "priv:b5:l0:c6:e1",
+     "priv:b5:l0:c5:e3",
+     "priv:b5:l0:c2:e4",
+     "priv:b5:l0:c2:e6",
+     "priv:b5:l0:c3:e3",
+     "priv:b5:l0:c4:e6",
+     "priv:b5:l0:c7:e7",
+     "priv:b5:l0:c5:e5",
+     "priv:b5:l1:c1:e1",
+     "priv:b5:l1:c6:e6",
+     "priv:b5:l1:c4:e5",
+     "priv:b5:l1:c3:e0",
+     "priv:b5:l1:c6:e7",
+     "priv:b5:l1:c3:e5",
+     "priv:b5:l1:c4:e4",
+     "priv:b5:l1:c5:e0",
+     "priv:b5:l1:c6:e0",
+     "priv:b5:l1:c5:e4",
+     "priv:b5:l1:c0:e5",
+     "priv:b5:l1:c2:e6",
+     "priv:b5:l1:c0:e0",
+     "priv:b5:l1:c7:e2",
+     "priv:b5:l1:c2:e5",
+     "priv:b5:l1:c5:e1",
+     "priv:b5:l2:c6:e3",
+     "priv:b5:l2:c2:e2",
+     "priv:b5:l2:c7:e6",
+     "priv:b5:l2:c0:e3",
+     "priv:b5:l2:c1:e4",
+     "priv:b5:l2:c4:e4",
+     "priv:b5:l2:c2:e5",
+     "priv:b5:l2:c4:e1",
+     "priv:b5:l2:c1:e1",
+     "priv:b5:l2:c7:e2",
+     "priv:b5:l2:c4:e3",
+     "priv:b5:l2:c1:e3",
+     "priv:b5:l2:c1:e2",
+     "priv:b5:l2:c7:e3",
+     "priv:b5:l2:c3:e3",
+     "priv:b5:l2:c1:e7"
+    ],
+    "B": [
+     "priv:b0:l0:c4:e2",
+     "priv:b0:l0:c3:e5",
+     "priv:b0:l0:c0:e1",
+     "priv:b0:l0:c4:e4",
+     "priv:b0:l0:c2:e1",
+     "priv:b0:l0:c3:e2",
+     "priv:b0:l0:c3:e3",
+     "priv:b0:l0:c6:e1",
+     "priv:b0:l0:c4:e3",
+     "priv:b0:l0:c4:e5",
+     "priv:b0:l0:c2:e0",
+     "priv:b0:l0:c4:e7",
+     "priv:b0:l0:c1:e1",
+     "priv:b0:l0:c4:e0",
+     "priv:b0:l0:c3:e1",
+     "priv:b0:l0:c2:e2",
+     "priv:b1:l0:c0:e1",
+     "priv:b1:l0:c3:e0",
+     "priv:b1:l0:c5:e7",
+     "priv:b1:l0:c5:e2",
+     "priv:b1:l0:c7:e5",
+     "priv:b1:l0:c0:e4",
+     "priv:b1:l0:c0:e5",
+     "priv:b1:l0:c5:e1",
+     "priv:b1:l0:c7:e1",
+     "priv:b1:l0:c0:e7",
+     "priv:b1:l0:c2:e5",
+     "priv:b1:l0:c6:e7",
+     "priv:b1:l0:c6:e3",
+     "priv:b1:l0:c7:e2",
+     "priv:b1:l0:c3:e6",
+     "priv:b1:l0:c6:e2",
+     "priv:b2:l0:c4:e7",
+     "priv:b2:l0:c2:e0",
+     "priv:b2:l0:c1:e4",
+     "priv:b2:l0:c4:e4",
+     "priv:b2:l0:c1:e3",
+     "priv:b2:l0:c7:e2",
+     "priv:b2:l0:c5:e2",
+     "priv:b2:l0:c7:e7",
+     "priv:b2:l0:c7:e0",
+     "priv:b2:l0:c7:e1",
+     "priv:b2:l0:c7:e4",
+     "priv:b2:l0:c1:e0",
+     "priv:b2:l0:c0:e7",
+     "priv:b2:l0:c7:e6",
+     "priv:b2:l0:c7:e3",
+     "priv:b2:l0:c3:e6",
+     "priv:b2:l1:c3:e2",
+     "priv:b2:l1:c0:e7",
+     "priv:b2:l1:c7:e5",
+     "priv:b2:l1:c1:e0",
+     "priv:b2:l1:c1:e3",
+     "priv:b2:l1:c5:e7",
+     "priv:b2:l1:c0:e2",
+     "priv:b2:l1:c4:e2",
+     "priv:b2:l1:c1:e6",
+     "priv:b2:l1:c7:e6",
+     "priv:b2:l1:c4:e1",
+     "priv:b2:l1:c7:e7",
+     "priv:b2:l1:c0:e1",
+     "priv:b2:l1:c4:e0",
+     "priv:b2:l1:c0:e0",
+     "priv:b2:l1:c4:e6",
+     "priv:b3:l0:c1:e7",
+     "priv:b3:l0:c0:e1",
+     "priv:b3:l0:c4:e2",
+     "priv:b3:l0:c2:e0",
+     "priv:b3:l0:c1:e6",
+     "priv:b3:l0:c7:e2",
+     "priv:b3:l0:c2:e5",
+     "priv:b3:l0:c3:e7",
+     "priv:b3:l0:c3:e2",
+     "priv:b3:l0:c4:e1",
+     "priv:b3:l0:c2:e4",
+     "priv:b3:l0:c4:e5",
+     "priv:b3:l0:c1:e1",
+     "priv:b3:l0:c0:e6",
+     "priv:b3:l0:c2:e1",
+     "priv:b3:l0:c1:e4",
+     "priv:b3:l1:c0:e2",
+     "priv:b3:l1:c1:e5",
+     "priv:b3:l1:c7:e4",
+     "priv:b3:l1:c3:e3",
+     "priv:b3:l1:c1:e6",
+     "priv:b3:l1:c2:e7",
+     "priv:b3:l1:c6:e2",
+     "priv:b3:l1:c4:e0",
+     "priv:b3:l1:c0:e0",
+     "priv:b3:l1:c2:e0",
+     "priv:b3:l1:c2:e3",
+     "priv:b3:l1:c7:e5",
+     "priv:b3:l1:c7:e7",
+     "priv:b3:l1:c3:e1",
+     "priv:b3:l1:c4:e6",
+     "priv:b3:l1:c3:e5",
+     "priv:b4:l0:c5:e5",
+     "priv:b4:l0:c7:e3",
+     "priv:b4:l0:c2:e5",
+     "priv:b4:l0:c4:e5",
+     "priv:b4:l0:c2:e7",
+     "priv:b4:l0:c4:e3",
+     "priv:b4:l0:c5:e4",
+     "priv:b4:l0:c0:e5",
+     "priv:b4:l0:c7:e4",
+     "priv:b4:l0:c2:e1",
+     "priv:b4:l0:c0:e1",
+     "priv:b4:l0:c3:e1",
+     "priv:b4:l0:c0:e2",
+     "priv:b4:l0:c3:e5",
+     "priv:b4:l0:c5:e6",
+     "priv:b4:l0:c7:e7",
+     "priv:b4:l1:c5:e7",
+     "priv:b4:l1:c3:e4",
+     "priv:b4:l1:c6:e1",
+     "priv:b4:l1:c0:e7",
+     "priv:b4:l1:c5:e6",
+     "priv:b4:l1:c3:e6",
+     "priv:b4:l1:c0:e5",
+     "priv:b4:l1:c7:e4",
+     "priv:b4:l1:c5:e0",
+     "priv:b4:l1:c0:e3",
+     "priv:b4:l1:c4:e3",
+     "priv:b4:l1:c0:e4",
+     "priv:b4:l1:c4:e6",
+     "priv:b4:l1:c2:e3",
+     "priv:b4:l1:c0:e6",
+     "priv:b4:l1:c2:e0",
+     "priv:b5:l0:c4:e4",
+     "priv:b5:l0:c3:e6",
+     "priv:b5:l0:c6:e4",
+     "priv:b5:l0:c0:e1",
+     "priv:b5:l0:c0:e5",
+     "priv:b5:l0:c7:e2",
+     "priv:b5:l0:c0:e0",
+     "priv:b5:l0:c5:e0",
+     "priv:b5:l0:c4:e3",
+     "priv:b5:l0:c1:e0",
+     "priv:b5:l0:c3:e4",
+     "priv:b5:l0:c5:e7",
+     "priv:b5:l0:c7:e0",
+     "priv:b5:l0:c0:e6",
+     "priv:b5:l0:c5:e1",
+     "priv:b5:l0:c2:e5",
+     "priv:b5:l1:c2:e1",
+     "priv:b5:l1:c5:e7",
+     "priv:b5:l1:c0:e6",
+     "priv:b5:l1:c4:e1",
+     "priv:b5:l1:c4:e7",
+     "priv:b5:l1:c4:e3",
+     "priv:b5:l1:c0:e4",
+     "priv:b5:l1:c1:e4",
+     "priv:b5:l1:c5:e2",
+     "priv:b5:l1:c5:e3",
+     "priv:b5:l1:c3:e3",
+     "priv:b5:l1:c7:e5",
+     "priv:b5:l1:c6:e2",
+     "priv:b5:l1:c7:e3",
+     "priv:b5:l1:c5:e5",
+     "priv:b5:l1:c2:e3",
+     "priv:b5:l2:c6:e2",
+     "priv:b5:l2:c7:e5",
+     "priv:b5:l2:c5:e0",
+     "priv:b5:l2:c4:e7",
+     "priv:b5:l2:c5:e1",
+     "priv:b5:l2:c6:e7",
+     "priv:b5:l2:c1:e6",
+     "priv:b5:l2:c5:e6",
+     "priv:b5:l2:c3:e5",
+     "priv:b5:l2:c6:e6",
+     "priv:b5:l2:c4:e2",
+     "priv:b5:l2:c0:e0",
+     "priv:b5:l2:c7:e7",
+     "priv:b5:l2:c3:e7",
+     "priv:b5:l2:c2:e7",
+     "priv:b5:l2:c2:e6"
+    ]
+   },
+   "target": "books",
+   "tol": 0.04879016416943204
+  }
+ ],
+ "prereg": "the design (NESTOR books, exploratory)"
+}

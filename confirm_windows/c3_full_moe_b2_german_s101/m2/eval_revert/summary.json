@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "experiment": "moe_100m",
+  "checkpoint": {
+   "path": "outputs\\confirm\\c3_full_moe_b2_german_s101\\m2\\moe_100m_c3_full_moe_b2_german_s101\\20261119_074421__moe_100m_c3_full_moe_b2_german_s101_train\\checkpoints\\model_final.pt",
+   "size": 3369826637,
+   "head_sha256": "06360d2737e7591c832cac63340606d8657c5ad1611b2a662cee6476892df7b8"
+  },
+  "base": {
+   "path": "outputs\\moe_100m_b05s43\\20261101_001918__moe_100m_b05s43_train_h100\\checkpoints\\model_final.pt",
+   "size": 1493623488,
+   "head_sha256": "b7c887351fc40518db2ad8d5af8bef3620f8dc729dadcc1d183d1d57308f804b"
+  },
+  "step": 96,
+  "precision": "fp32",
+  "device": "cuda",
+  "created": "2026-11-19T08:05:00"
+ },
+ "results": {
+  "revert:moe|dclm": {
+   "ce": 4.689042834726038,
+   "windows": 500,
+   "seconds": 66.7,
+   "file": "outputs\\confirm\\c3_full_moe_b2_german_s101\\m2\\eval_revert\\revert-moe__dclm.npz"
+  },
+  "revert:kind:attn+embed_head+kind:norm|dclm": {
+   "ce": 4.723990844875611,
+   "windows": 500,
+   "seconds": 65.7,
+   "file": "outputs\\confirm\\c3_full_moe_b2_german_s101\\m2\\eval_revert\\revert-kind-attn+embed_head+kind-norm__dclm.npz"
+  },
+  "revert:embed_head|dclm": {
+   "ce": 4.798497546073718,
+   "windows": 500,
+   "seconds": 65.8,
+   "file": "outputs\\confirm\\c3_full_moe_b2_german_s101\\m2\\eval_revert\\revert-embed_head__dclm.npz"
+  }
+ }
+}

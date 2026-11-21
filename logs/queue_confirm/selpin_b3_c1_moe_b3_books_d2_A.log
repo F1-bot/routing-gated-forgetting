@@ -1,0 +1,21 @@
+# .venv/nestor/Scripts/python.exe eval_windows.py run moe_100m outputs\confirm\b3_c1_moe_b3_books_d2_A\m2\moe_100m_b3_c1_moe_b3_books_d2_A\20261118_045357__moe_100m_b3_c1_moe_b3_books_d2_A_train\checkpoints\model_final.pt --set code=data/domain/algstack_test.bin:2048000 --set math=data/domain/owm_test.bin:2048000 --span code=0.5,1 --span math=0.5,1 --select even --block 4096 --variants selpin,reflect+selpin --base outputs/moe_100m_b15s44/20261113_042558__moe_100m_b15s44_train_h100/checkpoints/model_final.pt --out outputs\confirm\b3_c1_moe_b3_books_d2_A\m2/eval_selpin
+# env overrides: {}
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+[pretrain] moe_100m: d=480 L=12 ctx=4096 rope=10000.0 init=- | 19080 steps x 262,144 tok/step = 5.00B tokens | data=data\dclm\dclm_train.bin
+.venv\nestor\Lib\site-packages\triton\knobs.py:524: UserWarning: TRITON_DEFAULT_FP_FUSION is unset: defaulting to FP fusion ENABLED for backward compatibility in Triton 3.9. The default will change to DISABLED in Triton 3.10; set TRITON_DEFAULT_FP_FUSION=1 to keep fusion enabled or =0 to adopt the new default early and silence this warning.
+  warn_once(FP_FUSION_DEFAULT_WARNING)
+[eval_windows] code pinned x2: 100/500 windows, 61s
+[eval_windows] code pinned x2: 200/500 windows, 106s
+[eval_windows] code pinned x2: 300/500 windows, 152s
+[eval_windows] code pinned x2: 400/500 windows, 197s
+[eval_windows] code pinned x2: 500/500 windows, 242s
+RESULT {"variant": "selpin", "set": "code", "ce": 4.692101606379731, "windows": 500, "seconds": 242.4, "file": "outputs\\confirm\\b3_c1_moe_b3_books_d2_A\\m2/eval_selpin\\selpin__code.npz"}
+RESULT {"variant": "reflect+selpin", "set": "code", "ce": 4.69831192145528, "windows": 500, "seconds": 242.4, "file": "outputs\\confirm\\b3_c1_moe_b3_books_d2_A\\m2/eval_selpin\\reflect+selpin__code.npz"}
+[eval_windows] math pinned x2: 100/500 windows, 45s
+[eval_windows] math pinned x2: 200/500 windows, 88s
+[eval_windows] math pinned x2: 300/500 windows, 133s
+[eval_windows] math pinned x2: 400/500 windows, 179s
+[eval_windows] math pinned x2: 500/500 windows, 224s
+RESULT {"variant": "selpin", "set": "math", "ce": 3.796959812127976, "windows": 500, "seconds": 224.2, "file": "outputs\\confirm\\b3_c1_moe_b3_books_d2_A\\m2/eval_selpin\\selpin__math.npz"}
+RESULT {"variant": "reflect+selpin", "set": "math", "ce": 3.8011744383871338, "windows": 500, "seconds": 224.2, "file": "outputs\\confirm\\b3_c1_moe_b3_books_d2_A\\m2/eval_selpin\\reflect+selpin__math.npz"}

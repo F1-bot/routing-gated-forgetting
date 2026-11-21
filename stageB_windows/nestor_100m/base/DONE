@@ -1,0 +1,1 @@
+{"ckpt": "outputs\\nestor_100m_b05\\20261031_213045__nestor_100m_b05_train_h100\\checkpoints\\model_final.pt", "sets": ["pg19", "owm", "algstack", "fw2de"], "seconds": 1135.3796565532684}
